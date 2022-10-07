@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><title>Invisiclues</title>
+<html lang="en"><head><meta charset="UTF-8"><title><%= sections["header"][:lines].first %> Invisiclues</title>
 <style>* { padding: 0; margin: 0 ; }
 html { font-size: 100%; }
 body { 
@@ -38,7 +38,7 @@ p.omission { margin-bottom: .5rem; }
 </header>
                                     <% sections.each do |name, content| %>
 <% if name == "header" %>
-  <h1><%== content[:lines].first %></h1>
+  <h1><%== content[:lines].first %> Invisiclues</h1>
   <% next %>
 <% end %>
   <% unless name == "indicia" %>

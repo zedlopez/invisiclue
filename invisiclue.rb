@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
 
-# usage: invisiclue.rb ZorkI.inv > zork.html
-
 require 'erubi'
 require 'set'
 require 'ostruct'
@@ -10,25 +8,22 @@ no_merge = [ 'Table of Contents', 'For Your Amusement', 'Progress Points', 'Trea
 
 unindented_sections = [ "indicia", "Table of Contents", "For Your Amusement" ].to_set
 
+dont_capitalize = %w{ to the and }.to_set
+
 games = {}
 
 invisiclue = Erubi::Engine.new(File.read(File.join('tmpl','invisiclue.erb')), escape: true)
 index = Erubi::Engine.new(File.read(File.join('tmpl','index.erb')), escape: true)
-erubi = 
 
 Dir["*.inv"].each do |filename|
 
-
-  
   lines = File.readlines(filename)
-  
 
 in_header = true
 unindented_starts_sections = false
 
 sections = Hash.new {|h,k| h[k] = { lines: [] } }
 current_section = "header"
-
 
 current_list = sections[current_section][:lines]
 lines.shift
@@ -98,7 +93,8 @@ sections.each do |name, content|
   sections[name][:lines] = final
 end
 
-sections["header"][:lines][0] = sections["header"][:lines][0].sub(/\(tm\)/i,'&trade;').sub(/\(r\)/i,'&reg;')
+
+sections["header"][:lines][0] = sections["header"][:lines][0].sub(/\(tm\)/i,'').sub(/\(r\)/i,'').downcase.split(/\s/).map {|x| x.match(/\Ai+\Z/) ? x.upcase : (dont_capitalize.member?(x) ? x : (x[0]=x[0].upcase; x))}.join(' ').sub(/\Athe /,'The ') # .sub(/\s(Ii+)/,($1 ? " #{$1.upcase}" : ""))
 sections["indicia"][:lines][0].gsub!(/\A\[/,'')
 sections["indicia"][:lines][-1].gsub!(/\]\Z/,'')
 
@@ -107,13 +103,10 @@ def render(tmpl, **hash)
   eval(tmpl.src, context)
 end
 
-
 output_filename = File.basename(filename, '.inv').downcase + '.html'
 
 File.open(File.join('docs', output_filename), "w") do |f|
-
   f.puts(render(invisiclue, sections: sections, anchors: anchors))
-
 end
 
 games[sections["header"][:lines].first] = output_filename
@@ -122,7 +115,6 @@ end
 
 File.open(File.join('docs','index.html'),'w') do |f|
   f.puts(render(index, games: games))
-
 end
 
 

@@ -39,7 +39,7 @@ p.omission { margin-bottom: .5rem; }
 </header>
 <main>
 <ul>
-<% games.each do |title,html| %>
-<li><a href="<%= html %>"><%== title %></a></li>
+<% games.keys.sort.each do |title| %>
+<li><a href="<%= games[title] %>"><%== title %></a></li>
 <% end %>
          </ul>                                                                     </main></body></html>
