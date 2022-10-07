@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><title>Invisiclues</title>
+<style>* { padding: 0; margin: 0 ; }
+html { font-size: 100%; }
+body { 
+color: #080808; 
+background-color: #FAFAFA;
+color: #0A0A0A;
+width: 41.5rem;
+margin: auto;
+font-size: 100%;
+margin-bottom: 2rem;
+font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+} 
+h1.title { text-align: center; margin-top: 1rem; margin-bottom: 2rem; }
+.other-versions { font-weight: bold; }
+.other-versions > ul { margin-top: 1rem; }
+header { margin: auto; }
+div.ext-table { line-height: 1.5; width: 40rem; margin-bottom: 2rem; }
+a.title { text-decoration-style: dotted; }
+hr.border { border: .05rem solid #333; margin: 1rem .5rem 1rem -1.5rem; }
+div.ext-name {  white-space: nowrap; width: 100%; margin-top: .1rem; font-size: 1.25rem; text-indent: -1.5rem; }
+div.ext-desc { margin-bottom: .5rem; padding-top: .25rem; }
+div.empty-desc { text-align: right; margin-right: .5rem; }
+span.link { font-weight: bold;} 
+span.version { font-size: 1rem; }
+span.limiter { font-style: italic; font-size: 1rem; }
+span.code { font-family: monospace; }
+div.error { margin-left: -1.5rem; }
+h2 { margin-top: 1rem; margin-bottom: 1rem; }
+details { border: .1rem solid black; padding: .5rem; }
+summary { margin: .5rem 0 .5rem 0; }
+p.omission { margin-bottom: .5rem; }
+</style>
+</head>
+<body>
+<header>
+<h1>Invisiclues</h1>
+</header>
+<main>
+<ul>
+<% games.each do |title,html| %>
+<li><a href="<%= html %>"><%== title %></a></li>
+<% end %>
+         </ul>                                                                     </main></body></html>

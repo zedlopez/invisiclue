@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><title>Invisiclues</title>
+<style>* { padding: 0; margin: 0 ; }
+html { font-size: 100%; }
+body { 
+color: #080808; 
+background-color: #FAFAFA;
+color: #0A0A0A;
+width: 41.5rem;
+margin: auto;
+font-size: 100%;
+margin-bottom: 2rem;
+font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+} 
+h1.title { text-align: center; margin-top: 1rem; margin-bottom: 2rem; }
+.other-versions { font-weight: bold; }
+.other-versions > ul { margin-top: 1rem; }
+header { margin: auto; }
+div.ext-table { line-height: 1.5; width: 40rem; margin-bottom: 2rem; }
+a.title { text-decoration-style: dotted; }
+hr.border { border: .05rem solid #333; margin: 1rem .5rem 1rem -1.5rem; }
+div.ext-name {  white-space: nowrap; width: 100%; margin-top: .1rem; font-size: 1.25rem; text-indent: -1.5rem; }
+div.ext-desc { margin-bottom: .5rem; padding-top: .25rem; }
+div.empty-desc { text-align: right; margin-right: .5rem; }
+span.link { font-weight: bold;} 
+span.version { font-size: 1rem; }
+span.limiter { font-style: italic; font-size: 1rem; }
+span.code { font-family: monospace; }
+div.error { margin-left: -1.5rem; }
+h2 { margin-top: 1rem; margin-bottom: 1rem; }
+details { border: .1rem solid black; padding: .5rem; }
+summary { margin: .5rem 0 .5rem 0; }
+p.omission { margin-bottom: .5rem; }
+</style>
+</head>
+<body>
+<header>
+</header>
+  <h1>PLANETFALL&trade;</h1>
+      <p>Copyright by Infocom, Inc. Provided for non-commercial use only, with the sole intent of making information available that would otherwise be lost.</p>
+      <p>To whoever presently holds the copyright to the information contained in this file: if you think the existence of this file violates your copyright, please complain and the file will be removed.</p>
+      <p>Typed in from the original hintbook by Paul David Doherty.</p>
+<!-- Sample Question -->
+  <h2>Sample Question</h2>
+      <p>How can I remove tough stains from a soiled patrol uniform?</p>
+        <details><summary>A.</summary>Multiple-purpose robots may have laundering experience.</details>
+        <details><summary>B.</summary>Of course, if they&#039;re tough greasy stains...</details>
+        <details><summary>C.</summary>...you&#039;ll have to use Neato brand presoak.</details>
+<!-- Table of Contents -->
+  <h2>Table of Contents</h2>
+<ul>
+    <li><a href="#the_pod_trip">The Pod Trip</a></li>
+    <li><a href="#the_dormitory_area">The Dormitory Area</a></li>
+    <li><a href="#the_adminmech_area">The Admin/Mech Area</a></li>
+    <li><a href="#the_elevators_and_tower_area">The Elevators and Tower Area</a></li>
+    <li><a href="#the_helicopter_trip">The Helicopter Trip</a></li>
+    <li><a href="#the_shuttle_trip">The Shuttle Trip</a></li>
+    <li><a href="#the_systems_and_library_area">The Systems and Library Area</a></li>
+    <li><a href="#the_projcon_and_lab_area">The ProjCon and Lab Area</a></li>
+    <li><a href="#the_computerand_beyond">The Computer...and Beyond</a></li>
+    <li><a href="#general_questions">General Questions</a></li>
+    <li><a href="#how_all_points_are_earned">How All Points Are Earned</a></li>
+    <li><a href="#for_your_amusement">For Your Amusement</a></li>
+</ul>
+<!-- Aboard the Feinstein -->
+  <h2>Aboard the Feinstein</h2>
+      <p>How do I get past Blather?</p>
+        <details><summary>A.</summary>There&#039;s no way to get beyond Deck Eight or the Reactor Lobby.</details>
+        <details><summary>B.</summary>Really! There&#039;s no way.</details>
+      <p>How can I get Blather to stop giving me demerits?</p>
+        <details><summary>A.</summary>Scrub harder?</details>
+        <details><summary>B.</summary>Don&#039;t worry too much; demerits aren&#039;t that important.</details>
+      <p>What do I do about Lieutenant Measle?</p>
+        <details><summary>A.</summary>All he wants is some information for your records.</details>
+        <details><summary>B.</summary>Ahem. Lieutenant Measle???</details>
+      <p>What should I do with the Ambassador?</p>
+        <details><summary>A.</summary>Enjoy his company. He&#039;s just there to liven up the game opening.</details>
+      <p>How can I get the translator from the Ambassador?</p>
+        <details><summary>A.</summary>You can&#039;t.</details>
+      <p>How can I get the celery from the Ambassador?</p>
+        <details><summary>A.</summary>You can&#039;t.</details>
+      <p>How can I get the map from the Ambassador?</p>
+        <details><summary>A.</summary>The Ambassador doesn&#039;t have any map!</details>
+      <p>What should I do in the Galley?</p>
+        <details><summary>A.</summary>Try eating the stew.</details>
+        <details><summary>B.</summary>Did you find the handbook for programming autopilots?</details>
+        <details><summary>C.</summary>How did you get to a nonexistent place?</details>
+        <details><summary>D.</summary>Remember the warning in the introduction: Do not use the presence or</details>
+        <details><summary>E.</summary>absence of a question as an indication of what is important, and don&#039;t</details>
+        <details><summary>F.</summary>assume that long answers indicate important questions.</details>
+      <p>How do I get out of the Brig?</p>
+        <details><summary>A.</summary>The best way to get out is never to get thrown in.</details>
+        <details><summary>B.</summary>If you don&#039;t upset Blather by leaving your post, you&#039;ll never get</details>
+        <details><summary>C.</summary>thrown in the Brig.</details>
+        <details><summary>D.</summary>Once you&#039;re in the Brig, there&#039;s no way out.</details>
+      <p>The Feinstein keeps blowing up! How can I prevent it?</p>
+        <details><summary>A.</summary>It might be a malfunction in the Hyperspatial Jump Machinery Room.</details>
+        <details><summary>B.</summary>Of course, since you can&#039;t enter that room, you&#039;ll never know.</details>
+        <details><summary>C.</summary>There&#039;s no way to prevent it, and you won&#039;t find out until later what</details>
+        <details><summary>D.</summary>caused it. Best thing to do is try to survive the shipwreck.</details>
+      <p>Is there any way to open the escape pod bulkhead?</p>
+        <details><summary>A.</summary>It opens automatically during any emergency.</details>
+        <details><summary>B.</summary>For example, when the Feinstein begins exploding.</details>
+<!-- The Pod Trip -->
+  <h2 id="the_pod_trip">The Pod Trip</h2>
+      <p>How do I control the pod?</p>
+        <details><summary>A.</summary>The controls are entirely automated.</details>
+        <details><summary>B.</summary>Sit back and relax. Let the autopilot do the driving.</details>
+        <details><summary>C.</summary></details>
+        <details><summary>D.</summary>I keep getting killed during the pod trip. Help!</details>
+        <details><summary>E.</summary>Are you standing?</details>
+        <details><summary>F.</summary>The adjective associated with the web is notable.</details>
+        <details><summary>G.</summary>Get in the safety web and don&#039;t stand until you&#039;ve landed.</details>
+      <p>Is there any way to keep the pod from falling into the water?</p>
+        <details><summary>A.</summary>No.</details>
+      <p>Should I take the emergency provisions that appear?</p>
+        <details><summary>A.</summary>It&#039;s always a good idea in adventure games to take anything that you</details>
+        <details><summary>B.</summary>can carry.</details>
+      <p>How do I leave the pod once it has landed?</p>
+        <details><summary>A.</summary>Have you tried opening the door?</details>
+        <details><summary>B.</summary>You can&#039;t reach the door while you&#039;re still in the web.</details>
+        <details><summary>C.</summary>Once the door is open, either UP or OUT works.</details>
+        <details><summary>D.</summary>Needless to say, don&#039;t dally too long.</details>
+      <p>I keep drowning Underwater. How can I avoid this?</p>
+        <details><summary>A.</summary>The water is a dangerous place to be. Leave it immediately.</details>
+        <details><summary>B.</summary>There is light filtering down from above.</details>
+        <details><summary>C.</summary>Type UP.</details>
+<!-- The Dormitory Area -->
+  <h2 id="the_dormitory_area">The Dormitory Area</h2>
+      <p>What is the significance of the Balcony?</p>
+        <details><summary>A.</summary>The plaque is the only thing of interest there.</details>
+      <p>What is the significance of the ruined castle?</p>
+        <details><summary>A.</summary>Not much.</details>
+      <p>What is the significance of the Rec Area?</p>
+        <details><summary>A.</summary>There are some interesting tapes and games there.</details>
+        <details><summary>B.</summary>Have you noticed the locked door leading north?</details>
+      <p>How do I get past the locked door with the dial?</p>
+        <details><summary>A.</summary>It&#039;s a combination lock.</details>
+        <details><summary>B.</summary>You could try setting it to every number from 1 to 1000.</details>
+        <details><summary>C.</summary>You can find the combination in the lab area.</details>
+        <details><summary>D.</summary>It is in the pocket of the lab uniform.</details>
+      <p>What is the significance of the four dorms?</p>
+        <details><summary>A.</summary>They are all identical.</details>
+        <details><summary>B.</summary>They make good places to sleep.</details>
+      <p>What is the significance of the sanitary facilities?</p>
+        <details><summary>A.</summary>You won&#039;t need to use them. The game isn&#039;t THAT realistic.</details>
+        <details><summary>B.</summary>They are of no importance.</details>
+      <p>How do I open the padlock?</p>
+        <details><summary>A.</summary>You&#039;ll need a key.</details>
+        <details><summary>B.</summary>Have you seen a &quot;glint of light&quot; anywhere while exploring?</details>
+        <details><summary>C.</summary>It&#039;s in the crevice in Admin Corridor South.</details>
+        <details><summary>D.</summary>You can&#039;t reach it with your hands. You&#039;ll need something else.</details>
+        <details><summary>E.</summary>The curved metal bar from the Tool Room.</details>
+        <details><summary>F.</summary>It&#039;s a magnet. Try holding it over the key.</details>
+      <p>How do I open the tin can?</p>
+        <details><summary>A.</summary>Don&#039;t develop the next hint until you&#039;ve found the can opener.</details>
+        <details><summary>B.</summary>There is no can opener. You must be cheating.</details>
+        <details><summary>C.</summary>There is no way to open the can.</details>
+      <p>How do I open the door at the south end of the Mess Hall?</p>
+        <details><summary>A.</summary>The slot next to the door is important.</details>
+        <details><summary>B.</summary>You&#039;ll need the kitchen access card.</details>
+        <details><summary>C.</summary>It&#039;s located beyond the rift.</details>
+        <details><summary>D.</summary>It&#039;s in the desk in the Small Office. Slide it through the slot.</details>
+      <p>What is the ladder for?</p>
+        <details><summary>A.</summary>You need it to get past a major obstacle.</details>
+        <details><summary>B.</summary>You&#039;ve probably seen the obstacle.</details>
+        <details><summary>C.</summary>The rift.</details>
+      <p>How can I get food from the dispenser in the Kitchen?</p>
+        <details><summary>A.</summary>Have you tried pushing the button?</details>
+        <details><summary>B.</summary>You&#039;ll need something to catch the liquid.</details>
+        <details><summary>C.</summary>The octagonal shape of the niche is important.</details>
+        <details><summary>D.</summary>Open the canteen and put it in the niche.</details>
+<!-- The Admin/Mech Area -->
+  <h2 id="the_adminmech_area">The Admin/Mech Area</h2>
+      <p>Is there any significance to the Physical Plant?</p>
+        <details><summary>A.</summary>No. Every large complex of buildings needs one.</details>
+      <p>Is there any significance to the crack in the corridor floor?</p>
+        <details><summary>A.</summary>Yes.</details>
+      <p>Is there any significance to the deactivated robot in the Robot Shop?</p>
+        <details><summary>A.</summary>Yes, indeed!</details>
+        <details><summary>B.</summary>Turn it on.</details>
+      <p>How do I operate the reactor elevator?</p>
+        <details><summary>A.</summary>The slot in the elevator is important.</details>
+        <details><summary>B.</summary>You&#039;ll need the reactor elevator access pass.</details>
+        <details><summary>C.</summary>Don&#039;t develop further until you&#039;ve been on the helicopter trip.</details>
+        <details><summary>D.</summary>Cheating again, eh? There&#039;s no way to operate that elevator.</details>
+      <p>How do I fix the reactors?</p>
+        <details><summary>A.</summary>Have you opened the repair panel?</details>
+        <details><summary>B.</summary>Some of the megafuses seem to be burned out.</details>
+        <details><summary>C.</summary>Try replacing the megafuses with the good ones from the box in Storage</details>
+        <details><summary>D.</summary>East.</details>
+        <details><summary>E.</summary>Oh, come now, you haven&#039;t been to the reactors, have you?</details>
+      <p>How do I cross the rift?</p>
+        <details><summary>A.</summary>Jumping is a bad idea.</details>
+        <details><summary>B.</summary>You&#039;ll need an item which you may not have seen yet.</details>
+        <details><summary>C.</summary>It&#039;s behind the padlocked door.</details>
+        <details><summary>D.</summary>Extend the ladder and put it across the rift.</details>
+      <p>How can I see in the darkened areas?</p>
+        <details><summary>A.</summary>You&#039;ll need a light source.</details>
+      <p>What is the chemical dispenser for?</p>
+        <details><summary>A.</summary>Have you tried pushing any of the buttons on it?</details>
+        <details><summary>B.</summary>The flask can hold the chemical fluid.</details>
+        <details><summary>C.</summary>The first seven buttons are obviously coolants and catalysts.</details>
+        <details><summary>D.</summary>The two white buttons produce an acid and a base.</details>
+        <details><summary>E.</summary>You&#039;ll need the coolants and catalysts for the Comm Room problem.</details>
+      <p>What do I do with the acid and base?</p>
+        <details><summary>A.</summary>Batteries are made out of acids and bases.</details>
+        <details><summary>B.</summary>Have you run into any dangerous creatures? You might be able to use the</details>
+        <details><summary>C.</summary>acid or base as a weapon.</details>
+        <details><summary>D.</summary>Actually, these two chemicals are totally useless.</details>
+      <p>How do I reassemble the disassembled robots?</p>
+        <details><summary>A.</summary>A repair robot might be of help.</details>
+        <details><summary>B.</summary>Don&#039;t go on until you&#039;ve repaired Achilles.</details>
+        <details><summary>C.</summary>There&#039;s no way to reassemble those robots.</details>
+      <p>What is the significance of the Plan Room and the Systems Monitors?</p>
+        <details><summary>A.</summary>There&#039;s nothing for you to do in these rooms, but you might pick up</details>
+        <details><summary>B.</summary>some useful information there.</details>
+      <p>Is there any way to take the hose?</p>
+        <details><summary>A.</summary>What hose?</details>
+<!-- The Elevators and Tower Area -->
+  <h2 id="the_elevators_and_tower_area">The Elevators and Tower Area</h2>
+      <p>How do I open the doors in the Elevator Lobby?</p>
+        <details><summary>A.</summary>Try pushing the red and blue buttons.</details>
+        <details><summary>B.</summary>Then wait a little while.</details>
+      <p>How do I operate the upper and lower elevators?</p>
+        <details><summary>A.</summary>The slots on the control panels are important.</details>
+        <details><summary>B.</summary>You&#039;ll need to find the respective access passes.</details>
+        <details><summary>C.</summary>When you find them, slide them through the slot, and then type PUSH UP</details>
+        <details><summary>D.</summary>BUTTON or PUSH DOWN BUTTON.</details>
+        <details><summary>E.</summary>The upper elevator access card is located beyond the rift.</details>
+        <details><summary>F.</summary>It&#039;s in the desk in the Small Office.</details>
+        <details><summary>G.</summary>Floyd has the lower elevator access card.</details>
+        <details><summary>H.</summary>He may produce it when you use another access card in his presence.</details>
+        <details><summary>I.</summary>Alternately, you can search him when he&#039;s turned off.</details>
+      <p>What is the significance of the Helipad?</p>
+        <details><summary>A.</summary>It must be where helicopters would land and take off.</details>
+      <p>How do I enter the Helicopter?</p>
+        <details><summary>A.</summary>Try ENTER THE HELICOPTER.</details>
+      <p>What is the significance of the Observation Deck?</p>
+        <details><summary>A.</summary>It gives a nice view of another complex of buildings on a nearby</details>
+        <details><summary>B.</summary>island.</details>
+      <p>Should I do anything with the birds?</p>
+        <details><summary>A.</summary>Try feeding them.</details>
+        <details><summary>B.</summary>Birds like insects.</details>
+        <details><summary>C.</summary>What birds? What insects?</details>
+      <p>What is the significance of the communications receive console?</p>
+        <details><summary>A.</summary>Try pressing the button on it.</details>
+        <details><summary>B.</summary>Apparently, it received a transmission from the Feinstein just before</details>
+        <details><summary>C.</summary>the ship blew up.</details>
+      <p>What is the significance of the communications send console?</p>
+        <details><summary>A.</summary>Read the screen. The message is very interesting.</details>
+        <details><summary>B.</summary>The message isn&#039;t being sent, however.</details>
+        <details><summary>C.</summary>You can repair the communication system using the chemical dispenser in</details>
+        <details><summary>D.</summary>the Machine Shop.</details>
+        <details><summary>E.</summary>The colored light on the enunciator panel refers to one of the colored</details>
+        <details><summary>F.</summary>buttons on the dispenser.</details>
+        <details><summary>G.</summary>Keep pouring the proper chemical fluid into the hole on the console</details>
+        <details><summary>H.</summary>until it is fixed. It will take two or three trips.</details>
+<!-- The Helicopter Trip -->
+  <h2 id="the_helicopter_trip">The Helicopter Trip</h2>
+      <p>Where do I find the helicopter?</p>
+        <details><summary>A.</summary>You need to use the upper elevator to get to it.</details>
+      <p>Where do I find the key to the helicopter control panel cover?</p>
+        <details><summary>A.</summary>Try reading the green spool using the microfilm reader.</details>
+        <details><summary>B.</summary>According to the spool, the key would be in Transportation Supply.</details>
+      <p>Where do I find the helicopter access card?</p>
+        <details><summary>A.</summary>Try reading the green spool using the microfilm reader.</details>
+        <details><summary>B.</summary>According to the spool, the card would be in Transportation Supply.</details>
+      <p>How do I use the helicopter?</p>
+        <details><summary>A.</summary>Unless you have the helicopter control panel key and the helicopter</details>
+        <details><summary>B.</summary>access card, don&#039;t read any further.</details>
+        <details><summary>C.</summary>Use the key to open the control panel cover.</details>
+        <details><summary>D.</summary>Use the access card to activate the controls.</details>
+        <details><summary>E.</summary>Just tell your intended destination to the voice-controlled autopilot,</details>
+        <details><summary>F.</summary>then sit back and enjoy the trip.</details>
+        <details><summary>G.</summary>It&#039;s hard to understand how you managed to get this far, considering</details>
+        <details><summary>H.</summary>the key and card don&#039;t exist.</details>
+      <p>What destination should I select?</p>
+        <details><summary>A.</summary>Where would you expect to find people?</details>
+        <details><summary>B.</summary>A large city, perhaps?</details>
+        <details><summary>C.</summary>Try the capital city of Resida, Pilandoor.</details>
+        <details><summary>D.</summary>Don&#039;t you feel pretty silly, considering there&#039;s no way even to get the</details>
+        <details><summary>E.</summary>helicopter off the ground?</details>
+<!-- The Shuttle Trip -->
+  <h2 id="the_shuttle_trip">The Shuttle Trip</h2>
+      <p>Where do I find the shuttle?</p>
+        <details><summary>A.</summary>You need to use the lower elevator to get to it.</details>
+      <p>How do I operate the shuttle?</p>
+        <details><summary>A.</summary>You&#039;ll need the shuttle access card. By now you should know how to use</details>
+        <details><summary>B.</summary>these cards.</details>
+        <details><summary>C.</summary>You can&#039;t operate the shuttle after 6000.</details>
+        <details><summary>D.</summary>You can probably figure out that you want to be in the control cabin</details>
+        <details><summary>E.</summary>facing the set of tracks, not the one facing the blank wall.</details>
+      <p>How do I use the shuttle controls?</p>
+        <details><summary>A.</summary>First, activate the controls (see previous question).</details>
+        <details><summary>B.</summary>Pushing the lever up into the &quot;+&quot; position causes the shuttle to</details>
+        <details><summary>C.</summary>accelerate. Pulling the lever down into the &quot;-&quot; position causes the</details>
+        <details><summary>D.</summary>shuttle to decelerate.</details>
+        <details><summary>E.</summary>When the lever is in the central position, the shuttle will continue to</details>
+        <details><summary>F.</summary>move at its current velocity.</details>
+        <details><summary>G.</summary>The digital display tells the current velocity of the shuttle.</details>
+        <details><summary>H.</summary></details>
+        <details><summary>I.</summary>I keep crashing when I arrive at the other station.</details>
+        <details><summary>J.</summary>You&#039;re going too fast. Decelerate sooner.</details>
+        <details><summary>K.</summary>If you&#039;re going faster than 20 when you get to the far station, you&#039;ll</details>
+        <details><summary>L.</summary>be killed.</details>
+        <details><summary>M.</summary>If you&#039;re going between 5 and 20, you will survive, but the shuttle</details>
+        <details><summary>N.</summary>will be damaged.</details>
+<!-- The Systems and Library Area -->
+  <h2 id="the_systems_and_library_area">The Systems and Library Area</h2>
+      <p>What is the medicine in the Infirmary?</p>
+        <details><summary>A.</summary>Read the label.</details>
+      <p>How can I get through the small door in the Repair Room?</p>
+        <details><summary>A.</summary>It&#039;s too small for you to get through.</details>
+        <details><summary>B.</summary>It&#039;s &quot;robot-sized.&quot;</details>
+        <details><summary>C.</summary>Ask Floyd to go through the doorway. Type FLOYD, GO THROUGH DOORWAY.</details>
+      <p>How can I open the cabinets in the Repair Room?</p>
+        <details><summary>A.</summary>You&#039;ll have to repair Achilles first.</details>
+      <p>How can I repair Achilles?</p>
+        <details><summary>A.</summary>Waldo won&#039;t be of any help (unless you&#039;re playing SUSPENDED(tm)).</details>
+        <details><summary>B.</summary>Try using the microfilm reader to read the brown spool.</details>
+        <details><summary>C.</summary>The brown spool is in the Radiation Lab.</details>
+        <details><summary>D.</summary>Unfortunately, there&#039;s no way to get the brown spool to the microfilm</details>
+        <details><summary>E.</summary>reader.</details>
+        <details><summary>F.</summary>There is also no way to repair Achilles.</details>
+      <p>Is there a good fromitz board anywhere?</p>
+        <details><summary>A.</summary>Yes.</details>
+        <details><summary>B.</summary>Have you been beyond the small door in the Repair Room?</details>
+        <details><summary>C.</summary>You&#039;ll have to ask Floyd to get the good (shiny) fromitz board.</details>
+      <p>Is there a good bedistor anywhere?</p>
+        <details><summary>A.</summary>Yes.</details>
+        <details><summary>B.</summary>It&#039;s in Storage East, just off Mech Corridor North. You&#039;re not doing a</details>
+        <details><summary>C.</summary>very good job of exploring and mapping if you missed it.</details>
+      <p>What is the significance of Planetary Defense?</p>
+        <details><summary>A.</summary>The library might tell you something.</details>
+        <details><summary>B.</summary>Apparently, it is an automatic meteor defense. Perhaps this planetary</details>
+        <details><summary>C.</summary>system has a high meteor density.</details>
+        <details><summary>D.</summary>The system&#039;s discrimination circuit seems to have failed.</details>
+        <details><summary>E.</summary>This is probably why the Feinstein was destroyed. You&#039;d better repair</details>
+        <details><summary>F.</summary>it.</details>
+        <details><summary>G.</summary>Open the access panel.</details>
+        <details><summary>H.</summary>Figure out which board is malfunctioning and remove it.</details>
+        <details><summary>I.</summary>It&#039;s the second board. Take it and put the shiny fromitz board in the</details>
+        <details><summary>J.</summary>resulting empty socket.</details>
+      <p>What is the significance of Course Control?</p>
+        <details><summary>A.</summary>The library might tell you something about it.</details>
+        <details><summary>B.</summary>Apparently, the entire planet was moved into a more favorable but less</details>
+        <details><summary>C.</summary>stable orbit. This system ensures that the planet stays in the proper</details>
+        <details><summary>D.</summary>orbit.</details>
+        <details><summary>E.</summary>The course control system seems to be malfunctioning. If the planet is</details>
+        <details><summary>F.</summary>approaching its sun, that would explain the melting ice caps and the</details>
+        <details><summary>G.</summary>rise in sea level.</details>
+        <details><summary>H.</summary>You&#039;d better repair this system.</details>
+        <details><summary>I.</summary>Try opening the cube and removing the fused bedistor.</details>
+        <details><summary>J.</summary>You&#039;ll need a tool.</details>
+        <details><summary>K.</summary>Use the pliers from the Tool Room to remove the fused bedistor.</details>
+        <details><summary>L.</summary>Put the good bedistor into the cube.</details>
+      <p>What is the significance of this second Physical Plant?</p>
+        <details><summary>A.</summary>The most significant thing seems to be its size. It is larger than its</details>
+        <details><summary>B.</summary>counterpart in the Kalamontee Complex, even though the Lawanda Complex</details>
+        <details><summary>C.</summary>is slightly smaller.</details>
+        <details><summary>D.</summary>Perhaps there is a large section of the Lawanda Complex that you</details>
+        <details><summary>E.</summary>haven&#039;t seen yet...</details>
+        <details><summary>F.</summary>...such as the cryo-chambers, buried deep underground.</details>
+      <p>How do I use the computer terminal in the Library Lobby?</p>
+        <details><summary>A.</summary>First, turn it on.</details>
+        <details><summary>B.</summary>To select an item in the menu, use the TYPE command. For example, to</details>
+        <details><summary>C.</summary>select item 2, type TYPE 2.</details>
+        <details><summary>D.</summary>Typing TYPE 0 returns you to the next highest menu level (except, of</details>
+        <details><summary>E.</summary>course, if you are at the Main Menu, which is the highest level).</details>
+      <p>How do I use the microfilm reader?</p>
+        <details><summary>A.</summary>It must be turned on.</details>
+        <details><summary>B.</summary>The colored spools are spools of microfilm.</details>
+        <details><summary>C.</summary>Put one in the opening in the reader.</details>
+      <p>How do I summon the librarian?</p>
+        <details><summary>A.</summary>You can&#039;t.</details>
+        <details><summary>B.</summary>Really!</details>
+<!-- The ProjCon and Lab Area -->
+  <h2 id="the_projcon_and_lab_area">The ProjCon and Lab Area</h2>
+      <p>What is the significance of SanFac F?</p>
+        <details><summary>A.</summary>Haven&#039;t you realized by now that these SanFacs are of no interest?</details>
+      <p>What is the significance of the ProjCon Office?</p>
+        <details><summary>A.</summary>The library might be of some help.</details>
+        <details><summary>B.</summary>It was the main office for the Project.</details>
+      <p>Is the logo important?</p>
+        <details><summary>A.</summary>It also appears on the lab uniform.</details>
+        <details><summary>B.</summary>It&#039;s yet another little hint about what&#039;s going on.</details>
+      <p>Is the mural important?</p>
+        <details><summary>A.</summary>Examination reveals that there might be an area behind it.</details>
+        <details><summary>B.</summary>But don&#039;t worry about it now.</details>
+        <details><summary>C.</summary>When the time comes, you&#039;ll know it.</details>
+      <p>Who is Burstini Bonz?</p>
+        <details><summary>A.</summary>Wasn&#039;t he the great Respectivist artist who became famous for painting</details>
+        <details><summary>B.</summary>awesomely phenomenal murals during the 89th century?</details>
+      <p>What is the laboratory area for?</p>
+        <details><summary>A.</summary>The library might have some information on that.</details>
+        <details><summary>B.</summary>It is the laboratory built to find a cure for the Disease.</details>
+      <p>Is it safe to enter the Bio Lab?</p>
+        <details><summary>A.</summary>Try it.</details>
+        <details><summary>B.</summary>Nope, I guess it wasn&#039;t. Hope you did a SAVE first.</details>
+      <p>What is the card on the floor of the Bio Lab?</p>
+        <details><summary>A.</summary>Floyd will tell you when he sees it.</details>
+        <details><summary>B.</summary>It&#039;s for the Miniaturization Booth.</details>
+      <p>How can I get the card from the Bio Lab?</p>
+        <details><summary>A.</summary>You&#039;ll die trying.</details>
+        <details><summary>B.</summary>Floyd&#039;s a robot. He might be tougher.</details>
+        <details><summary>C.</summary>He&#039;ll volunteer to get the card if he has a good enough reason.</details>
+        <details><summary>D.</summary>Do you know what the card is and what you would use it for?</details>
+        <details><summary>E.</summary>The Miniaturization Booth is for repairing the computer.</details>
+        <details><summary>F.</summary>Show Floyd the computer printout, or let him see the warning light in</details>
+        <details><summary>G.</summary>the Computer Room.</details>
+        <details><summary>H.</summary>Then take him into Bio Lock East and do what he says.</details>
+      <p>Is it safe to enter the Radiation Lab?</p>
+        <details><summary>A.</summary>Try it.</details>
+        <details><summary>B.</summary>Nope, I guess it wasn&#039;t. Hope you did a SAVE first.</details>
+      <p>Where is the radiation suit?</p>
+        <details><summary>A.</summary>It might be down near the reactors.</details>
+        <details><summary>B.</summary>Find a light source, then use the Reactor Access Stairs.</details>
+        <details><summary>C.</summary>There&#039;s a lamp in the Radiation Lab.</details>
+        <details><summary>D.</summary>Going in circles? There&#039;s no radiation suit anywhere.</details>
+<!-- The Computer...and Beyond -->
+  <h2 id="the_computerand_beyond">The Computer...and Beyond</h2>
+      <p>What does the computer do?</p>
+        <details><summary>A.</summary>The library might have something on it.</details>
+        <details><summary>B.</summary>It runs the automated Project...</details>
+        <details><summary>C.</summary>...which is trying to find a cure for the Disease.</details>
+      <p>What is the significance of the printout?</p>
+        <details><summary>A.</summary>It appears that the Project was incredibly close to a successful</details>
+        <details><summary>B.</summary>conclusion.</details>
+        <details><summary>C.</summary>Then the computer broke down.</details>
+        <details><summary>D.</summary>If you&#039;ve been in the Repair Room, you&#039;ll know that summoning the</details>
+        <details><summary>E.</summary>repair robot didn&#039;t help.</details>
+        <details><summary>F.</summary>You&#039;ll have to fix the computer yourself.</details>
+        <details><summary>G.</summary>Use the Miniaturization Booth.</details>
+      <p>How does the Miniaturization Booth work?</p>
+        <details><summary>A.</summary>You&#039;ll need the proper access card, of course.</details>
+        <details><summary>B.</summary>It&#039;s in the Bio Lab.</details>
+        <details><summary>C.</summary>Once you&#039;ve activated the booth, type the damaged sector number.</details>
+        <details><summary>D.</summary>Have you read the printout?</details>
+        <details><summary>E.</summary>The damaged sector is 384. Type TYPE 384.</details>
+        <details><summary>F.</summary>You will then be miniaturized and teleported into the damaged sector,</details>
+        <details><summary>G.</summary>where you can attempt to effect repairs.</details>
+      <p>I&#039;ve gotten to Station 384. What do I do now?</p>
+        <details><summary>A.</summary>Explore around.</details>
+        <details><summary>B.</summary>Have you seen and examined the relay?</details>
+        <details><summary>C.</summary>You&#039;ll have to figure out a way to remove the speck.</details>
+        <details><summary>D.</summary>Use the laser.</details>
+        <details><summary>E.</summary>You must destroy the speck without harming the relay.</details>
+        <details><summary>F.</summary>The dial must be set to 1, so that the beam will pass harmlessly</details>
+        <details><summary>G.</summary>through the red translucent exterior of the relay.</details>
+        <details><summary>H.</summary>You&#039;ll have to shoot the speck a number of times to destroy it.</details>
+      <p>Is there any way to communicate with the giant spider?</p>
+        <details><summary>A.</summary>Yes.</details>
+        <details><summary>B.</summary>Play STARCROSS.(tm)</details>
+        <details><summary>C.</summary>+---------------------------------------------------------------------+</details>
+        <details><summary>D.</summary>|                                                                     |</details>
+        <details><summary>E.</summary>|                                                                     |</details>
+        <details><summary>F.</summary>|                                                                     |</details>
+        <details><summary>G.</summary>|                                                                     |</details>
+        <details><summary>H.</summary>|              &gt;&gt;This space intentionally left blank&lt;&lt;                |</details>
+        <details><summary>I.</summary>+---------------------------------------------------------------------+</details>
+      <p>How do I get past the giant microbe?</p>
+        <details><summary>A.</summary>Try shooting it with the laser.</details>
+        <details><summary>B.</summary>That won&#039;t have any effect while the laser is set to 1, of course.</details>
+        <details><summary>C.</summary>If you don&#039;t keep shooting the microbe, it will get close enough to eat</details>
+        <details><summary>D.</summary>you.</details>
+        <details><summary>E.</summary>Repeated shootings of the microbe merely hold it at bay, and sooner or</details>
+        <details><summary>F.</summary>later you&#039;re killed when sector 384 comes to life.</details>
+        <details><summary>G.</summary>Has the microbe shown interest in anything besides you?</details>
+        <details><summary>H.</summary>The microbe is attracted to the warmth of the laser.</details>
+        <details><summary>I.</summary>When the laser gets warm enough, throw it over the edge of the strip,</details>
+        <details><summary>J.</summary>into the void below. The microbe will leap after it.</details>
+      <p>How do I get back from the strip area?</p>
+        <details><summary>A.</summary>Go to Station 384.</details>
+      <p>How do I get out of the Lab Office?</p>
+        <details><summary>A.</summary>Opening the door right off isn&#039;t a healthy idea.</details>
+        <details><summary>B.</summary>There are some buttons on the wall...</details>
+        <details><summary>C.</summary>To get a clue, search the desk.</details>
+        <details><summary>D.</summary>Have you opened the desk?</details>
+        <details><summary>E.</summary>Put on the gas mask, then press the red button.</details>
+        <details><summary>F.</summary>Then, move fast. You don&#039;t have a millichron to spare.</details>
+        <details><summary>G.</summary></details>
+        <details><summary>H.</summary>Omigod!!! The mutants are loose and they&#039;re after me!!! How do I get rid of</details>
+      <p>them?</p>
+        <details><summary>A.</summary>You can&#039;t kill them.</details>
+        <details><summary>B.</summary>There&#039;s only one way to lose them.</details>
+        <details><summary>C.</summary>You&#039;re very close to the end of the game.</details>
+        <details><summary>D.</summary>Did you hear an announcement?</details>
+        <details><summary>E.</summary>Remember the mural?</details>
+        <details><summary>F.</summary>Go to the ProjCon Office.</details>
+        <details><summary>G.</summary>Go south into the elevator and push the button.</details>
+<!-- General Questions -->
+  <h2 id="general_questions">General Questions</h2>
+      <p>What do I do with my ID card?</p>
+        <details><summary>A.</summary>It&#039;s useless.</details>
+      <p>What happened to everything I was carrying when I fell asleep?</p>
+        <details><summary>A.</summary>Do you normally go to sleep holding things?</details>
+        <details><summary>B.</summary>You dropped them while you were sleeping. Check the floor of the room</details>
+        <details><summary>C.</summary>where you slept.</details>
+      <p>How do I read that crazy native language?</p>
+        <details><summary>A.</summary>It&#039;s actually a phonetic version of English.</details>
+        <details><summary>B.</summary>&quot;X&quot; is used in place of &quot;TH&quot; and &quot;C&quot; is used in place of &quot;CH.&quot;</details>
+        <details><summary>C.</summary>Double vowels signify the long vowel sound, and single vowels indicate</details>
+        <details><summary>D.</summary>the short vowel sound.</details>
+      <p>I keep starving to death. What can I eat?</p>
+        <details><summary>A.</summary>Didn&#039;t you take the survival kit from the Escape Pod?</details>
+        <details><summary>B.</summary>Of course, that doesn&#039;t last long.</details>
+        <details><summary>C.</summary>There&#039;s a can of spam and eggs in Storage West.</details>
+        <details><summary>D.</summary>Unfortunately, there&#039;s no way to open it.</details>
+        <details><summary>E.</summary>You&#039;ll have to get into the Kitchen.</details>
+        <details><summary>F.</summary>It&#039;s just south of the Mess Hall.</details>
+      <p>Where can I sleep?</p>
+        <details><summary>A.</summary>&quot;Civilized people usually sleep in beds.&quot;</details>
+        <details><summary>B.</summary>If you sleep elsewhere, you might be devoured (by grues?).</details>
+        <details><summary>C.</summary>There are beds in the four dorms, and the Infirmary.</details>
+        <details><summary>D.</summary>The bed in the Infirmary is a bad idea for other reasons.</details>
+      <p>Where can I find a light source?</p>
+        <details><summary>A.</summary>Try burning the towel by shooting the laser at it.</details>
+        <details><summary>B.</summary>Okay, that didn&#039;t work. There _is_ a lantern somewhere.</details>
+        <details><summary>C.</summary>It&#039;s in the Radiation Lab.</details>
+        <details><summary>D.</summary>You can&#039;t enter the Radiation Lab and survive without a radiation suit.</details>
+        <details><summary>E.</summary>There is no radiation suit.</details>
+        <details><summary>F.</summary>There is no way to get a light source into the dark rooms.</details>
+      <p>What is a grue?</p>
+        <details><summary>A.</summary>Ask PLANETFALL.</details>
+      <p>How can I use the Teleportation Booths?</p>
+        <details><summary>A.</summary>You&#039;ll have to find the teleportation access card first.</details>
+        <details><summary>B.</summary>It&#039;s in the lab area, which you may not have visited yet.</details>
+        <details><summary>C.</summary>It&#039;s in the pocket of the lab uniform.</details>
+        <details><summary>D.</summary>Slide the card through the slot, then press the button corresponding to</details>
+        <details><summary>E.</summary>the booth you want to teleport to.</details>
+      <p>How does the laser work?</p>
+        <details><summary>A.</summary>You must be holding it to fire it.</details>
+        <details><summary>B.</summary>It has six settings. Each setting produces a different colored beam.</details>
+        <details><summary>C.</summary>The battery in it when you find it won&#039;t last very long.</details>
+        <details><summary>D.</summary>You&#039;ll need a fresh battery.</details>
+        <details><summary>E.</summary>Remove the old battery; put the new one in the depression.</details>
+      <p>Where do I find a new laser battery?</p>
+        <details><summary>A.</summary>Have you tried making one?</details>
+        <details><summary>B.</summary>Some batteries are made by mixing acids and bases.</details>
+        <details><summary>C.</summary>However, there&#039;s no way to make your own battery. There is a fresh</details>
+        <details><summary>D.</summary>battery lying around somewhere.</details>
+        <details><summary>E.</summary>It&#039;s in Lab Storage.</details>
+      <p>Why are some of my magnetic-striped access cards randomized?</p>
+        <details><summary>A.</summary>They&#039;ve been close to a magnetic field.</details>
+        <details><summary>B.</summary>You&#039;ve been carrying them at the same time as the curved bar, which is</details>
+        <details><summary>C.</summary>a magnet.</details>
+      <p>What are megafuses for?</p>
+        <details><summary>A.</summary>They&#039;re electrical components.</details>
+        <details><summary>B.</summary>They&#039;re usually used for repairing Reactor Systems.</details>
+      <p>What are fromitz boards for?</p>
+        <details><summary>A.</summary>They&#039;re electrical components.</details>
+        <details><summary>B.</summary>They&#039;re usually used for repairing Planetary Defense Systems.</details>
+      <p>What are bedistors for?</p>
+        <details><summary>A.</summary>They&#039;re electrical components.</details>
+        <details><summary>B.</summary>They&#039;re usually used for repairing Course Control Systems.</details>
+      <p>I seem to be getting sicker and sicker. Why? What can I do?</p>
+        <details><summary>A.</summary>You&#039;ll find out when you get to the Library.</details>
+        <details><summary>B.</summary>You have contracted the Disease. It is fatal.</details>
+        <details><summary>C.</summary>The medicine in the Infirmary might help a bit.</details>
+        <details><summary>D.</summary>But your only long-term hope is to help bring the Project to its</details>
+        <details><summary>E.</summary>ultimate goal.</details>
+      <p>I finished the game with fewer than 80 points. What am I missing?</p>
+        <details><summary>A.</summary>You didn&#039;t repair all the broken systems.</details>
+        <details><summary>B.</summary>Consult the Systems Monitors.</details>
+        <details><summary>C.</summary>You must repair the Communication System, the Planetary Defense System,</details>
+        <details><summary>D.</summary>and the Course Control System in order to get the optimum ending.</details>
+<!-- How to Get All 80 Points -->
+  <h2>How to Get All 80 Points</h2>
+      <p>(Use only as a last resort.)</p>
+      <p>3 points for entering the Escape Pod. 3 points for entering the Crag. 2 points for turning Floyd on for the first time. 2 points for firing the laser for the first time. 4 points for entering Storage West. 4 points for entering Admin Corridor North. 4 points for entering the Kitchen. 4 points for entering the Tower Core. 4 points for entering the Kalamontee Platform. 4 points for entering the Lawanda Platform. 1 point for taking the kitchen access card. 1 point for taking the shuttle access card. 1 point for taking the upper elevator access card. 1 point for taking the lower elevator access card. 1 point for taking the miniaturization access card. 2 points for Floyd&#039;s death. 6 points for fixing the communications system. 6 points for fixing the planetary defense system. 6 points for fixing the course control system. 4 points for entering the Strip Near Station. 4 points for entering the Auxiliary Booth. 8 points for fixing the computer. 5 points for entering the Cryo-Elevator.</p>
+<!-- For Your Amusement -->
+  <h2 id="for_your_amusement">For Your Amusement</h2>
+      <p>(after you&#039;ve finished the game)</p>
+      <p></p>
+      <p>Have you tried...</p>
+      <p></p>
+      <p>...reading the graffiti in the Brig?</p>
+      <p>...attacking, talking to, or throwing something at Blather?</p>
+      <p>...attacking or talking to the Ambassador?</p>
+      <p>...touching, eating, smelling, or looking at the slime?</p>
+      <p>...scrubbing the slime?</p>
+      <p>...eating the celery?</p>
+      <p>...examining the games and tapes in the Rec Area?</p>
+      <p>...looking under the table in the Mess Hall?</p>
+      <p>...kicking, attacking, rubbing, or kissing Floyd?</p>
+      <p>...throwing acid at the mutants?</p>
+      <p>...reading your chronometer?</p>
+      <p>...taking off your chronometer or pouring acid on it?</p>
+      <p>...getting into bed in the Infirmary?</p>
+      <p>...scrubbing yourself?</p>
+      <p>...reading the towel?</p>
+      <p>...removing your uniform while Blather or Floyd were present?</p>
+      <p>...destroying the mural?</p>
+      <p>...&quot;stealing&quot; the lower elevator card from Floyd and then showing it to</p>
+      <p>him?</p>
+      <p>...giving Floyd the Lazarus breast plate?</p>
+
