@@ -1,69 +1,39 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><title><%= sections["header"][:lines].first %> Invisiclues</title>
-<style>* { padding: 0; margin: 0 ; }
-html { font-size: 100%; }
-body { 
-color: #080808; 
-background-color: #FAFAFA;
-color: #0A0A0A;
-width: 41.5rem;
-margin: auto;
-font-size: 100%;
-margin-bottom: 2rem;
-font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-} 
-h1.title { text-align: center; margin-top: 1rem; margin-bottom: 2rem; }
-.other-versions { font-weight: bold; }
-.other-versions > ul { margin-top: 1rem; }
-header { margin: auto; }
-div.ext-table { line-height: 1.5; width: 40rem; margin-bottom: 2rem; }
-a.title { text-decoration-style: dotted; }
-hr.border { border: .05rem solid #333; margin: 1rem .5rem 1rem -1.5rem; }
-div.ext-name {  white-space: nowrap; width: 100%; margin-top: .1rem; font-size: 1.25rem; text-indent: -1.5rem; }
-div.ext-desc { margin-bottom: .5rem; padding-top: .25rem; }
-div.empty-desc { text-align: right; margin-right: .5rem; }
-span.link { font-weight: bold;} 
-span.version { font-size: 1rem; }
-span.limiter { font-style: italic; font-size: 1rem; }
-span.code { font-family: monospace; }
-div.error { margin-left: -1.5rem; }
-h2 { margin-top: 1rem; margin-bottom: 1rem; }
-details { border: .1rem solid black; padding: .5rem; }
-summary { margin: .5rem 0 .5rem 0; }
-p.omission { margin-bottom: .5rem; }
-</style>
+<html lang="en"><head><meta charset="UTF-8"><title><%= header %> Invisiclues</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
+<p><a href="./index.html">Invisiclues Index</a></p>
 </header>
-                                    <% sections.each do |name, content| %>
-<% if name == "header" %>
-  <h1><%== content[:lines].first %> Invisiclues</h1>
-  <% next %>
-<% end %>
-  <% unless name == "indicia" %>
-   <% candidate = name.sub(/\s*\([^\)]+\)/,'').sub(/\W*\Z/,'') %><!-- <%= candidate %> -->
-  <h2<% if anchors.key?(candidate) %> id="<%= anchors[candidate] %>"<% end %>><%= name %></h2>
-<% end %>
-<% if name == "Table of Contents" %><ul>
-  <% content[:lines].each do |line| %>
-    <li><a href="#<%= anchors[line] %>"><%= line %></a></li>
+<main>
+<h1><%== header %> Invisiclues</h1>
+<%== question_template.render(question: sample.keys.first, answers: sample.values.first) %>
+<% if !anchors.empty? %>
+  <h2>Table of Contents</h2><ul class="indented">
+  <% anchors.each do |name, target| %>
+    <li><a href="#<%= target %>"><%= name %></a></li>
   <% end %></ul>
-  <% next %>
 <% end %>
-  <% if content.key?(:lines) %>
-    <% if name.start_with?('Treasures') %><pre><%= content[:lines].join("\n") %></pre><% else %>
+<% sections.each do |name, content| %>
+  <h2<% if anchors[name] %> id="<%= anchors[name] %>"<% end %>><%= name %></h2>
+  <% if content[:lines] %>
+    <% if content[:mono] %><pre class="mono"><%= content[:lines].join("\n") %></pre>
+    <% else %>
+  <div class="indented">
+      <p>
     <% content[:lines].each do |line| %>
-      <p><%= line %></p>
-    <% end %>
+        <%= line %><% if content[:no_merge] %><br><% else %></p><p><% end %>
+      <% end %>
+    </p>
+    </div>
     <% end %>
   <% else %>
     <%  content.each do |question, answers| %>
-      <p><%= question %></p>
-      <% answers.each.with_index do |answer,i| %>
-        <details><summary><%== ('A'.ord+i).chr %>.</summary><%= answer %></details>
-      <% end %>
+      <%== question_template.render(question: question, answers: answers) %>
     <% end %>
   <% end %>
 <% end %>
-
+</main>
+</body>
+</html>

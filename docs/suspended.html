@@ -1,407 +1,659 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><title>Suspended Invisiclues</title>
-<style>* { padding: 0; margin: 0 ; }
-html { font-size: 100%; }
-body { 
-color: #080808; 
-background-color: #FAFAFA;
-color: #0A0A0A;
-width: 41.5rem;
-margin: auto;
-font-size: 100%;
-margin-bottom: 2rem;
-font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-} 
-h1.title { text-align: center; margin-top: 1rem; margin-bottom: 2rem; }
-.other-versions { font-weight: bold; }
-.other-versions > ul { margin-top: 1rem; }
-header { margin: auto; }
-div.ext-table { line-height: 1.5; width: 40rem; margin-bottom: 2rem; }
-a.title { text-decoration-style: dotted; }
-hr.border { border: .05rem solid #333; margin: 1rem .5rem 1rem -1.5rem; }
-div.ext-name {  white-space: nowrap; width: 100%; margin-top: .1rem; font-size: 1.25rem; text-indent: -1.5rem; }
-div.ext-desc { margin-bottom: .5rem; padding-top: .25rem; }
-div.empty-desc { text-align: right; margin-right: .5rem; }
-span.link { font-weight: bold;} 
-span.version { font-size: 1rem; }
-span.limiter { font-style: italic; font-size: 1rem; }
-span.code { font-family: monospace; }
-div.error { margin-left: -1.5rem; }
-h2 { margin-top: 1rem; margin-bottom: 1rem; }
-details { border: .1rem solid black; padding: .5rem; }
-summary { margin: .5rem 0 .5rem 0; }
-p.omission { margin-bottom: .5rem; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
+<p><a href="./index.html">Invisiclues Index</a></p>
 </header>
-  <h1>Suspended Invisiclues</h1>
-      <p>Copyright by Infocom, Inc. Provided for non-commercial use only, with the sole intent of making information available that would otherwise be lost.</p>
-      <p>To whoever presently holds the copyright to the information contained in this file: if you think the existence of this file violates your copyright, please complain and the file will be removed.</p>
-      <p>Typed in from the original hintbook by Paul David Doherty.</p>
-<!-- Sample Question -->
-  <h2>Sample Question</h2>
-      <p>Will I ever get the floors around my CLC really clean and shiny?</p>
-        <details><summary>A.</summary>Yes! And it&#039;s as easy as A-B-C!</details>
-        <details><summary>B.</summary>Waldo must be wearing the waxing and buffing extension.</details>
-        <details><summary>C.</summary>He will have to use Neato brand floor wax.</details>
-<!-- Table of Contents -->
-  <h2>Table of Contents</h2>
-<ul>
-    <li><a href="#the_robots">The Robots</a></li>
-    <li><a href="#all_about_iris">All About Iris</a></li>
-    <li><a href="#wonderful_waldo">Wonderful Waldo</a></li>
-    <li><a href="#whats_up_with_whiz">What&#039;s up with Whiz</a></li>
-    <li><a href="#sensitive_sensa">Sensitive Sensa</a></li>
-    <li><a href="#enigmatic_poet">Enigmatic Poet</a></li>
-    <li><a href="#auda_a_patient_listener">Auda, a Patient Listener</a></li>
-    <li><a href="#fred_the_intrepid">Fred, the Intrepid</a></li>
-    <li><a href="#fc_interrupt_intruder_alert">FC Interrupt: Intruder Alert!</a></li>
-    <li><a href="#monitors_and_controls">Monitors and Controls</a></li>
-    <li><a href="#the_weather">The Weather</a></li>
-    <li><a href="#the_transit_system">The Transit System</a></li>
-    <li><a href="#hydroponics">Hydroponics</a></li>
-    <li><a href="#repairing_the_fcs">Repairing the FCs</a></li>
-    <li><a href="#general_questions">General Questions</a></li>
-    <li><a href="#for_your_amusement">For Your Amusement</a></li>
-</ul>
-<!-- All About the Complex -->
-  <h2>All About the Complex</h2>
-      <p>What&#039;s in the cylinder in the Central Chamber?</p>
-        <details><summary>A.</summary>Try having a robot open it.</details>
-        <details><summary>B.</summary>Now you know.</details>
-      <p>What can I do with the Library Core?</p>
-        <details><summary>A.</summary>You can always take books out if you&#039;ve got your access card.</details>
-        <details><summary>B.</summary>Try having Whiz ask about Floyd.</details>
-        <details><summary>C.</summary>Actually, there&#039;s nothing you can do with it. It&#039;s there to feed</details>
-        <details><summary>D.</summary>information to the four peripherals accessible to Whiz.</details>
-      <p>How do I get any of the robots to go north from the Hallway Junction?</p>
-        <details><summary>A.</summary>Just tell them to go north once they&#039;re there.</details>
-        <details><summary>B.</summary>There&#039;s a step in the way. They can&#039;t climb the step.</details>
-        <details><summary>C.</summary>Find something so they can glide up and down the step.</details>
-        <details><summary>D.</summary>Have one of the robots carry the wedge from the middle supply room to</details>
-        <details><summary>E.</summary>the Hallway Junction. Then have the robot place the wedge against the</details>
-        <details><summary>F.</summary>step.</details>
-      <p>How do I get the robots to the Biological Area?</p>
-        <details><summary>A.</summary>First, send them to the Hallway End and look around.</details>
-        <details><summary>B.</summary>What the robot is seeing is actually a car.</details>
-        <details><summary>C.</summary>Have the robot get in the car (or whatever the robot calls it). The</details>
-        <details><summary>D.</summary>rest is automatic.</details>
-      <p>Why do robots keep dying when I send them into the FC Area?</p>
-        <details><summary>A.</summary>Have Sensa report in the Short Corridor. She&#039;ll give you some data.</details>
-        <details><summary>B.</summary>Have Poet and Waldo enter the Cavernous Room. What they have to say may</details>
-        <details><summary>C.</summary>be of some help.</details>
-        <details><summary>D.</summary>Acid is being sprayed up through the floor, is floating through the</details>
-        <details><summary>E.</summary>air, and is settling on their thin metal skins.</details>
-      <p>How do I get Poet to take the Transit System?</p>
-        <details><summary>A.</summary>Like all robots, he needs a token.</details>
-        <details><summary>B.</summary>Have him buy a pass from the conductor.</details>
-        <details><summary>C.</summary>Be serious!</details>
-      <p>How do I stop the robots from dying in the FC area?</p>
-        <details><summary>A.</summary>Stop sending them in there.</details>
-        <details><summary>B.</summary>Repair Fred so he, with his acid shielding, can go in that area.</details>
-        <details><summary>C.</summary>But Fred cannot ever be repaired.</details>
-        <details><summary>D.</summary>Stop the acid mist.</details>
-      <p>How do I stop the acid mist?</p>
-        <details><summary>A.</summary>Well, you could always try umbrellas...</details>
-        <details><summary>B.</summary>Unfortunately, there are no umbrellas in the game.</details>
-        <details><summary>C.</summary>Use the game board to determine what&#039;s immediately under the Cavernous</details>
-        <details><summary>D.</summary>Room.</details>
-        <details><summary>E.</summary>Try turning the wheel in the Maintenance Area below the FCs.</details>
-        <details><summary>F.</summary>Can&#039;t reach the wheel? Try standing on the wedge.</details>
-        <details><summary>G.</summary>Still can&#039;t reach the wheel? Try getting the people to help.</details>
-      <p>How do I get the cutters from the top shelf?</p>
-        <details><summary>A.</summary>Try having a robot stand on something.</details>
-        <details><summary>B.</summary>Place the wedge under the shelf.</details>
-        <details><summary>C.</summary>Stand on the wedge.</details>
-        <details><summary>D.</summary>You&#039;ve got them now.</details>
-<!-- The Robots -->
-  <h2 id="the_robots">The Robots</h2>
-<!-- All About Iris -->
-  <h2 id="all_about_iris">All About Iris</h2>
-      <p>What good is Iris when she can&#039;t see?</p>
-        <details><summary>A.</summary>Iris is broken and needs to be fixed.</details>
-        <details><summary>B.</summary>Have Waldo open the panel.</details>
-        <details><summary>C.</summary>Replace the faulty chip.</details>
-      <p>What part of Iris is malfunctioning?</p>
-        <details><summary>A.</summary>Have you had all the robots examine each chip in the panel?</details>
-        <details><summary>B.</summary>Have you had Sensa or Poet examine the chips one by one?</details>
-        <details><summary>C.</summary>The bad chip is the &quot;rough device&quot; as Waldo calls it.</details>
-      <p>What good is Iris once she can see?</p>
-        <details><summary>A.</summary>Have you sent her to the three monitoring locations?</details>
-        <details><summary>B.</summary>She can tell you the state of affairs on the surface of the planet by</details>
-        <details><summary>C.</summary>looking at the monitors.</details>
-        <details><summary>D.</summary>She can enter the reset access codes once the FCs are back in balance.</details>
-      <p>How can I open up Iris?</p>
-        <details><summary>A.</summary>Have you tried having each robot open her?</details>
-        <details><summary>B.</summary>Have you asked Whiz to query the CLC about Waldo?</details>
-        <details><summary>C.</summary>Waldo can open Iris once the grasping extension has been attached.</details>
-      <p>How do I get Iris to the Robot Repair Area?</p>
-        <details><summary>A.</summary>Have you tried dragging her there?</details>
-        <details><summary>B.</summary>Have you tried sending her there?</details>
-        <details><summary>C.</summary>Have you tried having her follow another robot there?</details>
-        <details><summary>D.</summary>What makes you think you have to do this at all?</details>
-        <details><summary>E.</summary>You can&#039;t. Iris cannot leave the Monitor Area.</details>
-<!-- Wonderful Waldo -->
-  <h2 id="wonderful_waldo">Wonderful Waldo</h2>
-      <p>How can I get Waldo to fix Iris?</p>
-        <details><summary>A.</summary>Have you found the extention [sic] he needs for delicate work?</details>
-        <details><summary>B.</summary>Have you looked in the Middle Supply Room for an extension?</details>
-        <details><summary>C.</summary>Have you told Waldo to attach or wear the extension?</details>
-      <p>How can I get Waldo to tell me what&#039;s on the monitors?</p>
-        <details><summary>A.</summary>Have you asked him to look at the monitors?</details>
-        <details><summary>B.</summary>Have you had him wear his glasses?</details>
-        <details><summary>C.</summary>What makes you think Waldo can see at all?</details>
-        <details><summary>D.</summary>This is a job for Iris!</details>
-<!-- What&#039;s up with Whiz -->
-  <h2 id="whats_up_with_whiz">What&#039;s up with Whiz</h2>
-      <p>How do I get Whiz to answer my questions?</p>
-        <details><summary>A.</summary>Have you typed in HELP?</details>
-        <details><summary>B.</summary>Have you directed Whiz to any of the peripherals?</details>
-        <details><summary>C.</summary>Have you typed WHIZ, PLUG IN?</details>
-        <details><summary>D.</summary>Have you typed WHIZ, ASK ABOUT (or QUERY ABOUT) something?</details>
-      <p>Why does Whiz call everything by a number?</p>
-        <details><summary>A.</summary>Whiz isn&#039;t very smart by himself. The numbers are supplied by the</details>
-        <details><summary>B.</summary>Central Library Core.</details>
-        <details><summary>C.</summary>The numbers always give a hint as to what the object really is.</details>
-        <details><summary>D.</summary>The number and letter sequence usually represents the real name for</details>
-        <details><summary>E.</summary>that object.</details>
-      <p>How do I get Whiz to plug himself into Sensa?</p>
-        <details><summary>A.</summary>Shame on you.</details>
-      <p>What good is Whiz?</p>
-        <details><summary>A.</summary>Whiz can supply you with hints once he&#039;s plugged into the Advisory</details>
-        <details><summary>B.</summary>Pedestal.</details>
-        <details><summary>C.</summary>Whiz can supply background material from the other pedestals when it&#039;s</details>
-        <details><summary>D.</summary>available.</details>
-        <details><summary>E.</summary>Once you know all about what Whiz has to tell you, you might be able to</details>
-        <details><summary>F.</summary>figure out another way to use him.</details>
-      <p>Does Whiz have a personality problem interacting with the other robots?</p>
-        <details><summary>A.</summary>No.</details>
-        <details><summary>B.</summary>For the most part, he has no personality.</details>
-<!-- Sensitive Sensa -->
-  <h2 id="sensitive_sensa">Sensitive Sensa</h2>
-      <p>What was Sensa designed to do?</p>
-        <details><summary>A.</summary>Sensa can detect all kinds of vibrations.</details>
-        <details><summary>B.</summary>Sensa issues the tremor warnings.</details>
-        <details><summary>C.</summary>Sensa can detect all kinds of radiation emissions.</details>
-        <details><summary>D.</summary>Sensa can also detect electrical flow.</details>
-      <p>How do I get Sensa to work?</p>
-        <details><summary>A.</summary>Have Sensa examine an object. She will tell you anything she may detect</details>
-        <details><summary>B.</summary>about it.</details>
-        <details><summary>C.</summary>Have you tried having her report?</details>
-<!-- Enigmatic Poet -->
-  <h2 id="enigmatic_poet">Enigmatic Poet</h2>
-      <p>Poet talks gibberish, no?</p>
-        <details><summary>A.</summary>Yes, he does.</details>
-        <details><summary>B.</summary>No, he doesn&#039;t.</details>
-        <details><summary>C.</summary>Poet is unable to process information normally, and so he does the best</details>
-        <details><summary>D.</summary>he can.</details>
-        <details><summary>E.</summary>Try having Poet and several other robots describe the same thing.</details>
-        <details><summary>F.</summary>You&#039;ll catch on.</details>
-      <p>How do I fix Poet?</p>
-        <details><summary>A.</summary>Drag Poet to the Multiplexing Staging Center.</details>
-        <details><summary>B.</summary>Place Poet in the Centrifugal Disassembler.</details>
-        <details><summary>C.</summary>What makes you think there&#039;s anything wrong with him?</details>
-      <p>What is Poet&#039;s function?</p>
-        <details><summary>A.</summary>Poet&#039;s a specialized robot, capable of diagnosing problems.</details>
-        <details><summary>B.</summary>Have you asked Poet to report?</details>
-        <details><summary>C.</summary>Have him touch some objects.</details>
-<!-- Auda, a Patient Listener -->
-  <h2 id="auda_a_patient_listener">Auda, a Patient Listener</h2>
-      <p>How do I get Auda to talk?</p>
-        <details><summary>A.</summary>First, find the vox chip.</details>
-        <details><summary>B.</summary>Plug the vox chip into Auda&#039;s mouth hole.</details>
-        <details><summary>C.</summary>You can&#039;t get Auda to talk. She&#039;s all ears.</details>
-      <p>How do I get Auda out of the upper section of the Complex?</p>
-        <details><summary>A.</summary>Tell Auda to go to any room you like.</details>
-        <details><summary>B.</summary>Have Auda climb the step.</details>
-        <details><summary>C.</summary>You need something to go by the step so she can roll over it.</details>
-      <p>How do I get Auda to listen to what&#039;s going on?</p>
-        <details><summary>A.</summary>Have you tried AUDA, LISTEN?</details>
-        <details><summary>B.</summary>Have you tried AUDA, LISTEN?</details>
-        <details><summary>C.</summary>Try typing in AUDA, LISTEN and then wait for awhile. When Auda</details>
-        <details><summary>D.</summary>interrupts to tell you something is going on, have her follow the</details>
-        <details><summary>E.</summary>talking creatures.</details>
-<!-- Fred, the Intrepid -->
-  <h2 id="fred_the_intrepid">Fred, the Intrepid</h2>
-      <p>Where do I find Fred?</p>
-        <details><summary>A.</summary>Have you looked in the cabinet in Gamma Repair?</details>
-        <details><summary>B.</summary>He&#039;s in the cabinet in Gamma Repair. You must somehow move him.</details>
-        <details><summary>C.</summary>Have two robots move Fred.</details>
-        <details><summary>D.</summary>You do this by typing BOTH (robot) AND (robot), MOVE FRED.</details>
-      <p>How do I get the FCs to talk to Fred?</p>
-        <details><summary>A.</summary>Fred is dead.</details>
-        <details><summary>B.</summary>Forget him.</details>
-        <details><summary>C.</summary>Fred can never be repaired.</details>
-      <p>How can I repair Fred?</p>
-        <details><summary>A.</summary>You send out for a repairperson.</details>
-        <details><summary>B.</summary>You send him out for repairs.</details>
-        <details><summary>C.</summary>Forget it. You can&#039;t fix him at all.</details>
-      <p>Does Fred perform any useful function?</p>
-        <details><summary>A.</summary>He was once a great dancer.</details>
-        <details><summary>B.</summary>There&#039;s something in him that is indeed useful.</details>
-        <details><summary>C.</summary>Try to take the red wire in him. Since he no longer works, he won&#039;t</details>
-        <details><summary>D.</summary>miss it.</details>
-        <details><summary>E.</summary>You&#039;ll need to have a robot use the cutting tool.</details>
-<!-- FC Interrupt: Intruder Alert -->
-  <h2>FC Interrupt: Intruder Alert!</h2>
-      <p>The FCs warn that intruders have entered the Complex. How do I communicate</p>
-<!-- Monitors and Controls -->
-  <h2 id="monitors_and_controls">Monitors and Controls</h2>
-<!-- The Weather -->
-  <h2 id="the_weather">The Weather</h2>
-      <p>Why does the weather keep getting worse?</p>
-        <details><summary>A.</summary>Everyone on the surface was either washing their cars, heading for the</details>
-        <details><summary>B.</summary>beach, or planning a picnic.</details>
-        <details><summary>C.</summary>The FCs are doing the best they can, but they&#039;re malfunctioning.</details>
-        <details><summary>D.</summary>The FCs are constantly adjusting the pressure in one of the towers, and</details>
-        <details><summary>E.</summary>doing a lousy job.</details>
-      <p>How do I fix the Weather Towers on the surface of Contra?</p>
-        <details><summary>A.</summary>First, fix Iris so she can see the monitors (helpful, but not truly</details>
-        <details><summary>B.</summary>necessary).</details>
-        <details><summary>C.</summary>Send a robot to the Weather Control Area.</details>
-        <details><summary>D.</summary>Try turning the dials to different settings.</details>
-        <details><summary>E.</summary>Set the middle dial to 99 or 100, then pray for the best.</details>
-      <p>I keep turning dials in the Weather Control Area, but nothing happens. Why?</p>
-        <details><summary>A.</summary>Something is happening. Be patient.</details>
-        <details><summary>B.</summary>Weather does not change instantly.</details>
-        <details><summary>C.</summary>It takes about five FC cycles before Iris will be able to report on a</details>
-        <details><summary>D.</summary>change in the surface environment.</details>
-      <p>Why won&#039;t the weather towers stay in balance once they&#039;ve been stabilized?</p>
-        <details><summary>A.</summary>The FCs keep resetting them.</details>
-        <details><summary>B.</summary>You can never actually fix the situation -- the best you can do is buy</details>
-        <details><summary>C.</summary>some time while you go about repairing the real problem: the FCs.</details>
-<!-- The Transit System -->
-  <h2 id="the_transit_system">The Transit System</h2>
-      <p>Why do so many casualties occur when I shut off the floaters?</p>
-        <details><summary>A.</summary>Try looking at it this way: You&#039;re in an airplane.</details>
-        <details><summary>B.</summary>Someone comes by and removes its wings.</details>
-        <details><summary>C.</summary>At 38,000 feet.</details>
-        <details><summary>D.</summary>Ouch.</details>
-      <p>How do I stop people from getting on the floaters?</p>
-        <details><summary>A.</summary>If the floaters weren&#039;t in operation, no one would use them.</details>
-        <details><summary>B.</summary>People are using the taxis and the glidewalks to get to the floaters.</details>
-        <details><summary>C.</summary>Stop the taxis and the glidewalks.</details>
-      <p>Why do the glidewalks keep picking up speed?</p>
-        <details><summary>A.</summary>The FCs are doing it, just like they&#039;re messing about with the weather</details>
-        <details><summary>B.</summary>towers.</details>
-      <p>What&#039;s wrong with the robotaxis?</p>
-        <details><summary>A.</summary>They&#039;re revolting against their human bosses.</details>
-        <details><summary>B.</summary>Well, maybe not.</details>
-        <details><summary>C.</summary>They&#039;re striking for better pavement.</details>
-        <details><summary>D.</summary>Their union&#039;s not very strong though.</details>
-        <details><summary>E.</summary>The FCs are misinterpreting information and are unable to control them</details>
-        <details><summary>F.</summary>correctly.</details>
-        <details><summary>G.</summary>That sounds more reasonable.</details>
-        <details><summary>H.</summary>Better turn them off.</details>
-      <p>How do I keep casualties down to a minimum from the Transit System?</p>
-        <details><summary>A.</summary>Try shutting everything off.</details>
-        <details><summary>B.</summary>Throw the Switches which control the Transit System.</details>
-        <details><summary>C.</summary>In the following order:</details>
-        <details><summary>D.</summary>1. Taxis</details>
-        <details><summary>E.</summary>2. Glidewalk</details>
-        <details><summary>F.</summary>3. Floaters (when there are no people in them)</details>
-<!-- Hydroponics -->
-  <h2 id="hydroponics">Hydroponics</h2>
-      <p>Why bother with food at a time like this?</p>
-        <details><summary>A.</summary>Everyone has to eat, even in an emergency.</details>
-        <details><summary>B.</summary>A well-balanced breakfast is the start of any good day.</details>
-        <details><summary>C.</summary>Even with what&#039;s going on, people will starve without food.</details>
-      <p>How do I balance the Hydroponics Controls?</p>
-        <details><summary>A.</summary>They don&#039;t need to be balanced until a secondary tremor occurs.</details>
-        <details><summary>B.</summary>Push the levers forward or pull the levers back until Iris tells you</details>
-        <details><summary>C.</summary>the nutrients, lighting, and water are balanced.</details>
-      <p>Where do I get a cheeseburger?</p>
-        <details><summary>A.</summary>Did you try sending out for one?</details>
-        <details><summary>B.</summary>+---------------------------------------------------------------------+</details>
-        <details><summary>C.</summary>|                                                                     |</details>
-        <details><summary>D.</summary>|                                                                     |</details>
-        <details><summary>E.</summary>|                                                                     |</details>
-        <details><summary>F.</summary>|                                                                     |</details>
-        <details><summary>G.</summary>|              &gt;&gt;This space intentionally left blank&lt;&lt;                |</details>
-        <details><summary>H.</summary>+---------------------------------------------------------------------+</details>
-<!-- Repairing the FCs -->
-  <h2 id="repairing_the_fcs">Repairing the FCs</h2>
-      <p>Just what&#039;s wrong with the FCs?</p>
-        <details><summary>A.</summary>A tremor has disrupted their channels of communication.</details>
-        <details><summary>B.</summary>They can&#039;t make a mutual decision about what to do.</details>
-        <details><summary>C.</summary>There are two cables which have been severed due to the tremors.</details>
-        <details><summary>D.</summary>One cable in the Primary Channel, and one in the Secondary Channel.</details>
-      <p>How do I fix the FCs?</p>
-        <details><summary>A.</summary>There are two bad cables.</details>
-        <details><summary>B.</summary>Replace the bad cables with their replacements.</details>
-        <details><summary>C.</summary>Replace the orange cable with the orange wire.</details>
-        <details><summary>D.</summary>Replace the red cable with the red wire.</details>
-        <details><summary>E.</summary>That&#039;s easy for you to say, but which cable is the orange one, and</details>
-        <details><summary>F.</summary>which one is the red one? Well, have you figured out how to read the</details>
-        <details><summary>G.</summary>sign in the Primary Channel? If not, see the hint about reading the</details>
-        <details><summary>H.</summary>sign.</details>
-      <p>Once I&#039;ve fixed the FCs, how do I reset them?</p>
-        <details><summary>A.</summary>Remember the machine in the Main Supply Room?</details>
-        <details><summary>B.</summary>There are eight circles, each of which represents one half of the reset</details>
-        <details><summary>C.</summary>code.</details>
-        <details><summary>D.</summary>The reset code can be found on the sign in the Primary or Secondary</details>
-        <details><summary>E.</summary>Channel.</details>
-      <p>How do I read the sign in the Primary or Secondary Channel?</p>
-        <details><summary>A.</summary>You&#039;ll need a robot with visual capabilities.</details>
-        <details><summary>B.</summary>Iris is the only one who can read them.</details>
-        <details><summary>C.</summary>Since you can&#039;t get Iris to the signs, think about getting the signs to</details>
-        <details><summary>D.</summary>Iris.</details>
-        <details><summary>E.</summary>You can&#039;t move the signs, so how about a picture of them?</details>
-        <details><summary>F.</summary>You&#039;ll find a TV camera in the Biological Laboratory.</details>
-        <details><summary>G.</summary>Plug the TV into the hole in the Primary or Secondary Channel. Iris</details>
-        <details><summary>H.</summary>will take over from there.</details>
-        <details><summary>I.</summary>Point the camera at the sign.</details>
-      <p>How do I read the sign in the Bending Passage?</p>
-        <details><summary>A.</summary>Have Waldo bring it to Iris.</details>
-        <details><summary>B.</summary>Have Iris bring it to Sensa.</details>
-        <details><summary>C.</summary>Have Sensa give it to Poet.</details>
-        <details><summary>D.</summary>What sign in the Bending Passage?</details>
-      <p>Of what use is the khaki cable?</p>
-        <details><summary>A.</summary>You can&#039;t solve the game without it.</details>
-        <details><summary>B.</summary>You can&#039;t solve the game with it.</details>
-        <details><summary>C.</summary>You&#039;ll find one in your game package.</details>
-        <details><summary>D.</summary>What khaki cable?</details>
-      <p>Is there any use for the blue cable?</p>
-        <details><summary>A.</summary>It can be used to replace the malfunctioning blue cable.</details>
-        <details><summary>B.</summary>But there is no malfunctioning blue cable.</details>
-        <details><summary>C.</summary>So, no.</details>
-      <p>How can I figure out what to replace to get the FCs working properly?</p>
-        <details><summary>A.</summary>Figure out which cable is malfunctioning in the Primary Channel.</details>
-        <details><summary>B.</summary>Have Poet touch all the cables.</details>
-        <details><summary>C.</summary>Replace it with a wire of the same color.</details>
-        <details><summary>D.</summary>Now do the same thing in the Secondary Channel.</details>
-<!-- General Questions -->
-  <h2 id="general_questions">General Questions</h2>
-      <p>What&#039;s with the cutter? What good is it?</p>
-        <details><summary>A.</summary>The cutter is needed to get a wire which is permanently attached to</details>
-        <details><summary>B.</summary>something else.</details>
-        <details><summary>C.</summary>The cutter is used to cut the red wire in Fred.</details>
-      <p>What is the significance of the machine in the Main Supply Room?</p>
-        <details><summary>A.</summary>Within the machine rests an orange wire. This might come in handy.</details>
-        <details><summary>B.</summary>It has a panel on which the reset codes are written.</details>
-        <details><summary>C.</summary></details>
-        <details><summary>D.</summary>What is the significance of the panel on the machine in the Main Supply</details>
-      <p>Room?</p>
-        <details><summary>A.</summary>Each circle corresponds to something in the FC area...</details>
-        <details><summary>B.</summary>Have you tried POINT CAMERA AT SIGN in the Primary Channel?</details>
-        <details><summary>C.</summary>You must press two of these buttons on the panel to reset the FCs once</details>
-        <details><summary>D.</summary>you&#039;ve effected repairs.</details>
-<!-- For Your Amusement -->
-  <h2 id="for_your_amusement">For Your Amusement</h2>
-      <p>(after you&#039;ve finished the game)</p>
-      <p></p>
-      <p>Have you tried...</p>
-      <p></p>
-      <p>...having Poet describe everyone?</p>
-      <p>...having Whiz ask about Gregory Franklin?</p>
-      <p>...having all the robots read the plaque in the Sterilization Chamber?</p>
-      <p>...having Poet look while he&#039;s in the same room as Fred?</p>
-      <p>...turning all the Hydroponics Levers down to zero?</p>
-      <p>...attacking the people with the wire cutter?</p>
-      <p>...having Auda go to the Activities Area and wait for the people to get</p>
-      <p>there after they fix the acid leak?</p>
-      <p>...having Auda hang around with the people while they wait for the car?</p>
-      <p>...asking the robots to kiss one another?</p>
+<main>
+<h1>Suspended Invisiclues</h1>
+    <div class="question indented">
+      <h3>Will I ever get the floors around my CLC really clean and shiny?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Yes! And it&#39;s as easy as A-B-C!</details>
+        <details class="answer"><summary>B.</summary>Waldo must be wearing the waxing and buffing extension.</details>
+        <details class="answer"><summary>C.</summary>He will have to use Neato brand floor wax.</details>
+      </div>
+  </div>
 
+  <h2>Table of Contents</h2><ul class="indented">
+    <li><a href="#all_about_the_complex">All About the Complex</a></li>
+      <li><a href="#the_robots">The Robots</a></li>
+      <li><a href="#all_about_iris">All About Iris</a></li>
+      <li><a href="#wonderful_waldo">Wonderful Waldo</a></li>
+      <li><a href="#whats_up_with_whiz">What&#39;s Up With Whiz</a></li>
+      <li><a href="#sensitive_sensa">Sensitive Sensa</a></li>
+      <li><a href="#enigmatic_poet">Enigmatic Poet</a></li>
+      <li><a href="#auda_a_patient_listener">Auda, A Patient Listener</a></li>
+      <li><a href="#fred_the_intrepid">Fred, the Intrepid</a></li>
+      <li><a href="#fc_interrupt_intruder_alert">Fc Interrupt: Intruder Alert!</a></li>
+      <li><a href="#monitors_and_controls">Monitors and Controls</a></li>
+      <li><a href="#the_weather">The Weather</a></li>
+      <li><a href="#the_transit_system">The Transit System</a></li>
+      <li><a href="#hydroponics">Hydroponics</a></li>
+      <li><a href="#repairing_the_fcs">Repairing the Fcs</a></li>
+      <li><a href="#general_questions">General Questions</a></li>
+      <li><a href="#for_your_amusement">For Your Amusement</a></li>
+      <li><a href="#indicia">Indicia</a></li>
+  </ul>
+  <h2 id="all_about_the_complex">All About the Complex</h2>
+          <div class="question indented">
+      <h3>What&#39;s in the cylinder in the Central Chamber?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Try having a robot open it.</details>
+        <details class="answer"><summary>B.</summary>Now you know.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What can I do with the Library Core?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You can always take books out if you&#39;ve got your access card.</details>
+        <details class="answer"><summary>B.</summary>Try having Whiz ask about Floyd.</details>
+        <details class="answer"><summary>C.</summary>Actually, there&#39;s nothing you can do with it. It&#39;s there to feed</details>
+        <details class="answer"><summary>D.</summary>information to the four peripherals accessible to Whiz.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get any of the robots to go north from the Hallway Junction?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Just tell them to go north once they&#39;re there.</details>
+        <details class="answer"><summary>B.</summary>There&#39;s a step in the way. They can&#39;t climb the step.</details>
+        <details class="answer"><summary>C.</summary>Find something so they can glide up and down the step.</details>
+        <details class="answer"><summary>D.</summary>Have one of the robots carry the wedge from the middle supply room to</details>
+        <details class="answer"><summary>E.</summary>the Hallway Junction. Then have the robot place the wedge against the</details>
+        <details class="answer"><summary>F.</summary>step.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get the robots to the Biological Area?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>First, send them to the Hallway End and look around.</details>
+        <details class="answer"><summary>B.</summary>What the robot is seeing is actually a car.</details>
+        <details class="answer"><summary>C.</summary>Have the robot get in the car (or whatever the robot calls it). The</details>
+        <details class="answer"><summary>D.</summary>rest is automatic.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Why do robots keep dying when I send them into the FC Area?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have Sensa report in the Short Corridor. She&#39;ll give you some data.</details>
+        <details class="answer"><summary>B.</summary>Have Poet and Waldo enter the Cavernous Room. What they have to say may</details>
+        <details class="answer"><summary>C.</summary>be of some help.</details>
+        <details class="answer"><summary>D.</summary>Acid is being sprayed up through the floor, is floating through the</details>
+        <details class="answer"><summary>E.</summary>air, and is settling on their thin metal skins.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get Poet to take the Transit System?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Like all robots, he needs a token.</details>
+        <details class="answer"><summary>B.</summary>Have him buy a pass from the conductor.</details>
+        <details class="answer"><summary>C.</summary>Be serious!</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I stop the robots from dying in the FC area?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Stop sending them in there.</details>
+        <details class="answer"><summary>B.</summary>Repair Fred so he, with his acid shielding, can go in that area.</details>
+        <details class="answer"><summary>C.</summary>But Fred cannot ever be repaired.</details>
+        <details class="answer"><summary>D.</summary>Stop the acid mist.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I stop the acid mist?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Well, you could always try umbrellas...</details>
+        <details class="answer"><summary>B.</summary>Unfortunately, there are no umbrellas in the game.</details>
+        <details class="answer"><summary>C.</summary>Use the game board to determine what&#39;s immediately under the Cavernous</details>
+        <details class="answer"><summary>D.</summary>Room.</details>
+        <details class="answer"><summary>E.</summary>Try turning the wheel in the Maintenance Area below the FCs.</details>
+        <details class="answer"><summary>F.</summary>Can&#39;t reach the wheel? Try standing on the wedge.</details>
+        <details class="answer"><summary>G.</summary>Still can&#39;t reach the wheel? Try getting the people to help.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get the cutters from the top shelf?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Try having a robot stand on something.</details>
+        <details class="answer"><summary>B.</summary>Place the wedge under the shelf.</details>
+        <details class="answer"><summary>C.</summary>Stand on the wedge.</details>
+        <details class="answer"><summary>D.</summary>You&#39;ve got them now.</details>
+      </div>
+  </div>
+
+  <h2 id="the_robots">The Robots</h2>
+  <h2 id="all_about_iris">All About Iris</h2>
+          <div class="question indented">
+      <h3>What good is Iris when she can&#39;t see?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Iris is broken and needs to be fixed.</details>
+        <details class="answer"><summary>B.</summary>Have Waldo open the panel.</details>
+        <details class="answer"><summary>C.</summary>Replace the faulty chip.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What part of Iris is malfunctioning?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have you had all the robots examine each chip in the panel?</details>
+        <details class="answer"><summary>B.</summary>Have you had Sensa or Poet examine the chips one by one?</details>
+        <details class="answer"><summary>C.</summary>The bad chip is the &quot;rough device&quot; as Waldo calls it.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What good is Iris once she can see?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have you sent her to the three monitoring locations?</details>
+        <details class="answer"><summary>B.</summary>She can tell you the state of affairs on the surface of the planet by</details>
+        <details class="answer"><summary>C.</summary>looking at the monitors.</details>
+        <details class="answer"><summary>D.</summary>She can enter the reset access codes once the FCs are back in balance.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How can I open up Iris?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have you tried having each robot open her?</details>
+        <details class="answer"><summary>B.</summary>Have you asked Whiz to query the CLC about Waldo?</details>
+        <details class="answer"><summary>C.</summary>Waldo can open Iris once the grasping extension has been attached.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get Iris to the Robot Repair Area?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have you tried dragging her there?</details>
+        <details class="answer"><summary>B.</summary>Have you tried sending her there?</details>
+        <details class="answer"><summary>C.</summary>Have you tried having her follow another robot there?</details>
+        <details class="answer"><summary>D.</summary>What makes you think you have to do this at all?</details>
+        <details class="answer"><summary>E.</summary>You can&#39;t. Iris cannot leave the Monitor Area.</details>
+      </div>
+  </div>
+
+  <h2 id="wonderful_waldo">Wonderful Waldo</h2>
+          <div class="question indented">
+      <h3>How can I get Waldo to fix Iris?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have you found the extention [sic] he needs for delicate work?</details>
+        <details class="answer"><summary>B.</summary>Have you looked in the Middle Supply Room for an extension?</details>
+        <details class="answer"><summary>C.</summary>Have you told Waldo to attach or wear the extension?</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How can I get Waldo to tell me what&#39;s on the monitors?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have you asked him to look at the monitors?</details>
+        <details class="answer"><summary>B.</summary>Have you had him wear his glasses?</details>
+        <details class="answer"><summary>C.</summary>What makes you think Waldo can see at all?</details>
+        <details class="answer"><summary>D.</summary>This is a job for Iris!</details>
+      </div>
+  </div>
+
+  <h2 id="whats_up_with_whiz">What&#39;s Up With Whiz</h2>
+          <div class="question indented">
+      <h3>How do I get Whiz to answer my questions?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have you typed in HELP?</details>
+        <details class="answer"><summary>B.</summary>Have you directed Whiz to any of the peripherals?</details>
+        <details class="answer"><summary>C.</summary>Have you typed WHIZ, PLUG IN?</details>
+        <details class="answer"><summary>D.</summary>Have you typed WHIZ, ASK ABOUT (or QUERY ABOUT) something?</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Why does Whiz call everything by a number?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Whiz isn&#39;t very smart by himself. The numbers are supplied by the</details>
+        <details class="answer"><summary>B.</summary>Central Library Core.</details>
+        <details class="answer"><summary>C.</summary>The numbers always give a hint as to what the object really is.</details>
+        <details class="answer"><summary>D.</summary>The number and letter sequence usually represents the real name for</details>
+        <details class="answer"><summary>E.</summary>that object.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get Whiz to plug himself into Sensa?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Shame on you.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What good is Whiz?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Whiz can supply you with hints once he&#39;s plugged into the Advisory</details>
+        <details class="answer"><summary>B.</summary>Pedestal.</details>
+        <details class="answer"><summary>C.</summary>Whiz can supply background material from the other pedestals when it&#39;s</details>
+        <details class="answer"><summary>D.</summary>available.</details>
+        <details class="answer"><summary>E.</summary>Once you know all about what Whiz has to tell you, you might be able to</details>
+        <details class="answer"><summary>F.</summary>figure out another way to use him.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Does Whiz have a personality problem interacting with the other robots?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>No.</details>
+        <details class="answer"><summary>B.</summary>For the most part, he has no personality.</details>
+      </div>
+  </div>
+
+  <h2 id="sensitive_sensa">Sensitive Sensa</h2>
+          <div class="question indented">
+      <h3>What was Sensa designed to do?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Sensa can detect all kinds of vibrations.</details>
+        <details class="answer"><summary>B.</summary>Sensa issues the tremor warnings.</details>
+        <details class="answer"><summary>C.</summary>Sensa can detect all kinds of radiation emissions.</details>
+        <details class="answer"><summary>D.</summary>Sensa can also detect electrical flow.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get Sensa to work?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have Sensa examine an object. She will tell you anything she may detect</details>
+        <details class="answer"><summary>B.</summary>about it.</details>
+        <details class="answer"><summary>C.</summary>Have you tried having her report?</details>
+      </div>
+  </div>
+
+  <h2 id="enigmatic_poet">Enigmatic Poet</h2>
+          <div class="question indented">
+      <h3>Poet talks gibberish, no?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Yes, he does.</details>
+        <details class="answer"><summary>B.</summary>No, he doesn&#39;t.</details>
+        <details class="answer"><summary>C.</summary>Poet is unable to process information normally, and so he does the best</details>
+        <details class="answer"><summary>D.</summary>he can.</details>
+        <details class="answer"><summary>E.</summary>Try having Poet and several other robots describe the same thing.</details>
+        <details class="answer"><summary>F.</summary>You&#39;ll catch on.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I fix Poet?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Drag Poet to the Multiplexing Staging Center.</details>
+        <details class="answer"><summary>B.</summary>Place Poet in the Centrifugal Disassembler.</details>
+        <details class="answer"><summary>C.</summary>What makes you think there&#39;s anything wrong with him?</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is Poet&#39;s function?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Poet&#39;s a specialized robot, capable of diagnosing problems.</details>
+        <details class="answer"><summary>B.</summary>Have you asked Poet to report?</details>
+        <details class="answer"><summary>C.</summary>Have him touch some objects.</details>
+      </div>
+  </div>
+
+  <h2 id="auda_a_patient_listener">Auda, A Patient Listener</h2>
+          <div class="question indented">
+      <h3>How do I get Auda to talk?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>First, find the vox chip.</details>
+        <details class="answer"><summary>B.</summary>Plug the vox chip into Auda&#39;s mouth hole.</details>
+        <details class="answer"><summary>C.</summary>You can&#39;t get Auda to talk. She&#39;s all ears.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get Auda out of the upper section of the Complex?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Tell Auda to go to any room you like.</details>
+        <details class="answer"><summary>B.</summary>Have Auda climb the step.</details>
+        <details class="answer"><summary>C.</summary>You need something to go by the step so she can roll over it.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get Auda to listen to what&#39;s going on?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have you tried AUDA, LISTEN?</details>
+        <details class="answer"><summary>B.</summary>Have you tried AUDA, LISTEN?</details>
+        <details class="answer"><summary>C.</summary>Try typing in AUDA, LISTEN and then wait for awhile. When Auda</details>
+        <details class="answer"><summary>D.</summary>interrupts to tell you something is going on, have her follow the</details>
+        <details class="answer"><summary>E.</summary>talking creatures.</details>
+      </div>
+  </div>
+
+  <h2 id="fred_the_intrepid">Fred, the Intrepid</h2>
+          <div class="question indented">
+      <h3>Where do I find Fred?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have you looked in the cabinet in Gamma Repair?</details>
+        <details class="answer"><summary>B.</summary>He&#39;s in the cabinet in Gamma Repair. You must somehow move him.</details>
+        <details class="answer"><summary>C.</summary>Have two robots move Fred.</details>
+        <details class="answer"><summary>D.</summary>You do this by typing BOTH (robot) AND (robot), MOVE FRED.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get the FCs to talk to Fred?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Fred is dead.</details>
+        <details class="answer"><summary>B.</summary>Forget him.</details>
+        <details class="answer"><summary>C.</summary>Fred can never be repaired.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How can I repair Fred?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You send out for a repairperson.</details>
+        <details class="answer"><summary>B.</summary>You send him out for repairs.</details>
+        <details class="answer"><summary>C.</summary>Forget it. You can&#39;t fix him at all.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Does Fred perform any useful function?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>He was once a great dancer.</details>
+        <details class="answer"><summary>B.</summary>There&#39;s something in him that is indeed useful.</details>
+        <details class="answer"><summary>C.</summary>Try to take the red wire in him. Since he no longer works, he won&#39;t</details>
+        <details class="answer"><summary>D.</summary>miss it.</details>
+        <details class="answer"><summary>E.</summary>You&#39;ll need to have a robot use the cutting tool.</details>
+      </div>
+  </div>
+
+  <h2 id="fc_interrupt_intruder_alert">Fc Interrupt: Intruder Alert!</h2>
+      <div class="indented">
+      <p>
+        The FCs warn that intruders have entered the Complex. How do I communicate</p><p>
+    </p>
+    </div>
+  <h2 id="monitors_and_controls">Monitors and Controls</h2>
+  <h2 id="the_weather">The Weather</h2>
+          <div class="question indented">
+      <h3>Why does the weather keep getting worse?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Everyone on the surface was either washing their cars, heading for the</details>
+        <details class="answer"><summary>B.</summary>beach, or planning a picnic.</details>
+        <details class="answer"><summary>C.</summary>The FCs are doing the best they can, but they&#39;re malfunctioning.</details>
+        <details class="answer"><summary>D.</summary>The FCs are constantly adjusting the pressure in one of the towers, and</details>
+        <details class="answer"><summary>E.</summary>doing a lousy job.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I fix the Weather Towers on the surface of Contra?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>First, fix Iris so she can see the monitors (helpful, but not truly</details>
+        <details class="answer"><summary>B.</summary>necessary).</details>
+        <details class="answer"><summary>C.</summary>Send a robot to the Weather Control Area.</details>
+        <details class="answer"><summary>D.</summary>Try turning the dials to different settings.</details>
+        <details class="answer"><summary>E.</summary>Set the middle dial to 99 or 100, then pray for the best.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>I keep turning dials in the Weather Control Area, but nothing happens. Why?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Something is happening. Be patient.</details>
+        <details class="answer"><summary>B.</summary>Weather does not change instantly.</details>
+        <details class="answer"><summary>C.</summary>It takes about five FC cycles before Iris will be able to report on a</details>
+        <details class="answer"><summary>D.</summary>change in the surface environment.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Why won&#39;t the weather towers stay in balance once they&#39;ve been stabilized?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>The FCs keep resetting them.</details>
+        <details class="answer"><summary>B.</summary>You can never actually fix the situation -- the best you can do is buy</details>
+        <details class="answer"><summary>C.</summary>some time while you go about repairing the real problem: the FCs.</details>
+      </div>
+  </div>
+
+  <h2 id="the_transit_system">The Transit System</h2>
+          <div class="question indented">
+      <h3>Why do so many casualties occur when I shut off the floaters?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Try looking at it this way: You&#39;re in an airplane.</details>
+        <details class="answer"><summary>B.</summary>Someone comes by and removes its wings.</details>
+        <details class="answer"><summary>C.</summary>At 38,000 feet.</details>
+        <details class="answer"><summary>D.</summary>Ouch.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I stop people from getting on the floaters?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>If the floaters weren&#39;t in operation, no one would use them.</details>
+        <details class="answer"><summary>B.</summary>People are using the taxis and the glidewalks to get to the floaters.</details>
+        <details class="answer"><summary>C.</summary>Stop the taxis and the glidewalks.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Why do the glidewalks keep picking up speed?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>The FCs are doing it, just like they&#39;re messing about with the weather</details>
+        <details class="answer"><summary>B.</summary>towers.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What&#39;s wrong with the robotaxis?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>They&#39;re revolting against their human bosses.</details>
+        <details class="answer"><summary>B.</summary>Well, maybe not.</details>
+        <details class="answer"><summary>C.</summary>They&#39;re striking for better pavement.</details>
+        <details class="answer"><summary>D.</summary>Their union&#39;s not very strong though.</details>
+        <details class="answer"><summary>E.</summary>The FCs are misinterpreting information and are unable to control them</details>
+        <details class="answer"><summary>F.</summary>correctly.</details>
+        <details class="answer"><summary>G.</summary>That sounds more reasonable.</details>
+        <details class="answer"><summary>H.</summary>Better turn them off.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I keep casualties down to a minimum from the Transit System?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Try shutting everything off.</details>
+        <details class="answer"><summary>B.</summary>Throw the Switches which control the Transit System.</details>
+        <details class="answer"><summary>C.</summary>In the following order:</details>
+        <details class="answer"><summary>D.</summary>1. Taxis</details>
+        <details class="answer"><summary>E.</summary>2. Glidewalk</details>
+        <details class="answer"><summary>F.</summary>3. Floaters (when there are no people in them)</details>
+      </div>
+  </div>
+
+  <h2 id="hydroponics">Hydroponics</h2>
+          <div class="question indented">
+      <h3>Why bother with food at a time like this?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Everyone has to eat, even in an emergency.</details>
+        <details class="answer"><summary>B.</summary>A well-balanced breakfast is the start of any good day.</details>
+        <details class="answer"><summary>C.</summary>Even with what&#39;s going on, people will starve without food.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I balance the Hydroponics Controls?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>They don&#39;t need to be balanced until a secondary tremor occurs.</details>
+        <details class="answer"><summary>B.</summary>Push the levers forward or pull the levers back until Iris tells you</details>
+        <details class="answer"><summary>C.</summary>the nutrients, lighting, and water are balanced.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Where do I get a cheeseburger?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Did you try sending out for one?</details>
+        <details class="answer"><summary>B.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>C.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>D.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>E.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>F.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>G.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>H.</summary>This answer left intentionally blank.</details>
+      </div>
+  </div>
+
+  <h2 id="repairing_the_fcs">Repairing the Fcs</h2>
+          <div class="question indented">
+      <h3>Just what&#39;s wrong with the FCs?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>A tremor has disrupted their channels of communication.</details>
+        <details class="answer"><summary>B.</summary>They can&#39;t make a mutual decision about what to do.</details>
+        <details class="answer"><summary>C.</summary>There are two cables which have been severed due to the tremors.</details>
+        <details class="answer"><summary>D.</summary>One cable in the Primary Channel, and one in the Secondary Channel.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I fix the FCs?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>There are two bad cables.</details>
+        <details class="answer"><summary>B.</summary>Replace the bad cables with their replacements.</details>
+        <details class="answer"><summary>C.</summary>Replace the orange cable with the orange wire.</details>
+        <details class="answer"><summary>D.</summary>Replace the red cable with the red wire.</details>
+        <details class="answer"><summary>E.</summary>That&#39;s easy for you to say, but which cable is the orange one, and</details>
+        <details class="answer"><summary>F.</summary>which one is the red one? Well, have you figured out how to read the</details>
+        <details class="answer"><summary>G.</summary>sign in the Primary Channel? If not, see the hint about reading the</details>
+        <details class="answer"><summary>H.</summary>sign.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Once I&#39;ve fixed the FCs, how do I reset them?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Remember the machine in the Main Supply Room?</details>
+        <details class="answer"><summary>B.</summary>There are eight circles, each of which represents one half of the reset</details>
+        <details class="answer"><summary>C.</summary>code.</details>
+        <details class="answer"><summary>D.</summary>The reset code can be found on the sign in the Primary or Secondary</details>
+        <details class="answer"><summary>E.</summary>Channel.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I read the sign in the Primary or Secondary Channel?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You&#39;ll need a robot with visual capabilities.</details>
+        <details class="answer"><summary>B.</summary>Iris is the only one who can read them.</details>
+        <details class="answer"><summary>C.</summary>Since you can&#39;t get Iris to the signs, think about getting the signs to</details>
+        <details class="answer"><summary>D.</summary>Iris.</details>
+        <details class="answer"><summary>E.</summary>You can&#39;t move the signs, so how about a picture of them?</details>
+        <details class="answer"><summary>F.</summary>You&#39;ll find a TV camera in the Biological Laboratory.</details>
+        <details class="answer"><summary>G.</summary>Plug the TV into the hole in the Primary or Secondary Channel. Iris</details>
+        <details class="answer"><summary>H.</summary>will take over from there.</details>
+        <details class="answer"><summary>I.</summary>Point the camera at the sign.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I read the sign in the Bending Passage?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have Waldo bring it to Iris.</details>
+        <details class="answer"><summary>B.</summary>Have Iris bring it to Sensa.</details>
+        <details class="answer"><summary>C.</summary>Have Sensa give it to Poet.</details>
+        <details class="answer"><summary>D.</summary>What sign in the Bending Passage?</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Of what use is the khaki cable?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You can&#39;t solve the game without it.</details>
+        <details class="answer"><summary>B.</summary>You can&#39;t solve the game with it.</details>
+        <details class="answer"><summary>C.</summary>You&#39;ll find one in your game package.</details>
+        <details class="answer"><summary>D.</summary>What khaki cable?</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Is there any use for the blue cable?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It can be used to replace the malfunctioning blue cable.</details>
+        <details class="answer"><summary>B.</summary>But there is no malfunctioning blue cable.</details>
+        <details class="answer"><summary>C.</summary>So, no.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How can I figure out what to replace to get the FCs working properly?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Figure out which cable is malfunctioning in the Primary Channel.</details>
+        <details class="answer"><summary>B.</summary>Have Poet touch all the cables.</details>
+        <details class="answer"><summary>C.</summary>Replace it with a wire of the same color.</details>
+        <details class="answer"><summary>D.</summary>Now do the same thing in the Secondary Channel.</details>
+      </div>
+  </div>
+
+  <h2 id="general_questions">General Questions</h2>
+          <div class="question indented">
+      <h3>What&#39;s with the cutter? What good is it?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>The cutter is needed to get a wire which is permanently attached to</details>
+        <details class="answer"><summary>B.</summary>something else.</details>
+        <details class="answer"><summary>C.</summary>The cutter is used to cut the red wire in Fred.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is the significance of the machine in the Main Supply Room?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Within the machine rests an orange wire. This might come in handy.</details>
+        <details class="answer"><summary>B.</summary>It has a panel on which the reset codes are written.</details>
+        <details class="answer"><summary>C.</summary></details>
+        <details class="answer"><summary>D.</summary>What is the significance of the panel on the machine in the Main Supply</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Room?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Each circle corresponds to something in the FC area...</details>
+        <details class="answer"><summary>B.</summary>Have you tried POINT CAMERA AT SIGN in the Primary Channel?</details>
+        <details class="answer"><summary>C.</summary>You must press two of these buttons on the panel to reset the FCs once</details>
+        <details class="answer"><summary>D.</summary>you&#39;ve effected repairs.</details>
+      </div>
+  </div>
+
+  <h2 id="for_your_amusement">For Your Amusement</h2>
+      <div class="indented">
+      <p>
+        (after you&#39;ve finished the game)<br>
+        <br>
+        Have you tried...<br>
+        <br>
+          ...having Poet describe everyone?<br>
+          ...having Whiz ask about Gregory Franklin?<br>
+          ...having all the robots read the plaque in the Sterilization Chamber?<br>
+          ...having Poet look while he&#39;s in the same room as Fred?<br>
+          ...turning all the Hydroponics Levers down to zero?<br>
+          ...attacking the people with the wire cutter?<br>
+          ...having Auda go to the Activities Area and wait for the people to get<br>
+             there after they fix the acid leak?<br>
+          ...having Auda hang around with the people while they wait for the car?<br>
+          ...asking the robots to kiss one another?<br>
+    </p>
+    </div>
+  <h2 id="indicia">Indicia</h2>
+      <div class="indented">
+      <p>
+        Copyright by Infocom, Inc. Provided for non-commercial use only, with the sole intent of making information available that would otherwise be lost.</p><p>
+        To whoever presently holds the copyright to the information contained in this file: if you think the existence of this file violates your copyright, please complain and the file will be removed.</p><p>
+        Typed in from the original hintbook by Paul David Doherty.</p><p>
+    </p>
+    </div>
+</main>
+</body>
+</html>

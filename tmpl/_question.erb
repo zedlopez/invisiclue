@@ -1,0 +1,8 @@
+    <div class="question indented">
+      <h3><%= question %></h3>
+      <div class="answers">
+      <% answers.each.with_index do |answer,i| %>
+        <details class="answer"><summary><%== ('A'.ord+i).chr %>.</summary><%= answer %></details>
+      <% end %>
+      </div>
+  </div>

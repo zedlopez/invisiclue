@@ -1,672 +1,1050 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><title>Beyond Zork Invisiclues</title>
-<style>* { padding: 0; margin: 0 ; }
-html { font-size: 100%; }
-body { 
-color: #080808; 
-background-color: #FAFAFA;
-color: #0A0A0A;
-width: 41.5rem;
-margin: auto;
-font-size: 100%;
-margin-bottom: 2rem;
-font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-} 
-h1.title { text-align: center; margin-top: 1rem; margin-bottom: 2rem; }
-.other-versions { font-weight: bold; }
-.other-versions > ul { margin-top: 1rem; }
-header { margin: auto; }
-div.ext-table { line-height: 1.5; width: 40rem; margin-bottom: 2rem; }
-a.title { text-decoration-style: dotted; }
-hr.border { border: .05rem solid #333; margin: 1rem .5rem 1rem -1.5rem; }
-div.ext-name {  white-space: nowrap; width: 100%; margin-top: .1rem; font-size: 1.25rem; text-indent: -1.5rem; }
-div.ext-desc { margin-bottom: .5rem; padding-top: .25rem; }
-div.empty-desc { text-align: right; margin-right: .5rem; }
-span.link { font-weight: bold;} 
-span.version { font-size: 1rem; }
-span.limiter { font-style: italic; font-size: 1rem; }
-span.code { font-family: monospace; }
-div.error { margin-left: -1.5rem; }
-h2 { margin-top: 1rem; margin-bottom: 1rem; }
-details { border: .1rem solid black; padding: .5rem; }
-summary { margin: .5rem 0 .5rem 0; }
-p.omission { margin-bottom: .5rem; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
+<p><a href="./index.html">Invisiclues Index</a></p>
 </header>
-  <h1>Beyond Zork Invisiclues</h1>
-      <p>Copyright by Infocom, Inc. Provided for non-commercial use only, with the sole intent of making information available that would otherwise be lost.</p>
-      <p>To whoever presently holds the copyright to the information contained in this file: if you think the existence of this file violates your copyright, please complain and the file will be removed.</p>
-      <p>Typed in from the original hintbook by Graeme Cree (Plundered Hearts) and Paul David Doherty (Beyond Zork).</p>
-<!-- Sample Question -->
-  <h2>Sample Question</h2>
-      <p>There&#039;s a bird nearby with a jewel in its beak. How can I get it?</p>
-        <details><summary>A.</summary>You can&#039;t catch the bird, but you can make it drop the jewel.</details>
-        <details><summary>B.</summary>What do birds like to eat?</details>
-        <details><summary>C.</summary>TAKE THE WORM FROM THE FISHERMAN. If you then DROP THE WORM, the bird</details>
-        <details><summary>D.</summary>will drop the jewel.</details>
-<!-- Table of Contents -->
-  <h2>Table of Contents</h2>
-<ul>
-    <li><a href="#the_wine_cellar">The Wine Cellar</a></li>
-    <li><a href="#the_lighthouse">The Lighthouse</a></li>
-    <li><a href="#the_ethereal_plane_of_atrii">The Ethereal Plane of Atrii</a></li>
-    <li><a href="#accardi-by-the-sea">Accardi-by-the-Sea</a></li>
-    <li><a href="#the_moors">The Moors</a></li>
-    <li><a href="#the_castle">The Castle</a></li>
-    <li><a href="#mizniaport">Mizniaport</a></li>
-    <li><a href="#the_fields_of_frotzen">The Fields of Frotzen</a></li>
-    <li><a href="#froon">Froon</a></li>
-    <li><a href="#gurth">Gurth</a></li>
-    <li><a href="#the_jungles_of_miznia">The Jungles of Miznia</a></li>
-    <li><a href="#thriff">Thriff</a></li>
-    <li><a href="#the_forest">The Forest</a></li>
-    <li><a href="#the_ruins">The Ruins</a></li>
-    <li><a href="#underground">Underground</a></li>
-    <li><a href="#that_which_can_be_named">That Which Can Be Named</a></li>
-    <li><a href="#variable_magic_item_lists">Variable Magic Item Lists</a></li>
-    <li><a href="#treasure_locations_and_values">Treasure Locations and Values</a></li>
-    <li><a href="#for_your_amusement">For Your Amusement</a></li>
-</ul>
-<!-- Grubbo-by-the-Sea -->
-  <h2>Grubbo-by-the-Sea</h2>
-      <p>Why can&#039;t I talk to the old sailor?</p>
-        <details><summary>A.</summary>Perhaps he&#039;s a bit hard of hearing.</details>
-        <details><summary>B.</summary>YELL AT THE SAILOR.</details>
-        <details><summary>C.</summary>Oh, well. You don&#039;t need to talk to him anyway.</details>
-      <p>What&#039;s the significance of the sailor&#039;s painting?</p>
-        <details><summary>A.</summary>You&#039;ll find out, if you live long enough.</details>
-      <p>How do I get the driftwood out of the water?</p>
-        <details><summary>A.</summary>Easy. Just GET THE DRIFTWOOD OUT OF THE WATER.</details>
-      <p>What&#039;s a shillelagh?</p>
-        <details><summary>A.</summary>EXAMINE THE SHILLELAGH.</details>
-        <details><summary>B.</summary>&quot;Shillelagh&quot; is an Irish word for a cudgel.</details>
-        <details><summary>C.</summary>A cudgel is a club for bashing things.</details>
-      <p>A leprechaun stole my shillelagh! How do I get it back?</p>
-        <details><summary>A.</summary>EXAMINE THE RAINBOW. It may hold a clue to the thief&#039;s whereabouts.</details>
-        <details><summary>B.</summary>LOOK UNDER THE POT OF GOLD.</details>
-        <details><summary>C.</summary>Rainbow? Pot of gold?</details>
-        <details><summary>D.</summary>Remember the warning in the introduction! Don&#039;t let the presence or</details>
-        <details><summary>E.</summary>absence of questions influence your play, and don&#039;t assume that long</details>
-        <details><summary>F.</summary>answers are associated with important questions.</details>
-      <p>What&#039;s the significance of the sign outside the tavern?</p>
-        <details><summary>A.</summary>Read the room description again, carefully.</details>
-        <details><summary>B.</summary>Part of the sign is made of a real lantern.</details>
-        <details><summary>C.</summary>TAKE THE LANTERN OFF THE HOOK. You&#039;ll be glad you did.</details>
-      <p>How do I get into the tavern?</p>
-        <details><summary>A.</summary>Just GO INTO THE TAVERN. (Make sure you OPEN THE FRONT DOOR first.)</details>
-      <p>One of the bandits threw a dagger at me! What should I do?</p>
-        <details><summary>A.</summary>Relax. They&#039;re just amusing themselves.</details>
-        <details><summary>B.</summary>Besides, there may be something in it for you.</details>
-        <details><summary>C.</summary>PULL THE DAGGER OUT OF THE WALL. It might come in handy later.</details>
-      <p>Why won&#039;t the cook let me take the giant onion?</p>
-        <details><summary>A.</summary>Why should he? It&#039;s his onion. He may be willing to trade for it,</details>
-        <details><summary>B.</summary>though.</details>
-        <details><summary>C.</summary>ASK THE COOK ABOUT THE GIANT ONION.</details>
-        <details><summary>D.</summary>After you retrieve the wine bottle, GIVE THE BOTTLE TO THE COOK. Now</details>
-        <details><summary>E.</summary>you can ROLL THE ONION in any direction you like.</details>
-      <p>How do I get into the wine cellar?</p>
-        <details><summary>A.</summary>There&#039;s a door leading downward.</details>
-        <details><summary>B.</summary>OPEN THE CELLAR DOOR. GO DOWN THE STAIRS.</details>
-<!-- The Wine Cellar -->
-  <h2 id="the_wine_cellar">The Wine Cellar</h2>
-      <p>The Lore and Legends of Quendor doesn&#039;t say anything about rat-ants! Take heart. The Rat-Ant&#039;s Cookbook says plenty about peasants. Rat-ants, though small, can be quite deadly. Fight back!</p>
-<!-- The Lighthouse -->
-  <h2 id="the_lighthouse">The Lighthouse</h2>
-      <p>What&#039;s the meaning of the inscription on the cliff wall?</p>
-        <details><summary>A.</summary>It&#039;s a riddle.</details>
-        <details><summary>B.</summary>A dictionary might help you find the answer.</details>
-        <details><summary>C.</summary>Forks have tines. &quot;Ere&quot; means &quot;before.&quot; The word &quot;report&quot; has many</details>
-        <details><summary>D.</summary>meanings.</details>
-        <details><summary>E.</summary>Don&#039;t develop the next hint unless you&#039;re really stumped.</details>
-        <details><summary>F.</summary>Type the word LIGHTNING and watch what happens.</details>
-      <p>That giant slug is tough! Anything I can do to improve my odds?</p>
-        <details><summary>A.</summary>You don&#039;t need to defeat the slug to complete the story.</details>
-        <details><summary>B.</summary>Bloodthirsty, eh? Well, if fighting, Magick or running away don&#039;t work,</details>
-        <details><summary>C.</summary>there is an alternative.</details>
-        <details><summary>D.</summary>Chemical warfare.</details>
-        <details><summary>E.</summary>Slugs are notoriously sensitive to a certain common substance.</details>
-        <details><summary>F.</summary>That substance is salt.</details>
-        <details><summary>G.</summary>There&#039;s a patch of brine at the Tidal Flats near the lighthouse.</details>
-        <details><summary>H.</summary>Go to the Tidal Flats and GET SOME SALT. Then return to the lighthouse</details>
-        <details><summary>I.</summary>and HURL THE SALT AT THE GIANT SLUG.</details>
-      <p>How do I get the dust bunny?</p>
-        <details><summary>A.</summary>Just PICK UP THE DUST BUNNY.</details>
-        <details><summary>B.</summary>Prolific, aren&#039;t they?</details>
-        <details><summary>C.</summary>You can&#039;t take any of the dust bunnies. But you&#039;ll have to get rid of</details>
-        <details><summary>D.</summary>them to complete the story.</details>
-      <p>These dust bunnies are driving me nuts! What do I do?</p>
-        <details><summary>A.</summary>Read The Lore and Legends of Quendor.</details>
-        <details><summary>B.</summary>There are no lemon-scented sprays to be found in this story.</details>
-        <details><summary>C.</summary>There is an excellent source of static electricity, though.</details>
-        <details><summary>D.</summary>It&#039;s in the tavern.</details>
-        <details><summary>E.</summary>It&#039;s the bearskin rug lying on the floor.</details>
-        <details><summary>F.</summary>See what happens when you WALK ACROSS THE BEARSKIN RUG.</details>
-        <details><summary>G.</summary>Try touching something after you walk across the rug.</details>
-        <details><summary>H.</summary>Bring the rug to the room with dust bunnies. PUT DOWN THE RUG THEN WALK</details>
-        <details><summary>I.</summary>ACROSS IT. TOUCH A DUST BUNNY.</details>
-        <details><summary>J.</summary>Don&#039;t forget to PICK UP THE RING. You&#039;ll need it later.</details>
-      <p>Is there any way to get rid of the dornbeast?</p>
-        <details><summary>A.</summary>You can fight the dornbeast, but you&#039;re not likely to survive. Only the</details>
-        <details><summary>B.</summary>most powerful Magick can destroy him. That dorn is tough ... but not</details>
-        <details><summary>C.</summary>invulnerable.</details>
-        <details><summary>D.</summary>Read The Lore and Legends of Quendor.</details>
-        <details><summary>E.</summary>Have you studied the illustration of the dornbeast?</details>
-        <details><summary>F.</summary>The dornbeast has 69 sensitive eyes.</details>
-        <details><summary>G.</summary>There&#039;s an object in the game which can wreak havoc on sensitive eyes.</details>
-        <details><summary>H.</summary>It&#039;s in the tavern.</details>
-        <details><summary>I.</summary>It&#039;s the giant onion in the kitchen.</details>
-        <details><summary>J.</summary>Roll the giant onion into the Lamphouse. CUT THE GIANT ONION WITH THE</details>
-        <details><summary>K.</summary>DAGGER (or any other sharp weapon). This will inconvenience the</details>
-        <details><summary>L.</summary>dornbeast long enough for you to GET THE SEA CHEST and scram! (Refer to</details>
-        <details><summary>M.</summary>a previous question if you can&#039;t take the giant onion.)</details>
-        <details><summary>N.</summary>You don&#039;t need to kill the dornbeast, but if you want to get maximum</details>
-        <details><summary>O.</summary>experience in the story (for more endurance) you can repeatedly cut the</details>
-        <details><summary>P.</summary>onion and attack the dornbeast while he&#039;s disabled by the onion.</details>
-        <details><summary>Q.</summary>Alternately, POINT THE WAND (or whatever) OF ANNIHILATION AT THE</details>
-        <details><summary>R.</summary>DORNBEAST.</details>
-      <p>Is there anything in the debris besides the chest?</p>
-        <details><summary>A.</summary>SEARCH THE DEBRIS.</details>
-        <details><summary>B.</summary>The sextant you find is a valuable treasure.</details>
-      <p>How do I open the sea chest?</p>
-        <details><summary>A.</summary>Easy. Just OPEN THE CHEST.</details>
-        <details><summary>B.</summary>Relax. Pay attention to everything the stallion tells you.</details>
-        <details><summary>C.</summary>And don&#039;t open that chest again!</details>
-      <p>What on earth can I do with a vague outline?</p>
-        <details><summary>A.</summary>Nothing... on earth.</details>
-        <details><summary>B.</summary>The old woman at the Magick Shoppe may be able to tell you.</details>
-        <details><summary>C.</summary>Have you brought the outline to another plane of existence?</details>
-        <details><summary>D.</summary>Have you examined the palimpsest?</details>
-        <details><summary>E.</summary>Have you discovered the palimpsest&#039;s Word of Power?</details>
-        <details><summary>F.</summary>While holding the vague outline, speak the Word of Power inscribed upon</details>
-        <details><summary>G.</summary>the palimpsest.</details>
-        <details><summary>H.</summary>Check your inventory. The outline has changed.</details>
-      <p>What is a palimpsest?</p>
-        <details><summary>A.</summary>A palimpsest is a writing surface (in this case, a scroll) which has</details>
-        <details><summary>B.</summary>been erased and reused.</details>
-        <details><summary>C.</summary>The palimpsest is the only scroll in the story which can be reused.</details>
-<!-- The Ethereal Plane of Atrii -->
-  <h2 id="the_ethereal_plane_of_atrii">The Ethereal Plane of Atrii</h2>
-      <p>Where am I?</p>
-        <details><summary>A.</summary>Read The Lore and Legends of Quendor. Look under the entry on</details>
-        <details><summary>B.</summary>Implementors.</details>
-        <details><summary>C.</summary></details>
-        <details><summary>D.</summary>An outline is blocking my path!</details>
-        <details><summary>E.</summary>Whack it with something!</details>
-        <details><summary>F.</summary>Ordinary weapons don&#039;t seem to work here.</details>
-        <details><summary>G.</summary>You need an extraordinary weapon.</details>
-        <details><summary>H.</summary>It&#039;s the vague outline.</details>
-        <details><summary>I.</summary>The outline isn&#039;t so vague on the Plane of Atrii.</details>
-      <p>What are these curtains doing here?</p>
-        <details><summary>A.</summary>Just hanging around.</details>
-        <details><summary>B.</summary>Do they remind you of any other locations in the story?</details>
-        <details><summary>C.</summary>Each of the shops (in Accardi, Mizniaport and Gurth) has a curtain.</details>
-        <details><summary>D.</summary>WALK THROUGH THE CURTAIN. Convenient, eh?</details>
-      <p>Is there anything I can do with the Implementors?</p>
-        <details><summary>A.</summary>Pay attention.</details>
-        <details><summary>B.</summary>Follow orders.</details>
-        <details><summary>C.</summary>Rejoice in your good fortune! Few indeed are those lucky enough to</details>
-        <details><summary>D.</summary>witness an Implementors&#039; Lunch.</details>
-<!-- Accardi-by-the-Sea -->
-  <h2 id="accardi-by-the-sea">Accardi-by-the-Sea</h2>
-      <p>Why aren&#039;t there any price tags in the weapon shop?</p>
-        <details><summary>A.</summary>This is a very exclusive establishment. Its patrons would probably be</details>
-        <details><summary>B.</summary>offended by such crass commercialism.</details>
-        <details><summary>C.</summary>Maybe the old woman behind the counter can help you.</details>
-        <details><summary>D.</summary>You can ASK THE OLD WOMAN ABOUT anything in the display case.</details>
-      <p>Which weapon should I buy?</p>
-        <details><summary>A.</summary>The best you can afford.</details>
-        <details><summary>B.</summary>The old woman doesn&#039;t haggle.</details>
-        <details><summary>C.</summary>Don&#039;t forget to ask the old woman about the scabbard.</details>
-      <p>I only have one zorkmid! Where can I find more?</p>
-        <details><summary>A.</summary>You won&#039;t find any zorkmids lying around. But those other things you&#039;ve</details>
-        <details><summary>B.</summary>been picking up might be worth something.</details>
-        <details><summary>C.</summary>If you think an item may be valuable, SHOW IT TO THE OLD WOMAN to find</details>
-        <details><summary>D.</summary>out how much it&#039;s worth. You can then SELL THE ITEM to beef up your</details>
-        <details><summary>E.</summary>supply of zorkmids.</details>
-        <details><summary>F.</summary>You can also TRADE items you have for items in the display case.</details>
-      <p>How do I get into the Guild Hall?</p>
-        <details><summary>A.</summary>That warning nymph sure is a pest, eh?</details>
-        <details><summary>B.</summary>You can&#039;t get past the warning nymph without help.</details>
-        <details><summary>C.</summary>Stick around for a few moves. Help is on the way.</details>
-        <details><summary>D.</summary>The monkey grinder will squash the nymph for you soon after he appears.</details>
-        <details><summary>E.</summary>Nothing can stop you now (except the monkey grinder).</details>
-        <details><summary>F.</summary>You can fight the monkey grinder, but survival is unlikely. Wands and</details>
-        <details><summary>G.</summary>scrolls aren&#039;t much good against him, either.</details>
-        <details><summary>H.</summary>Read The Lore and Legends of Quendor.</details>
-        <details><summary>I.</summary>Did you notice the statistic regarding the literacy rate of monkey</details>
-        <details><summary>J.</summary>grinders?</details>
-        <details><summary>K.</summary>There is an object in the story that could be dangerous to someone who</details>
-        <details><summary>L.</summary>can&#039;t read.</details>
-        <details><summary>M.</summary>It&#039;s in the lighthouse.</details>
-        <details><summary>N.</summary>Have you noticed the warning plaque on the sea chest?</details>
-        <details><summary>O.</summary>GIVE THE SEA CHEST TO THE MONKEY GRINDER after he squashes the warning</details>
-        <details><summary>P.</summary>nymph. Now you can WALK INTO THE GUILD HALL.</details>
-      <p>What can I do with the hurdy-gurdy?</p>
-        <details><summary>A.</summary>EXAMINE THE HURDY-GURDY and its various parts before you experiment.</details>
-        <details><summary>B.</summary>You can turn the crank to the left or right.</details>
-        <details><summary>C.</summary>Try closing the hurdy-gurdy before turning the crank.</details>
-        <details><summary>D.</summary>Try pointing the dial at different pictures before turning the crank.</details>
-        <details><summary>E.</summary>Try putting things into the hurdy-gurdy before you close it and turn</details>
-        <details><summary>F.</summary>the crank.</details>
-<!-- The Moors -->
-  <h2 id="the_moors">The Moors</h2>
-      <p>Help! An eldritch vapor is stealing my possessions! The vapor won&#039;t steal anything that you wield or wear. Whack it a few times with a good weapon. It&#039;ll go away. Once you&#039;ve gotten rid of the vapor, look around. You&#039;ll find your stolen possessions in the moors, scattered but intact.</p>
-<!-- The Castle -->
-  <h2 id="the_castle">The Castle</h2>
-      <p>What&#039;s the Magick password that will lower the drawbridge?</p>
-        <details><summary>A.</summary>Ask the pelican.</details>
-        <details><summary>B.</summary>Insist.</details>
-        <details><summary>C.</summary>CUT OFF THE PELICAN&#039;S HEAD. That&#039;ll teach him to listen!</details>
-        <details><summary>D.</summary>Password? Drawbridge? Pelican? This isn&#039;t Wishbringer.</details>
-        <details><summary>E.</summary></details>
-        <details><summary>F.</summary>Help! I keep getting caught by the Queen!</details>
-        <details><summary>G.</summary>She&#039;s likely to catch anybody she sees.</details>
-        <details><summary>H.</summary>If she couldn&#039;t see you, she might not catch you.</details>
-        <details><summary>I.</summary>Find a place to hide.</details>
-        <details><summary>J.</summary>HIDE BEHIND THE BUSH and keep quiet! She&#039;ll go away eventually.</details>
-      <p>Is the morgia bush good for anything?</p>
-        <details><summary>A.</summary>You can hide in it. Ouch! (See previous question.)</details>
-        <details><summary>B.</summary>Read The Lore and Legends of Quendor.</details>
-        <details><summary>C.</summary>Morgia root increases your strength. Try it. You&#039;ll like It.</details>
-      <p>How do I get the jar?</p>
-        <details><summary>A.</summary>The same way the Queen did.</details>
-        <details><summary>B.</summary>Wait for the Queen to leave. GET OUT OF THE BUSH. OPEN THE STATUE.</details>
-      <p>How do I get out of the castle?</p>
-        <details><summary>A.</summary>The same way you got there.</details>
-        <details><summary>B.</summary>BLOW THE WHISTLE.</details>
-<!-- Mizniaport -->
-  <h2 id="mizniaport">Mizniaport</h2>
-      <p>Haven&#039;t I seen this old woman somewhere before?</p>
-        <details><summary>A.</summary>Perhaps, if you&#039;ve visited another store previously.</details>
-        <details><summary>B.</summary>EXAMINE THE OLD WOMAN. How curious.</details>
-      <p>How do I buy things in the boutique?</p>
-        <details><summary>A.</summary>The same way you buy things everywhere else.</details>
-        <details><summary>B.</summary>Refer to the questions about the weapon shop for more help.</details>
-      <p>Which armor should I buy?</p>
-        <details><summary>A.</summary>The best you can afford.</details>
-        <details><summary>B.</summary>One item has an unusual description.</details>
-        <details><summary>C.</summary>EXAMINE THE CLOAK.</details>
-        <details><summary>D.</summary>If you can afford it, BUY THE CLOAK and bring it to the Magick Shoppe</details>
-        <details><summary>E.</summary>in Gurth City. ASK THE OLD WOMAN ABOUT THE CLOAK.</details>
-      <p>Do I need the horseshoe?</p>
-        <details><summary>A.</summary>Yes.</details>
-        <details><summary>B.</summary>PICK UP THE HORSESHOE. It&#039;ll come in handy later.</details>
-        <details><summary>C.</summary></details>
-        <details><summary>D.</summary>How do I shoe the unicorn? I can&#039;t find any nails!</details>
-        <details><summary>E.</summary>There are no nails to be found. Use the red-hot spikes instead.</details>
-        <details><summary>F.</summary>There aren&#039;t any red-hot spikes, either.</details>
-        <details><summary>G.</summary>You don&#039;t need to shoe the unicorn.</details>
-        <details><summary>H.</summary></details>
-        <details><summary>I.</summary>I can&#039;t reach the saddle!</details>
-        <details><summary>J.</summary>There are two ways to get the saddle. Both require Magick.</details>
-        <details><summary>K.</summary>One way is to obtain a Wand of Levitation. If you find the wand, POINT</details>
-        <details><summary>L.</summary>IT AT THE SADDLE. Then PICK UP THE SADDLE.</details>
-        <details><summary>M.</summary>The other way is more violent (and fun).</details>
-        <details><summary>N.</summary>It involves the amulet.</details>
-        <details><summary>O.</summary>PUT ON THE AMULET and speak its Word of Power. Your increased strength</details>
-        <details><summary>P.</summary>will allow you to BREAK DOWN THE STALL. Then you can GO INTO THE STALL</details>
-        <details><summary>Q.</summary>and PICK UP THE SADDLE.</details>
-      <p>That unicorn sure looks sad. Isn&#039;t there anything I can do for her?</p>
-        <details><summary>A.</summary>She probably doesn&#039;t enjoy being cooped up like that.</details>
-        <details><summary>B.</summary>There are three (count &#039;em, three!) ways to free the unicorn. All</details>
-        <details><summary>C.</summary>require the use of Magick.</details>
-        <details><summary>D.</summary>The first two solutions are the same ones you can use to obtain the</details>
-        <details><summary>E.</summary>saddle. Refer to the previous question for clues.</details>
-        <details><summary>F.</summary>The third solution involves an object found in the lighthouse.</details>
-        <details><summary>G.</summary>It&#039;s the sea chest.</details>
-        <details><summary>H.</summary>Have you tried to OPEN THE SEA CHEST? (Don&#039;t do it more than once.)</details>
-        <details><summary>I.</summary>The Lore and Legends of Quendor has something to say about unicorns.</details>
-        <details><summary>J.</summary>SHOW THE SEA CHEST TO THE UNICORN. Note her reaction.</details>
-        <details><summary>K.</summary>GIVE THE SEA CHEST TO THE UNICORN.</details>
-<!-- The Fields of Frotzen -->
-  <h2 id="the_fields_of_frotzen">The Fields of Frotzen</h2>
-      <p>How do I get past the lightning at Edge of Storms?</p>
-        <details><summary>A.</summary>Somebody above the clouds doesn&#039;t like you.</details>
-        <details><summary>B.</summary>The Implementors dwell above the clouds. You should pay them a visit.</details>
-        <details><summary>C.</summary>You need to have read the palimpsest in order to continue.</details>
-        <details><summary>D.</summary>Listen to what the mild-mannered Implementor says when he offers you</details>
-        <details><summary>E.</summary>the goblet?</details>
-        <details><summary>F.</summary>You can go west from Edge of Storms (or east from Intersection) as long</details>
-        <details><summary>G.</summary>as you&#039;re holding the Implementors&#039; goblet.</details>
-      <p>How do I catch the butterfly?</p>
-        <details><summary>A.</summary>You need a lure.</details>
-        <details><summary>B.</summary>Insects are attracted to sweet things.</details>
-        <details><summary>C.</summary>You&#039;ll find something sweet on the Ethereal Plane of Atrii.</details>
-        <details><summary>D.</summary>There&#039;s a sweet, sticky coating inside the goblet.</details>
-        <details><summary>E.</summary>Just bring the goblet to the butterfly&#039;s vicinity and WAIT. It won&#039;t</details>
-        <details><summary>F.</summary>take long for her to find the sweet coating.</details>
-      <p>Is there any way to get a scarecrow?</p>
-        <details><summary>A.</summary>No. You don&#039;t need to move any scarecrows to complete the story.</details>
-      <p>What do I do with the scarecrows?</p>
-        <details><summary>A.</summary>EXAMINE each one of them.</details>
-        <details><summary>B.</summary>One of the scarecrows is not like the others.</details>
-        <details><summary>C.</summary>Only one of the scarecrows seems to be doing its job.</details>
-        <details><summary>D.</summary>Something about the &quot;good&quot; scarecrow is fending off the corbies.</details>
-        <details><summary>E.</summary>The corbies see something about the &quot;good&quot; scarecrow that you don&#039;t.</details>
-        <details><summary>F.</summary>Read The Lore and Legends of Quendor.</details>
-        <details><summary>G.</summary>Your color vision is muted while you&#039;re in the Fields of Frotzen.</details>
-        <details><summary>H.</summary>There is an object in the story that enhances colors.</details>
-        <details><summary>I.</summary>It&#039;s the hurdy-gurdy.</details>
-        <details><summary>J.</summary>Bring the hurdy-gurdy to one of the scarecrows. CLOSE THE HURDY-GURDY.</details>
-        <details><summary>K.</summary>POINT THE DIAL AT THE PICTURE OF AN EYE. TURN THE CRANK TO THE RIGHT.</details>
-        <details><summary>L.</summary>You can now discern the color of the rags on each scarecrow.</details>
-        <details><summary>M.</summary>The corbies don&#039;t like the color of the &quot;good&quot; scarecrow. You can use</details>
-        <details><summary>N.</summary>this information to your advantage later.</details>
-      <p>How do I get by the corbies blocking off part of the fields?</p>
-        <details><summary>A.</summary>You can&#039;t fight your way through. There are too many.</details>
-        <details><summary>B.</summary>Have you noticed the scarecrows scattered around the fields?</details>
-        <details><summary>C.</summary>Have you determined the significance of the scarecrows? If not, refer</details>
-        <details><summary>D.</summary>to the question about the scarecrows before going any further.</details>
-        <details><summary>E.</summary>If you had something of the correct color, the corbies would let you</details>
-        <details><summary>F.</summary>by.</details>
-        <details><summary>G.</summary>See the question about the farmhouse and the section about Froon.</details>
-      <p>Where&#039;d this farmhouse come from?</p>
-        <details><summary>A.</summary>Wait around outside until a storm starts brewing.</details>
-        <details><summary>B.</summary>Maybe the answer is inside, safe from the storm.</details>
-        <details><summary>C.</summary>GO INTO THE FARMHOUSE. WAIT. Happy landings.</details>
-<!-- Froon -->
-  <h2 id="froon">Froon</h2>
-      <p>How do I polish the giant boot?</p>
-        <details><summary>A.</summary>With the giant rag...</details>
-        <details><summary>B.</summary>that&#039;s in the giant bag...</details>
-        <details><summary>C.</summary>held by the giant hag.</details>
-        <details><summary>D.</summary>ASK THE GIANT HAG FOR THE GIANT RAG IN THE GIANT BAG.</details>
-        <details><summary>E.</summary>Rag? Hag? Bag? You don&#039;t need to polish the giant boot.</details>
-      <p>Nothing is happening here in Froon. What do I do?</p>
-        <details><summary>A.</summary>LOOK UNDER THE HOUSE.</details>
-        <details><summary>B.</summary>EXAMINE THE FLOWERS.</details>
-        <details><summary>C.</summary>That&#039;s not a flower! That&#039;s an inhabitant of Froon.</details>
-        <details><summary>D.</summary>Wait for the mayor to show up.</details>
-      <p>Does it matter which key I take?</p>
-        <details><summary>A.</summary>Only if you want to finish the story.</details>
-        <details><summary>B.</summary>Do any of the colors look familiar?</details>
-        <details><summary>C.</summary>The scarecrows in the Fields of Frotzen are dressed in the same colors</details>
-        <details><summary>D.</summary>as the three keys.</details>
-        <details><summary>E.</summary>Only one of the scarecrows fends off the corbies.</details>
-        <details><summary>F.</summary>The corbies stay away from it because they don&#039;t like that color.</details>
-        <details><summary>G.</summary>Take the key that corresponds to the color of the &quot;good&quot; scarecrow.</details>
-        <details><summary>H.</summary>Now you can fend off corbies, too!</details>
-<!-- Gurth -->
-  <h2 id="gurth">Gurth</h2>
-      <p>The street hawker dropped something! Oh, well. She&#039;s gone now. PICK UP THE FISH CAKE. Quickly!</p>
-      <p>This old woman looks awfully familiar. She may indeed, if you&#039;ve visited another store previously.</p>
-<!-- The Jungles of Miznia -->
-  <h2 id="the_jungles_of_miznia">The Jungles of Miznia</h2>
-      <p>How do I get into the gondola?</p>
-        <details><summary>A.</summary>Just GET INTO THE GONDOLA.</details>
-        <details><summary>B.</summary>It helps if you wait for the conductor to say &quot;All aboard.&quot;</details>
-      <p>Are the support towers good for anything?</p>
-        <details><summary>A.</summary>Of course. They hold up the gondola. They&#039;re also a convenient way to</details>
-        <details><summary>B.</summary>visit the jungle.</details>
-        <details><summary>C.</summary>Read the room description carefully as you pass one of the towers.</details>
-        <details><summary>D.</summary>There&#039;s a maintenance platform near the top of each tower.</details>
-        <details><summary>E.</summary>JUMP ONTO THE PLATFORM as your gondola passes by one of the towers. Now</details>
-        <details><summary>F.</summary>you can CLIMB DOWN A LADDER and visit the jungle.</details>
-      <p>What can I do with the mossy rock?</p>
-        <details><summary>A.</summary>The question is, what will the mossy rock do with you?</details>
-        <details><summary>B.</summary>It&#039;s not really a mossy rock. It&#039;s a bloodworm!</details>
-        <details><summary>C.</summary>It&#039;s clobberin&#039; time!</details>
-      <p>It&#039;s completely dark! What happened?</p>
-        <details><summary>A.</summary>Looks like you&#039;ve fallen into the idol. Hope you brought your lantern.</details>
-      <p>Is there any light source besides the lantern?</p>
-        <details><summary>A.</summary>Yes. One magic item produces a very brief glow of light.</details>
-        <details><summary>B.</summary>It&#039;s the amulet.</details>
-        <details><summary>C.</summary>PUT ON THE AMULET and speak its Word of Power. The glowing star will</details>
-        <details><summary>D.</summary>provide two moves&#039; worth of illumination.</details>
-      <p>Is there anything to do inside the idol?</p>
-        <details><summary>A.</summary>Reread the room description.</details>
-        <details><summary>B.</summary>Read The Lore and Legends of Quendor.</details>
-        <details><summary>C.</summary>The moss on the walls should look familiar.</details>
-        <details><summary>D.</summary>It&#039;s Moss of Mareilon. Use it to boost your dexterity. It can&#039;t hurt.</details>
-      <p>Why can&#039;t I see the secret door in the idol?</p>
-        <details><summary>A.</summary>It&#039;s an awfully good secret.</details>
-        <details><summary>B.</summary>So secret that it doesn&#039;t even exist.</details>
-        <details><summary>C.</summary>Sorry. There is no secret door.</details>
-      <p>How do I get back outside of the idol?</p>
-        <details><summary>A.</summary>There are no less than four ways to escape from the idol. All of them</details>
-        <details><summary>B.</summary>involve Magick.</details>
-        <details><summary>C.</summary>One of the ways involves a wand.</details>
-        <details><summary>D.</summary>The Wand of Eversion will do the trick.</details>
-        <details><summary>E.</summary>&quot;Eversion&quot; means &quot;inside out.&quot;</details>
-        <details><summary>F.</summary>POINT THE WAND OF EVERSION AT THE IDOL. You&#039;re free!</details>
-        <details><summary>G.</summary>The other three ways are the same as getting out of the cellar. Just</details>
-        <details><summary>H.</summary>develop the last three clues pertaining to escaping from the Cellar.</details>
-        <details><summary>I.</summary></details>
-        <details><summary>J.</summary>I can see the Crocodile&#039;s Tear, but I can&#039;t reach it without falling into</details>
-        <details><summary>K.</summary>the idol! This is driving me crazy!</details>
-        <details><summary>L.</summary>The idol&#039;s maw is like a seesaw.</details>
-        <details><summary>M.</summary>You need something heavier than you to hold down the bottom end.</details>
-        <details><summary>N.</summary>One of your jungle friends may be able to help.</details>
-        <details><summary>O.</summary>How about the mother hungus?</details>
-        <details><summary>P.</summary>You have to get the mother hungus to follow you.</details>
-        <details><summary>Q.</summary>Read The Lore and Legends of Quendor.</details>
-        <details><summary>R.</summary>If you threaten the baby hungus, his mother will chase you through the</details>
-        <details><summary>S.</summary>jungle!</details>
-        <details><summary>T.</summary>The hungus is slow. Give her time to catch up. If you&#039;re wearing the</details>
-        <details><summary>U.</summary>cloak, take it off... it makes it harder for her to follow you.</details>
-        <details><summary>V.</summary>Lead the mother hungus to the idol. GET INTO THE MAW. The mother will</details>
-        <details><summary>W.</summary>climb up onto the bottom edge. Now you can climb up and GET THE JEWEL.</details>
-        <details><summary>X.</summary>Sort of.</details>
-      <p>I lost the jewel! How do I get it back?</p>
-        <details><summary>A.</summary>A great, big bottle of laxative might work.</details>
-        <details><summary>B.</summary>Unfortunately, there&#039;s no laxative to be found. Try something else.</details>
-        <details><summary>C.</summary>There&#039;s a wand that can help.</details>
-        <details><summary>D.</summary>It&#039;s the Wand of Eversion.</details>
-        <details><summary>E.</summary>&quot;Eversion&quot; means &quot;inside out.&quot;</details>
-        <details><summary>F.</summary>POINT THE WAND OF EVERSION AT THE MOTHER HUNGUS.</details>
-      <p>Poor widdle baby hungus! Is there any way to rescue him?</p>
-        <details><summary>A.</summary>Yes. (Sniff.)</details>
-        <details><summary>B.</summary>To rescue the baby, you must obtain a Wand of Levitation. This can be</details>
-        <details><summary>C.</summary>tricky, as the wand&#039;s location varies from game to game.</details>
-        <details><summary>D.</summary>When you find the wand, POINT IT AT THE BABY HUNGUS.</details>
-        <details><summary>E.</summary>But don&#039;t free the baby before you get the Crocodile&#039;s Tear! Otherwise,</details>
-        <details><summary>F.</summary>you won&#039;t be able to complete the story.</details>
-      <p>What can I do at the waterfall?</p>
-        <details><summary>A.</summary>Nothing. It&#039;s just scenery.</details>
-<!-- Thriff -->
-  <h2 id="thriff">Thriff</h2>
-      <p>How do I stop the hunter from finding the minx?</p>
-        <details><summary>A.</summary>He might not find her if he didn&#039;t know where to look.</details>
-        <details><summary>B.</summary>He&#039;s following her footprints in the snow.</details>
-        <details><summary>C.</summary>Quick! RUB OUT THE FOOTPRINTS before the hunter arrives.</details>
-      <p>Where do I find chocolate truffles?</p>
-        <details><summary>A.</summary>Read The Lore and Legends of Quendor.</details>
-        <details><summary>B.</summary>They&#039;re not easy to find without help.</details>
-        <details><summary>C.</summary>One of the creatures in Lore and Legends can help you.</details>
-        <details><summary>D.</summary>Bring the minx to an oak tree and put her down. WAIT.</details>
-        <details><summary>E.</summary>PICK UP THE CHOCOLATE TRUFFLE before she eats it herself!</details>
-        <details><summary>F.</summary>And don&#039;t leave the truffle anywhere she can get her paws on it.</details>
-      <p>Those truffles don&#039;t last very long, do they?</p>
-        <details><summary>A.</summary>Nope. The Lore and Legends of Quendor says so.</details>
-        <details><summary>B.</summary>There is a way to keep truffles fresh.</details>
-        <details><summary>C.</summary>The clock setting on the hurdy-gurdy will renew the truffles when you</details>
-        <details><summary>D.</summary>turn the crank to the left (if the truffle is inside).</details>
-        <details><summary>E.</summary>However, they&#039;ll start decaying again right away.</details>
-        <details><summary>F.</summary>There&#039;s a way to keep them eternally fresh.</details>
-        <details><summary>G.</summary>Don&#039;t continue unless you&#039;ve visited the forest north of Gurth.</details>
-        <details><summary>H.</summary>Have you answered the riddle on the boulder?</details>
-        <details><summary>I.</summary>Remember what the hollow voice says when you answer the riddle.</details>
-        <details><summary>J.</summary>DROP THE CHOCOLATE TRUFFLE INTO THE POOL. Or, WALK INTO THE POOL while</details>
-        <details><summary>K.</summary>holding a truffle. It will now remain fresh forever.</details>
-      <p>Can I do anything at the Rock Wall?</p>
-        <details><summary>A.</summary>Definitely. But only if you have a gray sphere. Refer to the</details>
-        <details><summary>B.</summary>appropriate question for details.</details>
-      <p>Is there anything I can do in the Chapel?</p>
-        <details><summary>A.</summary>Be quiet and pay attention.</details>
-        <details><summary>B.</summary>SIT DOWN ON THE PEW. Cardinal Toolbox is rather long-winded.</details>
-        <details><summary>C.</summary>LOOK UNDER THE PEW. Surprise!</details>
-      <p>How do I get the reliquary?</p>
-        <details><summary>A.</summary>You have to earn it.</details>
-        <details><summary>B.</summary>Listen to the Cardinal&#039;s sermon. There may be an opportunity here.</details>
-        <details><summary>C.</summary>If you save Thriff from the Christmas tree monsters, &quot;anything you ask</details>
-        <details><summary>D.</summary>will be your reward.&quot;</details>
-        <details><summary>E.</summary>Including the reliquary.</details>
-        <details><summary>F.</summary>After you thwart the Christmas tree monsters, find the Cardinal. ASK</details>
-        <details><summary>G.</summary>THE CARDINAL FOR THE RELIQUARY.</details>
-      <p>What is the glyph in the snowy clearing?</p>
-        <details><summary>A.</summary>Listen to Cardinal Toolbox in the chapel.</details>
-        <details><summary>B.</summary>It&#039;s a Glyph of Warding, left by Orkan. It prevents the Christmas tree</details>
-        <details><summary>C.</summary>monsters from entering the village.</details>
-        <details><summary>D.</summary></details>
-        <details><summary>E.</summary>The Christmas tree monsters won&#039;t let me past!</details>
-        <details><summary>F.</summary>They wouldn&#039;t be very good monsters if they did, would they?</details>
-        <details><summary>G.</summary>The Lore and Legends of Quendor is full of useful facts.</details>
-        <details><summary>H.</summary>You need a caterpillar. (See next question.)</details>
-        <details><summary>I.</summary>Once you&#039;ve got a caterpillar, show it to the Christmas tree monsters.</details>
-        <details><summary>J.</summary>Then you&#039;ll be able to get by them.</details>
-      <p>Where do I find a caterpillar?</p>
-        <details><summary>A.</summary>Where do caterpillars come from?</details>
-        <details><summary>B.</summary>More precisely, what comes from caterpillars?</details>
-        <details><summary>C.</summary>Butterflies!</details>
-        <details><summary>D.</summary>You need to first get the butterfly from the Fields of Frotzen.</details>
-        <details><summary>E.</summary>Now you need to turn back the clock on the butterfly.</details>
-        <details><summary>F.</summary>The clock on the hurdy-gurdy that is.</details>
-        <details><summary>G.</summary>PUT THE GOBLET (along with the butterfly) IN THE GURDY. CLOSE THE</details>
-        <details><summary>H.</summary>GURDY. TURN THE DIAL TO THE CLOCK. TURN THE CRANK TO THE LEFT. OPEN THE</details>
-        <details><summary>I.</summary>GURDY. Abracadabra ... Poof! A caterpillar.</details>
-      <p>Is the leaflet useful for anything?</p>
-        <details><summary>A.</summary>READ THE LEAFLET.</details>
-        <details><summary>B.</summary>OPEN THE PARCEL.</details>
-      <p>What do I do with the little black book?</p>
-        <details><summary>A.</summary>READ IT. Some of the information in it will prove useful.</details>
-      <p>How did that dome get on top of the mountain?</p>
-        <details><summary>A.</summary>Somebody who knows a lot about Magick left it there.</details>
-        <details><summary>B.</summary>Read the little black book in the Laboratory.</details>
-        <details><summary>C.</summary>Did you LOOK UNDER THE DOME yet?</details>
-        <details><summary>D.</summary>Orkan cast a yonked girgol spell on the lava to keep it from erupting.</details>
-      <p>How do I stop the glyph from melting with the snow?</p>
-        <details><summary>A.</summary>You can&#039;t. You must find some other way to thwart the Christmas tree</details>
-        <details><summary>B.</summary>monsters.</details>
-      <p>How do I thwart the Christmas tree monsters?</p>
-        <details><summary>A.</summary>That Glyph of Warding seems to work just fine. But it&#039;s going to melt</details>
-        <details><summary>B.</summary>sooner or later. You must inscribe a more permanent Glyph.</details>
-        <details><summary>C.</summary>LOOK UNDER THE DOME at the Mountain Peak.</details>
-        <details><summary>D.</summary>You need to free that lava from Orkan&#039;s spell.</details>
-        <details><summary>E.</summary>There is a Magick item that neutralizes Magick.</details>
-        <details><summary>F.</summary>It&#039;s the Dispel Wand.</details>
-        <details><summary>G.</summary>POINT THE DISPEL WAND AT THE DOME.</details>
-        <details><summary>H.</summary>Run! The lava will bury you if you don&#039;t get out of its path!</details>
-        <details><summary>I.</summary></details>
-        <details><summary>J.</summary>I buried the Christmas trees, but they still trample the village!</details>
-        <details><summary>K.</summary>Obviously you didn&#039;t destroy all of the trees.</details>
-        <details><summary>L.</summary>The trees aren&#039;t the only things you destroyed in the Snowy Clearing.</details>
-        <details><summary>M.</summary>You also melted the Glyph of Warding.</details>
-        <details><summary>N.</summary>You need to inscribe another Glyph before the lava cools and the</details>
-        <details><summary>O.</summary>surviving trees trample the village.</details>
-        <details><summary>P.</summary></details>
-        <details><summary>Q.</summary>I can&#039;t return to the clearing! It&#039;s too hot!</details>
-        <details><summary>R.</summary>If you wait for the lava to cool, then it&#039;s too late. You need Magick</details>
-        <details><summary>S.</summary>help to survive that heat.</details>
-        <details><summary>T.</summary>There is a Magick item that will help you resist heat.</details>
-        <details><summary>U.</summary>It&#039;s found on the third level of the lighthouse.</details>
-        <details><summary>V.</summary>It&#039;s the dust bunny.</details>
-        <details><summary>W.</summary>When you defeat the dust bunnies, they coalesce into a ring. Take that</details>
-        <details><summary>X.</summary>ring to the Magick Shoppe and SHOW IT TO THE OLD WOMAN.</details>
-        <details><summary>Y.</summary>PUT ON THE RING. Now you can walk onto the hot lava safely.</details>
-      <p>I made it to the Lava Flow! Now what?</p>
-        <details><summary>A.</summary>The lava underfoot is still soft.</details>
-        <details><summary>B.</summary>It&#039;s an ideal drawing medium.</details>
-        <details><summary>C.</summary>INSCRIBE A GLYPH ON THE GROUND. When the lava cools, you&#039;ll have a</details>
-        <details><summary>D.</summary>Glyph of Warding permanently etched into the rock.</details>
-      <p>What tool do I need to inscribe a glyph?</p>
-        <details><summary>A.</summary>Read the black book from the Laboratory.</details>
-        <details><summary>B.</summary>Did you look inside the mailbox outside the Laboratory?</details>
-        <details><summary>C.</summary>Did you read the leaflet and open the parcel?</details>
-        <details><summary>D.</summary>You need the burin to inscribe a glyph. (As in _Spellbreaker_.)</details>
-        <details><summary>E.</summary></details>
-        <details><summary>F.</summary>Where can I study glyphs? I don&#039;t know which one to inscribe!</details>
-        <details><summary>G.</summary>There&#039;s one you can study in the Snowy Clearing.</details>
-        <details><summary>H.</summary>There&#039;s another one in the little black book.</details>
-        <details><summary>I.</summary>Just examining either one is enough.</details>
-      <p>Is the thing in the reliquary useful?</p>
-        <details><summary>A.</summary>Not by itself. Does it remind you of something you found somewhere</details>
-        <details><summary>B.</summary>else?</details>
-        <details><summary>C.</summary>Something in the Laboratory on the workbench?</details>
-        <details><summary>D.</summary>The black hemisphere. EXAMINE THE BLACK HEMISPHERE.</details>
-        <details><summary>E.</summary>EXAMINE THE WHITE HEMISPHERE.</details>
-        <details><summary>F.</summary>The peg and the hole go together.</details>
-        <details><summary>G.</summary>PUT THE PEG INTO THE HOLE.</details>
-      <p>What can I do with the gray sphere?</p>
-        <details><summary>A.</summary>EXAMINE THE GRAY SPHERE.</details>
-        <details><summary>B.</summary>PEER INTO THE GRAY SPHERE.</details>
-        <details><summary>C.</summary>You need something to make the swirls more intelligible.</details>
-        <details><summary>D.</summary>You need more intelligence.</details>
-        <details><summary>E.</summary>Unless you started with a super-intelligent character, you must find</details>
-        <details><summary>F.</summary>ways to boost your intelligence.</details>
-        <details><summary>G.</summary>A fish cake will help, but it&#039;s probably not enough.</details>
-        <details><summary>H.</summary>The Enlightenment potion will help, but it&#039;s probably not enough.</details>
-        <details><summary>I.</summary>There&#039;s one more thing you can do that will boost your intelligence.</details>
-        <details><summary>J.</summary>Did you ever listen to the bandits in the Rusty Lantern?</details>
-        <details><summary>K.</summary>You need to obtain the item that they are talking about.</details>
-        <details><summary>L.</summary>It&#039;s a helmet. Stop reading these hints until you get it.</details>
-        <details><summary>M.</summary>PUT ON THE HELMET. Your intelligence goes up!</details>
-        <details><summary>N.</summary>If you&#039;ve done all three thing [sic] to boost your intelligence, now</details>
-        <details><summary>O.</summary>you can PEER INTO THE GRAY SPHERE.</details>
-        <details><summary>P.</summary>One of the visions holds an important clue.</details>
-        <details><summary>Q.</summary>While standing at either the Shady Wall (southwest of Gurth) or the</details>
-        <details><summary>R.</summary>Rock Wall (northwest of Thriff), repeat the Word of Power uttered by</details>
-        <details><summary>S.</summary>the warlock you saw in the vision.</details>
-        <details><summary>T.</summary>PUSH THE OUTLINE, like the warlock did.</details>
-<!-- The Forest -->
-  <h2 id="the_forest">The Forest</h2>
-      <p>What does the inscription on the boulder mean?</p>
-        <details><summary>A.</summary>It&#039;s a riddle.</details>
-        <details><summary>B.</summary>Don&#039;t develop the next hint unless you&#039;re really stumped.</details>
-        <details><summary>C.</summary>Type the word YOUTH and watch what happens.</details>
-      <p>How do I get across the bridge?</p>
-        <details><summary>A.</summary>You can&#039;t. Ever. Really. You cannot reach the far side of the bridge by</details>
-        <details><summary>B.</summary>walking across.</details>
-        <details><summary>C.</summary>There is a way to get off the bridge. Five ways, in fact. Four involve</details>
-        <details><summary>D.</summary>Magick.</details>
-        <details><summary>E.</summary>The non-Magick way involves the item you found on the bridge.</details>
-        <details><summary>F.</summary>It&#039;s the umbrella.</details>
-        <details><summary>G.</summary>GET THE UMBRELLA THEN OPEN IT. JUMP.</details>
-        <details><summary>H.</summary>Three more ways are the same as those for getting out of the cellar.</details>
-        <details><summary>I.</summary>Just develop the last three clues pertaining to escaping from the</details>
-        <details><summary>J.</summary>Cellar.</details>
-        <details><summary>K.</summary>The pterodactyl may also be able to help you if you&#039;ve helped him.</details>
-        <details><summary>L.</summary>BLOW THE WHISTLE. If you&#039;ve saddled the pterodactyl and have not used</details>
-        <details><summary>M.</summary>up your three summons, CLIMB ON THE PTERODACTYL and FLY.</details>
-<!-- The Ruins -->
-  <h2 id="the_ruins">The Ruins</h2>
-      <p>Help! I can&#039;t kill the undead warrior! Of course not. He&#039;s not really alive. If weapons don&#039;t work, perhaps Magick will. There is a Magick item that can deal with undead creatures. THROW THE VIAL OF HOLY WATER AT THE UNDEAD WARRIOR.</p>
-<!-- Underground -->
-  <h2 id="underground">Underground</h2>
-      <p>How do I see underground? It&#039;s dark. You need a source of light. The lantern, perhaps? Perhaps not. If you&#039;ve been to the castle, reflect on the problem for a while. If not, you need to get there before continuing. Experiment with the jar. And with the mirrors. Reread the description for the Rock Wall room carefully. Blow a bubble mirror just inside the Rock Wall. The mirrors rotate, as if they were on pivots. From the secret doorway at Rock Wall: GO INSIDE. OPEN THE JAR. TAKE THE CIRCLET. BLOW A BUBBLE. TURN THE MIRROR TO THE SOUTH. Using a series of mirrors, you can reflect sunlight into any one of the Underground passageways.</p>
-<!-- That Which Can be Named -->
-  <h2>That Which Can be Named</h2>
-      <p>Weapons Dagger, Shillelagh, Spade, Battle-axe, Longsword, Vague Outline/Phase Blade</p>
-      <p>Animals Pterodactyl, Minx, Butterfly/Caterpillar</p>
-<!-- Variable Magic Items Lists -->
-  <h2>Variable Magic Items Lists</h2>
-      <p>Wands Anethesia [sic], Annihilation, Dispel, Eversion, Levitation, Sayonara</p>
-      <p>Scrolls Fireworks, Gating, Honing, Mischief, Protection, Refreshment</p>
-      <p>Potions Death, Enlightenment, Forgetfulness, Healing, Might</p>
-<!-- Treasure Locations and Values -->
-  <h2 id="treasure_locations_and_values">Treasure Locations and Values</h2>
-      <p>(Note -- Magick items can also be resold for zorkmids.)</p>
-      <p>Treasure               Location                Value</p>
-      <p>Silver Ornament        Christmas Trees            2 Truffles (3)           Under Oak Trees            5 Gold Doubloon          Crab&#039;s Nest               10 Tiny Crown             On the Crab               20 Bubble Gum Card        2nd Floor Lighthouse      30 Sextant                Lamphouse                 30 Ivory Tusk             Jungle                    40 Diamond                Snow Wight                50 Crocodile&#039;s Tear       Idol                    1000</p>
-<!-- For Your Amusement -->
-  <h2 id="for_your_amusement">For Your Amusement</h2>
-      <p>Have you tried...</p>
-      <p></p>
-      <p>asking the old woman (each one) about almost anything?</p>
-      <p>asking the cook about himself?</p>
-      <p>pointing the Sayonara wand at the snow wight?</p>
-      <p>insulting the cruel puppet?</p>
-      <p>pointing the Levitation wand at the reliquary?</p>
-      <p>touching people after crossing the bear rug?</p>
-      <p>opening the umbrella while flying on the pterodactyl?</p>
-      <p>opening the umbrella indoors?</p>
-      <p>eating a truffle in front of the minx?</p>
-      <p>selling a truffle to the old woman?</p>
-      <p>tasting the sticky coating in the goblet?</p>
-      <p>opening the chest a second time?</p>
-      <p>turning the crank on the hurdy-gurdy (12 possibilities) near the old</p>
-      <p>woman?</p>
-      <p>drinking the potion of forgetfulness? death?</p>
+<main>
+<h1>Beyond Zork Invisiclues</h1>
+    <div class="question indented">
+      <h3>There&#39;s a bird nearby with a jewel in its beak. How can I get it?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You can&#39;t catch the bird, but you can make it drop the jewel.</details>
+        <details class="answer"><summary>B.</summary>What do birds like to eat?</details>
+        <details class="answer"><summary>C.</summary>TAKE THE WORM FROM THE FISHERMAN. If you then DROP THE WORM, the bird</details>
+        <details class="answer"><summary>D.</summary>will drop the jewel.</details>
+      </div>
+  </div>
 
+  <h2>Table of Contents</h2><ul class="indented">
+    <li><a href="#grubbo-by-the-sea">Grubbo-by-the-sea</a></li>
+      <li><a href="#the_wine_cellar">The Wine Cellar</a></li>
+      <li><a href="#the_lighthouse">The Lighthouse</a></li>
+      <li><a href="#the_ethereal_plane_of_atrii">The Ethereal Plane Of Atrii</a></li>
+      <li><a href="#accardi-by-the-sea">Accardi-by-the-sea</a></li>
+      <li><a href="#the_moors">The Moors</a></li>
+      <li><a href="#the_castle">The Castle</a></li>
+      <li><a href="#mizniaport">Mizniaport</a></li>
+      <li><a href="#the_fields_of_frotzen">The Fields Of Frotzen</a></li>
+      <li><a href="#froon">Froon</a></li>
+      <li><a href="#gurth">Gurth</a></li>
+      <li><a href="#the_jungles_of_miznia">The Jungles Of Miznia</a></li>
+      <li><a href="#thriff">Thriff</a></li>
+      <li><a href="#the_forest">The Forest</a></li>
+      <li><a href="#the_ruins">The Ruins</a></li>
+      <li><a href="#underground">Underground</a></li>
+      <li><a href="#that_which_can_be_named">That Which Can Be Named</a></li>
+      <li><a href="#variable_magic_items_lists">Variable Magic Items Lists</a></li>
+      <li><a href="#treasure_locations_and_values">Treasure Locations and Values</a></li>
+      <li><a href="#for_your_amusement">For Your Amusement</a></li>
+      <li><a href="#indicia">Indicia</a></li>
+  </ul>
+  <h2 id="grubbo-by-the-sea">Grubbo-by-the-sea</h2>
+          <div class="question indented">
+      <h3>Why can&#39;t I talk to the old sailor?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Perhaps he&#39;s a bit hard of hearing.</details>
+        <details class="answer"><summary>B.</summary>YELL AT THE SAILOR.</details>
+        <details class="answer"><summary>C.</summary>Oh, well. You don&#39;t need to talk to him anyway.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What&#39;s the significance of the sailor&#39;s painting?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You&#39;ll find out, if you live long enough.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get the driftwood out of the water?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Easy. Just GET THE DRIFTWOOD OUT OF THE WATER.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What&#39;s a shillelagh?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>EXAMINE THE SHILLELAGH.</details>
+        <details class="answer"><summary>B.</summary>&quot;Shillelagh&quot; is an Irish word for a cudgel.</details>
+        <details class="answer"><summary>C.</summary>A cudgel is a club for bashing things.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>A leprechaun stole my shillelagh! How do I get it back?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>EXAMINE THE RAINBOW. It may hold a clue to the thief&#39;s whereabouts.</details>
+        <details class="answer"><summary>B.</summary>LOOK UNDER THE POT OF GOLD.</details>
+        <details class="answer"><summary>C.</summary>Rainbow? Pot of gold?</details>
+        <details class="answer"><summary>D.</summary>Remember the warning in the introduction! Don&#39;t let the presence or</details>
+        <details class="answer"><summary>E.</summary>absence of questions influence your play, and don&#39;t assume that long</details>
+        <details class="answer"><summary>F.</summary>answers are associated with important questions.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What&#39;s the significance of the sign outside the tavern?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Read the room description again, carefully.</details>
+        <details class="answer"><summary>B.</summary>Part of the sign is made of a real lantern.</details>
+        <details class="answer"><summary>C.</summary>TAKE THE LANTERN OFF THE HOOK. You&#39;ll be glad you did.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get into the tavern?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Just GO INTO THE TAVERN. (Make sure you OPEN THE FRONT DOOR first.)</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>One of the bandits threw a dagger at me! What should I do?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Relax. They&#39;re just amusing themselves.</details>
+        <details class="answer"><summary>B.</summary>Besides, there may be something in it for you.</details>
+        <details class="answer"><summary>C.</summary>PULL THE DAGGER OUT OF THE WALL. It might come in handy later.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Why won&#39;t the cook let me take the giant onion?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Why should he? It&#39;s his onion. He may be willing to trade for it,</details>
+        <details class="answer"><summary>B.</summary>though.</details>
+        <details class="answer"><summary>C.</summary>ASK THE COOK ABOUT THE GIANT ONION.</details>
+        <details class="answer"><summary>D.</summary>After you retrieve the wine bottle, GIVE THE BOTTLE TO THE COOK. Now</details>
+        <details class="answer"><summary>E.</summary>you can ROLL THE ONION in any direction you like.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get into the wine cellar?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>There&#39;s a door leading downward.</details>
+        <details class="answer"><summary>B.</summary>OPEN THE CELLAR DOOR. GO DOWN THE STAIRS.</details>
+      </div>
+  </div>
+
+  <h2 id="the_wine_cellar">The Wine Cellar</h2>
+      <div class="indented">
+      <p>
+        The Lore and Legends of Quendor doesn&#39;t say anything about rat-ants! Take heart. The Rat-Ant&#39;s Cookbook says plenty about peasants. Rat-ants, though small, can be quite deadly. Fight back!</p><p>
+    </p>
+    </div>
+  <h2 id="the_lighthouse">The Lighthouse</h2>
+          <div class="question indented">
+      <h3>What&#39;s the meaning of the inscription on the cliff wall?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It&#39;s a riddle.</details>
+        <details class="answer"><summary>B.</summary>A dictionary might help you find the answer.</details>
+        <details class="answer"><summary>C.</summary>Forks have tines. &quot;Ere&quot; means &quot;before.&quot; The word &quot;report&quot; has many</details>
+        <details class="answer"><summary>D.</summary>meanings.</details>
+        <details class="answer"><summary>E.</summary>Don&#39;t develop the next hint unless you&#39;re really stumped.</details>
+        <details class="answer"><summary>F.</summary>Type the word LIGHTNING and watch what happens.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>That giant slug is tough! Anything I can do to improve my odds?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You don&#39;t need to defeat the slug to complete the story.</details>
+        <details class="answer"><summary>B.</summary>Bloodthirsty, eh? Well, if fighting, Magick or running away don&#39;t work,</details>
+        <details class="answer"><summary>C.</summary>there is an alternative.</details>
+        <details class="answer"><summary>D.</summary>Chemical warfare.</details>
+        <details class="answer"><summary>E.</summary>Slugs are notoriously sensitive to a certain common substance.</details>
+        <details class="answer"><summary>F.</summary>That substance is salt.</details>
+        <details class="answer"><summary>G.</summary>There&#39;s a patch of brine at the Tidal Flats near the lighthouse.</details>
+        <details class="answer"><summary>H.</summary>Go to the Tidal Flats and GET SOME SALT. Then return to the lighthouse</details>
+        <details class="answer"><summary>I.</summary>and HURL THE SALT AT THE GIANT SLUG.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get the dust bunny?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Just PICK UP THE DUST BUNNY.</details>
+        <details class="answer"><summary>B.</summary>Prolific, aren&#39;t they?</details>
+        <details class="answer"><summary>C.</summary>You can&#39;t take any of the dust bunnies. But you&#39;ll have to get rid of</details>
+        <details class="answer"><summary>D.</summary>them to complete the story.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>These dust bunnies are driving me nuts! What do I do?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Read The Lore and Legends of Quendor.</details>
+        <details class="answer"><summary>B.</summary>There are no lemon-scented sprays to be found in this story.</details>
+        <details class="answer"><summary>C.</summary>There is an excellent source of static electricity, though.</details>
+        <details class="answer"><summary>D.</summary>It&#39;s in the tavern.</details>
+        <details class="answer"><summary>E.</summary>It&#39;s the bearskin rug lying on the floor.</details>
+        <details class="answer"><summary>F.</summary>See what happens when you WALK ACROSS THE BEARSKIN RUG.</details>
+        <details class="answer"><summary>G.</summary>Try touching something after you walk across the rug.</details>
+        <details class="answer"><summary>H.</summary>Bring the rug to the room with dust bunnies. PUT DOWN THE RUG THEN WALK</details>
+        <details class="answer"><summary>I.</summary>ACROSS IT. TOUCH A DUST BUNNY.</details>
+        <details class="answer"><summary>J.</summary>Don&#39;t forget to PICK UP THE RING. You&#39;ll need it later.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Is there any way to get rid of the dornbeast?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You can fight the dornbeast, but you&#39;re not likely to survive. Only the</details>
+        <details class="answer"><summary>B.</summary>most powerful Magick can destroy him. That dorn is tough ... but not</details>
+        <details class="answer"><summary>C.</summary>invulnerable.</details>
+        <details class="answer"><summary>D.</summary>Read The Lore and Legends of Quendor.</details>
+        <details class="answer"><summary>E.</summary>Have you studied the illustration of the dornbeast?</details>
+        <details class="answer"><summary>F.</summary>The dornbeast has 69 sensitive eyes.</details>
+        <details class="answer"><summary>G.</summary>There&#39;s an object in the game which can wreak havoc on sensitive eyes.</details>
+        <details class="answer"><summary>H.</summary>It&#39;s in the tavern.</details>
+        <details class="answer"><summary>I.</summary>It&#39;s the giant onion in the kitchen.</details>
+        <details class="answer"><summary>J.</summary>Roll the giant onion into the Lamphouse. CUT THE GIANT ONION WITH THE</details>
+        <details class="answer"><summary>K.</summary>DAGGER (or any other sharp weapon). This will inconvenience the</details>
+        <details class="answer"><summary>L.</summary>dornbeast long enough for you to GET THE SEA CHEST and scram! (Refer to</details>
+        <details class="answer"><summary>M.</summary>a previous question if you can&#39;t take the giant onion.)</details>
+        <details class="answer"><summary>N.</summary>You don&#39;t need to kill the dornbeast, but if you want to get maximum</details>
+        <details class="answer"><summary>O.</summary>experience in the story (for more endurance) you can repeatedly cut the</details>
+        <details class="answer"><summary>P.</summary>onion and attack the dornbeast while he&#39;s disabled by the onion.</details>
+        <details class="answer"><summary>Q.</summary>Alternately, POINT THE WAND (or whatever) OF ANNIHILATION AT THE</details>
+        <details class="answer"><summary>R.</summary>DORNBEAST.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Is there anything in the debris besides the chest?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>SEARCH THE DEBRIS.</details>
+        <details class="answer"><summary>B.</summary>The sextant you find is a valuable treasure.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I open the sea chest?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Easy. Just OPEN THE CHEST.</details>
+        <details class="answer"><summary>B.</summary>Relax. Pay attention to everything the stallion tells you.</details>
+        <details class="answer"><summary>C.</summary>And don&#39;t open that chest again!</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What on earth can I do with a vague outline?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Nothing... on earth.</details>
+        <details class="answer"><summary>B.</summary>The old woman at the Magick Shoppe may be able to tell you.</details>
+        <details class="answer"><summary>C.</summary>Have you brought the outline to another plane of existence?</details>
+        <details class="answer"><summary>D.</summary>Have you examined the palimpsest?</details>
+        <details class="answer"><summary>E.</summary>Have you discovered the palimpsest&#39;s Word of Power?</details>
+        <details class="answer"><summary>F.</summary>While holding the vague outline, speak the Word of Power inscribed upon</details>
+        <details class="answer"><summary>G.</summary>the palimpsest.</details>
+        <details class="answer"><summary>H.</summary>Check your inventory. The outline has changed.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is a palimpsest?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>A palimpsest is a writing surface (in this case, a scroll) which has</details>
+        <details class="answer"><summary>B.</summary>been erased and reused.</details>
+        <details class="answer"><summary>C.</summary>The palimpsest is the only scroll in the story which can be reused.</details>
+      </div>
+  </div>
+
+  <h2 id="the_ethereal_plane_of_atrii">The Ethereal Plane Of Atrii</h2>
+          <div class="question indented">
+      <h3>Where am I?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Read The Lore and Legends of Quendor. Look under the entry on</details>
+        <details class="answer"><summary>B.</summary>Implementors.</details>
+        <details class="answer"><summary>C.</summary></details>
+        <details class="answer"><summary>D.</summary>An outline is blocking my path!</details>
+        <details class="answer"><summary>E.</summary>Whack it with something!</details>
+        <details class="answer"><summary>F.</summary>Ordinary weapons don&#39;t seem to work here.</details>
+        <details class="answer"><summary>G.</summary>You need an extraordinary weapon.</details>
+        <details class="answer"><summary>H.</summary>It&#39;s the vague outline.</details>
+        <details class="answer"><summary>I.</summary>The outline isn&#39;t so vague on the Plane of Atrii.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What are these curtains doing here?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Just hanging around.</details>
+        <details class="answer"><summary>B.</summary>Do they remind you of any other locations in the story?</details>
+        <details class="answer"><summary>C.</summary>Each of the shops (in Accardi, Mizniaport and Gurth) has a curtain.</details>
+        <details class="answer"><summary>D.</summary>WALK THROUGH THE CURTAIN. Convenient, eh?</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Is there anything I can do with the Implementors?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Pay attention.</details>
+        <details class="answer"><summary>B.</summary>Follow orders.</details>
+        <details class="answer"><summary>C.</summary>Rejoice in your good fortune! Few indeed are those lucky enough to</details>
+        <details class="answer"><summary>D.</summary>witness an Implementors&#39; Lunch.</details>
+      </div>
+  </div>
+
+  <h2 id="accardi-by-the-sea">Accardi-by-the-sea</h2>
+          <div class="question indented">
+      <h3>Why aren&#39;t there any price tags in the weapon shop?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>This is a very exclusive establishment. Its patrons would probably be</details>
+        <details class="answer"><summary>B.</summary>offended by such crass commercialism.</details>
+        <details class="answer"><summary>C.</summary>Maybe the old woman behind the counter can help you.</details>
+        <details class="answer"><summary>D.</summary>You can ASK THE OLD WOMAN ABOUT anything in the display case.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Which weapon should I buy?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>The best you can afford.</details>
+        <details class="answer"><summary>B.</summary>The old woman doesn&#39;t haggle.</details>
+        <details class="answer"><summary>C.</summary>Don&#39;t forget to ask the old woman about the scabbard.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>I only have one zorkmid! Where can I find more?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You won&#39;t find any zorkmids lying around. But those other things you&#39;ve</details>
+        <details class="answer"><summary>B.</summary>been picking up might be worth something.</details>
+        <details class="answer"><summary>C.</summary>If you think an item may be valuable, SHOW IT TO THE OLD WOMAN to find</details>
+        <details class="answer"><summary>D.</summary>out how much it&#39;s worth. You can then SELL THE ITEM to beef up your</details>
+        <details class="answer"><summary>E.</summary>supply of zorkmids.</details>
+        <details class="answer"><summary>F.</summary>You can also TRADE items you have for items in the display case.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get into the Guild Hall?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>That warning nymph sure is a pest, eh?</details>
+        <details class="answer"><summary>B.</summary>You can&#39;t get past the warning nymph without help.</details>
+        <details class="answer"><summary>C.</summary>Stick around for a few moves. Help is on the way.</details>
+        <details class="answer"><summary>D.</summary>The monkey grinder will squash the nymph for you soon after he appears.</details>
+        <details class="answer"><summary>E.</summary>Nothing can stop you now (except the monkey grinder).</details>
+        <details class="answer"><summary>F.</summary>You can fight the monkey grinder, but survival is unlikely. Wands and</details>
+        <details class="answer"><summary>G.</summary>scrolls aren&#39;t much good against him, either.</details>
+        <details class="answer"><summary>H.</summary>Read The Lore and Legends of Quendor.</details>
+        <details class="answer"><summary>I.</summary>Did you notice the statistic regarding the literacy rate of monkey</details>
+        <details class="answer"><summary>J.</summary>grinders?</details>
+        <details class="answer"><summary>K.</summary>There is an object in the story that could be dangerous to someone who</details>
+        <details class="answer"><summary>L.</summary>can&#39;t read.</details>
+        <details class="answer"><summary>M.</summary>It&#39;s in the lighthouse.</details>
+        <details class="answer"><summary>N.</summary>Have you noticed the warning plaque on the sea chest?</details>
+        <details class="answer"><summary>O.</summary>GIVE THE SEA CHEST TO THE MONKEY GRINDER after he squashes the warning</details>
+        <details class="answer"><summary>P.</summary>nymph. Now you can WALK INTO THE GUILD HALL.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What can I do with the hurdy-gurdy?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>EXAMINE THE HURDY-GURDY and its various parts before you experiment.</details>
+        <details class="answer"><summary>B.</summary>You can turn the crank to the left or right.</details>
+        <details class="answer"><summary>C.</summary>Try closing the hurdy-gurdy before turning the crank.</details>
+        <details class="answer"><summary>D.</summary>Try pointing the dial at different pictures before turning the crank.</details>
+        <details class="answer"><summary>E.</summary>Try putting things into the hurdy-gurdy before you close it and turn</details>
+        <details class="answer"><summary>F.</summary>the crank.</details>
+      </div>
+  </div>
+
+  <h2 id="the_moors">The Moors</h2>
+      <div class="indented">
+      <p>
+        Help! An eldritch vapor is stealing my possessions! The vapor won&#39;t steal anything that you wield or wear. Whack it a few times with a good weapon. It&#39;ll go away. Once you&#39;ve gotten rid of the vapor, look around. You&#39;ll find your stolen possessions in the moors, scattered but intact.</p><p>
+    </p>
+    </div>
+  <h2 id="the_castle">The Castle</h2>
+          <div class="question indented">
+      <h3>What&#39;s the Magick password that will lower the drawbridge?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Ask the pelican.</details>
+        <details class="answer"><summary>B.</summary>Insist.</details>
+        <details class="answer"><summary>C.</summary>CUT OFF THE PELICAN&#39;S HEAD. That&#39;ll teach him to listen!</details>
+        <details class="answer"><summary>D.</summary>Password? Drawbridge? Pelican? This isn&#39;t Wishbringer.</details>
+        <details class="answer"><summary>E.</summary></details>
+        <details class="answer"><summary>F.</summary>Help! I keep getting caught by the Queen!</details>
+        <details class="answer"><summary>G.</summary>She&#39;s likely to catch anybody she sees.</details>
+        <details class="answer"><summary>H.</summary>If she couldn&#39;t see you, she might not catch you.</details>
+        <details class="answer"><summary>I.</summary>Find a place to hide.</details>
+        <details class="answer"><summary>J.</summary>HIDE BEHIND THE BUSH and keep quiet! She&#39;ll go away eventually.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Is the morgia bush good for anything?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You can hide in it. Ouch! (See previous question.)</details>
+        <details class="answer"><summary>B.</summary>Read The Lore and Legends of Quendor.</details>
+        <details class="answer"><summary>C.</summary>Morgia root increases your strength. Try it. You&#39;ll like It.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get the jar?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>The same way the Queen did.</details>
+        <details class="answer"><summary>B.</summary>Wait for the Queen to leave. GET OUT OF THE BUSH. OPEN THE STATUE.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get out of the castle?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>The same way you got there.</details>
+        <details class="answer"><summary>B.</summary>BLOW THE WHISTLE.</details>
+      </div>
+  </div>
+
+  <h2 id="mizniaport">Mizniaport</h2>
+          <div class="question indented">
+      <h3>Haven&#39;t I seen this old woman somewhere before?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Perhaps, if you&#39;ve visited another store previously.</details>
+        <details class="answer"><summary>B.</summary>EXAMINE THE OLD WOMAN. How curious.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I buy things in the boutique?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>The same way you buy things everywhere else.</details>
+        <details class="answer"><summary>B.</summary>Refer to the questions about the weapon shop for more help.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Which armor should I buy?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>The best you can afford.</details>
+        <details class="answer"><summary>B.</summary>One item has an unusual description.</details>
+        <details class="answer"><summary>C.</summary>EXAMINE THE CLOAK.</details>
+        <details class="answer"><summary>D.</summary>If you can afford it, BUY THE CLOAK and bring it to the Magick Shoppe</details>
+        <details class="answer"><summary>E.</summary>in Gurth City. ASK THE OLD WOMAN ABOUT THE CLOAK.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Do I need the horseshoe?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Yes.</details>
+        <details class="answer"><summary>B.</summary>PICK UP THE HORSESHOE. It&#39;ll come in handy later.</details>
+        <details class="answer"><summary>C.</summary></details>
+        <details class="answer"><summary>D.</summary>How do I shoe the unicorn? I can&#39;t find any nails!</details>
+        <details class="answer"><summary>E.</summary>There are no nails to be found. Use the red-hot spikes instead.</details>
+        <details class="answer"><summary>F.</summary>There aren&#39;t any red-hot spikes, either.</details>
+        <details class="answer"><summary>G.</summary>You don&#39;t need to shoe the unicorn.</details>
+        <details class="answer"><summary>H.</summary></details>
+        <details class="answer"><summary>I.</summary>I can&#39;t reach the saddle!</details>
+        <details class="answer"><summary>J.</summary>There are two ways to get the saddle. Both require Magick.</details>
+        <details class="answer"><summary>K.</summary>One way is to obtain a Wand of Levitation. If you find the wand, POINT</details>
+        <details class="answer"><summary>L.</summary>IT AT THE SADDLE. Then PICK UP THE SADDLE.</details>
+        <details class="answer"><summary>M.</summary>The other way is more violent (and fun).</details>
+        <details class="answer"><summary>N.</summary>It involves the amulet.</details>
+        <details class="answer"><summary>O.</summary>PUT ON THE AMULET and speak its Word of Power. Your increased strength</details>
+        <details class="answer"><summary>P.</summary>will allow you to BREAK DOWN THE STALL. Then you can GO INTO THE STALL</details>
+        <details class="answer"><summary>Q.</summary>and PICK UP THE SADDLE.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>That unicorn sure looks sad. Isn&#39;t there anything I can do for her?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>She probably doesn&#39;t enjoy being cooped up like that.</details>
+        <details class="answer"><summary>B.</summary>There are three (count &#39;em, three!) ways to free the unicorn. All</details>
+        <details class="answer"><summary>C.</summary>require the use of Magick.</details>
+        <details class="answer"><summary>D.</summary>The first two solutions are the same ones you can use to obtain the</details>
+        <details class="answer"><summary>E.</summary>saddle. Refer to the previous question for clues.</details>
+        <details class="answer"><summary>F.</summary>The third solution involves an object found in the lighthouse.</details>
+        <details class="answer"><summary>G.</summary>It&#39;s the sea chest.</details>
+        <details class="answer"><summary>H.</summary>Have you tried to OPEN THE SEA CHEST? (Don&#39;t do it more than once.)</details>
+        <details class="answer"><summary>I.</summary>The Lore and Legends of Quendor has something to say about unicorns.</details>
+        <details class="answer"><summary>J.</summary>SHOW THE SEA CHEST TO THE UNICORN. Note her reaction.</details>
+        <details class="answer"><summary>K.</summary>GIVE THE SEA CHEST TO THE UNICORN.</details>
+      </div>
+  </div>
+
+  <h2 id="the_fields_of_frotzen">The Fields Of Frotzen</h2>
+          <div class="question indented">
+      <h3>How do I get past the lightning at Edge of Storms?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Somebody above the clouds doesn&#39;t like you.</details>
+        <details class="answer"><summary>B.</summary>The Implementors dwell above the clouds. You should pay them a visit.</details>
+        <details class="answer"><summary>C.</summary>You need to have read the palimpsest in order to continue.</details>
+        <details class="answer"><summary>D.</summary>Listen to what the mild-mannered Implementor says when he offers you</details>
+        <details class="answer"><summary>E.</summary>the goblet?</details>
+        <details class="answer"><summary>F.</summary>You can go west from Edge of Storms (or east from Intersection) as long</details>
+        <details class="answer"><summary>G.</summary>as you&#39;re holding the Implementors&#39; goblet.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I catch the butterfly?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You need a lure.</details>
+        <details class="answer"><summary>B.</summary>Insects are attracted to sweet things.</details>
+        <details class="answer"><summary>C.</summary>You&#39;ll find something sweet on the Ethereal Plane of Atrii.</details>
+        <details class="answer"><summary>D.</summary>There&#39;s a sweet, sticky coating inside the goblet.</details>
+        <details class="answer"><summary>E.</summary>Just bring the goblet to the butterfly&#39;s vicinity and WAIT. It won&#39;t</details>
+        <details class="answer"><summary>F.</summary>take long for her to find the sweet coating.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Is there any way to get a scarecrow?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>No. You don&#39;t need to move any scarecrows to complete the story.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What do I do with the scarecrows?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>EXAMINE each one of them.</details>
+        <details class="answer"><summary>B.</summary>One of the scarecrows is not like the others.</details>
+        <details class="answer"><summary>C.</summary>Only one of the scarecrows seems to be doing its job.</details>
+        <details class="answer"><summary>D.</summary>Something about the &quot;good&quot; scarecrow is fending off the corbies.</details>
+        <details class="answer"><summary>E.</summary>The corbies see something about the &quot;good&quot; scarecrow that you don&#39;t.</details>
+        <details class="answer"><summary>F.</summary>Read The Lore and Legends of Quendor.</details>
+        <details class="answer"><summary>G.</summary>Your color vision is muted while you&#39;re in the Fields of Frotzen.</details>
+        <details class="answer"><summary>H.</summary>There is an object in the story that enhances colors.</details>
+        <details class="answer"><summary>I.</summary>It&#39;s the hurdy-gurdy.</details>
+        <details class="answer"><summary>J.</summary>Bring the hurdy-gurdy to one of the scarecrows. CLOSE THE HURDY-GURDY.</details>
+        <details class="answer"><summary>K.</summary>POINT THE DIAL AT THE PICTURE OF AN EYE. TURN THE CRANK TO THE RIGHT.</details>
+        <details class="answer"><summary>L.</summary>You can now discern the color of the rags on each scarecrow.</details>
+        <details class="answer"><summary>M.</summary>The corbies don&#39;t like the color of the &quot;good&quot; scarecrow. You can use</details>
+        <details class="answer"><summary>N.</summary>this information to your advantage later.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get by the corbies blocking off part of the fields?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You can&#39;t fight your way through. There are too many.</details>
+        <details class="answer"><summary>B.</summary>Have you noticed the scarecrows scattered around the fields?</details>
+        <details class="answer"><summary>C.</summary>Have you determined the significance of the scarecrows? If not, refer</details>
+        <details class="answer"><summary>D.</summary>to the question about the scarecrows before going any further.</details>
+        <details class="answer"><summary>E.</summary>If you had something of the correct color, the corbies would let you</details>
+        <details class="answer"><summary>F.</summary>by.</details>
+        <details class="answer"><summary>G.</summary>See the question about the farmhouse and the section about Froon.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Where&#39;d this farmhouse come from?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Wait around outside until a storm starts brewing.</details>
+        <details class="answer"><summary>B.</summary>Maybe the answer is inside, safe from the storm.</details>
+        <details class="answer"><summary>C.</summary>GO INTO THE FARMHOUSE. WAIT. Happy landings.</details>
+      </div>
+  </div>
+
+  <h2 id="froon">Froon</h2>
+          <div class="question indented">
+      <h3>How do I polish the giant boot?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>With the giant rag...</details>
+        <details class="answer"><summary>B.</summary>that&#39;s in the giant bag...</details>
+        <details class="answer"><summary>C.</summary>held by the giant hag.</details>
+        <details class="answer"><summary>D.</summary>ASK THE GIANT HAG FOR THE GIANT RAG IN THE GIANT BAG.</details>
+        <details class="answer"><summary>E.</summary>Rag? Hag? Bag? You don&#39;t need to polish the giant boot.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Nothing is happening here in Froon. What do I do?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>LOOK UNDER THE HOUSE.</details>
+        <details class="answer"><summary>B.</summary>EXAMINE THE FLOWERS.</details>
+        <details class="answer"><summary>C.</summary>That&#39;s not a flower! That&#39;s an inhabitant of Froon.</details>
+        <details class="answer"><summary>D.</summary>Wait for the mayor to show up.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Does it matter which key I take?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Only if you want to finish the story.</details>
+        <details class="answer"><summary>B.</summary>Do any of the colors look familiar?</details>
+        <details class="answer"><summary>C.</summary>The scarecrows in the Fields of Frotzen are dressed in the same colors</details>
+        <details class="answer"><summary>D.</summary>as the three keys.</details>
+        <details class="answer"><summary>E.</summary>Only one of the scarecrows fends off the corbies.</details>
+        <details class="answer"><summary>F.</summary>The corbies stay away from it because they don&#39;t like that color.</details>
+        <details class="answer"><summary>G.</summary>Take the key that corresponds to the color of the &quot;good&quot; scarecrow.</details>
+        <details class="answer"><summary>H.</summary>Now you can fend off corbies, too!</details>
+      </div>
+  </div>
+
+  <h2 id="gurth">Gurth</h2>
+      <div class="indented">
+      <p>
+        The street hawker dropped something! Oh, well. She&#39;s gone now. PICK UP THE FISH CAKE. Quickly!</p><p>
+        This old woman looks awfully familiar. She may indeed, if you&#39;ve visited another store previously.</p><p>
+    </p>
+    </div>
+  <h2 id="the_jungles_of_miznia">The Jungles Of Miznia</h2>
+          <div class="question indented">
+      <h3>How do I get into the gondola?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Just GET INTO THE GONDOLA.</details>
+        <details class="answer"><summary>B.</summary>It helps if you wait for the conductor to say &quot;All aboard.&quot;</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Are the support towers good for anything?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Of course. They hold up the gondola. They&#39;re also a convenient way to</details>
+        <details class="answer"><summary>B.</summary>visit the jungle.</details>
+        <details class="answer"><summary>C.</summary>Read the room description carefully as you pass one of the towers.</details>
+        <details class="answer"><summary>D.</summary>There&#39;s a maintenance platform near the top of each tower.</details>
+        <details class="answer"><summary>E.</summary>JUMP ONTO THE PLATFORM as your gondola passes by one of the towers. Now</details>
+        <details class="answer"><summary>F.</summary>you can CLIMB DOWN A LADDER and visit the jungle.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What can I do with the mossy rock?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>The question is, what will the mossy rock do with you?</details>
+        <details class="answer"><summary>B.</summary>It&#39;s not really a mossy rock. It&#39;s a bloodworm!</details>
+        <details class="answer"><summary>C.</summary>It&#39;s clobberin&#39; time!</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>It&#39;s completely dark! What happened?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Looks like you&#39;ve fallen into the idol. Hope you brought your lantern.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Is there any light source besides the lantern?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Yes. One magic item produces a very brief glow of light.</details>
+        <details class="answer"><summary>B.</summary>It&#39;s the amulet.</details>
+        <details class="answer"><summary>C.</summary>PUT ON THE AMULET and speak its Word of Power. The glowing star will</details>
+        <details class="answer"><summary>D.</summary>provide two moves&#39; worth of illumination.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Is there anything to do inside the idol?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Reread the room description.</details>
+        <details class="answer"><summary>B.</summary>Read The Lore and Legends of Quendor.</details>
+        <details class="answer"><summary>C.</summary>The moss on the walls should look familiar.</details>
+        <details class="answer"><summary>D.</summary>It&#39;s Moss of Mareilon. Use it to boost your dexterity. It can&#39;t hurt.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Why can&#39;t I see the secret door in the idol?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It&#39;s an awfully good secret.</details>
+        <details class="answer"><summary>B.</summary>So secret that it doesn&#39;t even exist.</details>
+        <details class="answer"><summary>C.</summary>Sorry. There is no secret door.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get back outside of the idol?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>There are no less than four ways to escape from the idol. All of them</details>
+        <details class="answer"><summary>B.</summary>involve Magick.</details>
+        <details class="answer"><summary>C.</summary>One of the ways involves a wand.</details>
+        <details class="answer"><summary>D.</summary>The Wand of Eversion will do the trick.</details>
+        <details class="answer"><summary>E.</summary>&quot;Eversion&quot; means &quot;inside out.&quot;</details>
+        <details class="answer"><summary>F.</summary>POINT THE WAND OF EVERSION AT THE IDOL. You&#39;re free!</details>
+        <details class="answer"><summary>G.</summary>The other three ways are the same as getting out of the cellar. Just</details>
+        <details class="answer"><summary>H.</summary>develop the last three clues pertaining to escaping from the Cellar.</details>
+        <details class="answer"><summary>I.</summary></details>
+        <details class="answer"><summary>J.</summary>I can see the Crocodile&#39;s Tear, but I can&#39;t reach it without falling into</details>
+        <details class="answer"><summary>K.</summary>the idol! This is driving me crazy!</details>
+        <details class="answer"><summary>L.</summary>The idol&#39;s maw is like a seesaw.</details>
+        <details class="answer"><summary>M.</summary>You need something heavier than you to hold down the bottom end.</details>
+        <details class="answer"><summary>N.</summary>One of your jungle friends may be able to help.</details>
+        <details class="answer"><summary>O.</summary>How about the mother hungus?</details>
+        <details class="answer"><summary>P.</summary>You have to get the mother hungus to follow you.</details>
+        <details class="answer"><summary>Q.</summary>Read The Lore and Legends of Quendor.</details>
+        <details class="answer"><summary>R.</summary>If you threaten the baby hungus, his mother will chase you through the</details>
+        <details class="answer"><summary>S.</summary>jungle!</details>
+        <details class="answer"><summary>T.</summary>The hungus is slow. Give her time to catch up. If you&#39;re wearing the</details>
+        <details class="answer"><summary>U.</summary>cloak, take it off... it makes it harder for her to follow you.</details>
+        <details class="answer"><summary>V.</summary>Lead the mother hungus to the idol. GET INTO THE MAW. The mother will</details>
+        <details class="answer"><summary>W.</summary>climb up onto the bottom edge. Now you can climb up and GET THE JEWEL.</details>
+        <details class="answer"><summary>X.</summary>Sort of.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>I lost the jewel! How do I get it back?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>A great, big bottle of laxative might work.</details>
+        <details class="answer"><summary>B.</summary>Unfortunately, there&#39;s no laxative to be found. Try something else.</details>
+        <details class="answer"><summary>C.</summary>There&#39;s a wand that can help.</details>
+        <details class="answer"><summary>D.</summary>It&#39;s the Wand of Eversion.</details>
+        <details class="answer"><summary>E.</summary>&quot;Eversion&quot; means &quot;inside out.&quot;</details>
+        <details class="answer"><summary>F.</summary>POINT THE WAND OF EVERSION AT THE MOTHER HUNGUS.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Poor widdle baby hungus! Is there any way to rescue him?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Yes. (Sniff.)</details>
+        <details class="answer"><summary>B.</summary>To rescue the baby, you must obtain a Wand of Levitation. This can be</details>
+        <details class="answer"><summary>C.</summary>tricky, as the wand&#39;s location varies from game to game.</details>
+        <details class="answer"><summary>D.</summary>When you find the wand, POINT IT AT THE BABY HUNGUS.</details>
+        <details class="answer"><summary>E.</summary>But don&#39;t free the baby before you get the Crocodile&#39;s Tear! Otherwise,</details>
+        <details class="answer"><summary>F.</summary>you won&#39;t be able to complete the story.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What can I do at the waterfall?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Nothing. It&#39;s just scenery.</details>
+      </div>
+  </div>
+
+  <h2 id="thriff">Thriff</h2>
+          <div class="question indented">
+      <h3>How do I stop the hunter from finding the minx?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>He might not find her if he didn&#39;t know where to look.</details>
+        <details class="answer"><summary>B.</summary>He&#39;s following her footprints in the snow.</details>
+        <details class="answer"><summary>C.</summary>Quick! RUB OUT THE FOOTPRINTS before the hunter arrives.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Where do I find chocolate truffles?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Read The Lore and Legends of Quendor.</details>
+        <details class="answer"><summary>B.</summary>They&#39;re not easy to find without help.</details>
+        <details class="answer"><summary>C.</summary>One of the creatures in Lore and Legends can help you.</details>
+        <details class="answer"><summary>D.</summary>Bring the minx to an oak tree and put her down. WAIT.</details>
+        <details class="answer"><summary>E.</summary>PICK UP THE CHOCOLATE TRUFFLE before she eats it herself!</details>
+        <details class="answer"><summary>F.</summary>And don&#39;t leave the truffle anywhere she can get her paws on it.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Those truffles don&#39;t last very long, do they?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Nope. The Lore and Legends of Quendor says so.</details>
+        <details class="answer"><summary>B.</summary>There is a way to keep truffles fresh.</details>
+        <details class="answer"><summary>C.</summary>The clock setting on the hurdy-gurdy will renew the truffles when you</details>
+        <details class="answer"><summary>D.</summary>turn the crank to the left (if the truffle is inside).</details>
+        <details class="answer"><summary>E.</summary>However, they&#39;ll start decaying again right away.</details>
+        <details class="answer"><summary>F.</summary>There&#39;s a way to keep them eternally fresh.</details>
+        <details class="answer"><summary>G.</summary>Don&#39;t continue unless you&#39;ve visited the forest north of Gurth.</details>
+        <details class="answer"><summary>H.</summary>Have you answered the riddle on the boulder?</details>
+        <details class="answer"><summary>I.</summary>Remember what the hollow voice says when you answer the riddle.</details>
+        <details class="answer"><summary>J.</summary>DROP THE CHOCOLATE TRUFFLE INTO THE POOL. Or, WALK INTO THE POOL while</details>
+        <details class="answer"><summary>K.</summary>holding a truffle. It will now remain fresh forever.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Can I do anything at the Rock Wall?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Definitely. But only if you have a gray sphere. Refer to the</details>
+        <details class="answer"><summary>B.</summary>appropriate question for details.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Is there anything I can do in the Chapel?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Be quiet and pay attention.</details>
+        <details class="answer"><summary>B.</summary>SIT DOWN ON THE PEW. Cardinal Toolbox is rather long-winded.</details>
+        <details class="answer"><summary>C.</summary>LOOK UNDER THE PEW. Surprise!</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get the reliquary?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You have to earn it.</details>
+        <details class="answer"><summary>B.</summary>Listen to the Cardinal&#39;s sermon. There may be an opportunity here.</details>
+        <details class="answer"><summary>C.</summary>If you save Thriff from the Christmas tree monsters, &quot;anything you ask</details>
+        <details class="answer"><summary>D.</summary>will be your reward.&quot;</details>
+        <details class="answer"><summary>E.</summary>Including the reliquary.</details>
+        <details class="answer"><summary>F.</summary>After you thwart the Christmas tree monsters, find the Cardinal. ASK</details>
+        <details class="answer"><summary>G.</summary>THE CARDINAL FOR THE RELIQUARY.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is the glyph in the snowy clearing?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Listen to Cardinal Toolbox in the chapel.</details>
+        <details class="answer"><summary>B.</summary>It&#39;s a Glyph of Warding, left by Orkan. It prevents the Christmas tree</details>
+        <details class="answer"><summary>C.</summary>monsters from entering the village.</details>
+        <details class="answer"><summary>D.</summary></details>
+        <details class="answer"><summary>E.</summary>The Christmas tree monsters won&#39;t let me past!</details>
+        <details class="answer"><summary>F.</summary>They wouldn&#39;t be very good monsters if they did, would they?</details>
+        <details class="answer"><summary>G.</summary>The Lore and Legends of Quendor is full of useful facts.</details>
+        <details class="answer"><summary>H.</summary>You need a caterpillar. (See next question.)</details>
+        <details class="answer"><summary>I.</summary>Once you&#39;ve got a caterpillar, show it to the Christmas tree monsters.</details>
+        <details class="answer"><summary>J.</summary>Then you&#39;ll be able to get by them.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Where do I find a caterpillar?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Where do caterpillars come from?</details>
+        <details class="answer"><summary>B.</summary>More precisely, what comes from caterpillars?</details>
+        <details class="answer"><summary>C.</summary>Butterflies!</details>
+        <details class="answer"><summary>D.</summary>You need to first get the butterfly from the Fields of Frotzen.</details>
+        <details class="answer"><summary>E.</summary>Now you need to turn back the clock on the butterfly.</details>
+        <details class="answer"><summary>F.</summary>The clock on the hurdy-gurdy that is.</details>
+        <details class="answer"><summary>G.</summary>PUT THE GOBLET (along with the butterfly) IN THE GURDY. CLOSE THE</details>
+        <details class="answer"><summary>H.</summary>GURDY. TURN THE DIAL TO THE CLOCK. TURN THE CRANK TO THE LEFT. OPEN THE</details>
+        <details class="answer"><summary>I.</summary>GURDY. Abracadabra ... Poof! A caterpillar.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Is the leaflet useful for anything?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>READ THE LEAFLET.</details>
+        <details class="answer"><summary>B.</summary>OPEN THE PARCEL.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What do I do with the little black book?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>READ IT. Some of the information in it will prove useful.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How did that dome get on top of the mountain?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Somebody who knows a lot about Magick left it there.</details>
+        <details class="answer"><summary>B.</summary>Read the little black book in the Laboratory.</details>
+        <details class="answer"><summary>C.</summary>Did you LOOK UNDER THE DOME yet?</details>
+        <details class="answer"><summary>D.</summary>Orkan cast a yonked girgol spell on the lava to keep it from erupting.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I stop the glyph from melting with the snow?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You can&#39;t. You must find some other way to thwart the Christmas tree</details>
+        <details class="answer"><summary>B.</summary>monsters.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I thwart the Christmas tree monsters?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>That Glyph of Warding seems to work just fine. But it&#39;s going to melt</details>
+        <details class="answer"><summary>B.</summary>sooner or later. You must inscribe a more permanent Glyph.</details>
+        <details class="answer"><summary>C.</summary>LOOK UNDER THE DOME at the Mountain Peak.</details>
+        <details class="answer"><summary>D.</summary>You need to free that lava from Orkan&#39;s spell.</details>
+        <details class="answer"><summary>E.</summary>There is a Magick item that neutralizes Magick.</details>
+        <details class="answer"><summary>F.</summary>It&#39;s the Dispel Wand.</details>
+        <details class="answer"><summary>G.</summary>POINT THE DISPEL WAND AT THE DOME.</details>
+        <details class="answer"><summary>H.</summary>Run! The lava will bury you if you don&#39;t get out of its path!</details>
+        <details class="answer"><summary>I.</summary></details>
+        <details class="answer"><summary>J.</summary>I buried the Christmas trees, but they still trample the village!</details>
+        <details class="answer"><summary>K.</summary>Obviously you didn&#39;t destroy all of the trees.</details>
+        <details class="answer"><summary>L.</summary>The trees aren&#39;t the only things you destroyed in the Snowy Clearing.</details>
+        <details class="answer"><summary>M.</summary>You also melted the Glyph of Warding.</details>
+        <details class="answer"><summary>N.</summary>You need to inscribe another Glyph before the lava cools and the</details>
+        <details class="answer"><summary>O.</summary>surviving trees trample the village.</details>
+        <details class="answer"><summary>P.</summary></details>
+        <details class="answer"><summary>Q.</summary>I can&#39;t return to the clearing! It&#39;s too hot!</details>
+        <details class="answer"><summary>R.</summary>If you wait for the lava to cool, then it&#39;s too late. You need Magick</details>
+        <details class="answer"><summary>S.</summary>help to survive that heat.</details>
+        <details class="answer"><summary>T.</summary>There is a Magick item that will help you resist heat.</details>
+        <details class="answer"><summary>U.</summary>It&#39;s found on the third level of the lighthouse.</details>
+        <details class="answer"><summary>V.</summary>It&#39;s the dust bunny.</details>
+        <details class="answer"><summary>W.</summary>When you defeat the dust bunnies, they coalesce into a ring. Take that</details>
+        <details class="answer"><summary>X.</summary>ring to the Magick Shoppe and SHOW IT TO THE OLD WOMAN.</details>
+        <details class="answer"><summary>Y.</summary>PUT ON THE RING. Now you can walk onto the hot lava safely.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>I made it to the Lava Flow! Now what?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>The lava underfoot is still soft.</details>
+        <details class="answer"><summary>B.</summary>It&#39;s an ideal drawing medium.</details>
+        <details class="answer"><summary>C.</summary>INSCRIBE A GLYPH ON THE GROUND. When the lava cools, you&#39;ll have a</details>
+        <details class="answer"><summary>D.</summary>Glyph of Warding permanently etched into the rock.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What tool do I need to inscribe a glyph?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Read the black book from the Laboratory.</details>
+        <details class="answer"><summary>B.</summary>Did you look inside the mailbox outside the Laboratory?</details>
+        <details class="answer"><summary>C.</summary>Did you read the leaflet and open the parcel?</details>
+        <details class="answer"><summary>D.</summary>You need the burin to inscribe a glyph. (As in _Spellbreaker_.)</details>
+        <details class="answer"><summary>E.</summary></details>
+        <details class="answer"><summary>F.</summary>Where can I study glyphs? I don&#39;t know which one to inscribe!</details>
+        <details class="answer"><summary>G.</summary>There&#39;s one you can study in the Snowy Clearing.</details>
+        <details class="answer"><summary>H.</summary>There&#39;s another one in the little black book.</details>
+        <details class="answer"><summary>I.</summary>Just examining either one is enough.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Is the thing in the reliquary useful?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Not by itself. Does it remind you of something you found somewhere</details>
+        <details class="answer"><summary>B.</summary>else?</details>
+        <details class="answer"><summary>C.</summary>Something in the Laboratory on the workbench?</details>
+        <details class="answer"><summary>D.</summary>The black hemisphere. EXAMINE THE BLACK HEMISPHERE.</details>
+        <details class="answer"><summary>E.</summary>EXAMINE THE WHITE HEMISPHERE.</details>
+        <details class="answer"><summary>F.</summary>The peg and the hole go together.</details>
+        <details class="answer"><summary>G.</summary>PUT THE PEG INTO THE HOLE.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What can I do with the gray sphere?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>EXAMINE THE GRAY SPHERE.</details>
+        <details class="answer"><summary>B.</summary>PEER INTO THE GRAY SPHERE.</details>
+        <details class="answer"><summary>C.</summary>You need something to make the swirls more intelligible.</details>
+        <details class="answer"><summary>D.</summary>You need more intelligence.</details>
+        <details class="answer"><summary>E.</summary>Unless you started with a super-intelligent character, you must find</details>
+        <details class="answer"><summary>F.</summary>ways to boost your intelligence.</details>
+        <details class="answer"><summary>G.</summary>A fish cake will help, but it&#39;s probably not enough.</details>
+        <details class="answer"><summary>H.</summary>The Enlightenment potion will help, but it&#39;s probably not enough.</details>
+        <details class="answer"><summary>I.</summary>There&#39;s one more thing you can do that will boost your intelligence.</details>
+        <details class="answer"><summary>J.</summary>Did you ever listen to the bandits in the Rusty Lantern?</details>
+        <details class="answer"><summary>K.</summary>You need to obtain the item that they are talking about.</details>
+        <details class="answer"><summary>L.</summary>It&#39;s a helmet. Stop reading these hints until you get it.</details>
+        <details class="answer"><summary>M.</summary>PUT ON THE HELMET. Your intelligence goes up!</details>
+        <details class="answer"><summary>N.</summary>If you&#39;ve done all three thing [sic] to boost your intelligence, now</details>
+        <details class="answer"><summary>O.</summary>you can PEER INTO THE GRAY SPHERE.</details>
+        <details class="answer"><summary>P.</summary>One of the visions holds an important clue.</details>
+        <details class="answer"><summary>Q.</summary>While standing at either the Shady Wall (southwest of Gurth) or the</details>
+        <details class="answer"><summary>R.</summary>Rock Wall (northwest of Thriff), repeat the Word of Power uttered by</details>
+        <details class="answer"><summary>S.</summary>the warlock you saw in the vision.</details>
+        <details class="answer"><summary>T.</summary>PUSH THE OUTLINE, like the warlock did.</details>
+      </div>
+  </div>
+
+  <h2 id="the_forest">The Forest</h2>
+          <div class="question indented">
+      <h3>What does the inscription on the boulder mean?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It&#39;s a riddle.</details>
+        <details class="answer"><summary>B.</summary>Don&#39;t develop the next hint unless you&#39;re really stumped.</details>
+        <details class="answer"><summary>C.</summary>Type the word YOUTH and watch what happens.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get across the bridge?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You can&#39;t. Ever. Really. You cannot reach the far side of the bridge by</details>
+        <details class="answer"><summary>B.</summary>walking across.</details>
+        <details class="answer"><summary>C.</summary>There is a way to get off the bridge. Five ways, in fact. Four involve</details>
+        <details class="answer"><summary>D.</summary>Magick.</details>
+        <details class="answer"><summary>E.</summary>The non-Magick way involves the item you found on the bridge.</details>
+        <details class="answer"><summary>F.</summary>It&#39;s the umbrella.</details>
+        <details class="answer"><summary>G.</summary>GET THE UMBRELLA THEN OPEN IT. JUMP.</details>
+        <details class="answer"><summary>H.</summary>Three more ways are the same as those for getting out of the cellar.</details>
+        <details class="answer"><summary>I.</summary>Just develop the last three clues pertaining to escaping from the</details>
+        <details class="answer"><summary>J.</summary>Cellar.</details>
+        <details class="answer"><summary>K.</summary>The pterodactyl may also be able to help you if you&#39;ve helped him.</details>
+        <details class="answer"><summary>L.</summary>BLOW THE WHISTLE. If you&#39;ve saddled the pterodactyl and have not used</details>
+        <details class="answer"><summary>M.</summary>up your three summons, CLIMB ON THE PTERODACTYL and FLY.</details>
+      </div>
+  </div>
+
+  <h2 id="the_ruins">The Ruins</h2>
+      <div class="indented">
+      <p>
+        Help! I can&#39;t kill the undead warrior! Of course not. He&#39;s not really alive. If weapons don&#39;t work, perhaps Magick will. There is a Magick item that can deal with undead creatures. THROW THE VIAL OF HOLY WATER AT THE UNDEAD WARRIOR.</p><p>
+    </p>
+    </div>
+  <h2 id="underground">Underground</h2>
+      <div class="indented">
+      <p>
+        How do I see underground? It&#39;s dark. You need a source of light. The lantern, perhaps? Perhaps not. If you&#39;ve been to the castle, reflect on the problem for a while. If not, you need to get there before continuing. Experiment with the jar. And with the mirrors. Reread the description for the Rock Wall room carefully. Blow a bubble mirror just inside the Rock Wall. The mirrors rotate, as if they were on pivots. From the secret doorway at Rock Wall: GO INSIDE. OPEN THE JAR. TAKE THE CIRCLET. BLOW A BUBBLE. TURN THE MIRROR TO THE SOUTH. Using a series of mirrors, you can reflect sunlight into any one of the Underground passageways.</p><p>
+    </p>
+    </div>
+  <h2 id="that_which_can_be_named">That Which Can Be Named</h2>
+      <div class="indented">
+      <p>
+        Weapons Dagger, Shillelagh, Spade, Battle-axe, Longsword, Vague Outline/Phase Blade</p><p>
+        Animals Pterodactyl, Minx, Butterfly/Caterpillar</p><p>
+    </p>
+    </div>
+  <h2 id="variable_magic_items_lists">Variable Magic Items Lists</h2>
+      <div class="indented">
+      <p>
+        Wands Anethesia [sic], Annihilation, Dispel, Eversion, Levitation, Sayonara</p><p>
+        Scrolls Fireworks, Gating, Honing, Mischief, Protection, Refreshment</p><p>
+        Potions Death, Enlightenment, Forgetfulness, Healing, Might</p><p>
+    </p>
+    </div>
+  <h2 id="treasure_locations_and_values">Treasure Locations and Values</h2>
+    <pre class="mono">(Note -- Magick items can also be resold for zorkmids.)
+
+  Treasure               Location                Value
+
+  Silver Ornament        Christmas Trees            2
+  Truffles (3)           Under Oak Trees            5
+  Gold Doubloon          Crab&#39;s Nest               10
+  Tiny Crown             On the Crab               20
+  Bubble Gum Card        2nd Floor Lighthouse      30
+  Sextant                Lamphouse                 30
+  Ivory Tusk             Jungle                    40
+  Diamond                Snow Wight                50
+  Crocodile&#39;s Tear       Idol                    1000</pre>
+  <h2 id="for_your_amusement">For Your Amusement</h2>
+      <div class="indented">
+      <p>
+        Have you tried...<br>
+        <br>
+          asking the old woman (each one) about almost anything?<br>
+          asking the cook about himself?<br>
+          pointing the Sayonara wand at the snow wight?<br>
+          insulting the cruel puppet?<br>
+          pointing the Levitation wand at the reliquary?<br>
+          touching people after crossing the bear rug?<br>
+          opening the umbrella while flying on the pterodactyl?<br>
+          opening the umbrella indoors?<br>
+          eating a truffle in front of the minx?<br>
+          selling a truffle to the old woman?<br>
+          tasting the sticky coating in the goblet?<br>
+          opening the chest a second time?<br>
+          turning the crank on the hurdy-gurdy (12 possibilities) near the old<br>
+            woman?<br>
+          drinking the potion of forgetfulness? death?<br>
+    </p>
+    </div>
+  <h2 id="indicia">Indicia</h2>
+      <div class="indented">
+      <p>
+        Copyright by Infocom, Inc. Provided for non-commercial use only, with the sole intent of making information available that would otherwise be lost.</p><p>
+        To whoever presently holds the copyright to the information contained in this file: if you think the existence of this file violates your copyright, please complain and the file will be removed.</p><p>
+        Typed in from the original hintbook by Graeme Cree (Plundered Hearts) and Paul David Doherty (Beyond Zork).</p><p>
+    </p>
+    </div>
+</main>
+</body>
+</html>

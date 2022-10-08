@@ -1,546 +1,775 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><title>The Witness Invisiclues</title>
-<style>* { padding: 0; margin: 0 ; }
-html { font-size: 100%; }
-body { 
-color: #080808; 
-background-color: #FAFAFA;
-color: #0A0A0A;
-width: 41.5rem;
-margin: auto;
-font-size: 100%;
-margin-bottom: 2rem;
-font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-} 
-h1.title { text-align: center; margin-top: 1rem; margin-bottom: 2rem; }
-.other-versions { font-weight: bold; }
-.other-versions > ul { margin-top: 1rem; }
-header { margin: auto; }
-div.ext-table { line-height: 1.5; width: 40rem; margin-bottom: 2rem; }
-a.title { text-decoration-style: dotted; }
-hr.border { border: .05rem solid #333; margin: 1rem .5rem 1rem -1.5rem; }
-div.ext-name {  white-space: nowrap; width: 100%; margin-top: .1rem; font-size: 1.25rem; text-indent: -1.5rem; }
-div.ext-desc { margin-bottom: .5rem; padding-top: .25rem; }
-div.empty-desc { text-align: right; margin-right: .5rem; }
-span.link { font-weight: bold;} 
-span.version { font-size: 1rem; }
-span.limiter { font-style: italic; font-size: 1rem; }
-span.code { font-family: monospace; }
-div.error { margin-left: -1.5rem; }
-h2 { margin-top: 1rem; margin-bottom: 1rem; }
-details { border: .1rem solid black; padding: .5rem; }
-summary { margin: .5rem 0 .5rem 0; }
-p.omission { margin-bottom: .5rem; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
+<p><a href="./index.html">Invisiclues Index</a></p>
 </header>
-  <h1>The Witness Invisiclues</h1>
-      <p>Copyright by Infocom, Inc. Provided for non-commercial use only, with the sole intent of making information available that would otherwise be lost.</p>
-      <p>To whoever presently holds the copyright to the information contained in this file: if you think the existence of this file violates your copyright, please complain and the file will be removed.</p>
-      <p>Typed in from the original hintbook by Paul David Doherty.</p>
-<!-- Sample Question -->
-  <h2>Sample Question</h2>
-      <p>Why did trusty Sgt. Duffy cross the road?</p>
-        <details><summary>A.</summary>Try following him.</details>
-        <details><summary>B.</summary>Where did he end up?</details>
-        <details><summary>C.</summary>To get to the other side.</details>
-<!-- InvisiClues -->
-  <h2>InvisiClues</h2>
-      <p>What crime am I supposed to investigate?</p>
-        <details><summary>A.</summary>It&#039;s not Mrs. Linder&#039;s suicide; that&#039;s already being handled by others.</details>
-        <details><summary>B.</summary>In fact, you got the suicide note and newspaper from the ongoing file</details>
-        <details><summary>C.</summary>on her case.</details>
-        <details><summary>D.</summary>You should knock on the front door or ring the doorbell before about</details>
-        <details><summary>E.</summary>8:30.</details>
-        <details><summary>F.</summary>If you don&#039;t do that, you won&#039;t witness a crime during the story.</details>
-      <p>What if I don&#039;t go in the house?</p>
-        <details><summary>A.</summary>You could try waiting outside until 9:00 and then ringing the doorbell</details>
-        <details><summary>B.</summary>again and again.</details>
-        <details><summary>C.</summary>You can also see someone arrive and go to the office door about 9:00.</details>
-        <details><summary>D.</summary>Who is that person?</details>
-        <details><summary>E.</summary>You could try talking to him, using various names.</details>
-        <details><summary>F.</summary>You can even call him &quot;visitor&quot; or &quot;stranger.&quot;</details>
-        <details><summary>G.</summary>You&#039;ll discover that it&#039;s Stiles, but why is he here?</details>
-        <details><summary>H.</summary>Try asking him about the phone call.</details>
-      <p>How do I enter the house?</p>
-        <details><summary>A.</summary>All the doors leading into the house are locked when you arrive. You</details>
-        <details><summary>B.</summary>can enter through the front door by knocking or ringing the bell.</details>
-        <details><summary>C.</summary>Once Linder is dead, you can unlock any door from the inside.</details>
-        <details><summary>D.</summary>...unless you tried to sneak in by shooting the lock.</details>
-        <details><summary>E.</summary>Once Linder is dead, you can also get all the door keys from Phong.</details>
-      <p>Is there anything special about the windows?</p>
-        <details><summary>A.</summary>Only one window is special.</details>
-        <details><summary>B.</summary>It gets broken when the gun is shot.</details>
-        <details><summary>C.</summary>Try examining it before and after the gunshot.</details>
-        <details><summary>D.</summary>Besides the usual wiring, there is a piece of green wire.</details>
-        <details><summary>E.</summary>Try asking other characters about the green wire.</details>
-        <details><summary>F.</summary>Everyone in the household either evades the question or lies about it.</details>
-        <details><summary>G.</summary>You can also analyze the chunk of putty after the gunshot.</details>
-        <details><summary>H.</summary>This should tell you that the window was broken by a remote-controlled</details>
-        <details><summary>I.</summary>explosive.</details>
-      <p>What are the buttons used for?</p>
-        <details><summary>A.</summary>Every room in the house has a button to summon the butler.</details>
-        <details><summary>B.</summary>You can keep Phong busy all night by pushing these buttons.</details>
-        <details><summary>C.</summary>Have you pushed a button and then hidden?</details>
-        <details><summary>D.</summary>That will throw poor Phong into confusion!</details>
-        <details><summary>E.</summary>But there&#039;s only one room with a good hiding place.</details>
-        <details><summary>F.</summary>Try pushing the button in the office before the gunshot.</details>
-        <details><summary>G.</summary>Linder won&#039;t let you, because it&#039;s important in his plan.</details>
-        <details><summary>H.</summary>Try pushing it after Monica has been to the workshop.</details>
-        <details><summary>I.</summary>At that time, it signals the butler to come, as usual.</details>
-        <details><summary>J.</summary>Try pushing it after the gunshot but before Monica gets home from the</details>
-        <details><summary>K.</summary>movie.</details>
-        <details><summary>L.</summary>You&#039;ll hear a click from the clock. (You have to do this to get the</details>
-        <details><summary>M.</summary>best ending.)</details>
-      <p>Should I investigate the can of worms?</p>
-        <details><summary>A.</summary>It&#039;s in the kitchen.</details>
-        <details><summary>B.</summary>Phong does something with it.</details>
-        <details><summary>C.</summary>Have you tried to do anything with it?</details>
-        <details><summary>D.</summary>How about trying to find it?</details>
-        <details><summary>E.</summary>Or asking the program what it is?</details>
-      <p>What significance do the clocks have?</p>
-        <details><summary>A.</summary>There is a clock in the kitchen and the office.</details>
-        <details><summary>B.</summary>Isn&#039;t it strange that there are no alarm clocks in the bedrooms?</details>
-        <details><summary>C.</summary>Maybe, but it&#039;s not important.</details>
-        <details><summary>D.</summary>The only interesting clock is the grandfather clock in the office.</details>
-        <details><summary>E.</summary>Try examining it before and after the gunshot.</details>
-        <details><summary>F.</summary>Try figuring out what that dark powder is around the keyhole.</details>
-        <details><summary>G.</summary>Try analyzing the powder.</details>
-        <details><summary>H.</summary>It&#039;s gunpowder.</details>
-        <details><summary>I.</summary>This should tell you that the fatal bullet actually comes from inside</details>
-        <details><summary>J.</summary>the clock, through the keyhole rather than through the window.</details>
-        <details><summary>K.</summary>You have to prove this in order to get to the best ending. One way to</details>
-        <details><summary>L.</summary>prove it is to analyze the powder.</details>
-      <p>What use is the broom?</p>
-        <details><summary>A.</summary>Can you use it to clean anything?</details>
-        <details><summary>B.</summary>No, you can&#039;t.</details>
-        <details><summary>C.</summary>Who else would you expect to use it?</details>
-        <details><summary>D.</summary>Try asking Phong about it.</details>
-        <details><summary>E.</summary>That&#039;s all there is to the broom.</details>
-      <p>What can I learn from the mystery book?</p>
-        <details><summary>A.</summary>It&#039;s in the butler&#039;s room.</details>
-        <details><summary>B.</summary>Have you read it? Was it interesting?</details>
-        <details><summary>C.</summary>Have you shown it to Monica?</details>
-        <details><summary>D.</summary>Have you shown it to Duffy?</details>
-        <details><summary>E.</summary>What about the bookmark?</details>
-        <details><summary>F.</summary>The bookmark is a receipt for two identical handguns, not one.</details>
-        <details><summary>G.</summary>Try showing the receipt to Phong.</details>
-        <details><summary>H.</summary>He&#039;ll tell you that the name on the receipt is false and that Monica</details>
-        <details><summary>I.</summary>bought the guns.</details>
-        <details><summary>J.</summary>Monica and Linder want you to think that there&#039;s only one gun.</details>
-      <p>Are the handcuffs useful?</p>
-        <details><summary>A.</summary>You can try to put them on other people.</details>
-        <details><summary>B.</summary>You&#039;d better have a good reason, though.</details>
-        <details><summary>C.</summary>Even with a good reason, you may not succeed.</details>
-        <details><summary>D.</summary>In fact, you can succeed only after midnight, when everyone&#039;s tired</details>
-        <details><summary>E.</summary>out.</details>
-        <details><summary>F.</summary>And even then, only one person is tired enough to succumb.</details>
-        <details><summary>G.</summary>That person is Monica.</details>
-      <p>Will the matchbook help me solve anything?</p>
-        <details><summary>A.</summary>Have you tried to phone the Brass Lantern?</details>
-        <details><summary>B.</summary>Did you look inside the matchbook?</details>
-        <details><summary>C.</summary>Whose phone number is written on the inside?</details>
-        <details><summary>D.</summary>Try calling that number.</details>
-        <details><summary>E.</summary>If you&#039;ve lost the matchbook, you can try to PHONE THE MATCHBOOK or</details>
-        <details><summary>F.</summary>LOOK UP THE MATCHBOOK.</details>
-        <details><summary>G.</summary>Try showing it to various characters.</details>
-        <details><summary>H.</summary>You can also try to analyze the handwriting.</details>
-        <details><summary>I.</summary>But that won&#039;t work, because the lab needs another sample of a person&#039;s</details>
-        <details><summary>J.</summary>handwriting to get any result.</details>
-      <p>What should I do with the threatening note?</p>
-        <details><summary>A.</summary>Try showing it to various characters.</details>
-        <details><summary>B.</summary>You can also try to analyze the handwriting.</details>
-        <details><summary>C.</summary>But that won&#039;t work, because the lab needs another sample of a person&#039;s</details>
-        <details><summary>D.</summary>handwriting to get any result.</details>
-      <p>Can the radio tell me anything?</p>
-        <details><summary>A.</summary>It&#039;s in the living room.</details>
-        <details><summary>B.</summary>Try turning it on.</details>
-        <details><summary>C.</summary>You&#039;ll hear some real programs!</details>
-        <details><summary>D.</summary>It&#039;s a fine radio. You could probably sit and listen to it all night.</details>
-        <details><summary>E.</summary>But you wouldn&#039;t learn anything about the case.</details>
-      <p>Can I conclude anything from the records?</p>
-        <details><summary>A.</summary>They&#039;re in Monica&#039;s room.</details>
-        <details><summary>B.</summary>Try playing one.</details>
-        <details><summary>C.</summary>You&#039;ll hear some authentic popular songs!</details>
-        <details><summary>D.</summary>You could probably sit and listen to records for a long time.</details>
-        <details><summary>E.</summary>But you wouldn&#039;t learn anything about the case.</details>
-      <p>What should I glean from the newspaper?</p>
-        <details><summary>A.</summary>There&#039;s one in the police file on Mrs. Linder&#039;s death. (That&#039;s the one</details>
-        <details><summary>B.</summary>in your game package.)</details>
-        <details><summary>C.</summary>Only two stories relate to this case.</details>
-        <details><summary>D.</summary>Both of them have &quot;Linder&quot; in the headline.</details>
-        <details><summary>E.</summary>There&#039;s also another newspaper on Linder&#039;s desk.</details>
-        <details><summary>F.</summary>Try reading it.</details>
-        <details><summary>G.</summary>You&#039;ll read some real headlines!</details>
-        <details><summary>H.</summary>But you won&#039;t learn anything about the case.</details>
-      <p>Is there anything useful in the workshop?</p>
-        <details><summary>A.</summary>How could you use a hammer and saw?</details>
-        <details><summary>B.</summary>Maybe you could open something that you can&#039;t find the key for.</details>
-        <details><summary>C.</summary>Or you could use the rope to make a hangman&#039;s noose.</details>
-        <details><summary>D.</summary>Then again, you might as well leave the tools alone.</details>
-        <details><summary>E.</summary>But there is something useful in the workshop.</details>
-      <p>Is the car key a clue?</p>
-        <details><summary>A.</summary>Can you tell which car is whose?</details>
-        <details><summary>B.</summary>If you wait for Linder to use his car, maybe you can get a key from</details>
-        <details><summary>C.</summary>him.</details>
-        <details><summary>D.</summary>But Linder doesn&#039;t use any car in this story.</details>
-        <details><summary>E.</summary>But Monica does.</details>
-        <details><summary>F.</summary>Is she trying to hide the car key from you?</details>
-        <details><summary>G.</summary>No, she isn&#039;t.</details>
-        <details><summary>H.</summary>You can&#039;t find any car key.</details>
-        <details><summary>I.</summary>Remember the warning in the introduction: Do not use the presence or</details>
-        <details><summary>J.</summary>absence of a question on a certain topic as an indication of what is</details>
-        <details><summary>K.</summary>important, and don&#039;t assume that long answers are associated with</details>
-        <details><summary>L.</summary>important questions.</details>
-      <p>Does the cat have any significance?</p>
-        <details><summary>A.</summary>Try asking Linder about it.</details>
-        <details><summary>B.</summary>Try asking Monica about it.</details>
-        <details><summary>C.</summary>Try petting it.</details>
-        <details><summary>D.</summary>Try waking it.</details>
-        <details><summary>E.</summary>Try kicking it.</details>
-        <details><summary>F.</summary>Where does it go after the gunshot?</details>
-        <details><summary>G.</summary>It disappears, like any sensible animal.</details>
-      <p>What can I learn from the footprints in the back yard?</p>
-        <details><summary>A.</summary>If you analyze the footprints, you&#039;ll get a cast that you can compare</details>
-        <details><summary>B.</summary>with people&#039;s shoes.</details>
-        <details><summary>C.</summary>Of course, if you haven&#039;t seen any footprints, you can&#039;t analyze them.</details>
-        <details><summary>D.</summary>Try examining people&#039;s shoes.</details>
-        <details><summary>E.</summary>Stiles&#039;s shoes are muddy.</details>
-        <details><summary>F.</summary>His shoes match the footprints.</details>
-        <details><summary>G.</summary>This shows that Stiles really is in the back yard at the time of the</details>
-        <details><summary>H.</summary>gunshot.</details>
-      <p>Can I determine anything from the footprints in the side yard?</p>
-        <details><summary>A.</summary>If you analyze the footprints, you&#039;ll get a cast that you can compare</details>
-        <details><summary>B.</summary>with people&#039;s shoes.</details>
-        <details><summary>C.</summary>Of course, if you haven&#039;t seen any footprints, you can&#039;t analyze them.</details>
-        <details><summary>D.</summary>And you&#039;ll have to be careful not to make a mess in the muddy yard.</details>
-        <details><summary>E.</summary>If you don&#039;t make a cast of the prints the first time you&#039;re there</details>
-        <details><summary>F.</summary>after the rain storm, you&#039;ll confuse them with your own footprints.</details>
-        <details><summary>G.</summary>Try to find the muddy boots.</details>
-        <details><summary>H.</summary>After the gunshot, they&#039;re on the shoe platform in the entry.</details>
-        <details><summary>I.</summary>The muddy boots match the footprints.</details>
-        <details><summary>J.</summary>Try asking Phong about the muddy boots.</details>
-        <details><summary>K.</summary>He&#039;ll admit that he was in the side yard just before the gunshot, but</details>
-        <details><summary>L.</summary>he&#039;ll claim that he heard a noise.</details>
-        <details><summary>M.</summary>Actually, he goes there to &quot;plant&quot; the muddy handgun and watch for</details>
-        <details><summary>N.</summary>Stiles to arrive.</details>
-      <p>Will the footprints in the front yard help me solve anything?</p>
-        <details><summary>A.</summary>If you analyze the footprints, you&#039;ll get a cast that you can compare</details>
-        <details><summary>B.</summary>with people&#039;s shoes.</details>
-        <details><summary>C.</summary>Of course, if you haven&#039;t seen any footprints, you can&#039;t analyze them.</details>
-        <details><summary>D.</summary>Do you make them when you&#039;re stealing vegetables?</details>
-        <details><summary>E.</summary>No, you don&#039;t.</details>
-        <details><summary>F.</summary>Does Phong make them while putting worms in the garden?</details>
-        <details><summary>G.</summary>No, he doesn&#039;t.</details>
-        <details><summary>H.</summary>Does Duffy make them while investigating on his own?</details>
-        <details><summary>I.</summary>No, he doesn&#039;t. He&#039;s much too careful for that.</details>
-        <details><summary>J.</summary>There aren&#039;t any footprints in the front yard.</details>
-        <details><summary>K.</summary>Remember the warning in the introduction: Do not use the presence or</details>
-        <details><summary>L.</summary>absence of a question on a certain topic as an indication of what is</details>
-        <details><summary>M.</summary>important, and don&#039;t assume that long answers are associated with</details>
-        <details><summary>N.</summary>important questions.</details>
-      <p>What if my cast doesn&#039;t match anybody&#039;s shoes?</p>
-        <details><summary>A.</summary>Maybe someone went through the yard and then left the property.</details>
-        <details><summary>B.</summary>Or maybe they just changed shoes.</details>
-        <details><summary>C.</summary>Where could one change shoes without tracking mud through the house?</details>
-        <details><summary>D.</summary>There&#039;s a platform for storing shoes in the front entry.</details>
-        <details><summary>E.</summary>After a certain time, you can find some muddy boots there.</details>
-        <details><summary>F.</summary>Try asking Phong about the muddy boots.</details>
-      <p>Who rings the doorbell?</p>
-        <details><summary>A.</summary>After the gunshot, you can go to the front door and see for yourself.</details>
-        <details><summary>B.</summary>You&#039;ll see that it&#039;s Duffy.</details>
-        <details><summary>C.</summary>What about just before the gunshot?</details>
-        <details><summary>D.</summary>You could ask Phong about it.</details>
-        <details><summary>E.</summary>Actually, it&#039;s a signal.</details>
-        <details><summary>F.</summary>Phong rings it to tell Linder that Stiles is coming.</details>
-      <p>Who calls on the phone?</p>
-        <details><summary>A.</summary>It isn&#039;t the folks at the Brass Lantern, begging for a takeout order.</details>
-        <details><summary>B.</summary>It isn&#039;t the coroner. He&#039;s much too busy, even for a Friday night.</details>
-        <details><summary>C.</summary>It isn&#039;t the operator, asking whether you need the police.</details>
-        <details><summary>D.</summary>It isn&#039;t Stiles. He&#039;s never home during the story.</details>
-        <details><summary>E.</summary>In fact, you can try to call all of the above.</details>
-        <details><summary>F.</summary>But no one calls during the story.</details>
-        <details><summary>G.</summary>That happens in DEADLINE(tm).</details>
-      <p>Does Monica really go to the movie?</p>
-        <details><summary>A.</summary>You can ask her about the movie.</details>
-        <details><summary>B.</summary>She knows who the star was, at least.</details>
-        <details><summary>C.</summary>You can poke around in the garage after she comes home.</details>
-        <details><summary>D.</summary>The hood of her car feels warm, so she didn&#039;t just go around the block.</details>
-        <details><summary>E.</summary>Also, she drops her ticket stub in the garage.</details>
-        <details><summary>F.</summary>If you ANALYZE it, you can tell that she really goes.</details>
-      <p>Why would Monica want to go to the movie?</p>
-        <details><summary>A.</summary>It isn&#039;t just a casual date.</details>
-        <details><summary>B.</summary>Linder doesn&#039;t want her to go, but she goes anyway.</details>
-        <details><summary>C.</summary>She goes even if you try to delay her with questions.</details>
-        <details><summary>D.</summary>She wants to have an alibi for the time of the shooting.</details>
-      <p>What does Monica do in the workshop?</p>
-        <details><summary>A.</summary>Generally speaking, she works there on her own projects.</details>
-        <details><summary>B.</summary>Specifically, she goes in there when she gets home from the movie.</details>
-        <details><summary>C.</summary>She does something with the wires in the junction box.</details>
-        <details><summary>D.</summary>The junction box is where all the custom wiring in the house joins</details>
-        <details><summary>E.</summary>together.</details>
-        <details><summary>F.</summary>She needs to dismantle the wires connecting the office button with the</details>
-        <details><summary>G.</summary>office window and grandfather clock.</details>
-      <p>Why does Monica go into the kitchen?</p>
-        <details><summary>A.</summary>She doesn&#039;t cook. Phong does that.</details>
-        <details><summary>B.</summary>She doesn&#039;t pour out a belt of whisky. That&#039;s in the living room.</details>
-        <details><summary>C.</summary>She doesn&#039;t fix a late-night snack. Her stomach couldn&#039;t take it after</details>
-        <details><summary>D.</summary>the shooting.</details>
-        <details><summary>E.</summary>She doesn&#039;t even fix breakfast before you have to leave.</details>
-        <details><summary>F.</summary>She doesn&#039;t go to the kitchen at all.</details>
-      <p>What prompts Monica to enter the office?</p>
-        <details><summary>A.</summary>She goes there before the movie to say good-bye to Linder.</details>
-        <details><summary>B.</summary>She goes there after the movie to say hello to Linder.</details>
-        <details><summary>C.</summary>When she sees his body, she seems to be overcome with disgust and</details>
-        <details><summary>D.</summary>grief.</details>
-        <details><summary>E.</summary>She also goes there late at night.</details>
-        <details><summary>F.</summary>She doesn&#039;t do anything if she sees you in the office.</details>
-        <details><summary>G.</summary>If you hide in the office or outside on the porch, you can see what she</details>
-        <details><summary>H.</summary>does.</details>
-        <details><summary>I.</summary>She needs to remove evidence from the clock.</details>
-        <details><summary>J.</summary>Afterwards, you can handcuff her and search her to find the evidence.</details>
-      <p>On what occasions does Phong enter the kitchen?</p>
-        <details><summary>A.</summary>At different times he goes in to do different things.</details>
-        <details><summary>B.</summary>In his orderly way, he seems to begin a new activity on the hour.</details>
-        <details><summary>C.</summary>Try going in the kitchen at different times.</details>
-        <details><summary>D.</summary>Maybe he&#039;ll enjoy the company.</details>
-        <details><summary>E.</summary>Or maybe not.</details>
-      <p>What does Phong do in his bedroom?</p>
-        <details><summary>A.</summary>Sometimes he reads the mystery book.</details>
-        <details><summary>B.</summary>Other times he just meditates on his future.</details>
-        <details><summary>C.</summary>Isn&#039;t it strange how no one sleeps in this story?</details>
-        <details><summary>D.</summary>...except Linder, who sleeps the big sleep.</details>
-        <details><summary>E.</summary>Maybe it isn&#039;t strange, considering the recent deaths.</details>
-      <p>Why does Phong go outside?</p>
-        <details><summary>A.</summary>Sometimes he tends the garden in the front yard.</details>
-        <details><summary>B.</summary>Sometimes he goes outside to check on strange noises.</details>
-        <details><summary>C.</summary>Sometimes he goes outside because Linder orders him to go.</details>
-        <details><summary>D.</summary>For instance, on this night he tramps through the muddy side yard. (See</details>
-        <details><summary>E.</summary>the question about footprints in the side yard.)</details>
-      <p>Where is the key?</p>
-        <details><summary>A.</summary>One person has the keys for all the doors in the house.</details>
-        <details><summary>B.</summary>That&#039;s Phong.</details>
-        <details><summary>C.</summary>Only one person knows for sure where the clock key is.</details>
-        <details><summary>D.</summary>That&#039;s Monica.</details>
-        <details><summary>E.</summary>She has it all the time, but you can&#039;t discover that until after she</details>
-        <details><summary>F.</summary>uses it.</details>
-        <details><summary>G.</summary>Try handcuffing and searching her after she uses it.</details>
-        <details><summary>H.</summary>You have to prove where the fatal bullet actually comes from, in order</details>
-        <details><summary>I.</summary>to get the best ending. One way to prove it is to search Monica and</details>
-        <details><summary>J.</summary>then use the key.</details>
-      <p>What can I do with the cars?</p>
-        <details><summary>A.</summary>You can&#039;t drive them.</details>
-        <details><summary>B.</summary>You can&#039;t even get in them.</details>
-        <details><summary>C.</summary>You can look at them, though.</details>
-        <details><summary>D.</summary>You can even look inside them.</details>
-        <details><summary>E.</summary>And you can feel that the MG is warm after Monica comes home.</details>
-      <p>How is &quot;O.K.&quot; really spelled?</p>
-        <details><summary>A.</summary>In _The Big Sleep_, published in 1939, Raymond Chandler always spelled</details>
-        <details><summary>B.</summary>it &quot;okey.&quot;</details>
-        <details><summary>C.</summary>So that&#039;s how it&#039;s spelled when characters in The WITNESS say it.</details>
-        <details><summary>D.</summary>According to H. L. Mencken&#039;s _The American Language_, President Woodrow</details>
-        <details><summary>E.</summary>Wilson used &quot;okeh&quot; on documents.</details>
-        <details><summary>F.</summary>So that&#039;s how it&#039;s spelled in the context of the story in The WITNESS.</details>
-        <details><summary>G.</summary>Today&#039;s spelling appears in The WITNESS only in the context of using</details>
-        <details><summary>H.</summary>computers.</details>
-      <p>What is Linder&#039;s plan?</p>
-        <details><summary>A.</summary>Once you enter the house, he won&#039;t let you out of his sight.</details>
-        <details><summary>B.</summary>Once he takes you to his office, he won&#039;t let you leave.</details>
-        <details><summary>C.</summary>He wants you in his office, sitting down, when Stiles arrives.</details>
-        <details><summary>D.</summary>He phoned Stiles and persuaded him to come to the office at 9:00.</details>
-        <details><summary>E.</summary>He wants you to witness the gunshot.</details>
-        <details><summary>F.</summary>He wants you to arrest Stiles for attempted murder.</details>
-        <details><summary>G.</summary>He doesn&#039;t intend to be killed.</details>
-      <p>What is Monica&#039;s plan?</p>
-        <details><summary>A.</summary>She cooperates fully with Linder&#039;s plan (see above), except...</details>
-        <details><summary>B.</summary>She wants to leave the house before Stiles arrives.</details>
-        <details><summary>C.</summary>If you don&#039;t suspect Stiles, she may tell you about the medical report.</details>
-        <details><summary>D.</summary>(See the question on Linder&#039;s motive.)</details>
-        <details><summary>E.</summary>She doesn&#039;t want you to witness the gunshot.</details>
-        <details><summary>F.</summary>But she doesn&#039;t want Linder to know that.</details>
-        <details><summary>G.</summary>(WARNING: Don&#039;t read further unless you think you know what it says!)</details>
-        <details><summary>H.</summary>Linder expects the bullet to miss him. And she expects it to kill him.</details>
-      <p>What part does Phong play?</p>
-        <details><summary>A.</summary>He cooperates fully with Linder&#039;s plan (see above).</details>
-        <details><summary>B.</summary>That includes his duty in the side yard. (See the question about</details>
-        <details><summary>C.</summary>footprints in the side yard.)</details>
-        <details><summary>D.</summary>(WARNING: Don&#039;t read further unless you think you know what it says!)</details>
-        <details><summary>E.</summary>He&#039;s surprised when Linder is killed.</details>
-        <details><summary>F.</summary>Then he has all night to meditate on his future.</details>
-        <details><summary>G.</summary>That&#039;s all folks!</details>
-      <p>What is Stiles&#039;s plan?</p>
-        <details><summary>A.</summary>It certainly seems obvious, doesn&#039;t it?</details>
-        <details><summary>B.</summary>That&#039;s what Linder wants you to think.</details>
-        <details><summary>C.</summary>Linder phoned him and persuaded him to come to the house at 9:00.</details>
-        <details><summary>D.</summary>Part of the persuasion was an offer of money.</details>
-        <details><summary>E.</summary>If you&#039;re still outside when Stiles arrives, Linder doesn&#039;t know you&#039;re</details>
-        <details><summary>F.</summary>there, so he gives Stiles some money and sends him away.</details>
-        <details><summary>G.</summary>If you&#039;re inside when Stiles arrives, he fits right into Linder&#039;s plan.</details>
-        <details><summary>H.</summary>Like a true grifter, Stiles has no real plan.</details>
-      <p>How does Terry fit into the scheme?</p>
-        <details><summary>A.</summary>Try asking Monica.</details>
-        <details><summary>B.</summary>No help at all, is it?</details>
-        <details><summary>C.</summary>Have you seen Terry meditating in the rock garden?</details>
-        <details><summary>D.</summary>No, that doesn&#039;t happen.</details>
-        <details><summary>E.</summary>Who is that person that shows up just before dawn?</details>
-        <details><summary>F.</summary>Nobody shows up just before dawn.</details>
-        <details><summary>G.</summary>In fact, Terry never shows up at all.</details>
-        <details><summary>H.</summary>By the way, what gender have you assumed for Terry?</details>
-        <details><summary>I.</summary>Remember the warning in the introduction: Do not use the presence or</details>
-        <details><summary>J.</summary>absence of a question on a certain topic as an indication of what is</details>
-        <details><summary>K.</summary>important, and don&#039;t assume that long answers are associated with</details>
-        <details><summary>L.</summary>important questions.</details>
-      <p>Why does Duffy arrive at the house?</p>
-        <details><summary>A.</summary>At the beginning of the story, you don&#039;t expect to need Duffy.</details>
-        <details><summary>B.</summary>But he shows up anyway, about 9:00.</details>
-        <details><summary>C.</summary>Available and helpful, as usual.</details>
-        <details><summary>D.</summary>In fact, you can ask Duffy for hints, if you want.</details>
-      <p>What is Linder&#039;s motive?</p>
-        <details><summary>A.</summary>Could his death be suicide?</details>
-        <details><summary>B.</summary>Maybe he&#039;s sticken [sic] with grief over his wife&#039;s death.</details>
-        <details><summary>C.</summary>Maybe he has a fatal disease.</details>
-        <details><summary>D.</summary>Try to find a medical report.</details>
-        <details><summary>E.</summary>It&#039;s in a messy place, where you have to search for it carefully.</details>
-        <details><summary>F.</summary>It&#039;s in Monica&#039;s room, on her desk.</details>
-        <details><summary>G.</summary>The medical report says that Linder will die soon and painfully.</details>
-        <details><summary>H.</summary>Try analyzing the report or showing it to Duffy before he goes to the</details>
-        <details><summary>I.</summary>morgue. Or try to analyze the corpse for a tumor.</details>
-        <details><summary>J.</summary>In either case, the coroner will report that the medical report is</details>
-        <details><summary>K.</summary>false.</details>
-        <details><summary>L.</summary>Linder has no motive for suicide, only for framing Stiles.</details>
-      <p>What is Monica&#039;s motive?</p>
-        <details><summary>A.</summary>She could blame Stiles for her mother&#039;s suicide.</details>
-        <details><summary>B.</summary>Try asking her about him.</details>
-        <details><summary>C.</summary>But you&#039;d better do it either before she sees the corpse or after she</details>
-        <details><summary>D.</summary>admits her part in Linder&#039;s plan.</details>
-        <details><summary>E.</summary>She doesn&#039;t really blame Stiles.</details>
-        <details><summary>F.</summary>Try asking Phong about the suicide. Or try asking Monica about her</details>
-        <details><summary>G.</summary>mother or her father or the affair.</details>
-        <details><summary>H.</summary>Any of these will establish Monica&#039;s motive.</details>
-        <details><summary>I.</summary>Monica&#039;s motive is that she blames Linder for her mother&#039;s death.</details>
-      <p>Does Phong have a motive?</p>
-        <details><summary>A.</summary>Try asking Phong about himself or Linder.</details>
-        <details><summary>B.</summary>He will tell you something that establishes his motive.</details>
-        <details><summary>C.</summary>Or try asking Monica about Linder&#039;s will after she sees the corpse.</details>
-        <details><summary>D.</summary>She will tell you something that establishes Phong&#039;s motive.</details>
-        <details><summary>E.</summary>Phong&#039;s motive is that he thinks Linder deceived him about his job and</details>
-        <details><summary>F.</summary>the money he would make.</details>
-      <p>What incentive does Stiles have to commit the murder?</p>
-        <details><summary>A.</summary>It certainly seems obvious, doesn&#039;t it?</details>
-        <details><summary>B.</summary>That&#039;s what Linder wants you to think.</details>
-        <details><summary>C.</summary>But when Stiles answers any of your questions, he pleads innocence.</details>
-        <details><summary>D.</summary>Try asking him about Mr. or Mrs. Linder.</details>
-        <details><summary>E.</summary>(WARNING: Don&#039;t read further unless you think you know what it says!)</details>
-        <details><summary>F.</summary>Actually, Stiles doesn&#039;t want to shoot anybody.</details>
-      <p>Can you establish a motive for Terry?</p>
-        <details><summary>A.</summary>Terry really wanted to see this movie.</details>
-        <details><summary>B.</summary>When Monica suggested going out, it was easy to choose this movie.</details>
-        <details><summary>C.</summary>It&#039;s not clear whether or not Terry wants to be better friends with</details>
-        <details><summary>D.</summary>Monica. Would you?</details>
-        <details><summary>E.</summary>Oops! Were you assuming that Terry has a motive for a crime?</details>
-        <details><summary>F.</summary>If so, you&#039;re wrong.</details>
-        <details><summary>G.</summary>By the way, what gender have you assumed for Terry?</details>
-      <p>How does this story end?</p>
-        <details><summary>A.</summary>If you don&#039;t arrest someone before 8:00 a.m., Police Chief Klutz</details>
-        <details><summary>B.</summary>arrives to take you away, but not for a well-deserved rest.</details>
-        <details><summary>C.</summary>If you try to attack, kill, or shoot another character, you have a</details>
-        <details><summary>D.</summary>50-50 chance of succeeding and getting taken away.</details>
-        <details><summary>E.</summary>If you&#039;re not sitting down when the gunshot goes off, you have a 50-50</details>
-        <details><summary>F.</summary>chance of dying from it.</details>
-        <details><summary>G.</summary>If you&#039;re poking around in the wrong place when the gunshot goes off,</details>
-        <details><summary>H.</summary>you die from it.</details>
-        <details><summary>I.</summary>If you don&#039;t enter the house soon enough for Linder&#039;s plan, he doesn&#039;t</details>
-        <details><summary>J.</summary>get shot, and the story ends with a postscript about Stiles getting</details>
-        <details><summary>K.</summary>shot a few days later.</details>
-        <details><summary>L.</summary>Otherwise, the story ends when you arrest one or more people.</details>
-        <details><summary>M.</summary>And, if you try to arrest more than two people, you can&#039;t.</details>
-        <details><summary>N.</summary>Further, if you try to arrest two people, and they&#039;re not Monica and</details>
-        <details><summary>O.</summary>Phong, you can&#039;t.</details>
-      <p>How do I prove my case to the satisfaction of a jury?</p>
-        <details><summary>A.</summary>You need to establish &quot;method, motive, and opportunity&quot;: That means you</details>
-        <details><summary>B.</summary>need either physical evidence or reliable testimony that proves how the</details>
-        <details><summary>C.</summary>crime was committed, why the suspect did it, and when the suspect had</details>
-        <details><summary>D.</summary>the opportunity to do it.</details>
-        <details><summary>E.</summary>(WARNING: The following hints tell what the method was and how to prove</details>
-        <details><summary>F.</summary>it.)</details>
-        <details><summary>G.</summary>You can prove the actual murder method either by proving that a gun was</details>
-        <details><summary>H.</summary>in the clock and was set off by the butler&#039;s button, or by getting</details>
-        <details><summary>I.</summary>Monica or Phong to spill the beans.</details>
-        <details><summary>J.</summary>You can prove that a gun was in the clock either by analyzing the</details>
-        <details><summary>K.</summary>gunpowder on the keyhole or by finding the gun itself in Monica&#039;s</details>
-        <details><summary>L.</summary>possession.</details>
-        <details><summary>M.</summary>You can prove that the button set off the gun by pushing it between the</details>
-        <details><summary>N.</summary>time Linder is shot and the time Monica gets home.</details>
-        <details><summary>O.</summary>Monica will spill the beans if you accuse her after seeing her remove</details>
-        <details><summary>P.</summary>the gun from the clock, or if you ask her about the gunpowder, or the</details>
-        <details><summary>Q.</summary>grandfather clock, or the butler&#039;s button, after you have proven the</details>
-        <details><summary>R.</summary>button connection.</details>
-        <details><summary>S.</summary>Phong will spill the beans if you accuse him after finding the gun</details>
-        <details><summary>T.</summary>receipt and matching his boots to the footprints in the side yard, or</details>
-        <details><summary>U.</summary>if you ask him about the gunpowder or the grandfather clock or the</details>
-        <details><summary>V.</summary>butler&#039;s button after you have proven the button connection.</details>
-      <p>What are the possibilities when I make the arrest?</p>
-        <details><summary>A.</summary>If you haven&#039;t proved the actual murder method, the D.A. refuses to</details>
-        <details><summary>B.</summary>indict, claiming the evidence is too flimsy. (But your boss gives you a</details>
-        <details><summary>C.</summary>suggestion that should help you next time you play.)</details>
-        <details><summary>D.</summary>Exception: You can arrest the corpse and get a silly ending.</details>
-        <details><summary>E.</summary>Another exception: You can arrest Stiles and get him convicted, but a</details>
-        <details><summary>F.</summary>postscript tells you that he is later released when some unspecified</details>
-        <details><summary>G.</summary>new evidence is found.</details>
-        <details><summary>H.</summary>If you have proved the murder method, the ending depends on whom you</details>
-        <details><summary>I.</summary>arrest.</details>
-        <details><summary>J.</summary>If you arrest Stiles, he is acquitted because of his lack of access to</details>
-        <details><summary>K.</summary>the Linder house.</details>
-        <details><summary>L.</summary>If you arrest the corpse, the coroner makes an unsatisfying ruling. If</details>
-        <details><summary>M.</summary>you haven&#039;t seen the medical report, the coroner reaches no conclusion;</details>
-        <details><summary>N.</summary>otherwise, the coroner rules suicide, but your boss doesn&#039;t believe it.</details>
-        <details><summary>O.</summary>If you arrest both Monica and Phong, and have seen the gun receipt, and</details>
-        <details><summary>P.</summary>have established Monica&#039;s motive and opportunity (the latter either by</details>
-        <details><summary>Q.</summary>seeing her remove the gun or by opening the clock yourself with the</details>
-        <details><summary>R.</summary>key), then you have a pretty good case against them. However, Phong</details>
-        <details><summary>S.</summary>confesses only to conspiring in Linder&#039;s plan and gets a suspended</details>
-        <details><summary>T.</summary>sentence; then Monica manages to get the same deal. Your boss is not</details>
-        <details><summary>U.</summary>satisfied with this result.</details>
-        <details><summary>V.</summary>If you arrest Phong with or without Monica, but you _haven&#039;t_ met all</details>
-        <details><summary>W.</summary>these conditions, Phong is acquitted because he lacks the mechanical</details>
-        <details><summary>X.</summary>skills necessary to construct the hidden gun mechanism. If you also</details>
-        <details><summary>Y.</summary>arrest Monica, she too is acquitted: either for lack of motive or</details>
-        <details><summary>Z.</summary>opportunity, or, if you haven&#039;t seen the gun receipt, because Phong</details>
-        <details><summary>[.</summary>was.</details>
-        <details><summary>\.</summary>If you arrest Monica alone, and you have established motive but not</details>
-        <details><summary>].</summary>opportunity, she is acquitted for circumstantial evidence. If you have</details>
-        <details><summary>^.</summary>established her opportunity, you win!</details>
-<!-- For Your Amusement -->
-  <h2>For Your Amusement</h2>
-      <p>(after you&#039;ve finished the game)</p>
-      <p></p>
-      <p>Have you tried...</p>
-      <p></p>
-      <p>...reading the scroll in the entry?</p>
-      <p>...asking Duffy about himself?</p>
-      <p>...to shut up Linder or to take him outside?</p>
-      <p>...to take Linder&#039;s shoes?</p>
-      <p>...to follow Mrs. Linder?</p>
-      <p>...dialing zero or the coroner or the Brass Lantern?</p>
-      <p>...to break down a door?</p>
-      <p>...to eat or drink anything?</p>
-      <p>...asking anyone who you are or where you are?</p>
-      <p>...kicking anyone?</p>
-      <p>...looking up?</p>
-      <p>...slapping anyone or anything?</p>
-      <p>...looking under a bed?</p>
-      <p>...looking in a mirror?</p>
-      <p>...to eat a meal or take the food?</p>
-      <p>...to shoot yourself?</p>
-      <p>...to take a shower?</p>
-      <p>...following an inanimate object?</p>
-      <p>...playing anything other than the radio or a record?</p>
-      <p>...cursing at the program?</p>
-      <p>...writing your own hintbook? You think it&#039;s easy?</p>
-<!-- Table of Contents -->
-  <h2>Table of Contents</h2>
-<ul>
-</ul>
+<main>
+<h1>The Witness Invisiclues</h1>
+    <div class="question indented">
+      <h3>Why did trusty Sgt. Duffy cross the road?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Try following him.</details>
+        <details class="answer"><summary>B.</summary>Where did he end up?</details>
+        <details class="answer"><summary>C.</summary>To get to the other side.</details>
+      </div>
+  </div>
 
+  <h2>Table of Contents</h2><ul class="indented">
+    <li><a href="#invisiclues">Invisiclues</a></li>
+      <li><a href="#for_your_amusement">For Your Amusement</a></li>
+      <li><a href="#indicia">Indicia</a></li>
+  </ul>
+  <h2 id="invisiclues">Invisiclues</h2>
+          <div class="question indented">
+      <h3>What crime am I supposed to investigate?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It&#39;s not Mrs. Linder&#39;s suicide; that&#39;s already being handled by others.</details>
+        <details class="answer"><summary>B.</summary>In fact, you got the suicide note and newspaper from the ongoing file</details>
+        <details class="answer"><summary>C.</summary>on her case.</details>
+        <details class="answer"><summary>D.</summary>You should knock on the front door or ring the doorbell before about</details>
+        <details class="answer"><summary>E.</summary>8:30.</details>
+        <details class="answer"><summary>F.</summary>If you don&#39;t do that, you won&#39;t witness a crime during the story.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What if I don&#39;t go in the house?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You could try waiting outside until 9:00 and then ringing the doorbell</details>
+        <details class="answer"><summary>B.</summary>again and again.</details>
+        <details class="answer"><summary>C.</summary>You can also see someone arrive and go to the office door about 9:00.</details>
+        <details class="answer"><summary>D.</summary>Who is that person?</details>
+        <details class="answer"><summary>E.</summary>You could try talking to him, using various names.</details>
+        <details class="answer"><summary>F.</summary>You can even call him &quot;visitor&quot; or &quot;stranger.&quot;</details>
+        <details class="answer"><summary>G.</summary>You&#39;ll discover that it&#39;s Stiles, but why is he here?</details>
+        <details class="answer"><summary>H.</summary>Try asking him about the phone call.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I enter the house?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>All the doors leading into the house are locked when you arrive. You</details>
+        <details class="answer"><summary>B.</summary>can enter through the front door by knocking or ringing the bell.</details>
+        <details class="answer"><summary>C.</summary>Once Linder is dead, you can unlock any door from the inside.</details>
+        <details class="answer"><summary>D.</summary>...unless you tried to sneak in by shooting the lock.</details>
+        <details class="answer"><summary>E.</summary>Once Linder is dead, you can also get all the door keys from Phong.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Is there anything special about the windows?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Only one window is special.</details>
+        <details class="answer"><summary>B.</summary>It gets broken when the gun is shot.</details>
+        <details class="answer"><summary>C.</summary>Try examining it before and after the gunshot.</details>
+        <details class="answer"><summary>D.</summary>Besides the usual wiring, there is a piece of green wire.</details>
+        <details class="answer"><summary>E.</summary>Try asking other characters about the green wire.</details>
+        <details class="answer"><summary>F.</summary>Everyone in the household either evades the question or lies about it.</details>
+        <details class="answer"><summary>G.</summary>You can also analyze the chunk of putty after the gunshot.</details>
+        <details class="answer"><summary>H.</summary>This should tell you that the window was broken by a remote-controlled</details>
+        <details class="answer"><summary>I.</summary>explosive.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What are the buttons used for?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Every room in the house has a button to summon the butler.</details>
+        <details class="answer"><summary>B.</summary>You can keep Phong busy all night by pushing these buttons.</details>
+        <details class="answer"><summary>C.</summary>Have you pushed a button and then hidden?</details>
+        <details class="answer"><summary>D.</summary>That will throw poor Phong into confusion!</details>
+        <details class="answer"><summary>E.</summary>But there&#39;s only one room with a good hiding place.</details>
+        <details class="answer"><summary>F.</summary>Try pushing the button in the office before the gunshot.</details>
+        <details class="answer"><summary>G.</summary>Linder won&#39;t let you, because it&#39;s important in his plan.</details>
+        <details class="answer"><summary>H.</summary>Try pushing it after Monica has been to the workshop.</details>
+        <details class="answer"><summary>I.</summary>At that time, it signals the butler to come, as usual.</details>
+        <details class="answer"><summary>J.</summary>Try pushing it after the gunshot but before Monica gets home from the</details>
+        <details class="answer"><summary>K.</summary>movie.</details>
+        <details class="answer"><summary>L.</summary>You&#39;ll hear a click from the clock. (You have to do this to get the</details>
+        <details class="answer"><summary>M.</summary>best ending.)</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Should I investigate the can of worms?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It&#39;s in the kitchen.</details>
+        <details class="answer"><summary>B.</summary>Phong does something with it.</details>
+        <details class="answer"><summary>C.</summary>Have you tried to do anything with it?</details>
+        <details class="answer"><summary>D.</summary>How about trying to find it?</details>
+        <details class="answer"><summary>E.</summary>Or asking the program what it is?</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What significance do the clocks have?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>There is a clock in the kitchen and the office.</details>
+        <details class="answer"><summary>B.</summary>Isn&#39;t it strange that there are no alarm clocks in the bedrooms?</details>
+        <details class="answer"><summary>C.</summary>Maybe, but it&#39;s not important.</details>
+        <details class="answer"><summary>D.</summary>The only interesting clock is the grandfather clock in the office.</details>
+        <details class="answer"><summary>E.</summary>Try examining it before and after the gunshot.</details>
+        <details class="answer"><summary>F.</summary>Try figuring out what that dark powder is around the keyhole.</details>
+        <details class="answer"><summary>G.</summary>Try analyzing the powder.</details>
+        <details class="answer"><summary>H.</summary>It&#39;s gunpowder.</details>
+        <details class="answer"><summary>I.</summary>This should tell you that the fatal bullet actually comes from inside</details>
+        <details class="answer"><summary>J.</summary>the clock, through the keyhole rather than through the window.</details>
+        <details class="answer"><summary>K.</summary>You have to prove this in order to get to the best ending. One way to</details>
+        <details class="answer"><summary>L.</summary>prove it is to analyze the powder.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What use is the broom?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Can you use it to clean anything?</details>
+        <details class="answer"><summary>B.</summary>No, you can&#39;t.</details>
+        <details class="answer"><summary>C.</summary>Who else would you expect to use it?</details>
+        <details class="answer"><summary>D.</summary>Try asking Phong about it.</details>
+        <details class="answer"><summary>E.</summary>That&#39;s all there is to the broom.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What can I learn from the mystery book?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It&#39;s in the butler&#39;s room.</details>
+        <details class="answer"><summary>B.</summary>Have you read it? Was it interesting?</details>
+        <details class="answer"><summary>C.</summary>Have you shown it to Monica?</details>
+        <details class="answer"><summary>D.</summary>Have you shown it to Duffy?</details>
+        <details class="answer"><summary>E.</summary>What about the bookmark?</details>
+        <details class="answer"><summary>F.</summary>The bookmark is a receipt for two identical handguns, not one.</details>
+        <details class="answer"><summary>G.</summary>Try showing the receipt to Phong.</details>
+        <details class="answer"><summary>H.</summary>He&#39;ll tell you that the name on the receipt is false and that Monica</details>
+        <details class="answer"><summary>I.</summary>bought the guns.</details>
+        <details class="answer"><summary>J.</summary>Monica and Linder want you to think that there&#39;s only one gun.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Are the handcuffs useful?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You can try to put them on other people.</details>
+        <details class="answer"><summary>B.</summary>You&#39;d better have a good reason, though.</details>
+        <details class="answer"><summary>C.</summary>Even with a good reason, you may not succeed.</details>
+        <details class="answer"><summary>D.</summary>In fact, you can succeed only after midnight, when everyone&#39;s tired</details>
+        <details class="answer"><summary>E.</summary>out.</details>
+        <details class="answer"><summary>F.</summary>And even then, only one person is tired enough to succumb.</details>
+        <details class="answer"><summary>G.</summary>That person is Monica.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Will the matchbook help me solve anything?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have you tried to phone the Brass Lantern?</details>
+        <details class="answer"><summary>B.</summary>Did you look inside the matchbook?</details>
+        <details class="answer"><summary>C.</summary>Whose phone number is written on the inside?</details>
+        <details class="answer"><summary>D.</summary>Try calling that number.</details>
+        <details class="answer"><summary>E.</summary>If you&#39;ve lost the matchbook, you can try to PHONE THE MATCHBOOK or</details>
+        <details class="answer"><summary>F.</summary>LOOK UP THE MATCHBOOK.</details>
+        <details class="answer"><summary>G.</summary>Try showing it to various characters.</details>
+        <details class="answer"><summary>H.</summary>You can also try to analyze the handwriting.</details>
+        <details class="answer"><summary>I.</summary>But that won&#39;t work, because the lab needs another sample of a person&#39;s</details>
+        <details class="answer"><summary>J.</summary>handwriting to get any result.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What should I do with the threatening note?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Try showing it to various characters.</details>
+        <details class="answer"><summary>B.</summary>You can also try to analyze the handwriting.</details>
+        <details class="answer"><summary>C.</summary>But that won&#39;t work, because the lab needs another sample of a person&#39;s</details>
+        <details class="answer"><summary>D.</summary>handwriting to get any result.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Can the radio tell me anything?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It&#39;s in the living room.</details>
+        <details class="answer"><summary>B.</summary>Try turning it on.</details>
+        <details class="answer"><summary>C.</summary>You&#39;ll hear some real programs!</details>
+        <details class="answer"><summary>D.</summary>It&#39;s a fine radio. You could probably sit and listen to it all night.</details>
+        <details class="answer"><summary>E.</summary>But you wouldn&#39;t learn anything about the case.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Can I conclude anything from the records?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>They&#39;re in Monica&#39;s room.</details>
+        <details class="answer"><summary>B.</summary>Try playing one.</details>
+        <details class="answer"><summary>C.</summary>You&#39;ll hear some authentic popular songs!</details>
+        <details class="answer"><summary>D.</summary>You could probably sit and listen to records for a long time.</details>
+        <details class="answer"><summary>E.</summary>But you wouldn&#39;t learn anything about the case.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What should I glean from the newspaper?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>There&#39;s one in the police file on Mrs. Linder&#39;s death. (That&#39;s the one</details>
+        <details class="answer"><summary>B.</summary>in your game package.)</details>
+        <details class="answer"><summary>C.</summary>Only two stories relate to this case.</details>
+        <details class="answer"><summary>D.</summary>Both of them have &quot;Linder&quot; in the headline.</details>
+        <details class="answer"><summary>E.</summary>There&#39;s also another newspaper on Linder&#39;s desk.</details>
+        <details class="answer"><summary>F.</summary>Try reading it.</details>
+        <details class="answer"><summary>G.</summary>You&#39;ll read some real headlines!</details>
+        <details class="answer"><summary>H.</summary>But you won&#39;t learn anything about the case.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Is there anything useful in the workshop?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>How could you use a hammer and saw?</details>
+        <details class="answer"><summary>B.</summary>Maybe you could open something that you can&#39;t find the key for.</details>
+        <details class="answer"><summary>C.</summary>Or you could use the rope to make a hangman&#39;s noose.</details>
+        <details class="answer"><summary>D.</summary>Then again, you might as well leave the tools alone.</details>
+        <details class="answer"><summary>E.</summary>But there is something useful in the workshop.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Is the car key a clue?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Can you tell which car is whose?</details>
+        <details class="answer"><summary>B.</summary>If you wait for Linder to use his car, maybe you can get a key from</details>
+        <details class="answer"><summary>C.</summary>him.</details>
+        <details class="answer"><summary>D.</summary>But Linder doesn&#39;t use any car in this story.</details>
+        <details class="answer"><summary>E.</summary>But Monica does.</details>
+        <details class="answer"><summary>F.</summary>Is she trying to hide the car key from you?</details>
+        <details class="answer"><summary>G.</summary>No, she isn&#39;t.</details>
+        <details class="answer"><summary>H.</summary>You can&#39;t find any car key.</details>
+        <details class="answer"><summary>I.</summary>Remember the warning in the introduction: Do not use the presence or</details>
+        <details class="answer"><summary>J.</summary>absence of a question on a certain topic as an indication of what is</details>
+        <details class="answer"><summary>K.</summary>important, and don&#39;t assume that long answers are associated with</details>
+        <details class="answer"><summary>L.</summary>important questions.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Does the cat have any significance?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Try asking Linder about it.</details>
+        <details class="answer"><summary>B.</summary>Try asking Monica about it.</details>
+        <details class="answer"><summary>C.</summary>Try petting it.</details>
+        <details class="answer"><summary>D.</summary>Try waking it.</details>
+        <details class="answer"><summary>E.</summary>Try kicking it.</details>
+        <details class="answer"><summary>F.</summary>Where does it go after the gunshot?</details>
+        <details class="answer"><summary>G.</summary>It disappears, like any sensible animal.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What can I learn from the footprints in the back yard?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>If you analyze the footprints, you&#39;ll get a cast that you can compare</details>
+        <details class="answer"><summary>B.</summary>with people&#39;s shoes.</details>
+        <details class="answer"><summary>C.</summary>Of course, if you haven&#39;t seen any footprints, you can&#39;t analyze them.</details>
+        <details class="answer"><summary>D.</summary>Try examining people&#39;s shoes.</details>
+        <details class="answer"><summary>E.</summary>Stiles&#39;s shoes are muddy.</details>
+        <details class="answer"><summary>F.</summary>His shoes match the footprints.</details>
+        <details class="answer"><summary>G.</summary>This shows that Stiles really is in the back yard at the time of the</details>
+        <details class="answer"><summary>H.</summary>gunshot.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Can I determine anything from the footprints in the side yard?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>If you analyze the footprints, you&#39;ll get a cast that you can compare</details>
+        <details class="answer"><summary>B.</summary>with people&#39;s shoes.</details>
+        <details class="answer"><summary>C.</summary>Of course, if you haven&#39;t seen any footprints, you can&#39;t analyze them.</details>
+        <details class="answer"><summary>D.</summary>And you&#39;ll have to be careful not to make a mess in the muddy yard.</details>
+        <details class="answer"><summary>E.</summary>If you don&#39;t make a cast of the prints the first time you&#39;re there</details>
+        <details class="answer"><summary>F.</summary>after the rain storm, you&#39;ll confuse them with your own footprints.</details>
+        <details class="answer"><summary>G.</summary>Try to find the muddy boots.</details>
+        <details class="answer"><summary>H.</summary>After the gunshot, they&#39;re on the shoe platform in the entry.</details>
+        <details class="answer"><summary>I.</summary>The muddy boots match the footprints.</details>
+        <details class="answer"><summary>J.</summary>Try asking Phong about the muddy boots.</details>
+        <details class="answer"><summary>K.</summary>He&#39;ll admit that he was in the side yard just before the gunshot, but</details>
+        <details class="answer"><summary>L.</summary>he&#39;ll claim that he heard a noise.</details>
+        <details class="answer"><summary>M.</summary>Actually, he goes there to &quot;plant&quot; the muddy handgun and watch for</details>
+        <details class="answer"><summary>N.</summary>Stiles to arrive.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Will the footprints in the front yard help me solve anything?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>If you analyze the footprints, you&#39;ll get a cast that you can compare</details>
+        <details class="answer"><summary>B.</summary>with people&#39;s shoes.</details>
+        <details class="answer"><summary>C.</summary>Of course, if you haven&#39;t seen any footprints, you can&#39;t analyze them.</details>
+        <details class="answer"><summary>D.</summary>Do you make them when you&#39;re stealing vegetables?</details>
+        <details class="answer"><summary>E.</summary>No, you don&#39;t.</details>
+        <details class="answer"><summary>F.</summary>Does Phong make them while putting worms in the garden?</details>
+        <details class="answer"><summary>G.</summary>No, he doesn&#39;t.</details>
+        <details class="answer"><summary>H.</summary>Does Duffy make them while investigating on his own?</details>
+        <details class="answer"><summary>I.</summary>No, he doesn&#39;t. He&#39;s much too careful for that.</details>
+        <details class="answer"><summary>J.</summary>There aren&#39;t any footprints in the front yard.</details>
+        <details class="answer"><summary>K.</summary>Remember the warning in the introduction: Do not use the presence or</details>
+        <details class="answer"><summary>L.</summary>absence of a question on a certain topic as an indication of what is</details>
+        <details class="answer"><summary>M.</summary>important, and don&#39;t assume that long answers are associated with</details>
+        <details class="answer"><summary>N.</summary>important questions.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What if my cast doesn&#39;t match anybody&#39;s shoes?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Maybe someone went through the yard and then left the property.</details>
+        <details class="answer"><summary>B.</summary>Or maybe they just changed shoes.</details>
+        <details class="answer"><summary>C.</summary>Where could one change shoes without tracking mud through the house?</details>
+        <details class="answer"><summary>D.</summary>There&#39;s a platform for storing shoes in the front entry.</details>
+        <details class="answer"><summary>E.</summary>After a certain time, you can find some muddy boots there.</details>
+        <details class="answer"><summary>F.</summary>Try asking Phong about the muddy boots.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Who rings the doorbell?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>After the gunshot, you can go to the front door and see for yourself.</details>
+        <details class="answer"><summary>B.</summary>You&#39;ll see that it&#39;s Duffy.</details>
+        <details class="answer"><summary>C.</summary>What about just before the gunshot?</details>
+        <details class="answer"><summary>D.</summary>You could ask Phong about it.</details>
+        <details class="answer"><summary>E.</summary>Actually, it&#39;s a signal.</details>
+        <details class="answer"><summary>F.</summary>Phong rings it to tell Linder that Stiles is coming.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Who calls on the phone?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It isn&#39;t the folks at the Brass Lantern, begging for a takeout order.</details>
+        <details class="answer"><summary>B.</summary>It isn&#39;t the coroner. He&#39;s much too busy, even for a Friday night.</details>
+        <details class="answer"><summary>C.</summary>It isn&#39;t the operator, asking whether you need the police.</details>
+        <details class="answer"><summary>D.</summary>It isn&#39;t Stiles. He&#39;s never home during the story.</details>
+        <details class="answer"><summary>E.</summary>In fact, you can try to call all of the above.</details>
+        <details class="answer"><summary>F.</summary>But no one calls during the story.</details>
+        <details class="answer"><summary>G.</summary>That happens in DEADLINE(tm).</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Does Monica really go to the movie?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You can ask her about the movie.</details>
+        <details class="answer"><summary>B.</summary>She knows who the star was, at least.</details>
+        <details class="answer"><summary>C.</summary>You can poke around in the garage after she comes home.</details>
+        <details class="answer"><summary>D.</summary>The hood of her car feels warm, so she didn&#39;t just go around the block.</details>
+        <details class="answer"><summary>E.</summary>Also, she drops her ticket stub in the garage.</details>
+        <details class="answer"><summary>F.</summary>If you ANALYZE it, you can tell that she really goes.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Why would Monica want to go to the movie?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It isn&#39;t just a casual date.</details>
+        <details class="answer"><summary>B.</summary>Linder doesn&#39;t want her to go, but she goes anyway.</details>
+        <details class="answer"><summary>C.</summary>She goes even if you try to delay her with questions.</details>
+        <details class="answer"><summary>D.</summary>She wants to have an alibi for the time of the shooting.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What does Monica do in the workshop?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Generally speaking, she works there on her own projects.</details>
+        <details class="answer"><summary>B.</summary>Specifically, she goes in there when she gets home from the movie.</details>
+        <details class="answer"><summary>C.</summary>She does something with the wires in the junction box.</details>
+        <details class="answer"><summary>D.</summary>The junction box is where all the custom wiring in the house joins</details>
+        <details class="answer"><summary>E.</summary>together.</details>
+        <details class="answer"><summary>F.</summary>She needs to dismantle the wires connecting the office button with the</details>
+        <details class="answer"><summary>G.</summary>office window and grandfather clock.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Why does Monica go into the kitchen?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>She doesn&#39;t cook. Phong does that.</details>
+        <details class="answer"><summary>B.</summary>She doesn&#39;t pour out a belt of whisky. That&#39;s in the living room.</details>
+        <details class="answer"><summary>C.</summary>She doesn&#39;t fix a late-night snack. Her stomach couldn&#39;t take it after</details>
+        <details class="answer"><summary>D.</summary>the shooting.</details>
+        <details class="answer"><summary>E.</summary>She doesn&#39;t even fix breakfast before you have to leave.</details>
+        <details class="answer"><summary>F.</summary>She doesn&#39;t go to the kitchen at all.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What prompts Monica to enter the office?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>She goes there before the movie to say good-bye to Linder.</details>
+        <details class="answer"><summary>B.</summary>She goes there after the movie to say hello to Linder.</details>
+        <details class="answer"><summary>C.</summary>When she sees his body, she seems to be overcome with disgust and</details>
+        <details class="answer"><summary>D.</summary>grief.</details>
+        <details class="answer"><summary>E.</summary>She also goes there late at night.</details>
+        <details class="answer"><summary>F.</summary>She doesn&#39;t do anything if she sees you in the office.</details>
+        <details class="answer"><summary>G.</summary>If you hide in the office or outside on the porch, you can see what she</details>
+        <details class="answer"><summary>H.</summary>does.</details>
+        <details class="answer"><summary>I.</summary>She needs to remove evidence from the clock.</details>
+        <details class="answer"><summary>J.</summary>Afterwards, you can handcuff her and search her to find the evidence.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>On what occasions does Phong enter the kitchen?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>At different times he goes in to do different things.</details>
+        <details class="answer"><summary>B.</summary>In his orderly way, he seems to begin a new activity on the hour.</details>
+        <details class="answer"><summary>C.</summary>Try going in the kitchen at different times.</details>
+        <details class="answer"><summary>D.</summary>Maybe he&#39;ll enjoy the company.</details>
+        <details class="answer"><summary>E.</summary>Or maybe not.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What does Phong do in his bedroom?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Sometimes he reads the mystery book.</details>
+        <details class="answer"><summary>B.</summary>Other times he just meditates on his future.</details>
+        <details class="answer"><summary>C.</summary>Isn&#39;t it strange how no one sleeps in this story?</details>
+        <details class="answer"><summary>D.</summary>...except Linder, who sleeps the big sleep.</details>
+        <details class="answer"><summary>E.</summary>Maybe it isn&#39;t strange, considering the recent deaths.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Why does Phong go outside?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Sometimes he tends the garden in the front yard.</details>
+        <details class="answer"><summary>B.</summary>Sometimes he goes outside to check on strange noises.</details>
+        <details class="answer"><summary>C.</summary>Sometimes he goes outside because Linder orders him to go.</details>
+        <details class="answer"><summary>D.</summary>For instance, on this night he tramps through the muddy side yard. (See</details>
+        <details class="answer"><summary>E.</summary>the question about footprints in the side yard.)</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Where is the key?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>One person has the keys for all the doors in the house.</details>
+        <details class="answer"><summary>B.</summary>That&#39;s Phong.</details>
+        <details class="answer"><summary>C.</summary>Only one person knows for sure where the clock key is.</details>
+        <details class="answer"><summary>D.</summary>That&#39;s Monica.</details>
+        <details class="answer"><summary>E.</summary>She has it all the time, but you can&#39;t discover that until after she</details>
+        <details class="answer"><summary>F.</summary>uses it.</details>
+        <details class="answer"><summary>G.</summary>Try handcuffing and searching her after she uses it.</details>
+        <details class="answer"><summary>H.</summary>You have to prove where the fatal bullet actually comes from, in order</details>
+        <details class="answer"><summary>I.</summary>to get the best ending. One way to prove it is to search Monica and</details>
+        <details class="answer"><summary>J.</summary>then use the key.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What can I do with the cars?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You can&#39;t drive them.</details>
+        <details class="answer"><summary>B.</summary>You can&#39;t even get in them.</details>
+        <details class="answer"><summary>C.</summary>You can look at them, though.</details>
+        <details class="answer"><summary>D.</summary>You can even look inside them.</details>
+        <details class="answer"><summary>E.</summary>And you can feel that the MG is warm after Monica comes home.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How is &quot;O.K.&quot; really spelled?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>In _The Big Sleep_, published in 1939, Raymond Chandler always spelled</details>
+        <details class="answer"><summary>B.</summary>it &quot;okey.&quot;</details>
+        <details class="answer"><summary>C.</summary>So that&#39;s how it&#39;s spelled when characters in The WITNESS say it.</details>
+        <details class="answer"><summary>D.</summary>According to H. L. Mencken&#39;s _The American Language_, President Woodrow</details>
+        <details class="answer"><summary>E.</summary>Wilson used &quot;okeh&quot; on documents.</details>
+        <details class="answer"><summary>F.</summary>So that&#39;s how it&#39;s spelled in the context of the story in The WITNESS.</details>
+        <details class="answer"><summary>G.</summary>Today&#39;s spelling appears in The WITNESS only in the context of using</details>
+        <details class="answer"><summary>H.</summary>computers.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is Linder&#39;s plan?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Once you enter the house, he won&#39;t let you out of his sight.</details>
+        <details class="answer"><summary>B.</summary>Once he takes you to his office, he won&#39;t let you leave.</details>
+        <details class="answer"><summary>C.</summary>He wants you in his office, sitting down, when Stiles arrives.</details>
+        <details class="answer"><summary>D.</summary>He phoned Stiles and persuaded him to come to the office at 9:00.</details>
+        <details class="answer"><summary>E.</summary>He wants you to witness the gunshot.</details>
+        <details class="answer"><summary>F.</summary>He wants you to arrest Stiles for attempted murder.</details>
+        <details class="answer"><summary>G.</summary>He doesn&#39;t intend to be killed.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is Monica&#39;s plan?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>She cooperates fully with Linder&#39;s plan (see above), except...</details>
+        <details class="answer"><summary>B.</summary>She wants to leave the house before Stiles arrives.</details>
+        <details class="answer"><summary>C.</summary>If you don&#39;t suspect Stiles, she may tell you about the medical report.</details>
+        <details class="answer"><summary>D.</summary>(See the question on Linder&#39;s motive.)</details>
+        <details class="answer"><summary>E.</summary>She doesn&#39;t want you to witness the gunshot.</details>
+        <details class="answer"><summary>F.</summary>But she doesn&#39;t want Linder to know that.</details>
+        <details class="answer"><summary>G.</summary>(WARNING: Don&#39;t read further unless you think you know what it says!)</details>
+        <details class="answer"><summary>H.</summary>Linder expects the bullet to miss him. And she expects it to kill him.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What part does Phong play?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>He cooperates fully with Linder&#39;s plan (see above).</details>
+        <details class="answer"><summary>B.</summary>That includes his duty in the side yard. (See the question about</details>
+        <details class="answer"><summary>C.</summary>footprints in the side yard.)</details>
+        <details class="answer"><summary>D.</summary>(WARNING: Don&#39;t read further unless you think you know what it says!)</details>
+        <details class="answer"><summary>E.</summary>He&#39;s surprised when Linder is killed.</details>
+        <details class="answer"><summary>F.</summary>Then he has all night to meditate on his future.</details>
+        <details class="answer"><summary>G.</summary>That&#39;s all folks!</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is Stiles&#39;s plan?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It certainly seems obvious, doesn&#39;t it?</details>
+        <details class="answer"><summary>B.</summary>That&#39;s what Linder wants you to think.</details>
+        <details class="answer"><summary>C.</summary>Linder phoned him and persuaded him to come to the house at 9:00.</details>
+        <details class="answer"><summary>D.</summary>Part of the persuasion was an offer of money.</details>
+        <details class="answer"><summary>E.</summary>If you&#39;re still outside when Stiles arrives, Linder doesn&#39;t know you&#39;re</details>
+        <details class="answer"><summary>F.</summary>there, so he gives Stiles some money and sends him away.</details>
+        <details class="answer"><summary>G.</summary>If you&#39;re inside when Stiles arrives, he fits right into Linder&#39;s plan.</details>
+        <details class="answer"><summary>H.</summary>Like a true grifter, Stiles has no real plan.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How does Terry fit into the scheme?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Try asking Monica.</details>
+        <details class="answer"><summary>B.</summary>No help at all, is it?</details>
+        <details class="answer"><summary>C.</summary>Have you seen Terry meditating in the rock garden?</details>
+        <details class="answer"><summary>D.</summary>No, that doesn&#39;t happen.</details>
+        <details class="answer"><summary>E.</summary>Who is that person that shows up just before dawn?</details>
+        <details class="answer"><summary>F.</summary>Nobody shows up just before dawn.</details>
+        <details class="answer"><summary>G.</summary>In fact, Terry never shows up at all.</details>
+        <details class="answer"><summary>H.</summary>By the way, what gender have you assumed for Terry?</details>
+        <details class="answer"><summary>I.</summary>Remember the warning in the introduction: Do not use the presence or</details>
+        <details class="answer"><summary>J.</summary>absence of a question on a certain topic as an indication of what is</details>
+        <details class="answer"><summary>K.</summary>important, and don&#39;t assume that long answers are associated with</details>
+        <details class="answer"><summary>L.</summary>important questions.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Why does Duffy arrive at the house?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>At the beginning of the story, you don&#39;t expect to need Duffy.</details>
+        <details class="answer"><summary>B.</summary>But he shows up anyway, about 9:00.</details>
+        <details class="answer"><summary>C.</summary>Available and helpful, as usual.</details>
+        <details class="answer"><summary>D.</summary>In fact, you can ask Duffy for hints, if you want.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is Linder&#39;s motive?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Could his death be suicide?</details>
+        <details class="answer"><summary>B.</summary>Maybe he&#39;s sticken [sic] with grief over his wife&#39;s death.</details>
+        <details class="answer"><summary>C.</summary>Maybe he has a fatal disease.</details>
+        <details class="answer"><summary>D.</summary>Try to find a medical report.</details>
+        <details class="answer"><summary>E.</summary>It&#39;s in a messy place, where you have to search for it carefully.</details>
+        <details class="answer"><summary>F.</summary>It&#39;s in Monica&#39;s room, on her desk.</details>
+        <details class="answer"><summary>G.</summary>The medical report says that Linder will die soon and painfully.</details>
+        <details class="answer"><summary>H.</summary>Try analyzing the report or showing it to Duffy before he goes to the</details>
+        <details class="answer"><summary>I.</summary>morgue. Or try to analyze the corpse for a tumor.</details>
+        <details class="answer"><summary>J.</summary>In either case, the coroner will report that the medical report is</details>
+        <details class="answer"><summary>K.</summary>false.</details>
+        <details class="answer"><summary>L.</summary>Linder has no motive for suicide, only for framing Stiles.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is Monica&#39;s motive?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>She could blame Stiles for her mother&#39;s suicide.</details>
+        <details class="answer"><summary>B.</summary>Try asking her about him.</details>
+        <details class="answer"><summary>C.</summary>But you&#39;d better do it either before she sees the corpse or after she</details>
+        <details class="answer"><summary>D.</summary>admits her part in Linder&#39;s plan.</details>
+        <details class="answer"><summary>E.</summary>She doesn&#39;t really blame Stiles.</details>
+        <details class="answer"><summary>F.</summary>Try asking Phong about the suicide. Or try asking Monica about her</details>
+        <details class="answer"><summary>G.</summary>mother or her father or the affair.</details>
+        <details class="answer"><summary>H.</summary>Any of these will establish Monica&#39;s motive.</details>
+        <details class="answer"><summary>I.</summary>Monica&#39;s motive is that she blames Linder for her mother&#39;s death.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Does Phong have a motive?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Try asking Phong about himself or Linder.</details>
+        <details class="answer"><summary>B.</summary>He will tell you something that establishes his motive.</details>
+        <details class="answer"><summary>C.</summary>Or try asking Monica about Linder&#39;s will after she sees the corpse.</details>
+        <details class="answer"><summary>D.</summary>She will tell you something that establishes Phong&#39;s motive.</details>
+        <details class="answer"><summary>E.</summary>Phong&#39;s motive is that he thinks Linder deceived him about his job and</details>
+        <details class="answer"><summary>F.</summary>the money he would make.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What incentive does Stiles have to commit the murder?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It certainly seems obvious, doesn&#39;t it?</details>
+        <details class="answer"><summary>B.</summary>That&#39;s what Linder wants you to think.</details>
+        <details class="answer"><summary>C.</summary>But when Stiles answers any of your questions, he pleads innocence.</details>
+        <details class="answer"><summary>D.</summary>Try asking him about Mr. or Mrs. Linder.</details>
+        <details class="answer"><summary>E.</summary>(WARNING: Don&#39;t read further unless you think you know what it says!)</details>
+        <details class="answer"><summary>F.</summary>Actually, Stiles doesn&#39;t want to shoot anybody.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Can you establish a motive for Terry?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Terry really wanted to see this movie.</details>
+        <details class="answer"><summary>B.</summary>When Monica suggested going out, it was easy to choose this movie.</details>
+        <details class="answer"><summary>C.</summary>It&#39;s not clear whether or not Terry wants to be better friends with</details>
+        <details class="answer"><summary>D.</summary>Monica. Would you?</details>
+        <details class="answer"><summary>E.</summary>Oops! Were you assuming that Terry has a motive for a crime?</details>
+        <details class="answer"><summary>F.</summary>If so, you&#39;re wrong.</details>
+        <details class="answer"><summary>G.</summary>By the way, what gender have you assumed for Terry?</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How does this story end?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>If you don&#39;t arrest someone before 8:00 a.m., Police Chief Klutz</details>
+        <details class="answer"><summary>B.</summary>arrives to take you away, but not for a well-deserved rest.</details>
+        <details class="answer"><summary>C.</summary>If you try to attack, kill, or shoot another character, you have a</details>
+        <details class="answer"><summary>D.</summary>50-50 chance of succeeding and getting taken away.</details>
+        <details class="answer"><summary>E.</summary>If you&#39;re not sitting down when the gunshot goes off, you have a 50-50</details>
+        <details class="answer"><summary>F.</summary>chance of dying from it.</details>
+        <details class="answer"><summary>G.</summary>If you&#39;re poking around in the wrong place when the gunshot goes off,</details>
+        <details class="answer"><summary>H.</summary>you die from it.</details>
+        <details class="answer"><summary>I.</summary>If you don&#39;t enter the house soon enough for Linder&#39;s plan, he doesn&#39;t</details>
+        <details class="answer"><summary>J.</summary>get shot, and the story ends with a postscript about Stiles getting</details>
+        <details class="answer"><summary>K.</summary>shot a few days later.</details>
+        <details class="answer"><summary>L.</summary>Otherwise, the story ends when you arrest one or more people.</details>
+        <details class="answer"><summary>M.</summary>And, if you try to arrest more than two people, you can&#39;t.</details>
+        <details class="answer"><summary>N.</summary>Further, if you try to arrest two people, and they&#39;re not Monica and</details>
+        <details class="answer"><summary>O.</summary>Phong, you can&#39;t.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I prove my case to the satisfaction of a jury?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You need to establish &quot;method, motive, and opportunity&quot;: That means you</details>
+        <details class="answer"><summary>B.</summary>need either physical evidence or reliable testimony that proves how the</details>
+        <details class="answer"><summary>C.</summary>crime was committed, why the suspect did it, and when the suspect had</details>
+        <details class="answer"><summary>D.</summary>the opportunity to do it.</details>
+        <details class="answer"><summary>E.</summary>(WARNING: The following hints tell what the method was and how to prove</details>
+        <details class="answer"><summary>F.</summary>it.)</details>
+        <details class="answer"><summary>G.</summary>You can prove the actual murder method either by proving that a gun was</details>
+        <details class="answer"><summary>H.</summary>in the clock and was set off by the butler&#39;s button, or by getting</details>
+        <details class="answer"><summary>I.</summary>Monica or Phong to spill the beans.</details>
+        <details class="answer"><summary>J.</summary>You can prove that a gun was in the clock either by analyzing the</details>
+        <details class="answer"><summary>K.</summary>gunpowder on the keyhole or by finding the gun itself in Monica&#39;s</details>
+        <details class="answer"><summary>L.</summary>possession.</details>
+        <details class="answer"><summary>M.</summary>You can prove that the button set off the gun by pushing it between the</details>
+        <details class="answer"><summary>N.</summary>time Linder is shot and the time Monica gets home.</details>
+        <details class="answer"><summary>O.</summary>Monica will spill the beans if you accuse her after seeing her remove</details>
+        <details class="answer"><summary>P.</summary>the gun from the clock, or if you ask her about the gunpowder, or the</details>
+        <details class="answer"><summary>Q.</summary>grandfather clock, or the butler&#39;s button, after you have proven the</details>
+        <details class="answer"><summary>R.</summary>button connection.</details>
+        <details class="answer"><summary>S.</summary>Phong will spill the beans if you accuse him after finding the gun</details>
+        <details class="answer"><summary>T.</summary>receipt and matching his boots to the footprints in the side yard, or</details>
+        <details class="answer"><summary>U.</summary>if you ask him about the gunpowder or the grandfather clock or the</details>
+        <details class="answer"><summary>V.</summary>butler&#39;s button after you have proven the button connection.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What are the possibilities when I make the arrest?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>If you haven&#39;t proved the actual murder method, the D.A. refuses to</details>
+        <details class="answer"><summary>B.</summary>indict, claiming the evidence is too flimsy. (But your boss gives you a</details>
+        <details class="answer"><summary>C.</summary>suggestion that should help you next time you play.)</details>
+        <details class="answer"><summary>D.</summary>Exception: You can arrest the corpse and get a silly ending.</details>
+        <details class="answer"><summary>E.</summary>Another exception: You can arrest Stiles and get him convicted, but a</details>
+        <details class="answer"><summary>F.</summary>postscript tells you that he is later released when some unspecified</details>
+        <details class="answer"><summary>G.</summary>new evidence is found.</details>
+        <details class="answer"><summary>H.</summary>If you have proved the murder method, the ending depends on whom you</details>
+        <details class="answer"><summary>I.</summary>arrest.</details>
+        <details class="answer"><summary>J.</summary>If you arrest Stiles, he is acquitted because of his lack of access to</details>
+        <details class="answer"><summary>K.</summary>the Linder house.</details>
+        <details class="answer"><summary>L.</summary>If you arrest the corpse, the coroner makes an unsatisfying ruling. If</details>
+        <details class="answer"><summary>M.</summary>you haven&#39;t seen the medical report, the coroner reaches no conclusion;</details>
+        <details class="answer"><summary>N.</summary>otherwise, the coroner rules suicide, but your boss doesn&#39;t believe it.</details>
+        <details class="answer"><summary>O.</summary>If you arrest both Monica and Phong, and have seen the gun receipt, and</details>
+        <details class="answer"><summary>P.</summary>have established Monica&#39;s motive and opportunity (the latter either by</details>
+        <details class="answer"><summary>Q.</summary>seeing her remove the gun or by opening the clock yourself with the</details>
+        <details class="answer"><summary>R.</summary>key), then you have a pretty good case against them. However, Phong</details>
+        <details class="answer"><summary>S.</summary>confesses only to conspiring in Linder&#39;s plan and gets a suspended</details>
+        <details class="answer"><summary>T.</summary>sentence; then Monica manages to get the same deal. Your boss is not</details>
+        <details class="answer"><summary>U.</summary>satisfied with this result.</details>
+        <details class="answer"><summary>V.</summary>If you arrest Phong with or without Monica, but you _haven&#39;t_ met all</details>
+        <details class="answer"><summary>W.</summary>these conditions, Phong is acquitted because he lacks the mechanical</details>
+        <details class="answer"><summary>X.</summary>skills necessary to construct the hidden gun mechanism. If you also</details>
+        <details class="answer"><summary>Y.</summary>arrest Monica, she too is acquitted: either for lack of motive or</details>
+        <details class="answer"><summary>Z.</summary>opportunity, or, if you haven&#39;t seen the gun receipt, because Phong</details>
+        <details class="answer"><summary>[.</summary>was.</details>
+        <details class="answer"><summary>\.</summary>If you arrest Monica alone, and you have established motive but not</details>
+        <details class="answer"><summary>].</summary>opportunity, she is acquitted for circumstantial evidence. If you have</details>
+        <details class="answer"><summary>^.</summary>established her opportunity, you win!</details>
+      </div>
+  </div>
+
+  <h2 id="for_your_amusement">For Your Amusement</h2>
+      <div class="indented">
+      <p>
+        (after you&#39;ve finished the game)<br>
+        <br>
+        Have you tried...<br>
+        <br>
+          ...reading the scroll in the entry?<br>
+          ...asking Duffy about himself?<br>
+          ...to shut up Linder or to take him outside?<br>
+          ...to take Linder&#39;s shoes?<br>
+          ...to follow Mrs. Linder?<br>
+          ...dialing zero or the coroner or the Brass Lantern?<br>
+          ...to break down a door?<br>
+          ...to eat or drink anything?<br>
+          ...asking anyone who you are or where you are?<br>
+          ...kicking anyone?<br>
+          ...looking up?<br>
+          ...slapping anyone or anything?<br>
+          ...looking under a bed?<br>
+          ...looking in a mirror?<br>
+          ...to eat a meal or take the food?<br>
+          ...to shoot yourself?<br>
+          ...to take a shower?<br>
+          ...following an inanimate object?<br>
+          ...playing anything other than the radio or a record?<br>
+          ...cursing at the program?<br>
+          ...writing your own hintbook? You think it&#39;s easy?<br>
+    </p>
+    </div>
+  <h2 id="indicia">Indicia</h2>
+      <div class="indented">
+      <p>
+        Copyright by Infocom, Inc. Provided for non-commercial use only, with the sole intent of making information available that would otherwise be lost.</p><p>
+        To whoever presently holds the copyright to the information contained in this file: if you think the existence of this file violates your copyright, please complain and the file will be removed.</p><p>
+        Typed in from the original hintbook by Paul David Doherty.</p><p>
+    </p>
+    </div>
+</main>
+</body>
+</html>

@@ -1,545 +1,953 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><title>Zork III Invisiclues</title>
-<style>* { padding: 0; margin: 0 ; }
-html { font-size: 100%; }
-body { 
-color: #080808; 
-background-color: #FAFAFA;
-color: #0A0A0A;
-width: 41.5rem;
-margin: auto;
-font-size: 100%;
-margin-bottom: 2rem;
-font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-} 
-h1.title { text-align: center; margin-top: 1rem; margin-bottom: 2rem; }
-.other-versions { font-weight: bold; }
-.other-versions > ul { margin-top: 1rem; }
-header { margin: auto; }
-div.ext-table { line-height: 1.5; width: 40rem; margin-bottom: 2rem; }
-a.title { text-decoration-style: dotted; }
-hr.border { border: .05rem solid #333; margin: 1rem .5rem 1rem -1.5rem; }
-div.ext-name {  white-space: nowrap; width: 100%; margin-top: .1rem; font-size: 1.25rem; text-indent: -1.5rem; }
-div.ext-desc { margin-bottom: .5rem; padding-top: .25rem; }
-div.empty-desc { text-align: right; margin-right: .5rem; }
-span.link { font-weight: bold;} 
-span.version { font-size: 1rem; }
-span.limiter { font-style: italic; font-size: 1rem; }
-span.code { font-family: monospace; }
-div.error { margin-left: -1.5rem; }
-h2 { margin-top: 1rem; margin-bottom: 1rem; }
-details { border: .1rem solid black; padding: .5rem; }
-summary { margin: .5rem 0 .5rem 0; }
-p.omission { margin-bottom: .5rem; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
+<p><a href="./index.html">Invisiclues Index</a></p>
 </header>
-  <h1>Zork III Invisiclues</h1>
-      <p>Copyright by Infocom, Inc. Provided for non-commercial use only, with the sole intent of making information available that would otherwise be lost.</p>
-      <p>To whoever presently holds the copyright to the information contained in this file: if you think the existence of this file violates your copyright, please complain and the file will be removed.</p>
-      <p>Typed in from the original hintbook by Paul David Doherty.</p>
-<!-- Sample Question -->
-  <h2>Sample Question</h2>
-      <p>Why did Lord Dimwit Flathead throw his grandfather clock out the window?</p>
-        <details><summary>A.</summary>Have you studied the trajectory from several angles?</details>
-        <details><summary>B.</summary>Why does he always use the second-story window?</details>
-        <details><summary>C.</summary>Excessive as always, he wanted to see time fly.</details>
-<!-- Table of Contents -->
-  <h2>Table of Contents</h2>
-<ul>
-    <li><a href="#the_land_of_shadow_and_the_cliff_area">The Land of Shadow and the Cliff Area</a></li>
-    <li><a href="#the_royal_museum">The Royal Museum</a></li>
-    <li><a href="#beyond_the_secret_door">Beyond the Secret Door</a></li>
-    <li><a href="#the_rectangular_box">The Rectangular Box</a></li>
-    <li><a href="#the_guardians_of_zork">The Guardians of Zork</a></li>
-    <li><a href="#the_dungeon">The Dungeon</a></li>
-    <li><a href="#general_questions">General Questions</a></li>
-    <li><a href="#how_points_are_earned">How Points Are Earned</a></li>
-    <li><a href="#for_your_amusement">For Your Amusement</a></li>
-</ul>
-<!-- Central Area -->
-  <h2>Central Area</h2>
-      <p>How do I climb the endless stair?</p>
-        <details><summary>A.</summary>If you wish to go back to ZORK II, just switch diskettes!</details>
-      <p>How do I get the sword in the stone?</p>
-        <details><summary>A.</summary>&quot;Who do you think you are? Arthur?&quot;</details>
-        <details><summary>B.</summary>&quot;The sword is deeply imbedded within the rock. You can&#039;t even begin to</details>
-        <details><summary>C.</summary>budge it.&quot;</details>
-        <details><summary>D.</summary>Be patient. You&#039;ll get it when the need for it arises.</details>
-      <p>How can the runes be translated?</p>
-        <details><summary>A.</summary>A Runish-to-English dictionary?</details>
-        <details><summary>B.</summary>Have you examined them?</details>
-        <details><summary>C.</summary>Beyond that, you&#039;ll get nothing more.</details>
-      <p>How do I climb the channel in the Damp Passage?</p>
-        <details><summary>A.</summary>&quot;The channel climbs too rapidly and the moss is slippery.&quot;</details>
-      <p>What will increase traction?</p>
-        <details><summary>A.</summary>Studded snow tires work well on glare ice.</details>
-        <details><summary>B.</summary>Some purists insist on chains.</details>
-        <details><summary>C.</summary>If you were thinking of climbing the slippery moss, forget it. You</details>
-        <details><summary>D.</summary>really can&#039;t go that way.</details>
-      <p>How can I clear the rubble in the Damp Passage?</p>
-        <details><summary>A.</summary>&quot;The channel opening is blocked by tons of debris.&quot;</details>
-        <details><summary>B.</summary>You can&#039;t.</details>
-      <p>Where do I find the old and wizened man?</p>
-        <details><summary>A.</summary>The runes are a very subtle hint.</details>
-        <details><summary>B.</summary>There is a chance he will appear when you enter (and only when you</details>
-        <details><summary>C.</summary>enter) the Engravings Room.</details>
-      <p>How do I waken the old and wizened man?</p>
-        <details><summary>A.</summary>He is sleeping very soundly. (Listen to that snore.)</details>
-        <details><summary>B.</summary>Try saying WAKE MAN or SHAKE MAN.</details>
-      <p>What do I do about the old and wizened man?</p>
-        <details><summary>A.</summary>Attacking him would not be very sporting, but it might give you a clue.</details>
-        <details><summary>B.</summary>He is described as &quot;weak,&quot; &quot;tired,&quot; and &quot;frail.&quot;</details>
-        <details><summary>C.</summary>Have you considered helping him? You might give him something he could</details>
-        <details><summary>D.</summary>use.</details>
-        <details><summary>E.</summary>Try giving him the waybread.</details>
-      <p>Can the phosphorescent moss be kept alive for more than 10 moves?</p>
-        <details><summary>A.</summary>Certainly. It will live throughout the entire game.</details>
-        <details><summary>B.</summary>But you will never be able to take it, move it, or use it as a light</details>
-        <details><summary>C.</summary>source anywhere else.</details>
-      <p>How can I open the Great Iron Door?</p>
-        <details><summary>A.</summary>You cannot open the door.</details>
-        <details><summary>B.</summary>However, after the earthquake you will find a cleft in the rock that</details>
-        <details><summary>C.</summary>will allow you to pass.</details>
-      <p>How do I get the rust remover tube from the warlock?</p>
-        <details><summary>A.</summary>What a looney!</details>
-      <p>How do I get out of the chasm?</p>
-        <details><summary>A.</summary>How did you get down to the chasm?</details>
-        <details><summary>B.</summary>The folks at Infocom would be very interested.</details>
-      <p>I&#039;m trapped on the Aqueduct. What do I do?</p>
-        <details><summary>A.</summary>If you can&#039;t proceed to the north due to a collapsed segment, you&#039;re</details>
-        <details><summary>B.</summary>stuck.</details>
-        <details><summary>C.</summary>What might have caused this segment to collapse?</details>
-        <details><summary>D.</summary>The secret is to traverse this area before it is destroyed by the</details>
-        <details><summary>E.</summary>earthquake.</details>
-      <p>Can the lake be crossed?</p>
-        <details><summary>A.</summary>&quot;Go jump in a lake!&quot;</details>
-        <details><summary>B.</summary>Seriously! Jump in and swim to one of the other shores.</details>
-      <p>What is required to walk on water?</p>
-        <details><summary>A.</summary>A messianic complex?</details>
-        <details><summary>B.</summary>Do you also want to move mountains?</details>
-      <p>How do I catch the fish?</p>
-        <details><summary>A.</summary>Just be careful that it doesn&#039;t catch _you_!</details>
-      <p>What is a Roc?</p>
-        <details><summary>A.</summary>It is a legendary bird of prey of tremendous size and strength. Your</details>
-        <details><summary>B.</summary>probability of seeing it is low, but if you do, watch out!</details>
-      <p>What can be done with the swamp gas?</p>
-        <details><summary>A.</summary>Swamp gas burns...</details>
-        <details><summary>B.</summary>If you could transport it across the lake, it might make a good light</details>
-        <details><summary>C.</summary>source.</details>
-      <p>How do I transport the swamp gas?</p>
-        <details><summary>A.</summary>A bottle would be useful.</details>
-        <details><summary>B.</summary>Unfortunately, there are no bottles. By the way, where did you find</details>
-        <details><summary>C.</summary>swamp gas?</details>
-        <details><summary>D.</summary>Remember the introduction? If every question in this book were</details>
-        <details><summary>E.</summary>pertinent to the game, the questions themselves would give far too much</details>
-        <details><summary>F.</summary>away. Do not use the presence or absence of a question on a certain</details>
-        <details><summary>G.</summary>topic as an indication of what is important, and don&#039;t assume that long</details>
-        <details><summary>H.</summary>answers are associated with important questions.</details>
-      <p>How can I get the shiny object?</p>
-        <details><summary>A.</summary>Try to take it until you eventually succeed. (There is a 50%</details>
-        <details><summary>B.</summary>probability that you will get it on any move. Although there is less</details>
-        <details><summary>C.</summary>than one chance in a thousand that you wouldn&#039;t get it within 10 tries,</details>
-        <details><summary>D.</summary>it could conceivably take zillions of tries.)</details>
-      <p>What is the table with the &quot;Scenic Vista&quot; sign for?</p>
-        <details><summary>A.</summary>Have you ever examined it?</details>
-        <details><summary>B.</summary>Have you ever touched or rubbed it?</details>
-        <details><summary>C.</summary>You can look at or go to sections of ZORK I, ZORK II, ZORK III, and</details>
-        <details><summary>D.</summary>ENCHANTER(tm).</details>
-      <p>Is there anything under the manhole cover?</p>
-        <details><summary>A.</summary>Try raising or moving it.</details>
-      <p>How do I get a light source to the southern end of the lake?</p>
-        <details><summary>A.</summary>The light sources cannot be relit once they&#039;ve gotten wet.</details>
-        <details><summary>B.</summary>They can&#039;t be taken across the lake without getting wet.</details>
-        <details><summary>C.</summary>There is no way to get a working light source to the south shore of the</details>
-        <details><summary>D.</summary>lake.</details>
-        <details><summary>E.</summary>There is another way!</details>
-        <details><summary>F.</summary>Have you seen the grue repellent?</details>
-        <details><summary>G.</summary>Figure out how to use the viewing table.</details>
-        <details><summary>H.</summary>Use the grue repellent to get to the Key Room and Aqueduct. The viewing</details>
-        <details><summary>I.</summary>table is also useful for pre-positioning the light source you will</details>
-        <details><summary>J.</summary>eventually need.</details>
-      <p>How can I get to the coal in the Dead End?</p>
-        <details><summary>A.</summary>You can&#039;t.</details>
-        <details><summary>B.</summary>You are limited to three moves in the areas visited with the viewing</details>
-        <details><summary>C.</summary>table. There is no way for you to increase this. Obviously, if you</details>
-        <details><summary>D.</summary>could stay as long as you wanted, there would have to be four games on</details>
-        <details><summary>E.</summary>the diskette.</details>
-      <p>What light source can I take to the west of the Timber Room?</p>
-        <details><summary>A.</summary>None.</details>
-        <details><summary>B.</summary>See question above.</details>
-<!-- The Land of Shadow and the Cliff Area -->
-  <h2 id="the_land_of_shadow_and_the_cliff_area">The Land of Shadow and the Cliff Area</h2>
-      <p>What do I do about the hooded figure?</p>
-        <details><summary>A.</summary>Have you noticed anything you do which increases your score?</details>
-        <details><summary>B.</summary>You must fight the figure.</details>
-        <details><summary>C.</summary>Have you ever looked at the figure or looked under the hood?</details>
-        <details><summary>D.</summary>When badly injured, the figure is defenseless.</details>
-        <details><summary>E.</summary>Does killing the figure leave you feeling satisfied?</details>
-        <details><summary>F.</summary>While the figure is badly injured, try taking the hood.</details>
-      <p>Why do I see myself?</p>
-        <details><summary>A.</summary>Very good question.</details>
-        <details><summary>B.</summary>This is actually a hint.</details>
-      <p>How do I freeze the quicksand?</p>
-        <details><summary>A.</summary>A blast of supercold air might do the trick.</details>
-        <details><summary>B.</summary>The Great Underground Empire is far from polar regions.</details>
-        <details><summary>C.</summary>The quicksand can&#039;t be crossed. It is one of the many borders which</details>
-        <details><summary>D.</summary>keep the Underground Empire small enough to fit on a diskette.</details>
-      <p>How do I get to the ship?</p>
-        <details><summary>A.</summary>Congratulations. Seeing the ship is rather rare.</details>
-        <details><summary>B.</summary>Have you tried walking on water?</details>
-        <details><summary>C.</summary>This is a Viking sailor.</details>
-        <details><summary>D.</summary>You&#039;ve been waiting three games for this!</details>
-        <details><summary>E.</summary>Something happens here!</details>
-        <details><summary>F.</summary>Say HELLO SAILOR!!</details>
-      <p>How do I open the chest?</p>
-        <details><summary>A.</summary>You can&#039;t open it.</details>
-        <details><summary>B.</summary>The man at the cliff has the only key.</details>
-        <details><summary>C.</summary>You&#039;ll have to wait for him to open it.</details>
-        <details><summary>D.</summary>Wait on the ledge for him to appear and follow his directions.</details>
-      <p>Can the man at the cliff be trusted?</p>
-        <details><summary>A.</summary>He certainly seems like a practical joker.</details>
-        <details><summary>B.</summary>But he has the only key to the chest.</details>
-        <details><summary>C.</summary>Do exactly what he says -- and be patient.</details>
-      <p>What is in the tree house?</p>
-        <details><summary>A.</summary>This could be the man&#039;s living quarters.</details>
-        <details><summary>B.</summary>The inflatable raft in the back room might be useful elsewhere.</details>
-        <details><summary>C.</summary>It is amazing that you got this far when there is no tree house.</details>
-      <p>I have the treasure, but how do I mend the staff?</p>
-        <details><summary>A.</summary>It cannot be fixed.</details>
-        <details><summary>B.</summary>Have you tried protecting the staff (for example, throwing it off the</details>
-        <details><summary>C.</summary>cliff) before taking the treasure?</details>
-        <details><summary>D.</summary>You&#039;ll have to decide which you prefer, the treasure or the staff.</details>
-      <p>I have the staff; how do I get the treasure?</p>
-        <details><summary>A.</summary>You might try killing the man before he walks away with it.</details>
-        <details><summary>B.</summary>You&#039;ll have to decide which you prefer, the treasure or the staff.</details>
-      <p>What is the significance of Smokey the Bear?</p>
-        <details><summary>A.</summary>&quot;Only you can prevent forest fires.&quot;</details>
-        <details><summary>B.</summary>Maybe you thought this was one of the nonsense questions. Try burning</details>
-        <details><summary>C.</summary>the trees.</details>
-      <p>What is in the vial?</p>
-        <details><summary>A.</summary>&quot;It feels as though there is something inside, but you can&#039;t see</details>
-        <details><summary>B.</summary>anything even though the vial is transparent.&quot;</details>
-        <details><summary>C.</summary>Have you tried drinking the contents?</details>
-        <details><summary>D.</summary>Look into the mirror immediately after drinking it.</details>
-        <details><summary>E.</summary>The invisible liquid is an invisibility potion. It will last only two</details>
-        <details><summary>F.</summary>moves and will not be effective against the more powerful denizens of</details>
-        <details><summary>G.</summary>the Great Underground Empire.</details>
-<!-- The Royal Museum -->
-  <h2 id="the_royal_museum">The Royal Museum</h2>
-      <p>When are the museum personnel on duty?</p>
-        <details><summary>A.</summary>Intrepid adventurers do not fear mere warning notes.</details>
-        <details><summary>B.</summary>They all died years ago. You&#039;ll have to risk it on your own.</details>
-        <details><summary>C.</summary></details>
-        <details><summary>D.</summary>Is there anything I can do when I&#039;m trapped in the small square room with</details>
-      <p>marble and sandstone walls?</p>
-        <details><summary>A.</summary>There is a way out.</details>
-        <details><summary>B.</summary>Sandstone is a very light rock.</details>
-        <details><summary>C.</summary>Try pushing one of the sandstone walls (PUSH EAST WALL or PUSH SOUTH</details>
-        <details><summary>D.</summary>WALL).</details>
-      <p>Where do I find dynamite?</p>
-        <details><summary>A.</summary>What a strange concept.</details>
-        <details><summary>B.</summary>+---------------------------------------------------------------------+</details>
-        <details><summary>C.</summary>|                                                                     |</details>
-        <details><summary>D.</summary>|                                                                     |</details>
-        <details><summary>E.</summary>|                                                                     |</details>
-        <details><summary>F.</summary>|                                                                     |</details>
-        <details><summary>G.</summary>|              &gt;&gt;This space intentionally left blank&lt;&lt;                |</details>
-        <details><summary>H.</summary>+---------------------------------------------------------------------+</details>
-      <p>What are the ladders for?</p>
-        <details><summary>A.</summary>Remember the hole through which you entered the puzzle?</details>
-        <details><summary>B.</summary>It is possible to maneuver one of the ladders into a position allowing</details>
-        <details><summary>C.</summary>you to climb out.</details>
-      <p>What is the slot for?</p>
-        <details><summary>A.</summary>Have you tried putting anything in it?</details>
-        <details><summary>B.</summary>Try the lore book.</details>
-        <details><summary>C.</summary>This is one (although not the best) way out of the puzzle.</details>
-      <p>I&#039;m lost in the puzzle. How do I get out?</p>
-        <details><summary>A.</summary>There _are_ ways out.</details>
-        <details><summary>B.</summary>Try mapping (movable pieces to represent walls may help). Push as few</details>
-        <details><summary>C.</summary>walls as possible.</details>
-        <details><summary>D.</summary>You might make use of the slot (not recommended).</details>
-        <details><summary>E.</summary>Walls can only be pushed, never pulled.</details>
-        <details><summary>F.</summary>Starting from the Royal Puzzle entrance, the following moves will solve</details>
-        <details><summary>G.</summary>the puzzle. D. PUSH EAST WALL. S. S. SE. PUSH SOUTH WALL. N. NE. PUSH</details>
-        <details><summary>H.</summary>SOUTH WALL. TAKE BOOK. PUSH SOUTH WALL. E. NE. PUSH WEST WALL. SW. NW.</details>
-        <details><summary>I.</summary>NE. PUSH SOUTH WALL. SW. PUSH EAST WALL. NE. PUSH SOUTH WALL. NW. N. N.</details>
-        <details><summary>J.</summary>PUSH EAST WALL. SW. S. SE. NE. N. PUSH WEST WALL. NW. PUSH SOUTH</details>
-        <details><summary>K.</summary>WALL. AGAIN. W. NW. NW. PUSH SOUTH WALL. SE. SE. SE. NE. PUSH WEST</details>
-        <details><summary>L.</summary>WALL. AGAIN. SW. PUSH NORTH WALL. AGAIN. AGAIN. NW. UP. YELL. (Note:</details>
-        <details><summary>M.</summary>Innumerable other sequences will reach the same result.)</details>
-      <p>What was the &quot;snap&quot; I heard?</p>
-        <details><summary>A.</summary>You ran into something with the wall. Movable objects are transported</details>
-        <details><summary>B.</summary>to the side room when hit by the wall.</details>
-      <p>What does the gray machine do?</p>
-        <details><summary>A.</summary>This is a pressurizer.</details>
-        <details><summary>B.</summary>It is like the machine used in ZORK I to make diamonds.</details>
-        <details><summary>C.</summary>Unfortunately, it is not a working model.</details>
-      <p>What does pushing the button on the gold machine do?</p>
-        <details><summary>A.</summary>Nothing if you aren&#039;t sitting on the seat when you push it.</details>
-        <details><summary>B.</summary>Nothing if you haven&#039;t changed the setting of the dial before pushing</details>
-        <details><summary>C.</summary>the button.</details>
-        <details><summary>D.</summary>This is a time machine. Pushing the button transports the person</details>
-        <details><summary>E.</summary>sitting in the chair (and only that person -- the time machine itself</details>
-        <details><summary>F.</summary>doesn&#039;t move) to the same spot in the year indicated on the dial (where</details>
-        <details><summary>G.</summary>you may find the time machine in the same position). The effect is not</details>
-        <details><summary>H.</summary>permanent -- in 40 moves you will snap back. The present year is 948.</details>
-      <p>What does the black machine do?</p>
-        <details><summary>A.</summary>This is a room spinner.</details>
-        <details><summary>B.</summary>Presumably it is a model of the machine which spins the Carousel Room</details>
-        <details><summary>C.</summary>in ZORK II.</details>
-        <details><summary>D.</summary>Fortunately, it is not a working model.</details>
-      <p>How can I read the plaque in the Technology Museum?</p>
-        <details><summary>A.</summary>It has faded with age and can no longer be read.</details>
-      <p>How do I unlock the cage?</p>
-        <details><summary>A.</summary>That cage will protect the royal jewels until the end of time.</details>
-        <details><summary>B.</summary>It is, however, possible to get your hands on the jewels.</details>
-        <details><summary>C.</summary>You should learn the use of each machine in the Technology Museum.</details>
-      <p>How do I take the royal jewels?</p>
-        <details><summary>A.</summary>The cage is impregnable, but you can&#039;t let small details like that stop</details>
-        <details><summary>B.</summary>you. Read the hints to unlocking the cage before going to B.</details>
-        <details><summary>C.</summary>By now you know that the gold machine is a time machine which can be</details>
-        <details><summary>D.</summary>used to go to the Jewel Room before the cage is installed. (Push the</details>
-        <details><summary>E.</summary>machine to the Jewel Room in the present and go back to the year 776.)</details>
-        <details><summary>F.</summary>Unfortunately, you can&#039;t carry anything with you through time.</details>
-        <details><summary>G.</summary>You must find a very good hiding place. Lord Dimwit Flathead&#039;s men will</details>
-        <details><summary>H.</summary>no doubt launch an extensive search for the missing jewels. They must</details>
-        <details><summary>I.</summary>remain hidden for 200 years.</details>
-        <details><summary>J.</summary>You might check the machines for a good place. (Wait for the guards to</details>
-        <details><summary>K.</summary>leave.)</details>
-        <details><summary>L.</summary>Have you looked under the seat in the time machine?</details>
-        <details><summary>M.</summary>Excessive greed in an adventurer of your status is unbecoming.</details>
-        <details><summary>N.</summary>Only the ring can be successfully hidden.</details>
-        <details><summary>O.</summary>If you succeed in getting the ring, Flathead has the other jewels</details>
-        <details><summary>P.</summary>moved. If you botch the burglary, two things can happen: 1) They</details>
-        <details><summary>Q.</summary>realize the time machine works and remove it; or 2) They find the</details>
-        <details><summary>R.</summary>jewels displaced and simply put them back (but a different plaque is</details>
-        <details><summary>S.</summary>installed).</details>
-      <p>What do I do about the robot?</p>
-        <details><summary>A.</summary>Congratulations. It is a very rare treat to see the robot. Just try</details>
-        <details><summary>B.</summary>again.</details>
-<!-- Beyond the Secret Door -->
-  <h2 id="beyond_the_secret_door">Beyond the Secret Door</h2>
-      <p>What does the red button do?</p>
-        <details><summary>A.</summary>Pushing the button alone is not notably helpful.</details>
-        <details><summary>B.</summary>Pushing the button is helpful if another action precedes it.</details>
-        <details><summary>C.</summary>Haven&#039;t you been curious about the red beam of light?</details>
-        <details><summary>D.</summary>Block the beam with an object, then push the button.</details>
-        <details><summary>E.</summary>You will find that the mirror is a doorway.</details>
-      <p>What do I do about the red beam of light?</p>
-        <details><summary>A.</summary>You can jump over it, but it won&#039;t do you much good.</details>
-        <details><summary>B.</summary>Trying to take it is similarly useless.</details>
-        <details><summary>C.</summary>Does the fact that it is only an inch above the floor suggest anything?</details>
-        <details><summary>D.</summary>Have you tried blocking it with your hand?</details>
-        <details><summary>E.</summary>Try blocking it with an object. You will now find that the button is</details>
-        <details><summary>F.</summary>useful.</details>
-      <p>What is the wet suit for?</p>
-        <details><summary>A.</summary>What wet suit?</details>
-      <p>Is the mirror important?</p>
-        <details><summary>A.</summary>Presumably you have already tried touching it, looking into it, pushing</details>
-        <details><summary>B.</summary>it, breaking it.</details>
-        <details><summary>C.</summary>It is important, but you will have no direct interaction with it.</details>
-      <p>How do I break the panel?</p>
-        <details><summary>A.</summary>&quot;The panel is not that easily destroyed.&quot;</details>
-        <details><summary>B.</summary>You don&#039;t.</details>
-<!-- The Rectangular Box -->
-  <h2 id="the_rectangular_box">The Rectangular Box</h2>
-      <p>What is the significance of the different colored walls?</p>
-        <details><summary>A.</summary>By making them different colors, you can refer to them separately.</details>
-        <details><summary>B.</summary>Pushing on the red or yellow walls can cause the box to rotate on the</details>
-        <details><summary>C.</summary>central pivot pole in a clockwise direction. Pushing the black or white</details>
-        <details><summary>D.</summary>walls can cause the box to rotate counterclockwise.</details>
-      <p>What is the significance of the pine wall?</p>
-        <details><summary>A.</summary>If nothing is blocking it on the other side, pushing on it will cause</details>
-        <details><summary>B.</summary>it to swing out so that you can leave the box.</details>
-      <p>What is the significance of the mahogany wall?</p>
-        <details><summary>A.</summary>If the box is aligned properly, pushing on it will cause the entire box</details>
-        <details><summary>B.</summary>to move.</details>
-      <p>What is the long pole for?</p>
-        <details><summary>A.</summary>The long pole is at the center of the box and extends from the ceiling</details>
-        <details><summary>B.</summary>to the floor.</details>
-        <details><summary>C.</summary>It is a pivot around which the box can be turned.</details>
-      <p>What is the short pole for?</p>
-        <details><summary>A.</summary>Doesn&#039;t the hand grip suggest anything?</details>
-        <details><summary>B.</summary>&quot;The pole has been dropped into a hole in the stone floor.&quot;</details>
-        <details><summary>C.</summary>Try raising the short pole.</details>
-        <details><summary>D.</summary>The short pole anchors the box in position.</details>
-        <details><summary>E.</summary>It can also be used to steady it when it is moved.</details>
-      <p>What is the T-bar for?</p>
-        <details><summary>A.</summary>It has an arrow carved on it.</details>
-      <p>What is the significance of the direction the arrow is pointing?</p>
-        <details><summary>A.</summary>That is the direction the mahogany wall faces.</details>
-      <p>Is the wobble significant?</p>
-        <details><summary>A.</summary>It can be avoided.</details>
-        <details><summary>B.</summary>It can also have negative consequences.</details>
-        <details><summary>C.</summary>If you drop the short pole into the channel, it will steady the</details>
-        <details><summary>D.</summary>movement of the box.</details>
-      <p>How can I undress the stone?</p>
-        <details><summary>A.</summary>Pervert!</details>
-        <details><summary>B.</summary>Look up &quot;dressed&quot; (as it applies to stone) in the dictionary.</details>
-      <p>Why am I being killed while inside the box?</p>
-        <details><summary>A.</summary>Once you have rotated the box 90 [degrees] from its original position,</details>
-        <details><summary>B.</summary>you may want to leave it to scout the area beyond.</details>
-        <details><summary>C.</summary>Learn all you can about the Guardians of Zork.</details>
-        <details><summary>D.</summary>If the Guardians notice the box due to a broken mirror, open door, or a</details>
-        <details><summary>E.</summary>wobble, they will kill you.</details>
-<!-- The Guardians of Zork -->
-  <h2 id="the_guardians_of_zork">The Guardians of Zork</h2>
-      <p>How can I pass the Guardians of Zork?</p>
-        <details><summary>A.</summary>The Guardians strike anything which they see between them.</details>
-        <details><summary>B.</summary>The Guardians are described as &quot;identical&quot; and &quot;perfectly symmetrical.&quot;</details>
-        <details><summary>C.</summary>If you walk in front of them or throw something in front of them, they</details>
-        <details><summary>D.</summary>destroy &quot;in perfect unison.&quot;</details>
-        <details><summary>E.</summary>Do you think a Guardian could distinguish between the sight of the</details>
-        <details><summary>F.</summary>other and the sight of himself in a mirror?</details>
-        <details><summary>G.</summary>You can travel past them inside the mirror box. (&quot;It&#039;s all done with</details>
-        <details><summary>H.</summary>mirrors.&quot;)</details>
-        <details><summary>I.</summary>An alternate solution is to walk past while invisible.</details>
-      <p>How is the scuba tank attached to the wet suit?</p>
-        <details><summary>A.</summary>What scuba tank and wet suit?</details>
-        <details><summary>B.</summary>+---------------------------------------------------------------------+</details>
-        <details><summary>C.</summary>|                                                                     |</details>
-        <details><summary>D.</summary>|                                                                     |</details>
-        <details><summary>E.</summary>|                                                                     |</details>
-        <details><summary>F.</summary>|                                                                     |</details>
-        <details><summary>G.</summary>|                                                                     |</details>
-        <details><summary>H.</summary>|                                                                     |</details>
-        <details><summary>I.</summary>|              &gt;&gt;This space intentionally left blank&lt;&lt;                |</details>
-        <details><summary>J.</summary>+---------------------------------------------------------------------+</details>
-        <details><summary>K.</summary></details>
-        <details><summary>L.</summary>I seem to have gotten past the Guardians, but I&#039;m still being killed. What</details>
-      <p>should I do?</p>
-        <details><summary>A.</summary>Rotate the structure so that the door doesn&#039;t open into their field of</details>
-        <details><summary>B.</summary>view.</details>
-      <p>How do I open the large wooden door with the barred panel?</p>
-        <details><summary>A.</summary>_You_ can&#039;t open it.</details>
-        <details><summary>B.</summary>Have you tried knocking?</details>
-      <p>What must I do to satisfy the old man at the large door?</p>
-        <details><summary>A.</summary>&quot;He looks you over with his keen, piercing gaze and then speaks</details>
-        <details><summary>B.</summary>gravely...&quot;</details>
-        <details><summary>C.</summary>This is the Dungeon Master.</details>
-        <details><summary>D.</summary>He is looking for something. What you think might be valuable may have</details>
-        <details><summary>E.</summary>nothing to do with it.</details>
-        <details><summary>F.</summary>Most of the problems in the game are tests by the Dungeon Master to see</details>
-        <details><summary>G.</summary>whether you are ready.</details>
-        <details><summary>H.</summary>You have met him before when you have died.</details>
-        <details><summary>I.</summary>Does nothing about his description strike you as odd?</details>
-        <details><summary>J.</summary>&quot;He is dressed simply in a hood and cloak, wearing a few simple jewels,</details>
-        <details><summary>K.</summary>carrying something under one arm, and leaning on a wooden staff. A</details>
-        <details><summary>L.</summary>single key, as if to a massive prison cell, hangs from his belt.&quot;</details>
-        <details><summary>M.</summary>You can acquire his entire costume by solving the problems in the game.</details>
-        <details><summary>N.</summary>Your goal is to _become_ the Dungeon Master. You will need the hood and</details>
-        <details><summary>O.</summary>cloak, the amulet and ring, the key, the wooden staff, and the lore</details>
-        <details><summary>P.</summary>book.</details>
-<!-- The Dungeon -->
-  <h2 id="the_dungeon">The Dungeon</h2>
-      <p>Why won&#039;t the Dungeon Master follow me?</p>
-        <details><summary>A.</summary>Have you asked him to?</details>
-        <details><summary>B.</summary>Say DUNGEON MASTER, FOLLOW ME. (See your game manual.)</details>
-      <p>What should be thrown into the flaming pit?</p>
-        <details><summary>A.</summary>The end had come, and this was it;</details>
-        <details><summary>B.</summary>He dropped her in the flaming pit.</details>
-        <details><summary>C.</summary>-- Edward Gorey</details>
-        <details><summary>D.</summary>Anything dropped into the pit is lost forever.</details>
-      <p>What will scratch the marble?</p>
-        <details><summary>A.</summary>+---------------------------------------------------------------------+</details>
-        <details><summary>B.</summary>|                                                                     |</details>
-        <details><summary>C.</summary>|                                                                     |</details>
-        <details><summary>D.</summary>|                                                                     |</details>
-        <details><summary>E.</summary>|                                                                     |</details>
-        <details><summary>F.</summary>|                                                                     |</details>
-        <details><summary>G.</summary>|                                Huh?                                 |</details>
-        <details><summary>H.</summary>+---------------------------------------------------------------------+</details>
-      <p>What are the sundial and button for?</p>
-        <details><summary>A.</summary>You can set the dial to any of the eight numbers.</details>
-        <details><summary>B.</summary>Try spinning or setting it and then pushing the button. Did anything</details>
-        <details><summary>C.</summary>change?</details>
-        <details><summary>D.</summary>You might try putting something in the cell first.</details>
-        <details><summary>E.</summary>Reading the lore book now might help.</details>
-        <details><summary>F.</summary>This is a magic dungeon (no doubt a product of Frobozzco). There are</details>
-        <details><summary>G.</summary>eight cells. Pushing the button causes the cell selected to appear, and</details>
-        <details><summary>H.</summary>the cell which was there to go back to its usual spot.</details>
-      <p>How do I unlock the bronze door?</p>
-        <details><summary>A.</summary>Have you tried the key?</details>
-        <details><summary>B.</summary>This is the first lock it has fit. Why do you think it won&#039;t turn?</details>
-        <details><summary>C.</summary>You must learn more about how this dungeon works.</details>
-        <details><summary>D.</summary>It will unlock only if you are in cell 4 and in the cell&#039;s normal</details>
-        <details><summary>E.</summary>location.</details>
-      <p>How do I get out of the cell?</p>
-        <details><summary>A.</summary>Can&#039;t you open the door?</details>
-        <details><summary>B.</summary>If the dial has been set to a new number and you have had the Dungeon</details>
-        <details><summary>C.</summary>Master push the button while you were in the cell, there is no way</details>
-        <details><summary>D.</summary>back.</details>
-<!-- General Questions -->
-  <h2 id="general_questions">General Questions</h2>
-      <p>What is my goal? What am I supposed to be doing?</p>
-        <details><summary>A.</summary>When you come to the entrance to the dungeon and meet the Dungeon</details>
-        <details><summary>B.</summary>Master, your purpose may become clearer.</details>
-      <p>How does the scoring in this game work?</p>
-        <details><summary>A.</summary>The scoring is a hint as to what is important.</details>
-        <details><summary>B.</summary>The points are not &quot;earned&quot; by solving problems or acquiring items. You</details>
-        <details><summary>C.</summary>receive a point when you start on a path where you have a _potential_</details>
-        <details><summary>D.</summary>for progress in the game.</details>
-        <details><summary>E.</summary>It is possible to have all seven points without correctly solving any</details>
-        <details><summary>F.</summary>of the problems.</details>
-      <p>How do I relight the burned-out torch?</p>
-        <details><summary>A.</summary>I see no matches here.</details>
-        <details><summary>B.</summary>There is no way to relight the torch. You&#039;ll have to find a way to</details>
-        <details><summary>C.</summary>avoid getting it wet.</details>
-      <p>How can I repair the lamp?</p>
-        <details><summary>A.</summary>If it has gotten wet or the battery has run out, the lamp is out for</details>
-        <details><summary>B.</summary>good. It is always best to conserve resources. You can prolong the life</details>
-        <details><summary>C.</summary>of the lamp by keeping it dry and turning it off whenever alternate</details>
-        <details><summary>D.</summary>light sources are available.</details>
-      <p>What is a compass rose?</p>
-        <details><summary>A.</summary>+---------------------------------------------------------------------+</details>
-        <details><summary>B.</summary>|                                                                     |</details>
-        <details><summary>C.</summary>|                                                                     |</details>
-        <details><summary>D.</summary>|  [drawing of compass rose which cannot be included in a text file]  |</details>
-        <details><summary>E.</summary>|                                                                     |</details>
-        <details><summary>F.</summary>|                                                                     |</details>
-        <details><summary>G.</summary>+---------------------------------------------------------------------+</details>
-      <p>Where do I use the timber?</p>
-        <details><summary>A.</summary>It is as useful here as it was in ZORK I.</details>
-        <details><summary>B.</summary>In other words, it isn&#039;t useful at all.</details>
-      <p>What do I do with the grue repellent?</p>
-        <details><summary>A.</summary>Read the label.</details>
-      <p>Where can I find the amulet?</p>
-        <details><summary>A.</summary>&quot;Go jump in a lake!&quot;</details>
-        <details><summary>B.</summary>Have you ever tried diving to the bottom of the lake?</details>
-<!-- How Points Are Earned -->
-  <h2 id="how_points_are_earned">How Points Are Earned</h2>
-      <p>(Use only as a last resort.)</p>
-      <p>You earn one point when you...</p>
-      <p>...encounter the hooded figure. ...attack the hooded figure. ...reach the Cliff Ledge. ...jump in the lake. ...touch the viewing table. ...push the button on the time machine while the dial is set to 776. ...push a sandstone wall in the Royal Puzzle.</p>
-      <p>Of course, you can have all seven points and still be far from completing the game.</p>
-<!-- For Your Amusement -->
-  <h2 id="for_your_amusement">For Your Amusement</h2>
-      <p>(after you&#039;ve finished the game)</p>
-      <p></p>
-      <p>Have you ever:</p>
-      <p></p>
-      <p>...said HELLO to the man at the cliff?</p>
-      <p>...tried to throw anything from the cliff at the man?</p>
-      <p>...been eaten by the Roc or swallowed by the fish in the lake?</p>
-      <p>...tried to eat the algae?</p>
-      <p>...tried to examine the key repeatedly?</p>
-      <p>...tried saying HELLO SAILOR at the ocean before the Viking boat arrives</p>
-      <p>or after it leaves?</p>
-      <p>...been at the Aqueduct View, on the Aqueduct, at the Great Door, or</p>
-      <p>visiting one of the other Zorks while the earthquake took place?</p>
-      <p>...seen the robot that tidies the Royal Museum (and no doubt closes doors</p>
-      <p>it finds open)?</p>
-      <p>...walked into the grue convention in the dark rooms?</p>
-      <p>...gone to the Museum Entrance or Jewel Room in 777?</p>
-      <p>...moved the temporizer to one of the other rooms in 776 and left it there</p>
-      <p>(and then read the plaque in 948)?</p>
-      <p>...listened to the guards or the dedication through the museum door?</p>
-      <p>...looked into the passageway alongside the mirror box while next to the</p>
-      <p>Guardians?</p>
-      <p>...looked into the mirror or knocked on the dungeon door while invisible?</p>
-      <p>...tried to walk through the swamp or quicksand?</p>
-      <p>...burned the staff, book, tree, grue repellant can,...?</p>
+<main>
+<h1>Zork III Invisiclues</h1>
+    <div class="question indented">
+      <h3>Why did Lord Dimwit Flathead throw his grandfather clock out the window?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have you studied the trajectory from several angles?</details>
+        <details class="answer"><summary>B.</summary>Why does he always use the second-story window?</details>
+        <details class="answer"><summary>C.</summary>Excessive as always, he wanted to see time fly.</details>
+      </div>
+  </div>
 
+  <h2>Table of Contents</h2><ul class="indented">
+    <li><a href="#central_area">Central Area</a></li>
+      <li><a href="#the_land_of_shadow_and_the_cliff_area">The Land Of Shadow and the Cliff Area</a></li>
+      <li><a href="#the_royal_museum">The Royal Museum</a></li>
+      <li><a href="#beyond_the_secret_door">Beyond the Secret Door</a></li>
+      <li><a href="#the_rectangular_box">The Rectangular Box</a></li>
+      <li><a href="#the_guardians_of_zork">The Guardians Of Zork</a></li>
+      <li><a href="#the_dungeon">The Dungeon</a></li>
+      <li><a href="#general_questions">General Questions</a></li>
+      <li><a href="#how_points_are_earned">How Points Are Earned</a></li>
+      <li><a href="#for_your_amusement">For Your Amusement</a></li>
+      <li><a href="#indicia">Indicia</a></li>
+  </ul>
+  <h2 id="central_area">Central Area</h2>
+          <div class="question indented">
+      <h3>How do I climb the endless stair?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>If you wish to go back to ZORK II, just switch diskettes!</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get the sword in the stone?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>&quot;Who do you think you are? Arthur?&quot;</details>
+        <details class="answer"><summary>B.</summary>&quot;The sword is deeply imbedded within the rock. You can&#39;t even begin to</details>
+        <details class="answer"><summary>C.</summary>budge it.&quot;</details>
+        <details class="answer"><summary>D.</summary>Be patient. You&#39;ll get it when the need for it arises.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How can the runes be translated?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>A Runish-to-English dictionary?</details>
+        <details class="answer"><summary>B.</summary>Have you examined them?</details>
+        <details class="answer"><summary>C.</summary>Beyond that, you&#39;ll get nothing more.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I climb the channel in the Damp Passage?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>&quot;The channel climbs too rapidly and the moss is slippery.&quot;</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What will increase traction?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Studded snow tires work well on glare ice.</details>
+        <details class="answer"><summary>B.</summary>Some purists insist on chains.</details>
+        <details class="answer"><summary>C.</summary>If you were thinking of climbing the slippery moss, forget it. You</details>
+        <details class="answer"><summary>D.</summary>really can&#39;t go that way.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How can I clear the rubble in the Damp Passage?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>&quot;The channel opening is blocked by tons of debris.&quot;</details>
+        <details class="answer"><summary>B.</summary>You can&#39;t.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Where do I find the old and wizened man?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>The runes are a very subtle hint.</details>
+        <details class="answer"><summary>B.</summary>There is a chance he will appear when you enter (and only when you</details>
+        <details class="answer"><summary>C.</summary>enter) the Engravings Room.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I waken the old and wizened man?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>He is sleeping very soundly. (Listen to that snore.)</details>
+        <details class="answer"><summary>B.</summary>Try saying WAKE MAN or SHAKE MAN.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What do I do about the old and wizened man?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Attacking him would not be very sporting, but it might give you a clue.</details>
+        <details class="answer"><summary>B.</summary>He is described as &quot;weak,&quot; &quot;tired,&quot; and &quot;frail.&quot;</details>
+        <details class="answer"><summary>C.</summary>Have you considered helping him? You might give him something he could</details>
+        <details class="answer"><summary>D.</summary>use.</details>
+        <details class="answer"><summary>E.</summary>Try giving him the waybread.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Can the phosphorescent moss be kept alive for more than 10 moves?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Certainly. It will live throughout the entire game.</details>
+        <details class="answer"><summary>B.</summary>But you will never be able to take it, move it, or use it as a light</details>
+        <details class="answer"><summary>C.</summary>source anywhere else.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How can I open the Great Iron Door?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You cannot open the door.</details>
+        <details class="answer"><summary>B.</summary>However, after the earthquake you will find a cleft in the rock that</details>
+        <details class="answer"><summary>C.</summary>will allow you to pass.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get the rust remover tube from the warlock?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>What a looney!</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get out of the chasm?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>How did you get down to the chasm?</details>
+        <details class="answer"><summary>B.</summary>The folks at Infocom would be very interested.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>I&#39;m trapped on the Aqueduct. What do I do?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>If you can&#39;t proceed to the north due to a collapsed segment, you&#39;re</details>
+        <details class="answer"><summary>B.</summary>stuck.</details>
+        <details class="answer"><summary>C.</summary>What might have caused this segment to collapse?</details>
+        <details class="answer"><summary>D.</summary>The secret is to traverse this area before it is destroyed by the</details>
+        <details class="answer"><summary>E.</summary>earthquake.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Can the lake be crossed?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>&quot;Go jump in a lake!&quot;</details>
+        <details class="answer"><summary>B.</summary>Seriously! Jump in and swim to one of the other shores.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is required to walk on water?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>A messianic complex?</details>
+        <details class="answer"><summary>B.</summary>Do you also want to move mountains?</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I catch the fish?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Just be careful that it doesn&#39;t catch _you_!</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is a Roc?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It is a legendary bird of prey of tremendous size and strength. Your</details>
+        <details class="answer"><summary>B.</summary>probability of seeing it is low, but if you do, watch out!</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What can be done with the swamp gas?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Swamp gas burns...</details>
+        <details class="answer"><summary>B.</summary>If you could transport it across the lake, it might make a good light</details>
+        <details class="answer"><summary>C.</summary>source.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I transport the swamp gas?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>A bottle would be useful.</details>
+        <details class="answer"><summary>B.</summary>Unfortunately, there are no bottles. By the way, where did you find</details>
+        <details class="answer"><summary>C.</summary>swamp gas?</details>
+        <details class="answer"><summary>D.</summary>Remember the introduction? If every question in this book were</details>
+        <details class="answer"><summary>E.</summary>pertinent to the game, the questions themselves would give far too much</details>
+        <details class="answer"><summary>F.</summary>away. Do not use the presence or absence of a question on a certain</details>
+        <details class="answer"><summary>G.</summary>topic as an indication of what is important, and don&#39;t assume that long</details>
+        <details class="answer"><summary>H.</summary>answers are associated with important questions.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How can I get the shiny object?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Try to take it until you eventually succeed. (There is a 50%</details>
+        <details class="answer"><summary>B.</summary>probability that you will get it on any move. Although there is less</details>
+        <details class="answer"><summary>C.</summary>than one chance in a thousand that you wouldn&#39;t get it within 10 tries,</details>
+        <details class="answer"><summary>D.</summary>it could conceivably take zillions of tries.)</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is the table with the &quot;Scenic Vista&quot; sign for?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have you ever examined it?</details>
+        <details class="answer"><summary>B.</summary>Have you ever touched or rubbed it?</details>
+        <details class="answer"><summary>C.</summary>You can look at or go to sections of ZORK I, ZORK II, ZORK III, and</details>
+        <details class="answer"><summary>D.</summary>ENCHANTER(tm).</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Is there anything under the manhole cover?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Try raising or moving it.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get a light source to the southern end of the lake?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>The light sources cannot be relit once they&#39;ve gotten wet.</details>
+        <details class="answer"><summary>B.</summary>They can&#39;t be taken across the lake without getting wet.</details>
+        <details class="answer"><summary>C.</summary>There is no way to get a working light source to the south shore of the</details>
+        <details class="answer"><summary>D.</summary>lake.</details>
+        <details class="answer"><summary>E.</summary>There is another way!</details>
+        <details class="answer"><summary>F.</summary>Have you seen the grue repellent?</details>
+        <details class="answer"><summary>G.</summary>Figure out how to use the viewing table.</details>
+        <details class="answer"><summary>H.</summary>Use the grue repellent to get to the Key Room and Aqueduct. The viewing</details>
+        <details class="answer"><summary>I.</summary>table is also useful for pre-positioning the light source you will</details>
+        <details class="answer"><summary>J.</summary>eventually need.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How can I get to the coal in the Dead End?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You can&#39;t.</details>
+        <details class="answer"><summary>B.</summary>You are limited to three moves in the areas visited with the viewing</details>
+        <details class="answer"><summary>C.</summary>table. There is no way for you to increase this. Obviously, if you</details>
+        <details class="answer"><summary>D.</summary>could stay as long as you wanted, there would have to be four games on</details>
+        <details class="answer"><summary>E.</summary>the diskette.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What light source can I take to the west of the Timber Room?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>None.</details>
+        <details class="answer"><summary>B.</summary>See question above.</details>
+      </div>
+  </div>
+
+  <h2 id="the_land_of_shadow_and_the_cliff_area">The Land Of Shadow and the Cliff Area</h2>
+          <div class="question indented">
+      <h3>What do I do about the hooded figure?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have you noticed anything you do which increases your score?</details>
+        <details class="answer"><summary>B.</summary>You must fight the figure.</details>
+        <details class="answer"><summary>C.</summary>Have you ever looked at the figure or looked under the hood?</details>
+        <details class="answer"><summary>D.</summary>When badly injured, the figure is defenseless.</details>
+        <details class="answer"><summary>E.</summary>Does killing the figure leave you feeling satisfied?</details>
+        <details class="answer"><summary>F.</summary>While the figure is badly injured, try taking the hood.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Why do I see myself?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Very good question.</details>
+        <details class="answer"><summary>B.</summary>This is actually a hint.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I freeze the quicksand?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>A blast of supercold air might do the trick.</details>
+        <details class="answer"><summary>B.</summary>The Great Underground Empire is far from polar regions.</details>
+        <details class="answer"><summary>C.</summary>The quicksand can&#39;t be crossed. It is one of the many borders which</details>
+        <details class="answer"><summary>D.</summary>keep the Underground Empire small enough to fit on a diskette.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get to the ship?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Congratulations. Seeing the ship is rather rare.</details>
+        <details class="answer"><summary>B.</summary>Have you tried walking on water?</details>
+        <details class="answer"><summary>C.</summary>This is a Viking sailor.</details>
+        <details class="answer"><summary>D.</summary>You&#39;ve been waiting three games for this!</details>
+        <details class="answer"><summary>E.</summary>Something happens here!</details>
+        <details class="answer"><summary>F.</summary>Say HELLO SAILOR!!</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I open the chest?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You can&#39;t open it.</details>
+        <details class="answer"><summary>B.</summary>The man at the cliff has the only key.</details>
+        <details class="answer"><summary>C.</summary>You&#39;ll have to wait for him to open it.</details>
+        <details class="answer"><summary>D.</summary>Wait on the ledge for him to appear and follow his directions.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Can the man at the cliff be trusted?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>He certainly seems like a practical joker.</details>
+        <details class="answer"><summary>B.</summary>But he has the only key to the chest.</details>
+        <details class="answer"><summary>C.</summary>Do exactly what he says -- and be patient.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is in the tree house?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>This could be the man&#39;s living quarters.</details>
+        <details class="answer"><summary>B.</summary>The inflatable raft in the back room might be useful elsewhere.</details>
+        <details class="answer"><summary>C.</summary>It is amazing that you got this far when there is no tree house.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>I have the treasure, but how do I mend the staff?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It cannot be fixed.</details>
+        <details class="answer"><summary>B.</summary>Have you tried protecting the staff (for example, throwing it off the</details>
+        <details class="answer"><summary>C.</summary>cliff) before taking the treasure?</details>
+        <details class="answer"><summary>D.</summary>You&#39;ll have to decide which you prefer, the treasure or the staff.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>I have the staff; how do I get the treasure?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You might try killing the man before he walks away with it.</details>
+        <details class="answer"><summary>B.</summary>You&#39;ll have to decide which you prefer, the treasure or the staff.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is the significance of Smokey the Bear?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>&quot;Only you can prevent forest fires.&quot;</details>
+        <details class="answer"><summary>B.</summary>Maybe you thought this was one of the nonsense questions. Try burning</details>
+        <details class="answer"><summary>C.</summary>the trees.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is in the vial?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>&quot;It feels as though there is something inside, but you can&#39;t see</details>
+        <details class="answer"><summary>B.</summary>anything even though the vial is transparent.&quot;</details>
+        <details class="answer"><summary>C.</summary>Have you tried drinking the contents?</details>
+        <details class="answer"><summary>D.</summary>Look into the mirror immediately after drinking it.</details>
+        <details class="answer"><summary>E.</summary>The invisible liquid is an invisibility potion. It will last only two</details>
+        <details class="answer"><summary>F.</summary>moves and will not be effective against the more powerful denizens of</details>
+        <details class="answer"><summary>G.</summary>the Great Underground Empire.</details>
+      </div>
+  </div>
+
+  <h2 id="the_royal_museum">The Royal Museum</h2>
+          <div class="question indented">
+      <h3>When are the museum personnel on duty?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Intrepid adventurers do not fear mere warning notes.</details>
+        <details class="answer"><summary>B.</summary>They all died years ago. You&#39;ll have to risk it on your own.</details>
+        <details class="answer"><summary>C.</summary></details>
+        <details class="answer"><summary>D.</summary>Is there anything I can do when I&#39;m trapped in the small square room with</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>marble and sandstone walls?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>There is a way out.</details>
+        <details class="answer"><summary>B.</summary>Sandstone is a very light rock.</details>
+        <details class="answer"><summary>C.</summary>Try pushing one of the sandstone walls (PUSH EAST WALL or PUSH SOUTH</details>
+        <details class="answer"><summary>D.</summary>WALL).</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Where do I find dynamite?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>What a strange concept.</details>
+        <details class="answer"><summary>B.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>C.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>D.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>E.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>F.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>G.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>H.</summary>This answer left intentionally blank.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What are the ladders for?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Remember the hole through which you entered the puzzle?</details>
+        <details class="answer"><summary>B.</summary>It is possible to maneuver one of the ladders into a position allowing</details>
+        <details class="answer"><summary>C.</summary>you to climb out.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is the slot for?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have you tried putting anything in it?</details>
+        <details class="answer"><summary>B.</summary>Try the lore book.</details>
+        <details class="answer"><summary>C.</summary>This is one (although not the best) way out of the puzzle.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>I&#39;m lost in the puzzle. How do I get out?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>There _are_ ways out.</details>
+        <details class="answer"><summary>B.</summary>Try mapping (movable pieces to represent walls may help). Push as few</details>
+        <details class="answer"><summary>C.</summary>walls as possible.</details>
+        <details class="answer"><summary>D.</summary>You might make use of the slot (not recommended).</details>
+        <details class="answer"><summary>E.</summary>Walls can only be pushed, never pulled.</details>
+        <details class="answer"><summary>F.</summary>Starting from the Royal Puzzle entrance, the following moves will solve</details>
+        <details class="answer"><summary>G.</summary>the puzzle. D. PUSH EAST WALL. S. S. SE. PUSH SOUTH WALL. N. NE. PUSH</details>
+        <details class="answer"><summary>H.</summary>SOUTH WALL. TAKE BOOK. PUSH SOUTH WALL. E. NE. PUSH WEST WALL. SW. NW.</details>
+        <details class="answer"><summary>I.</summary>NE. PUSH SOUTH WALL. SW. PUSH EAST WALL. NE. PUSH SOUTH WALL. NW. N. N.</details>
+        <details class="answer"><summary>J.</summary>PUSH EAST WALL. SW. S. SE. NE. N. PUSH WEST WALL. NW. PUSH SOUTH</details>
+        <details class="answer"><summary>K.</summary>WALL. AGAIN. W. NW. NW. PUSH SOUTH WALL. SE. SE. SE. NE. PUSH WEST</details>
+        <details class="answer"><summary>L.</summary>WALL. AGAIN. SW. PUSH NORTH WALL. AGAIN. AGAIN. NW. UP. YELL. (Note:</details>
+        <details class="answer"><summary>M.</summary>Innumerable other sequences will reach the same result.)</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What was the &quot;snap&quot; I heard?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You ran into something with the wall. Movable objects are transported</details>
+        <details class="answer"><summary>B.</summary>to the side room when hit by the wall.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What does the gray machine do?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>This is a pressurizer.</details>
+        <details class="answer"><summary>B.</summary>It is like the machine used in ZORK I to make diamonds.</details>
+        <details class="answer"><summary>C.</summary>Unfortunately, it is not a working model.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What does pushing the button on the gold machine do?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Nothing if you aren&#39;t sitting on the seat when you push it.</details>
+        <details class="answer"><summary>B.</summary>Nothing if you haven&#39;t changed the setting of the dial before pushing</details>
+        <details class="answer"><summary>C.</summary>the button.</details>
+        <details class="answer"><summary>D.</summary>This is a time machine. Pushing the button transports the person</details>
+        <details class="answer"><summary>E.</summary>sitting in the chair (and only that person -- the time machine itself</details>
+        <details class="answer"><summary>F.</summary>doesn&#39;t move) to the same spot in the year indicated on the dial (where</details>
+        <details class="answer"><summary>G.</summary>you may find the time machine in the same position). The effect is not</details>
+        <details class="answer"><summary>H.</summary>permanent -- in 40 moves you will snap back. The present year is 948.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What does the black machine do?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>This is a room spinner.</details>
+        <details class="answer"><summary>B.</summary>Presumably it is a model of the machine which spins the Carousel Room</details>
+        <details class="answer"><summary>C.</summary>in ZORK II.</details>
+        <details class="answer"><summary>D.</summary>Fortunately, it is not a working model.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How can I read the plaque in the Technology Museum?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It has faded with age and can no longer be read.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I unlock the cage?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>That cage will protect the royal jewels until the end of time.</details>
+        <details class="answer"><summary>B.</summary>It is, however, possible to get your hands on the jewels.</details>
+        <details class="answer"><summary>C.</summary>You should learn the use of each machine in the Technology Museum.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I take the royal jewels?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>The cage is impregnable, but you can&#39;t let small details like that stop</details>
+        <details class="answer"><summary>B.</summary>you. Read the hints to unlocking the cage before going to B.</details>
+        <details class="answer"><summary>C.</summary>By now you know that the gold machine is a time machine which can be</details>
+        <details class="answer"><summary>D.</summary>used to go to the Jewel Room before the cage is installed. (Push the</details>
+        <details class="answer"><summary>E.</summary>machine to the Jewel Room in the present and go back to the year 776.)</details>
+        <details class="answer"><summary>F.</summary>Unfortunately, you can&#39;t carry anything with you through time.</details>
+        <details class="answer"><summary>G.</summary>You must find a very good hiding place. Lord Dimwit Flathead&#39;s men will</details>
+        <details class="answer"><summary>H.</summary>no doubt launch an extensive search for the missing jewels. They must</details>
+        <details class="answer"><summary>I.</summary>remain hidden for 200 years.</details>
+        <details class="answer"><summary>J.</summary>You might check the machines for a good place. (Wait for the guards to</details>
+        <details class="answer"><summary>K.</summary>leave.)</details>
+        <details class="answer"><summary>L.</summary>Have you looked under the seat in the time machine?</details>
+        <details class="answer"><summary>M.</summary>Excessive greed in an adventurer of your status is unbecoming.</details>
+        <details class="answer"><summary>N.</summary>Only the ring can be successfully hidden.</details>
+        <details class="answer"><summary>O.</summary>If you succeed in getting the ring, Flathead has the other jewels</details>
+        <details class="answer"><summary>P.</summary>moved. If you botch the burglary, two things can happen: 1) They</details>
+        <details class="answer"><summary>Q.</summary>realize the time machine works and remove it; or 2) They find the</details>
+        <details class="answer"><summary>R.</summary>jewels displaced and simply put them back (but a different plaque is</details>
+        <details class="answer"><summary>S.</summary>installed).</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What do I do about the robot?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Congratulations. It is a very rare treat to see the robot. Just try</details>
+        <details class="answer"><summary>B.</summary>again.</details>
+      </div>
+  </div>
+
+  <h2 id="beyond_the_secret_door">Beyond the Secret Door</h2>
+          <div class="question indented">
+      <h3>What does the red button do?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Pushing the button alone is not notably helpful.</details>
+        <details class="answer"><summary>B.</summary>Pushing the button is helpful if another action precedes it.</details>
+        <details class="answer"><summary>C.</summary>Haven&#39;t you been curious about the red beam of light?</details>
+        <details class="answer"><summary>D.</summary>Block the beam with an object, then push the button.</details>
+        <details class="answer"><summary>E.</summary>You will find that the mirror is a doorway.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What do I do about the red beam of light?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You can jump over it, but it won&#39;t do you much good.</details>
+        <details class="answer"><summary>B.</summary>Trying to take it is similarly useless.</details>
+        <details class="answer"><summary>C.</summary>Does the fact that it is only an inch above the floor suggest anything?</details>
+        <details class="answer"><summary>D.</summary>Have you tried blocking it with your hand?</details>
+        <details class="answer"><summary>E.</summary>Try blocking it with an object. You will now find that the button is</details>
+        <details class="answer"><summary>F.</summary>useful.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is the wet suit for?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>What wet suit?</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Is the mirror important?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Presumably you have already tried touching it, looking into it, pushing</details>
+        <details class="answer"><summary>B.</summary>it, breaking it.</details>
+        <details class="answer"><summary>C.</summary>It is important, but you will have no direct interaction with it.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I break the panel?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>&quot;The panel is not that easily destroyed.&quot;</details>
+        <details class="answer"><summary>B.</summary>You don&#39;t.</details>
+      </div>
+  </div>
+
+  <h2 id="the_rectangular_box">The Rectangular Box</h2>
+          <div class="question indented">
+      <h3>What is the significance of the different colored walls?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>By making them different colors, you can refer to them separately.</details>
+        <details class="answer"><summary>B.</summary>Pushing on the red or yellow walls can cause the box to rotate on the</details>
+        <details class="answer"><summary>C.</summary>central pivot pole in a clockwise direction. Pushing the black or white</details>
+        <details class="answer"><summary>D.</summary>walls can cause the box to rotate counterclockwise.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is the significance of the pine wall?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>If nothing is blocking it on the other side, pushing on it will cause</details>
+        <details class="answer"><summary>B.</summary>it to swing out so that you can leave the box.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is the significance of the mahogany wall?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>If the box is aligned properly, pushing on it will cause the entire box</details>
+        <details class="answer"><summary>B.</summary>to move.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is the long pole for?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>The long pole is at the center of the box and extends from the ceiling</details>
+        <details class="answer"><summary>B.</summary>to the floor.</details>
+        <details class="answer"><summary>C.</summary>It is a pivot around which the box can be turned.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is the short pole for?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Doesn&#39;t the hand grip suggest anything?</details>
+        <details class="answer"><summary>B.</summary>&quot;The pole has been dropped into a hole in the stone floor.&quot;</details>
+        <details class="answer"><summary>C.</summary>Try raising the short pole.</details>
+        <details class="answer"><summary>D.</summary>The short pole anchors the box in position.</details>
+        <details class="answer"><summary>E.</summary>It can also be used to steady it when it is moved.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is the T-bar for?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It has an arrow carved on it.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is the significance of the direction the arrow is pointing?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>That is the direction the mahogany wall faces.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Is the wobble significant?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It can be avoided.</details>
+        <details class="answer"><summary>B.</summary>It can also have negative consequences.</details>
+        <details class="answer"><summary>C.</summary>If you drop the short pole into the channel, it will steady the</details>
+        <details class="answer"><summary>D.</summary>movement of the box.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How can I undress the stone?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Pervert!</details>
+        <details class="answer"><summary>B.</summary>Look up &quot;dressed&quot; (as it applies to stone) in the dictionary.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Why am I being killed while inside the box?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Once you have rotated the box 90 [degrees] from its original position,</details>
+        <details class="answer"><summary>B.</summary>you may want to leave it to scout the area beyond.</details>
+        <details class="answer"><summary>C.</summary>Learn all you can about the Guardians of Zork.</details>
+        <details class="answer"><summary>D.</summary>If the Guardians notice the box due to a broken mirror, open door, or a</details>
+        <details class="answer"><summary>E.</summary>wobble, they will kill you.</details>
+      </div>
+  </div>
+
+  <h2 id="the_guardians_of_zork">The Guardians Of Zork</h2>
+          <div class="question indented">
+      <h3>How can I pass the Guardians of Zork?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>The Guardians strike anything which they see between them.</details>
+        <details class="answer"><summary>B.</summary>The Guardians are described as &quot;identical&quot; and &quot;perfectly symmetrical.&quot;</details>
+        <details class="answer"><summary>C.</summary>If you walk in front of them or throw something in front of them, they</details>
+        <details class="answer"><summary>D.</summary>destroy &quot;in perfect unison.&quot;</details>
+        <details class="answer"><summary>E.</summary>Do you think a Guardian could distinguish between the sight of the</details>
+        <details class="answer"><summary>F.</summary>other and the sight of himself in a mirror?</details>
+        <details class="answer"><summary>G.</summary>You can travel past them inside the mirror box. (&quot;It&#39;s all done with</details>
+        <details class="answer"><summary>H.</summary>mirrors.&quot;)</details>
+        <details class="answer"><summary>I.</summary>An alternate solution is to walk past while invisible.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How is the scuba tank attached to the wet suit?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>What scuba tank and wet suit?</details>
+        <details class="answer"><summary>B.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>C.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>D.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>E.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>F.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>G.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>H.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>I.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>J.</summary>This answer and the ones beneath it left intentionally blank.</details>
+        <details class="answer"><summary>K.</summary></details>
+        <details class="answer"><summary>L.</summary>I seem to have gotten past the Guardians, but I&#39;m still being killed. What</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>should I do?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Rotate the structure so that the door doesn&#39;t open into their field of</details>
+        <details class="answer"><summary>B.</summary>view.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I open the large wooden door with the barred panel?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>_You_ can&#39;t open it.</details>
+        <details class="answer"><summary>B.</summary>Have you tried knocking?</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What must I do to satisfy the old man at the large door?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>&quot;He looks you over with his keen, piercing gaze and then speaks</details>
+        <details class="answer"><summary>B.</summary>gravely...&quot;</details>
+        <details class="answer"><summary>C.</summary>This is the Dungeon Master.</details>
+        <details class="answer"><summary>D.</summary>He is looking for something. What you think might be valuable may have</details>
+        <details class="answer"><summary>E.</summary>nothing to do with it.</details>
+        <details class="answer"><summary>F.</summary>Most of the problems in the game are tests by the Dungeon Master to see</details>
+        <details class="answer"><summary>G.</summary>whether you are ready.</details>
+        <details class="answer"><summary>H.</summary>You have met him before when you have died.</details>
+        <details class="answer"><summary>I.</summary>Does nothing about his description strike you as odd?</details>
+        <details class="answer"><summary>J.</summary>&quot;He is dressed simply in a hood and cloak, wearing a few simple jewels,</details>
+        <details class="answer"><summary>K.</summary>carrying something under one arm, and leaning on a wooden staff. A</details>
+        <details class="answer"><summary>L.</summary>single key, as if to a massive prison cell, hangs from his belt.&quot;</details>
+        <details class="answer"><summary>M.</summary>You can acquire his entire costume by solving the problems in the game.</details>
+        <details class="answer"><summary>N.</summary>Your goal is to _become_ the Dungeon Master. You will need the hood and</details>
+        <details class="answer"><summary>O.</summary>cloak, the amulet and ring, the key, the wooden staff, and the lore</details>
+        <details class="answer"><summary>P.</summary>book.</details>
+      </div>
+  </div>
+
+  <h2 id="the_dungeon">The Dungeon</h2>
+          <div class="question indented">
+      <h3>Why won&#39;t the Dungeon Master follow me?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have you asked him to?</details>
+        <details class="answer"><summary>B.</summary>Say DUNGEON MASTER, FOLLOW ME. (See your game manual.)</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What should be thrown into the flaming pit?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>The end had come, and this was it;</details>
+        <details class="answer"><summary>B.</summary>He dropped her in the flaming pit.</details>
+        <details class="answer"><summary>C.</summary>-- Edward Gorey</details>
+        <details class="answer"><summary>D.</summary>Anything dropped into the pit is lost forever.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What will scratch the marble?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>+---------------------------------------------------------------------+</details>
+        <details class="answer"><summary>B.</summary>|                                                                     |</details>
+        <details class="answer"><summary>C.</summary>|                                                                     |</details>
+        <details class="answer"><summary>D.</summary>|                                                                     |</details>
+        <details class="answer"><summary>E.</summary>|                                                                     |</details>
+        <details class="answer"><summary>F.</summary>|                                                                     |</details>
+        <details class="answer"><summary>G.</summary>|                                Huh?                                 |</details>
+        <details class="answer"><summary>H.</summary>+---------------------------------------------------------------------+</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What are the sundial and button for?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>You can set the dial to any of the eight numbers.</details>
+        <details class="answer"><summary>B.</summary>Try spinning or setting it and then pushing the button. Did anything</details>
+        <details class="answer"><summary>C.</summary>change?</details>
+        <details class="answer"><summary>D.</summary>You might try putting something in the cell first.</details>
+        <details class="answer"><summary>E.</summary>Reading the lore book now might help.</details>
+        <details class="answer"><summary>F.</summary>This is a magic dungeon (no doubt a product of Frobozzco). There are</details>
+        <details class="answer"><summary>G.</summary>eight cells. Pushing the button causes the cell selected to appear, and</details>
+        <details class="answer"><summary>H.</summary>the cell which was there to go back to its usual spot.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I unlock the bronze door?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Have you tried the key?</details>
+        <details class="answer"><summary>B.</summary>This is the first lock it has fit. Why do you think it won&#39;t turn?</details>
+        <details class="answer"><summary>C.</summary>You must learn more about how this dungeon works.</details>
+        <details class="answer"><summary>D.</summary>It will unlock only if you are in cell 4 and in the cell&#39;s normal</details>
+        <details class="answer"><summary>E.</summary>location.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I get out of the cell?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Can&#39;t you open the door?</details>
+        <details class="answer"><summary>B.</summary>If the dial has been set to a new number and you have had the Dungeon</details>
+        <details class="answer"><summary>C.</summary>Master push the button while you were in the cell, there is no way</details>
+        <details class="answer"><summary>D.</summary>back.</details>
+      </div>
+  </div>
+
+  <h2 id="general_questions">General Questions</h2>
+          <div class="question indented">
+      <h3>What is my goal? What am I supposed to be doing?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>When you come to the entrance to the dungeon and meet the Dungeon</details>
+        <details class="answer"><summary>B.</summary>Master, your purpose may become clearer.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How does the scoring in this game work?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>The scoring is a hint as to what is important.</details>
+        <details class="answer"><summary>B.</summary>The points are not &quot;earned&quot; by solving problems or acquiring items. You</details>
+        <details class="answer"><summary>C.</summary>receive a point when you start on a path where you have a _potential_</details>
+        <details class="answer"><summary>D.</summary>for progress in the game.</details>
+        <details class="answer"><summary>E.</summary>It is possible to have all seven points without correctly solving any</details>
+        <details class="answer"><summary>F.</summary>of the problems.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How do I relight the burned-out torch?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>I see no matches here.</details>
+        <details class="answer"><summary>B.</summary>There is no way to relight the torch. You&#39;ll have to find a way to</details>
+        <details class="answer"><summary>C.</summary>avoid getting it wet.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>How can I repair the lamp?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>If it has gotten wet or the battery has run out, the lamp is out for</details>
+        <details class="answer"><summary>B.</summary>good. It is always best to conserve resources. You can prolong the life</details>
+        <details class="answer"><summary>C.</summary>of the lamp by keeping it dry and turning it off whenever alternate</details>
+        <details class="answer"><summary>D.</summary>light sources are available.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What is a compass rose?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>[ drawing of compass rose which cannot be included in a text file ]</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Where do I use the timber?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>It is as useful here as it was in ZORK I.</details>
+        <details class="answer"><summary>B.</summary>In other words, it isn&#39;t useful at all.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>What do I do with the grue repellent?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>Read the label.</details>
+      </div>
+  </div>
+
+          <div class="question indented">
+      <h3>Where can I find the amulet?</h3>
+      <div class="answers">
+        <details class="answer"><summary>A.</summary>&quot;Go jump in a lake!&quot;</details>
+        <details class="answer"><summary>B.</summary>Have you ever tried diving to the bottom of the lake?</details>
+      </div>
+  </div>
+
+  <h2 id="how_points_are_earned">How Points Are Earned</h2>
+      <div class="indented">
+      <p>
+        (Use only as a last resort.)<br>
+        <br>
+        You earn one point when you...<br>
+        <br>
+          ...encounter the hooded figure.<br>
+          ...attack the hooded figure.<br>
+          ...reach the Cliff Ledge.<br>
+          ...jump in the lake.<br>
+          ...touch the viewing table.<br>
+          ...push the button on the time machine while the dial is set to 776.<br>
+          ...push a sandstone wall in the Royal Puzzle.<br>
+        <br>
+          Of course, you can have all seven points and still be far from completing<br>
+          the game.<br>
+    </p>
+    </div>
+  <h2 id="for_your_amusement">For Your Amusement</h2>
+      <div class="indented">
+      <p>
+        (after you&#39;ve finished the game)<br>
+        <br>
+        Have you ever:<br>
+        <br>
+          ...said HELLO to the man at the cliff?<br>
+          ...tried to throw anything from the cliff at the man?<br>
+          ...been eaten by the Roc or swallowed by the fish in the lake?<br>
+          ...tried to eat the algae?<br>
+          ...tried to examine the key repeatedly?<br>
+          ...tried saying HELLO SAILOR at the ocean before the Viking boat arrives<br>
+             or after it leaves?<br>
+          ...been at the Aqueduct View, on the Aqueduct, at the Great Door, or<br>
+             visiting one of the other Zorks while the earthquake took place?<br>
+          ...seen the robot that tidies the Royal Museum (and no doubt closes doors<br>
+             it finds open)?<br>
+          ...walked into the grue convention in the dark rooms?<br>
+          ...gone to the Museum Entrance or Jewel Room in 777?<br>
+          ...moved the temporizer to one of the other rooms in 776 and left it there<br>
+             (and then read the plaque in 948)?<br>
+          ...listened to the guards or the dedication through the museum door?<br>
+          ...looked into the passageway alongside the mirror box while next to the<br>
+             Guardians?<br>
+          ...looked into the mirror or knocked on the dungeon door while invisible?<br>
+          ...tried to walk through the swamp or quicksand?<br>
+          ...burned the staff, book, tree, grue repellant can,...?<br>
+    </p>
+    </div>
+  <h2 id="indicia">Indicia</h2>
+      <div class="indented">
+      <p>
+        Copyright by Infocom, Inc. Provided for non-commercial use only, with the sole intent of making information available that would otherwise be lost.</p><p>
+        To whoever presently holds the copyright to the information contained in this file: if you think the existence of this file violates your copyright, please complain and the file will be removed.</p><p>
+        Typed in from the original hintbook by Paul David Doherty.</p><p>
+    </p>
+    </div>
+</main>
+</body>
+</html>
