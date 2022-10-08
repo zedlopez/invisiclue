@@ -7,7 +7,7 @@ require 'ostruct'
 def should_merge?(section)
   section = section.downcase
   [ /\bhave you tried\b/, /how\b.*\bpoints\b/, /points\b.*\bscored\b/ ].each {|r| return false if r.match(section) }
-  [ 'for your amusement', 'treasure', 'things you can ask' ].each {|s| return false if section.start_with?(s) }
+  [ 'spells, potions, and their locations', 'for your amusement', 'treasure', 'things you can ask' ].each {|s| return false if section.start_with?(s) }
   return true
 end
 
@@ -31,9 +31,11 @@ class Template
   end
 end
 
-invisiclue = Template.new('invisiclue.erb')
-index = Template.new('index.erb')
-question_template = Template.new('_question.erb')
+templates = OpenStruct.new(%w{ invisiclue index _question _footer }.map {|x| [ x.sub(/\A_/,''), Template.new("#{x}.erb")] }.to_h)
+
+#invisiclue = Template.new('invisiclue.erb')
+#index = Template.new('index.erb')
+#question_template = Template.new('_question.erb')
 
 Dir["*.inv"].each do |filename|
   lines = File.readlines(filename)
@@ -147,7 +149,7 @@ Dir["*.inv"].each do |filename|
   output_filename = File.basename(filename, '.inv').downcase + '.html'
 
   File.open(File.join('docs', output_filename), "w") do |f|
-    f.puts invisiclue.render(sections: sections, anchors: anchors, header: header, indicia: indicia_lines, sample: sample, question_template: question_template)
+    f.puts templates.invisiclue.render(sections: sections, anchors: anchors, header: header, indicia: indicia_lines, sample: sample, templates: templates)
   end
 
   games[header] = output_filename
@@ -155,7 +157,7 @@ Dir["*.inv"].each do |filename|
 end
 
 File.open(File.join('docs','index.html'),'w') do |f|
-  f.puts(index.render(games: games))
+  f.puts(templates.index.render(games: games, templates: templates))
 end
 
 #all_sections.keys.sort.each do |k|

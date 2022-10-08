@@ -6,9 +6,9 @@
 <header>
 <p><a href="./index.html">Invisiclues Index</a></p>
 </header>
-<main>
+<main class="invisiclue">
 <h1><%== header %> Invisiclues</h1>
-<%== question_template.render(question: sample.keys.first, answers: sample.values.first) %>
+<%== templates.question.render(question: sample.keys.first, answers: sample.values.first) %>
 <% if !anchors.empty? %>
   <h2>Table of Contents</h2><ul class="indented">
   <% anchors.each do |name, target| %>
@@ -30,10 +30,11 @@
     <% end %>
   <% else %>
     <%  content.each do |question, answers| %>
-      <%== question_template.render(question: question, answers: answers) %>
+      <%== templates.question.render(question: question, answers: answers) %>
     <% end %>
   <% end %>
 <% end %>
+<%== templates.footer.render %>
 </main>
 </body>
 </html>
