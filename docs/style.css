@@ -305,7 +305,8 @@ h2 {
 }
 
 .question { margin-top: 2rem; margin-bottom: 1rem; padding-top: 1em; padding-bottom: 1em; border: .1em solid currentColor; border-radius: 1em; }
-.answers { margin-top: .5rem; }
+.details-answers { margin-top: .5rem; }
+
 .indented { padding-left: 2em; padding-right: 2em; }
 pre.mono { width: max-content; margin: auto; }
 li:before { font-family: var(--mono); font-weight: bold; content: ">_ "; }
@@ -354,6 +355,7 @@ span.mono { font-family: var(--mono); font-weight: var(--mono-weight); font-styl
 
 .summation { display: inline-block; }
 summary > * { display: inline; }
-
-footer {  font-size: .9375rem; }
+.answer { display: inline; }
+footer {  font-size: .9375rem; padding-bottom: 1rem; margin-top: 1rem; padding-top: 1.5rem; }
 footer > p { text-align: center; }
+p.about { font-weight: bold; margin-top: 1rem; }

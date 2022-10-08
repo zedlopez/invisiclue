@@ -2,7 +2,7 @@
       <h3><%= question %></h3>
       <div class="answers">
       <% answers.each.with_index do |answer,i| %>
-        <details class="answer"><summary><%== ('A'.ord+i).chr %>.</summary><%= answer %></details>
+        <details class="details-answer"><summary><%== ('A'.ord+i).chr %>.</summary><div class="answer"><%= answer %></div></details>
       <% end %>
       </div>
   </div>
