@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><title>Wishbringer Invisiclues</title>
 <link rel="stylesheet" href="style.css">
+<script>
+function toggle(id) {
+var span = document.getElementById(id);
+console.log("toggling " + span);
+span.classList.toggle('nonesuch');
+console.log(span.classList);
+}
+</script>
 </head>
 <body>
 <header>
@@ -12,9 +20,15 @@
     <div class="question indented">
       <h3>What is the plural of &quot;platypus&quot;?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Platypuses.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Platypi.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Both platypuses and platypi are correct.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("0_0_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="0_0_A" class="answer nonesuch">Platypuses.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("0_0_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="0_0_B" class="answer nonesuch">Platypi.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("0_0_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="0_0_C" class="answer nonesuch">Both platypuses and platypi are correct.</span></div></div>
       </div>
   </div>
 
@@ -34,354 +48,606 @@
           <div class="question indented">
       <h3>Somebody inside the Post Office is calling me. What should I do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The Post Office door may give you a clue. EXAMINE it.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Since the door is open, why not GO INSIDE and see who&#39;s calling?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_1_A" class="answer nonesuch">The Post Office door may give you a clue. EXAMINE it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_1_B" class="answer nonesuch">Since the door is open, why not GO INSIDE and see who&#39;s calling?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Where is the Magick Stone?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">That&#39;s for us to know, and for you to find out.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_2_A" class="answer nonesuch">That&#39;s for us to know, and for you to find out.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Who is Mr. Crisp?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">He&#39;s your mean old boss.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">And he isn&#39;t very happy about your idle daydreaming.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">So you&#39;d better do what he says.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_3_A" class="answer nonesuch">He&#39;s your mean old boss.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_3_B" class="answer nonesuch">And he isn&#39;t very happy about your idle daydreaming.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_3_C" class="answer nonesuch">So you&#39;d better do what he says.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>When should I open the envelope that came in my WIHBRINGER package?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The story will tell you.  Patience!</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_4_A" class="answer nonesuch">The story will tell you.  Patience!</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get into the cemetery?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">WALK INTO THE CEMETERY.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You&#39;re not going to let the computer scare you away, are you?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Go on, chicken! WALK INTO THE CEMETERY and answer YES to the question.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_5_A" class="answer nonesuch">WALK INTO THE CEMETERY.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_5_B" class="answer nonesuch">You&#39;re not going to let the computer scare you away, are you?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_5_C" class="answer nonesuch">Go on, chicken! WALK INTO THE CEMETERY and answer YES to the question.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Who is the gravedigger?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">LOOK AT THE GRAVEDIGGER and find out.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_6_A" class="answer nonesuch">LOOK AT THE GRAVEDIGGER and find out.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get the flowers out of the hearse?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Did you find the vase?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It may be hidden amongst the flowers in the hearse.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">There aren&#39;t any flowers in the hearse.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">There&#39;s no hearse or vase, either.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Remember the warning in the introduction: Don&#39;t let the presence or</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">absence of questions, or the length of the answers, influence the way</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">you play.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_7_A" class="answer nonesuch">Did you find the vase?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_7_B" class="answer nonesuch">It may be hidden amongst the flowers in the hearse.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_7_C" class="answer nonesuch">There aren&#39;t any flowers in the hearse.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_7_D" class="answer nonesuch">There&#39;s no hearse or vase, either.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="1_7_E" class="answer nonesuch">Remember the warning in the introduction: Don&#39;t let the presence or</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="1_7_F" class="answer nonesuch">absence of questions, or the length of the answers, influence the way</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="1_7_G" class="answer nonesuch">you play.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What should I do with the umbrella?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It might come in handy if it rains.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You can&#39;t WISH FOR RAIN unless you have an umbrella.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">So maybe you should hold onto it for later.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_8_A" class="answer nonesuch">It might come in handy if it rains.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_8_B" class="answer nonesuch">You can&#39;t WISH FOR RAIN unless you have an umbrella.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_8_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_8_C" class="answer nonesuch">So maybe you should hold onto it for later.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get through the locked gate in the Twilight Glen?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The gravedigger has the only key to the gate.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But the gravedigger is nowhere to be seen.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You can&#39;t unlock the gate. To leave the cemetery, you must go out</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">through the open gate at Creepy Corner.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_9_A" class="answer nonesuch">The gravedigger has the only key to the gate.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_9_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_9_B" class="answer nonesuch">But the gravedigger is nowhere to be seen.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_9_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_9_C" class="answer nonesuch">You can&#39;t unlock the gate. To leave the cemetery, you must go out</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_9_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_9_D" class="answer nonesuch">through the open gate at Creepy Corner.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why won&#39;t the poodle let me near the cottage?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It wouldn&#39;t be much of a watchdog if it did, would it?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_10_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_10_A" class="answer nonesuch">It wouldn&#39;t be much of a watchdog if it did, would it?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why won&#39;t the poodle let me go north, into the village?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It doesn&#39;t like people walking past the cottage.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It doesn&#39;t like mail clerks.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">It doesn&#39;t like you.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_11_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_11_A" class="answer nonesuch">It doesn&#39;t like people walking past the cottage.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_11_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_11_B" class="answer nonesuch">It doesn&#39;t like mail clerks.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_11_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_11_C" class="answer nonesuch">It doesn&#39;t like you.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get past the poodle?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">I wouldn&#39;t PICK UP THE POODLE THEN KICK IT if I were you.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Since violence doesn&#39;t work, maybe bribery will.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You&#39;ll have to find something to bribe it with.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Have you been to every location you can visit without getting past the</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">poodle?</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Have you looked all around the cemetery?</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Have you investigated the open grave in the Spooky Copse?</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">The gravedigger won&#39;t let you into the grave while he&#39;s watching.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">Wait until the gravedigger goes away. Then GO INTO THE OPEN GRAVE. PICK</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">UP THE OLD BONE. Bring it to the poodle and FEED THE BONE TO THE</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">POODLE. Now you can GO NORTH into the village.</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">I left the envelope behind, and the poodle won&#39;t let me go back for it! What</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_12_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_12_A" class="answer nonesuch">I wouldn&#39;t PICK UP THE POODLE THEN KICK IT if I were you.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_12_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_12_B" class="answer nonesuch">Since violence doesn&#39;t work, maybe bribery will.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_12_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_12_C" class="answer nonesuch">You&#39;ll have to find something to bribe it with.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_12_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_12_D" class="answer nonesuch">Have you been to every location you can visit without getting past the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_12_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="1_12_E" class="answer nonesuch">poodle?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_12_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="1_12_F" class="answer nonesuch">Have you looked all around the cemetery?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_12_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="1_12_G" class="answer nonesuch">Have you investigated the open grave in the Spooky Copse?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_12_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="1_12_H" class="answer nonesuch">The gravedigger won&#39;t let you into the grave while he&#39;s watching.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_12_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="1_12_I" class="answer nonesuch">Wait until the gravedigger goes away. Then GO INTO THE OPEN GRAVE. PICK</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_12_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="1_12_J" class="answer nonesuch">UP THE OLD BONE. Bring it to the poodle and FEED THE BONE TO THE</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_12_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="1_12_K" class="answer nonesuch">POODLE. Now you can GO NORTH into the village.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_12_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="1_12_L" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_12_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="1_12_M" class="answer nonesuch">I left the envelope behind, and the poodle won&#39;t let me go back for it! What</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>can I do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You&#39;re not a very good mail clerk, are you?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">There&#39;s no way to walk past the poodle once it has finished eating the</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">bone.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">So you&#39;ll have to start all over again.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">RESTART. Next time, hold on to that envelope!</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_13_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_13_A" class="answer nonesuch">You&#39;re not a very good mail clerk, are you?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_13_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_13_B" class="answer nonesuch">There&#39;s no way to walk past the poodle once it has finished eating the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_13_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_13_C" class="answer nonesuch">bone.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_13_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_13_D" class="answer nonesuch">So you&#39;ll have to start all over again.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_13_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="1_13_E" class="answer nonesuch">RESTART. Next time, hold on to that envelope!</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Who is Miss Voss?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">She&#39;s in charge of the Festeron Town Library, curator of the Festeron</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Historical Museum, and author of the best-selling &quot;Local History</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Series&quot; of booklets, including _The Legend of Wishbringer_.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Aren&#39;t you glad you asked?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_14_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_14_A" class="answer nonesuch">She&#39;s in charge of the Festeron Town Library, curator of the Festeron</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_14_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_14_B" class="answer nonesuch">Historical Museum, and author of the best-selling &quot;Local History</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_14_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_14_C" class="answer nonesuch">Series&quot; of booklets, including _The Legend of Wishbringer_.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_14_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_14_D" class="answer nonesuch">Aren&#39;t you glad you asked?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why won&#39;t Miss Voss give me back my library card?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">She doesn&#39;t like mail clerks.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">She doesn&#39;t like you.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">What library card?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_15_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_15_A" class="answer nonesuch">She doesn&#39;t like mail clerks.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_15_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_15_B" class="answer nonesuch">She doesn&#39;t like you.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_15_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_15_C" class="answer nonesuch">What library card?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What should I do with the violet note?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Miss Voss asked you to give it to your boss, Mr. Crisp.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But delivering the mysterious envelope is more important right now.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">So give the note to Mr. Crisp after you deliver the envelope.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_16_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_16_A" class="answer nonesuch">Miss Voss asked you to give it to your boss, Mr. Crisp.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_16_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_16_B" class="answer nonesuch">But delivering the mysterious envelope is more important right now.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_16_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_16_C" class="answer nonesuch">So give the note to Mr. Crisp after you deliver the envelope.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Who is &quot;Corky&quot;?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It might be the name of Miss Voss&#39;s poodle.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But why would Miss Voss write a note to her dog?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Since Miss Voss asked you to give the note to Mr. Crisp, and the note</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">is addressed to &quot;Corky,&quot; it&#39;s probably Mr. Crisp&#39;s nickname.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_17_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_17_A" class="answer nonesuch">It might be the name of Miss Voss&#39;s poodle.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_17_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_17_B" class="answer nonesuch">But why would Miss Voss write a note to her dog?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_17_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_17_C" class="answer nonesuch">Since Miss Voss asked you to give the note to Mr. Crisp, and the note</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_17_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_17_D" class="answer nonesuch">is addressed to &quot;Corky,&quot; it&#39;s probably Mr. Crisp&#39;s nickname.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get inside the Library?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Miss Voss probably has the key.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Unfortunately, Miss Voss isn&#39;t around any more.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You don&#39;t have time to fool around in the Library right now. The</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Magick Shoppe closes at five o&#39;clock!</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Be patient; maybe you can get inside after you deliver the envelope.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_18_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_18_A" class="answer nonesuch">Miss Voss probably has the key.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_18_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_18_B" class="answer nonesuch">Unfortunately, Miss Voss isn&#39;t around any more.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_18_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_18_C" class="answer nonesuch">You don&#39;t have time to fool around in the Library right now. The</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_18_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_18_D" class="answer nonesuch">Magick Shoppe closes at five o&#39;clock!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_18_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="1_18_E" class="answer nonesuch">Be patient; maybe you can get inside after you deliver the envelope.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Who is Sgt. MacGuffin?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">He&#39;s in charge of Festeron&#39;s Police Department.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_19_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_19_A" class="answer nonesuch">He&#39;s in charge of Festeron&#39;s Police Department.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get the chcolate?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Simply TAKE THE CHOCOLATE OFF THE DESK.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Of course, Sgt. MacGuffin might have other ideas.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have you tried examining Sgt. MacGuffin?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Wait until Sgt. MacGuffin falls asleep before taking the chocolate.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_20_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_20_A" class="answer nonesuch">Simply TAKE THE CHOCOLATE OFF THE DESK.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_20_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_20_B" class="answer nonesuch">Of course, Sgt. MacGuffin might have other ideas.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_20_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_20_C" class="answer nonesuch">Have you tried examining Sgt. MacGuffin?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_20_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_20_D" class="answer nonesuch">Wait until Sgt. MacGuffin falls asleep before taking the chocolate.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What should I do in the Park?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The statue in the middle of the fountain is interesting.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But not as interesting as the other objects in the fountain.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">LOOK INSIDE THE FOUNTAIN.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The rest is up to you.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_21_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_21_A" class="answer nonesuch">The statue in the middle of the fountain is interesting.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_21_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_21_B" class="answer nonesuch">But not as interesting as the other objects in the fountain.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_21_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_21_C" class="answer nonesuch">LOOK INSIDE THE FOUNTAIN.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_21_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_21_D" class="answer nonesuch">The rest is up to you.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I catch the goldfish?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Unfortunately, you won&#39;t find a net or pole anywhere.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">What makes you think you have to catch the goldfish?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_22_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_22_A" class="answer nonesuch">Unfortunately, you won&#39;t find a net or pole anywhere.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_22_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_22_B" class="answer nonesuch">What makes you think you have to catch the goldfish?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>The movie theater is closed! How do I get inside?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The schedule might give you a hint.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The theater opens at seven o&#39;clock. Come back later.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_23_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_23_A" class="answer nonesuch">The schedule might give you a hint.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_23_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_23_B" class="answer nonesuch">The theater opens at seven o&#39;clock. Come back later.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why can&#39;t I take things out of the big mailbox?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Public mailboxes are built to discourage prying fingers like yours.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_24_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_24_A" class="answer nonesuch">Public mailboxes are built to discourage prying fingers like yours.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I play the video game?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">By scoring as many points as you can.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Naturally, you&#39;ll have to put a token in the video machine before you</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">can play.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Isn&#39;t it getting awfully close to five o&#39;clock?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_25_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_25_A" class="answer nonesuch">By scoring as many points as you can.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_25_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_25_B" class="answer nonesuch">Naturally, you&#39;ll have to put a token in the video machine before you</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_25_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_25_C" class="answer nonesuch">can play.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_25_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_25_D" class="answer nonesuch">Isn&#39;t it getting awfully close to five o&#39;clock?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What do I do with the seahorse?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you don&#39;t do something quickly, it will probably die.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">A seahorse can&#39;t live long out of water.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">PICK UP THE SEAHORSE THEN THROW IT INTO THE BAY.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_26_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_26_A" class="answer nonesuch">If you don&#39;t do something quickly, it will probably die.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_26_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_26_B" class="answer nonesuch">A seahorse can&#39;t live long out of water.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_26_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_26_C" class="answer nonesuch">PICK UP THE SEAHORSE THEN THROW IT INTO THE BAY.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What happened to the church mouse?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It ran away when it saw you. Surprised?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_27_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_27_A" class="answer nonesuch">It ran away when it saw you. Surprised?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get the candle?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Try to TAKE THE CANDLE.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Try to STEAL THE CANDLE.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Taking things that don&#39;t belong to you is stealing, especially in a</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">church.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">At the moment, you can&#39;t steal the candle.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_28_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_28_A" class="answer nonesuch">Try to TAKE THE CANDLE.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_28_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_28_B" class="answer nonesuch">Try to STEAL THE CANDLE.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_28_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_28_C" class="answer nonesuch">Taking things that don&#39;t belong to you is stealing, especially in a</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_28_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_28_D" class="answer nonesuch">church.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_28_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="1_28_E" class="answer nonesuch">At the moment, you can&#39;t steal the candle.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What should I do with the pile of leaves?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Did you notice the message in the sand near the leaves?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Are you going to do what the message says?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You might be sorry if you don&#39;t.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_29_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_29_A" class="answer nonesuch">Did you notice the message in the sand near the leaves?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_29_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_29_B" class="answer nonesuch">Are you going to do what the message says?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_29_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_29_C" class="answer nonesuch">You might be sorry if you don&#39;t.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Who wrote the message in the sand?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The person who wrote the message was obviously very concerned that</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">somebody like you might come along and disturb the pile of leaves.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Aside from this acute observation, the author of the message is not</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">important.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_30_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_30_A" class="answer nonesuch">The person who wrote the message was obviously very concerned that</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_30_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_30_B" class="answer nonesuch">somebody like you might come along and disturb the pile of leaves.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_30_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_30_C" class="answer nonesuch">Aside from this acute observation, the author of the message is not</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_30_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_30_D" class="answer nonesuch">important.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get to Misty Island?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you had a bathing suit you could put it on and swim over.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">No bathing suit, eh? Oh, well. You&#39;ll just have to wait for the Misty</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Island ferry.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Charter a private seaplane, preferably one equipped with a wet bar and</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">jacuzzi.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">If all else fails, give up.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">But watch for new opportunities after you deliver the envelope.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_31_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_31_A" class="answer nonesuch">If you had a bathing suit you could put it on and swim over.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_31_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_31_B" class="answer nonesuch">No bathing suit, eh? Oh, well. You&#39;ll just have to wait for the Misty</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_31_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_31_C" class="answer nonesuch">Island ferry.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_31_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_31_D" class="answer nonesuch">Charter a private seaplane, preferably one equipped with a wet bar and</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_31_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="1_31_E" class="answer nonesuch">jacuzzi.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_31_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="1_31_F" class="answer nonesuch">If all else fails, give up.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_31_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="1_31_G" class="answer nonesuch">But watch for new opportunities after you deliver the envelope.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What do I do with the horseshoe?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Keep it. It might bring you good luck.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Especially if you use it to WISH FOR LUCK after you find the Magick</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Stone.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_32_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_32_A" class="answer nonesuch">Keep it. It might bring you good luck.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_32_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_32_B" class="answer nonesuch">Especially if you use it to WISH FOR LUCK after you find the Magick</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_32_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_32_C" class="answer nonesuch">Stone.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get into the lighthouse?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It&#39;s a phoney lighthouse. You can&#39;t go into it.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Ever.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">So stop trying.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_33_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_33_A" class="answer nonesuch">It&#39;s a phoney lighthouse. You can&#39;t go into it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_33_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_33_B" class="answer nonesuch">Ever.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_33_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_33_C" class="answer nonesuch">So stop trying.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What should I feed to the pelican?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">A flapping, juicy fish would be nice if you can find one.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The only fish you&#39;ll find is in the fountain.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Unfortunately, you can&#39;t get the fish in the fountain.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">What makes you think the pelican is hungry?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_34_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_34_A" class="answer nonesuch">A flapping, juicy fish would be nice if you can find one.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_34_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_34_B" class="answer nonesuch">The only fish you&#39;ll find is in the fountain.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_34_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_34_C" class="answer nonesuch">Unfortunately, you can&#39;t get the fish in the fountain.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_34_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_34_D" class="answer nonesuch">What makes you think the pelican is hungry?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What&#39;s the easiest way into the impenetrable forest?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Look up the word &quot;impenetrable&quot; in a dictionary.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_35_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_35_A" class="answer nonesuch">Look up the word &quot;impenetrable&quot; in a dictionary.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What can I do with the gnarled, rotten tree?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can always CLIMB THE GNARLED TREE.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Maybe you should have examined the tree first.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_36_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_36_A" class="answer nonesuch">You can always CLIMB THE GNARLED TREE.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_36_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_36_B" class="answer nonesuch">Maybe you should have examined the tree first.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What can I do with the dead branch?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It probably won&#39;t help you deliver the envelope any faster.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But it&#39;s a good idea to remember where it is. You might find a use for</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">it later.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_37_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_37_A" class="answer nonesuch">It probably won&#39;t help you deliver the envelope any faster.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_37_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_37_B" class="answer nonesuch">But it&#39;s a good idea to remember where it is. You might find a use for</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_37_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_37_C" class="answer nonesuch">it later.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Mr. Crisp just fired me! What did I do wrong?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You failed to deliver the envelope on time, or didn&#39;t read it to the</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">old woman. Next time, make sure you&#39;re in the Magick Shoppe before five</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">o&#39;clock, and do what the old woman asks you to do!</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_38_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_38_A" class="answer nonesuch">You failed to deliver the envelope on time, or didn&#39;t read it to the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_38_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_38_B" class="answer nonesuch">old woman. Next time, make sure you&#39;re in the Magick Shoppe before five</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_38_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_38_C" class="answer nonesuch">o&#39;clock, and do what the old woman asks you to do!</span></div></div>
       </div>
   </div>
 
@@ -389,127 +655,225 @@
           <div class="question indented">
       <h3>Why is &quot;Magick&quot; spelled with a &quot;k&quot;?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Because.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Oh, all right. &quot;Magick&quot; is an archaic spelling popularized by Aleister</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Crowley (a 20th century occultist) and occasionally seen in pulp</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">fantasies and tales of horror. It&#39;s supposed to imply an especially old</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">and potent variety of supernatural force.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_1_A" class="answer nonesuch">Because.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_1_B" class="answer nonesuch">Oh, all right. &quot;Magick&quot; is an archaic spelling popularized by Aleister</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_1_C" class="answer nonesuch">Crowley (a 20th century occultist) and occasionally seen in pulp</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_1_D" class="answer nonesuch">fantasies and tales of horror. It&#39;s supposed to imply an especially old</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="2_1_E" class="answer nonesuch">and potent variety of supernatural force.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get into the Magick Shoppe?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Just OPEN THE DOOR THEN GO INSIDE.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_2_A" class="answer nonesuch">Just OPEN THE DOOR THEN GO INSIDE.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>A gust of wind blew the door shut! How do I open it again?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can&#39;t open it by yourself.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Relax. Maybe somebody will come along and open it for you.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_3_A" class="answer nonesuch">You can&#39;t open it by yourself.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_3_B" class="answer nonesuch">Relax. Maybe somebody will come along and open it for you.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I take the naughty birthday cards?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">By removing them from the glass case.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Unfortunately, you can&#39;t reach into the glass case.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">So you can&#39;t take the naughty birthday cards.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">You rascal.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_4_A" class="answer nonesuch">By removing them from the glass case.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_4_B" class="answer nonesuch">Unfortunately, you can&#39;t reach into the glass case.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_4_C" class="answer nonesuch">So you can&#39;t take the naughty birthday cards.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_4_D" class="answer nonesuch">You rascal.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why can&#39;t I approach the curtain?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Maybe it doesn&#39;t like mail clerks.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It&#39;s enchanted in such a way as to discourage nosey visitors.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_5_A" class="answer nonesuch">Maybe it doesn&#39;t like mail clerks.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_5_B" class="answer nonesuch">It&#39;s enchanted in such a way as to discourage nosey visitors.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Who is the old woman?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">She&#39;s the proprietor of the Magick Shoppe.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The mysterious envelope is addressed to her.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">So maybe you ought to give her the mysterious envelope.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_6_A" class="answer nonesuch">She&#39;s the proprietor of the Magick Shoppe.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_6_B" class="answer nonesuch">The mysterious envelope is addressed to her.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_6_C" class="answer nonesuch">So maybe you ought to give her the mysterious envelope.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why did the Shoppe become strangely quiet all of a sudden?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">A noise stopped.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">A nearby mechanism stopped working.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">EXAMINE THE GRANDFATHER CLOCK.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The clock stopped when the old woman appeared. Creepy, isn&#39;t it?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_7_A" class="answer nonesuch">A noise stopped.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_7_B" class="answer nonesuch">A nearby mechanism stopped working.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_7_C" class="answer nonesuch">EXAMINE THE GRANDFATHER CLOCK.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_7_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_7_D" class="answer nonesuch">The clock stopped when the old woman appeared. Creepy, isn&#39;t it?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>I found a bug! The clock on my status line stopped. Should I call Infocom?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It&#39;s not a bug. See the previous question for details.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">If it was a bug, you could blame it on one of the Infopeople who tested</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">the game. In alphabetical order, they are:</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">&quot;Hollywood&quot; Dave Anderson (Manager), Joanne Avtges, Gary Brennan, Amy</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Briggs, Mark &quot;Max&quot; Buxton, Liz Cyr-Jones, Suzanne Frank, Jeff O&#39;Neill,</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">plus dozens of beta- and gamma-testers too numerous to list.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_8_A" class="answer nonesuch">It&#39;s not a bug. See the previous question for details.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_8_B" class="answer nonesuch">If it was a bug, you could blame it on one of the Infopeople who tested</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_8_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_8_C" class="answer nonesuch">the game. In alphabetical order, they are:</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_8_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_8_D" class="answer nonesuch">&quot;Hollywood&quot; Dave Anderson (Manager), Joanne Avtges, Gary Brennan, Amy</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_8_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="2_8_E" class="answer nonesuch">Briggs, Mark &quot;Max&quot; Buxton, Liz Cyr-Jones, Suzanne Frank, Jeff O&#39;Neill,</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_8_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="2_8_F" class="answer nonesuch">plus dozens of beta- and gamma-testers too numerous to list.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Who is &quot;The Evil One&quot;?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">She&#39;s the person who mailed the mysterious envelope.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">She kidnapped the old woman&#39;s pet cat and is demanding a Magick Stone</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">for ransom.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">If she doesn&#39;t get the Stone before the moon sets, she&#39;ll probably do</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">something awful to the cat.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Doesn&#39;t sound like a very nice person, does she?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_9_A" class="answer nonesuch">She&#39;s the person who mailed the mysterious envelope.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_9_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_9_B" class="answer nonesuch">She kidnapped the old woman&#39;s pet cat and is demanding a Magick Stone</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_9_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_9_C" class="answer nonesuch">for ransom.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_9_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_9_D" class="answer nonesuch">If she doesn&#39;t get the Stone before the moon sets, she&#39;ll probably do</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_9_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="2_9_E" class="answer nonesuch">something awful to the cat.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_9_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="2_9_F" class="answer nonesuch">Doesn&#39;t sound like a very nice person, does she?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What should I do with the metal can?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Like all objects in the story, you should EXAMINE it.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The rest is up to you.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_10_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_10_A" class="answer nonesuch">Like all objects in the story, you should EXAMINE it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_10_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_10_B" class="answer nonesuch">The rest is up to you.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why does the metal can rattle?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Maybe there are some yummy mixed nuts inside.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Then again, maybe not.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">There&#39;s something built into the can that makes it rattle. It&#39;s</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">designed to lure innocent victims to their doom by making them believe</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">there may be nuts inside.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_11_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_11_A" class="answer nonesuch">Maybe there are some yummy mixed nuts inside.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_11_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_11_B" class="answer nonesuch">Then again, maybe not.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_11_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_11_C" class="answer nonesuch">There&#39;s something built into the can that makes it rattle. It&#39;s</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_11_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_11_D" class="answer nonesuch">designed to lure innocent victims to their doom by making them believe</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_11_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="2_11_E" class="answer nonesuch">there may be nuts inside.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why can&#39;t I move when the old woman touches my forehead?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">She&#39;s casting a subtle hypnotic spell on you.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">So shut up and pay attention.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_12_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_12_A" class="answer nonesuch">She&#39;s casting a subtle hypnotic spell on you.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_12_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_12_B" class="answer nonesuch">So shut up and pay attention.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Who is &quot;Chaos&quot;?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It&#39;s the name of the old woman&#39;s pet cat.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It&#39;s also the name of Dan Horn&#39;s pet skunk.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Who is Dan Horn?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">He&#39;s the owner of a pet skunk named Chaos.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">He works at Infocom.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">He paid $10.00 to see his name in print.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">(This space for sale.)</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_13_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_13_A" class="answer nonesuch">It&#39;s the name of the old woman&#39;s pet cat.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_13_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_13_B" class="answer nonesuch">It&#39;s also the name of Dan Horn&#39;s pet skunk.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_13_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_13_C" class="answer nonesuch">Who is Dan Horn?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_13_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_13_D" class="answer nonesuch">He&#39;s the owner of a pet skunk named Chaos.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_13_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="2_13_E" class="answer nonesuch">He works at Infocom.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_13_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="2_13_F" class="answer nonesuch">He paid $10.00 to see his name in print.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_13_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="2_13_G" class="answer nonesuch">(This space for sale.)</span></div></div>
       </div>
   </div>
 
@@ -523,130 +887,234 @@
           <div class="question indented">
       <h3>How do I get into the tower?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Didn&#39;t King Anatinus say something about getting into the Tower?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You need a Word of Power.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The pelican knows what it is.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The pelican won&#39;t give you the Word unless you give it something in</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">return.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">GIVE THE WIZARD&#39;S HAT TO THE PELICAN. A Word will be revealed to you.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Go to the tower and say the word (just type it in). The drawbridge will</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">lower automatically.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_1_A" class="answer nonesuch">Didn&#39;t King Anatinus say something about getting into the Tower?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_1_B" class="answer nonesuch">You need a Word of Power.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_1_C" class="answer nonesuch">The pelican knows what it is.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_1_D" class="answer nonesuch">The pelican won&#39;t give you the Word unless you give it something in</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="4_1_E" class="answer nonesuch">return.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="4_1_F" class="answer nonesuch">GIVE THE WIZARD&#39;S HAT TO THE PELICAN. A Word will be revealed to you.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="4_1_G" class="answer nonesuch">Go to the tower and say the word (just type it in). The drawbridge will</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="4_1_H" class="answer nonesuch">lower automatically.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How did the Princess get captured again?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">She isn&#39;t a very smart platypus, is she?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Help! Mr. Crisp is getting ready to torture me!</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">He&#39;s sleazy enough to take a bribe.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Didn&#39;t somebody ask you to give him something a long time ago?</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">GIVE THE VIOLET NOTE TO MR. CRISP.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_2_A" class="answer nonesuch">She isn&#39;t a very smart platypus, is she?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_2_B" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_2_C" class="answer nonesuch">Help! Mr. Crisp is getting ready to torture me!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_2_D" class="answer nonesuch">He&#39;s sleazy enough to take a bribe.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="4_2_E" class="answer nonesuch">Didn&#39;t somebody ask you to give him something a long time ago?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="4_2_F" class="answer nonesuch">GIVE THE VIOLET NOTE TO MR. CRISP.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Mr. Crisp is gone, but I&#39;m still in chains! What should I do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">There are two ways to get out of the chains.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">One of them involves Magick.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">WISH FOR FREEDOM will work.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">But you wouldn&#39;t need Magick if you had the key to the chains.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Mr. Crisp dropped the key in his lab coat, remember?</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">He dropped the lab coat on the floor.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">PICK UP THE WHITE LAB COAT. TAKE THE KEY OUT OF THE COAT. UNLOCK THE</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">CHAINS WITH THE KEY.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_3_A" class="answer nonesuch">There are two ways to get out of the chains.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_3_B" class="answer nonesuch">One of them involves Magick.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_3_C" class="answer nonesuch">WISH FOR FREEDOM will work.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_3_D" class="answer nonesuch">But you wouldn&#39;t need Magick if you had the key to the chains.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="4_3_E" class="answer nonesuch">Mr. Crisp dropped the key in his lab coat, remember?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="4_3_F" class="answer nonesuch">He dropped the lab coat on the floor.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="4_3_G" class="answer nonesuch">PICK UP THE WHITE LAB COAT. TAKE THE KEY OUT OF THE COAT. UNLOCK THE</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="4_3_H" class="answer nonesuch">CHAINS WITH THE KEY.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Where did Mr. Crisp go?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">He went to visit his sweetheart, Miss Voss.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But who cares, as long as he isn&#39;t here to torture you?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_4_A" class="answer nonesuch">He went to visit his sweetheart, Miss Voss.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_4_B" class="answer nonesuch">But who cares, as long as he isn&#39;t here to torture you?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I free the Princess from the torture machine?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Just do what she says.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">PULL DOWN THE LEVER.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_5_A" class="answer nonesuch">Just do what she says.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_5_B" class="answer nonesuch">PULL DOWN THE LEVER.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get out of the torture chamber?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The same way Mr. Crisp did.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">OPEN THE HATCH. CLIMB UP THE LADDER.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_6_A" class="answer nonesuch">The same way Mr. Crisp did.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_6_B" class="answer nonesuch">OPEN THE HATCH. CLIMB UP THE LADDER.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the paintings in the Round Chamber?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The story they illustrate may sound vaguely familiar.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Especially if you read _The Legend of Wishbringer_.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The paintings also conceal an important secret.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">LOOK BEHIND A PAINTING.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_7_A" class="answer nonesuch">The story they illustrate may sound vaguely familiar.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_7_B" class="answer nonesuch">Especially if you read _The Legend of Wishbringer_.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_7_C" class="answer nonesuch">The paintings also conceal an important secret.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_7_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_7_D" class="answer nonesuch">LOOK BEHIND A PAINTING.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>The drawbridge is closed! How do I get out of the Tower?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Read the previous hint for clues.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_8_A" class="answer nonesuch">Read the previous hint for clues.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>The suit of armor is chasing me! What should I do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Hit it with the dead branch.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Throw the stone at it.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Light the grue&#39;s milk on fire with the candle, then give the milk to</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">the suit of armor to drink. It&#39;ll still chase you, but at least it will</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">be laughing.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">There is no suit of armor in this story.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_9_A" class="answer nonesuch">Hit it with the dead branch.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_9_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_9_B" class="answer nonesuch">Throw the stone at it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_9_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_9_C" class="answer nonesuch">Light the grue&#39;s milk on fire with the candle, then give the milk to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_9_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_9_D" class="answer nonesuch">the suit of armor to drink. It&#39;ll still chase you, but at least it will</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_9_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="4_9_E" class="answer nonesuch">be laughing.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_9_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="4_9_F" class="answer nonesuch">There is no suit of armor in this story.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why is the room above the Round Chamber all blurry?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Blurry, huh? Gee. Maybe you need glasses.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">PUT ON THE 3D GLASSES after you walk into the blurry room.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_10_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_10_A" class="answer nonesuch">Blurry, huh? Gee. Maybe you need glasses.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_10_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_10_B" class="answer nonesuch">PUT ON THE 3D GLASSES after you walk into the blurry room.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What should I do with the telescope in the Laboratory?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You could ignore it. It&#39;s probably just a prop.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The telescope is just a prop.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">So ignore it!</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_11_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_11_A" class="answer nonesuch">You could ignore it. It&#39;s probably just a prop.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_11_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_11_B" class="answer nonesuch">The telescope is just a prop.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_11_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_11_C" class="answer nonesuch">So ignore it!</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the bubbling chemicals?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">They&#39;re not significant at all. Leave them alone.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_12_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_12_A" class="answer nonesuch">They&#39;re not significant at all. Leave them alone.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the purpose of the control panel?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It has two switches, so it probably controls two things.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you examined both of the switches?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The first switch controls the power in the Palace Theater. (If you</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">watched the entire movie, you&#39;d already know this.)</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">The second switch controls the &quot;security&quot; for something. Hmm. Wonder</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">what the Evil One wants to keep secure...</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">TURN OFF THE SECOND SWITCH.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_13_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_13_A" class="answer nonesuch">It has two switches, so it probably controls two things.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_13_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_13_B" class="answer nonesuch">Have you examined both of the switches?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_13_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_13_C" class="answer nonesuch">The first switch controls the power in the Palace Theater. (If you</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_13_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_13_D" class="answer nonesuch">watched the entire movie, you&#39;d already know this.)</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_13_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="4_13_E" class="answer nonesuch">The second switch controls the &quot;security&quot; for something. Hmm. Wonder</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_13_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="4_13_F" class="answer nonesuch">what the Evil One wants to keep secure...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_13_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="4_13_G" class="answer nonesuch">TURN OFF THE SECOND SWITCH.</span></div></div>
       </div>
   </div>
 
@@ -654,119 +1122,261 @@
           <div class="question indented">
       <h3>How do I get into the Library?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Wait until Miss Voss opens it tomorrow morning.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Unfortunately, you haven&#39;t got time to wait. Looks like you&#39;ll have to</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">unlock the front door somehow.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Miss Voss locked it earlier. Maybe she put the key somewhere.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Have you visited Miss Voss&#39;s cottage yet?</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">It&#39;s easy to get into the cottage once you tame the hellhound. (But</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">that&#39;s another hint.)</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">The key to the Library is on Miss Voss&#39;s bookcase.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">How can I see in the Library? It&#39;s Dark.</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">The candle is a source of light.</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">Too bad the candle fizzles out when the Library door closes.</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">Wishbringer is also a source of light.</div></details>
-        <details class="details-answer"><summary>N.</summary><div class="answer">If you haven&#39;t found the Stone yet, you&#39;re in trouble. But there is</div></details>
-        <details class="details-answer"><summary>O.</summary><div class="answer">another way to see in the Library.</div></details>
-        <details class="details-answer"><summary>P.</summary><div class="answer">Have you examined the wizard&#39;s hat?</div></details>
-        <details class="details-answer"><summary>Q.</summary><div class="answer">Have you looked inside the wizard&#39;s hat?</div></details>
-        <details class="details-answer"><summary>R.</summary><div class="answer">Have you dropped anything inside the wizard&#39;s hat?</div></details>
-        <details class="details-answer"><summary>S.</summary><div class="answer">Things you drop into the wizard&#39;s hat disappear. But they might turn up</div></details>
-        <details class="details-answer"><summary>T.</summary><div class="answer">someplace else.</div></details>
-        <details class="details-answer"><summary>U.</summary><div class="answer">Things you drop into the hat appear in the Museum&#39;s display case.</div></details>
-        <details class="details-answer"><summary>V.</summary><div class="answer">DROP THE CANDLE INTO THE WIZARD&#39;S HAT before it gets blown out. You can</div></details>
-        <details class="details-answer"><summary>W.</summary><div class="answer">later retrieve the candle for use as a source of light.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_1_A" class="answer nonesuch">Wait until Miss Voss opens it tomorrow morning.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_1_B" class="answer nonesuch">Unfortunately, you haven&#39;t got time to wait. Looks like you&#39;ll have to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_1_C" class="answer nonesuch">unlock the front door somehow.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_1_D" class="answer nonesuch">Miss Voss locked it earlier. Maybe she put the key somewhere.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_1_E" class="answer nonesuch">Have you visited Miss Voss&#39;s cottage yet?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_1_F" class="answer nonesuch">It&#39;s easy to get into the cottage once you tame the hellhound. (But</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="5_1_G" class="answer nonesuch">that&#39;s another hint.)</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="5_1_H" class="answer nonesuch">The key to the Library is on Miss Voss&#39;s bookcase.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="5_1_I" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="5_1_J" class="answer nonesuch">How can I see in the Library? It&#39;s Dark.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="5_1_K" class="answer nonesuch">The candle is a source of light.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="5_1_L" class="answer nonesuch">Too bad the candle fizzles out when the Library door closes.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="5_1_M" class="answer nonesuch">Wishbringer is also a source of light.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_N");' role="link">
+<div class="answer-label">N.</div><div class="answer-cell"><span id="5_1_N" class="answer nonesuch">If you haven&#39;t found the Stone yet, you&#39;re in trouble. But there is</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_O");' role="link">
+<div class="answer-label">O.</div><div class="answer-cell"><span id="5_1_O" class="answer nonesuch">another way to see in the Library.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_P");' role="link">
+<div class="answer-label">P.</div><div class="answer-cell"><span id="5_1_P" class="answer nonesuch">Have you examined the wizard&#39;s hat?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_Q");' role="link">
+<div class="answer-label">Q.</div><div class="answer-cell"><span id="5_1_Q" class="answer nonesuch">Have you looked inside the wizard&#39;s hat?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_R");' role="link">
+<div class="answer-label">R.</div><div class="answer-cell"><span id="5_1_R" class="answer nonesuch">Have you dropped anything inside the wizard&#39;s hat?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_S");' role="link">
+<div class="answer-label">S.</div><div class="answer-cell"><span id="5_1_S" class="answer nonesuch">Things you drop into the wizard&#39;s hat disappear. But they might turn up</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_T");' role="link">
+<div class="answer-label">T.</div><div class="answer-cell"><span id="5_1_T" class="answer nonesuch">someplace else.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_U");' role="link">
+<div class="answer-label">U.</div><div class="answer-cell"><span id="5_1_U" class="answer nonesuch">Things you drop into the hat appear in the Museum&#39;s display case.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_V");' role="link">
+<div class="answer-label">V.</div><div class="answer-cell"><span id="5_1_V" class="answer nonesuch">DROP THE CANDLE INTO THE WIZARD&#39;S HAT before it gets blown out. You can</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_W");' role="link">
+<div class="answer-label">W.</div><div class="answer-cell"><span id="5_1_W" class="answer nonesuch">later retrieve the candle for use as a source of light.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Where&#39;s the key to unlock the circulation desk?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The steel key might work. After all, it unlocked the library door.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Then again, why should a door key work in a desk?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">There is no desk key. You can&#39;t open the circulation desk.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_2_A" class="answer nonesuch">The steel key might work. After all, it unlocked the library door.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_2_B" class="answer nonesuch">Then again, why should a door key work in a desk?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_2_C" class="answer nonesuch">There is no desk key. You can&#39;t open the circulation desk.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get the spider out of the Library books?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You&#39;ll have to pick up the books first.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You&#39;ll need a library card to take the books.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Shucks! You forgot your library card.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">[sic] There isn&#39;t any spider in the library books.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Or anywhere else, either.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_3_A" class="answer nonesuch">You&#39;ll have to pick up the books first.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_3_B" class="answer nonesuch">You&#39;ll need a library card to take the books.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_3_C" class="answer nonesuch">Shucks! You forgot your library card.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_3_D" class="answer nonesuch">[sic] There isn&#39;t any spider in the library books.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_3_E" class="answer nonesuch">Or anywhere else, either.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I open the glass display case in the Museum?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Did you try the rusty key?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Did you try the steel key?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Did you try the key in the circulation desk?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Did you read the above hint about unlocking the circulation desk?</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">You can&#39;t unlock the display case.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Force may be necessary.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">You&#39;ll need a heavy object to break the case.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">Try BREAK THE DISPLAY CASE WITH THE HORSESHOE. You can also use the</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">broom, the umbrella, the conch shell, the bottle or the dead branch.</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">Naturally, you remembered to EXAMINE THE DISPLAY CASE before breaking</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">it.</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">You must deactivate the security system before breaking the case.</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">The switch for the security system is in the Laboratory.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_4_A" class="answer nonesuch">Did you try the rusty key?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_4_B" class="answer nonesuch">Did you try the steel key?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_4_C" class="answer nonesuch">Did you try the key in the circulation desk?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_4_D" class="answer nonesuch">Did you read the above hint about unlocking the circulation desk?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_4_E" class="answer nonesuch">You can&#39;t unlock the display case.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_4_F" class="answer nonesuch">Force may be necessary.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="5_4_G" class="answer nonesuch">You&#39;ll need a heavy object to break the case.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="5_4_H" class="answer nonesuch">Try BREAK THE DISPLAY CASE WITH THE HORSESHOE. You can also use the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="5_4_I" class="answer nonesuch">broom, the umbrella, the conch shell, the bottle or the dead branch.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="5_4_J" class="answer nonesuch">Naturally, you remembered to EXAMINE THE DISPLAY CASE before breaking</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="5_4_K" class="answer nonesuch">it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="5_4_L" class="answer nonesuch">You must deactivate the security system before breaking the case.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="5_4_M" class="answer nonesuch">The switch for the security system is in the Laboratory.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get out of the library with the sculpture?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Try unlocking the door.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Lock&#39;s on the outside? Oh, well. Why not WISH FOR FLIGHT?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Nope, you&#39;re indoors. But you can still WISH FOR FREEDOM.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Not confined, eh? There must be another way out, then.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Have you tried to EXAMINE THE SCULPTURE yet?</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Go on to the next hint.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_5_A" class="answer nonesuch">Try unlocking the door.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_5_B" class="answer nonesuch">Lock&#39;s on the outside? Oh, well. Why not WISH FOR FLIGHT?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_5_C" class="answer nonesuch">Nope, you&#39;re indoors. But you can still WISH FOR FREEDOM.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_5_D" class="answer nonesuch">Not confined, eh? There must be another way out, then.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_5_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_5_E" class="answer nonesuch">Have you tried to EXAMINE THE SCULPTURE yet?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_5_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_5_F" class="answer nonesuch">Go on to the next hint.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What should I do with the sculpture?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Such a fine work of art should probably be examined.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Hmm. Seems to be a piece missing.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have you tried to WISH FOR ADVICE?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Have you tried to WISH FOR FORESIGHT?</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Something might fit into the forehead of the statue.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">PUT THE STONE INTO THE FOREHEAD.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_6_A" class="answer nonesuch">Such a fine work of art should probably be examined.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_6_B" class="answer nonesuch">Hmm. Seems to be a piece missing.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_6_C" class="answer nonesuch">Have you tried to WISH FOR ADVICE?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_6_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_6_D" class="answer nonesuch">Have you tried to WISH FOR FORESIGHT?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_6_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_6_E" class="answer nonesuch">Something might fit into the forehead of the statue.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_6_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_6_F" class="answer nonesuch">PUT THE STONE INTO THE FOREHEAD.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Who&#39;s the old woman in the Library?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">She looks familiar, but somewhat fuzzy.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">What can you do to make fuzzy things clearer?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">PUT ON THE 3D GLASSES.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Yipes!</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_7_A" class="answer nonesuch">She looks familiar, but somewhat fuzzy.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_7_B" class="answer nonesuch">What can you do to make fuzzy things clearer?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_7_C" class="answer nonesuch">PUT ON THE 3D GLASSES.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_7_D" class="answer nonesuch">Yipes!</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I escape from the sinister being?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Just walk right past her. She won&#39;t mind.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Much.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You could try bribing her with something.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Maybe she&#39;ll accept that nice, glowing stone you&#39;re holding.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">But if you want to finish the story, you won&#39;t give it to her.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Stop fooling around! Kill her before she turns you into something</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">awful!</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">Too tough, eh? Maybe you should continue what you were doing before she</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">interrupted.</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">PUT THE STONE INTO THE FOREHEAD.</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">Don&#39;t listen to her! PUT THE STONE INTO THE FOREHEAD!</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_8_A" class="answer nonesuch">Just walk right past her. She won&#39;t mind.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_8_B" class="answer nonesuch">Much.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_8_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_8_C" class="answer nonesuch">You could try bribing her with something.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_8_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_8_D" class="answer nonesuch">Maybe she&#39;ll accept that nice, glowing stone you&#39;re holding.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_8_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_8_E" class="answer nonesuch">But if you want to finish the story, you won&#39;t give it to her.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_8_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_8_F" class="answer nonesuch">Stop fooling around! Kill her before she turns you into something</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_8_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="5_8_G" class="answer nonesuch">awful!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_8_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="5_8_H" class="answer nonesuch">Too tough, eh? Maybe you should continue what you were doing before she</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_8_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="5_8_I" class="answer nonesuch">interrupted.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_8_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="5_8_J" class="answer nonesuch">PUT THE STONE INTO THE FOREHEAD.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_8_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="5_8_K" class="answer nonesuch">Don&#39;t listen to her! PUT THE STONE INTO THE FOREHEAD!</span></div></div>
       </div>
   </div>
 
@@ -774,120 +1384,252 @@
           <div class="question indented">
       <h3>What Advice can I get from the shell?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">There are seven bits of Advice. In order of appearance, they are:</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">&quot;If ye hath not kept a Map, only patience or Magick can help thee.&quot;</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">&quot;Magick may help thee cross the Bridge.&quot;</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">&quot;Release a Prisoner, and be Rewarded.&quot;</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">&quot;Learn the Word of Power, else never gain the Tower.&quot;</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">&quot;One path Magick, one path Science; both lead to thy Goal.&quot;</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">&quot;Many wonders await thee in the Halls of Knowledge.&quot;</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">&quot;Fit the Pieces together, and the Puzzle is complete.&quot;</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_1_A" class="answer nonesuch">There are seven bits of Advice. In order of appearance, they are:</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_1_B" class="answer nonesuch">&quot;If ye hath not kept a Map, only patience or Magick can help thee.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_1_C" class="answer nonesuch">&quot;Magick may help thee cross the Bridge.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_1_D" class="answer nonesuch">&quot;Release a Prisoner, and be Rewarded.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="6_1_E" class="answer nonesuch">&quot;Learn the Word of Power, else never gain the Tower.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="6_1_F" class="answer nonesuch">&quot;One path Magick, one path Science; both lead to thy Goal.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="6_1_G" class="answer nonesuch">&quot;Many wonders await thee in the Halls of Knowledge.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="6_1_H" class="answer nonesuch">&quot;Fit the Pieces together, and the Puzzle is complete.&quot;</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Where is WISH FOR RAIN useful?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you&#39;re lost in the fog, wishing for Rain will wash you safely down</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">to the Cliff Bottom.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">If you&#39;re at Edge of Lake, wishing for Rain will fill the narrow pit</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">with water and free any creatures that may be trapped there.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Wishing for Rain anywhere else is harmless, but the downpour might</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">irritate nearby characters.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_2_A" class="answer nonesuch">If you&#39;re lost in the fog, wishing for Rain will wash you safely down</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_2_B" class="answer nonesuch">to the Cliff Bottom.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_2_C" class="answer nonesuch">If you&#39;re at Edge of Lake, wishing for Rain will fill the narrow pit</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_2_D" class="answer nonesuch">with water and free any creatures that may be trapped there.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="6_2_E" class="answer nonesuch">Wishing for Rain anywhere else is harmless, but the downpour might</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="6_2_F" class="answer nonesuch">irritate nearby characters.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>When should I WISH FOR FLIGHT?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Whenever you want to go back to the Magick Shoppe. Just make sure</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">you&#39;re outdoors (or in the Laboratory), and off you go!</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">It&#39;s not a good idea to go back to the Magick Shoppe until you&#39;ve found</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Chaos, the old woman&#39;s black cat.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Make sure the black cat you&#39;ve found is the right one.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">If you locate the real Chaos, you won&#39;t need to WISH FOR FLIGHT.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">So you&#39;ll never need to WISH FOR FLIGHT. It&#39;s a trap.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_3_A" class="answer nonesuch">Whenever you want to go back to the Magick Shoppe. Just make sure</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_3_B" class="answer nonesuch">you&#39;re outdoors (or in the Laboratory), and off you go!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_3_C" class="answer nonesuch">It&#39;s not a good idea to go back to the Magick Shoppe until you&#39;ve found</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_3_D" class="answer nonesuch">Chaos, the old woman&#39;s black cat.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="6_3_E" class="answer nonesuch">Make sure the black cat you&#39;ve found is the right one.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="6_3_F" class="answer nonesuch">If you locate the real Chaos, you won&#39;t need to WISH FOR FLIGHT.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="6_3_G" class="answer nonesuch">So you&#39;ll never need to WISH FOR FLIGHT. It&#39;s a trap.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why would I want to WISH FOR DARKNESS?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Some characters might not like the sudden Darkness.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">One of them is the troll at the toll gate.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">If you WISH FOR DARKNESS with the troll present, he&#39;ll run away across</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">the bridge.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">The gravedigger is afraid of the dark, too.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">If you WISH FOR DARKNESS in the Theater Lobby, you may be able to sneak</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">past the terrified gravedigger into the theater. (Not a very good movie</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">usher, is he?)</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">There&#39;s one other creature who doesn&#39;t like Darkness.</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">It&#39;s the hellhound.</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">If you WISH FOR DARKNESS at Outside Cottage, the hellhound will cower</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">in fear long enough for you to sneak past.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_4_A" class="answer nonesuch">Some characters might not like the sudden Darkness.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_4_B" class="answer nonesuch">One of them is the troll at the toll gate.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_4_C" class="answer nonesuch">If you WISH FOR DARKNESS with the troll present, he&#39;ll run away across</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_4_D" class="answer nonesuch">the bridge.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="6_4_E" class="answer nonesuch">The gravedigger is afraid of the dark, too.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_4_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="6_4_F" class="answer nonesuch">If you WISH FOR DARKNESS in the Theater Lobby, you may be able to sneak</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_4_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="6_4_G" class="answer nonesuch">past the terrified gravedigger into the theater. (Not a very good movie</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_4_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="6_4_H" class="answer nonesuch">usher, is he?)</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_4_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="6_4_I" class="answer nonesuch">There&#39;s one other creature who doesn&#39;t like Darkness.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_4_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="6_4_J" class="answer nonesuch">It&#39;s the hellhound.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_4_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="6_4_K" class="answer nonesuch">If you WISH FOR DARKNESS at Outside Cottage, the hellhound will cower</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_4_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="6_4_L" class="answer nonesuch">in fear long enough for you to sneak past.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What happens when I WISH FOR FORESIGHT?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You get a tantalizing, heavily symbolic glimpse of the future, all</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">mixed up with snippets of the past and present.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Don&#39;t worry about what it means.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">It&#39;s a dream sequence.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_5_A" class="answer nonesuch">You get a tantalizing, heavily symbolic glimpse of the future, all</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_5_B" class="answer nonesuch">mixed up with snippets of the past and present.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_5_C" class="answer nonesuch">Don&#39;t worry about what it means.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_5_D" class="answer nonesuch">It&#39;s a dream sequence.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why didn&#39;t the WISH FOR MAGICK work?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You weren&#39;t holding Wishbringer.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You weren&#39;t holding the Magick Wand.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You didn&#39;t wave the Magick Wand over the Magick Rutabaga.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Magick Wand? Magick Rutabaga? WISH FOR MAGICK?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_6_A" class="answer nonesuch">You weren&#39;t holding Wishbringer.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_6_B" class="answer nonesuch">You weren&#39;t holding the Magick Wand.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_6_C" class="answer nonesuch">You didn&#39;t wave the Magick Wand over the Magick Rutabaga.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_6_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_6_D" class="answer nonesuch">Magick Wand? Magick Rutabaga? WISH FOR MAGICK?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why should I WISH FOR LUCK?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Luck gives you all sorts of little benefits that make it easier to</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">finish the story.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">There are five ways the WISH FOR LUCK can help you.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">If you&#39;re Lucky, the troll won&#39;t notice that your gold coin is a</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">&quot;counterfeit.&quot;</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">If you scare the troll away by wishing for Darkness, he&#39;ll drop your</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">gold coin on the bridge...but only if you&#39;re Lucky.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">Normally, the eldritch vapors in the cemetary will carry you away and</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">scatter all your possessions once they&#39;ve taken a good look at you. But</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">if you&#39;re Lucky, they&#39;ll steal your possessions, one at a time, before</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">they carry you away.</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">The hellhound will eat you up if you hang around for more than three</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">moves. But if you&#39;re Lucky, it&#39;ll just keep roaring at you.</div></details>
-        <details class="details-answer"><summary>N.</summary><div class="answer">Your chances of being eaten by a grue in the dark are much lower if</div></details>
-        <details class="details-answer"><summary>O.</summary><div class="answer">you&#39;re Lucky.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_7_A" class="answer nonesuch">Luck gives you all sorts of little benefits that make it easier to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_7_B" class="answer nonesuch">finish the story.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_7_C" class="answer nonesuch">There are five ways the WISH FOR LUCK can help you.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_7_D" class="answer nonesuch">If you&#39;re Lucky, the troll won&#39;t notice that your gold coin is a</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="6_7_E" class="answer nonesuch">&quot;counterfeit.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="6_7_F" class="answer nonesuch">If you scare the troll away by wishing for Darkness, he&#39;ll drop your</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="6_7_G" class="answer nonesuch">gold coin on the bridge...but only if you&#39;re Lucky.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="6_7_H" class="answer nonesuch">Normally, the eldritch vapors in the cemetary will carry you away and</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="6_7_I" class="answer nonesuch">scatter all your possessions once they&#39;ve taken a good look at you. But</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="6_7_J" class="answer nonesuch">if you&#39;re Lucky, they&#39;ll steal your possessions, one at a time, before</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="6_7_K" class="answer nonesuch">they carry you away.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="6_7_L" class="answer nonesuch">The hellhound will eat you up if you hang around for more than three</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="6_7_M" class="answer nonesuch">moves. But if you&#39;re Lucky, it&#39;ll just keep roaring at you.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_N");' role="link">
+<div class="answer-label">N.</div><div class="answer-cell"><span id="6_7_N" class="answer nonesuch">Your chances of being eaten by a grue in the dark are much lower if</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_O");' role="link">
+<div class="answer-label">O.</div><div class="answer-cell"><span id="6_7_O" class="answer nonesuch">you&#39;re Lucky.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>I just neutralized my Luck Wish! What should I do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Next time, avoid opening the umbrella indoors or walking under the</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">ladder. These are very Unlucky things to do.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_8_A" class="answer nonesuch">Next time, avoid opening the umbrella indoors or walking under the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_8_B" class="answer nonesuch">ladder. These are very Unlucky things to do.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Where should I WISH FO FREEDOM?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It only works in two situations.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">If you&#39;re thrown in jail more than once, the only way out is to WISH</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">FOR FREEDOM. You&#39;ll usually end up on Lookout Hill (unless the Boot</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Patrol is there, in which case the Stone will thoughtfully deposit you</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">outside the Police Station).</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">You can also free yourself from the chains in the Torture Chamber with</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">a WISH FOR FREEDOM.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">Just make sure Mr. Crisp isn&#39;t there when you try it.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_9_A" class="answer nonesuch">It only works in two situations.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_9_B" class="answer nonesuch">If you&#39;re thrown in jail more than once, the only way out is to WISH</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_9_C" class="answer nonesuch">FOR FREEDOM. You&#39;ll usually end up on Lookout Hill (unless the Boot</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_9_D" class="answer nonesuch">Patrol is there, in which case the Stone will thoughtfully deposit you</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="6_9_E" class="answer nonesuch">outside the Police Station).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="6_9_F" class="answer nonesuch">You can also free yourself from the chains in the Torture Chamber with</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="6_9_G" class="answer nonesuch">a WISH FOR FREEDOM.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="6_9_H" class="answer nonesuch">Just make sure Mr. Crisp isn&#39;t there when you try it.</span></div></div>
       </div>
   </div>
 

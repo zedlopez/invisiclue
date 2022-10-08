@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><title>Cutthroats Invisiclues</title>
 <link rel="stylesheet" href="style.css">
+<script>
+function toggle(id) {
+var span = document.getElementById(id);
+console.log("toggling " + span);
+span.classList.toggle('nonesuch');
+console.log(span.classList);
+}
+</script>
 </head>
 <body>
 <header>
@@ -12,9 +20,15 @@
     <div class="question indented">
       <h3>What are those furry little things jumping off my boat?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Could they be lemmings?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">They&#39;re rats deserting a sinking ship.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The rising water in your cabin should have tipped you off.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("0_0_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="0_0_A" class="answer nonesuch">Could they be lemmings?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("0_0_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="0_0_B" class="answer nonesuch">They&#39;re rats deserting a sinking ship.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("0_0_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="0_0_C" class="answer nonesuch">The rising water in your cabin should have tipped you off.</span></div></div>
       </div>
   </div>
 
@@ -56,47 +70,81 @@
           <div class="question indented">
       <h3>Who slipped the note under my door?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you read it?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">If you have then you know...</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">...Johnny slipped you the note.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_1_A" class="answer nonesuch">Have you read it?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_1_B" class="answer nonesuch">If you have then you know...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_1_C" class="answer nonesuch">...Johnny slipped you the note.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>I can&#39;t find my room key. What should I do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Did you leave it in the lock?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">No? Then it must be where you left it last night.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Look in the dresser.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_2_A" class="answer nonesuch">Did you leave it in the lock?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_2_B" class="answer nonesuch">No? Then it must be where you left it last night.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_2_C" class="answer nonesuch">Look in the dresser.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>If I&#39;m a diver, where&#39;s all my gear?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you searched your room thoroughly?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Obviously not or you would have found it.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Look in the closet.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_3_A" class="answer nonesuch">Have you searched your room thoroughly?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_3_B" class="answer nonesuch">Obviously not or you would have found it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_3_C" class="answer nonesuch">Look in the closet.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Should I trust the desk clerk?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Is there any reason not to?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You can trust him to give you the time of day.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">But that is about all he&#39;s good for in this story.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_4_A" class="answer nonesuch">Is there any reason not to?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_4_B" class="answer nonesuch">You can trust him to give you the time of day.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_4_C" class="answer nonesuch">But that is about all he&#39;s good for in this story.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Someone broke into my room. Should I call the police?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">There&#39;s only one thing on this island shabbier than your room and</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">that&#39;s the security at the Red Boar Inn.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">No need to call the police, they would only tell you what you already</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">know.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Don&#39;t leave your door unlocked when you leave.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_5_A" class="answer nonesuch">There&#39;s only one thing on this island shabbier than your room and</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_5_B" class="answer nonesuch">that&#39;s the security at the Red Boar Inn.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_5_C" class="answer nonesuch">No need to call the police, they would only tell you what you already</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_5_D" class="answer nonesuch">know.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_5_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="2_5_E" class="answer nonesuch">Don&#39;t leave your door unlocked when you leave.</span></div></div>
       </div>
   </div>
 
@@ -104,21 +152,39 @@
           <div class="question indented">
       <h3>What is McGinty Salvage?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">This is the island&#39;s only salvage outfit.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Most of the locals have worked for McGinty at one time or another.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_1_A" class="answer nonesuch">This is the island&#39;s only salvage outfit.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_1_B" class="answer nonesuch">Most of the locals have worked for McGinty at one time or another.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What was McGinty Salvage built on top of?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">An empty lot?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The Old Indian Burial Ground.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Find the pickaxe and start digging in the cellar.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Be careful not to rupture a water main or the cellar will fill with</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">water and you will drown.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Did you find the axe? It&#39;s pretty tough to find since there isn&#39;t one</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">in this story. Only develop the answers you need.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_2_A" class="answer nonesuch">An empty lot?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_2_B" class="answer nonesuch">The Old Indian Burial Ground.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_2_C" class="answer nonesuch">Find the pickaxe and start digging in the cellar.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_2_D" class="answer nonesuch">Be careful not to rupture a water main or the cellar will fill with</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="3_2_E" class="answer nonesuch">water and you will drown.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="3_2_F" class="answer nonesuch">Did you find the axe? It&#39;s pretty tough to find since there isn&#39;t one</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_2_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="3_2_G" class="answer nonesuch">in this story. Only develop the answers you need.</span></div></div>
       </div>
   </div>
 
@@ -126,139 +192,369 @@
           <div class="question indented">
       <h3>How do I rent a boat?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can&#39;t afford it alone.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You&#39;ll have to throw in with Johnny.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Let Johnny take care of it.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_1_A" class="answer nonesuch">You can&#39;t afford it alone.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_1_B" class="answer nonesuch">You&#39;ll have to throw in with Johnny.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_1_C" class="answer nonesuch">Let Johnny take care of it.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Johnny stormed out of Outfitters. What went wrong?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you haven&#39;t met Johnny at Point Lookout, don&#39;t develop any more</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">answers for this question.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">One of two things may have gone wrong.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">You carried your passbook into Outfitters, and McGinty was there and</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">saw it...</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">...so he knew you were up to something.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Or you tried to rent or buy something in front of McGinty...</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">...so he knew you were up to something.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">Wait for McGinty to leave before you buy or rent anything.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_2_A" class="answer nonesuch">If you haven&#39;t met Johnny at Point Lookout, don&#39;t develop any more</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_2_B" class="answer nonesuch">answers for this question.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_2_C" class="answer nonesuch">One of two things may have gone wrong.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_2_D" class="answer nonesuch">You carried your passbook into Outfitters, and McGinty was there and</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="4_2_E" class="answer nonesuch">saw it...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="4_2_F" class="answer nonesuch">...so he knew you were up to something.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="4_2_G" class="answer nonesuch">Or you tried to rent or buy something in front of McGinty...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="4_2_H" class="answer nonesuch">...so he knew you were up to something.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="4_2_I" class="answer nonesuch">Wait for McGinty to leave before you buy or rent anything.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Should I buy any of the following items?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Diving Book</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You already know the ins and outs of diving.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Therefore, you don&#39;t need the diving book.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Nautical Charts</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Hmmmm, a chart would come in handy...</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">...but $150 is a lot of clams.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">Better use the one in the shipwreck book.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">Flashlight</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">You&#39;ll need one if you&#39;re going diving. It&#39;s dark down there.</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">$24 is a lot of clams for a flashlight...</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">...and this is a lot of flashlight.</div></details>
-        <details class="details-answer"><summary>N.</summary><div class="answer">Buy it.</div></details>
-        <details class="details-answer"><summary>O.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>P.</summary><div class="answer">Dry Cell</div></details>
-        <details class="details-answer"><summary>Q.</summary><div class="answer">You&#39;ll need it to power something.</div></details>
-        <details class="details-answer"><summary>R.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>S.</summary><div class="answer">Recording of Popular Whale Songs</div></details>
-        <details class="details-answer"><summary>T.</summary><div class="answer">You won&#39;t want to miss this monster album.</div></details>
-        <details class="details-answer"><summary>U.</summary><div class="answer">Hits like &quot;Oooouuououm if you love me,&quot; and the ever-popular</div></details>
-        <details class="details-answer"><summary>V.</summary><div class="answer">&quot;Oooooouuuuuuaaaaaaaaauuuoop&quot; (dance track).</div></details>
-        <details class="details-answer"><summary>W.</summary><div class="answer">These are songs that your whole family will enjoy.</div></details>
-        <details class="details-answer"><summary>X.</summary><div class="answer">This recording is not available in any store, not even Outfitters.</div></details>
-        <details class="details-answer"><summary>Y.</summary><div class="answer">So why are you wasting your time developing this clue?</div></details>
-        <details class="details-answer"><summary>Z.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>[.</summary><div class="answer">Tube of Putty</div></details>
-        <details class="details-answer"><summary>\.</summary><div class="answer">This waterproof putty will fix any crack or leak you encounter.</div></details>
-        <details class="details-answer"><summary>].</summary><div class="answer">It might come in handy when you&#39;re underwater.</div></details>
-        <details class="details-answer"><summary>^.</summary><div class="answer">If you are salvaging the Leviathan, you&#39;ll need the putty.</div></details>
-        <details class="details-answer"><summary>_.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>`.</summary><div class="answer">C Battery</div></details>
-        <details class="details-answer"><summary>a.</summary><div class="answer">You&#39;ll need this to power something.</div></details>
-        <details class="details-answer"><summary>b.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>c.</summary><div class="answer">Net</div></details>
-        <details class="details-answer"><summary>d.</summary><div class="answer">Do you plan on doing some fishing?</div></details>
-        <details class="details-answer"><summary>e.</summary><div class="answer">If you do, then you&#39;ll want to bring this along.</div></details>
-        <details class="details-answer"><summary>f.</summary><div class="answer">But why would you want to go fishing when there is treasure to be</div></details>
-        <details class="details-answer"><summary>g.</summary><div class="answer">found?</div></details>
-        <details class="details-answer"><summary>h.</summary><div class="answer">You don&#39;t need the net.</div></details>
-        <details class="details-answer"><summary>i.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>j.</summary><div class="answer">Spear Gun</div></details>
-        <details class="details-answer"><summary>k.</summary><div class="answer">A spear gun would be nice to have.</div></details>
-        <details class="details-answer"><summary>l.</summary><div class="answer">Especially if you plan on doing some diving in dangerous waters.</div></details>
-        <details class="details-answer"><summary>m.</summary><div class="answer">It&#39;s too bad that Outfitters doesn&#39;t have any in stock.</div></details>
-        <details class="details-answer"><summary>n.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>o.</summary><div class="answer">Compass</div></details>
-        <details class="details-answer"><summary>p.</summary><div class="answer">Why would you want a compass, with your keen sense of direction?</div></details>
-        <details class="details-answer"><summary>q.</summary><div class="answer">Unfortunately, not everyone is so clear-headed.</div></details>
-        <details class="details-answer"><summary>r.</summary><div class="answer">Outfitters doesn&#39;t have any in stock.</div></details>
-        <details class="details-answer"><summary>s.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>t.</summary><div class="answer">Location Box</div></details>
-        <details class="details-answer"><summary>u.</summary><div class="answer">You have only $603 in your bank account. You&#39;ll need another $397.</div></details>
-        <details class="details-answer"><summary>v.</summary><div class="answer">How are you going to get the extra cash?</div></details>
-        <details class="details-answer"><summary>w.</summary><div class="answer">Have you tried robbing the bank?</div></details>
-        <details class="details-answer"><summary>x.</summary><div class="answer">Well, maybe that isn&#39;t such a good idea.</div></details>
-        <details class="details-answer"><summary>y.</summary><div class="answer">There&#39;s no way that you can possibly afford the location box...</div></details>
-        <details class="details-answer"><summary>z.</summary><div class="answer">...and you don&#39;t need it anyway.</div></details>
-        <details class="details-answer"><summary>{.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>|.</summary><div class="answer">Portable Electromagnet</div></details>
-        <details class="details-answer"><summary>}.</summary><div class="answer">It seems to be quite attractive (groan!).</div></details>
-        <details class="details-answer"><summary>~.</summary><div class="answer">You may find a need for it.</div></details>
-        <details class="details-answer"><summary>.</summary><div class="answer">If you&#39;ve rented the Mary Margaret, then you don&#39;t have enough money</div></details>
-        <details class="details-answer"><summary>Ä.</summary><div class="answer">to buy the magnet.</div></details>
-        <details class="details-answer"><summary>Å.</summary><div class="answer">If you are salvaging the Leviathan, you&#39;ll need the electromagnet.</div></details>
-        <details class="details-answer"><summary>Ç.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>É.</summary><div class="answer">Water Wings</div></details>
-        <details class="details-answer"><summary>Ñ.</summary><div class="answer">You don&#39;t need to buy the water wings. They&#39;re free with every</div></details>
-        <details class="details-answer"><summary>Ö.</summary><div class="answer">purchase of $10 or more.</div></details>
-        <details class="details-answer"><summary>Ü.</summary><div class="answer">Water wings? What water wings?</div></details>
-        <details class="details-answer"><summary>á.</summary><div class="answer">Remember, Diver Dan says, &quot;For safety&#39;s sake, don&#39;t assume the</div></details>
-        <details class="details-answer"><summary>à.</summary><div class="answer">presence of a question means it&#39;s important. Also don&#39;t assume long</div></details>
-        <details class="details-answer"><summary>â.</summary><div class="answer">answers are always associated with important questions.&quot;</div></details>
-        <details class="details-answer"><summary>ä.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>ã.</summary><div class="answer">Shark Repellent Canister</div></details>
-        <details class="details-answer"><summary>å.</summary><div class="answer">Have you tried diving without any protection from sharks?</div></details>
-        <details class="details-answer"><summary>ç.</summary><div class="answer">If you have, you&#39;ll realize that $20 is a small price to pay for your</div></details>
-        <details class="details-answer"><summary>é.</summary><div class="answer">legs.</div></details>
-        <details class="details-answer"><summary>è.</summary><div class="answer">You&#39;d better buy the shark repellent.</div></details>
-        <details class="details-answer"><summary>ê.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>ë.</summary><div class="answer">Winch</div></details>
-        <details class="details-answer"><summary>í.</summary><div class="answer">This might come in handy if you&#39;re looking for a way to pull</div></details>
-        <details class="details-answer"><summary>ì.</summary><div class="answer">something up...</div></details>
-        <details class="details-answer"><summary>î.</summary><div class="answer">...but you might as well save your money...</div></details>
-        <details class="details-answer"><summary>ï.</summary><div class="answer">...because you and the crew will be able to haul up just about</div></details>
-        <details class="details-answer"><summary>ñ.</summary><div class="answer">anything.</div></details>
-        <details class="details-answer"><summary>ó.</summary><div class="answer">You don&#39;t need the winch.</div></details>
-        <details class="details-answer"><summary>ò.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>ô.</summary><div class="answer">Anchor</div></details>
-        <details class="details-answer"><summary>ö.</summary><div class="answer">It&#39;s likely the ship you rent will come equipped with one.</div></details>
-        <details class="details-answer"><summary>õ.</summary><div class="answer">You don&#39;t need the anchor.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_3_A" class="answer nonesuch">Diving Book</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_3_B" class="answer nonesuch">You already know the ins and outs of diving.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_3_C" class="answer nonesuch">Therefore, you don&#39;t need the diving book.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_3_D" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="4_3_E" class="answer nonesuch">Nautical Charts</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="4_3_F" class="answer nonesuch">Hmmmm, a chart would come in handy...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="4_3_G" class="answer nonesuch">...but $150 is a lot of clams.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="4_3_H" class="answer nonesuch">Better use the one in the shipwreck book.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="4_3_I" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="4_3_J" class="answer nonesuch">Flashlight</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="4_3_K" class="answer nonesuch">You&#39;ll need one if you&#39;re going diving. It&#39;s dark down there.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="4_3_L" class="answer nonesuch">$24 is a lot of clams for a flashlight...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="4_3_M" class="answer nonesuch">...and this is a lot of flashlight.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_N");' role="link">
+<div class="answer-label">N.</div><div class="answer-cell"><span id="4_3_N" class="answer nonesuch">Buy it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_O");' role="link">
+<div class="answer-label">O.</div><div class="answer-cell"><span id="4_3_O" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_P");' role="link">
+<div class="answer-label">P.</div><div class="answer-cell"><span id="4_3_P" class="answer nonesuch">Dry Cell</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_Q");' role="link">
+<div class="answer-label">Q.</div><div class="answer-cell"><span id="4_3_Q" class="answer nonesuch">You&#39;ll need it to power something.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_R");' role="link">
+<div class="answer-label">R.</div><div class="answer-cell"><span id="4_3_R" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_S");' role="link">
+<div class="answer-label">S.</div><div class="answer-cell"><span id="4_3_S" class="answer nonesuch">Recording of Popular Whale Songs</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_T");' role="link">
+<div class="answer-label">T.</div><div class="answer-cell"><span id="4_3_T" class="answer nonesuch">You won&#39;t want to miss this monster album.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_U");' role="link">
+<div class="answer-label">U.</div><div class="answer-cell"><span id="4_3_U" class="answer nonesuch">Hits like &quot;Oooouuououm if you love me,&quot; and the ever-popular</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_V");' role="link">
+<div class="answer-label">V.</div><div class="answer-cell"><span id="4_3_V" class="answer nonesuch">&quot;Oooooouuuuuuaaaaaaaaauuuoop&quot; (dance track).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_W");' role="link">
+<div class="answer-label">W.</div><div class="answer-cell"><span id="4_3_W" class="answer nonesuch">These are songs that your whole family will enjoy.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_X");' role="link">
+<div class="answer-label">X.</div><div class="answer-cell"><span id="4_3_X" class="answer nonesuch">This recording is not available in any store, not even Outfitters.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_Y");' role="link">
+<div class="answer-label">Y.</div><div class="answer-cell"><span id="4_3_Y" class="answer nonesuch">So why are you wasting your time developing this clue?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_Z");' role="link">
+<div class="answer-label">Z.</div><div class="answer-cell"><span id="4_3_Z" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_[");' role="link">
+<div class="answer-label">[.</div><div class="answer-cell"><span id="4_3_[" class="answer nonesuch">Tube of Putty</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_\");' role="link">
+<div class="answer-label">\.</div><div class="answer-cell"><span id="4_3_\" class="answer nonesuch">This waterproof putty will fix any crack or leak you encounter.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_]");' role="link">
+<div class="answer-label">].</div><div class="answer-cell"><span id="4_3_]" class="answer nonesuch">It might come in handy when you&#39;re underwater.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_^");' role="link">
+<div class="answer-label">^.</div><div class="answer-cell"><span id="4_3_^" class="answer nonesuch">If you are salvaging the Leviathan, you&#39;ll need the putty.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3__");' role="link">
+<div class="answer-label">_.</div><div class="answer-cell"><span id="4_3__" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_`");' role="link">
+<div class="answer-label">`.</div><div class="answer-cell"><span id="4_3_`" class="answer nonesuch">C Battery</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_a");' role="link">
+<div class="answer-label">a.</div><div class="answer-cell"><span id="4_3_a" class="answer nonesuch">You&#39;ll need this to power something.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_b");' role="link">
+<div class="answer-label">b.</div><div class="answer-cell"><span id="4_3_b" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_c");' role="link">
+<div class="answer-label">c.</div><div class="answer-cell"><span id="4_3_c" class="answer nonesuch">Net</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_d");' role="link">
+<div class="answer-label">d.</div><div class="answer-cell"><span id="4_3_d" class="answer nonesuch">Do you plan on doing some fishing?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_e");' role="link">
+<div class="answer-label">e.</div><div class="answer-cell"><span id="4_3_e" class="answer nonesuch">If you do, then you&#39;ll want to bring this along.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_f");' role="link">
+<div class="answer-label">f.</div><div class="answer-cell"><span id="4_3_f" class="answer nonesuch">But why would you want to go fishing when there is treasure to be</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_g");' role="link">
+<div class="answer-label">g.</div><div class="answer-cell"><span id="4_3_g" class="answer nonesuch">found?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_h");' role="link">
+<div class="answer-label">h.</div><div class="answer-cell"><span id="4_3_h" class="answer nonesuch">You don&#39;t need the net.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_i");' role="link">
+<div class="answer-label">i.</div><div class="answer-cell"><span id="4_3_i" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_j");' role="link">
+<div class="answer-label">j.</div><div class="answer-cell"><span id="4_3_j" class="answer nonesuch">Spear Gun</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_k");' role="link">
+<div class="answer-label">k.</div><div class="answer-cell"><span id="4_3_k" class="answer nonesuch">A spear gun would be nice to have.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_l");' role="link">
+<div class="answer-label">l.</div><div class="answer-cell"><span id="4_3_l" class="answer nonesuch">Especially if you plan on doing some diving in dangerous waters.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_m");' role="link">
+<div class="answer-label">m.</div><div class="answer-cell"><span id="4_3_m" class="answer nonesuch">It&#39;s too bad that Outfitters doesn&#39;t have any in stock.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_n");' role="link">
+<div class="answer-label">n.</div><div class="answer-cell"><span id="4_3_n" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_o");' role="link">
+<div class="answer-label">o.</div><div class="answer-cell"><span id="4_3_o" class="answer nonesuch">Compass</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_p");' role="link">
+<div class="answer-label">p.</div><div class="answer-cell"><span id="4_3_p" class="answer nonesuch">Why would you want a compass, with your keen sense of direction?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_q");' role="link">
+<div class="answer-label">q.</div><div class="answer-cell"><span id="4_3_q" class="answer nonesuch">Unfortunately, not everyone is so clear-headed.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_r");' role="link">
+<div class="answer-label">r.</div><div class="answer-cell"><span id="4_3_r" class="answer nonesuch">Outfitters doesn&#39;t have any in stock.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_s");' role="link">
+<div class="answer-label">s.</div><div class="answer-cell"><span id="4_3_s" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_t");' role="link">
+<div class="answer-label">t.</div><div class="answer-cell"><span id="4_3_t" class="answer nonesuch">Location Box</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_u");' role="link">
+<div class="answer-label">u.</div><div class="answer-cell"><span id="4_3_u" class="answer nonesuch">You have only $603 in your bank account. You&#39;ll need another $397.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_v");' role="link">
+<div class="answer-label">v.</div><div class="answer-cell"><span id="4_3_v" class="answer nonesuch">How are you going to get the extra cash?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_w");' role="link">
+<div class="answer-label">w.</div><div class="answer-cell"><span id="4_3_w" class="answer nonesuch">Have you tried robbing the bank?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_x");' role="link">
+<div class="answer-label">x.</div><div class="answer-cell"><span id="4_3_x" class="answer nonesuch">Well, maybe that isn&#39;t such a good idea.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_y");' role="link">
+<div class="answer-label">y.</div><div class="answer-cell"><span id="4_3_y" class="answer nonesuch">There&#39;s no way that you can possibly afford the location box...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_z");' role="link">
+<div class="answer-label">z.</div><div class="answer-cell"><span id="4_3_z" class="answer nonesuch">...and you don&#39;t need it anyway.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_{");' role="link">
+<div class="answer-label">{.</div><div class="answer-cell"><span id="4_3_{" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_|");' role="link">
+<div class="answer-label">|.</div><div class="answer-cell"><span id="4_3_|" class="answer nonesuch">Portable Electromagnet</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_}");' role="link">
+<div class="answer-label">}.</div><div class="answer-cell"><span id="4_3_}" class="answer nonesuch">It seems to be quite attractive (groan!).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_~");' role="link">
+<div class="answer-label">~.</div><div class="answer-cell"><span id="4_3_~" class="answer nonesuch">You may find a need for it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_");' role="link">
+<div class="answer-label">.</div><div class="answer-cell"><span id="4_3_" class="answer nonesuch">If you&#39;ve rented the Mary Margaret, then you don&#39;t have enough money</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_Ä");' role="link">
+<div class="answer-label">Ä.</div><div class="answer-cell"><span id="4_3_Ä" class="answer nonesuch">to buy the magnet.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_Å");' role="link">
+<div class="answer-label">Å.</div><div class="answer-cell"><span id="4_3_Å" class="answer nonesuch">If you are salvaging the Leviathan, you&#39;ll need the electromagnet.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_Ç");' role="link">
+<div class="answer-label">Ç.</div><div class="answer-cell"><span id="4_3_Ç" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_É");' role="link">
+<div class="answer-label">É.</div><div class="answer-cell"><span id="4_3_É" class="answer nonesuch">Water Wings</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_Ñ");' role="link">
+<div class="answer-label">Ñ.</div><div class="answer-cell"><span id="4_3_Ñ" class="answer nonesuch">You don&#39;t need to buy the water wings. They&#39;re free with every</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_Ö");' role="link">
+<div class="answer-label">Ö.</div><div class="answer-cell"><span id="4_3_Ö" class="answer nonesuch">purchase of $10 or more.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_Ü");' role="link">
+<div class="answer-label">Ü.</div><div class="answer-cell"><span id="4_3_Ü" class="answer nonesuch">Water wings? What water wings?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_á");' role="link">
+<div class="answer-label">á.</div><div class="answer-cell"><span id="4_3_á" class="answer nonesuch">Remember, Diver Dan says, &quot;For safety&#39;s sake, don&#39;t assume the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_à");' role="link">
+<div class="answer-label">à.</div><div class="answer-cell"><span id="4_3_à" class="answer nonesuch">presence of a question means it&#39;s important. Also don&#39;t assume long</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_â");' role="link">
+<div class="answer-label">â.</div><div class="answer-cell"><span id="4_3_â" class="answer nonesuch">answers are always associated with important questions.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_ä");' role="link">
+<div class="answer-label">ä.</div><div class="answer-cell"><span id="4_3_ä" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_ã");' role="link">
+<div class="answer-label">ã.</div><div class="answer-cell"><span id="4_3_ã" class="answer nonesuch">Shark Repellent Canister</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_å");' role="link">
+<div class="answer-label">å.</div><div class="answer-cell"><span id="4_3_å" class="answer nonesuch">Have you tried diving without any protection from sharks?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_ç");' role="link">
+<div class="answer-label">ç.</div><div class="answer-cell"><span id="4_3_ç" class="answer nonesuch">If you have, you&#39;ll realize that $20 is a small price to pay for your</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_é");' role="link">
+<div class="answer-label">é.</div><div class="answer-cell"><span id="4_3_é" class="answer nonesuch">legs.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_è");' role="link">
+<div class="answer-label">è.</div><div class="answer-cell"><span id="4_3_è" class="answer nonesuch">You&#39;d better buy the shark repellent.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_ê");' role="link">
+<div class="answer-label">ê.</div><div class="answer-cell"><span id="4_3_ê" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_ë");' role="link">
+<div class="answer-label">ë.</div><div class="answer-cell"><span id="4_3_ë" class="answer nonesuch">Winch</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_í");' role="link">
+<div class="answer-label">í.</div><div class="answer-cell"><span id="4_3_í" class="answer nonesuch">This might come in handy if you&#39;re looking for a way to pull</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_ì");' role="link">
+<div class="answer-label">ì.</div><div class="answer-cell"><span id="4_3_ì" class="answer nonesuch">something up...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_î");' role="link">
+<div class="answer-label">î.</div><div class="answer-cell"><span id="4_3_î" class="answer nonesuch">...but you might as well save your money...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_ï");' role="link">
+<div class="answer-label">ï.</div><div class="answer-cell"><span id="4_3_ï" class="answer nonesuch">...because you and the crew will be able to haul up just about</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_ñ");' role="link">
+<div class="answer-label">ñ.</div><div class="answer-cell"><span id="4_3_ñ" class="answer nonesuch">anything.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_ó");' role="link">
+<div class="answer-label">ó.</div><div class="answer-cell"><span id="4_3_ó" class="answer nonesuch">You don&#39;t need the winch.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_ò");' role="link">
+<div class="answer-label">ò.</div><div class="answer-cell"><span id="4_3_ò" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_ô");' role="link">
+<div class="answer-label">ô.</div><div class="answer-cell"><span id="4_3_ô" class="answer nonesuch">Anchor</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_ö");' role="link">
+<div class="answer-label">ö.</div><div class="answer-cell"><span id="4_3_ö" class="answer nonesuch">It&#39;s likely the ship you rent will come equipped with one.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_õ");' role="link">
+<div class="answer-label">õ.</div><div class="answer-cell"><span id="4_3_õ" class="answer nonesuch">You don&#39;t need the anchor.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Should I rent any of the following items?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Small Air Compressor</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you examined your air tank?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Pretty low, huh?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Diver Dan says, &quot;For safety&#39;s sake, never dive without air in your</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">tank.&quot;</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">If you&#39;re renting the Night Wind, you&#39;ll need to rent the compressor.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">The Mary Margaret comes equipped with an air compressor.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">Diving Cage</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">You don&#39;t have enough money.</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">So you can&#39;t rent it.</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">Which is convenient since you don&#39;t need it.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_4_A" class="answer nonesuch">Small Air Compressor</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_4_B" class="answer nonesuch">Have you examined your air tank?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_4_C" class="answer nonesuch">Pretty low, huh?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_4_D" class="answer nonesuch">Diver Dan says, &quot;For safety&#39;s sake, never dive without air in your</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="4_4_E" class="answer nonesuch">tank.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="4_4_F" class="answer nonesuch">If you&#39;re renting the Night Wind, you&#39;ll need to rent the compressor.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="4_4_G" class="answer nonesuch">The Mary Margaret comes equipped with an air compressor.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="4_4_H" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="4_4_I" class="answer nonesuch">Diving Cage</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="4_4_J" class="answer nonesuch">You don&#39;t have enough money.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="4_4_K" class="answer nonesuch">So you can&#39;t rent it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="4_4_L" class="answer nonesuch">Which is convenient since you don&#39;t need it.</span></div></div>
       </div>
   </div>
 
@@ -266,35 +562,69 @@
           <div class="question indented">
       <h3>I&#39;m awfully hungry. How&#39;s the food at The Shanty?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Not bad. It&#39;ll really hit the spot.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">If you want some food, type BUY A MEAL or ORDER FOOD.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">I&#39;m awfully thirsty. I could use a drink.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">What&#39;ll you have, water or grog?</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">If you&#39;d like water, type BARTENDER, GIVE ME SOME WATER.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">If it&#39;s grog you want, type BARTENDER, GIVE ME SOME GROG.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">But Diver Dan says, &quot;For safety&#39;s sake, don&#39;t drink too much. Remember:</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">Friends don&#39;t let friends dive drunk.&quot;</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">And besides, if you drink too much, you&#39;ll probably end up passing out</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">and getting killed.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_1_A" class="answer nonesuch">Not bad. It&#39;ll really hit the spot.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_1_B" class="answer nonesuch">If you want some food, type BUY A MEAL or ORDER FOOD.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_1_C" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_1_D" class="answer nonesuch">I&#39;m awfully thirsty. I could use a drink.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_1_E" class="answer nonesuch">What&#39;ll you have, water or grog?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_1_F" class="answer nonesuch">If you&#39;d like water, type BARTENDER, GIVE ME SOME WATER.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="5_1_G" class="answer nonesuch">If it&#39;s grog you want, type BARTENDER, GIVE ME SOME GROG.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="5_1_H" class="answer nonesuch">But Diver Dan says, &quot;For safety&#39;s sake, don&#39;t drink too much. Remember:</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="5_1_I" class="answer nonesuch">Friends don&#39;t let friends dive drunk.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="5_1_J" class="answer nonesuch">And besides, if you drink too much, you&#39;ll probably end up passing out</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="5_1_K" class="answer nonesuch">and getting killed.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>I&#39;m drunk. How do I sober up?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">What about a cold shower?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">There doesn&#39;t seem to be any shower on the island.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">No wonder everyone on the island smells so bad.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">There&#39;s really only one thing to do. Just wait for your head to clear.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">But if you&#39;ve drunk too much too fast, you&#39;re finished.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_2_A" class="answer nonesuch">What about a cold shower?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_2_B" class="answer nonesuch">There doesn&#39;t seem to be any shower on the island.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_2_C" class="answer nonesuch">No wonder everyone on the island smells so bad.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_2_D" class="answer nonesuch">There&#39;s really only one thing to do. Just wait for your head to clear.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_2_E" class="answer nonesuch">But if you&#39;ve drunk too much too fast, you&#39;re finished.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What does the parrot do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">He provides comic relief.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_3_A" class="answer nonesuch">He provides comic relief.</span></div></div>
       </div>
   </div>
 
@@ -302,13 +632,27 @@
           <div class="question indented">
       <h3>What is the Sunken Chip?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It&#39;s Hardscrabble Island&#39;s premiere computer store.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">They carry a complete line of Infocom&#39;s interactive fiction.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The Sunken Chip? You must have had a few too many at The Shanty.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">You&#39;d better sober up and recheck your map.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Hey -- you aren&#39;t drunk! You&#39;re cheating!!</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">We&#39;re going to send Pete the Rat over to your house to cook dinner!</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Bet you&#39;ve never tried rat chops.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_1_A" class="answer nonesuch">It&#39;s Hardscrabble Island&#39;s premiere computer store.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_1_B" class="answer nonesuch">They carry a complete line of Infocom&#39;s interactive fiction.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_1_C" class="answer nonesuch">The Sunken Chip? You must have had a few too many at The Shanty.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_1_D" class="answer nonesuch">You&#39;d better sober up and recheck your map.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="6_1_E" class="answer nonesuch">Hey -- you aren&#39;t drunk! You&#39;re cheating!!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="6_1_F" class="answer nonesuch">We&#39;re going to send Pete the Rat over to your house to cook dinner!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="6_1_G" class="answer nonesuch">Bet you&#39;ve never tried rat chops.</span></div></div>
       </div>
   </div>
 
@@ -316,19 +660,33 @@
           <div class="question indented">
       <h3>Hey, I&#39;m almost broke! How do I get some more money?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You have a savings account.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Bring your passbook to Mariners&#39; Trust.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Type WITHDRAW $(amount).</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_1_A" class="answer nonesuch">You have a savings account.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_1_B" class="answer nonesuch">Bring your passbook to Mariners&#39; Trust.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_1_C" class="answer nonesuch">Type WITHDRAW $(amount).</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>I&#39;ve got my money. What now?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">What do you usually do with your passbook?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You&#39;d better put it in a safe place.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Put it in your room...</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">...and be sure to lock the door.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_2_A" class="answer nonesuch">What do you usually do with your passbook?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_2_B" class="answer nonesuch">You&#39;d better put it in a safe place.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_2_C" class="answer nonesuch">Put it in your room...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_2_D" class="answer nonesuch">...and be sure to lock the door.</span></div></div>
       </div>
   </div>
 
@@ -337,9 +695,15 @@
           <div class="question indented">
       <h3>What can I do here?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Absolutely nothing...</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">...unless you&#39;re looking for a shortcut to the alley.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Type GO SOUTH.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_1_A" class="answer nonesuch">Absolutely nothing...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_1_B" class="answer nonesuch">...unless you&#39;re looking for a shortcut to the alley.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_1_C" class="answer nonesuch">Type GO SOUTH.</span></div></div>
       </div>
   </div>
 
@@ -347,18 +711,42 @@
           <div class="question indented">
       <h3>Why is this a point of interest?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Good question. It&#39;s not really very interesting...</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">...except for the fact that it runs parallel to Wharf Road.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Therefore, the back doors of all of the Wharf Road establishments are</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">located along this alley.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Unfortunately, they are all locked.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">There is also a window here.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">It leads into McGinty Salvage.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">If you open the window and climb through it, you can get into McGinty&#39;s</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">office, but be careful...</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">...if McGinty sees you enter through the window, he&#39;ll shoot you.</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">Be sure to look in the window to make sure McGinty isn&#39;t inside before</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">you climb through.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("10_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="10_1_A" class="answer nonesuch">Good question. It&#39;s not really very interesting...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("10_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="10_1_B" class="answer nonesuch">...except for the fact that it runs parallel to Wharf Road.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("10_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="10_1_C" class="answer nonesuch">Therefore, the back doors of all of the Wharf Road establishments are</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("10_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="10_1_D" class="answer nonesuch">located along this alley.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("10_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="10_1_E" class="answer nonesuch">Unfortunately, they are all locked.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("10_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="10_1_F" class="answer nonesuch">There is also a window here.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("10_1_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="10_1_G" class="answer nonesuch">It leads into McGinty Salvage.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("10_1_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="10_1_H" class="answer nonesuch">If you open the window and climb through it, you can get into McGinty&#39;s</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("10_1_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="10_1_I" class="answer nonesuch">office, but be careful...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("10_1_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="10_1_J" class="answer nonesuch">...if McGinty sees you enter through the window, he&#39;ll shoot you.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("10_1_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="10_1_K" class="answer nonesuch">Be sure to look in the window to make sure McGinty isn&#39;t inside before</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("10_1_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="10_1_L" class="answer nonesuch">you climb through.</span></div></div>
       </div>
   </div>
 
@@ -366,13 +754,27 @@
           <div class="question indented">
       <h3>How can I take a ferry to the mainland?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You&#39;ll need a token to board the ferry.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You can try to buy one at Outfitters.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">They&#39;re all out? Try Mariners&#39; Trust.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">No luck there either? Oh well, it seems that there&#39;s really no way to</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">get on board the ferry.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">In fact, you can&#39;t get to the mainland at all.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Sorry.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("11_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="11_1_A" class="answer nonesuch">You&#39;ll need a token to board the ferry.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("11_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="11_1_B" class="answer nonesuch">You can try to buy one at Outfitters.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("11_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="11_1_C" class="answer nonesuch">They&#39;re all out? Try Mariners&#39; Trust.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("11_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="11_1_D" class="answer nonesuch">No luck there either? Oh well, it seems that there&#39;s really no way to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("11_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="11_1_E" class="answer nonesuch">get on board the ferry.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("11_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="11_1_F" class="answer nonesuch">In fact, you can&#39;t get to the mainland at all.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("11_1_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="11_1_G" class="answer nonesuch">Sorry.</span></div></div>
       </div>
   </div>
 
@@ -380,16 +782,36 @@
           <div class="question indented">
       <h3>How do I find Hevlin&#39;s tombstone?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you examined all of them?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Examine the tombstone three to the left of Big Chief Swanzo&#39;s.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">To decode the message, you&#39;ll need the 3-D glasses from the Sunken</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Chip.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Then chant the message three times while diving off of Point Lookout,</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">wearing your water wings on your feet.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Well, maybe that isn&#39;t such a good idea...</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">...since there isn&#39;t any Indian Burial Ground.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">There&#39;s plenty of developing fluid, but save it for the answers you</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">really need.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("12_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="12_1_A" class="answer nonesuch">Have you examined all of them?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="12_1_B" class="answer nonesuch">Examine the tombstone three to the left of Big Chief Swanzo&#39;s.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="12_1_C" class="answer nonesuch">To decode the message, you&#39;ll need the 3-D glasses from the Sunken</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="12_1_D" class="answer nonesuch">Chip.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="12_1_E" class="answer nonesuch">Then chant the message three times while diving off of Point Lookout,</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="12_1_F" class="answer nonesuch">wearing your water wings on your feet.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_1_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="12_1_G" class="answer nonesuch">Well, maybe that isn&#39;t such a good idea...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_1_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="12_1_H" class="answer nonesuch">...since there isn&#39;t any Indian Burial Ground.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_1_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="12_1_I" class="answer nonesuch">There&#39;s plenty of developing fluid, but save it for the answers you</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_1_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="12_1_J" class="answer nonesuch">really need.</span></div></div>
       </div>
   </div>
 
@@ -398,10 +820,18 @@
           <div class="question indented">
       <h3>Johnny wants me to join him. What should I do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">This is the first exciting thing to happen to you in weeks.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Go along with him.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Anyhow, there&#39;s no way to continue the story if you don&#39;t join up with</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">him.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("14_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="14_1_A" class="answer nonesuch">This is the first exciting thing to happen to you in weeks.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("14_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="14_1_B" class="answer nonesuch">Go along with him.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("14_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="14_1_C" class="answer nonesuch">Anyhow, there&#39;s no way to continue the story if you don&#39;t join up with</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("14_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="14_1_D" class="answer nonesuch">him.</span></div></div>
       </div>
   </div>
 
@@ -409,73 +839,135 @@
           <div class="question indented">
       <h3>What time do I have to be at the lighthouse?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you didn&#39;t accept Johnny&#39;s offer at The Shanty, don&#39;t bother coming</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">to the lighthouse. The deal has been called off.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Otherwise, be at the lighthouse at 9:30 a.m.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("15_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="15_1_A" class="answer nonesuch">If you didn&#39;t accept Johnny&#39;s offer at The Shanty, don&#39;t bother coming</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="15_1_B" class="answer nonesuch">to the lighthouse. The deal has been called off.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="15_1_C" class="answer nonesuch">Otherwise, be at the lighthouse at 9:30 a.m.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Johnny showed me the dinner plate. What should I do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Type EXAMINE THE DINNER PLATE.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you read your shipwreck book?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">There&#39;s only one wreck listed that used to be owned by the Hollywood</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Cruise Lines.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">So you know that you have to salvage the Leviathan.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("15_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="15_2_A" class="answer nonesuch">Type EXAMINE THE DINNER PLATE.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="15_2_B" class="answer nonesuch">Have you read your shipwreck book?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="15_2_C" class="answer nonesuch">There&#39;s only one wreck listed that used to be owned by the Hollywood</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="15_2_D" class="answer nonesuch">Cruise Lines.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="15_2_E" class="answer nonesuch">So you know that you have to salvage the Leviathan.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Johnny showed me the china teacup. What should I do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Show him the teabag that Pete the Rat gave you.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You haven&#39;t found the tea bag yet? That&#39;s not surprising, since there</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">isn&#39;t any tea bag in this story.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Furthermore, there isn&#39;t any teacup.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("15_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="15_3_A" class="answer nonesuch">Show him the teabag that Pete the Rat gave you.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="15_3_B" class="answer nonesuch">You haven&#39;t found the tea bag yet? That&#39;s not surprising, since there</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="15_3_C" class="answer nonesuch">isn&#39;t any tea bag in this story.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="15_3_D" class="answer nonesuch">Furthermore, there isn&#39;t any teacup.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Johnny showed me the gold coin. What should I do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you tried typing EXAMINE THE COIN?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Did you read your shipwreck book?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">There is only one Portuguese wreck listed in the book.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">So you know you have to salvage the Sao Vera.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("15_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="15_4_A" class="answer nonesuch">Have you tried typing EXAMINE THE COIN?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="15_4_B" class="answer nonesuch">Did you read your shipwreck book?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="15_4_C" class="answer nonesuch">There is only one Portuguese wreck listed in the book.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="15_4_D" class="answer nonesuch">So you know you have to salvage the Sao Vera.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Johnny showed me the Chile con Carne recipe. What should I do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Don&#39;t let Pete the Rat prepare it, whatever you do!</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Chile con Carne recipe?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You must be daydreaming! There&#39;s no Chile con Carne recipe in this</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">story.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("15_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="15_5_A" class="answer nonesuch">Don&#39;t let Pete the Rat prepare it, whatever you do!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="15_5_B" class="answer nonesuch">Chile con Carne recipe?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="15_5_C" class="answer nonesuch">You must be daydreaming! There&#39;s no Chile con Carne recipe in this</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="15_5_D" class="answer nonesuch">story.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Okay, I know which wreck to salvage. What now?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Play it cool. You don&#39;t need to tell anyone yet.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Wait until someone asks you for the wreck&#39;s depth...</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">...and no one will ask you for this yet. Be patient.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Johnny will ask you for the depth at a later meeting. There&#39;s nothing</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">more you can do here.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("15_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="15_6_A" class="answer nonesuch">Play it cool. You don&#39;t need to tell anyone yet.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="15_6_B" class="answer nonesuch">Wait until someone asks you for the wreck&#39;s depth...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="15_6_C" class="answer nonesuch">...and no one will ask you for this yet. Be patient.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_6_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="15_6_D" class="answer nonesuch">Johnny will ask you for the depth at a later meeting. There&#39;s nothing</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_6_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="15_6_E" class="answer nonesuch">more you can do here.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>I got killed at the lighthouse. What went wrong?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Did you have your passbook with you at the time?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You did? Did you notice someone following you?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You did? Was it McGinty?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Yes? McGinty saw your passbook and got suspicious, so he followed you.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">And you know the rest of the story.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">You don&#39;t need to bring your passbook to the lighthouse.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("15_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="15_7_A" class="answer nonesuch">Did you have your passbook with you at the time?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="15_7_B" class="answer nonesuch">You did? Did you notice someone following you?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="15_7_C" class="answer nonesuch">You did? Was it McGinty?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_7_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="15_7_D" class="answer nonesuch">Yes? McGinty saw your passbook and got suspicious, so he followed you.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_7_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="15_7_E" class="answer nonesuch">And you know the rest of the story.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_7_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="15_7_F" class="answer nonesuch">You don&#39;t need to bring your passbook to the lighthouse.</span></div></div>
       </div>
   </div>
 
@@ -483,31 +975,57 @@
           <div class="question indented">
       <h3>What time should I be at Point Lookout?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you didn&#39;t go to the meeting at the lighthouse, don&#39;t bother coming</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">to this one. The deal has been called off.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Otherwise, get to Point Lookout at 10:45 a.m.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("16_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="16_1_A" class="answer nonesuch">If you didn&#39;t go to the meeting at the lighthouse, don&#39;t bother coming</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="16_1_B" class="answer nonesuch">to this one. The deal has been called off.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="16_1_C" class="answer nonesuch">Otherwise, get to Point Lookout at 10:45 a.m.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Johnny wants to see the money. What do I do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you have it, show it to him.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">If you don&#39;t have it, you&#39;re dead.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Johnny wants to know if the treasure is deeper than 200 feet. What should I</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("16_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="16_2_A" class="answer nonesuch">If you have it, show it to him.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="16_2_B" class="answer nonesuch">If you don&#39;t have it, you&#39;re dead.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="16_2_C" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="16_2_D" class="answer nonesuch">Johnny wants to know if the treasure is deeper than 200 feet. What should I</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>tell him?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It depends on what he showed you at the lighthouse.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">If he showed you the plate, then you&#39;ll be salvaging the Leviathan.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">If he showed you the coin, then you&#39;ll be salvaging the Sao Vera.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Check the map in the book of shipwrecks for the depth of the wreck</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">you&#39;ll be salvaging.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Tell Johnny whether it&#39;s deeper than 200 feet.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("16_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="16_3_A" class="answer nonesuch">It depends on what he showed you at the lighthouse.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="16_3_B" class="answer nonesuch">If he showed you the plate, then you&#39;ll be salvaging the Leviathan.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="16_3_C" class="answer nonesuch">If he showed you the coin, then you&#39;ll be salvaging the Sao Vera.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="16_3_D" class="answer nonesuch">Check the map in the book of shipwrecks for the depth of the wreck</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="16_3_E" class="answer nonesuch">you&#39;ll be salvaging.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_3_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="16_3_F" class="answer nonesuch">Tell Johnny whether it&#39;s deeper than 200 feet.</span></div></div>
       </div>
   </div>
 
@@ -515,10 +1033,18 @@
           <div class="question indented">
       <h3>Should I attend this meeting?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You weren&#39;t invited, were you?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Do you usually go to meetings uninvited?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Nothing important happens at this meeting.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Skip it. You don&#39;t need to be there.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("17_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="17_1_A" class="answer nonesuch">You weren&#39;t invited, were you?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("17_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="17_1_B" class="answer nonesuch">Do you usually go to meetings uninvited?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("17_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="17_1_C" class="answer nonesuch">Nothing important happens at this meeting.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("17_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="17_1_D" class="answer nonesuch">Skip it. You don&#39;t need to be there.</span></div></div>
       </div>
   </div>
 
@@ -526,70 +1052,150 @@
           <div class="question indented">
       <h3>I wasn&#39;t invited to a meeting at the ferry. What meeting?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The one you weren&#39;t invited to.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It takes place at the ferry landing at noon.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">It&#39;s a secret meeting, but you can go and see what transpires.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">McGinty meets the Weasel...</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">...and they make a deal.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">McGinty tells the Weasel to kill you once the Weasel has the treasure.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Then McGinty and the Weasel will have it all to themselves.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">The Weasel also hands something to McGinty.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">McGinty takes it back to his office.</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">Of course, the meeting won&#39;t take place if McGinty has no reason to be</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">suspicious (like if he never saw you and Johnny together in Outfitters</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">International).</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>N.</summary><div class="answer">After the meeting at the ferry landing, McGinty puts something suspicious on</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("18_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="18_1_A" class="answer nonesuch">The one you weren&#39;t invited to.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="18_1_B" class="answer nonesuch">It takes place at the ferry landing at noon.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="18_1_C" class="answer nonesuch">It&#39;s a secret meeting, but you can go and see what transpires.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="18_1_D" class="answer nonesuch">McGinty meets the Weasel...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="18_1_E" class="answer nonesuch">...and they make a deal.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="18_1_F" class="answer nonesuch">McGinty tells the Weasel to kill you once the Weasel has the treasure.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_1_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="18_1_G" class="answer nonesuch">Then McGinty and the Weasel will have it all to themselves.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_1_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="18_1_H" class="answer nonesuch">The Weasel also hands something to McGinty.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_1_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="18_1_I" class="answer nonesuch">McGinty takes it back to his office.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_1_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="18_1_J" class="answer nonesuch">Of course, the meeting won&#39;t take place if McGinty has no reason to be</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_1_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="18_1_K" class="answer nonesuch">suspicious (like if he never saw you and Johnny together in Outfitters</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_1_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="18_1_L" class="answer nonesuch">International).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_1_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="18_1_M" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_1_N");' role="link">
+<div class="answer-label">N.</div><div class="answer-cell"><span id="18_1_N" class="answer nonesuch">After the meeting at the ferry landing, McGinty puts something suspicious on</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>his desk. What can I do with it?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you examined the object?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It is an envelope containing the Weasel&#39;s collateral for the deal made</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">at the ferry landing.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Have you tried taking it?</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">It seems to be quite important to McGinty, doesn&#39;t it?</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">It would be perfect proof that the Weasel is a traitor.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("18_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="18_2_A" class="answer nonesuch">Have you examined the object?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="18_2_B" class="answer nonesuch">It is an envelope containing the Weasel&#39;s collateral for the deal made</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="18_2_C" class="answer nonesuch">at the ferry landing.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="18_2_D" class="answer nonesuch">Have you tried taking it?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="18_2_E" class="answer nonesuch">It seems to be quite important to McGinty, doesn&#39;t it?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="18_2_F" class="answer nonesuch">It would be perfect proof that the Weasel is a traitor.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I prove my suspicions about the traitor?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you don&#39;t know about the envelope, see the previous question.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You&#39;ll have to get the envelope in McGinty&#39;s office.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">But you won&#39;t be able to take it while McGinty is in his office.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">After McGinty gets back from his meeting at the ferry landing, he drops</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">off the envelope and leaves again.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Go into McGinty Salvage once he leaves.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">The front door is locked? You&#39;ll have to find another way.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">McGinty&#39;s also has a back door...</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">...and a rear window.</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">Open the window, climb through it, and take the envelope.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("18_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="18_3_A" class="answer nonesuch">If you don&#39;t know about the envelope, see the previous question.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="18_3_B" class="answer nonesuch">You&#39;ll have to get the envelope in McGinty&#39;s office.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="18_3_C" class="answer nonesuch">But you won&#39;t be able to take it while McGinty is in his office.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="18_3_D" class="answer nonesuch">After McGinty gets back from his meeting at the ferry landing, he drops</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="18_3_E" class="answer nonesuch">off the envelope and leaves again.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_3_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="18_3_F" class="answer nonesuch">Go into McGinty Salvage once he leaves.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_3_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="18_3_G" class="answer nonesuch">The front door is locked? You&#39;ll have to find another way.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_3_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="18_3_H" class="answer nonesuch">McGinty&#39;s also has a back door...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_3_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="18_3_I" class="answer nonesuch">...and a rear window.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_3_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="18_3_J" class="answer nonesuch">Open the window, climb through it, and take the envelope.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Okay, I have my proof. Now what?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You should show it to someone.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">How about Johnny? He&#39;s the captain.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">But you&#39;ll have to wait for the right moment.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Don&#39;t show it to Johnny until you&#39;ve put out to sea. You&#39;ll need every</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">crew member to make the voyage.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("18_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="18_4_A" class="answer nonesuch">You should show it to someone.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="18_4_B" class="answer nonesuch">How about Johnny? He&#39;s the captain.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="18_4_C" class="answer nonesuch">But you&#39;ll have to wait for the right moment.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="18_4_D" class="answer nonesuch">Don&#39;t show it to Johnny until you&#39;ve put out to sea. You&#39;ll need every</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="18_4_E" class="answer nonesuch">crew member to make the voyage.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Who took my proof?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The only person who has reason to.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The Weasel took the envelope.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You&#39;ll have to hide the envelope.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">There&#39;s only one safe hiding place on the boat.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Hide the envelope under your mattress.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("18_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="18_5_A" class="answer nonesuch">The only person who has reason to.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="18_5_B" class="answer nonesuch">The Weasel took the envelope.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="18_5_C" class="answer nonesuch">You&#39;ll have to hide the envelope.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="18_5_D" class="answer nonesuch">There&#39;s only one safe hiding place on the boat.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("18_5_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="18_5_E" class="answer nonesuch">Hide the envelope under your mattress.</span></div></div>
       </div>
   </div>
 
@@ -598,23 +1204,45 @@
           <div class="question indented">
       <h3>What can I do with the small machine?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you examined it?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Open the compartment. Did you buy the dry cell at Outfitters?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">If not, you&#39;d better buy one before you leave.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Once the dry cell is in the compartment, try turning the machine on and</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">walking around the boat.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">The machine clicks faster around metal, doesn&#39;t it?</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Therefore, the machine is a metal detector.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("20_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="20_1_A" class="answer nonesuch">Have you examined it?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("20_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="20_1_B" class="answer nonesuch">Open the compartment. Did you buy the dry cell at Outfitters?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("20_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="20_1_C" class="answer nonesuch">If not, you&#39;d better buy one before you leave.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("20_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="20_1_D" class="answer nonesuch">Once the dry cell is in the compartment, try turning the machine on and</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("20_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="20_1_E" class="answer nonesuch">walking around the boat.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("20_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="20_1_F" class="answer nonesuch">The machine clicks faster around metal, doesn&#39;t it?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("20_1_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="20_1_G" class="answer nonesuch">Therefore, the machine is a metal detector.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I use my deep-sea diving suit?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Go to the aft deck.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Put on the suit.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Connect the airhose to the suit.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Turn the compressor on.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("20_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="20_2_A" class="answer nonesuch">Go to the aft deck.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("20_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="20_2_B" class="answer nonesuch">Put on the suit.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("20_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="20_2_C" class="answer nonesuch">Connect the airhose to the suit.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("20_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="20_2_D" class="answer nonesuch">Turn the compressor on.</span></div></div>
       </div>
   </div>
 
@@ -622,31 +1250,57 @@
           <div class="question indented">
       <h3>How do I use the drill?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Did you buy the C battery at Outfitters?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">If not, you&#39;d better buy it before you set out to sea.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Put the C battery in the panel, and close it.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">To drill something, type TURN ON THE DRILL. DRILL (OBJECT).</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">But use it sparingly; the C battery wears down quickly.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("21_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="21_1_A" class="answer nonesuch">Did you buy the C battery at Outfitters?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("21_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="21_1_B" class="answer nonesuch">If not, you&#39;d better buy it before you set out to sea.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("21_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="21_1_C" class="answer nonesuch">Put the C battery in the panel, and close it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("21_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="21_1_D" class="answer nonesuch">To drill something, type TURN ON THE DRILL. DRILL (OBJECT).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("21_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="21_1_E" class="answer nonesuch">But use it sparingly; the C battery wears down quickly.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What diving equipment should I bring on board the Night Wind?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Since the Night Wind has no compressor, you&#39;d better supply your own.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You can rent a portable model at Outfitters.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You&#39;ll also need your SCUBA gear: the mask, tank, flippers, and wet</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">suit.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("21_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="21_2_A" class="answer nonesuch">Since the Night Wind has no compressor, you&#39;d better supply your own.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("21_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="21_2_B" class="answer nonesuch">You can rent a portable model at Outfitters.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("21_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="21_2_C" class="answer nonesuch">You&#39;ll also need your SCUBA gear: the mask, tank, flippers, and wet</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("21_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="21_2_D" class="answer nonesuch">suit.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I prepare for my dive?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Air in your tank would be nice.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Use the air compressor to fill your tank.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Put on your wet suit and your other SCUBA gear.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Then dive.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("21_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="21_3_A" class="answer nonesuch">Air in your tank would be nice.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("21_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="21_3_B" class="answer nonesuch">Use the air compressor to fill your tank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("21_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="21_3_C" class="answer nonesuch">Put on your wet suit and your other SCUBA gear.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("21_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="21_3_D" class="answer nonesuch">Then dive.</span></div></div>
       </div>
   </div>
 
@@ -654,17 +1308,27 @@
           <div class="question indented">
       <h3>I&#39;m ready to make the dive. How do I get into the water?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Type DIVE.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("22_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="22_1_A" class="answer nonesuch">Type DIVE.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Yow! Sharks are around me. What should I do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Did you buy the shark repellent at Outfitters?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">If so, now is the time to use it.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">To activate the repellent, open the canister.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">But only open it underwater. The fumes are deadly.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("22_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="22_2_A" class="answer nonesuch">Did you buy the shark repellent at Outfitters?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("22_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="22_2_B" class="answer nonesuch">If so, now is the time to use it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("22_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="22_2_C" class="answer nonesuch">To activate the repellent, open the canister.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("22_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="22_2_D" class="answer nonesuch">But only open it underwater. The fumes are deadly.</span></div></div>
       </div>
   </div>
 
@@ -673,23 +1337,45 @@
           <div class="question indented">
       <h3>I&#39;m having trouble finding The Fianna. How do I get there?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you checked your book of shipwrecks?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It says that The Fianna might have drifted slightly.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have you tried slightly shifting the coordinates when you give them to</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Johnny?</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">You won&#39;t find The Fianna because it washed away.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("24_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="24_1_A" class="answer nonesuch">Have you checked your book of shipwrecks?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("24_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="24_1_B" class="answer nonesuch">It says that The Fianna might have drifted slightly.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("24_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="24_1_C" class="answer nonesuch">Have you tried slightly shifting the coordinates when you give them to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("24_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="24_1_D" class="answer nonesuch">Johnny?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("24_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="24_1_E" class="answer nonesuch">You won&#39;t find The Fianna because it washed away.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>I found the golden statuette, but I can&#39;t carry it. What now?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You could leave it behind.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But the others wouldn&#39;t like that and would probably kill you.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Drop your air tank.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Take the statue and swim for the surface.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">If you don&#39;t make it, that&#39;s okay. There is no golden statuette.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Stick to developing answers you really need.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("24_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="24_2_A" class="answer nonesuch">You could leave it behind.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("24_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="24_2_B" class="answer nonesuch">But the others wouldn&#39;t like that and would probably kill you.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("24_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="24_2_C" class="answer nonesuch">Drop your air tank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("24_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="24_2_D" class="answer nonesuch">Take the statue and swim for the surface.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("24_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="24_2_E" class="answer nonesuch">If you don&#39;t make it, that&#39;s okay. There is no golden statuette.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("24_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="24_2_F" class="answer nonesuch">Stick to developing answers you really need.</span></div></div>
       </div>
   </div>
 
@@ -697,72 +1383,144 @@
           <div class="question indented">
       <h3>What should I do with the mine?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Did you try to move the mine out of the way?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Maybe that isn&#39;t such a good idea after all.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Perhaps one of the things you brought along will be of help.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Try the electromagnet.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Type PUT THE ELECTROMAGNET AGAINST THE MINE.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Then turn on the electromagnet and drop it.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("25_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="25_1_A" class="answer nonesuch">Did you try to move the mine out of the way?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="25_1_B" class="answer nonesuch">Maybe that isn&#39;t such a good idea after all.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="25_1_C" class="answer nonesuch">Perhaps one of the things you brought along will be of help.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="25_1_D" class="answer nonesuch">Try the electromagnet.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="25_1_E" class="answer nonesuch">Type PUT THE ELECTROMAGNET AGAINST THE MINE.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="25_1_F" class="answer nonesuch">Then turn on the electromagnet and drop it.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>I can&#39;t get through the narrow passageway. What should I do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Turn back?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">If you are wearing the deep sea diving suit, the airhose will tear.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You should be wearing your skin-diving suit and gear.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Take off your air tank and swim through the narrow passage.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("25_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="25_2_A" class="answer nonesuch">Turn back?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="25_2_B" class="answer nonesuch">If you are wearing the deep sea diving suit, the airhose will tear.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="25_2_C" class="answer nonesuch">You should be wearing your skin-diving suit and gear.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="25_2_D" class="answer nonesuch">Take off your air tank and swim through the narrow passage.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What do I do with the lobster?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Take it.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Board the ship and have Pete the Rat boil some water.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Make sure that you tie its claws before you boil it.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Hold on! What lobster? There isn&#39;t a lobster in this story!</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">You must be having a culinary hallucination.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("25_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="25_3_A" class="answer nonesuch">Take it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="25_3_B" class="answer nonesuch">Board the ship and have Pete the Rat boil some water.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="25_3_C" class="answer nonesuch">Make sure that you tie its claws before you boil it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="25_3_D" class="answer nonesuch">Hold on! What lobster? There isn&#39;t a lobster in this story!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="25_3_E" class="answer nonesuch">You must be having a culinary hallucination.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I open the safe?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">What would a safe cracker use?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Yeah, but Outfitters doesn&#39;t sell dynamite.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">How about a drill?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Drill the safe with the drill...</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">...but only if you bought the C battery for the drill.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("25_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="25_4_A" class="answer nonesuch">What would a safe cracker use?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="25_4_B" class="answer nonesuch">Yeah, but Outfitters doesn&#39;t sell dynamite.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="25_4_C" class="answer nonesuch">How about a drill?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="25_4_D" class="answer nonesuch">Drill the safe with the drill...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="25_4_E" class="answer nonesuch">...but only if you bought the C battery for the drill.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Oh no! The case is filling with water. What now?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You have a little time before the water reaches the stamps and ruins</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">them.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Take the stamps to a dry place so you can seal the crack.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Take the case to the air-filled room.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">If you opened the door in the air-filled room, consider the stamps</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">ruined. You can&#39;t drain the case unless the room is filled with air.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Drain the water out of the case...</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">...by drilling a hole in it.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">Seal the crack with the putty you bought at Outfitters.</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">You didn&#39;t buy the putty? Type RESTART...</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">...you&#39;ll need the putty to seal the case.</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">Now you can carry the case safely to the surface.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("25_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="25_5_A" class="answer nonesuch">You have a little time before the water reaches the stamps and ruins</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="25_5_B" class="answer nonesuch">them.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="25_5_C" class="answer nonesuch">Take the stamps to a dry place so you can seal the crack.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="25_5_D" class="answer nonesuch">Take the case to the air-filled room.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_5_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="25_5_E" class="answer nonesuch">If you opened the door in the air-filled room, consider the stamps</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_5_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="25_5_F" class="answer nonesuch">ruined. You can&#39;t drain the case unless the room is filled with air.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_5_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="25_5_G" class="answer nonesuch">Drain the water out of the case...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_5_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="25_5_H" class="answer nonesuch">...by drilling a hole in it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_5_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="25_5_I" class="answer nonesuch">Seal the crack with the putty you bought at Outfitters.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_5_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="25_5_J" class="answer nonesuch">You didn&#39;t buy the putty? Type RESTART...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_5_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="25_5_K" class="answer nonesuch">...you&#39;ll need the putty to seal the case.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_5_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="25_5_L" class="answer nonesuch">Now you can carry the case safely to the surface.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why does the drill sputter and die?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Cheap battery?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It&#39;s only a C battery; it can&#39;t last forever.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Use the drill sparingly.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Don&#39;t keep it on any longer than necessary.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("25_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="25_6_A" class="answer nonesuch">Cheap battery?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="25_6_B" class="answer nonesuch">It&#39;s only a C battery; it can&#39;t last forever.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="25_6_C" class="answer nonesuch">Use the drill sparingly.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("25_6_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="25_6_D" class="answer nonesuch">Don&#39;t keep it on any longer than necessary.</span></div></div>
       </div>
   </div>
 
@@ -770,24 +1528,48 @@
           <div class="question indented">
       <h3>How do I get below deck?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Use the elevator?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You can&#39;t get below deck.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You can do all you have to do here on the top deck.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">You don&#39;t do anything here.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">There is no treasure here.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">You went to the wrong wreck.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("26_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="26_1_A" class="answer nonesuch">Use the elevator?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("26_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="26_1_B" class="answer nonesuch">You can&#39;t get below deck.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("26_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="26_1_C" class="answer nonesuch">You can do all you have to do here on the top deck.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("26_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="26_1_D" class="answer nonesuch">You don&#39;t do anything here.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("26_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="26_1_E" class="answer nonesuch">There is no treasure here.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("26_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="26_1_F" class="answer nonesuch">You went to the wrong wreck.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What can I do with the air tank I found here?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You could try breathing from it...</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">...but it&#39;s filled with laughing gas.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Ha ha ha ha ha ha ha ha ha ha ha ha...</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">...ha ha ha ha ha ha ha ha ha ha ha ha.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Laughing gas? ha ha ha There&#39;s no air tank here! ha ha ha</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">The laugh&#39;s on you.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("26_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="26_2_A" class="answer nonesuch">You could try breathing from it...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("26_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="26_2_B" class="answer nonesuch">...but it&#39;s filled with laughing gas.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("26_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="26_2_C" class="answer nonesuch">Ha ha ha ha ha ha ha ha ha ha ha ha...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("26_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="26_2_D" class="answer nonesuch">...ha ha ha ha ha ha ha ha ha ha ha ha.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("26_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="26_2_E" class="answer nonesuch">Laughing gas? ha ha ha There&#39;s no air tank here! ha ha ha</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("26_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="26_2_F" class="answer nonesuch">The laugh&#39;s on you.</span></div></div>
       </div>
   </div>
 
@@ -801,47 +1583,93 @@
           <div class="question indented">
       <h3>When is high tide?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Look it up on your tide chart.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You don&#39;t know today&#39;s date?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">There&#39;s only one way to find out.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The date is printed on something you have.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Look at your passbook after you have gone to the bank.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("28_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="28_1_A" class="answer nonesuch">Look it up on your tide chart.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="28_1_B" class="answer nonesuch">You don&#39;t know today&#39;s date?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="28_1_C" class="answer nonesuch">There&#39;s only one way to find out.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="28_1_D" class="answer nonesuch">The date is printed on something you have.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="28_1_E" class="answer nonesuch">Look at your passbook after you have gone to the bank.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>I found a bug! The clock on the status line stopped. Should I call Infocom?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">No. Don&#39;t call Infocom. It&#39;s not a bug.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The clock is actually your watch.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Perhaps you should examine it.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Maybe even listen to it.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">It&#39;s a wind-up watch.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">So it must be wound.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("28_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="28_2_A" class="answer nonesuch">No. Don&#39;t call Infocom. It&#39;s not a bug.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="28_2_B" class="answer nonesuch">The clock is actually your watch.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="28_2_C" class="answer nonesuch">Perhaps you should examine it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="28_2_D" class="answer nonesuch">Maybe even listen to it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="28_2_E" class="answer nonesuch">It&#39;s a wind-up watch.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="28_2_F" class="answer nonesuch">So it must be wound.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Someone is following me everywhere I go. What should I do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">There&#39;s nothing you can do now. It&#39;s too late.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Remember McGinty&#39;s double take?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">He saw you with the passbook.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Now he knows you&#39;re up to something and will stop you from renting a</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">boat.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("28_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="28_3_A" class="answer nonesuch">There&#39;s nothing you can do now. It&#39;s too late.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="28_3_B" class="answer nonesuch">Remember McGinty&#39;s double take?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="28_3_C" class="answer nonesuch">He saw you with the passbook.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="28_3_D" class="answer nonesuch">Now he knows you&#39;re up to something and will stop you from renting a</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="28_3_E" class="answer nonesuch">boat.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How many wrecks are there in this story?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Well, the book of shipwrecks says there are four.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But that book was written a long time ago.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Since then one of the wrecks was washed away.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">That wreck was The Fianna.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">You can go to the other three...</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">...but you won&#39;t find any treasure in the Intransigent.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">The only wrecks with treasure are the Leviathan and the Sao Vera.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("28_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="28_4_A" class="answer nonesuch">Well, the book of shipwrecks says there are four.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="28_4_B" class="answer nonesuch">But that book was written a long time ago.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="28_4_C" class="answer nonesuch">Since then one of the wrecks was washed away.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="28_4_D" class="answer nonesuch">That wreck was The Fianna.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="28_4_E" class="answer nonesuch">You can go to the other three...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_4_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="28_4_F" class="answer nonesuch">...but you won&#39;t find any treasure in the Intransigent.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("28_4_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="28_4_G" class="answer nonesuch">The only wrecks with treasure are the Leviathan and the Sao Vera.</span></div></div>
       </div>
   </div>
 

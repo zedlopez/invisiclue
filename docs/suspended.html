@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><title>Suspended Invisiclues</title>
 <link rel="stylesheet" href="style.css">
+<script>
+function toggle(id) {
+var span = document.getElementById(id);
+console.log("toggling " + span);
+span.classList.toggle('nonesuch');
+console.log(span.classList);
+}
+</script>
 </head>
 <body>
 <header>
@@ -12,9 +20,15 @@
     <div class="question indented">
       <h3>Will I ever get the floors around my CLC really clean and shiny?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Yes! And it&#39;s as easy as A-B-C!</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Waldo must be wearing the waxing and buffing extension.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">He will have to use Neato brand floor wax.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("0_0_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="0_0_A" class="answer nonesuch">Yes! And it&#39;s as easy as A-B-C!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("0_0_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="0_0_B" class="answer nonesuch">Waldo must be wearing the waxing and buffing extension.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("0_0_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="0_0_C" class="answer nonesuch">He will have to use Neato brand floor wax.</span></div></div>
       </div>
   </div>
 
@@ -42,93 +56,171 @@
           <div class="question indented">
       <h3>What&#39;s in the cylinder in the Central Chamber?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Try having a robot open it.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Now you know.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_1_A" class="answer nonesuch">Try having a robot open it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_1_B" class="answer nonesuch">Now you know.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What can I do with the Library Core?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can always take books out if you&#39;ve got your access card.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Try having Whiz ask about Floyd.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Actually, there&#39;s nothing you can do with it. It&#39;s there to feed</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">information to the four peripherals accessible to Whiz.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_2_A" class="answer nonesuch">You can always take books out if you&#39;ve got your access card.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_2_B" class="answer nonesuch">Try having Whiz ask about Floyd.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_2_C" class="answer nonesuch">Actually, there&#39;s nothing you can do with it. It&#39;s there to feed</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_2_D" class="answer nonesuch">information to the four peripherals accessible to Whiz.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get any of the robots to go north from the Hallway Junction?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Just tell them to go north once they&#39;re there.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">There&#39;s a step in the way. They can&#39;t climb the step.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Find something so they can glide up and down the step.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Have one of the robots carry the wedge from the middle supply room to</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">the Hallway Junction. Then have the robot place the wedge against the</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">step.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_3_A" class="answer nonesuch">Just tell them to go north once they&#39;re there.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_3_B" class="answer nonesuch">There&#39;s a step in the way. They can&#39;t climb the step.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_3_C" class="answer nonesuch">Find something so they can glide up and down the step.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_3_D" class="answer nonesuch">Have one of the robots carry the wedge from the middle supply room to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="1_3_E" class="answer nonesuch">the Hallway Junction. Then have the robot place the wedge against the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_3_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="1_3_F" class="answer nonesuch">step.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get the robots to the Biological Area?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">First, send them to the Hallway End and look around.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">What the robot is seeing is actually a car.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have the robot get in the car (or whatever the robot calls it). The</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">rest is automatic.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_4_A" class="answer nonesuch">First, send them to the Hallway End and look around.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_4_B" class="answer nonesuch">What the robot is seeing is actually a car.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_4_C" class="answer nonesuch">Have the robot get in the car (or whatever the robot calls it). The</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_4_D" class="answer nonesuch">rest is automatic.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why do robots keep dying when I send them into the FC Area?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have Sensa report in the Short Corridor. She&#39;ll give you some data.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have Poet and Waldo enter the Cavernous Room. What they have to say may</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">be of some help.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Acid is being sprayed up through the floor, is floating through the</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">air, and is settling on their thin metal skins.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_5_A" class="answer nonesuch">Have Sensa report in the Short Corridor. She&#39;ll give you some data.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_5_B" class="answer nonesuch">Have Poet and Waldo enter the Cavernous Room. What they have to say may</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_5_C" class="answer nonesuch">be of some help.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_5_D" class="answer nonesuch">Acid is being sprayed up through the floor, is floating through the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_5_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="1_5_E" class="answer nonesuch">air, and is settling on their thin metal skins.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get Poet to take the Transit System?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Like all robots, he needs a token.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have him buy a pass from the conductor.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Be serious!</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_6_A" class="answer nonesuch">Like all robots, he needs a token.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_6_B" class="answer nonesuch">Have him buy a pass from the conductor.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_6_C" class="answer nonesuch">Be serious!</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I stop the robots from dying in the FC area?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Stop sending them in there.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Repair Fred so he, with his acid shielding, can go in that area.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">But Fred cannot ever be repaired.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Stop the acid mist.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_7_A" class="answer nonesuch">Stop sending them in there.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_7_B" class="answer nonesuch">Repair Fred so he, with his acid shielding, can go in that area.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_7_C" class="answer nonesuch">But Fred cannot ever be repaired.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_7_D" class="answer nonesuch">Stop the acid mist.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I stop the acid mist?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Well, you could always try umbrellas...</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Unfortunately, there are no umbrellas in the game.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Use the game board to determine what&#39;s immediately under the Cavernous</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Room.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Try turning the wheel in the Maintenance Area below the FCs.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Can&#39;t reach the wheel? Try standing on the wedge.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Still can&#39;t reach the wheel? Try getting the people to help.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_8_A" class="answer nonesuch">Well, you could always try umbrellas...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_8_B" class="answer nonesuch">Unfortunately, there are no umbrellas in the game.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_8_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_8_C" class="answer nonesuch">Use the game board to determine what&#39;s immediately under the Cavernous</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_8_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_8_D" class="answer nonesuch">Room.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_8_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="1_8_E" class="answer nonesuch">Try turning the wheel in the Maintenance Area below the FCs.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_8_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="1_8_F" class="answer nonesuch">Can&#39;t reach the wheel? Try standing on the wedge.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_8_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="1_8_G" class="answer nonesuch">Still can&#39;t reach the wheel? Try getting the people to help.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get the cutters from the top shelf?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Try having a robot stand on something.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Place the wedge under the shelf.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Stand on the wedge.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">You&#39;ve got them now.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_9_A" class="answer nonesuch">Try having a robot stand on something.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_9_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_9_B" class="answer nonesuch">Place the wedge under the shelf.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_9_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_9_C" class="answer nonesuch">Stand on the wedge.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_9_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_9_D" class="answer nonesuch">You&#39;ve got them now.</span></div></div>
       </div>
   </div>
 
@@ -137,48 +229,84 @@
           <div class="question indented">
       <h3>What good is Iris when she can&#39;t see?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Iris is broken and needs to be fixed.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have Waldo open the panel.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Replace the faulty chip.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_1_A" class="answer nonesuch">Iris is broken and needs to be fixed.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_1_B" class="answer nonesuch">Have Waldo open the panel.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_1_C" class="answer nonesuch">Replace the faulty chip.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What part of Iris is malfunctioning?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you had all the robots examine each chip in the panel?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you had Sensa or Poet examine the chips one by one?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The bad chip is the &quot;rough device&quot; as Waldo calls it.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_2_A" class="answer nonesuch">Have you had all the robots examine each chip in the panel?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_2_B" class="answer nonesuch">Have you had Sensa or Poet examine the chips one by one?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_2_C" class="answer nonesuch">The bad chip is the &quot;rough device&quot; as Waldo calls it.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What good is Iris once she can see?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you sent her to the three monitoring locations?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">She can tell you the state of affairs on the surface of the planet by</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">looking at the monitors.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">She can enter the reset access codes once the FCs are back in balance.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_3_A" class="answer nonesuch">Have you sent her to the three monitoring locations?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_3_B" class="answer nonesuch">She can tell you the state of affairs on the surface of the planet by</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_3_C" class="answer nonesuch">looking at the monitors.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_3_D" class="answer nonesuch">She can enter the reset access codes once the FCs are back in balance.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I open up Iris?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you tried having each robot open her?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you asked Whiz to query the CLC about Waldo?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Waldo can open Iris once the grasping extension has been attached.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_4_A" class="answer nonesuch">Have you tried having each robot open her?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_4_B" class="answer nonesuch">Have you asked Whiz to query the CLC about Waldo?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_4_C" class="answer nonesuch">Waldo can open Iris once the grasping extension has been attached.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get Iris to the Robot Repair Area?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you tried dragging her there?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you tried sending her there?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have you tried having her follow another robot there?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">What makes you think you have to do this at all?</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">You can&#39;t. Iris cannot leave the Monitor Area.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_5_A" class="answer nonesuch">Have you tried dragging her there?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_5_B" class="answer nonesuch">Have you tried sending her there?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_5_C" class="answer nonesuch">Have you tried having her follow another robot there?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_5_D" class="answer nonesuch">What makes you think you have to do this at all?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="3_5_E" class="answer nonesuch">You can&#39;t. Iris cannot leave the Monitor Area.</span></div></div>
       </div>
   </div>
 
@@ -186,19 +314,33 @@
           <div class="question indented">
       <h3>How can I get Waldo to fix Iris?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you found the extention [sic] he needs for delicate work?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you looked in the Middle Supply Room for an extension?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have you told Waldo to attach or wear the extension?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_1_A" class="answer nonesuch">Have you found the extention [sic] he needs for delicate work?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_1_B" class="answer nonesuch">Have you looked in the Middle Supply Room for an extension?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_1_C" class="answer nonesuch">Have you told Waldo to attach or wear the extension?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I get Waldo to tell me what&#39;s on the monitors?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you asked him to look at the monitors?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you had him wear his glasses?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">What makes you think Waldo can see at all?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">This is a job for Iris!</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_2_A" class="answer nonesuch">Have you asked him to look at the monitors?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_2_B" class="answer nonesuch">Have you had him wear his glasses?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_2_C" class="answer nonesuch">What makes you think Waldo can see at all?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_2_D" class="answer nonesuch">This is a job for Iris!</span></div></div>
       </div>
   </div>
 
@@ -206,48 +348,84 @@
           <div class="question indented">
       <h3>How do I get Whiz to answer my questions?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you typed in HELP?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you directed Whiz to any of the peripherals?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have you typed WHIZ, PLUG IN?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Have you typed WHIZ, ASK ABOUT (or QUERY ABOUT) something?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_1_A" class="answer nonesuch">Have you typed in HELP?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_1_B" class="answer nonesuch">Have you directed Whiz to any of the peripherals?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_1_C" class="answer nonesuch">Have you typed WHIZ, PLUG IN?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_1_D" class="answer nonesuch">Have you typed WHIZ, ASK ABOUT (or QUERY ABOUT) something?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why does Whiz call everything by a number?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Whiz isn&#39;t very smart by himself. The numbers are supplied by the</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Central Library Core.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The numbers always give a hint as to what the object really is.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The number and letter sequence usually represents the real name for</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">that object.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_2_A" class="answer nonesuch">Whiz isn&#39;t very smart by himself. The numbers are supplied by the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_2_B" class="answer nonesuch">Central Library Core.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_2_C" class="answer nonesuch">The numbers always give a hint as to what the object really is.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_2_D" class="answer nonesuch">The number and letter sequence usually represents the real name for</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_2_E" class="answer nonesuch">that object.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get Whiz to plug himself into Sensa?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Shame on you.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_3_A" class="answer nonesuch">Shame on you.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What good is Whiz?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Whiz can supply you with hints once he&#39;s plugged into the Advisory</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Pedestal.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Whiz can supply background material from the other pedestals when it&#39;s</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">available.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Once you know all about what Whiz has to tell you, you might be able to</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">figure out another way to use him.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_4_A" class="answer nonesuch">Whiz can supply you with hints once he&#39;s plugged into the Advisory</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_4_B" class="answer nonesuch">Pedestal.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_4_C" class="answer nonesuch">Whiz can supply background material from the other pedestals when it&#39;s</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_4_D" class="answer nonesuch">available.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_4_E" class="answer nonesuch">Once you know all about what Whiz has to tell you, you might be able to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_4_F" class="answer nonesuch">figure out another way to use him.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Does Whiz have a personality problem interacting with the other robots?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">No.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">For the most part, he has no personality.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_5_A" class="answer nonesuch">No.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_5_B" class="answer nonesuch">For the most part, he has no personality.</span></div></div>
       </div>
   </div>
 
@@ -255,19 +433,33 @@
           <div class="question indented">
       <h3>What was Sensa designed to do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Sensa can detect all kinds of vibrations.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Sensa issues the tremor warnings.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Sensa can detect all kinds of radiation emissions.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Sensa can also detect electrical flow.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_1_A" class="answer nonesuch">Sensa can detect all kinds of vibrations.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_1_B" class="answer nonesuch">Sensa issues the tremor warnings.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_1_C" class="answer nonesuch">Sensa can detect all kinds of radiation emissions.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_1_D" class="answer nonesuch">Sensa can also detect electrical flow.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get Sensa to work?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have Sensa examine an object. She will tell you anything she may detect</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">about it.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have you tried having her report?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_2_A" class="answer nonesuch">Have Sensa examine an object. She will tell you anything she may detect</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_2_B" class="answer nonesuch">about it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_2_C" class="answer nonesuch">Have you tried having her report?</span></div></div>
       </div>
   </div>
 
@@ -275,30 +467,54 @@
           <div class="question indented">
       <h3>Poet talks gibberish, no?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Yes, he does.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">No, he doesn&#39;t.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Poet is unable to process information normally, and so he does the best</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">he can.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Try having Poet and several other robots describe the same thing.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">You&#39;ll catch on.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_1_A" class="answer nonesuch">Yes, he does.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_1_B" class="answer nonesuch">No, he doesn&#39;t.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_1_C" class="answer nonesuch">Poet is unable to process information normally, and so he does the best</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_1_D" class="answer nonesuch">he can.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="7_1_E" class="answer nonesuch">Try having Poet and several other robots describe the same thing.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="7_1_F" class="answer nonesuch">You&#39;ll catch on.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I fix Poet?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Drag Poet to the Multiplexing Staging Center.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Place Poet in the Centrifugal Disassembler.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">What makes you think there&#39;s anything wrong with him?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_2_A" class="answer nonesuch">Drag Poet to the Multiplexing Staging Center.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_2_B" class="answer nonesuch">Place Poet in the Centrifugal Disassembler.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_2_C" class="answer nonesuch">What makes you think there&#39;s anything wrong with him?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is Poet&#39;s function?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Poet&#39;s a specialized robot, capable of diagnosing problems.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you asked Poet to report?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have him touch some objects.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_3_A" class="answer nonesuch">Poet&#39;s a specialized robot, capable of diagnosing problems.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_3_B" class="answer nonesuch">Have you asked Poet to report?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_3_C" class="answer nonesuch">Have him touch some objects.</span></div></div>
       </div>
   </div>
 
@@ -306,29 +522,51 @@
           <div class="question indented">
       <h3>How do I get Auda to talk?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">First, find the vox chip.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Plug the vox chip into Auda&#39;s mouth hole.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You can&#39;t get Auda to talk. She&#39;s all ears.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_1_A" class="answer nonesuch">First, find the vox chip.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_1_B" class="answer nonesuch">Plug the vox chip into Auda&#39;s mouth hole.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_1_C" class="answer nonesuch">You can&#39;t get Auda to talk. She&#39;s all ears.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get Auda out of the upper section of the Complex?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Tell Auda to go to any room you like.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have Auda climb the step.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You need something to go by the step so she can roll over it.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_2_A" class="answer nonesuch">Tell Auda to go to any room you like.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_2_B" class="answer nonesuch">Have Auda climb the step.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_2_C" class="answer nonesuch">You need something to go by the step so she can roll over it.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get Auda to listen to what&#39;s going on?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you tried AUDA, LISTEN?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you tried AUDA, LISTEN?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Try typing in AUDA, LISTEN and then wait for awhile. When Auda</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">interrupts to tell you something is going on, have her follow the</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">talking creatures.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_3_A" class="answer nonesuch">Have you tried AUDA, LISTEN?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_3_B" class="answer nonesuch">Have you tried AUDA, LISTEN?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_3_C" class="answer nonesuch">Try typing in AUDA, LISTEN and then wait for awhile. When Auda</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_3_D" class="answer nonesuch">interrupts to tell you something is going on, have her follow the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="8_3_E" class="answer nonesuch">talking creatures.</span></div></div>
       </div>
   </div>
 
@@ -336,39 +574,69 @@
           <div class="question indented">
       <h3>Where do I find Fred?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you looked in the cabinet in Gamma Repair?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">He&#39;s in the cabinet in Gamma Repair. You must somehow move him.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have two robots move Fred.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">You do this by typing BOTH (robot) AND (robot), MOVE FRED.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_1_A" class="answer nonesuch">Have you looked in the cabinet in Gamma Repair?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_1_B" class="answer nonesuch">He&#39;s in the cabinet in Gamma Repair. You must somehow move him.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_1_C" class="answer nonesuch">Have two robots move Fred.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_1_D" class="answer nonesuch">You do this by typing BOTH (robot) AND (robot), MOVE FRED.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get the FCs to talk to Fred?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Fred is dead.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Forget him.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Fred can never be repaired.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_2_A" class="answer nonesuch">Fred is dead.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_2_B" class="answer nonesuch">Forget him.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_2_C" class="answer nonesuch">Fred can never be repaired.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I repair Fred?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You send out for a repairperson.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You send him out for repairs.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Forget it. You can&#39;t fix him at all.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_3_A" class="answer nonesuch">You send out for a repairperson.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_3_B" class="answer nonesuch">You send him out for repairs.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_3_C" class="answer nonesuch">Forget it. You can&#39;t fix him at all.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Does Fred perform any useful function?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">He was once a great dancer.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">There&#39;s something in him that is indeed useful.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Try to take the red wire in him. Since he no longer works, he won&#39;t</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">miss it.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">You&#39;ll need to have a robot use the cutting tool.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_4_A" class="answer nonesuch">He was once a great dancer.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_4_B" class="answer nonesuch">There&#39;s something in him that is indeed useful.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_4_C" class="answer nonesuch">Try to take the red wire in him. Since he no longer works, he won&#39;t</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_4_D" class="answer nonesuch">miss it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="9_4_E" class="answer nonesuch">You&#39;ll need to have a robot use the cutting tool.</span></div></div>
       </div>
   </div>
 
@@ -383,41 +651,75 @@
           <div class="question indented">
       <h3>Why does the weather keep getting worse?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Everyone on the surface was either washing their cars, heading for the</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">beach, or planning a picnic.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The FCs are doing the best they can, but they&#39;re malfunctioning.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The FCs are constantly adjusting the pressure in one of the towers, and</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">doing a lousy job.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("12_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="12_1_A" class="answer nonesuch">Everyone on the surface was either washing their cars, heading for the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="12_1_B" class="answer nonesuch">beach, or planning a picnic.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="12_1_C" class="answer nonesuch">The FCs are doing the best they can, but they&#39;re malfunctioning.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="12_1_D" class="answer nonesuch">The FCs are constantly adjusting the pressure in one of the towers, and</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="12_1_E" class="answer nonesuch">doing a lousy job.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I fix the Weather Towers on the surface of Contra?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">First, fix Iris so she can see the monitors (helpful, but not truly</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">necessary).</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Send a robot to the Weather Control Area.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Try turning the dials to different settings.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Set the middle dial to 99 or 100, then pray for the best.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("12_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="12_2_A" class="answer nonesuch">First, fix Iris so she can see the monitors (helpful, but not truly</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="12_2_B" class="answer nonesuch">necessary).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="12_2_C" class="answer nonesuch">Send a robot to the Weather Control Area.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="12_2_D" class="answer nonesuch">Try turning the dials to different settings.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="12_2_E" class="answer nonesuch">Set the middle dial to 99 or 100, then pray for the best.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>I keep turning dials in the Weather Control Area, but nothing happens. Why?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Something is happening. Be patient.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Weather does not change instantly.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">It takes about five FC cycles before Iris will be able to report on a</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">change in the surface environment.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("12_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="12_3_A" class="answer nonesuch">Something is happening. Be patient.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="12_3_B" class="answer nonesuch">Weather does not change instantly.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="12_3_C" class="answer nonesuch">It takes about five FC cycles before Iris will be able to report on a</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="12_3_D" class="answer nonesuch">change in the surface environment.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why won&#39;t the weather towers stay in balance once they&#39;ve been stabilized?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The FCs keep resetting them.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You can never actually fix the situation -- the best you can do is buy</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">some time while you go about repairing the real problem: the FCs.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("12_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="12_4_A" class="answer nonesuch">The FCs keep resetting them.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="12_4_B" class="answer nonesuch">You can never actually fix the situation -- the best you can do is buy</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("12_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="12_4_C" class="answer nonesuch">some time while you go about repairing the real problem: the FCs.</span></div></div>
       </div>
   </div>
 
@@ -425,53 +727,99 @@
           <div class="question indented">
       <h3>Why do so many casualties occur when I shut off the floaters?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Try looking at it this way: You&#39;re in an airplane.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Someone comes by and removes its wings.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">At 38,000 feet.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Ouch.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("13_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="13_1_A" class="answer nonesuch">Try looking at it this way: You&#39;re in an airplane.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="13_1_B" class="answer nonesuch">Someone comes by and removes its wings.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="13_1_C" class="answer nonesuch">At 38,000 feet.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="13_1_D" class="answer nonesuch">Ouch.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I stop people from getting on the floaters?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If the floaters weren&#39;t in operation, no one would use them.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">People are using the taxis and the glidewalks to get to the floaters.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Stop the taxis and the glidewalks.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("13_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="13_2_A" class="answer nonesuch">If the floaters weren&#39;t in operation, no one would use them.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="13_2_B" class="answer nonesuch">People are using the taxis and the glidewalks to get to the floaters.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="13_2_C" class="answer nonesuch">Stop the taxis and the glidewalks.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why do the glidewalks keep picking up speed?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The FCs are doing it, just like they&#39;re messing about with the weather</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">towers.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("13_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="13_3_A" class="answer nonesuch">The FCs are doing it, just like they&#39;re messing about with the weather</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="13_3_B" class="answer nonesuch">towers.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What&#39;s wrong with the robotaxis?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">They&#39;re revolting against their human bosses.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Well, maybe not.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">They&#39;re striking for better pavement.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Their union&#39;s not very strong though.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">The FCs are misinterpreting information and are unable to control them</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">correctly.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">That sounds more reasonable.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">Better turn them off.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("13_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="13_4_A" class="answer nonesuch">They&#39;re revolting against their human bosses.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="13_4_B" class="answer nonesuch">Well, maybe not.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="13_4_C" class="answer nonesuch">They&#39;re striking for better pavement.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="13_4_D" class="answer nonesuch">Their union&#39;s not very strong though.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="13_4_E" class="answer nonesuch">The FCs are misinterpreting information and are unable to control them</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_4_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="13_4_F" class="answer nonesuch">correctly.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_4_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="13_4_G" class="answer nonesuch">That sounds more reasonable.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_4_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="13_4_H" class="answer nonesuch">Better turn them off.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I keep casualties down to a minimum from the Transit System?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Try shutting everything off.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Throw the Switches which control the Transit System.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">In the following order:</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">1. Taxis</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">2. Glidewalk</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">3. Floaters (when there are no people in them)</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("13_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="13_5_A" class="answer nonesuch">Try shutting everything off.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="13_5_B" class="answer nonesuch">Throw the Switches which control the Transit System.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="13_5_C" class="answer nonesuch">In the following order:</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="13_5_D" class="answer nonesuch">1. Taxis</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_5_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="13_5_E" class="answer nonesuch">2. Glidewalk</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("13_5_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="13_5_F" class="answer nonesuch">3. Floaters (when there are no people in them)</span></div></div>
       </div>
   </div>
 
@@ -479,32 +827,60 @@
           <div class="question indented">
       <h3>Why bother with food at a time like this?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Everyone has to eat, even in an emergency.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">A well-balanced breakfast is the start of any good day.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Even with what&#39;s going on, people will starve without food.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("14_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="14_1_A" class="answer nonesuch">Everyone has to eat, even in an emergency.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("14_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="14_1_B" class="answer nonesuch">A well-balanced breakfast is the start of any good day.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("14_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="14_1_C" class="answer nonesuch">Even with what&#39;s going on, people will starve without food.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I balance the Hydroponics Controls?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">They don&#39;t need to be balanced until a secondary tremor occurs.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Push the levers forward or pull the levers back until Iris tells you</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">the nutrients, lighting, and water are balanced.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("14_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="14_2_A" class="answer nonesuch">They don&#39;t need to be balanced until a secondary tremor occurs.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("14_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="14_2_B" class="answer nonesuch">Push the levers forward or pull the levers back until Iris tells you</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("14_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="14_2_C" class="answer nonesuch">the nutrients, lighting, and water are balanced.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Where do I get a cheeseburger?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Did you try sending out for one?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">This answer left intentionally blank.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("14_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="14_3_A" class="answer nonesuch">Did you try sending out for one?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("14_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="14_3_B" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("14_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="14_3_C" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("14_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="14_3_D" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("14_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="14_3_E" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("14_3_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="14_3_F" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("14_3_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="14_3_G" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("14_3_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="14_3_H" class="answer nonesuch">This answer left intentionally blank.</span></div></div>
       </div>
   </div>
 
@@ -512,89 +888,171 @@
           <div class="question indented">
       <h3>Just what&#39;s wrong with the FCs?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">A tremor has disrupted their channels of communication.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">They can&#39;t make a mutual decision about what to do.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">There are two cables which have been severed due to the tremors.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">One cable in the Primary Channel, and one in the Secondary Channel.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("15_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="15_1_A" class="answer nonesuch">A tremor has disrupted their channels of communication.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="15_1_B" class="answer nonesuch">They can&#39;t make a mutual decision about what to do.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="15_1_C" class="answer nonesuch">There are two cables which have been severed due to the tremors.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="15_1_D" class="answer nonesuch">One cable in the Primary Channel, and one in the Secondary Channel.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I fix the FCs?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">There are two bad cables.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Replace the bad cables with their replacements.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Replace the orange cable with the orange wire.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Replace the red cable with the red wire.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">That&#39;s easy for you to say, but which cable is the orange one, and</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">which one is the red one? Well, have you figured out how to read the</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">sign in the Primary Channel? If not, see the hint about reading the</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">sign.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("15_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="15_2_A" class="answer nonesuch">There are two bad cables.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="15_2_B" class="answer nonesuch">Replace the bad cables with their replacements.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="15_2_C" class="answer nonesuch">Replace the orange cable with the orange wire.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="15_2_D" class="answer nonesuch">Replace the red cable with the red wire.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="15_2_E" class="answer nonesuch">That&#39;s easy for you to say, but which cable is the orange one, and</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="15_2_F" class="answer nonesuch">which one is the red one? Well, have you figured out how to read the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_2_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="15_2_G" class="answer nonesuch">sign in the Primary Channel? If not, see the hint about reading the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_2_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="15_2_H" class="answer nonesuch">sign.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Once I&#39;ve fixed the FCs, how do I reset them?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Remember the machine in the Main Supply Room?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">There are eight circles, each of which represents one half of the reset</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">code.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The reset code can be found on the sign in the Primary or Secondary</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Channel.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("15_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="15_3_A" class="answer nonesuch">Remember the machine in the Main Supply Room?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="15_3_B" class="answer nonesuch">There are eight circles, each of which represents one half of the reset</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="15_3_C" class="answer nonesuch">code.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="15_3_D" class="answer nonesuch">The reset code can be found on the sign in the Primary or Secondary</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="15_3_E" class="answer nonesuch">Channel.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I read the sign in the Primary or Secondary Channel?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You&#39;ll need a robot with visual capabilities.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Iris is the only one who can read them.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Since you can&#39;t get Iris to the signs, think about getting the signs to</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Iris.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">You can&#39;t move the signs, so how about a picture of them?</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">You&#39;ll find a TV camera in the Biological Laboratory.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Plug the TV into the hole in the Primary or Secondary Channel. Iris</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">will take over from there.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">Point the camera at the sign.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("15_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="15_4_A" class="answer nonesuch">You&#39;ll need a robot with visual capabilities.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="15_4_B" class="answer nonesuch">Iris is the only one who can read them.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="15_4_C" class="answer nonesuch">Since you can&#39;t get Iris to the signs, think about getting the signs to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="15_4_D" class="answer nonesuch">Iris.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="15_4_E" class="answer nonesuch">You can&#39;t move the signs, so how about a picture of them?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_4_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="15_4_F" class="answer nonesuch">You&#39;ll find a TV camera in the Biological Laboratory.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_4_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="15_4_G" class="answer nonesuch">Plug the TV into the hole in the Primary or Secondary Channel. Iris</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_4_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="15_4_H" class="answer nonesuch">will take over from there.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_4_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="15_4_I" class="answer nonesuch">Point the camera at the sign.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I read the sign in the Bending Passage?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have Waldo bring it to Iris.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have Iris bring it to Sensa.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have Sensa give it to Poet.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">What sign in the Bending Passage?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("15_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="15_5_A" class="answer nonesuch">Have Waldo bring it to Iris.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="15_5_B" class="answer nonesuch">Have Iris bring it to Sensa.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="15_5_C" class="answer nonesuch">Have Sensa give it to Poet.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="15_5_D" class="answer nonesuch">What sign in the Bending Passage?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Of what use is the khaki cable?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can&#39;t solve the game without it.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You can&#39;t solve the game with it.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You&#39;ll find one in your game package.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">What khaki cable?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("15_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="15_6_A" class="answer nonesuch">You can&#39;t solve the game without it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="15_6_B" class="answer nonesuch">You can&#39;t solve the game with it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="15_6_C" class="answer nonesuch">You&#39;ll find one in your game package.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_6_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="15_6_D" class="answer nonesuch">What khaki cable?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Is there any use for the blue cable?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It can be used to replace the malfunctioning blue cable.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But there is no malfunctioning blue cable.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">So, no.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("15_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="15_7_A" class="answer nonesuch">It can be used to replace the malfunctioning blue cable.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="15_7_B" class="answer nonesuch">But there is no malfunctioning blue cable.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="15_7_C" class="answer nonesuch">So, no.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I figure out what to replace to get the FCs working properly?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Figure out which cable is malfunctioning in the Primary Channel.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have Poet touch all the cables.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Replace it with a wire of the same color.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Now do the same thing in the Secondary Channel.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("15_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="15_8_A" class="answer nonesuch">Figure out which cable is malfunctioning in the Primary Channel.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="15_8_B" class="answer nonesuch">Have Poet touch all the cables.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_8_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="15_8_C" class="answer nonesuch">Replace it with a wire of the same color.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("15_8_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="15_8_D" class="answer nonesuch">Now do the same thing in the Secondary Channel.</span></div></div>
       </div>
   </div>
 
@@ -602,29 +1060,51 @@
           <div class="question indented">
       <h3>What&#39;s with the cutter? What good is it?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The cutter is needed to get a wire which is permanently attached to</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">something else.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The cutter is used to cut the red wire in Fred.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("16_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="16_1_A" class="answer nonesuch">The cutter is needed to get a wire which is permanently attached to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="16_1_B" class="answer nonesuch">something else.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="16_1_C" class="answer nonesuch">The cutter is used to cut the red wire in Fred.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the machine in the Main Supply Room?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Within the machine rests an orange wire. This might come in handy.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It has a panel on which the reset codes are written.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">What is the significance of the panel on the machine in the Main Supply</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("16_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="16_2_A" class="answer nonesuch">Within the machine rests an orange wire. This might come in handy.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="16_2_B" class="answer nonesuch">It has a panel on which the reset codes are written.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="16_2_C" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="16_2_D" class="answer nonesuch">What is the significance of the panel on the machine in the Main Supply</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Room?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Each circle corresponds to something in the FC area...</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you tried POINT CAMERA AT SIGN in the Primary Channel?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You must press two of these buttons on the panel to reset the FCs once</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">you&#39;ve effected repairs.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("16_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="16_3_A" class="answer nonesuch">Each circle corresponds to something in the FC area...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="16_3_B" class="answer nonesuch">Have you tried POINT CAMERA AT SIGN in the Primary Channel?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="16_3_C" class="answer nonesuch">You must press two of these buttons on the panel to reset the FCs once</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("16_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="16_3_D" class="answer nonesuch">you&#39;ve effected repairs.</span></div></div>
       </div>
   </div>
 

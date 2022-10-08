@@ -1,8 +1,9 @@
     <div class="question indented">
       <h3><%= question %></h3>
       <div class="answers">
-      <% answers.each.with_index do |answer,i| %>
-        <details class="details-answer"><summary><%== ('A'.ord+i).chr %>.</summary><div class="answer"><%= answer %></div></details>
+      <% answers.each.with_index do |answer,i| %><% label = ('A'.ord+i).chr %><% id = [ section_num, question_num, label ].join('_') %>
+      <div class="answer-row" onClick='javascript:toggle("<%= id %>");' role="link">
+<div class="answer-label"><%== label %>.</div><div class="answer-cell"><span id="<%= id %>" class="answer nonesuch"><%= answer %></span></div></div>
       <% end %>
       </div>
   </div>

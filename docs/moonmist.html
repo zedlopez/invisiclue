@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><title>Moonmist Invisiclues</title>
 <link rel="stylesheet" href="style.css">
+<script>
+function toggle(id) {
+var span = document.getElementById(id);
+console.log("toggling " + span);
+span.classList.toggle('nonesuch');
+console.log(span.classList);
+}
+</script>
 </head>
 <body>
 <header>
@@ -12,10 +20,18 @@
     <div class="question indented">
       <h3>Why is Professor Hergenburger standing on a chair and screaming?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Did you ask anyone about the professor&#39;s cats?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Professor Hergenburger is afraid of mice.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">There&#39;s a mouse nearby, which is frightening the professor. Get a cat</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">to take care of the mouse.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("0_0_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="0_0_A" class="answer nonesuch">Did you ask anyone about the professor&#39;s cats?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("0_0_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="0_0_B" class="answer nonesuch">Professor Hergenburger is afraid of mice.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("0_0_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="0_0_C" class="answer nonesuch">There&#39;s a mouse nearby, which is frightening the professor. Get a cat</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("0_0_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="0_0_D" class="answer nonesuch">to take care of the mouse.</span></div></div>
       </div>
   </div>
 
@@ -38,84 +54,156 @@
           <div class="question indented">
       <h3>How do I get through the gate?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">No one knows you are there. You need to get their attention.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">If you HONK THE HORN or PUSH THE EYE, the butler will speak with you.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Or you can just WAIT 10 MINUTES.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_1_A" class="answer nonesuch">No one knows you are there. You need to get their attention.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_1_B" class="answer nonesuch">If you HONK THE HORN or PUSH THE EYE, the butler will speak with you.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_1_C" class="answer nonesuch">Or you can just WAIT 10 MINUTES.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I meet the guests?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you WAIT or try to go somewhere, Tamara will guide you to meet them.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It&#39;s good manners to answer their questions.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Then you can ask the guests questions, for example ASK ABOUT THE GHOST</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">or MADAM, DESCRIBE THE GHOST.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_2_A" class="answer nonesuch">If you WAIT or try to go somewhere, Tamara will guide you to meet them.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_2_B" class="answer nonesuch">It&#39;s good manners to answer their questions.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_2_C" class="answer nonesuch">Then you can ask the guests questions, for example ASK ABOUT THE GHOST</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_2_D" class="answer nonesuch">or MADAM, DESCRIBE THE GHOST.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I find the ghost?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Ask the guests about the ghost.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The ghost usually appears late at night.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The ghost won&#39;t appear until after midnight (if at all), so meet the</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">guests and go to dinner first.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_3_A" class="answer nonesuch">Ask the guests about the ghost.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_3_B" class="answer nonesuch">The ghost usually appears late at night.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_3_C" class="answer nonesuch">The ghost won&#39;t appear until after midnight (if at all), so meet the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_3_D" class="answer nonesuch">guests and go to dinner first.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Tamara wants to chat. What should I say?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can ask her about different things.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You can ASK TAMARA ABOUT: JACK, HERSELF, THE GHOST, BOLITHO, DINNER,</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">DEIRDRE, THE WHITE LADY, and so on. Or TAMARA, DESCRIBE THE GHOST.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_4_A" class="answer nonesuch">You can ask her about different things.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_4_B" class="answer nonesuch">You can ASK TAMARA ABOUT: JACK, HERSELF, THE GHOST, BOLITHO, DINNER,</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_4_C" class="answer nonesuch">DEIRDRE, THE WHITE LADY, and so on. Or TAMARA, DESCRIBE THE GHOST.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is Bolitho trying to tell me in my bedroom?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">He is trying to tell you about the ghost. You can ASK BOLITHO TO</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">DESCRIBE THE GHOST.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">He may give you a device to protect you from hostile &quot;ghosts.&quot;</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">He may also give you a hint for finding the secret passage if you</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">haven&#39;t already found it.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_5_A" class="answer nonesuch">He is trying to tell you about the ghost. You can ASK BOLITHO TO</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_5_B" class="answer nonesuch">DESCRIBE THE GHOST.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_5_C" class="answer nonesuch">He may give you a device to protect you from hostile &quot;ghosts.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_5_D" class="answer nonesuch">He may also give you a hint for finding the secret passage if you</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_5_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="1_5_E" class="answer nonesuch">haven&#39;t already found it.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How should I get ready for dinner?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You&#39;ve been driving all day. You&#39;re grimy and rumpled.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You can wash up in your bathroom.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You can look in your luggage and find something fresh to wear.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">P.S. You&#39;ll get dirty again if you go in the secret passage!</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_6_A" class="answer nonesuch">You&#39;ve been driving all day. You&#39;re grimy and rumpled.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_6_B" class="answer nonesuch">You can wash up in your bathroom.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_6_C" class="answer nonesuch">You can look in your luggage and find something fresh to wear.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_6_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_6_D" class="answer nonesuch">P.S. You&#39;ll get dirty again if you go in the secret passage!</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>I heard a dinner bell. What should I do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Remember what Tamara said about dinner?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">She said that dinner is at eight o&#39;clock, or whenever you hear the</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">gong.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">It&#39;s time to GO TO DINNER.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_7_A" class="answer nonesuch">Remember what Tamara said about dinner?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_7_B" class="answer nonesuch">She said that dinner is at eight o&#39;clock, or whenever you hear the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_7_C" class="answer nonesuch">gong.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_7_D" class="answer nonesuch">It&#39;s time to GO TO DINNER.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What should I do at dinner?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you didn&#39;t do so earlier, ask the guests about the ghost.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">At the end of dinner, you&#39;ll hear a tape recording.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Do as Lionel says: LOOK UNDER THE PUNCHBOWL.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The first clue is a hint about what the treasure is.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">After Lionel mentions the treasure, ask Jack about it.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Lionel mentions a second clue; he also says who has it.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">ASK JACK (or VIVIEN, depending on the variation) FOR THE SECOND CLUE</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">THEN READ THE SECOND CLUE.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">The second clue is a hint about how to find the treasure.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_8_A" class="answer nonesuch">If you didn&#39;t do so earlier, ask the guests about the ghost.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_8_B" class="answer nonesuch">At the end of dinner, you&#39;ll hear a tape recording.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_8_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_8_C" class="answer nonesuch">Do as Lionel says: LOOK UNDER THE PUNCHBOWL.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_8_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_8_D" class="answer nonesuch">The first clue is a hint about what the treasure is.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_8_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="1_8_E" class="answer nonesuch">After Lionel mentions the treasure, ask Jack about it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_8_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="1_8_F" class="answer nonesuch">Lionel mentions a second clue; he also says who has it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_8_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="1_8_G" class="answer nonesuch">ASK JACK (or VIVIEN, depending on the variation) FOR THE SECOND CLUE</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_8_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="1_8_H" class="answer nonesuch">THEN READ THE SECOND CLUE.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_8_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="1_8_I" class="answer nonesuch">The second clue is a hint about how to find the treasure.</span></div></div>
       </div>
   </div>
 
@@ -123,46 +211,90 @@
           <div class="question indented">
       <h3>Are there any secret passages?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">In a castle like this, there probably are.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Bolitho may give you a hint.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Bolitho says you can adjust the wall mirror in your bedroom.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">But in fact you can&#39;t adjust it. EXAMINE THE WALL MIRROR.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">The mirror is actually a secret door! PUSH THE SWITCH.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_1_A" class="answer nonesuch">In a castle like this, there probably are.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_1_B" class="answer nonesuch">Bolitho may give you a hint.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_1_C" class="answer nonesuch">Bolitho says you can adjust the wall mirror in your bedroom.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_1_D" class="answer nonesuch">But in fact you can&#39;t adjust it. EXAMINE THE WALL MIRROR.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="2_1_E" class="answer nonesuch">The mirror is actually a secret door! PUSH THE SWITCH.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>It&#39;s too dark to see! Where can I find a light?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">One is used by the servants to go to the basement wine cellar.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">There&#39;s a portable brass lantern in the kitchen.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">I got caught in someone else&#39;s bedroom and now I can&#39;t leave!</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">It isn&#39;t polite to snoop around other people&#39;s bedrooms.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">The other guest is probably mad at you for doing so.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">You should APOLOGIZE to the guest.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_2_A" class="answer nonesuch">One is used by the servants to go to the basement wine cellar.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_2_B" class="answer nonesuch">There&#39;s a portable brass lantern in the kitchen.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_2_C" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_2_D" class="answer nonesuch">I got caught in someone else&#39;s bedroom and now I can&#39;t leave!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="2_2_E" class="answer nonesuch">It isn&#39;t polite to snoop around other people&#39;s bedrooms.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="2_2_F" class="answer nonesuch">The other guest is probably mad at you for doing so.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="2_2_G" class="answer nonesuch">You should APOLOGIZE to the guest.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Someone is ignoring me. What does this mean?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Were you rude to this person earlier?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Maybe you ignored a question, or hit or insulted him or her?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You should APOLOGIZE to the guest.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_3_A" class="answer nonesuch">Were you rude to this person earlier?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_3_B" class="answer nonesuch">Maybe you ignored a question, or hit or insulted him or her?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_3_C" class="answer nonesuch">You should APOLOGIZE to the guest.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why can&#39;t I go somewhere directly by using the GO TO command?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you haven&#39;t met all the guests, Tamara won&#39;t let you wander off.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Otherwise, it&#39;s a puzzle to go to that place. You have to use compass</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">directions (like NORTH or IN) to go there.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">I used the GO TO command, but I got only part way there!</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Maybe you bumped into someone on your way.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Or you might have gotten lost in the dark.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_4_A" class="answer nonesuch">If you haven&#39;t met all the guests, Tamara won&#39;t let you wander off.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_4_B" class="answer nonesuch">Otherwise, it&#39;s a puzzle to go to that place. You have to use compass</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_4_C" class="answer nonesuch">directions (like NORTH or IN) to go there.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_4_D" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="2_4_E" class="answer nonesuch">I used the GO TO command, but I got only part way there!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="2_4_F" class="answer nonesuch">Maybe you bumped into someone on your way.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="2_4_G" class="answer nonesuch">Or you might have gotten lost in the dark.</span></div></div>
       </div>
   </div>
 
@@ -170,143 +302,309 @@
           <div class="question indented">
       <h3>Why is Jack troubled by Bolitho&#39;s note?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you read it?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">ASK JACK FOR THE BUTLER&#39;S NOTE THEN READ IT.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">After dinner, you should find the maid&#39;s note, then read it.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The maid&#39;s note is on the desk in the sitting room.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_1_A" class="answer nonesuch">Have you read it?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_1_B" class="answer nonesuch">ASK JACK FOR THE BUTLER&#39;S NOTE THEN READ IT.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_1_C" class="answer nonesuch">After dinner, you should find the maid&#39;s note, then read it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_1_D" class="answer nonesuch">The maid&#39;s note is on the desk in the sitting room.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I begin my search for the ghost?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Bolitho saw the ghost. Did he tell you about it?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">If not, and it&#39;s after dinner, you&#39;re too late. Bolitho&#39;s gone.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Say YES when Bolitho asks you if you are the well-known American</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">detective. Or ASK THE BUTLER ABOUT THE GHOST.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_2_A" class="answer nonesuch">Bolitho saw the ghost. Did he tell you about it?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_2_B" class="answer nonesuch">If not, and it&#39;s after dinner, you&#39;re too late. Bolitho&#39;s gone.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_2_C" class="answer nonesuch">Say YES when Bolitho asks you if you are the well-known American</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_2_D" class="answer nonesuch">detective. Or ASK THE BUTLER ABOUT THE GHOST.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I identify the ghost?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">There are two ways. The first way is to find the ghost costume and some</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">evidence of who wore it. The second way is to catch the ghost on its</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">haunt and unmask it.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Asking others to describe the ghost will give you clues about its</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">identity, and may give you an idea where to start your search.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_3_A" class="answer nonesuch">There are two ways. The first way is to find the ghost costume and some</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_3_B" class="answer nonesuch">evidence of who wore it. The second way is to catch the ghost on its</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_3_C" class="answer nonesuch">haunt and unmask it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_3_D" class="answer nonesuch">Asking others to describe the ghost will give you clues about its</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="3_3_E" class="answer nonesuch">identity, and may give you an idea where to start your search.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I follow up on Bolitho&#39;s clue?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Can you find what the ghost was searching for?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You should go where Bolitho said the ghost was searching then SEARCH</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">THE ROOM. If you show what you found to other people, you might start</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">to suspect someone.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Search the bedroom of the suspected guest for evidence that he or she</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">is the person who lost the item that the ghost was looking for. Then</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">read one of the next four answers (for example, read the RED answer if</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">you&#39;re playing the red variation).</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">RED:</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">The jewel came from the necklace that used to be Deirdre&#39;s. Jack has</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">the necklace in his bedroom because the police gave it back to him.</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>N.</summary><div class="answer">YELLOW:</div></details>
-        <details class="details-answer"><summary>O.</summary><div class="answer">The jewel came from Tamara&#39;s earring in the jewelry case in her</div></details>
-        <details class="details-answer"><summary>P.</summary><div class="answer">bedroom.</div></details>
-        <details class="details-answer"><summary>Q.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>R.</summary><div class="answer">BLUE:</div></details>
-        <details class="details-answer"><summary>S.</summary><div class="answer">The contact lens is Vivien&#39;s. She is missing one from her plastic box</div></details>
-        <details class="details-answer"><summary>T.</summary><div class="answer">in the wooden box in her bedroom.</div></details>
-        <details class="details-answer"><summary>U.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>V.</summary><div class="answer">GREEN:</div></details>
-        <details class="details-answer"><summary>W.</summary><div class="answer">The contact lens is Wendish&#39;s. He is missing one from his plastic box</div></details>
-        <details class="details-answer"><summary>X.</summary><div class="answer">in the medical kit in his bedroom.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_4_A" class="answer nonesuch">Can you find what the ghost was searching for?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_4_B" class="answer nonesuch">You should go where Bolitho said the ghost was searching then SEARCH</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_4_C" class="answer nonesuch">THE ROOM. If you show what you found to other people, you might start</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_4_D" class="answer nonesuch">to suspect someone.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="3_4_E" class="answer nonesuch">Search the bedroom of the suspected guest for evidence that he or she</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="3_4_F" class="answer nonesuch">is the person who lost the item that the ghost was looking for. Then</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="3_4_G" class="answer nonesuch">read one of the next four answers (for example, read the RED answer if</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="3_4_H" class="answer nonesuch">you&#39;re playing the red variation).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="3_4_I" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="3_4_J" class="answer nonesuch">RED:</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="3_4_K" class="answer nonesuch">The jewel came from the necklace that used to be Deirdre&#39;s. Jack has</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="3_4_L" class="answer nonesuch">the necklace in his bedroom because the police gave it back to him.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="3_4_M" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_N");' role="link">
+<div class="answer-label">N.</div><div class="answer-cell"><span id="3_4_N" class="answer nonesuch">YELLOW:</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_O");' role="link">
+<div class="answer-label">O.</div><div class="answer-cell"><span id="3_4_O" class="answer nonesuch">The jewel came from Tamara&#39;s earring in the jewelry case in her</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_P");' role="link">
+<div class="answer-label">P.</div><div class="answer-cell"><span id="3_4_P" class="answer nonesuch">bedroom.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_Q");' role="link">
+<div class="answer-label">Q.</div><div class="answer-cell"><span id="3_4_Q" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_R");' role="link">
+<div class="answer-label">R.</div><div class="answer-cell"><span id="3_4_R" class="answer nonesuch">BLUE:</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_S");' role="link">
+<div class="answer-label">S.</div><div class="answer-cell"><span id="3_4_S" class="answer nonesuch">The contact lens is Vivien&#39;s. She is missing one from her plastic box</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_T");' role="link">
+<div class="answer-label">T.</div><div class="answer-cell"><span id="3_4_T" class="answer nonesuch">in the wooden box in her bedroom.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_U");' role="link">
+<div class="answer-label">U.</div><div class="answer-cell"><span id="3_4_U" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_V");' role="link">
+<div class="answer-label">V.</div><div class="answer-cell"><span id="3_4_V" class="answer nonesuch">GREEN:</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_W");' role="link">
+<div class="answer-label">W.</div><div class="answer-cell"><span id="3_4_W" class="answer nonesuch">The contact lens is Wendish&#39;s. He is missing one from his plastic box</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_X");' role="link">
+<div class="answer-label">X.</div><div class="answer-cell"><span id="3_4_X" class="answer nonesuch">in the medical kit in his bedroom.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>I think I know who the ghost is. How do I prove it?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Whoever the ghost is probably has a costume hidden. Or sometimes you</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">can catch the ghost while it&#39;s haunting. If you still can&#39;t find the</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">ghost costume, then read one of the next four answers (for example,</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">read the BLUE answer if you&#39;re playing the blue variation).</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">RED:</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">If you think Jack is the ghost, ASK BOLITHO TO DESCRIBE THE GHOST and</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">think again. If you think Deirdre is the ghost, then the costume</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">wouldn&#39;t be in the castle; you&#39;ll have to catch her when she haunts the</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">castle.</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">YELLOW:</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">The costume is not in the villain&#39;s bedroom. Look in the secret</div></details>
-        <details class="details-answer"><summary>N.</summary><div class="answer">passages for it and see the next question.</div></details>
-        <details class="details-answer"><summary>O.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>P.</summary><div class="answer">BLUE:</div></details>
-        <details class="details-answer"><summary>Q.</summary><div class="answer">The costume is hidden in Vivien&#39;s wooden box (under other items).</div></details>
-        <details class="details-answer"><summary>R.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>S.</summary><div class="answer">GREEN:</div></details>
-        <details class="details-answer"><summary>T.</summary><div class="answer">The costume is hidden in Wendish&#39;s medical kit (under other items).</div></details>
-        <details class="details-answer"><summary>U.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>V.</summary><div class="answer">I found a ghost costume in the secret passage!</div></details>
-        <details class="details-answer"><summary>W.</summary><div class="answer">The person haunting must have dropped it there.</div></details>
-        <details class="details-answer"><summary>X.</summary><div class="answer">Probably on purpose -- to frame Iris for the haunting. See the next</div></details>
-        <details class="details-answer"><summary>Y.</summary><div class="answer">question.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_5_A" class="answer nonesuch">Whoever the ghost is probably has a costume hidden. Or sometimes you</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_5_B" class="answer nonesuch">can catch the ghost while it&#39;s haunting. If you still can&#39;t find the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_5_C" class="answer nonesuch">ghost costume, then read one of the next four answers (for example,</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_5_D" class="answer nonesuch">read the BLUE answer if you&#39;re playing the blue variation).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="3_5_E" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="3_5_F" class="answer nonesuch">RED:</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="3_5_G" class="answer nonesuch">If you think Jack is the ghost, ASK BOLITHO TO DESCRIBE THE GHOST and</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="3_5_H" class="answer nonesuch">think again. If you think Deirdre is the ghost, then the costume</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="3_5_I" class="answer nonesuch">wouldn&#39;t be in the castle; you&#39;ll have to catch her when she haunts the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="3_5_J" class="answer nonesuch">castle.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="3_5_K" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="3_5_L" class="answer nonesuch">YELLOW:</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="3_5_M" class="answer nonesuch">The costume is not in the villain&#39;s bedroom. Look in the secret</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_N");' role="link">
+<div class="answer-label">N.</div><div class="answer-cell"><span id="3_5_N" class="answer nonesuch">passages for it and see the next question.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_O");' role="link">
+<div class="answer-label">O.</div><div class="answer-cell"><span id="3_5_O" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_P");' role="link">
+<div class="answer-label">P.</div><div class="answer-cell"><span id="3_5_P" class="answer nonesuch">BLUE:</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_Q");' role="link">
+<div class="answer-label">Q.</div><div class="answer-cell"><span id="3_5_Q" class="answer nonesuch">The costume is hidden in Vivien&#39;s wooden box (under other items).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_R");' role="link">
+<div class="answer-label">R.</div><div class="answer-cell"><span id="3_5_R" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_S");' role="link">
+<div class="answer-label">S.</div><div class="answer-cell"><span id="3_5_S" class="answer nonesuch">GREEN:</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_T");' role="link">
+<div class="answer-label">T.</div><div class="answer-cell"><span id="3_5_T" class="answer nonesuch">The costume is hidden in Wendish&#39;s medical kit (under other items).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_U");' role="link">
+<div class="answer-label">U.</div><div class="answer-cell"><span id="3_5_U" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_V");' role="link">
+<div class="answer-label">V.</div><div class="answer-cell"><span id="3_5_V" class="answer nonesuch">I found a ghost costume in the secret passage!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_W");' role="link">
+<div class="answer-label">W.</div><div class="answer-cell"><span id="3_5_W" class="answer nonesuch">The person haunting must have dropped it there.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_X");' role="link">
+<div class="answer-label">X.</div><div class="answer-cell"><span id="3_5_X" class="answer nonesuch">Probably on purpose -- to frame Iris for the haunting. See the next</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_Y");' role="link">
+<div class="answer-label">Y.</div><div class="answer-cell"><span id="3_5_Y" class="answer nonesuch">question.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I know who wore the costume that I found?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Whoever wore it might have left some evidence in it.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">EXAMINE THE WIG.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Whoever wore the costume left some hairs behind!</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">You can EXAMINE the other guests to see whose hair color is the same.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_6_A" class="answer nonesuch">Whoever wore it might have left some evidence in it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_6_B" class="answer nonesuch">EXAMINE THE WIG.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_6_C" class="answer nonesuch">Whoever wore the costume left some hairs behind!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_6_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_6_D" class="answer nonesuch">You can EXAMINE the other guests to see whose hair color is the same.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What evidence do I need to arrest the villain?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You need to find incriminating evidence, something that shows why the</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">villain would commit a crime.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The maid found something incriminating. See the next question.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_7_A" class="answer nonesuch">You need to find incriminating evidence, something that shows why the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_7_B" class="answer nonesuch">villain would commit a crime.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_7_C" class="answer nonesuch">The maid found something incriminating. See the next question.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the maid&#39;s note?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Apparently the maid found something very upsetting.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Whatever she found might incriminate the villain.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The last paragraph of her note is a clue.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">For more hints, look in the section for the variation you&#39;re playing.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_8_A" class="answer nonesuch">Apparently the maid found something very upsetting.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_8_B" class="answer nonesuch">Whatever she found might incriminate the villain.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_8_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_8_C" class="answer nonesuch">The last paragraph of her note is a clue.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_8_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_8_D" class="answer nonesuch">For more hints, look in the section for the variation you&#39;re playing.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>The villain is about to shoot me! How do I escape?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can escape into the secret passage, but only if the secret door is</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">already open.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Or you can spray the villain with the aerosol device, or hit the</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">villain with the wine bottle.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_9_A" class="answer nonesuch">You can escape into the secret passage, but only if the secret door is</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_9_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_9_B" class="answer nonesuch">already open.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_9_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_9_C" class="answer nonesuch">Or you can spray the villain with the aerosol device, or hit the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_9_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_9_D" class="answer nonesuch">villain with the wine bottle.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I find the treasure?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The first clue (under the punchbowl) is a hint about WHAT you are</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">looking for.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">To find WHERE the treasure is, you have to get the second clue from</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Vivien (in the red variation) or Jack (in the yellow, blue, and green</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">variations).</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">The second clue will lead to more clues.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_10_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_10_A" class="answer nonesuch">The first clue (under the punchbowl) is a hint about WHAT you are</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_10_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_10_B" class="answer nonesuch">looking for.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_10_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_10_C" class="answer nonesuch">To find WHERE the treasure is, you have to get the second clue from</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_10_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_10_D" class="answer nonesuch">Vivien (in the red variation) or Jack (in the yellow, blue, and green</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_10_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="3_10_E" class="answer nonesuch">variations).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_10_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="3_10_F" class="answer nonesuch">The second clue will lead to more clues.</span></div></div>
       </div>
   </div>
 
@@ -314,54 +612,126 @@
           <div class="question indented">
       <h3>How can I find the ghost?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you are in the yellow variation, read the next hint. Otherwise, skip</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">it.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You can&#39;t. You&#39;ll have to find the ghost costume instead.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The ghost haunts after midnight, when other people have gone to bed.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">And it haunts only in the secret passages where people usually don&#39;t</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">go. Read the next two hints only if you are in the red variation.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">The ghost enters the castle on its way to the secret passages.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">The ghost enters through the priest hole and goes backstairs.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_1_A" class="answer nonesuch">If you are in the yellow variation, read the next hint. Otherwise, skip</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_1_B" class="answer nonesuch">it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_1_C" class="answer nonesuch">You can&#39;t. You&#39;ll have to find the ghost costume instead.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_1_D" class="answer nonesuch">The ghost haunts after midnight, when other people have gone to bed.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="4_1_E" class="answer nonesuch">And it haunts only in the secret passages where people usually don&#39;t</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="4_1_F" class="answer nonesuch">go. Read the next two hints only if you are in the red variation.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="4_1_G" class="answer nonesuch">The ghost enters the castle on its way to the secret passages.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="4_1_H" class="answer nonesuch">The ghost enters through the priest hole and goes backstairs.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>The ghost never showed up! Why?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you are playing the yellow variation, read the next hint. Otherwise</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">skip over it.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The ghost never haunts in the yellow variation.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">You may have missed the ghost. Try waiting at your entrance or the</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">entrance of the presumed ghost.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">You may have spooked the ghost. If you disturbed the costume or</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">blowgun, or left the ghost&#39;s secret entrance open, the ghost won&#39;t</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">haunt.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">If you already arrested the person who was the ghost, now you need to</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">find the ghost costume.</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">Egads!! The ghost is trying to kill me!</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">Follow your instincts: fight or flee.</div></details>
-        <details class="details-answer"><summary>N.</summary><div class="answer">Maybe Bolitho gave you something to stop threats.</div></details>
-        <details class="details-answer"><summary>O.</summary><div class="answer">Bolitho tried to give you an aerosol device. If you don&#39;t have it, you</div></details>
-        <details class="details-answer"><summary>P.</summary><div class="answer">can flee to the kitchen and get it. Or you can use the wine bottle as a</div></details>
-        <details class="details-answer"><summary>Q.</summary><div class="answer">weapon.</div></details>
-        <details class="details-answer"><summary>R.</summary><div class="answer">If you have the aerosol device, SPRAY THE GHOST WITH THE DEVICE.</div></details>
-        <details class="details-answer"><summary>S.</summary><div class="answer">Now you can REMOVE THE GHOST COSTUME and identify the ghost.</div></details>
-        <details class="details-answer"><summary>T.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>U.</summary><div class="answer">Egads!! I found the ghost, but it runs away!</div></details>
-        <details class="details-answer"><summary>V.</summary><div class="answer">The ghost isn&#39;t threatening you, so don&#39;t scare her away.</div></details>
-        <details class="details-answer"><summary>W.</summary><div class="answer">Be nice to the ghost.</div></details>
-        <details class="details-answer"><summary>X.</summary><div class="answer">Talking to the ghost is one way to get her to open up.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_2_A" class="answer nonesuch">If you are playing the yellow variation, read the next hint. Otherwise</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_2_B" class="answer nonesuch">skip over it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_2_C" class="answer nonesuch">The ghost never haunts in the yellow variation.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_2_D" class="answer nonesuch">You may have missed the ghost. Try waiting at your entrance or the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="4_2_E" class="answer nonesuch">entrance of the presumed ghost.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="4_2_F" class="answer nonesuch">You may have spooked the ghost. If you disturbed the costume or</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="4_2_G" class="answer nonesuch">blowgun, or left the ghost&#39;s secret entrance open, the ghost won&#39;t</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="4_2_H" class="answer nonesuch">haunt.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="4_2_I" class="answer nonesuch">If you already arrested the person who was the ghost, now you need to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="4_2_J" class="answer nonesuch">find the ghost costume.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="4_2_K" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="4_2_L" class="answer nonesuch">Egads!! The ghost is trying to kill me!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="4_2_M" class="answer nonesuch">Follow your instincts: fight or flee.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_N");' role="link">
+<div class="answer-label">N.</div><div class="answer-cell"><span id="4_2_N" class="answer nonesuch">Maybe Bolitho gave you something to stop threats.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_O");' role="link">
+<div class="answer-label">O.</div><div class="answer-cell"><span id="4_2_O" class="answer nonesuch">Bolitho tried to give you an aerosol device. If you don&#39;t have it, you</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_P");' role="link">
+<div class="answer-label">P.</div><div class="answer-cell"><span id="4_2_P" class="answer nonesuch">can flee to the kitchen and get it. Or you can use the wine bottle as a</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_Q");' role="link">
+<div class="answer-label">Q.</div><div class="answer-cell"><span id="4_2_Q" class="answer nonesuch">weapon.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_R");' role="link">
+<div class="answer-label">R.</div><div class="answer-cell"><span id="4_2_R" class="answer nonesuch">If you have the aerosol device, SPRAY THE GHOST WITH THE DEVICE.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_S");' role="link">
+<div class="answer-label">S.</div><div class="answer-cell"><span id="4_2_S" class="answer nonesuch">Now you can REMOVE THE GHOST COSTUME and identify the ghost.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_T");' role="link">
+<div class="answer-label">T.</div><div class="answer-cell"><span id="4_2_T" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_U");' role="link">
+<div class="answer-label">U.</div><div class="answer-cell"><span id="4_2_U" class="answer nonesuch">Egads!! I found the ghost, but it runs away!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_V");' role="link">
+<div class="answer-label">V.</div><div class="answer-cell"><span id="4_2_V" class="answer nonesuch">The ghost isn&#39;t threatening you, so don&#39;t scare her away.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_W");' role="link">
+<div class="answer-label">W.</div><div class="answer-cell"><span id="4_2_W" class="answer nonesuch">Be nice to the ghost.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_X");' role="link">
+<div class="answer-label">X.</div><div class="answer-cell"><span id="4_2_X" class="answer nonesuch">Talking to the ghost is one way to get her to open up.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>The ghost just &quot;slimed&quot; me!!! How do I catch it?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">First use your negative ionizer backpack to trap the ghost.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Now lower the ghost into your portable laser confinement system.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Stop playing _Ghostbusters_ from Activision and play _Moonmist_! The</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">ghost in _Moonmist_ doesn&#39;t &quot;slime&quot; people.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_3_A" class="answer nonesuch">First use your negative ionizer backpack to trap the ghost.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_3_B" class="answer nonesuch">Now lower the ghost into your portable laser confinement system.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_3_C" class="answer nonesuch">Stop playing _Ghostbusters_ from Activision and play _Moonmist_! The</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_3_D" class="answer nonesuch">ghost in _Moonmist_ doesn&#39;t &quot;slime&quot; people.</span></div></div>
       </div>
   </div>
 
@@ -369,48 +739,84 @@
           <div class="question indented">
       <h3>How can I tell if a person is left- or right-handed?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">People tend to use their dominant hand without thinking.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Throw something at a person. They&#39;ll catch it with their dominant hand.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_1_A" class="answer nonesuch">People tend to use their dominant hand without thinking.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_1_B" class="answer nonesuch">Throw something at a person. They&#39;ll catch it with their dominant hand.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How did the ghost float over Tamara&#39;s bed?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">There is a physical reason for it.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">One room is directly over Tamara&#39;s.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Examine and move objects in the &quot;lumber&quot; room.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">If you move the chest and lift the handle you can look into Tamara&#39;s</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">bedroom. And someone in her bed would see your face!</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_2_A" class="answer nonesuch">There is a physical reason for it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_2_B" class="answer nonesuch">One room is directly over Tamara&#39;s.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_2_C" class="answer nonesuch">Examine and move objects in the &quot;lumber&quot; room.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_2_D" class="answer nonesuch">If you move the chest and lift the handle you can look into Tamara&#39;s</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_2_E" class="answer nonesuch">bedroom. And someone in her bed would see your face!</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I protect Tamara from the vampire?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Did you find the coffin hidden in the secret tomb?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You&#39;ll need a wooden cross from the chapel and garlic from the kitchen.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Find a sharp stick in the lumber room and drive it through the</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">vampire&#39;s heart when it returns to sleep in the coffin at dawn.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">What vampire? There&#39;s no vampire in _Moonmist_.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_3_A" class="answer nonesuch">Did you find the coffin hidden in the secret tomb?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_3_B" class="answer nonesuch">You&#39;ll need a wooden cross from the chapel and garlic from the kitchen.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_3_C" class="answer nonesuch">Find a sharp stick in the lumber room and drive it through the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_3_D" class="answer nonesuch">vampire&#39;s heart when it returns to sleep in the coffin at dawn.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_3_E" class="answer nonesuch">What vampire? There&#39;s no vampire in _Moonmist_.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Who was the White Lady?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Ask someone about her.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The history book in the library will tell you more about her.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_4_A" class="answer nonesuch">Ask someone about her.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_4_B" class="answer nonesuch">The history book in the library will tell you more about her.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Iris is broken. How do I fix her?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have Waldo replace the faulty chip.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">If that doesn&#39;t work, then send her to robot repair.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Wait a minute! Why are you looking up _Suspended_ questions in the</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">_Moonmist_ hint booklet?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_5_A" class="answer nonesuch">Have Waldo replace the faulty chip.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_5_B" class="answer nonesuch">If that doesn&#39;t work, then send her to robot repair.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_5_C" class="answer nonesuch">Wait a minute! Why are you looking up _Suspended_ questions in the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_5_D" class="answer nonesuch">_Moonmist_ hint booklet?</span></div></div>
       </div>
   </div>
 
@@ -418,38 +824,90 @@
           <div class="question indented">
       <h3>What is the significance of the maid&#39;s note?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">First read the hints for this same question in the section called</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">&quot;After Dinner.&quot;</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Look in the keyholes of bedroom doors.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Jack&#39;s keyhole is the most important. You&#39;ll see a microphone in the</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">door.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Move the wyvern to uncover the secret tape recorder. PLAY THE TAPE.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">I&#39;m stuck on the second clue. Help!</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">The &quot;very first lass&quot; in the Bible was Eve.</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">There&#39;s a stained &quot;glass&quot; window in the chapel.</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">On the &quot;forbidden fruit&quot; (apple) is the third clue.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_1_A" class="answer nonesuch">First read the hints for this same question in the section called</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_1_B" class="answer nonesuch">&quot;After Dinner.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_1_C" class="answer nonesuch">Look in the keyholes of bedroom doors.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_1_D" class="answer nonesuch">Jack&#39;s keyhole is the most important. You&#39;ll see a microphone in the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="6_1_E" class="answer nonesuch">door.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="6_1_F" class="answer nonesuch">Move the wyvern to uncover the secret tape recorder. PLAY THE TAPE.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="6_1_G" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="6_1_H" class="answer nonesuch">I&#39;m stuck on the second clue. Help!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="6_1_I" class="answer nonesuch">The &quot;very first lass&quot; in the Bible was Eve.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="6_1_J" class="answer nonesuch">There&#39;s a stained &quot;glass&quot; window in the chapel.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="6_1_K" class="answer nonesuch">On the &quot;forbidden fruit&quot; (apple) is the third clue.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What does the third clue mean?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You need to go to the place mentioned in the clue.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">&quot;Bower&quot; is another word for garden.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">GO TO THE BOWER (the garden in the hedge maze).</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The clue is in the dirt in the garden.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Help me figure out the fourth clue.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">What would you need if you went into the rain?</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">The clues are &quot;rain&quot; and &quot;cain.&quot;</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">There&#39;s an umbrella stand in the foyer.</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">&quot;Cain&quot; is a pun for the cane in the umbrella stand.</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">I have what the fourth clue led me to, but it isn&#39;t a treasure.</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">Examine the item you found there.</div></details>
-        <details class="details-answer"><summary>N.</summary><div class="answer">The treasure is disguised.</div></details>
-        <details class="details-answer"><summary>O.</summary><div class="answer">REMOVE THE PAINT to find the real treasure.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_2_A" class="answer nonesuch">You need to go to the place mentioned in the clue.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_2_B" class="answer nonesuch">&quot;Bower&quot; is another word for garden.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_2_C" class="answer nonesuch">GO TO THE BOWER (the garden in the hedge maze).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_2_D" class="answer nonesuch">The clue is in the dirt in the garden.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="6_2_E" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="6_2_F" class="answer nonesuch">Help me figure out the fourth clue.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="6_2_G" class="answer nonesuch">What would you need if you went into the rain?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="6_2_H" class="answer nonesuch">The clues are &quot;rain&quot; and &quot;cain.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="6_2_I" class="answer nonesuch">There&#39;s an umbrella stand in the foyer.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="6_2_J" class="answer nonesuch">&quot;Cain&quot; is a pun for the cane in the umbrella stand.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="6_2_K" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="6_2_L" class="answer nonesuch">I have what the fourth clue led me to, but it isn&#39;t a treasure.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="6_2_M" class="answer nonesuch">Examine the item you found there.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_N");' role="link">
+<div class="answer-label">N.</div><div class="answer-cell"><span id="6_2_N" class="answer nonesuch">The treasure is disguised.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_O");' role="link">
+<div class="answer-label">O.</div><div class="answer-cell"><span id="6_2_O" class="answer nonesuch">REMOVE THE PAINT to find the real treasure.</span></div></div>
       </div>
   </div>
 
@@ -457,47 +915,93 @@
           <div class="question indented">
       <h3>What is the significance of the maid&#39;s note?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">First read the hints for this same question in the section called</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">&quot;After Dinner.&quot;</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Search people&#39;s bedrooms, particularly under furniture.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Remove the journal from under Tamara&#39;s bed, then look there again.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Under Tamara&#39;s bed is a receipt from a pet store.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_1_A" class="answer nonesuch">First read the hints for this same question in the section called</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_1_B" class="answer nonesuch">&quot;After Dinner.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_1_C" class="answer nonesuch">Search people&#39;s bedrooms, particularly under furniture.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_1_D" class="answer nonesuch">Remove the journal from under Tamara&#39;s bed, then look there again.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="7_1_E" class="answer nonesuch">Under Tamara&#39;s bed is a receipt from a pet store.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Help! What is the meaning of the second clue?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">What word rhymes with &quot;tell&quot; and is something you can hear?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">A bell. Find a bell and examine it. (The quote is from &quot;The Bells&quot; by</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Edgar Allan Poe.)</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The bell on the fighting deck has the third clue in it.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Help me figure out the third clue.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Somewhere in the castle is a &quot;tomb.&quot; (The quote is from &quot;Annabel Lee&quot;</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">by Edgar Allan Poe.)</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">Go to the dungeon, then ENTER THE IRON MAIDEN to get to the secret</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">tomb.</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">OPEN THE COFFIN to find the fourth clue.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_2_A" class="answer nonesuch">What word rhymes with &quot;tell&quot; and is something you can hear?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_2_B" class="answer nonesuch">A bell. Find a bell and examine it. (The quote is from &quot;The Bells&quot; by</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_2_C" class="answer nonesuch">Edgar Allan Poe.)</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_2_D" class="answer nonesuch">The bell on the fighting deck has the third clue in it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="7_2_E" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="7_2_F" class="answer nonesuch">Help me figure out the third clue.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="7_2_G" class="answer nonesuch">Somewhere in the castle is a &quot;tomb.&quot; (The quote is from &quot;Annabel Lee&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="7_2_H" class="answer nonesuch">by Edgar Allan Poe.)</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="7_2_I" class="answer nonesuch">Go to the dungeon, then ENTER THE IRON MAIDEN to get to the secret</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="7_2_J" class="answer nonesuch">tomb.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="7_2_K" class="answer nonesuch">OPEN THE COFFIN to find the fourth clue.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What does the fourth clue mean?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Do you know the story &quot;A Cask of Amontillado&quot; by Edgar Allan Poe?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It tells the tale of a man who is buried alive behind a brick wall,</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">deep in the catacombs of a wine cellar.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Go to the basement, where the wine is kept, and MOVE THE BRICKS.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Enter the hole that you opened up,</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_3_A" class="answer nonesuch">Do you know the story &quot;A Cask of Amontillado&quot; by Edgar Allan Poe?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_3_B" class="answer nonesuch">It tells the tale of a man who is buried alive behind a brick wall,</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_3_C" class="answer nonesuch">deep in the catacombs of a wine cellar.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_3_D" class="answer nonesuch">Go to the basement, where the wine is kept, and MOVE THE BRICKS.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="7_3_E" class="answer nonesuch">Enter the hole that you opened up,</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>I found an item that doesn&#39;t look like treasure. Where&#39;s the real treasure?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">EXAMINE THE SKELETON.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Take the black pearl necklace.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_4_A" class="answer nonesuch">EXAMINE THE SKELETON.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_4_B" class="answer nonesuch">Take the black pearl necklace.</span></div></div>
       </div>
   </div>
 
@@ -505,60 +1009,144 @@
           <div class="question indented">
       <h3>What is the significance of the maid&#39;s note?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">First read the hints for this same question in the section called</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">&quot;After Dinner.&quot;</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You are looking for someone&#39;s diary.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">In Vivien&#39;s wooden box is her diary. (It&#39;s under her plastic box.)</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Reading her diary may not be polite, but it&#39;s important!</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_1_A" class="answer nonesuch">First read the hints for this same question in the section called</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_1_B" class="answer nonesuch">&quot;After Dinner.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_1_C" class="answer nonesuch">You are looking for someone&#39;s diary.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_1_D" class="answer nonesuch">In Vivien&#39;s wooden box is her diary. (It&#39;s under her plastic box.)</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="8_1_E" class="answer nonesuch">Reading her diary may not be polite, but it&#39;s important!</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What does the second clue mean?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Try to fill in the blanks of the second clue with words that make the</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">poem rhyme. Then find objects that match the words.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">For the first blank: What rhymes with &quot;wrong&quot; and is often mentioned</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">with wine (&quot;grape&quot;) and women (&quot;wench&quot;)?</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">The word for the first blank is &quot;song.&quot; Where might you find a song in</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">the castle?</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Read the music on the piano.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">For the second blank: What rhymes with &quot;laden&quot;? (Remember that the poem</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">is about three fellows arguing about &quot;wine, women, and song.&quot;)</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">The word for the second blank is &quot;maiden.&quot; Where in the castle is a</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">maiden?</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">It&#39;s not the iron maiden in the dungeon.</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">Find the maiden mentioned in the tourist brochure and examine it.</div></details>
-        <details class="details-answer"><summary>N.</summary><div class="answer">For the last blank: What rhymes with &quot;fine&quot;? (Remember what the three</div></details>
-        <details class="details-answer"><summary>O.</summary><div class="answer">fellows are arguing about!)</div></details>
-        <details class="details-answer"><summary>P.</summary><div class="answer">The word for the last blank is &quot;wine.&quot; Where in the castle will you</div></details>
-        <details class="details-answer"><summary>Q.</summary><div class="answer">find wine?</div></details>
-        <details class="details-answer"><summary>R.</summary><div class="answer">Examine the wine bottle in the basement.</div></details>
-        <details class="details-answer"><summary>S.</summary><div class="answer">Put together the parts of words marked with a star.</div></details>
-        <details class="details-answer"><summary>T.</summary><div class="answer">They spell &quot;SUIT ARMOUR.&quot; Look in the tourist brochure to find it.</div></details>
-        <details class="details-answer"><summary>U.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>V.</summary><div class="answer">I&#39;m stuck on the third clue. Help!</div></details>
-        <details class="details-answer"><summary>W.</summary><div class="answer">Put the parts of words from the second clue into the blanks in a</div></details>
-        <details class="details-answer"><summary>X.</summary><div class="answer">different order.</div></details>
-        <details class="details-answer"><summary>Y.</summary><div class="answer">The order is ARM, SUIT and OUR.</div></details>
-        <details class="details-answer"><summary>Z.</summary><div class="answer">What &quot;alarm&quot; has &quot;suite&quot; (sweet) tones that &quot;clamour&quot;?</div></details>
-        <details class="details-answer"><summary>[.</summary><div class="answer">The bell on the fighting deck is an alarm that clamours.</div></details>
-        <details class="details-answer"><summary>\.</summary><div class="answer">LOOK INSIDE THE BELL to find the treasure.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_2_A" class="answer nonesuch">Try to fill in the blanks of the second clue with words that make the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_2_B" class="answer nonesuch">poem rhyme. Then find objects that match the words.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_2_C" class="answer nonesuch">For the first blank: What rhymes with &quot;wrong&quot; and is often mentioned</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_2_D" class="answer nonesuch">with wine (&quot;grape&quot;) and women (&quot;wench&quot;)?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="8_2_E" class="answer nonesuch">The word for the first blank is &quot;song.&quot; Where might you find a song in</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="8_2_F" class="answer nonesuch">the castle?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="8_2_G" class="answer nonesuch">Read the music on the piano.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="8_2_H" class="answer nonesuch">For the second blank: What rhymes with &quot;laden&quot;? (Remember that the poem</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="8_2_I" class="answer nonesuch">is about three fellows arguing about &quot;wine, women, and song.&quot;)</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="8_2_J" class="answer nonesuch">The word for the second blank is &quot;maiden.&quot; Where in the castle is a</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="8_2_K" class="answer nonesuch">maiden?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="8_2_L" class="answer nonesuch">It&#39;s not the iron maiden in the dungeon.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="8_2_M" class="answer nonesuch">Find the maiden mentioned in the tourist brochure and examine it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_N");' role="link">
+<div class="answer-label">N.</div><div class="answer-cell"><span id="8_2_N" class="answer nonesuch">For the last blank: What rhymes with &quot;fine&quot;? (Remember what the three</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_O");' role="link">
+<div class="answer-label">O.</div><div class="answer-cell"><span id="8_2_O" class="answer nonesuch">fellows are arguing about!)</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_P");' role="link">
+<div class="answer-label">P.</div><div class="answer-cell"><span id="8_2_P" class="answer nonesuch">The word for the last blank is &quot;wine.&quot; Where in the castle will you</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_Q");' role="link">
+<div class="answer-label">Q.</div><div class="answer-cell"><span id="8_2_Q" class="answer nonesuch">find wine?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_R");' role="link">
+<div class="answer-label">R.</div><div class="answer-cell"><span id="8_2_R" class="answer nonesuch">Examine the wine bottle in the basement.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_S");' role="link">
+<div class="answer-label">S.</div><div class="answer-cell"><span id="8_2_S" class="answer nonesuch">Put together the parts of words marked with a star.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_T");' role="link">
+<div class="answer-label">T.</div><div class="answer-cell"><span id="8_2_T" class="answer nonesuch">They spell &quot;SUIT ARMOUR.&quot; Look in the tourist brochure to find it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_U");' role="link">
+<div class="answer-label">U.</div><div class="answer-cell"><span id="8_2_U" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_V");' role="link">
+<div class="answer-label">V.</div><div class="answer-cell"><span id="8_2_V" class="answer nonesuch">I&#39;m stuck on the third clue. Help!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_W");' role="link">
+<div class="answer-label">W.</div><div class="answer-cell"><span id="8_2_W" class="answer nonesuch">Put the parts of words from the second clue into the blanks in a</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_X");' role="link">
+<div class="answer-label">X.</div><div class="answer-cell"><span id="8_2_X" class="answer nonesuch">different order.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_Y");' role="link">
+<div class="answer-label">Y.</div><div class="answer-cell"><span id="8_2_Y" class="answer nonesuch">The order is ARM, SUIT and OUR.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_Z");' role="link">
+<div class="answer-label">Z.</div><div class="answer-cell"><span id="8_2_Z" class="answer nonesuch">What &quot;alarm&quot; has &quot;suite&quot; (sweet) tones that &quot;clamour&quot;?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_[");' role="link">
+<div class="answer-label">[.</div><div class="answer-cell"><span id="8_2_[" class="answer nonesuch">The bell on the fighting deck is an alarm that clamours.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_\");' role="link">
+<div class="answer-label">\.</div><div class="answer-cell"><span id="8_2_\" class="answer nonesuch">LOOK INSIDE THE BELL to find the treasure.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Help! What is the meaning of the fourth clue?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Try to climb up one of the fireplaces in the castle.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">However, you can&#39;t go back down the same way. Try to find a different</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">flue to go down.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">However, if you go down you&#39;ll land in a fire and...</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">You&#39;ve been burned. There is no fourth clue in the blue variation.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">I found an item that doesn&#39;t look like treasure!</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">Why are you reading this clue?</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">The skull is obviously the treasure.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_3_A" class="answer nonesuch">Try to climb up one of the fireplaces in the castle.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_3_B" class="answer nonesuch">However, you can&#39;t go back down the same way. Try to find a different</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_3_C" class="answer nonesuch">flue to go down.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_3_D" class="answer nonesuch">However, if you go down you&#39;ll land in a fire and...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="8_3_E" class="answer nonesuch">You&#39;ve been burned. There is no fourth clue in the blue variation.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_3_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="8_3_F" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_3_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="8_3_G" class="answer nonesuch">I found an item that doesn&#39;t look like treasure!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_3_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="8_3_H" class="answer nonesuch">Why are you reading this clue?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_3_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="8_3_I" class="answer nonesuch">The skull is obviously the treasure.</span></div></div>
       </div>
   </div>
 
@@ -566,39 +1154,93 @@
           <div class="question indented">
       <h3>What is the significance of the maid&#39;s note?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">First read the hints for this same question in the section called</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">&quot;After Dinner.&quot;</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You are looking for something written. The library would be a good</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">place to start.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">In the bookcase is Wendish&#39;s lab notebook. It reveals Wendish&#39;s</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">fiendish ideas.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">Help me figure out the second clue.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">You are doing two things: finding the next clue (by finding an &quot;eye&quot;</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">that doesn&#39;t see) and beginning to spell a word which starts with the</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">letter &quot;I.&quot;</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">The blind &quot;eye&quot; you are looking for is in the game room.</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">The third clue is behind the rhino&#39;s glass eye.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_1_A" class="answer nonesuch">First read the hints for this same question in the section called</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_1_B" class="answer nonesuch">&quot;After Dinner.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_1_C" class="answer nonesuch">You are looking for something written. The library would be a good</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_1_D" class="answer nonesuch">place to start.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="9_1_E" class="answer nonesuch">In the bookcase is Wendish&#39;s lab notebook. It reveals Wendish&#39;s</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="9_1_F" class="answer nonesuch">fiendish ideas.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="9_1_G" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="9_1_H" class="answer nonesuch">Help me figure out the second clue.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="9_1_I" class="answer nonesuch">You are doing two things: finding the next clue (by finding an &quot;eye&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="9_1_J" class="answer nonesuch">that doesn&#39;t see) and beginning to spell a word which starts with the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="9_1_K" class="answer nonesuch">letter &quot;I.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="9_1_L" class="answer nonesuch">The blind &quot;eye&quot; you are looking for is in the game room.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="9_1_M" class="answer nonesuch">The third clue is behind the rhino&#39;s glass eye.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Help! What is the meaning of the third clue?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The second letter is &quot;N&quot; (in &quot;never,&quot; but not in &quot;ever&quot;).</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The next clue is at the dead &quot;end&quot; in the secret (hidden) passages. You</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">can find it on the complete map.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">You can see the clue (but not reach it) if you SEARCH THE WALL in the</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">gallery and then look through the peephole.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">I&#39;m stuck on the fourth clue. Help!</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">The third letter is &quot;K&quot; (a silent letter in &quot;knight&quot;).</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">Putting the three letters together spells &quot;ink.&quot; Find some ink.</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">There is an inkwell in the office.</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">I found an item that doesn&#39;t look like treasure!</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">The treasure isn&#39;t the inkwell.</div></details>
-        <details class="details-answer"><summary>N.</summary><div class="answer">It&#39;s the &quot;ink&quot; inside the inkwell -- the Moonmist drug.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_2_A" class="answer nonesuch">The second letter is &quot;N&quot; (in &quot;never,&quot; but not in &quot;ever&quot;).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_2_B" class="answer nonesuch">The next clue is at the dead &quot;end&quot; in the secret (hidden) passages. You</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_2_C" class="answer nonesuch">can find it on the complete map.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_2_D" class="answer nonesuch">You can see the clue (but not reach it) if you SEARCH THE WALL in the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="9_2_E" class="answer nonesuch">gallery and then look through the peephole.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="9_2_F" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_2_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="9_2_G" class="answer nonesuch">I&#39;m stuck on the fourth clue. Help!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_2_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="9_2_H" class="answer nonesuch">The third letter is &quot;K&quot; (a silent letter in &quot;knight&quot;).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_2_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="9_2_I" class="answer nonesuch">Putting the three letters together spells &quot;ink.&quot; Find some ink.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_2_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="9_2_J" class="answer nonesuch">There is an inkwell in the office.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_2_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="9_2_K" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_2_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="9_2_L" class="answer nonesuch">I found an item that doesn&#39;t look like treasure!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_2_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="9_2_M" class="answer nonesuch">The treasure isn&#39;t the inkwell.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_2_N");' role="link">
+<div class="answer-label">N.</div><div class="answer-cell"><span id="9_2_N" class="answer nonesuch">It&#39;s the &quot;ink&quot; inside the inkwell -- the Moonmist drug.</span></div></div>
       </div>
   </div>
 

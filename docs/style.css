@@ -291,7 +291,6 @@ table {
   margin-right: 1em;
 }
 td { border: var(--td-border-width) solid; padding: .25em; vertical-align: top; }
-.nonesuch { display: none; }
 .hidden { visibility: hidden; }
 
 header,h1,h2,.question,.indented { width: var(--width); margin: auto; }
@@ -304,8 +303,6 @@ h2 {
     margin-bottom: 1rem;
 }
 
-.question { margin-top: 2rem; margin-bottom: 1rem; padding-top: 1em; padding-bottom: 1em; border: .1em solid currentColor; border-radius: 1em; }
-.details-answers { margin-top: .5rem; }
 
 .indented { padding-left: 2em; padding-right: 2em; }
 pre.mono { width: max-content; margin: auto; }
@@ -314,7 +311,7 @@ li { font-size: 1.25rem; }
 li + li { margin-top: .75rem; }
 
 h3 {
-    font-size: 1.25rem; 
+    font-size: 1.25rem;
 }
 
 h4 {
@@ -353,9 +350,19 @@ nav { font-size: 133%; font-weight: var(--bold-weight); width: var(--width); dis
 
 span.mono { font-family: var(--mono); font-weight: var(--mono-weight); font-style: normal; }
 
+.question { margin-top: 2rem; margin-bottom: 1rem; padding-top: 1em; padding-bottom: 1em; border: .1em solid currentColor; border-radius: 1em; }
+/*.details-answers { margin-top: .5rem; }*/
+
+
+.answer-row:hover { border-radius: .75em; outline: var(--summary-outline-width) dotted; width="100%;"}
+.answers { display: table; width: 100%; margin-top: .5rem; }
+.answer-row { display: table-row;  cursor: pointer; width: 100%; }
+.answer-label { font-family: var(--mono); font-weight: var(--mono-weight); font-style: normal; font-weight: bold; display: table-cell; padding-left: 1rem; }
+.answer-cell { display: table-cell; width: 100%; padding-right: 1rem; }
+.answer { padding-left: .5rem; }
 .summation { display: inline-block; }
 summary > * { display: inline; }
-.answer { display: inline; }
 footer {  font-size: .9375rem; padding-bottom: 1rem; margin-top: 1rem; padding-top: 1.5rem; }
 footer > p { text-align: center; }
 p.about { font-weight: bold; margin-top: 1rem; }
+.nonesuch { display: none; }

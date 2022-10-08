@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><title><%= header %> Invisiclues</title>
 <link rel="stylesheet" href="style.css">
+<script>
+function toggle(id) {
+var span = document.getElementById(id);
+console.log("toggling " + span);
+span.classList.toggle('nonesuch');
+console.log(span.classList);
+}
+</script>
 </head>
 <body>
 <header>
@@ -9,14 +17,16 @@
 <main class="invisiclue">
 <h1><%== header %> Invisiclues</h1>
 <h2>Sample Question</h2>
-<%== templates.question.render(question: sample.keys.first, answers: sample.values.first) %>
+<%== templates.question.render(question: sample.keys.first, answers: sample.values.first, section_num: 0, question_num: 0) %>
 <% if !anchors.empty? %>
   <h2>Table of Contents</h2><ul class="indented">
   <% anchors.each do |name, target| %>
     <li><a href="#<%= target %>"><%= name %></a></li>
   <% end %></ul>
 <% end %>
+<% section_num = 0 %>
 <% sections.each do |name, content| %>
+<% section_num += 1 %>
   <h2<% if anchors[name] %> id="<%= anchors[name] %>"<% end %>><%= name %></h2>
   <% if content[:lines] %>
     <% if content[:mono] %><pre class="mono"><%= content[:lines].join("\n") %></pre>
@@ -30,8 +40,10 @@
     </div>
     <% end %>
   <% else %>
+  <% question_num = 0 %>
     <%  content.each do |question, answers| %>
-      <%== templates.question.render(question: question, answers: answers) %>
+      <% question_num += 1 %>
+      <%== templates.question.render(question: question, answers: answers, section_num: section_num, question_num: question_num) %>
     <% end %>
   <% end %>
 <% end %>

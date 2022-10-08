@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><title>Starcross Invisiclues</title>
 <link rel="stylesheet" href="style.css">
+<script>
+function toggle(id) {
+var span = document.getElementById(id);
+console.log("toggling " + span);
+span.classList.toggle('nonesuch');
+console.log(span.classList);
+}
+</script>
 </head>
 <body>
 <header>
@@ -12,9 +20,15 @@
     <div class="question indented">
       <h3>Are my Rat-ants losing their flavor?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Probably -- that&#39;s a normal part of the cooking process.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You must get the pantry key from Smitty the Cook.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Try sprinkling them with Neato brand tenderizing salt.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("0_0_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="0_0_A" class="answer nonesuch">Probably -- that&#39;s a normal part of the cooking process.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("0_0_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="0_0_B" class="answer nonesuch">You must get the pantry key from Smitty the Cook.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("0_0_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="0_0_C" class="answer nonesuch">Try sprinkling them with Neato brand tenderizing salt.</span></div></div>
       </div>
   </div>
 
@@ -36,161 +50,303 @@
           <div class="question indented">
       <h3>How do I turn off the alarm bell?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You&#39;ll have to go out to the Bridge (walk starboard from the Living</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Quarters).</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have you read the description of the mass detector?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Try pushing the red button. Or, tell the computer to turn it off.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_1_A" class="answer nonesuch">You&#39;ll have to go out to the Bridge (walk starboard from the Living</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_1_B" class="answer nonesuch">Quarters).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_1_C" class="answer nonesuch">Have you read the description of the mass detector?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_1_D" class="answer nonesuch">Try pushing the red button. Or, tell the computer to turn it off.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I read the output of the mass detector?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">This is the space chart that was supplied with your game.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The range is the distance from your ship (center of chart). Theta is</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">the angle (in the plane of the chart) from your current course (the</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">radiating lines are 15 [degrees] apart). Phi is the angle above or</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">below the plane of the chart. (Remember that the chart is a</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">two-dimensional representation of three dimensions.) Each phi value can</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">be found under the object&#39;s designation code.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_2_A" class="answer nonesuch">This is the space chart that was supplied with your game.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_2_B" class="answer nonesuch">The range is the distance from your ship (center of chart). Theta is</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_2_C" class="answer nonesuch">the angle (in the plane of the chart) from your current course (the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_2_D" class="answer nonesuch">radiating lines are 15 [degrees] apart). Phi is the angle above or</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="1_2_E" class="answer nonesuch">below the plane of the chart. (Remember that the chart is a</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="1_2_F" class="answer nonesuch">two-dimensional representation of three dimensions.) Each phi value can</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_2_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="1_2_G" class="answer nonesuch">be found under the object&#39;s designation code.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the ship&#39;s registration?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you read it?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It has no other significance.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_3_A" class="answer nonesuch">Have you read it?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_3_B" class="answer nonesuch">It has no other significance.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I reply to the message from Ceres?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you tried COMPUTER, REPLY TO PREVIOUS MESSAGE?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">What message from Ceres?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_4_A" class="answer nonesuch">Have you tried COMPUTER, REPLY TO PREVIOUS MESSAGE?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_4_B" class="answer nonesuch">What message from Ceres?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I use the ship&#39;s controls?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you examined them?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you tried touching them, turning them on, etc.?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">&quot;The computer must be used to set courses, as navigation is fully</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">automated.&quot; (You can also get status reports from the computer at any</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">time.)</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_5_A" class="answer nonesuch">Have you examined them?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_5_B" class="answer nonesuch">Have you tried touching them, turning them on, etc.?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_5_C" class="answer nonesuch">&quot;The computer must be used to set courses, as navigation is fully</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_5_D" class="answer nonesuch">automated.&quot; (You can also get status reports from the computer at any</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_5_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="1_5_E" class="answer nonesuch">time.)</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I know which unidentified mass I should go to?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The mass detector did indicate the correct mass.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you looked at the screen on the mass detector?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Each time you start the game, one of the eight unidentified masses is</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">randomly chosen as the goal, so it won&#39;t be the same every time you</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">play.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">How do I set a course for a particular object</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_6_A" class="answer nonesuch">The mass detector did indicate the correct mass.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_6_B" class="answer nonesuch">Have you looked at the screen on the mass detector?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_6_C" class="answer nonesuch">Each time you start the game, one of the eight unidentified masses is</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_6_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_6_D" class="answer nonesuch">randomly chosen as the goal, so it won&#39;t be the same every time you</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_6_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="1_6_E" class="answer nonesuch">play.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_6_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="1_6_F" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_6_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="1_6_G" class="answer nonesuch">How do I set a course for a particular object</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>(for instance, UM08)?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Only the computer can set course.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">See your game manual for directions on talking to machines (and Aliens,</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">etc.).</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Have you tried COMPUTER, SET COURSE FOR UM08?</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">You must give the computer the range, theta, and phi values from your</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">space chart.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">For UM08: COMPUTER, R IS 150, THETA IS 210, PHI IS 017 or</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">COMPUTER, R IS 150.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">COMPUTER, THETA IS 210.</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">COMPUTER, PHI IS 17.</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">Of course, the alternate way of speaking to the computer will work just</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">as well (TELL COMPUTER &quot;R IS 150...&quot;). When the computer asks for</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">confirmation, type COMPUTER, CONFIRM.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_7_A" class="answer nonesuch">Only the computer can set course.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_7_B" class="answer nonesuch">See your game manual for directions on talking to machines (and Aliens,</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_7_C" class="answer nonesuch">etc.).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_7_D" class="answer nonesuch">Have you tried COMPUTER, SET COURSE FOR UM08?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="1_7_E" class="answer nonesuch">You must give the computer the range, theta, and phi values from your</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="1_7_F" class="answer nonesuch">space chart.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="1_7_G" class="answer nonesuch">For UM08: COMPUTER, R IS 150, THETA IS 210, PHI IS 017 or</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="1_7_H" class="answer nonesuch">COMPUTER, R IS 150.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="1_7_I" class="answer nonesuch">COMPUTER, THETA IS 210.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="1_7_J" class="answer nonesuch">COMPUTER, PHI IS 17.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="1_7_K" class="answer nonesuch">Of course, the alternate way of speaking to the computer will work just</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="1_7_L" class="answer nonesuch">as well (TELL COMPUTER &quot;R IS 150...&quot;). When the computer asks for</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_7_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="1_7_M" class="answer nonesuch">confirmation, type COMPUTER, CONFIRM.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Is there a way to get the computer to shut up?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Yes.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Try turning it off.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_8_A" class="answer nonesuch">Yes.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_8_B" class="answer nonesuch">Try turning it off.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What do I do with the tape library?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can take it.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You can turn it on.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You can play tapes.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">This is how space travelers alleviate boredom.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_9_A" class="answer nonesuch">You can take it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_9_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_9_B" class="answer nonesuch">You can turn it on.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_9_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_9_C" class="answer nonesuch">You can play tapes.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_9_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_9_D" class="answer nonesuch">This is how space travelers alleviate boredom.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I leave the ship?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you tried opening the door?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Before you open the outer door, you should prepare for a space walk.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Put on the space suit and attach the safety line to the hook in the</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Airlock and to your suit.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">You can now go out for a space walk.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_10_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_10_A" class="answer nonesuch">Have you tried opening the door?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_10_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_10_B" class="answer nonesuch">Before you open the outer door, you should prepare for a space walk.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_10_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_10_C" class="answer nonesuch">Put on the space suit and attach the safety line to the hook in the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_10_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_10_D" class="answer nonesuch">Airlock and to your suit.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_10_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="1_10_E" class="answer nonesuch">You can now go out for a space walk.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get back to the Starcross?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you went for a space walk without a safety line, you would be very</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">lucky to make it back alive.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_11_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_11_A" class="answer nonesuch">If you went for a space walk without a safety line, you would be very</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_11_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_11_B" class="answer nonesuch">lucky to make it back alive.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the safety line for?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It is dangerous to leave the ship unless you have a safety line</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">connecting you to the ship.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_12_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_12_A" class="answer nonesuch">It is dangerous to leave the ship unless you have a safety line</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_12_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_12_B" class="answer nonesuch">connecting you to the ship.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I land the Starcross on the unidentified mass?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you tried telling the computer to land?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It is spinning too rapidly to land on.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Wait for the Artifact to spin under you and inspect it before you</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">attempt to land.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_13_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_13_A" class="answer nonesuch">Have you tried telling the computer to land?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_13_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_13_B" class="answer nonesuch">It is spinning too rapidly to land on.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_13_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_13_C" class="answer nonesuch">Wait for the Artifact to spin under you and inspect it before you</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_13_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_13_D" class="answer nonesuch">attempt to land.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How fast is the Artifact spinning?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Assuming that the &quot;gravity&quot; being simulated at the outer level is 1G,</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">it would have to rotate once every 30 seconds or so. This would mean</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">that the rotational speed is about 360 kilometers per hour on the outer</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">surface.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_14_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_14_A" class="answer nonesuch">Assuming that the &quot;gravity&quot; being simulated at the outer level is 1G,</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_14_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_14_B" class="answer nonesuch">it would have to rotate once every 30 seconds or so. This would mean</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_14_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_14_C" class="answer nonesuch">that the rotational speed is about 360 kilometers per hour on the outer</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_14_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_14_D" class="answer nonesuch">surface.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I maneuver the Starcross to the fore end of the unidentified mass?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Unfortunately, you cannot.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">This answer left intentionally blank.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("1_15_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="1_15_A" class="answer nonesuch">Unfortunately, you cannot.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_15_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="1_15_B" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_15_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="1_15_C" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_15_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="1_15_D" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_15_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="1_15_E" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_15_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="1_15_F" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_15_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="1_15_G" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("1_15_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="1_15_H" class="answer nonesuch">This answer left intentionally blank.</span></div></div>
       </div>
   </div>
 
@@ -198,59 +354,117 @@
           <div class="question indented">
       <h3>What do I do with all the strange protrusions around the airlock?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You could tie your safety line to the hook.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But it is not really necessary as long as you don&#39;t jump.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The other protusions are unfathomable.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_1_A" class="answer nonesuch">You could tie your safety line to the hook.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_1_B" class="answer nonesuch">But it is not really necessary as long as you don&#39;t jump.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_1_C" class="answer nonesuch">The other protusions are unfathomable.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get into the Artifact?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You won&#39;t be able to walk away from the Red Dock area, since without</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">metal for your magnetic boots to cling to, you would be flung into</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">space. You can open the Red Airlock door.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Have you examined the sculpture on the door?</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">This is a symbol recognizable by any space-faring species.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Try drawing it as described on a piece of paper.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">This is a symbolic representation of your solar system. The bumps are</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">an indication of the size and orientation of the sun and planets.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">You are being tested, Earthling. What do you think the makers of the</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">Artifact want to know?</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">Your home planet, Earth, is the fourth bump. (The sun is described as</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">the first, Mercury would be second, Venus third, Earth fourth.) Try</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">pushing the fourth bump.</div></details>
-        <details class="details-answer"><summary>N.</summary><div class="answer">See the tiny column hint below.</div></details>
-        <details class="details-answer"><summary>O.</summary><div class="answer">Congratulations, you have passed the test. Take your reward (the black</div></details>
-        <details class="details-answer"><summary>P.</summary><div class="answer">crystal rod) and enter.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_2_A" class="answer nonesuch">You won&#39;t be able to walk away from the Red Dock area, since without</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_2_B" class="answer nonesuch">metal for your magnetic boots to cling to, you would be flung into</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_2_C" class="answer nonesuch">space. You can open the Red Airlock door.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_2_D" class="answer nonesuch">Have you examined the sculpture on the door?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="2_2_E" class="answer nonesuch">This is a symbol recognizable by any space-faring species.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="2_2_F" class="answer nonesuch">Try drawing it as described on a piece of paper.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="2_2_G" class="answer nonesuch">This is a symbolic representation of your solar system. The bumps are</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="2_2_H" class="answer nonesuch">an indication of the size and orientation of the sun and planets.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="2_2_I" class="answer nonesuch">You are being tested, Earthling. What do you think the makers of the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="2_2_J" class="answer nonesuch">Artifact want to know?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="2_2_K" class="answer nonesuch">Your home planet, Earth, is the fourth bump. (The sun is described as</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="2_2_L" class="answer nonesuch">the first, Mercury would be second, Venus third, Earth fourth.) Try</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="2_2_M" class="answer nonesuch">pushing the fourth bump.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_N");' role="link">
+<div class="answer-label">N.</div><div class="answer-cell"><span id="2_2_N" class="answer nonesuch">See the tiny column hint below.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_O");' role="link">
+<div class="answer-label">O.</div><div class="answer-cell"><span id="2_2_O" class="answer nonesuch">Congratulations, you have passed the test. Take your reward (the black</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_P");' role="link">
+<div class="answer-label">P.</div><div class="answer-cell"><span id="2_2_P" class="answer nonesuch">crystal rod) and enter.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Is the sculpture significant?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Yes.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">See hints B through I above.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">If you push the wrong bump and the sculpture flattens out, you&#39;ll never</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">get into the Artifact.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_3_A" class="answer nonesuch">Yes.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_3_B" class="answer nonesuch">See hints B through I above.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_3_C" class="answer nonesuch">If you push the wrong bump and the sculpture flattens out, you&#39;ll never</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_3_D" class="answer nonesuch">get into the Artifact.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the tiny column made up of only one hexagon?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It represents an object between the orbits of Mars and Jupiter.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The size of the bumps is an indication of mass. This column obviously</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">represents an object of much smaller mass than a planet.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The tiny column represents your current location -- the Artifact. Try</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">pushing it.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_4_A" class="answer nonesuch">It represents an object between the orbits of Mars and Jupiter.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_4_B" class="answer nonesuch">The size of the bumps is an indication of mass. This column obviously</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_4_C" class="answer nonesuch">represents an object of much smaller mass than a planet.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_4_D" class="answer nonesuch">The tiny column represents your current location -- the Artifact. Try</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="2_4_E" class="answer nonesuch">pushing it.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Once inside the Artifact, can I take off the space suit?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Try it.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_5_A" class="answer nonesuch">Try it.</span></div></div>
       </div>
   </div>
 
@@ -258,57 +472,111 @@
           <div class="question indented">
       <h3>What do I do with the visor fragment?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you tried to look through it?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You probably should take it; you never know what might come in handy.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_1_A" class="answer nonesuch">Have you tried to look through it?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_1_B" class="answer nonesuch">You probably should take it; you never know what might come in handy.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I open the engine room door?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you tried the ray gun?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Sorry, this is a dead end.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_2_A" class="answer nonesuch">Have you tried the ray gun?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_2_B" class="answer nonesuch">Sorry, this is a dead end.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How are the controls operated?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">&quot;The controls look in no way operational.&quot;</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">This answer left intentionally blank.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_3_A" class="answer nonesuch">&quot;The controls look in no way operational.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_3_B" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_3_C" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_3_D" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="3_3_E" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_3_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="3_3_F" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_3_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="3_3_G" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_3_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="3_3_H" class="answer nonesuch">This answer left intentionally blank.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the skeleton?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The Aliens seem to have left offerings, as if they regard this as a</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">holy temple. You had better be careful.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">However, you can&#39;t be squeamish and rule out any possible actions.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Have you tried touching or moving or taking the skeleton?</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Shooting it with the ray gun or touching it a second time will lead to</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">unfortunate consequences for you.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_4_A" class="answer nonesuch">The Aliens seem to have left offerings, as if they regard this as a</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_4_B" class="answer nonesuch">holy temple. You had better be careful.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_4_C" class="answer nonesuch">However, you can&#39;t be squeamish and rule out any possible actions.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_4_D" class="answer nonesuch">Have you tried touching or moving or taking the skeleton?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="3_4_E" class="answer nonesuch">Shooting it with the ray gun or touching it a second time will lead to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="3_4_F" class="answer nonesuch">unfortunate consequences for you.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I hide the violet rod?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you tried the metal basket?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Even if you managed to hide it, the Aliens will suspect foul play and</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">check the altar. You&#39;ll have to find another way to get it past them.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">You won&#39;t be able to solve this problem until you gain access to the</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Laboratory and learn it secrets. Once you have, read the next hint.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">The disks are a perfect escape route for a burglary. Leave one on the</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">floor and use the other to transport yourself (and the violet rod) out</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">of the Alien ship.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">This is the last time you will be able to use the disks, however.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_5_A" class="answer nonesuch">Have you tried the metal basket?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_5_B" class="answer nonesuch">Even if you managed to hide it, the Aliens will suspect foul play and</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_5_C" class="answer nonesuch">check the altar. You&#39;ll have to find another way to get it past them.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_5_D" class="answer nonesuch">You won&#39;t be able to solve this problem until you gain access to the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="3_5_E" class="answer nonesuch">Laboratory and learn it secrets. Once you have, read the next hint.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="3_5_F" class="answer nonesuch">The disks are a perfect escape route for a burglary. Leave one on the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="3_5_G" class="answer nonesuch">floor and use the other to transport yourself (and the violet rod) out</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="3_5_H" class="answer nonesuch">of the Alien ship.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_5_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="3_5_I" class="answer nonesuch">This is the last time you will be able to use the disks, however.</span></div></div>
       </div>
   </div>
 
@@ -316,52 +584,108 @@
           <div class="question indented">
       <h3>How do I fix the computer?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you opened the access panel?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You&#39;ll have to find the missing card.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">It is not a good idea to add or remove circuit boards while the system</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">is powered up.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_1_A" class="answer nonesuch">Have you opened the access panel?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_1_B" class="answer nonesuch">You&#39;ll have to find the missing card.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_1_C" class="answer nonesuch">It is not a good idea to add or remove circuit boards while the system</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_1_D" class="answer nonesuch">is powered up.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can the computer be repaired after the electrical fire?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You&#39;ll have to have it serviced by the manufacturer.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">In other words, it can&#39;t be fixed. Don&#39;t put cards into the racks while</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">the power is on.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_2_A" class="answer nonesuch">You&#39;ll have to have it serviced by the manufacturer.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_2_B" class="answer nonesuch">In other words, it can&#39;t be fixed. Don&#39;t put cards into the racks while</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_2_C" class="answer nonesuch">the power is on.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Where is the missing card?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you thoroughly explore the Artifact, you should find it.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Advanced technology may make it different from circuit boards you are</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">accustomed to.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The metal and ceramic square in the Repair Room will work.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_3_A" class="answer nonesuch">If you thoroughly explore the Artifact, you should find it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_3_B" class="answer nonesuch">Advanced technology may make it different from circuit boards you are</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_3_C" class="answer nonesuch">accustomed to.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_3_D" class="answer nonesuch">The metal and ceramic square in the Repair Room will work.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What does the enunciator panel signify?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Try drawing the diagrams as described.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The three banks of lights on the left each have four colored lights. Do</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">the colors remind you of anything?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The colors are associated with the four main corridors.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">&quot;The first [bank of lights] is labeled with a symbol of the emission of</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">rays...&quot; What do the red and yellow halls have in common?</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">The &quot;emission of rays&quot; is a symbol for light. The red hallway lights</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">are fading. The yellow hallway is either dark or under emergency</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">lighting. (If it&#39;s dark, you could tell that it is yellow by process of</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">elimination -- as you approached the Artifact you saw blue, _yellow_,</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">green, and red docking ports.)</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">The other two banks of lights on the left indicate problems with the</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">yellow docking port and the yellow airlock.</div></details>
-        <details class="details-answer"><summary>N.</summary><div class="answer">The symbol for the sixth light on the right represents solid, liquid,</div></details>
-        <details class="details-answer"><summary>O.</summary><div class="answer">gas (the light is associated with the last of these).</div></details>
-        <details class="details-answer"><summary>P.</summary><div class="answer">The sixth light indicates a progressively worsening problem with the</div></details>
-        <details class="details-answer"><summary>Q.</summary><div class="answer">ship&#39;s atmosphere.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_4_A" class="answer nonesuch">Try drawing the diagrams as described.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_4_B" class="answer nonesuch">The three banks of lights on the left each have four colored lights. Do</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_4_C" class="answer nonesuch">the colors remind you of anything?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_4_D" class="answer nonesuch">The colors are associated with the four main corridors.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="4_4_E" class="answer nonesuch">&quot;The first [bank of lights] is labeled with a symbol of the emission of</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="4_4_F" class="answer nonesuch">rays...&quot; What do the red and yellow halls have in common?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="4_4_G" class="answer nonesuch">The &quot;emission of rays&quot; is a symbol for light. The red hallway lights</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="4_4_H" class="answer nonesuch">are fading. The yellow hallway is either dark or under emergency</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="4_4_I" class="answer nonesuch">lighting. (If it&#39;s dark, you could tell that it is yellow by process of</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="4_4_J" class="answer nonesuch">elimination -- as you approached the Artifact you saw blue, _yellow_,</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="4_4_K" class="answer nonesuch">green, and red docking ports.)</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="4_4_L" class="answer nonesuch">The other two banks of lights on the left indicate problems with the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="4_4_M" class="answer nonesuch">yellow docking port and the yellow airlock.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_N");' role="link">
+<div class="answer-label">N.</div><div class="answer-cell"><span id="4_4_N" class="answer nonesuch">The symbol for the sixth light on the right represents solid, liquid,</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_O");' role="link">
+<div class="answer-label">O.</div><div class="answer-cell"><span id="4_4_O" class="answer nonesuch">gas (the light is associated with the last of these).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_P");' role="link">
+<div class="answer-label">P.</div><div class="answer-cell"><span id="4_4_P" class="answer nonesuch">The sixth light indicates a progressively worsening problem with the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_4_Q");' role="link">
+<div class="answer-label">Q.</div><div class="answer-cell"><span id="4_4_Q" class="answer nonesuch">ship&#39;s atmosphere.</span></div></div>
       </div>
   </div>
 
@@ -369,192 +693,348 @@
           <div class="question indented">
       <h3>How do I kill all the Weasels?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The only weapon effective against them is the ray gun.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But you will not be able to kill them all, and the others will not</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">appreciate your actions.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The only way to kill them all is to allow the ship&#39;s condition to</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">deteriorate to the point where everyone dies. This, unfortunately, will</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">include you.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_1_A" class="answer nonesuch">The only weapon effective against them is the ray gun.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_1_B" class="answer nonesuch">But you will not be able to kill them all, and the others will not</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_1_C" class="answer nonesuch">appreciate your actions.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_1_D" class="answer nonesuch">The only way to kill them all is to allow the ship&#39;s condition to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_1_E" class="answer nonesuch">deteriorate to the point where everyone dies. This, unfortunately, will</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_1_F" class="answer nonesuch">include you.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I get past the palisades?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">They cannot be climbed.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The ray gun is not powerful enough to break through, but will do enough</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">damage to annoy the Aliens.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">There is nothing at your disposal that is more powerful than the ray</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">gun. You cannot get past the palisades.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_2_A" class="answer nonesuch">They cannot be climbed.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_2_B" class="answer nonesuch">The ray gun is not powerful enough to break through, but will do enough</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_2_C" class="answer nonesuch">damage to annoy the Aliens.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_2_D" class="answer nonesuch">There is nothing at your disposal that is more powerful than the ray</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_2_E" class="answer nonesuch">gun. You cannot get past the palisades.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I pass the hostile Weasels?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You shouldn&#39;t have annoyed them. They won&#39;t let you pass.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_3_A" class="answer nonesuch">You shouldn&#39;t have annoyed them. They won&#39;t let you pass.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get the brown crystal rod from the Alien Chief?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You will not be able to overpower him in a fight.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The ray gun leaves nothing useful.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have you ever come upon him while wearing or carrying your space suit?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">He is very interested in the space suit. Try giving it to him.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">His gestures are his way of offering a gift in return.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Point (or gesture) at his brown rod.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_4_A" class="answer nonesuch">You will not be able to overpower him in a fight.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_4_B" class="answer nonesuch">The ray gun leaves nothing useful.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_4_C" class="answer nonesuch">Have you ever come upon him while wearing or carrying your space suit?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_4_D" class="answer nonesuch">He is very interested in the space suit. Try giving it to him.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_4_E" class="answer nonesuch">His gestures are his way of offering a gift in return.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_4_F" class="answer nonesuch">Point (or gesture) at his brown rod.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What does the Alien Chief&#39;s gesturing mean?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It is common in many cultures for new acquaintances to exchange gifts.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_5_A" class="answer nonesuch">It is common in many cultures for new acquaintances to exchange gifts.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What can the Weasel slave do for me?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you must ask, I&#39;m afraid I can&#39;t help you.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">What Weasel slave?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_6_A" class="answer nonesuch">If you must ask, I&#39;m afraid I can&#39;t help you.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_6_B" class="answer nonesuch">What Weasel slave?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the unicorn meat?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Could it be edible?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Raw meat is not very sanitary (or appetizing). Wouldn&#39;t it be better to</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">cook it? (The ray gun is great for this sort of thing.)</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Medium rare requires 30 seconds at the second setting. You can vary the</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">time if you prefer it rarer or more well-done. (Add 10 seconds to</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">defrost if this is from the freezer compartment.)</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">By the way, where did you come across unicorn meat?</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">Keep in mind the warning in the introduction: Do not use the presence</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">or absence of a question on a certain topic as an indication of what is</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">important, and don&#39;t assume that long answers indicate important</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">questions.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_7_A" class="answer nonesuch">Could it be edible?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_7_B" class="answer nonesuch">Raw meat is not very sanitary (or appetizing). Wouldn&#39;t it be better to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_7_C" class="answer nonesuch">cook it? (The ray gun is great for this sort of thing.)</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_7_D" class="answer nonesuch">Medium rare requires 30 seconds at the second setting. You can vary the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_7_E" class="answer nonesuch">time if you prefer it rarer or more well-done. (Add 10 seconds to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_7_F" class="answer nonesuch">defrost if this is from the freezer compartment.)</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="5_7_G" class="answer nonesuch">By the way, where did you come across unicorn meat?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="5_7_H" class="answer nonesuch">Keep in mind the warning in the introduction: Do not use the presence</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="5_7_I" class="answer nonesuch">or absence of a question on a certain topic as an indication of what is</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="5_7_J" class="answer nonesuch">important, and don&#39;t assume that long answers indicate important</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="5_7_K" class="answer nonesuch">questions.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I find my way through the Warren?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You will never find the way unaided.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you considered a native guide?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Try following the Alien Chief once you have the brown rod in your</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">possession.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_8_A" class="answer nonesuch">You will never find the way unaided.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_8_B" class="answer nonesuch">Have you considered a native guide?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_8_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_8_C" class="answer nonesuch">Try following the Alien Chief once you have the brown rod in your</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_8_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_8_D" class="answer nonesuch">possession.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What should I do with the ladder?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Try climbing down.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_9_A" class="answer nonesuch">Try climbing down.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is a grue?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Try typing WHAT IS A GRUE?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_10_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_10_A" class="answer nonesuch">Try typing WHAT IS A GRUE?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Can I reach the body in the debris?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Yes, but you can&#39;t rely solely on your magnetic boots (no pun</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">intended).</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Try using your safety line. Tie it to the hook and to your suit.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_11_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_11_A" class="answer nonesuch">Yes, but you can&#39;t rely solely on your magnetic boots (no pun</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_11_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_11_B" class="answer nonesuch">intended).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_11_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_11_C" class="answer nonesuch">Try using your safety line. Tie it to the hook and to your suit.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get the grues&#39; rod?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You might try to capture a grue.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Don&#39;t go on until you have been to the Laboratory.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Don&#39;t go on until you have figured out what the disks are.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">A great way to catch a grue would be to leave a disk in a dark room and</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">wait (somewhere else) for one to step on it.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Unfortunately, there are no longer any dark rooms on the ship.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Also, the grues don&#39;t have a rod.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_12_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_12_A" class="answer nonesuch">You might try to capture a grue.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_12_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_12_B" class="answer nonesuch">Don&#39;t go on until you have been to the Laboratory.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_12_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_12_C" class="answer nonesuch">Don&#39;t go on until you have figured out what the disks are.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_12_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_12_D" class="answer nonesuch">A great way to catch a grue would be to leave a disk in a dark room and</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_12_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_12_E" class="answer nonesuch">wait (somewhere else) for one to step on it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_12_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_12_F" class="answer nonesuch">Unfortunately, there are no longer any dark rooms on the ship.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_12_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="5_12_G" class="answer nonesuch">Also, the grues don&#39;t have a rod.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What do I do about the Spider?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">He certainly _seems_ friendly.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">What is his problem?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">He is extremely bored.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Can you help him?</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Haven&#39;t you heard enough about the history of Brazil in the 2030&#39;s?</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Why not give him your tape player?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_13_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_13_A" class="answer nonesuch">He certainly _seems_ friendly.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_13_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_13_B" class="answer nonesuch">What is his problem?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_13_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_13_C" class="answer nonesuch">He is extremely bored.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_13_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_13_D" class="answer nonesuch">Can you help him?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_13_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_13_E" class="answer nonesuch">Haven&#39;t you heard enough about the history of Brazil in the 2030&#39;s?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_13_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_13_F" class="answer nonesuch">Why not give him your tape player?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I escape the web?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you had smeared lubricant on your space suit, you wouldn&#39;t have</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">gotten stuck.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_14_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_14_A" class="answer nonesuch">If you had smeared lubricant on your space suit, you wouldn&#39;t have</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_14_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_14_B" class="answer nonesuch">gotten stuck.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Where do I find the lubricant?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">How did you get stuck in the web?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">There is no lubricant.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">InvisiClues veterans will recognize this as a &quot;lesson&quot; question. If</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">every question in this book were pertinent to the game, the questions</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">themselves would give far too much away. Questions such as this should</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">convince you to ignore those that are not of immediate use.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_15_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_15_A" class="answer nonesuch">How did you get stuck in the web?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_15_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_15_B" class="answer nonesuch">There is no lubricant.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_15_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_15_C" class="answer nonesuch">InvisiClues veterans will recognize this as a &quot;lesson&quot; question. If</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_15_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_15_D" class="answer nonesuch">every question in this book were pertinent to the game, the questions</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_15_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_15_E" class="answer nonesuch">themselves would give far too much away. Questions such as this should</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_15_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_15_F" class="answer nonesuch">convince you to ignore those that are not of immediate use.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I answer Gurthark&#39;s questions?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">There is unfortunately no way for you to answer most of them.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_16_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_16_A" class="answer nonesuch">There is unfortunately no way for you to answer most of them.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get Gurthark to follow me?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you tried GURTHARK, FOLLOW ME?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">He won&#39;t.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_17_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_17_A" class="answer nonesuch">Have you tried GURTHARK, FOLLOW ME?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_17_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_17_B" class="answer nonesuch">He won&#39;t.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get the red rod from the Rat-ants?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">They don&#39;t seem to be open to negotiation. More direct methods will be</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">necessary.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The ray gun is too effective on the nest, and not effective enough</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">against individual groups of Rat-ants (there are just too many).</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Have you examined the Rat-ants and the nest?</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">The nest is described as &quot;jerry-built&quot; and &quot;precariously stuck</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">together.&quot;</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">Although kicking it is not effective, you can destroy it by throwing</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">something fairly heavy at it. While the Rat-ants are rebuilding, you</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">have a chance to take the rod.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_18_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_18_A" class="answer nonesuch">They don&#39;t seem to be open to negotiation. More direct methods will be</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_18_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_18_B" class="answer nonesuch">necessary.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_18_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_18_C" class="answer nonesuch">The ray gun is too effective on the nest, and not effective enough</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_18_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_18_D" class="answer nonesuch">against individual groups of Rat-ants (there are just too many).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_18_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_18_E" class="answer nonesuch">Have you examined the Rat-ants and the nest?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_18_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_18_F" class="answer nonesuch">The nest is described as &quot;jerry-built&quot; and &quot;precariously stuck</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_18_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="5_18_G" class="answer nonesuch">together.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_18_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="5_18_H" class="answer nonesuch">Although kicking it is not effective, you can destroy it by throwing</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_18_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="5_18_I" class="answer nonesuch">something fairly heavy at it. While the Rat-ants are rebuilding, you</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_18_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="5_18_J" class="answer nonesuch">have a chance to take the rod.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How did the Rat-ants get to the Artifact?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Their crude intelligence is an indication that they did not arrive here</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">on their own.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Presumably they were among the original inhabitants of the zoo.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_19_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_19_A" class="answer nonesuch">Their crude intelligence is an indication that they did not arrive here</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_19_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_19_B" class="answer nonesuch">on their own.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_19_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_19_C" class="answer nonesuch">Presumably they were among the original inhabitants of the zoo.</span></div></div>
       </div>
   </div>
 
@@ -562,83 +1042,165 @@
           <div class="question indented">
       <h3>What is the silvery globe in the Laboratory?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">This is a technology so far beyond current human experience that it is</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">impossible to explain. Ask again when you fully understand the details</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">of the Matter Intransitivity Principle of the Dornbrookian Unified</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Field Theory.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_1_A" class="answer nonesuch">This is a technology so far beyond current human experience that it is</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_1_B" class="answer nonesuch">impossible to explain. Ask again when you fully understand the details</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_1_C" class="answer nonesuch">of the Matter Intransitivity Principle of the Dornbrookian Unified</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_1_D" class="answer nonesuch">Field Theory.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What do I do with the silvery globe?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It&#39;s a force field.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You can&#39;t push it or climb on it.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have you tried changing the dial setting?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_2_A" class="answer nonesuch">It&#39;s a force field.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_2_B" class="answer nonesuch">You can&#39;t push it or climb on it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_2_C" class="answer nonesuch">Have you tried changing the dial setting?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Can I take the blue rod?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can&#39;t take it directly, but there are ways to get it.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">There is no way to block the beam or turn it off.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The preferred solution starts at D. An alternate solution starts at I.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Have you ever tried putting anything on the sphere and then changing</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">the dial setting?</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">You will have to learn how to use the red and blue disks before going</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">on.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">You could use the disks to enter the sphere (&quot;but it would be wrong&quot;).</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">Put one disk under the sphere and then set the dial to 4. Step on the</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">other disk.</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">Can you think of a way to get the disk to activate while it is in the</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">sphere?</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">Put a disk under the sphere. Put something on the sphere. Set the dial</div></details>
-        <details class="details-answer"><summary>N.</summary><div class="answer">to 4. The object placed on the globe will fall onto the disk inside,</div></details>
-        <details class="details-answer"><summary>O.</summary><div class="answer">causing it to activate. Luckily, the blue rod is within range of the</div></details>
-        <details class="details-answer"><summary>P.</summary><div class="answer">disk.</div></details>
-        <details class="details-answer"><summary>Q.</summary><div class="answer">Do you know of anything that might be able to deal with these</div></details>
-        <details class="details-answer"><summary>R.</summary><div class="answer">technologically-advanced forces?</div></details>
-        <details class="details-answer"><summary>S.</summary><div class="answer">You have probably already used something powerful and similarly</div></details>
-        <details class="details-answer"><summary>T.</summary><div class="answer">advanced.</div></details>
-        <details class="details-answer"><summary>U.</summary><div class="answer">You can use the ray gun to eliminate the sphere momentarily and get the</div></details>
-        <details class="details-answer"><summary>V.</summary><div class="answer">blue rod. However, you will find that you don&#39;t have a shot to spare</div></details>
-        <details class="details-answer"><summary>W.</summary><div class="answer">for this purpose.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_3_A" class="answer nonesuch">You can&#39;t take it directly, but there are ways to get it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_3_B" class="answer nonesuch">There is no way to block the beam or turn it off.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_3_C" class="answer nonesuch">The preferred solution starts at D. An alternate solution starts at I.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_3_D" class="answer nonesuch">Have you ever tried putting anything on the sphere and then changing</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="6_3_E" class="answer nonesuch">the dial setting?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="6_3_F" class="answer nonesuch">You will have to learn how to use the red and blue disks before going</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="6_3_G" class="answer nonesuch">on.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="6_3_H" class="answer nonesuch">You could use the disks to enter the sphere (&quot;but it would be wrong&quot;).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="6_3_I" class="answer nonesuch">Put one disk under the sphere and then set the dial to 4. Step on the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="6_3_J" class="answer nonesuch">other disk.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="6_3_K" class="answer nonesuch">Can you think of a way to get the disk to activate while it is in the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="6_3_L" class="answer nonesuch">sphere?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="6_3_M" class="answer nonesuch">Put a disk under the sphere. Put something on the sphere. Set the dial</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_N");' role="link">
+<div class="answer-label">N.</div><div class="answer-cell"><span id="6_3_N" class="answer nonesuch">to 4. The object placed on the globe will fall onto the disk inside,</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_O");' role="link">
+<div class="answer-label">O.</div><div class="answer-cell"><span id="6_3_O" class="answer nonesuch">causing it to activate. Luckily, the blue rod is within range of the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_P");' role="link">
+<div class="answer-label">P.</div><div class="answer-cell"><span id="6_3_P" class="answer nonesuch">disk.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_Q");' role="link">
+<div class="answer-label">Q.</div><div class="answer-cell"><span id="6_3_Q" class="answer nonesuch">Do you know of anything that might be able to deal with these</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_R");' role="link">
+<div class="answer-label">R.</div><div class="answer-cell"><span id="6_3_R" class="answer nonesuch">technologically-advanced forces?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_S");' role="link">
+<div class="answer-label">S.</div><div class="answer-cell"><span id="6_3_S" class="answer nonesuch">You have probably already used something powerful and similarly</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_T");' role="link">
+<div class="answer-label">T.</div><div class="answer-cell"><span id="6_3_T" class="answer nonesuch">advanced.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_U");' role="link">
+<div class="answer-label">U.</div><div class="answer-cell"><span id="6_3_U" class="answer nonesuch">You can use the ray gun to eliminate the sphere momentarily and get the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_V");' role="link">
+<div class="answer-label">V.</div><div class="answer-cell"><span id="6_3_V" class="answer nonesuch">blue rod. However, you will find that you don&#39;t have a shot to spare</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_W");' role="link">
+<div class="answer-label">W.</div><div class="answer-cell"><span id="6_3_W" class="answer nonesuch">for this purpose.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I turn off the projector?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can&#39;t turn it off.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You can&#39;t harm it.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Even the ray gun is useless against it.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_4_A" class="answer nonesuch">You can&#39;t turn it off.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_4_B" class="answer nonesuch">You can&#39;t harm it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_4_C" class="answer nonesuch">Even the ray gun is useless against it.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What causes the loud clicking sound?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It is probably due to air rushing in to fill the void.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_5_A" class="answer nonesuch">It is probably due to air rushing in to fill the void.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is done with the red and blue disks?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Although they may not appear to be much, they are probably the most</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">sophisticated machines on the Artifact.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The manhole-cover size is not a coincidence.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Try putting both on the floor and stepping on one.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">They have a built-in safety feature which allows them to transport</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">things only when both are on floors.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_6_A" class="answer nonesuch">Although they may not appear to be much, they are probably the most</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_6_B" class="answer nonesuch">sophisticated machines on the Artifact.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_6_C" class="answer nonesuch">The manhole-cover size is not a coincidence.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_6_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_6_D" class="answer nonesuch">Try putting both on the floor and stepping on one.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_6_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="6_6_E" class="answer nonesuch">They have a built-in safety feature which allows them to transport</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_6_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="6_6_F" class="answer nonesuch">things only when both are on floors.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can the lights be dimmed?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">They can&#39;t.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_7_A" class="answer nonesuch">They can&#39;t.</span></div></div>
       </div>
   </div>
 
@@ -646,123 +1208,237 @@
           <div class="question indented">
       <h3>Is there any significance to the bands of metal, grass, and forest?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Either the ship was designed like this (who knows what an alien race</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">may regard as pleasant landscaping?), or maybe some major acceleration</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">in the past caused most of the soil to shift to the aft end of the</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Artifact.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_1_A" class="answer nonesuch">Either the ship was designed like this (who knows what an alien race</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_1_B" class="answer nonesuch">may regard as pleasant landscaping?), or maybe some major acceleration</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_1_C" class="answer nonesuch">in the past caused most of the soil to shift to the aft end of the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_1_D" class="answer nonesuch">Artifact.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I catch a unicorn?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">&quot;Only one of royal blood...&quot; (just joking). You can&#39;t do anything to</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">the unicorns other than incinerate them.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_2_A" class="answer nonesuch">&quot;Only one of royal blood...&quot; (just joking). You can&#39;t do anything to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_2_B" class="answer nonesuch">the unicorns other than incinerate them.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the unicorn hunt?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The Weasel Aliens have to eat something other than vegetables to get a</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">balanced diet.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You can disrupt the hunt, but there is nothing important going on.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_3_A" class="answer nonesuch">The Weasel Aliens have to eat something other than vegetables to get a</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_3_B" class="answer nonesuch">balanced diet.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_3_C" class="answer nonesuch">You can disrupt the hunt, but there is nothing important going on.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the machine to the left in the Repair Room for?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You could experiment by putting the appropriate object in the yellow</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">slot.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The &quot;symbol depicting the emission of rays&quot; indicates that this machine</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">has something to do with the lights.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Put the yellow crystal rod in the slot. The emergency lighting in the</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">yellow hallway will now come on.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_4_A" class="answer nonesuch">You could experiment by putting the appropriate object in the yellow</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_4_B" class="answer nonesuch">slot.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_4_C" class="answer nonesuch">The &quot;symbol depicting the emission of rays&quot; indicates that this machine</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_4_D" class="answer nonesuch">has something to do with the lights.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="7_4_E" class="answer nonesuch">Put the yellow crystal rod in the slot. The emergency lighting in the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_4_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="7_4_F" class="answer nonesuch">yellow hallway will now come on.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the purpose of the machine on the right in the Repair Room?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Try drawing the symbols as described.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It has some similarities to the computer enunciator panel.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The solid block, fluid level, and parallel wavy lines symbolize solid,</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">liquid, and gas, respectively.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">The diagrams of dots are associated with the gas symbol. For further</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">details, see the question about the dots.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_5_A" class="answer nonesuch">Try drawing the symbols as described.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_5_B" class="answer nonesuch">It has some similarities to the computer enunciator panel.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_5_C" class="answer nonesuch">The solid block, fluid level, and parallel wavy lines symbolize solid,</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_5_D" class="answer nonesuch">liquid, and gas, respectively.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_5_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="7_5_E" class="answer nonesuch">The diagrams of dots are associated with the gas symbol. For further</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_5_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="7_5_F" class="answer nonesuch">details, see the question about the dots.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What do the groups of dots mean?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">These are symbols that any species capable of space flight should be</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">able to decipher.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">They are not mathematical symbols. Try writing them as described on a</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">piece of paper.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Try experimenting. Put the proper item into the first, second, or third</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">red slot and see what happens. (It will take a while to notice the</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">effect.)</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">The proper item to put in the slots is the red crystal rod.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">Have you ever studied chemistry?</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">The six dots with four evenly-spaced dots around them symbolize methane</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">(carbon of atomic number six surrounded by four hydrogens of atomic</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">number one). The seven dots with three equally-spaced dots around them</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">symbolize ammonia (nitrogen of atomic number seven with three</div></details>
-        <details class="details-answer"><summary>N.</summary><div class="answer">hydrogens). The two groups of eight dots closely associated represent</div></details>
-        <details class="details-answer"><summary>O.</summary><div class="answer">the oxygen molecule (two oxygen atoms of atomic number eight). These</div></details>
-        <details class="details-answer"><summary>P.</summary><div class="answer">gases make up three possible planetary atmospheres.</div></details>
-        <details class="details-answer"><summary>Q.</summary><div class="answer">In case you don&#39;t know, you want oxygen (that&#39;s the second red slot).</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_6_A" class="answer nonesuch">These are symbols that any species capable of space flight should be</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_6_B" class="answer nonesuch">able to decipher.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_6_C" class="answer nonesuch">They are not mathematical symbols. Try writing them as described on a</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_6_D" class="answer nonesuch">piece of paper.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="7_6_E" class="answer nonesuch">Try experimenting. Put the proper item into the first, second, or third</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="7_6_F" class="answer nonesuch">red slot and see what happens. (It will take a while to notice the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="7_6_G" class="answer nonesuch">effect.)</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="7_6_H" class="answer nonesuch">The proper item to put in the slots is the red crystal rod.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="7_6_I" class="answer nonesuch">Have you ever studied chemistry?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="7_6_J" class="answer nonesuch">The six dots with four evenly-spaced dots around them symbolize methane</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="7_6_K" class="answer nonesuch">(carbon of atomic number six surrounded by four hydrogens of atomic</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="7_6_L" class="answer nonesuch">number one). The seven dots with three equally-spaced dots around them</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="7_6_M" class="answer nonesuch">symbolize ammonia (nitrogen of atomic number seven with three</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_N");' role="link">
+<div class="answer-label">N.</div><div class="answer-cell"><span id="7_6_N" class="answer nonesuch">hydrogens). The two groups of eight dots closely associated represent</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_O");' role="link">
+<div class="answer-label">O.</div><div class="answer-cell"><span id="7_6_O" class="answer nonesuch">the oxygen molecule (two oxygen atoms of atomic number eight). These</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_P");' role="link">
+<div class="answer-label">P.</div><div class="answer-cell"><span id="7_6_P" class="answer nonesuch">gases make up three possible planetary atmospheres.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_Q");' role="link">
+<div class="answer-label">Q.</div><div class="answer-cell"><span id="7_6_Q" class="answer nonesuch">In case you don&#39;t know, you want oxygen (that&#39;s the second red slot).</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get up to the Drive Bubble?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Presumably you have already climbed to the top of the tree.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Jump.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_7_A" class="answer nonesuch">Presumably you have already climbed to the top of the tree.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_7_B" class="answer nonesuch">Jump.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How is the Drive Bubble hatch opened?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">&quot;Beside the hatch is a silver slot.&quot;</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Try using the appropriate &quot;key&quot; (crystal rod).</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Put the silver rod in the silver slot.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_8_A" class="answer nonesuch">&quot;Beside the hatch is a silver slot.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_8_B" class="answer nonesuch">Try using the appropriate &quot;key&quot; (crystal rod).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_8_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_8_C" class="answer nonesuch">Put the silver rod in the silver slot.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get back down from the Drive Bubble hatch?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Jumping is not a good idea. (It is a death worth trying, though.)</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Try DOWN.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_9_A" class="answer nonesuch">Jumping is not a good idea. (It is a death worth trying, though.)</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_9_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_9_B" class="answer nonesuch">Try DOWN.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why do things fall in curves?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Look up the &quot;Coriolis Force&quot; in a physics textbook.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_10_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_10_A" class="answer nonesuch">Look up the &quot;Coriolis Force&quot; in a physics textbook.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I get up to the bubble at the fore end?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You cannot scale the wall at the fore end.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">A more appropriate question is, &quot;How do I get _over_ to the bubble at</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">the fore end?&quot;</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">There is no &quot;gravity&quot; along the axis of rotation of the cylinder.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Try jumping from the center of the aft end (on Drive Bubble).</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">&quot;Every action has an equal and opposite reaction.&quot;</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Throwing objects won&#39;t be enough to overcome 5 km of air resistance.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">You will need to use the ray gun.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">You must shoot it at the Drive Bubble to ensure that you are not pushed</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">in the wrong direction or forced off-axis.</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">You will need all three ray gun shots to reach your destination.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_11_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_11_A" class="answer nonesuch">You cannot scale the wall at the fore end.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_11_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_11_B" class="answer nonesuch">A more appropriate question is, &quot;How do I get _over_ to the bubble at</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_11_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_11_C" class="answer nonesuch">the fore end?&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_11_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_11_D" class="answer nonesuch">There is no &quot;gravity&quot; along the axis of rotation of the cylinder.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_11_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="7_11_E" class="answer nonesuch">Try jumping from the center of the aft end (on Drive Bubble).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_11_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="7_11_F" class="answer nonesuch">&quot;Every action has an equal and opposite reaction.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_11_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="7_11_G" class="answer nonesuch">Throwing objects won&#39;t be enough to overcome 5 km of air resistance.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_11_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="7_11_H" class="answer nonesuch">You will need to use the ray gun.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_11_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="7_11_I" class="answer nonesuch">You must shoot it at the Drive Bubble to ensure that you are not pushed</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_11_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="7_11_J" class="answer nonesuch">in the wrong direction or forced off-axis.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_11_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="7_11_K" class="answer nonesuch">You will need all three ray gun shots to reach your destination.</span></div></div>
       </div>
   </div>
 
@@ -770,85 +1446,159 @@
           <div class="question indented">
       <h3>How can I activate the Drive Bubble controls, and what can I do with them?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Put the white rod in the white slot.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">&quot;You can&#39;t do anything with them.&quot;</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You must activate the drive if you wish to set a new course. All</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">further control is from the Control Bubble.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_1_A" class="answer nonesuch">Put the white rod in the white slot.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_1_B" class="answer nonesuch">&quot;You can&#39;t do anything with them.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_1_C" class="answer nonesuch">You must activate the drive if you wish to set a new course. All</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_1_D" class="answer nonesuch">further control is from the Control Bubble.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Is there any reason to use the black rod?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">No.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">This answer left intentionally blank.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_2_A" class="answer nonesuch">No.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_2_B" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_2_C" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_2_D" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="8_2_E" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="8_2_F" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="8_2_G" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="8_2_H" class="answer nonesuch">This answer left intentionally blank.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I open the Control Bubble hatch?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">&quot;A small slot surrounded by gold crystal is next to the hatch.&quot;</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Put the gold rod in the gold slot.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_3_A" class="answer nonesuch">&quot;A small slot surrounded by gold crystal is next to the hatch.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_3_B" class="answer nonesuch">Put the gold rod in the gold slot.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why is the clear crystal slot rejecting my clear crystal rod?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The control room functions are very dependent on the main computer.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Unless the computer is in a working state and turned on, you cannot</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">activate the controls.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_4_A" class="answer nonesuch">The control room functions are very dependent on the main computer.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_4_B" class="answer nonesuch">Unless the computer is in a working state and turned on, you cannot</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_4_C" class="answer nonesuch">activate the controls.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is done with the five slots?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">As usual, put the appropriate colored rods in the slots.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_5_A" class="answer nonesuch">As usual, put the appropriate colored rods in the slots.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is going on with the spots, squares, and screen?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">These are the main controls. You should be able to figure them out by</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">fiddling with them and seeing what happens.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Pushing the small pink square causes the view screen to zoom in to</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">closer and closer regions around the Artifact. Pushing the large pink</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">square causes the view screen to zoom out to longer and longer range.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">You are interested in the inner solar system.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Pushing the brown spot selects the destination. Pushing the violet spot</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">selects the course you will take. Pushing the green spot selects the</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">speed. You will not be able to set the speed if you haven&#39;t activated</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">the drive controls (in the Drive Bubble). Pushing the blue spot</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">executes the course correction burn you have selected.</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">You may choose a number of different destinations and courses, but only</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">two combinations are correct: the courses ending in an ellipse or a</div></details>
-        <details class="details-answer"><summary>N.</summary><div class="answer">circle around Earth. (Try the others for fun.)</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_6_A" class="answer nonesuch">These are the main controls. You should be able to figure them out by</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_6_B" class="answer nonesuch">fiddling with them and seeing what happens.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_6_C" class="answer nonesuch">Pushing the small pink square causes the view screen to zoom in to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_6_D" class="answer nonesuch">closer and closer regions around the Artifact. Pushing the large pink</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="8_6_E" class="answer nonesuch">square causes the view screen to zoom out to longer and longer range.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="8_6_F" class="answer nonesuch">You are interested in the inner solar system.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="8_6_G" class="answer nonesuch">Pushing the brown spot selects the destination. Pushing the violet spot</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="8_6_H" class="answer nonesuch">selects the course you will take. Pushing the green spot selects the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="8_6_I" class="answer nonesuch">speed. You will not be able to set the speed if you haven&#39;t activated</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="8_6_J" class="answer nonesuch">the drive controls (in the Drive Bubble). Pushing the blue spot</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="8_6_K" class="answer nonesuch">executes the course correction burn you have selected.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="8_6_L" class="answer nonesuch">You may choose a number of different destinations and courses, but only</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="8_6_M" class="answer nonesuch">two combinations are correct: the courses ending in an ellipse or a</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_N");' role="link">
+<div class="answer-label">N.</div><div class="answer-cell"><span id="8_6_N" class="answer nonesuch">circle around Earth. (Try the others for fun.)</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why do the spots flash?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you press a spot out of sequence, it will flash.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_7_A" class="answer nonesuch">If you press a spot out of sequence, it will flash.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get back down from the Control Bubble?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can get down in the usual messy way by jumping from the control</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">hatch.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Just make sure you have everything you need to gain control of the ship</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">and set a new course.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_8_A" class="answer nonesuch">You can get down in the usual messy way by jumping from the control</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_8_B" class="answer nonesuch">hatch.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_8_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_8_C" class="answer nonesuch">Just make sure you have everything you need to gain control of the ship</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_8_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_8_D" class="answer nonesuch">and set a new course.</span></div></div>
       </div>
   </div>
 
@@ -856,223 +1606,393 @@
           <div class="question indented">
       <h3>Why is the Artifact suddenly shutting down?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Because the air is becoming unbreathable. (Try removing your space suit</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">after entering the Artifact.)</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_1_A" class="answer nonesuch">Because the air is becoming unbreathable. (Try removing your space suit</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_1_B" class="answer nonesuch">after entering the Artifact.)</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What does a flashing light in the airlock mean?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">This is a safety feature. You are not allowed to have both doors open</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">at the same time.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_2_A" class="answer nonesuch">This is a safety feature. You are not allowed to have both doors open</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_2_B" class="answer nonesuch">at the same time.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How in the world do I revive the plants to replenish the air?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Don&#39;t you mean &quot;How in the Artifact...?&quot;</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You will not be able to water them or fertilize them or ever revive</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">them at all.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_3_A" class="answer nonesuch">Don&#39;t you mean &quot;How in the Artifact...?&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_3_B" class="answer nonesuch">You will not be able to water them or fertilize them or ever revive</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_3_C" class="answer nonesuch">them at all.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the maintenance mouse?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The maintenance mouse is exactly as described. It is a cleaning robot.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_4_A" class="answer nonesuch">The maintenance mouse is exactly as described. It is a cleaning robot.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Where are the mouse holes?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The mouse can always find a hole when needed.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Drop an item and wait for the mouse to arrive. Follow the mouse when it</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">picks up the item.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_5_A" class="answer nonesuch">The mouse can always find a hole when needed.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_5_B" class="answer nonesuch">Drop an item and wait for the mouse to arrive. Follow the mouse when it</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_5_C" class="answer nonesuch">picks up the item.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I get through the mouse hole?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">_You_ can&#39;t.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">There _is_ another way.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Once you&#39;ve found the Laboratory, go on to the next hint.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Once you have figured out what the disks are for, go on to the next</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">hint.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">The maintenance mouse picks up things it finds on the floor and</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">eventually takes them beyond its &quot;mouse holes&quot;....</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">Leave one disk for it, then step on the other after the mouse has taken</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">the first through a hole. (Allow time for the mouse to drop it again.)</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_6_A" class="answer nonesuch">_You_ can&#39;t.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_6_B" class="answer nonesuch">There _is_ another way.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_6_C" class="answer nonesuch">Once you&#39;ve found the Laboratory, go on to the next hint.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_6_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_6_D" class="answer nonesuch">Once you have figured out what the disks are for, go on to the next</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_6_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="9_6_E" class="answer nonesuch">hint.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_6_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="9_6_F" class="answer nonesuch">The maintenance mouse picks up things it finds on the floor and</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_6_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="9_6_G" class="answer nonesuch">eventually takes them beyond its &quot;mouse holes&quot;....</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_6_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="9_6_H" class="answer nonesuch">Leave one disk for it, then step on the other after the mouse has taken</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_6_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="9_6_I" class="answer nonesuch">the first through a hole. (Allow time for the mouse to drop it again.)</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I recharge the ray gun?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">What makes you think you can?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">[ drawing of ray gun which cannot be included in a text file ]</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_7_A" class="answer nonesuch">What makes you think you can?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_7_B" class="answer nonesuch">[ drawing of ray gun which cannot be included in a text file ]</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I read the charge indicator on the ray gun?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It is, unfortunately, unreadable.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_8_A" class="answer nonesuch">It is, unfortunately, unreadable.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How are the settings on the ray gun changed?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The strange knobs and antennae look promising.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But they can&#39;t be moved or adjusted in any way.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_9_A" class="answer nonesuch">The strange knobs and antennae look promising.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_9_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_9_B" class="answer nonesuch">But they can&#39;t be moved or adjusted in any way.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Can I fix the gun so it won&#39;t misfire?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Yes.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Take a close look at the descriptions of the misfire and the normal</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">blast.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The misfire has &quot;silvery rays,&quot; the second shot has &quot;orange rays.&quot;</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Did you ever try shaking the gun or looking into the barrel before the</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">first shot?</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Remove the silver rod. The gun will work much better.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_10_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_10_A" class="answer nonesuch">Yes.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_10_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_10_B" class="answer nonesuch">Take a close look at the descriptions of the misfire and the normal</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_10_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_10_C" class="answer nonesuch">blast.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_10_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_10_D" class="answer nonesuch">The misfire has &quot;silvery rays,&quot; the second shot has &quot;orange rays.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_10_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="9_10_E" class="answer nonesuch">Did you ever try shaking the gun or looking into the barrel before the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_10_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="9_10_F" class="answer nonesuch">first shot?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_10_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="9_10_G" class="answer nonesuch">Remove the silver rod. The gun will work much better.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the &quot;glass cleaner&quot;?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">What do most glass cleaners use as an active ingredient?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Ammonia.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have you done anything which might have caused the release of ammonia?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Do you now have a better idea of what the machine on the right in the</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">repair room is?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_11_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_11_A" class="answer nonesuch">What do most glass cleaners use as an active ingredient?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_11_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_11_B" class="answer nonesuch">Ammonia.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_11_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_11_C" class="answer nonesuch">Have you done anything which might have caused the release of ammonia?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_11_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_11_D" class="answer nonesuch">Do you now have a better idea of what the machine on the right in the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_11_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="9_11_E" class="answer nonesuch">repair room is?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I leave through the Yellow Airlock?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">&quot;The door appears to be jammed. There may be debris outside blocking</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">it. Perhaps if you pushed again.&quot;</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Push again.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Be careful, there could be debris from an accident outside. You must</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">wear the space suit.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_12_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_12_A" class="answer nonesuch">&quot;The door appears to be jammed. There may be debris outside blocking</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_12_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_12_B" class="answer nonesuch">it. Perhaps if you pushed again.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_12_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_12_C" class="answer nonesuch">Push again.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_12_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_12_D" class="answer nonesuch">Be careful, there could be debris from an accident outside. You must</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_12_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="9_12_E" class="answer nonesuch">wear the space suit.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Once I am drifting in space, how do I get back to the Artifact?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">&quot;Every action has an equal and opposite reaction.&quot;</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Throwing an item will not be enough to overcome your velocity away from</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">the Artifact.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">You might try using the ray gun (if you were fortunate enough to take</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">it with you).</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">As you are no doubt now aware, you can return, but you cannot return</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">and live.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_13_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_13_A" class="answer nonesuch">&quot;Every action has an equal and opposite reaction.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_13_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_13_B" class="answer nonesuch">Throwing an item will not be enough to overcome your velocity away from</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_13_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_13_C" class="answer nonesuch">the Artifact.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_13_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_13_D" class="answer nonesuch">You might try using the ray gun (if you were fortunate enough to take</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_13_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="9_13_E" class="answer nonesuch">it with you).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_13_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="9_13_F" class="answer nonesuch">As you are no doubt now aware, you can return, but you cannot return</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_13_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="9_13_G" class="answer nonesuch">and live.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the metal basket for?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It is perfect for storing all those clumsy crystal rods.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_14_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_14_A" class="answer nonesuch">It is perfect for storing all those clumsy crystal rods.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I stop the air from becoming unbreathable?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You must make &quot;the necessary repairs in time.&quot;</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Learn the use of the ship&#39;s equipment.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The necessary machinery is in the Repair Room.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_15_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_15_A" class="answer nonesuch">You must make &quot;the necessary repairs in time.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_15_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_15_B" class="answer nonesuch">Learn the use of the ship&#39;s equipment.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_15_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_15_C" class="answer nonesuch">The necessary machinery is in the Repair Room.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get to the Green Dock?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">If you have been mapping carefully, you should realize that its</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">entrance is somewhere in the Warren.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_16_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_16_A" class="answer nonesuch">If you have been mapping carefully, you should realize that its</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_16_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_16_B" class="answer nonesuch">entrance is somewhere in the Warren.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Where is the charcoal?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">&quot;Charcoal&quot; and &quot;coal gas&quot; are rather strange hints.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you done anything that might cause the release of methane (which</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">is an odorless gas associated with charcoal and coal gas)?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Do you have a better idea of what the machine on the right in the</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Repair Room is?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_17_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_17_A" class="answer nonesuch">&quot;Charcoal&quot; and &quot;coal gas&quot; are rather strange hints.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_17_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_17_B" class="answer nonesuch">Have you done anything that might cause the release of methane (which</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_17_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_17_C" class="answer nonesuch">is an odorless gas associated with charcoal and coal gas)?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_17_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_17_D" class="answer nonesuch">Do you have a better idea of what the machine on the right in the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_17_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="9_17_E" class="answer nonesuch">Repair Room is?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Can I do anything with the damaged mice?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">No.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_18_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_18_A" class="answer nonesuch">No.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Is there any significance to the trash bin?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you examined it?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you searched through it?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Try searching again.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_19_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_19_A" class="answer nonesuch">Have you examined it?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_19_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_19_B" class="answer nonesuch">Have you searched through it?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_19_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_19_C" class="answer nonesuch">Try searching again.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the hole in the garage?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You might try climbing down...(Do a SAVE first!)</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_20_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_20_A" class="answer nonesuch">You might try climbing down...(Do a SAVE first!)</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I turn on the lights in the darkened area?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You will not find a simple switch in the area.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You will need to learn to use the equipment on the Artifact.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have you been to the Computer Room and the Repair Room?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The necessary machine is in the Repair Room.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_21_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_21_A" class="answer nonesuch">You will not find a simple switch in the area.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_21_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_21_B" class="answer nonesuch">You will need to learn to use the equipment on the Artifact.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_21_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_21_C" class="answer nonesuch">Have you been to the Computer Room and the Repair Room?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_21_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_21_D" class="answer nonesuch">The necessary machine is in the Repair Room.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Is there anything special about the projector in the Observatory?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">&quot;...the colors of the dots are not what you&#39;d expect, though, and range</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">throughout the spectrum.&quot;</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">This is not a spectral shift due to speed, since you are not traveling</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">at anywhere near the speed of light and the colors range throughout the</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">spectrum.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Something is causing refraction of the light.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Is there something in the projector?</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">Look through the visor fragment or the black crystal rod to filter the</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">light so that you are not blinded.</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">Remove the clear crystal rod from the projector.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_22_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_22_A" class="answer nonesuch">&quot;...the colors of the dots are not what you&#39;d expect, though, and range</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_22_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_22_B" class="answer nonesuch">throughout the spectrum.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_22_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_22_C" class="answer nonesuch">This is not a spectral shift due to speed, since you are not traveling</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_22_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_22_D" class="answer nonesuch">at anywhere near the speed of light and the colors range throughout the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_22_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="9_22_E" class="answer nonesuch">spectrum.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_22_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="9_22_F" class="answer nonesuch">Something is causing refraction of the light.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_22_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="9_22_G" class="answer nonesuch">Is there something in the projector?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_22_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="9_22_H" class="answer nonesuch">Look through the visor fragment or the black crystal rod to filter the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_22_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="9_22_I" class="answer nonesuch">light so that you are not blinded.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_22_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="9_22_J" class="answer nonesuch">Remove the clear crystal rod from the projector.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Where do I find the orange crystal rod?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Did you notice that raw unicorn meat is orange in color?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Generally meat changes color when cooked.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">If the orange rod were hidden in a slab of meat, cooking the meat might</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">make it apparent.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Since there is no place where you could use an orange rod, and no slab</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">of unicorn meat, I&#39;m sure that no one has gotten this far.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_23_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_23_A" class="answer nonesuch">Did you notice that raw unicorn meat is orange in color?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_23_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_23_B" class="answer nonesuch">Generally meat changes color when cooked.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_23_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_23_C" class="answer nonesuch">If the orange rod were hidden in a slab of meat, cooking the meat might</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_23_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_23_D" class="answer nonesuch">make it apparent.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_23_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="9_23_E" class="answer nonesuch">Since there is no place where you could use an orange rod, and no slab</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_23_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="9_23_F" class="answer nonesuch">of unicorn meat, I&#39;m sure that no one has gotten this far.</span></div></div>
       </div>
   </div>
 

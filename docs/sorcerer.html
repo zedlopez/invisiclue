@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><title>Sorcerer Invisiclues</title>
 <link rel="stylesheet" href="style.css">
+<script>
+function toggle(id) {
+var span = document.getElementById(id);
+console.log("toggling " + span);
+span.classList.toggle('nonesuch');
+console.log(span.classList);
+}
+</script>
 </head>
 <body>
 <header>
@@ -12,10 +20,18 @@
     <div class="question indented">
       <h3>How can I tell if there&#39;s a grue in my refrigerator?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Are there footprints in the cheesecake?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">&quot;As you open the door, the refrigerator light goes on.&quot;</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">If there were a grue inside, it would dash out as soon as you opened</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">the door.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("0_0_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="0_0_A" class="answer nonesuch">Are there footprints in the cheesecake?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("0_0_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="0_0_B" class="answer nonesuch">&quot;As you open the door, the refrigerator light goes on.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("0_0_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="0_0_C" class="answer nonesuch">If there were a grue inside, it would dash out as soon as you opened</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("0_0_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="0_0_D" class="answer nonesuch">the door.</span></div></div>
       </div>
   </div>
 
@@ -44,163 +60,285 @@
           <div class="question indented">
       <h3>Why does this area seem so familiar?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You &quot;visited&quot; this area in your dream.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It must have been a flash of clairvoyance.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_1_A" class="answer nonesuch">You &quot;visited&quot; this area in your dream.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_1_B" class="answer nonesuch">It must have been a flash of clairvoyance.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I avoid the hellhound?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Go northeast.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Once the hellhound slinks away, it is safe to enter the woods.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">However, there&#39;s nothing of interest in the woods.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_2_A" class="answer nonesuch">Go northeast.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_2_B" class="answer nonesuch">Once the hellhound slinks away, it is safe to enter the woods.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_2_C" class="answer nonesuch">However, there&#39;s nothing of interest in the woods.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I avoid the boa?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Don&#39;t climb the tree.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_3_A" class="answer nonesuch">Don&#39;t climb the tree.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I get past the Mine Field?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">There doesn&#39;t appear to be a way.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Even flying over it doesn&#39;t work.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Of course, appearances can be deceiving.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">But not in this case.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_4_A" class="answer nonesuch">There doesn&#39;t appear to be a way.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_4_B" class="answer nonesuch">Even flying over it doesn&#39;t work.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_4_C" class="answer nonesuch">Of course, appearances can be deceiving.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_4_D" class="answer nonesuch">But not in this case.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I avoid the locusts?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Don&#39;t dawdle in the Meadow too long.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_5_A" class="answer nonesuch">Don&#39;t dawdle in the Meadow too long.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I survive in the Snake Pit?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Don&#39;t hang around the pit for more than one or two turns.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">There&#39;s nothing useful there anyway.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_6_A" class="answer nonesuch">Don&#39;t hang around the pit for more than one or two turns.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_6_B" class="answer nonesuch">There&#39;s nothing useful there anyway.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I cross the moat?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The Drawbridge is safe to walk on, at first.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">After the first few times, there&#39;s a danger that it may collapse.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">It collapses because of your weight.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">You can always pass over the drawbridge safely if you&#39;re flying.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_7_A" class="answer nonesuch">The Drawbridge is safe to walk on, at first.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_7_B" class="answer nonesuch">After the first few times, there&#39;s a danger that it may collapse.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_7_C" class="answer nonesuch">It collapses because of your weight.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_7_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_7_D" class="answer nonesuch">You can always pass over the drawbridge safely if you&#39;re flying.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I enter the moat?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Just type DOWN from the Drawbridge.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Or say ENTER THE MOAT.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">There is no way to enter the moat and live.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">This answer left intentionally blank.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_8_A" class="answer nonesuch">Just type DOWN from the Drawbridge.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_8_B" class="answer nonesuch">Or say ENTER THE MOAT.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_8_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_8_C" class="answer nonesuch">There is no way to enter the moat and live.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_8_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_8_D" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_8_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="2_8_E" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_8_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="2_8_F" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_8_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="2_8_G" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_8_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="2_8_H" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_8_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="2_8_I" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_8_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="2_8_J" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_8_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="2_8_K" class="answer nonesuch">This answer left intentionally blank.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I survive in the Turret?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Pretty easily. Just don&#39;t jump.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Nice view from the Turret, eh?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_9_A" class="answer nonesuch">Pretty easily. Just don&#39;t jump.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_9_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_9_B" class="answer nonesuch">Nice view from the Turret, eh?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I enter the West Wing of the ruined castle?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Play Planetfall(tm) instead of Sorcerer.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_10_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_10_A" class="answer nonesuch">Play Planetfall(tm) instead of Sorcerer.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the indigo vial?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Read the vial.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Drink the potion.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">That&#39;s about it.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_11_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_11_A" class="answer nonesuch">Read the vial.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_11_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_11_B" class="answer nonesuch">Drink the potion.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_11_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_11_C" class="answer nonesuch">That&#39;s about it.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the skeleton in the Torture Chamber?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">What skeleton?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_12_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_12_A" class="answer nonesuch">What skeleton?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I survive at the River Bank?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You&#39;re safe for a couple of turns.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">After that, there&#39;s always a danger of collapse.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Except if you&#39;re flying.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Or if the river has been PULVERed.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_13_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_13_A" class="answer nonesuch">You&#39;re safe for a couple of turns.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_13_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_13_B" class="answer nonesuch">After that, there&#39;s always a danger of collapse.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_13_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_13_C" class="answer nonesuch">Except if you&#39;re flying.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_13_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_13_D" class="answer nonesuch">Or if the river has been PULVERed.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I cross the river?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Trying to fly across it is deadly.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">There&#39;s no way to cross the river.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">However, there is something interesting you can do there.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">CAST THE PULVER SPELL ON THE RIVER.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_14_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_14_A" class="answer nonesuch">Trying to fly across it is deadly.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_14_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_14_B" class="answer nonesuch">There&#39;s no way to cross the river.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_14_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_14_C" class="answer nonesuch">However, there is something interesting you can do there.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_14_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_14_D" class="answer nonesuch">CAST THE PULVER SPELL ON THE RIVER.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I inflate the raft?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">With the hand-held air pump.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It&#39;s located on the north shore of the reservoir.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The north shore of the reservoir is in Zork(R) I, as are the inflatable</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">raft and the hand-held air pump.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Help! I keep getting smashed by a wall of water!</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Don&#39;t go on unless you&#39;ve been to the River Bed.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">PULVERing the river has only a temporary effect.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">It isn&#39;t safe to stick around any of the dried-up river bed locations</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">for very long.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_15_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_15_A" class="answer nonesuch">With the hand-held air pump.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_15_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_15_B" class="answer nonesuch">It&#39;s located on the north shore of the reservoir.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_15_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_15_C" class="answer nonesuch">The north shore of the reservoir is in Zork(R) I, as are the inflatable</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_15_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_15_D" class="answer nonesuch">raft and the hand-held air pump.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_15_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="2_15_E" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_15_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="2_15_F" class="answer nonesuch">Help! I keep getting smashed by a wall of water!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_15_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="2_15_G" class="answer nonesuch">Don&#39;t go on unless you&#39;ve been to the River Bed.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_15_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="2_15_H" class="answer nonesuch">PULVERing the river has only a temporary effect.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_15_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="2_15_I" class="answer nonesuch">It isn&#39;t safe to stick around any of the dried-up river bed locations</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_15_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="2_15_J" class="answer nonesuch">for very long.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I cross the stagnant pool?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can&#39;t.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Really!</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_16_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_16_A" class="answer nonesuch">You can&#39;t.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_16_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_16_B" class="answer nonesuch">Really!</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the amber potion for?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Read the label on the amber vial.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Try ingesting the potion.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The blort potion allows you to see in dark places, even if you don&#39;t</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">have a light source.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Unfortunately, grues are afraid of light, not of being seen.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">So the blort potion is pretty useless in Sorcerer.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("2_17_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="2_17_A" class="answer nonesuch">Read the label on the amber vial.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_17_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="2_17_B" class="answer nonesuch">Try ingesting the potion.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_17_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="2_17_C" class="answer nonesuch">The blort potion allows you to see in dark places, even if you don&#39;t</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_17_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="2_17_D" class="answer nonesuch">have a light source.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_17_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="2_17_E" class="answer nonesuch">Unfortunately, grues are afraid of light, not of being seen.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("2_17_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="2_17_F" class="answer nonesuch">So the blort potion is pretty useless in Sorcerer.</span></div></div>
       </div>
   </div>
 
@@ -208,91 +346,153 @@
           <div class="question indented">
       <h3>Where is the fort?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Walk southeast from the River Bank.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_1_A" class="answer nonesuch">Walk southeast from the River Bank.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Where should I dig to find the cannonball?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">What cannonball?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">This answer and the ones beneath it left intentionally blank.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">This answer left intentionally blank.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_2_A" class="answer nonesuch">What cannonball?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_2_B" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_2_C" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_2_D" class="answer nonesuch">This answer and the ones beneath it left intentionally blank.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="3_2_E" class="answer nonesuch">This answer left intentionally blank.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I climb the flag pole?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can&#39;t.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_3_A" class="answer nonesuch">You can&#39;t.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Is there any way to lower the flag?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Yes.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Try LOWER THE FLAG.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_4_A" class="answer nonesuch">Yes.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_4_B" class="answer nonesuch">Try LOWER THE FLAG.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Can I sleep in the Barracks?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Sure, why not!</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_5_A" class="answer nonesuch">Sure, why not!</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Are there any useful armaments in the Armory?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">No.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_6_A" class="answer nonesuch">No.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I get the glowing scroll out of the Watchtower?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Hide it inside the floor waxer.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Don&#39;t talk to the rockworm chief.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Cast the YIKKLE spell on it.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Stop reading nonsense questions.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_7_A" class="answer nonesuch">Hide it inside the floor waxer.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_7_B" class="answer nonesuch">Don&#39;t talk to the rockworm chief.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_7_C" class="answer nonesuch">Cast the YIKKLE spell on it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_7_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_7_D" class="answer nonesuch">Stop reading nonsense questions.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Is there any significance to the cannon?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Yes. REACH INTO THE CANNON.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">LOOK INSIDE IT.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Hmmm. A pile of identical scrolls that bite.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Perhaps appearances are deceiving in this case.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Look at your infotater again.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">The pile of scrolls is actually a group of yipples.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">But there must be a real scroll that they are imitating.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">Yipples are allergic to certain animal wastes.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">Such as the bat guano in the Hidden Cave near the river.</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">PUT THE BAT GUANO IN THE CANNON.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_8_A" class="answer nonesuch">Yes. REACH INTO THE CANNON.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_8_B" class="answer nonesuch">LOOK INSIDE IT.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_8_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_8_C" class="answer nonesuch">Hmmm. A pile of identical scrolls that bite.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_8_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_8_D" class="answer nonesuch">Perhaps appearances are deceiving in this case.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_8_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="3_8_E" class="answer nonesuch">Look at your infotater again.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_8_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="3_8_F" class="answer nonesuch">The pile of scrolls is actually a group of yipples.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_8_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="3_8_G" class="answer nonesuch">But there must be a real scroll that they are imitating.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_8_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="3_8_H" class="answer nonesuch">Yipples are allergic to certain animal wastes.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_8_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="3_8_I" class="answer nonesuch">Such as the bat guano in the Hidden Cave near the river.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_8_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="3_8_J" class="answer nonesuch">PUT THE BAT GUANO IN THE CANNON.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I fire the cannon?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You&#39;ll have to find the buried cannonball, first.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But there is no buried cannonball.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_9_A" class="answer nonesuch">You&#39;ll have to find the buried cannonball, first.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_9_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_9_B" class="answer nonesuch">But there is no buried cannonball.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Can I catch the objects that sprout feet?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Don&#39;t go on until you&#39;ve found the ordinary scroll.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You can only catch the scrolls that sprout feet if you have the QUELBO</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">spell.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">In other words, no.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("3_10_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="3_10_A" class="answer nonesuch">Don&#39;t go on until you&#39;ve found the ordinary scroll.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_10_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="3_10_B" class="answer nonesuch">You can only catch the scrolls that sprout feet if you have the QUELBO</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_10_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="3_10_C" class="answer nonesuch">spell.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("3_10_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="3_10_D" class="answer nonesuch">In other words, no.</span></div></div>
       </div>
   </div>
 
@@ -300,115 +500,213 @@
           <div class="question indented">
       <h3>What caused the Crater?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It&#39;s difficult to say for certain.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Perhaps an ancient battle between two powerful wizards?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Perhaps a cannonball?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Perhaps not.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_1_A" class="answer nonesuch">It&#39;s difficult to say for certain.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_1_B" class="answer nonesuch">Perhaps an ancient battle between two powerful wizards?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_1_C" class="answer nonesuch">Perhaps a cannonball?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_1_D" class="answer nonesuch">Perhaps not.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Is there any significance to the moss and lichens in the Slimy Room?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Lichens are usually an indication of moisture.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Some species of moss are phosphorescent.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">However, these moss and lichens are completely insignificant.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_2_A" class="answer nonesuch">Lichens are usually an indication of moisture.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_2_B" class="answer nonesuch">Some species of moss are phosphorescent.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_2_C" class="answer nonesuch">However, these moss and lichens are completely insignificant.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Can I cross the chasm to the west of the Crater?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can JUMP ACROSS THE CHASM. This will work 20% of the time.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">A safer way is to cross the chasm while flying.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Cast the IZYUK spell on yourself, and then go WEST.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_3_A" class="answer nonesuch">You can JUMP ACROSS THE CHASM. This will work 20% of the time.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_3_B" class="answer nonesuch">A safer way is to cross the chasm while flying.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_3_C" class="answer nonesuch">Cast the IZYUK spell on yourself, and then go WEST.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I climb the zorkmid tree?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can&#39;t.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_4_A" class="answer nonesuch">You can&#39;t.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Can I pick the zorkmid coins from the zorkmid tree?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Try it.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Type PICK A COIN or PICK ALL THE COINS.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You can get only one coin in the Tree Room.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_5_A" class="answer nonesuch">Try it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_5_B" class="answer nonesuch">Type PICK A COIN or PICK ALL THE COINS.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_5_C" class="answer nonesuch">You can get only one coin in the Tree Room.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Is there any significance to the Hall of Carvings?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Yes. Especially the carving of the dragon.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">There&#39;s a way to make the dragon come alive.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You&#39;ll need the MALYON spell. If you don&#39;t have it yet, visit the</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">amusement park.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Try casting MALYON on the dragon carving.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">It doesn&#39;t seem to be powerful enough.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">You&#39;ll also need the YONK spell. If you don&#39;t have it yet, visit Fort</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">Griffspotter.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">CAST THE YONK SPELL ON THE MALYON SPELL. Then CAST THE MALYON SPELL ON</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">THE DRAGON.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_6_A" class="answer nonesuch">Yes. Especially the carving of the dragon.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_6_B" class="answer nonesuch">There&#39;s a way to make the dragon come alive.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_6_C" class="answer nonesuch">You&#39;ll need the MALYON spell. If you don&#39;t have it yet, visit the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_6_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_6_D" class="answer nonesuch">amusement park.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_6_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="4_6_E" class="answer nonesuch">Try casting MALYON on the dragon carving.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_6_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="4_6_F" class="answer nonesuch">It doesn&#39;t seem to be powerful enough.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_6_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="4_6_G" class="answer nonesuch">You&#39;ll also need the YONK spell. If you don&#39;t have it yet, visit Fort</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_6_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="4_6_H" class="answer nonesuch">Griffspotter.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_6_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="4_6_I" class="answer nonesuch">CAST THE YONK SPELL ON THE MALYON SPELL. Then CAST THE MALYON SPELL ON</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_6_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="4_6_J" class="answer nonesuch">THE DRAGON.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I make the invisible carvings appear?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The ZIKKLE spell works well on the invisible tenets in the Guild</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Hall...</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">...but you probably had to give up the ZIKKLE spell to the rockworm</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">tribe.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Invisible carvings? ZIKKLE spell? Rockworm tribe?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_7_A" class="answer nonesuch">The ZIKKLE spell works well on the invisible tenets in the Guild</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_7_B" class="answer nonesuch">Hall...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_7_C" class="answer nonesuch">...but you probably had to give up the ZIKKLE spell to the rockworm</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_7_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_7_D" class="answer nonesuch">tribe.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_7_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="4_7_E" class="answer nonesuch">Invisible carvings? ZIKKLE spell? Rockworm tribe?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Who built the underground highway?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Probably one of the Construction Guilds.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It seems to be a relic of the Great Underground Empire.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">It was probably built during the reign of King Duncanthrax or one of</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">the Flatheads.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_8_A" class="answer nonesuch">Probably one of the Construction Guilds.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_8_B" class="answer nonesuch">It seems to be a relic of the Great Underground Empire.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_8_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_8_C" class="answer nonesuch">It was probably built during the reign of King Duncanthrax or one of</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_8_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_8_D" class="answer nonesuch">the Flatheads.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I get past the Toll Gate?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you tried typing OPEN THE GATE?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you tried REZROVing the gate?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have you tried typing GNOME, OPEN THE GATE?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Of course, you&#39;ll have to wake the gnome before you can talk to him.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">He won&#39;t open the gate until you give him a zorkmid.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">You can get one from beyond the chasm, near the Crater.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">If you&#39;ve already given that zorkmid to the amusement park gnome,</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">you&#39;ll have to use the machine in the Casino.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_9_A" class="answer nonesuch">Have you tried typing OPEN THE GATE?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_9_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_9_B" class="answer nonesuch">Have you tried REZROVing the gate?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_9_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_9_C" class="answer nonesuch">Have you tried typing GNOME, OPEN THE GATE?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_9_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_9_D" class="answer nonesuch">Of course, you&#39;ll have to wake the gnome before you can talk to him.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_9_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="4_9_E" class="answer nonesuch">He won&#39;t open the gate until you give him a zorkmid.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_9_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="4_9_F" class="answer nonesuch">You can get one from beyond the chasm, near the Crater.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_9_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="4_9_G" class="answer nonesuch">If you&#39;ve already given that zorkmid to the amusement park gnome,</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_9_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="4_9_H" class="answer nonesuch">you&#39;ll have to use the machine in the Casino.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the floor waxer used for?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Use your imagination.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Try turning it on.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have you seen any floors that need waxing?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Don&#39;t go on until you&#39;ve been to the Dance Hall.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Since there&#39;s no Dance Hall, you&#39;re obviously ignoring directions.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">The floor waxer is of no use at all.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">It&#39;s just as well. This model tends to produce waxy yellow build-up.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_10_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_10_A" class="answer nonesuch">Use your imagination.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_10_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="4_10_B" class="answer nonesuch">Try turning it on.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_10_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="4_10_C" class="answer nonesuch">Have you seen any floors that need waxing?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_10_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="4_10_D" class="answer nonesuch">Don&#39;t go on until you&#39;ve been to the Dance Hall.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_10_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="4_10_E" class="answer nonesuch">Since there&#39;s no Dance Hall, you&#39;re obviously ignoring directions.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_10_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="4_10_F" class="answer nonesuch">The floor waxer is of no use at all.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("4_10_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="4_10_G" class="answer nonesuch">It&#39;s just as well. This model tends to produce waxy yellow build-up.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Is there any significance to the Stone Hut?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Yes. You&#39;ll find out more later.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("4_11_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="4_11_A" class="answer nonesuch">Yes. You&#39;ll find out more later.</span></div></div>
       </div>
   </div>
 
@@ -416,114 +714,210 @@
           <div class="question indented">
       <h3>Is there any significance to the statue?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Read the inscription.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It&#39;s a statue of Duncanthrax.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">In addition to being a King of Quendor, he built the Glass Maze.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_1_A" class="answer nonesuch">Read the inscription.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_1_B" class="answer nonesuch">It&#39;s a statue of Duncanthrax.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_1_C" class="answer nonesuch">In addition to being a King of Quendor, he built the Glass Maze.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Can I make a map of the maze?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Yes.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_2_A" class="answer nonesuch">Yes.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How big is the maze?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It has 27 rooms.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">They are arranged in a 3 by 3 by 3 array.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_3_A" class="answer nonesuch">It has 27 rooms.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_3_B" class="answer nonesuch">They are arranged in a 3 by 3 by 3 array.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Can I survive in maze rooms that don&#39;t have a floor?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Yes.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">By flying.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Unfortunately, IZYUK doesn&#39;t last long enough to get you through the</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">maze, even if you keep learning it and re-casting it.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">There is another flying spell.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Try the FWEEP spell found in the Hidden Cave near the river.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">It also has the beneficial side-effect of sonar-like sensing.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_4_A" class="answer nonesuch">Yes.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_4_B" class="answer nonesuch">By flying.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_4_C" class="answer nonesuch">Unfortunately, IZYUK doesn&#39;t last long enough to get you through the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_4_D" class="answer nonesuch">maze, even if you keep learning it and re-casting it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_4_E" class="answer nonesuch">There is another flying spell.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_4_F" class="answer nonesuch">Try the FWEEP spell found in the Hidden Cave near the river.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_4_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="5_4_G" class="answer nonesuch">It also has the beneficial side-effect of sonar-like sensing.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Is there anything beyond the maze?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Yes.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Make a map of the maze.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Read the previous question.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">If you still haven&#39;t made it, type FWEEP ME at Outside the Glass Arch,</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">then go E.N.E.S.S.W.D.E.E.N.N.U.U.S.E.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_5_A" class="answer nonesuch">Yes.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_5_B" class="answer nonesuch">Make a map of the maze.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_5_C" class="answer nonesuch">Read the previous question.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_5_D" class="answer nonesuch">If you still haven&#39;t made it, type FWEEP ME at Outside the Glass Arch,</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_5_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_5_E" class="answer nonesuch">then go E.N.E.S.S.W.D.E.E.N.N.U.U.S.E.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How do I get back from the Hollow?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The only way back is through the glass maze.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You&#39;ll need the FWEEP spell to get back through it.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">So you&#39;d better memorize it more than once before you enter the maze</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">from Outside the Glass Arch.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">In fact, once the maze has re-arranged itself, you&#39;ll need a total of</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">three FWEEPs to make the round trip.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">There&#39;s a much easier and quicker way, although some players may find</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">it inelegant. GASPAR yourself at Outside the Glass Arch. Then, get</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">&quot;killed&quot; in the Hollow or the maze.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_6_A" class="answer nonesuch">The only way back is through the glass maze.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_6_B" class="answer nonesuch">You&#39;ll need the FWEEP spell to get back through it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_6_C" class="answer nonesuch">So you&#39;d better memorize it more than once before you enter the maze</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_6_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_6_D" class="answer nonesuch">from Outside the Glass Arch.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_6_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_6_E" class="answer nonesuch">In fact, once the maze has re-arranged itself, you&#39;ll need a total of</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_6_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_6_F" class="answer nonesuch">three FWEEPs to make the round trip.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_6_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="5_6_G" class="answer nonesuch">There&#39;s a much easier and quicker way, although some players may find</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_6_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="5_6_H" class="answer nonesuch">it inelegant. GASPAR yourself at Outside the Glass Arch. Then, get</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_6_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="5_6_I" class="answer nonesuch">&quot;killed&quot; in the Hollow or the maze.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I get the parchment scroll back from the Hollow?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can&#39;t carry it while FWEEPed.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">And you have to FWEEP yourself to get back.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Did you ever wonder what the brick structure is?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">EXAMINE it.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">It&#39;s the top of a chimney.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Chimneys are usually located above fireplaces.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">If you drop the scroll into the chimney, it will end up in the</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">fireplace in the Stone Hut.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_7_A" class="answer nonesuch">You can&#39;t carry it while FWEEPed.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_7_B" class="answer nonesuch">And you have to FWEEP yourself to get back.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_7_C" class="answer nonesuch">Did you ever wonder what the brick structure is?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_7_D" class="answer nonesuch">EXAMINE it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_7_E" class="answer nonesuch">It&#39;s the top of a chimney.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_7_F" class="answer nonesuch">Chimneys are usually located above fireplaces.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="5_7_G" class="answer nonesuch">If you drop the scroll into the chimney, it will end up in the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_7_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="5_7_H" class="answer nonesuch">fireplace in the Stone Hut.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What causes the maze to re-arrange itself?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Picking up the parchment scroll.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It is unavoidable.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_8_A" class="answer nonesuch">Picking up the parchment scroll.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_8_B" class="answer nonesuch">It is unavoidable.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What rouses the dorn beast?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Don&#39;t go on until you&#39;ve been threatened by the dorn beast.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Dropping the parchment scroll in the chimney causes the attack.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Since this is the only way to get that scroll out of the Hollow,</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">there&#39;s no way to avoid rousing the dorn beast.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_9_A" class="answer nonesuch">Don&#39;t go on until you&#39;ve been threatened by the dorn beast.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_9_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_9_B" class="answer nonesuch">Dropping the parchment scroll in the chimney causes the attack.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_9_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_9_C" class="answer nonesuch">Since this is the only way to get that scroll out of the Hollow,</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_9_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_9_D" class="answer nonesuch">there&#39;s no way to avoid rousing the dorn beast.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I kill the dorn beast?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">There&#39;s only one way.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It involves entering the maze.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">It involves flying.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Enter a maze room without a floor, while flying. The dorn beast will</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">pursue you, and plummet.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Flying from the Hollow, go W.W.S.E.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_10_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_10_A" class="answer nonesuch">There&#39;s only one way.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_10_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="5_10_B" class="answer nonesuch">It involves entering the maze.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_10_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="5_10_C" class="answer nonesuch">It involves flying.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_10_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="5_10_D" class="answer nonesuch">Enter a maze room without a floor, while flying. The dorn beast will</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_10_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="5_10_E" class="answer nonesuch">pursue you, and plummet.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("5_10_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="5_10_F" class="answer nonesuch">Flying from the Hollow, go W.W.S.E.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Is the brick structure of any significance?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Yes.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("5_11_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="5_11_A" class="answer nonesuch">Yes.</span></div></div>
       </div>
   </div>
 
@@ -531,98 +925,186 @@
           <div class="question indented">
       <h3>How can I enter the park?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You must first summon the park gnome by attempting to go west from the</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Park Entrance.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">He won&#39;t let you enter until you pay the admission price of one</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">zorkmid.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">You can get a zorkmid coin from the area beyond the chasm near the</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Crater.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">If you already gave that coin to the toll gnome, you&#39;ll have to do a</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">little thinking.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">What did the toll gnome do with the coin you gave him?</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">SEARCH THE GNOME after he falls asleep again.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_1_A" class="answer nonesuch">You must first summon the park gnome by attempting to go west from the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_1_B" class="answer nonesuch">Park Entrance.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_1_C" class="answer nonesuch">He won&#39;t let you enter until you pay the admission price of one</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_1_D" class="answer nonesuch">zorkmid.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="6_1_E" class="answer nonesuch">You can get a zorkmid coin from the area beyond the chasm near the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="6_1_F" class="answer nonesuch">Crater.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="6_1_G" class="answer nonesuch">If you already gave that coin to the toll gnome, you&#39;ll have to do a</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="6_1_H" class="answer nonesuch">little thinking.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="6_1_I" class="answer nonesuch">What did the toll gnome do with the coin you gave him?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_1_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="6_1_J" class="answer nonesuch">SEARCH THE GNOME after he falls asleep again.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the Haunted House?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It&#39;s just an interesting place to visit.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_2_A" class="answer nonesuch">It&#39;s just an interesting place to visit.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the Flume?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you tried riding the Flume?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">To do so, just type GET IN THE LOG BOAT.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Wasn&#39;t that a fun ride?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">There&#39;s nothing important about the Flume.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_3_A" class="answer nonesuch">Have you tried riding the Flume?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_3_B" class="answer nonesuch">To do so, just type GET IN THE LOG BOAT.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_3_C" class="answer nonesuch">Wasn&#39;t that a fun ride?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_3_D" class="answer nonesuch">There&#39;s nothing important about the Flume.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the Roller Coaster?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you tried riding the Roller Coaster?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">To do so, just type GET IN THE CAR.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Wasn&#39;t that a fun ride?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">There&#39;s nothing important about the Roller Coaster.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_4_A" class="answer nonesuch">Have you tried riding the Roller Coaster?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_4_B" class="answer nonesuch">To do so, just type GET IN THE CAR.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_4_C" class="answer nonesuch">Wasn&#39;t that a fun ride?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_4_D" class="answer nonesuch">There&#39;s nothing important about the Roller Coaster.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the Arcade?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">There aren&#39;t any video games there, of course.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But the hawker and his game booth are important.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_5_A" class="answer nonesuch">There aren&#39;t any video games there, of course.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_5_B" class="answer nonesuch">But the hawker and his game booth are important.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What should I do with the hawker?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Play his game.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">TAKE THE BALL and then THROW THE BALL AT THE BUNNIES.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_6_A" class="answer nonesuch">Play his game.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_6_B" class="answer nonesuch">TAKE THE BALL and then THROW THE BALL AT THE BUNNIES.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I win the hawker&#39;s game?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you tried throwing the ball at the bunnies?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It&#39;s a difficult game. You could use some help.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">There&#39;s a magic potion that&#39;s useful here.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">It&#39;s located in the fort.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">LOWER THE FLAG and then EXAMINE IT.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">DRINK THE FOOBLE POTION before throwing the ball.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_7_A" class="answer nonesuch">Have you tried throwing the ball at the bunnies?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_7_B" class="answer nonesuch">It&#39;s a difficult game. You could use some help.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_7_C" class="answer nonesuch">There&#39;s a magic potion that&#39;s useful here.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_7_D" class="answer nonesuch">It&#39;s located in the fort.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="6_7_E" class="answer nonesuch">LOWER THE FLAG and then EXAMINE IT.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_7_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="6_7_F" class="answer nonesuch">DRINK THE FOOBLE POTION before throwing the ball.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the significance of the Casino?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It seems pretty run down.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The odd machine with the lever is still working, though.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_8_A" class="answer nonesuch">It seems pretty run down.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_8_B" class="answer nonesuch">The odd machine with the lever is still working, though.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How does the odd machine work?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Pull the lever.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It is a slot machine.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">If three identical symbols appear in the windows, you will get a</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">payoff. This happens (on the average) one out of every sixteen tries.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">If the three matching symbols are pots of gold, you hit the jackpot.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Unfortunately, this is fatal. This happens (on the average) one out of</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">every sixty-four tries.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">Otherwise, the payoff is one zorkmid coin. This happens (on the</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">average) three out of every sixty-four tries. If you paid off the park</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">gnome before paying the toll gnome, this is the only way to get a coin</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">for the toll.</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">For a better way to pay both gnomes, read the first question in this</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">section.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("6_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="6_9_A" class="answer nonesuch">Pull the lever.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="6_9_B" class="answer nonesuch">It is a slot machine.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="6_9_C" class="answer nonesuch">If three identical symbols appear in the windows, you will get a</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="6_9_D" class="answer nonesuch">payoff. This happens (on the average) one out of every sixteen tries.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="6_9_E" class="answer nonesuch">If the three matching symbols are pots of gold, you hit the jackpot.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="6_9_F" class="answer nonesuch">Unfortunately, this is fatal. This happens (on the average) one out of</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="6_9_G" class="answer nonesuch">every sixty-four tries.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="6_9_H" class="answer nonesuch">Otherwise, the payoff is one zorkmid coin. This happens (on the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="6_9_I" class="answer nonesuch">average) three out of every sixty-four tries. If you paid off the park</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="6_9_J" class="answer nonesuch">gnome before paying the toll gnome, this is the only way to get a coin</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="6_9_K" class="answer nonesuch">for the toll.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="6_9_L" class="answer nonesuch">For a better way to pay both gnomes, read the first question in this</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("6_9_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="6_9_M" class="answer nonesuch">section.</span></div></div>
       </div>
   </div>
 
@@ -630,147 +1112,285 @@
           <div class="question indented">
       <h3>How can I keep the ceiling from caving in?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can&#39;t. It will always cave in when you enter the mine.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_1_A" class="answer nonesuch">You can&#39;t. It will always cave in when you enter the mine.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I breathe in the coal mine?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can survive only three turns without the aid of magic.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You need a potion.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">It&#39;s the vilstu potion, which you must acquire before you leave the</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Guild Hall.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">See the matchbook question in the Guild Hall section.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_2_A" class="answer nonesuch">You can survive only three turns without the aid of magic.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_2_B" class="answer nonesuch">You need a potion.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_2_C" class="answer nonesuch">It&#39;s the vilstu potion, which you must acquire before you leave the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_2_D" class="answer nonesuch">Guild Hall.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_2_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="7_2_E" class="answer nonesuch">See the matchbook question in the Guild Hall section.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I get past the door in the Dial Room?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">READ THE SIGN.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">EXAMINE THE DIAL.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You&#39;ll have to find out the combination.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Unfortunately, Ernie Flathead is probably long gone.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Only someone who has already been through it can tell you.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Take the vilstu potion, and then wait in the Coal Bin Room.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_3_A" class="answer nonesuch">READ THE SIGN.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_3_B" class="answer nonesuch">EXAMINE THE DIAL.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_3_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_3_C" class="answer nonesuch">You&#39;ll have to find out the combination.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_3_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_3_D" class="answer nonesuch">Unfortunately, Ernie Flathead is probably long gone.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_3_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="7_3_E" class="answer nonesuch">Only someone who has already been through it can tell you.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_3_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="7_3_F" class="answer nonesuch">Take the vilstu potion, and then wait in the Coal Bin Room.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Who is the person who looks just like my twin?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The person looks just like you, only more dishevelled.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It is your own older self.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">There must be some time travel going on here.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_4_A" class="answer nonesuch">The person looks just like you, only more dishevelled.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_4_B" class="answer nonesuch">It is your own older self.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_4_C" class="answer nonesuch">There must be some time travel going on here.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Should I give my spell book to my &quot;twin&quot;?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It makes sense to trust your older self, since your interests are</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">almost certainly mutual. After all, where would your older self be if</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">you went and got yourself &quot;killed&quot;?</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_5_A" class="answer nonesuch">It makes sense to trust your older self, since your interests are</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_5_B" class="answer nonesuch">almost certainly mutual. After all, where would your older self be if</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_5_C" class="answer nonesuch">you went and got yourself &quot;killed&quot;?</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Can I make a map of the coal mine?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Yes, but you don&#39;t have much time until vilstu wears off.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Dropping an object in each room of the coal mine will individualize it,</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">and thus making a map of the area will be easier.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">There are only three rooms called Coal Mine, but sometimes a passage</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">returns to the same room that it left from.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_6_A" class="answer nonesuch">Yes, but you don&#39;t have much time until vilstu wears off.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_6_B" class="answer nonesuch">Dropping an object in each room of the coal mine will individualize it,</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_6_C" class="answer nonesuch">and thus making a map of the area will be easier.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_6_D" class="answer nonesuch">There are only three rooms called Coal Mine, but sometimes a passage</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_6_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="7_6_E" class="answer nonesuch">returns to the same room that it left from.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Can I go down the coal chute at Top of Chute?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Sure. DOWN or ENTER THE CHUTE will do it.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_7_A" class="answer nonesuch">Sure. DOWN or ENTER THE CHUTE will do it.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What was that flash of orange light?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">VEZZA might be helpful here.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">There is a room off the middle of the coal chute.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You can get to it if you&#39;ve found the timber in the coal mine.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Tie the rope to the timber, drop the timber at Top of Chute, and then</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">throw the rope down the chute.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">If you are tired, or holding anything, you will lose your grip on the</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">rope.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_8_A" class="answer nonesuch">VEZZA might be helpful here.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_8_B" class="answer nonesuch">There is a room off the middle of the coal chute.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_8_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_8_C" class="answer nonesuch">You can get to it if you&#39;ve found the timber in the coal mine.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_8_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_8_D" class="answer nonesuch">Tie the rope to the timber, drop the timber at Top of Chute, and then</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_8_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="7_8_E" class="answer nonesuch">throw the rope down the chute.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_8_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="7_8_F" class="answer nonesuch">If you are tired, or holding anything, you will lose your grip on the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_8_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="7_8_G" class="answer nonesuch">rope.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the purpose of the GOLMAC spell?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">READ it.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Temporal travel means traveling in time.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">This is obviously how your older self was able to meet you earlier, in</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">the Coal Bin Room.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">CAST GOLMAC ON ME, then go DOWN to the Coal Bin Room.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_9_A" class="answer nonesuch">READ it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_9_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_9_B" class="answer nonesuch">Temporal travel means traveling in time.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_9_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_9_C" class="answer nonesuch">This is obviously how your older self was able to meet you earlier, in</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_9_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_9_D" class="answer nonesuch">the Coal Bin Room.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_9_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="7_9_E" class="answer nonesuch">CAST GOLMAC ON ME, then go DOWN to the Coal Bin Room.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is the purpose of the kerosene lamp?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It lights the Slanted Room.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Something unusual happens when you GOLMAC in the Slanted Room.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">After casting GOLMAC on yourself, OPEN THE LAMP.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The smelly scroll wasn&#39;t there when you arrived, because you yourself</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">removed it the &quot;last time through&quot; the cycle.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_10_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_10_A" class="answer nonesuch">It lights the Slanted Room.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_10_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_10_B" class="answer nonesuch">Something unusual happens when you GOLMAC in the Slanted Room.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_10_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_10_C" class="answer nonesuch">After casting GOLMAC on yourself, OPEN THE LAMP.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_10_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_10_D" class="answer nonesuch">The smelly scroll wasn&#39;t there when you arrived, because you yourself</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_10_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="7_10_E" class="answer nonesuch">removed it the &quot;last time through&quot; the cycle.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What happened to the objects I dropped into the coal chute at Top of Chute?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">When you drop objects into the upper coal chute, they land in the Coal</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Bin Room, where they get buried in the coal (except for a few large</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">objects, such as the timber or the floor waxer).</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_11_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_11_A" class="answer nonesuch">When you drop objects into the upper coal chute, they land in the Coal</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_11_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_11_B" class="answer nonesuch">Bin Room, where they get buried in the coal (except for a few large</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_11_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_11_C" class="answer nonesuch">objects, such as the timber or the floor waxer).</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What should I do when I meet my younger self?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">What happened the last time this meeting occurred?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">If you gave your older self the spell book before, then your younger</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">self should now give you the spell book.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">You&#39;d better give your younger self the combination to the door in the</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Dial Room.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Otherwise your younger self will never be able to get to the Slanted</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Room and find GOLMAC and become your older self...</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">...or more simply, you will cease to exist!</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_12_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_12_A" class="answer nonesuch">What happened the last time this meeting occurred?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_12_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_12_B" class="answer nonesuch">If you gave your older self the spell book before, then your younger</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_12_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_12_C" class="answer nonesuch">self should now give you the spell book.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_12_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_12_D" class="answer nonesuch">You&#39;d better give your younger self the combination to the door in the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_12_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="7_12_E" class="answer nonesuch">Dial Room.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_12_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="7_12_F" class="answer nonesuch">Otherwise your younger self will never be able to get to the Slanted</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_12_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="7_12_G" class="answer nonesuch">Room and find GOLMAC and become your older self...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_12_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="7_12_H" class="answer nonesuch">...or more simply, you will cease to exist!</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I get my younger self to give me my spell book?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Remember, _you_ were the younger self 20 or 30 turns ago.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Your younger self will do whatever _you_ did when _you_ were the</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">younger self.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">If you gave your spell book to your older self, then your younger self</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">will give it to you.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer"></div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Aargh! This coal mine puzzle has me totally befuddled! Help!</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">Don&#39;t go on until you&#39;re completely stumped by the coal mine.</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">The entire goal of the coal mine puzzle is to obtain the smelly</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">(VARDIK) scroll.</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">Time is of the essence, since vilstu will eventually run out.</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">One sequence that will work (starting from the Sooty Room):</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">FROTZ ME. OPEN THE ORANGE VIAL. E. DRINK THE ORANGE POTION. Z. GIVE</div></details>
-        <details class="details-answer"><summary>N.</summary><div class="answer">BOOK TO OLDER SELF. E. TURN DIAL TO (combination). OPEN DOOR. E. TAKE</div></details>
-        <details class="details-answer"><summary>O.</summary><div class="answer">ROPE. U. SW. TAKE TIMBER. NW. W. TIE ROPE TO TIMBER. THROW ROPE DOWN</div></details>
-        <details class="details-answer"><summary>P.</summary><div class="answer">CHUTE. DROP ALL. D. TAKE SCROLL. GOLMAC ME. OPEN LAMP. TAKE SCROLL. D.</div></details>
-        <details class="details-answer"><summary>Q.</summary><div class="answer">YOUNGER SELF, THE COMBINATION IS (combination). D.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("7_13_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="7_13_A" class="answer nonesuch">Remember, _you_ were the younger self 20 or 30 turns ago.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_13_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="7_13_B" class="answer nonesuch">Your younger self will do whatever _you_ did when _you_ were the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_13_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="7_13_C" class="answer nonesuch">younger self.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_13_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="7_13_D" class="answer nonesuch">If you gave your spell book to your older self, then your younger self</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_13_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="7_13_E" class="answer nonesuch">will give it to you.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_13_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="7_13_F" class="answer nonesuch"></span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_13_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="7_13_G" class="answer nonesuch">Aargh! This coal mine puzzle has me totally befuddled! Help!</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_13_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="7_13_H" class="answer nonesuch">Don&#39;t go on until you&#39;re completely stumped by the coal mine.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_13_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="7_13_I" class="answer nonesuch">The entire goal of the coal mine puzzle is to obtain the smelly</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_13_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="7_13_J" class="answer nonesuch">(VARDIK) scroll.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_13_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="7_13_K" class="answer nonesuch">Time is of the essence, since vilstu will eventually run out.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_13_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="7_13_L" class="answer nonesuch">One sequence that will work (starting from the Sooty Room):</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_13_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="7_13_M" class="answer nonesuch">FROTZ ME. OPEN THE ORANGE VIAL. E. DRINK THE ORANGE POTION. Z. GIVE</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_13_N");' role="link">
+<div class="answer-label">N.</div><div class="answer-cell"><span id="7_13_N" class="answer nonesuch">BOOK TO OLDER SELF. E. TURN DIAL TO (combination). OPEN DOOR. E. TAKE</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_13_O");' role="link">
+<div class="answer-label">O.</div><div class="answer-cell"><span id="7_13_O" class="answer nonesuch">ROPE. U. SW. TAKE TIMBER. NW. W. TIE ROPE TO TIMBER. THROW ROPE DOWN</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_13_P");' role="link">
+<div class="answer-label">P.</div><div class="answer-cell"><span id="7_13_P" class="answer nonesuch">CHUTE. DROP ALL. D. TAKE SCROLL. GOLMAC ME. OPEN LAMP. TAKE SCROLL. D.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("7_13_Q");' role="link">
+<div class="answer-label">Q.</div><div class="answer-cell"><span id="7_13_Q" class="answer nonesuch">YOUNGER SELF, THE COMBINATION IS (combination). D.</span></div></div>
       </div>
   </div>
 
@@ -778,200 +1398,360 @@
           <div class="question indented">
       <h3>Why did some of my possessions vanish as I entered the lower chute?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You changed time in such a way that it became impossible for you to</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">have those possessions.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">For example, you never told your younger self the combination, thus you</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">yourself could never have been told it by your older self, thus you</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">couldn&#39;t have objects from beyond the dial door.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_1_A" class="answer nonesuch">You changed time in such a way that it became impossible for you to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_1_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_1_B" class="answer nonesuch">have those possessions.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_1_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_1_C" class="answer nonesuch">For example, you never told your younger self the combination, thus you</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_1_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_1_D" class="answer nonesuch">yourself could never have been told it by your older self, thus you</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_1_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="8_1_E" class="answer nonesuch">couldn&#39;t have objects from beyond the dial door.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Where are the objects I dropped into the lower chute in the Coal Bin Room?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Objects that you drop into the lower chute end up at the bottom of the</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">lagoon.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_2_A" class="answer nonesuch">Objects that you drop into the lower chute end up at the bottom of the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_2_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_2_B" class="answer nonesuch">lagoon.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Can I get back up the lower coal chute?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">No.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_3_A" class="answer nonesuch">No.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Can I enter the lagoon?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Try going east from the Lagoon Shore.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">&quot;If you want to enter the lagoon, say so.&quot;</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Try ENTER THE LAGOON.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_4_A" class="answer nonesuch">Try going east from the Lagoon Shore.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_4_B" class="answer nonesuch">&quot;If you want to enter the lagoon, say so.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_4_C" class="answer nonesuch">Try ENTER THE LAGOON.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Is there anything significant about the lagoon?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Yes.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you gone DOWN to the floor of the lagoon?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Lovely clump of spenseweeds, eh? (It would be a shame if anything</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">happened to them.)</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">MEEF THE SPENSEWEEDS.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_5_A" class="answer nonesuch">Yes.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_5_B" class="answer nonesuch">Have you gone DOWN to the floor of the lagoon?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_5_C" class="answer nonesuch">Lovely clump of spenseweeds, eh? (It would be a shame if anything</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_5_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_5_D" class="answer nonesuch">happened to them.)</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_5_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="8_5_E" class="answer nonesuch">MEEF THE SPENSEWEEDS.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I breathe underwater?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can survive only a few turns underwater.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Naturally, the vilstu potion will allow you to stay underwater as long</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">as it lasts.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">But if you&#39;ve solved the coal mine problem, you&#39;ve already used up the</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">vilstu potion.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Fortunately, you need to be underwater for only a few turns.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">And, you can always go up for air and dive back down.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_6_A" class="answer nonesuch">You can survive only a few turns underwater.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_6_B" class="answer nonesuch">Naturally, the vilstu potion will allow you to stay underwater as long</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_6_C" class="answer nonesuch">as it lasts.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_6_D" class="answer nonesuch">But if you&#39;ve solved the coal mine problem, you&#39;ve already used up the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="8_6_E" class="answer nonesuch">vilstu potion.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="8_6_F" class="answer nonesuch">Fortunately, you need to be underwater for only a few turns.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_6_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="8_6_G" class="answer nonesuch">And, you can always go up for air and dive back down.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I take the wooden crate?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It&#39;s pretty heavy.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You&#39;ll probably have to drop everything else before you try to move it.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You probably can&#39;t move it if you&#39;re tired.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_7_A" class="answer nonesuch">It&#39;s pretty heavy.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_7_B" class="answer nonesuch">You&#39;ll probably have to drop everything else before you try to move it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_7_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_7_C" class="answer nonesuch">You probably can&#39;t move it if you&#39;re tired.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I climb the cliffs?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The cliffs are unclimbable.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The cliffs are too tall to fly over.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">The cliffs are bigger than a breadbox.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The cliffs are not made of marzipan.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">The cliffs are a good subject for a long, useless question.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_8_A" class="answer nonesuch">The cliffs are unclimbable.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_8_B" class="answer nonesuch">The cliffs are too tall to fly over.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_8_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_8_C" class="answer nonesuch">The cliffs are bigger than a breadbox.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_8_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_8_D" class="answer nonesuch">The cliffs are not made of marzipan.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_8_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="8_8_E" class="answer nonesuch">The cliffs are a good subject for a long, useless question.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I enter the ocean?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you tried going EAST from the shore of the ocean?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">&quot;Entering the ocean is certain death.&quot;</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Have you tried ENTER THE OCEAN?</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">As advertised, &quot;Certain death.&quot;</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_9_A" class="answer nonesuch">Have you tried going EAST from the shore of the ocean?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_9_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_9_B" class="answer nonesuch">&quot;Entering the ocean is certain death.&quot;</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_9_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_9_C" class="answer nonesuch">Have you tried ENTER THE OCEAN?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_9_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_9_D" class="answer nonesuch">As advertised, &quot;Certain death.&quot;</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I cross the river at its mouth?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It has a big mouth.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">In other words, there&#39;s no way.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_10_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_10_A" class="answer nonesuch">It has a big mouth.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_10_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_10_B" class="answer nonesuch">In other words, there&#39;s no way.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I enter the cave with the vines?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The vines are deadly.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Fortunately, they are susceptible to magic.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Try the MEEF spell.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_11_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_11_A" class="answer nonesuch">The vines are deadly.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_11_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_11_B" class="answer nonesuch">Fortunately, they are susceptible to magic.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_11_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_11_C" class="answer nonesuch">Try the MEEF spell.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Omigosh! A pack of grues! What should I do?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Light usually takes care of grues, but these are mutated.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you found the Frobozz Magic Grue Protection Kit?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">It&#39;s on the Lagoon Floor. See the lagoon question.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">What you need is inside the crate.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">The lamp is useless, of course, because of the mutation.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Either the grue suit or the repellent will suffice.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">SPRAY ME WITH REPELLENT or WEAR THE GRUE SUIT. (Warning: the repellent</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">wears off after several turns!)</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_12_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_12_A" class="answer nonesuch">Light usually takes care of grues, but these are mutated.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_12_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_12_B" class="answer nonesuch">Have you found the Frobozz Magic Grue Protection Kit?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_12_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_12_C" class="answer nonesuch">It&#39;s on the Lagoon Floor. See the lagoon question.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_12_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_12_D" class="answer nonesuch">What you need is inside the crate.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_12_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="8_12_E" class="answer nonesuch">The lamp is useless, of course, because of the mutation.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_12_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="8_12_F" class="answer nonesuch">Either the grue suit or the repellent will suffice.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_12_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="8_12_G" class="answer nonesuch">SPRAY ME WITH REPELLENT or WEAR THE GRUE SUIT. (Warning: the repellent</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_12_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="8_12_H" class="answer nonesuch">wears off after several turns!)</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I destroy the machinery in the Mammoth Cavern?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Have you tried DESTROY THE MACHINERY?</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">You can&#39;t destroy the machinery.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Instead, you should destroy the machinery operator: Jeearr.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_13_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_13_A" class="answer nonesuch">Have you tried DESTROY THE MACHINERY?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_13_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_13_B" class="answer nonesuch">You can&#39;t destroy the machinery.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_13_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_13_C" class="answer nonesuch">Instead, you should destroy the machinery operator: Jeearr.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Which door should I open?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You could try all three...</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But a true Sorcerer in this situation probably wouldn&#39;t be able to SAVE</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">and RESTORE.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">The VEZZA spell would be helpful here.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Open the white wooden door.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_14_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_14_A" class="answer nonesuch">You could try all three...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_14_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_14_B" class="answer nonesuch">But a true Sorcerer in this situation probably wouldn&#39;t be able to SAVE</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_14_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_14_C" class="answer nonesuch">and RESTORE.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_14_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_14_D" class="answer nonesuch">The VEZZA spell would be helpful here.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_14_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="8_14_E" class="answer nonesuch">Open the white wooden door.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I get out of the Hall of Eternal Pain?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can&#39;t.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Really.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_15_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_15_A" class="answer nonesuch">You can&#39;t.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_15_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_15_B" class="answer nonesuch">Really.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I get out of the Chamber of Living Death?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can&#39;t.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Really.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_16_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_16_A" class="answer nonesuch">You can&#39;t.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_16_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_16_B" class="answer nonesuch">Really.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I rouse Belboz?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Don&#39;t continue until you&#39;ve seen Belboz.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">If you just wait for a little while, he will wake up.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">But, obviously, this isn&#39;t the right thing to do.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">You want to exorcise Belboz.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_17_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_17_A" class="answer nonesuch">Don&#39;t continue until you&#39;ve seen Belboz.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_17_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_17_B" class="answer nonesuch">If you just wait for a little while, he will wake up.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_17_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_17_C" class="answer nonesuch">But, obviously, this isn&#39;t the right thing to do.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_17_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_17_D" class="answer nonesuch">You want to exorcise Belboz.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I exercise Belboz?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Take him for a walk around the block.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">A regimen of push-ups and squat thrusts would also help.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_18_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_18_A" class="answer nonesuch">Take him for a walk around the block.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_18_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_18_B" class="answer nonesuch">A regimen of push-ups and squat thrusts would also help.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I exorcise Belboz?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Don&#39;t continue until you&#39;ve seen Belboz.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Don&#39;t continue until you&#39;ve obtained the SWANZO spell.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">CAST SWANZO ON BELBOZ.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Oops. Perhaps you&#39;d better protect yourself first.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Don&#39;t continue until you&#39;ve obtained the VARDIK spell.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">CAST VARDIK ON ME then CAST SWANZO ON BELBOZ. Voila.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_19_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_19_A" class="answer nonesuch">Don&#39;t continue until you&#39;ve seen Belboz.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_19_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_19_B" class="answer nonesuch">Don&#39;t continue until you&#39;ve obtained the SWANZO spell.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_19_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_19_C" class="answer nonesuch">CAST SWANZO ON BELBOZ.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_19_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_19_D" class="answer nonesuch">Oops. Perhaps you&#39;d better protect yourself first.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_19_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="8_19_E" class="answer nonesuch">Don&#39;t continue until you&#39;ve obtained the VARDIK spell.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_19_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="8_19_F" class="answer nonesuch">CAST VARDIK ON ME then CAST SWANZO ON BELBOZ. Voila.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I kill Belboz?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Kill your friend and mentor???</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">The diamond-studded knife looks promising.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Try KILL BELBOZ WITH THE KNIFE.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Well, perhaps if you protected your own mind first...</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">Don&#39;t continue until you&#39;ve obtained the VARDIK spell.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">CAST VARDIK ON ME then KILL BELBOZ WITH THE KNIFE.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">Still not the optimum ending, right?</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">You want to exorcise Belboz.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("8_20_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="8_20_A" class="answer nonesuch">Kill your friend and mentor???</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_20_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="8_20_B" class="answer nonesuch">The diamond-studded knife looks promising.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_20_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="8_20_C" class="answer nonesuch">Try KILL BELBOZ WITH THE KNIFE.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_20_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="8_20_D" class="answer nonesuch">Well, perhaps if you protected your own mind first...</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_20_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="8_20_E" class="answer nonesuch">Don&#39;t continue until you&#39;ve obtained the VARDIK spell.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_20_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="8_20_F" class="answer nonesuch">CAST VARDIK ON ME then KILL BELBOZ WITH THE KNIFE.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_20_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="8_20_G" class="answer nonesuch">Still not the optimum ending, right?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("8_20_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="8_20_H" class="answer nonesuch">You want to exorcise Belboz.</span></div></div>
       </div>
   </div>
 
@@ -979,127 +1759,237 @@
           <div class="question indented">
       <h3>Are potions liquids or powders?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Yes.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_1_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_1_A" class="answer nonesuch">Yes.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is a nymph?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Look it up in the encyclopedia in the Library.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_2_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_2_A" class="answer nonesuch">Look it up in the encyclopedia in the Library.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Is it okay to rifle through the belongings of fellow Enchanters?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">In general, that would not be proper behavior.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But this is an emergency.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_3_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_3_A" class="answer nonesuch">In general, that would not be proper behavior.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_3_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_3_B" class="answer nonesuch">But this is an emergency.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Where is it safe to sleep?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The Guild Hall isn&#39;t safe until you&#39;ve rescued Belboz.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It&#39;s safe to sleep almost everywhere else.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Some obvious exceptions: the river bed locations, inside the coal mine,</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Twisted Forest, Tree Branch, Snake Pit, Mine Field, Meadow, Drawbridge,</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">River Bank, Hollow, Surface of Lagoon, Lagoon Floor, and Belboz&#39;s</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Hideout.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">You might want to try sleeping in those locations, just to see what</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">happens...but do a SAVE first.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_4_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_4_A" class="answer nonesuch">The Guild Hall isn&#39;t safe until you&#39;ve rescued Belboz.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_4_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_4_B" class="answer nonesuch">It&#39;s safe to sleep almost everywhere else.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_4_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_4_C" class="answer nonesuch">Some obvious exceptions: the river bed locations, inside the coal mine,</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_4_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_4_D" class="answer nonesuch">Twisted Forest, Tree Branch, Snake Pit, Mine Field, Meadow, Drawbridge,</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_4_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="9_4_E" class="answer nonesuch">River Bank, Hollow, Surface of Lagoon, Lagoon Floor, and Belboz&#39;s</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_4_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="9_4_F" class="answer nonesuch">Hideout.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_4_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="9_4_G" class="answer nonesuch">You might want to try sleeping in those locations, just to see what</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_4_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="9_4_H" class="answer nonesuch">happens...but do a SAVE first.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Are the dreams meaningful?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">No, none of the dreams contains any useful information.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">In fact, these dreams all appeared in Enchanter(tm), also.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Perhaps you suffer from recurring dreams.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_5_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_5_A" class="answer nonesuch">No, none of the dreams contains any useful information.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_5_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_5_B" class="answer nonesuch">In fact, these dreams all appeared in Enchanter(tm), also.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_5_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_5_C" class="answer nonesuch">Perhaps you suffer from recurring dreams.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Is the YOMIN spell useful?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Not really.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">It is sort of interesting to use, though.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_6_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_6_A" class="answer nonesuch">Not really.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_6_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_6_B" class="answer nonesuch">It is sort of interesting to use, though.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>What is guano?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">GUANO -- n. (gwan-o) A substance composed chiefly of excrement and used</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">as fertilizer.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_7_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_7_A" class="answer nonesuch">GUANO -- n. (gwan-o) A substance composed chiefly of excrement and used</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_7_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_7_B" class="answer nonesuch">as fertilizer.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Where is the scroll with the ZIKKLE spell?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">The leader of the rockworm tribe can tell you.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But first you need to learn rockworm speech.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">You can do that by reading the invisible carvings in the Hall of</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">Carvings.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">You can make them visible using the ZIKKLE spell.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_8_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_8_A" class="answer nonesuch">The leader of the rockworm tribe can tell you.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_8_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_8_B" class="answer nonesuch">But first you need to learn rockworm speech.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_8_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_8_C" class="answer nonesuch">You can do that by reading the invisible carvings in the Hall of</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_8_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_8_D" class="answer nonesuch">Carvings.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_8_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="9_8_E" class="answer nonesuch">You can make them visible using the ZIKKLE spell.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How can I dry out wet spell books and wet scrolls?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">You can&#39;t. Once your spell book or a scroll has gotten wet, it&#39;s</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">useless.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_9_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_9_A" class="answer nonesuch">You can&#39;t. Once your spell book or a scroll has gotten wet, it&#39;s</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_9_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_9_B" class="answer nonesuch">useless.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Is the VEZZA spell important?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">It provides a few hints.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">But you could finish the game without ever using it.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">Note that two of the glimpses are previews of the third Enchanter game:</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">the pile of white blocks, and the Guildmasters meeting in Borphee.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_10_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_10_A" class="answer nonesuch">It provides a few hints.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_10_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_10_B" class="answer nonesuch">But you could finish the game without ever using it.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_10_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_10_C" class="answer nonesuch">Note that two of the glimpses are previews of the third Enchanter game:</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_10_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_10_D" class="answer nonesuch">the pile of white blocks, and the Guildmasters meeting in Borphee.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>Why do I sometimes suddenly cease to exist?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">Don&#39;t continue unless you&#39;ve used the GOLMAC spell.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">A time travel paradox is involved.</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">One way to &quot;poof&quot; out of existence is to enter the lower chute after</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">casting GOLMAC without informing your younger self of the combination.</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">This sets up a paradox.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">Another way to &quot;poof&quot; is to cast GOLMAC on yourself a second time (the</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">scroll re-appears on the ground of the Slanted Room when you GOLMAC). A</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">second dose of this spell sends you too far back in time to meet your</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">younger self, thus creating another paradox.</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">Two other ways to &quot;poof&quot; are to leave the Slanted Room before casting</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">GOLMAC, or to carry the shimmering scroll out of the Slanted Room.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_11_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_11_A" class="answer nonesuch">Don&#39;t continue unless you&#39;ve used the GOLMAC spell.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_11_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_11_B" class="answer nonesuch">A time travel paradox is involved.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_11_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_11_C" class="answer nonesuch">One way to &quot;poof&quot; out of existence is to enter the lower chute after</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_11_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_11_D" class="answer nonesuch">casting GOLMAC without informing your younger self of the combination.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_11_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="9_11_E" class="answer nonesuch">This sets up a paradox.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_11_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="9_11_F" class="answer nonesuch">Another way to &quot;poof&quot; is to cast GOLMAC on yourself a second time (the</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_11_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="9_11_G" class="answer nonesuch">scroll re-appears on the ground of the Slanted Room when you GOLMAC). A</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_11_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="9_11_H" class="answer nonesuch">second dose of this spell sends you too far back in time to meet your</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_11_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="9_11_I" class="answer nonesuch">younger self, thus creating another paradox.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_11_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="9_11_J" class="answer nonesuch">Two other ways to &quot;poof&quot; are to leave the Slanted Room before casting</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_11_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="9_11_K" class="answer nonesuch">GOLMAC, or to carry the shimmering scroll out of the Slanted Room.</span></div></div>
       </div>
   </div>
 
           <div class="question indented">
       <h3>How were the spells and potions named?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">GNUSTO, FROTZ, REZROV, and IZYUK are taken from Enchanter.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">FWEEP is the sound that the deranged bat in Zork I makes. Perhaps it is</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">repeating the last word it ever heard as a human.</div></details>
-        <details class="details-answer"><summary>D.</summary><div class="answer">AIMFIZ is ZIFMIA backwards. ZIFMIA, in Enchanter, causes someone to be</div></details>
-        <details class="details-answer"><summary>E.</summary><div class="answer">transported to YOUR location.</div></details>
-        <details class="details-answer"><summary>F.</summary><div class="answer">GOLMAC is short for gold machine, the time travel device in Zork III.</div></details>
-        <details class="details-answer"><summary>G.</summary><div class="answer">The gold machine was probably imbued with this spell.</div></details>
-        <details class="details-answer"><summary>H.</summary><div class="answer">YOMIN is an anagram of the name of an actor who played a famous</div></details>
-        <details class="details-answer"><summary>I.</summary><div class="answer">mind-prober on a sci-fi TV show.</div></details>
-        <details class="details-answer"><summary>J.</summary><div class="answer">MALYON is a corruption of Pygmalion, a sculptor who (according to</div></details>
-        <details class="details-answer"><summary>K.</summary><div class="answer">ancient Greek legend) brought his creation to life.</div></details>
-        <details class="details-answer"><summary>L.</summary><div class="answer">FOOBLE is a potential reset code in Suspended(tm).</div></details>
-        <details class="details-answer"><summary>M.</summary><div class="answer">YONK is a reference to the author&#39;s birthplace.</div></details>
-        <details class="details-answer"><summary>N.</summary><div class="answer">Some others are the names of Infocom employees.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("9_12_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="9_12_A" class="answer nonesuch">GNUSTO, FROTZ, REZROV, and IZYUK are taken from Enchanter.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_12_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="9_12_B" class="answer nonesuch">FWEEP is the sound that the deranged bat in Zork I makes. Perhaps it is</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_12_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="9_12_C" class="answer nonesuch">repeating the last word it ever heard as a human.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_12_D");' role="link">
+<div class="answer-label">D.</div><div class="answer-cell"><span id="9_12_D" class="answer nonesuch">AIMFIZ is ZIFMIA backwards. ZIFMIA, in Enchanter, causes someone to be</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_12_E");' role="link">
+<div class="answer-label">E.</div><div class="answer-cell"><span id="9_12_E" class="answer nonesuch">transported to YOUR location.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_12_F");' role="link">
+<div class="answer-label">F.</div><div class="answer-cell"><span id="9_12_F" class="answer nonesuch">GOLMAC is short for gold machine, the time travel device in Zork III.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_12_G");' role="link">
+<div class="answer-label">G.</div><div class="answer-cell"><span id="9_12_G" class="answer nonesuch">The gold machine was probably imbued with this spell.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_12_H");' role="link">
+<div class="answer-label">H.</div><div class="answer-cell"><span id="9_12_H" class="answer nonesuch">YOMIN is an anagram of the name of an actor who played a famous</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_12_I");' role="link">
+<div class="answer-label">I.</div><div class="answer-cell"><span id="9_12_I" class="answer nonesuch">mind-prober on a sci-fi TV show.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_12_J");' role="link">
+<div class="answer-label">J.</div><div class="answer-cell"><span id="9_12_J" class="answer nonesuch">MALYON is a corruption of Pygmalion, a sculptor who (according to</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_12_K");' role="link">
+<div class="answer-label">K.</div><div class="answer-cell"><span id="9_12_K" class="answer nonesuch">ancient Greek legend) brought his creation to life.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_12_L");' role="link">
+<div class="answer-label">L.</div><div class="answer-cell"><span id="9_12_L" class="answer nonesuch">FOOBLE is a potential reset code in Suspended(tm).</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_12_M");' role="link">
+<div class="answer-label">M.</div><div class="answer-cell"><span id="9_12_M" class="answer nonesuch">YONK is a reference to the author&#39;s birthplace.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("9_12_N");' role="link">
+<div class="answer-label">N.</div><div class="answer-cell"><span id="9_12_N" class="answer nonesuch">Some others are the names of Infocom employees.</span></div></div>
       </div>
   </div>
 

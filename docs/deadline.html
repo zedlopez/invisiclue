@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><title>Deadline Invisiclues</title>
 <link rel="stylesheet" href="style.css">
+<script>
+function toggle(id) {
+var span = document.getElementById(id);
+console.log("toggling " + span);
+span.classList.toggle('nonesuch');
+console.log(span.classList);
+}
+</script>
 </head>
 <body>
 <header>
@@ -12,9 +20,15 @@
     <div class="question indented">
       <h3>Why did trusty Sgt. Duffy wear red suspenders?</h3>
       <div class="answers">
-        <details class="details-answer"><summary>A.</summary><div class="answer">He doesn&#39;t use them to gag suspects.</div></details>
-        <details class="details-answer"><summary>B.</summary><div class="answer">Have you studied his wardrobe?</div></details>
-        <details class="details-answer"><summary>C.</summary><div class="answer">To hold his pants up.</div></details>
+      
+      <div class="answer-row" onClick='javascript:toggle("0_0_A");' role="link">
+<div class="answer-label">A.</div><div class="answer-cell"><span id="0_0_A" class="answer nonesuch">He doesn&#39;t use them to gag suspects.</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("0_0_B");' role="link">
+<div class="answer-label">B.</div><div class="answer-cell"><span id="0_0_B" class="answer nonesuch">Have you studied his wardrobe?</span></div></div>
+
+      <div class="answer-row" onClick='javascript:toggle("0_0_C");' role="link">
+<div class="answer-label">C.</div><div class="answer-cell"><span id="0_0_C" class="answer nonesuch">To hold his pants up.</span></div></div>
       </div>
   </div>
 
