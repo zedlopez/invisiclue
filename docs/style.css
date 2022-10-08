@@ -52,7 +52,7 @@
         --codeblock-border-color: #d5daff;
         --codeblock-border-width: .1rem;
         --testme-bg-color: #FFEAEA;
-        --summary-outline-width: .1rem;
+        --summary-outline-width: .05rem;
         --td-border-width: .05rem;
         --defn-border-width: .1rem;
         --defn-line-bg-color: #F9f9c8;
@@ -282,8 +282,6 @@ sup {
   top: -0.5em;
 }
 
-summary:hover { border-radius: .75em; outline: var(--summary-outline-width) dotted; }
-summary:focus { border-radius: .75em; outline: var(--summary-outline-width) solid; }
 
 table {
   margin-left: .7em;
@@ -353,13 +351,14 @@ span.mono { font-family: var(--mono); font-weight: var(--mono-weight); font-styl
 .question { margin-top: 2rem; margin-bottom: 1rem; padding-top: 1em; padding-bottom: 1em; border: .1em solid currentColor; border-radius: 1em; }
 /*.details-answers { margin-top: .5rem; }*/
 
+.answer-row:hover { outline: var(--summary-outline-width) dotted; }
+.answer-row:focus { outline: var(--summary-outline-width) solid; }
 
-.answer-row:hover { border-radius: .75em; outline: var(--summary-outline-width) dotted; width="100%;"}
 .answers { display: table; width: 100%; margin-top: .5rem; }
-.answer-row { display: table-row;  cursor: pointer; width: 100%; }
-.answer-label { font-family: var(--mono); font-weight: var(--mono-weight); font-style: normal; font-weight: bold; display: table-cell; padding-left: 1rem; }
-.answer-cell { display: table-cell; width: 100%; padding-right: 1rem; }
-.answer { padding-left: .5rem; }
+a.answer-row { display: table-row;  cursor: pointer; width: 100%; border-radius: .75em; border: var(--summary-outline-width) solid transparent; }
+.answer-label { font-family: var(--mono); font-weight: var(--mono-weight); font-style: normal; font-weight: bold; display: table-cell; padding-left: .5em; text-align: right; }
+.answer-cell { display: table-cell; width: 100%; }
+.gap { font-size: .25em; }
 .summation { display: inline-block; }
 summary > * { display: inline; }
 footer {  font-size: .9375rem; padding-bottom: 1rem; margin-top: 1rem; padding-top: 1.5rem; }
