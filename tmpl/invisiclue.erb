@@ -33,15 +33,15 @@ console.log(span.classList);
     <% else %>
   <div class="indented">
       <p>
-    <% content[:lines].each do |line| %>
-        <%= line %><% if content[:no_merge] %><br><% else %></p><p><% end %>
+    <% content[:lines].each.with_index(0) do |line,i| %>
+        <% if content[:indent] %><%= '&ensp;' * (content[:indent][i] ? content[:indent][i] : 0) %><% end %><%= line %><% if content[:no_merge] %><br><% else %></p><p><% end %>
       <% end %>
     </p>
     </div>
     <% end %>
-  <% else %>
   <% question_num = 0 %>
     <%  content.each do |question, answers| %>
+      <% next if Symbol === question %>
       <% question_num += 1 %>
       <%== templates.question.render(question: question, answers: answers, section_num: section_num, question_num: question_num) %>
     <% end %>
