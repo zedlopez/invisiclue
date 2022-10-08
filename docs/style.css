@@ -348,6 +348,8 @@ main.toc::after {
 .toc-vol#wi { float: left; }
 .toc-vol#rb { float: right; }
 
+h1.title { font-size: 3rem; margin-top: 2rem; margin-bottom: 1rem; }
+
 h1, .h1 {
   font-size: 2.5em;
 }

@@ -4,12 +4,12 @@
 </head>
 <body>
 <header>
-<h1>Invisiclues</h1>
+<h1 class="title">Invisiclues</h1>
 </header>
 <main>
 <div class="index indented">
 <ul>
-<% games.keys.sort.each do |title| %>
+<% games.keys.sort_by {|x| x.sub(/\AThe\s+/,'') }.each do |title| %>
 <li><a href="<%= games[title] %>"><%== title %></a></li>
 <% end %>
 </ul>
