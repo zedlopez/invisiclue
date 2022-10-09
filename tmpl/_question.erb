@@ -1,4 +1,5 @@
-    <div class="question indented">
+<% unless Symbol === question %>
+<div class="question indented">
       <h3><%= question %></h3>
       <div class="answers">
       <% answers.each.with_index do |answer,i| %><% label = ('A'.ord+i).chr %><% id = [ section_num, question_num, label ].join('_') %>
@@ -8,3 +9,4 @@
       <% end %>
       </div>
   </div>
+<% end %>

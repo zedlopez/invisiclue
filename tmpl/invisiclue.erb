@@ -4,9 +4,7 @@
 <script>
 function toggle(id) {
 var span = document.getElementById(id);
-console.log("toggling " + span);
 span.classList.toggle('nonesuch');
-console.log(span.classList);
 }
 </script>
 </head>
@@ -17,6 +15,11 @@ console.log(span.classList);
 <main class="invisiclue">
 <h1><%== header %> Invisiclues</h1>
 <h2>Sample Question</h2>
+    <%  sample.each do |question, answers| %>
+      <% next if Symbol === question %>
+      <%== templates.question.render(question: question, answers: answers, section_num: section_num, question_num: question_num) %>
+    <% end %>
+
 <%== templates.question.render(question: sample.keys.first, answers: sample.values.first, section_num: 0, question_num: 0) %>
 <% if !anchors.empty? %>
   <h2>Table of Contents</h2><ul class="indented">

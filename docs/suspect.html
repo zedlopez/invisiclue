@@ -4,9 +4,7 @@
 <script>
 function toggle(id) {
 var span = document.getElementById(id);
-console.log("toggling " + span);
 span.classList.toggle('nonesuch');
-console.log(span.classList);
 }
 </script>
 </head>
@@ -17,26 +15,28 @@ console.log(span.classList);
 <main class="invisiclue">
 <h1>Suspect Invisiclues</h1>
 <h2>Sample Question</h2>
-    <div class="question indented">
+      <div class="question indented">
       <h3>What does trusty Sgt. Duffy do after he runs after a thief on a hot day?</h3>
       <div class="answers">
       
-      <a class="answer-row" onClick='javascript:toggle("0_0_A");' href="javascript:return false;">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A"><span class="hidden">|</span><span id="0_0_A" class="answer nonesuch">You might try following him.</span></div></a>
+      <a class="answer-row" onClick='javascript:toggle("__A");' href="javascript:return false;">
+<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A"><span class="hidden">|</span><span id="__A" class="answer nonesuch">You might try following him.</span></div></a>
       <div class="gap">&thinsp;</div>
 
-      <a class="answer-row" onClick='javascript:toggle("0_0_B");' href="javascript:return false;">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B"><span class="hidden">|</span><span id="0_0_B" class="answer nonesuch">Of course, he probably runs faster than you.</span></div></a>
+      <a class="answer-row" onClick='javascript:toggle("__B");' href="javascript:return false;">
+<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B"><span class="hidden">|</span><span id="__B" class="answer nonesuch">Of course, he probably runs faster than you.</span></div></a>
       <div class="gap">&thinsp;</div>
 
-      <a class="answer-row" onClick='javascript:toggle("0_0_C");' href="javascript:return false;">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C"><span class="hidden">|</span><span id="0_0_C" class="answer nonesuch">He takes off his coat and pants.</span></div></a>
+      <a class="answer-row" onClick='javascript:toggle("__C");' href="javascript:return false;">
+<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C"><span class="hidden">|</span><span id="__C" class="answer nonesuch">He takes off his coat and pants.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
 
+
+
   <h2>Table of Contents</h2><ul class="indented">
-    <li><a href="#dateline_rappanoc_maryland_--_the_ashcroft_estate">Dateline: Rappanoc, Maryland -- the Ashcroft Estate</a></li>
+    <li><a href="#dateline_rappanoc_maryland_--_the_ashcroft_estate">Dateline: Rappanoc, Maryland -- The Ashcroft Estate</a></li>
       <li><a href="#dateline_rappanoc_maryland_--_county_jail">Dateline: Rappanoc, Maryland -- County Jail</a></li>
       <li><a href="#the_evidence_part_i">The Evidence: Part I</a></li>
       <li><a href="#the_evidence_part_ii">The Evidence: Part II</a></li>
@@ -44,12 +44,12 @@ console.log(span.classList);
       <li><a href="#for_your_amusement">For Your Amusement</a></li>
       <li><a href="#indicia">Indicia</a></li>
   </ul>
-  <h2 id="dateline_rappanoc_maryland_--_the_ashcroft_estate">Dateline: Rappanoc, Maryland -- the Ashcroft Estate</h2>
+  <h2 id="dateline_rappanoc_maryland_--_the_ashcroft_estate">Dateline: Rappanoc, Maryland -- The Ashcroft Estate</h2>
       <div class="indented">
       <p>
     </p>
     </div>
-          <div class="question indented">
+      <div class="question indented">
       <h3>How can I get to the office before Veronica?</h3>
       <div class="answers">
       
@@ -91,7 +91,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What should I do with Veronica?</h3>
       <div class="answers">
       
@@ -105,7 +105,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Why is the Detective so unobservant?</h3>
       <div class="answers">
       
@@ -159,7 +159,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What should I do with any evidence I find?</h3>
       <div class="answers">
       
@@ -173,7 +173,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How did the thief get into the house?</h3>
       <div class="answers">
       
@@ -207,7 +207,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Is the fairy mask important?</h3>
       <div class="answers">
       
@@ -237,7 +237,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Where can I find the business card?</h3>
       <div class="answers">
       
@@ -247,7 +247,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What does the business card mean?</h3>
       <div class="answers">
       
@@ -261,7 +261,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What can I learn from the Purchase and Sale Agreement?</h3>
       <div class="answers">
       
@@ -287,7 +287,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What is the significance of the silver bullet?</h3>
       <div class="answers">
       
@@ -313,7 +313,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What is the significance of the hair?</h3>
       <div class="answers">
       
@@ -335,7 +335,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Who is the guest whose coat Smythe gets tangled in?</h3>
       <div class="answers">
       
@@ -357,7 +357,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Does the rain amount to anything significant?</h3>
       <div class="answers">
       
@@ -387,7 +387,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get past the dog?</h3>
       <div class="answers">
       
@@ -425,7 +425,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What about the footprint?</h3>
       <div class="answers">
       
@@ -491,7 +491,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What is a Brewster?</h3>
       <div class="answers">
       
@@ -525,7 +525,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What can I do with the broken glass?</h3>
       <div class="answers">
       
@@ -567,7 +567,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What do the various costumes mentioned in the Ballroom mean?</h3>
       <div class="answers">
       
@@ -645,7 +645,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Where is the master bedroom?</h3>
       <div class="answers">
       
@@ -655,7 +655,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Where is the safe?</h3>
       <div class="answers">
       
@@ -697,7 +697,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get upstairs?</h3>
       <div class="answers">
       
@@ -727,7 +727,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Is there anything important in the east coat closet?</h3>
       <div class="answers">
       
@@ -741,7 +741,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Is there anything helpful in the Library?</h3>
       <div class="answers">
       
@@ -771,7 +771,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Where are the torn pages?</h3>
       <div class="answers">
       
@@ -793,7 +793,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What can I do in the dining room?</h3>
       <div class="answers">
       
@@ -831,7 +831,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What is burning in the fireplace?</h3>
       <div class="answers">
       
@@ -865,7 +865,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What is the significance of the list?</h3>
       <div class="answers">
       
@@ -895,7 +895,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Where can I find the origin of the list?</h3>
       <div class="answers">
       
@@ -925,7 +925,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How did Sergeant Duffy get to Maryland, anyway?</h3>
       <div class="answers">
       
@@ -963,7 +963,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Is Rappanoc a real place?</h3>
       <div class="answers">
       
@@ -989,7 +989,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What is Michael doing in the garage?</h3>
       <div class="answers">
       
@@ -1011,7 +1011,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Where are the pumpkins that I read about in the Maryland Rambler?</h3>
       <div class="answers">
       
@@ -1025,7 +1025,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What can I do with the toolbox?</h3>
       <div class="answers">
       
@@ -1055,7 +1055,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What can I do in the west bathroom?</h3>
       <div class="answers">
       
@@ -1077,7 +1077,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Where were Linda and Richard at the time of the murder?</h3>
       <div class="answers">
       
@@ -1095,7 +1095,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Why is Linda such an air head?</h3>
       <div class="answers">
       
@@ -1117,7 +1117,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Who committed the murder?</h3>
       <div class="answers">
       
@@ -1159,7 +1159,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Was Cochrane involved?</h3>
       <div class="answers">
       
@@ -1193,7 +1193,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Where was Cochrane at the time of the murder?</h3>
       <div class="answers">
       
@@ -1223,7 +1223,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Was Michael involved in the murder?</h3>
       <div class="answers">
       
@@ -1241,7 +1241,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I prove Alicia&#39;s involvement?</h3>
       <div class="answers">
       
@@ -1291,7 +1291,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I prove Asher&#39;s involvement?</h3>
       <div class="answers">
       
@@ -1337,7 +1337,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Where does Marston fit in?</h3>
       <div class="answers">
       
@@ -1359,7 +1359,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Was Ostmann involved?</h3>
       <div class="answers">
       
@@ -1389,7 +1389,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How does Smythe figure in?</h3>
       <div class="answers">
       
@@ -1424,7 +1424,7 @@ console.log(span.classList);
       <p>
     </p>
     </div>
-          <div class="question indented">
+      <div class="question indented">
       <h3>Help! I keep getting arrested!</h3>
       <div class="answers">
       
@@ -1438,7 +1438,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How can I prove my innocence?</h3>
       <div class="answers">
       
@@ -1481,7 +1481,7 @@ console.log(span.classList);
       <p>
     </p>
     </div>
-          <div class="question indented">
+      <div class="question indented">
       <h3>Do not develop these answers until you have solved the game (or are absolutely mind-boggled).</h3>
       <div class="answers">
             </div>
@@ -1492,7 +1492,7 @@ console.log(span.classList);
       <p>
     </p>
     </div>
-          <div class="question indented">
+      <div class="question indented">
       <h3>Don&#39;t develop this section unless you are absolutely sure who committed the murder, but don&#39;t want to tell the Detective.</h3>
       <div class="answers">
             </div>
@@ -1506,7 +1506,7 @@ console.log(span.classList);
         RAPPANOC, November 1. The murder investigation of hunt country socialite Veronica Ashcroft-Wellman was foiled last night by a Representative reporter. As a result, two suspects, Michael Wellman and Alicia Barron, escaped. Wellman was later found dead, apparently trampled to death by Ms. Ashcroft&#39;s horse, &quot;Lurking Grue.&quot; Barron&#39;s whereabouts are still unknown. The reporter allegedly confronted the two with evidence believed to identify them as the murderers rather than turning the evidence over to the police. A get-away car, previously parked behind the barn by Barron, was used for her escape. Wellman was killed when he entered the horse barn without any light, causing the horse to panic. &quot;I have never experienced such a flagrant act of egoism before,&quot; declared the Detective. &quot;The reporter deliberately interfered with my investigation, withheld evidence, and caused this aberration of justice.&quot;</p><p>
     </p>
     </div>
-          <div class="question indented">
+      <div class="question indented">
       <h3>Do not read the following articles until after you have solved the murder.</h3>
       <div class="answers">
             </div>

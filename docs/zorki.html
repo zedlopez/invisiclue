@@ -4,9 +4,7 @@
 <script>
 function toggle(id) {
 var span = document.getElementById(id);
-console.log("toggling " + span);
 span.classList.toggle('nonesuch');
-console.log(span.classList);
 }
 </script>
 </head>
@@ -17,23 +15,25 @@ console.log(span.classList);
 <main class="invisiclue">
 <h1>Zork I Invisiclues</h1>
 <h2>Sample Question</h2>
-    <div class="question indented">
+      <div class="question indented">
       <h3>How many grues does it take to screw in a light bulb?</h3>
       <div class="answers">
       
-      <a class="answer-row" onClick='javascript:toggle("0_0_A");' href="javascript:return false;">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A"><span class="hidden">|</span><span id="0_0_A" class="answer nonesuch">Don&#39;t go on unless you&#39;ve asked WHAT IS A GRUE?</span></div></a>
+      <a class="answer-row" onClick='javascript:toggle("__A");' href="javascript:return false;">
+<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A"><span class="hidden">|</span><span id="__A" class="answer nonesuch">Don&#39;t go on unless you&#39;ve asked WHAT IS A GRUE?</span></div></a>
       <div class="gap">&thinsp;</div>
 
-      <a class="answer-row" onClick='javascript:toggle("0_0_B");' href="javascript:return false;">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B"><span class="hidden">|</span><span id="0_0_B" class="answer nonesuch">You could break a bulb, then hide and watch what happens.</span></div></a>
+      <a class="answer-row" onClick='javascript:toggle("__B");' href="javascript:return false;">
+<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B"><span class="hidden">|</span><span id="__B" class="answer nonesuch">You could break a bulb, then hide and watch what happens.</span></div></a>
       <div class="gap">&thinsp;</div>
 
-      <a class="answer-row" onClick='javascript:toggle("0_0_C");' href="javascript:return false;">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C"><span class="hidden">|</span><span id="0_0_C" class="answer nonesuch">None. Grues are terrified of light.</span></div></a>
+      <a class="answer-row" onClick='javascript:toggle("__C");' href="javascript:return false;">
+<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C"><span class="hidden">|</span><span id="__C" class="answer nonesuch">None. Grues are terrified of light.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
+
+
 
   <h2>Table of Contents</h2><ul class="indented">
     <li><a href="#above_ground">Above Ground</a></li>
@@ -56,7 +56,7 @@ console.log(span.classList);
       <p>
     </p>
     </div>
-          <div class="question indented">
+      <div class="question indented">
       <h3>Where do I find a machete?</h3>
       <div class="answers">
       
@@ -74,7 +74,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I cross the mountains?</h3>
       <div class="answers">
       
@@ -84,7 +84,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I kill the songbird?</h3>
       <div class="answers">
       
@@ -94,7 +94,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Is the nest useful for anything?</h3>
       <div class="answers">
       
@@ -112,7 +112,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I open the egg without damaging it?</h3>
       <div class="answers">
       
@@ -142,7 +142,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I fix the broken canary?</h3>
       <div class="answers">
       
@@ -156,7 +156,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Are the leaves useful for anything?</h3>
       <div class="answers">
       
@@ -170,7 +170,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I open the grating?</h3>
       <div class="answers">
       
@@ -192,7 +192,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get off the roof of the house?</h3>
       <div class="answers">
       
@@ -222,7 +222,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Once I have the canary in an undamaged state, what do I do with it?</h3>
       <div class="answers">
       
@@ -240,7 +240,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get the brass bauble?</h3>
       <div class="answers">
       
@@ -254,7 +254,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I open the front door?</h3>
       <div class="answers">
       
@@ -272,7 +272,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get into the house?</h3>
       <div class="answers">
       
@@ -290,7 +290,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Can I eat the lunch?</h3>
       <div class="answers">
       
@@ -304,7 +304,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get into the dungeons?</h3>
       <div class="answers">
       
@@ -322,7 +322,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What is a grue?</h3>
       <div class="answers">
       
@@ -337,7 +337,7 @@ console.log(span.classList);
       <p>
     </p>
     </div>
-          <div class="question indented">
+      <div class="question indented">
       <h3>Can the trapdoor be opened from below?</h3>
       <div class="answers">
       
@@ -351,7 +351,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get up the ramp in the Cellar?</h3>
       <div class="answers">
       
@@ -369,7 +369,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I negotiate with the Troll?</h3>
       <div class="answers">
       
@@ -391,7 +391,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What do I do with the axe?</h3>
       <div class="answers">
       
@@ -425,7 +425,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Does the paint in the studio mean anything?</h3>
       <div class="answers">
       
@@ -440,7 +440,7 @@ console.log(span.classList);
       <p>
     </p>
     </div>
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get through the Maze?</h3>
       <div class="answers">
       
@@ -470,7 +470,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What do I do with the rusty knife?</h3>
       <div class="answers">
       
@@ -488,7 +488,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What do I do with the skeleton?</h3>
       <div class="answers">
       
@@ -530,7 +530,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Can I use the broken lantern?</h3>
       <div class="answers">
       
@@ -544,7 +544,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get past the Cyclops?</h3>
       <div class="answers">
       
@@ -599,7 +599,7 @@ console.log(span.classList);
       <p>
     </p>
     </div>
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get the platinum bar?</h3>
       <div class="answers">
       
@@ -665,7 +665,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I kill the rock?</h3>
       <div class="answers">
       
@@ -683,7 +683,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Is there anything special about the mirror?</h3>
       <div class="answers">
       
@@ -709,7 +709,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I enter Hades?</h3>
       <div class="answers">
       
@@ -747,7 +747,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Can I get anywhere from the Dome Room?</h3>
       <div class="answers">
       
@@ -765,7 +765,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Can I go up from the Torch Room?</h3>
       <div class="answers">
       
@@ -775,7 +775,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get out of the Temple area?</h3>
       <div class="answers">
       
@@ -810,7 +810,7 @@ console.log(span.classList);
       <p>
     </p>
     </div>
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I blow up the dam?</h3>
       <div class="answers">
       
@@ -856,7 +856,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How is the control panel operated?</h3>
       <div class="answers">
       
@@ -874,7 +874,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What is the green bubble for?</h3>
       <div class="answers">
       
@@ -888,7 +888,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What do I do with the object which looks like a tube of toothpaste?</h3>
       <div class="answers">
       
@@ -914,7 +914,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What is the screwdriver for?</h3>
       <div class="answers">
       
@@ -924,7 +924,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What do the buttons in the Maintenance Room do?</h3>
       <div class="answers">
       
@@ -954,7 +954,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Can I stop the leak?</h3>
       <div class="answers">
       
@@ -972,7 +972,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What is the pile of plastic good for?</h3>
       <div class="answers">
       
@@ -999,7 +999,7 @@ console.log(span.classList);
       <p>
     </p>
     </div>
-          <div class="question indented">
+      <div class="question indented">
       <h3>Can the river be crossed?</h3>
       <div class="answers">
       
@@ -1009,7 +1009,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What will placate the River God?</h3>
       <div class="answers">
       
@@ -1023,7 +1023,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get back from across the river?</h3>
       <div class="answers">
       
@@ -1041,7 +1041,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I control the boat?</h3>
       <div class="answers">
       
@@ -1063,7 +1063,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I carry a pointy object onto the boat?</h3>
       <div class="answers">
       
@@ -1081,7 +1081,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I go over the falls?</h3>
       <div class="answers">
       
@@ -1103,7 +1103,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What is the significance of the rainbow?</h3>
       <div class="answers">
       
@@ -1133,7 +1133,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get through the crack in the Damp Cave?</h3>
       <div class="answers">
       
@@ -1147,7 +1147,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I turn myself into an insect?</h3>
       <div class="answers">
       
@@ -1166,7 +1166,7 @@ console.log(span.classList);
       <p>
     </p>
     </div>
-          <div class="question indented">
+      <div class="question indented">
       <h3>What do I do about the bat?</h3>
       <div class="answers">
       
@@ -1184,7 +1184,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get beyond the Smelly Room?</h3>
       <div class="answers">
       
@@ -1194,7 +1194,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I find my way through the coal mine?</h3>
       <div class="answers">
       
@@ -1204,7 +1204,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Is the basket on the chain useful?</h3>
       <div class="answers">
       
@@ -1214,7 +1214,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get through the narrow passage from the Timber Room?</h3>
       <div class="answers">
       
@@ -1228,7 +1228,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What source of light can I bring into the Drafty Room?</h3>
       <div class="answers">
       
@@ -1262,7 +1262,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What is the timber for?</h3>
       <div class="answers">
       
@@ -1272,7 +1272,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I use the machine?</h3>
       <div class="answers">
       
@@ -1294,7 +1294,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What is meant by the &quot;Granite Wall&quot; in the Slide Room?</h3>
       <div class="answers">
       
@@ -1308,7 +1308,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Is the coal good for anything?</h3>
       <div class="answers">
       
@@ -1330,7 +1330,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Is the gas of any use?</h3>
       <div class="answers">
       
@@ -1349,7 +1349,7 @@ console.log(span.classList);
       <p>
     </p>
     </div>
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I cross the chasm?</h3>
       <div class="answers">
       
@@ -1359,7 +1359,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I build a bridge?</h3>
       <div class="answers">
       
@@ -1381,7 +1381,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Why doesn&#39;t the magic word &quot;plugh&quot; work in the land beyond the chasm?</h3>
       <div class="answers">
       
@@ -1407,7 +1407,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>After the meteor strike activates the long-dormant volcano and destroys the bridge, how do I get back across the chasm?</h3>
       <div class="answers">
       
@@ -1422,7 +1422,7 @@ console.log(span.classList);
       <p>
     </p>
     </div>
-          <div class="question indented">
+      <div class="question indented">
       <h3>Why does the sword glow?</h3>
       <div class="answers">
       
@@ -1436,7 +1436,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What do I do about the Thief?</h3>
       <div class="answers">
       
@@ -1454,7 +1454,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How many points are there in the game?</h3>
       <div class="answers">
       
@@ -1464,7 +1464,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get out of the dungeons?</h3>
       <div class="answers">
       
@@ -1506,7 +1506,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What is the significance of all the engravings?</h3>
       <div class="answers">
       
@@ -1524,7 +1524,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I kill the Thief?</h3>
       <div class="answers">
       
@@ -1558,7 +1558,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How can I recharge my lamp?</h3>
       <div class="answers">
       
@@ -1576,7 +1576,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What happens when you die in ZORK I?</h3>
       <div class="answers">
       
@@ -1614,7 +1614,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I go over the falls without killing myself?</h3>
       <div class="answers">
       
@@ -1624,7 +1624,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Where is HELLO SAILOR useful?</h3>
       <div class="answers">
       
@@ -1654,7 +1654,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Why do things move and disappear in the dungeon?</h3>
       <div class="answers">
       
@@ -1680,7 +1680,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Where are the treasures the Thief took from me?</h3>
       <div class="answers">
       
@@ -1706,7 +1706,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>What do I do with the stiletto?</h3>
       <div class="answers">
       
@@ -1724,7 +1724,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Who is the lean and hungry gentleman?</h3>
       <div class="answers">
       
@@ -1734,7 +1734,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Where can I use the shovel?</h3>
       <div class="answers">
       
@@ -1752,7 +1752,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Is there any significance to all the granite walls?</h3>
       <div class="answers">
       
@@ -1774,7 +1774,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Which object is best for casting images?</h3>
       <div class="answers">
       
@@ -1812,7 +1812,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>Many people have questions pertaining to the map.</h3>
       <div class="answers">
       
@@ -1822,13 +1822,13 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>This section is for them.</h3>
       <div class="answers">
             </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get into the Strange Passage?</h3>
       <div class="answers">
       
@@ -1842,7 +1842,7 @@ console.log(span.classList);
       </div>
   </div>
 
-          <div class="question indented">
+      <div class="question indented">
       <h3>How do I get into the Stone Barrow?</h3>
       <div class="answers">
       

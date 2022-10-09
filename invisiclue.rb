@@ -19,9 +19,16 @@ end
 
 all_sections = Hash.new {|h,k| h[k] = [] }
 
-$dont_capitalize = %w{ to the and }.to_set
+$dont_capitalize = %w{ to the and of}.to_set
 def titleize(str)
-  str.to_s.downcase.split(/\s+/).map {|x| x.match(/\Ai+\Z/) ? x.upcase : ($dont_capitalize.member?(x) ? x : (x[0]=x[0].upcase; x))}.join(' ').sub(/\Athe /,'The ')
+  str.to_s.gsub!(/\b(([A-Za-z])([A-Za-z]+?)?)\b/) do |m|
+    whole = $1
+    first = $2
+    remaining = $3 ? $3.downcase : ""
+    first = first.upcase unless $dont_capitalize.member?(whole.downcase)
+    whole.match(/\AI+\Z/) ? whole : (first + remaining)
+  end
+  str
 end
 
 games = {}
@@ -42,6 +49,7 @@ templates = OpenStruct.new(%w{ invisiclue index _question _footer }.map {|x| [ x
 Dir["*.inv"].each do |filename|
   lines = File.readlines(filename)
   sections = Hash.new {|h,k| h[k] = { lines: [] } }
+  
   header = titleize(((filename == "HHGG.inv") ? lines[4] : lines[3]).gsub(/\*/,'').strip.sub(/\(tm\)/i,'').sub(/\(r\)/i,''))
   lines.slice!(0, ((filename == "HHGG.inv") ? 7 : 5))
   uncertain = false
@@ -62,7 +70,6 @@ Dir["*.inv"].each do |filename|
     when /\A(\S.*)\Z/ # unindented line
       content = $1
       if next_line and next_line.match(/\A\*\**\*\Z/) # new section
-        sections.delete(current_section) if current_section.downcase.match(/table of contents/)
         current_section = titleize(content.strip)
         current_list = sections[current_section][:lines]
       elsif current_section == "indicia"
@@ -110,6 +117,8 @@ Dir["*.inv"].each do |filename|
     end
   end
 
+  sections.delete("Table of Contents")
+  
   sections.each do |name, content|
     content.delete(:lines) if content[:lines].empty?
     next if Symbol === name
@@ -166,16 +175,16 @@ Dir["*.inv"].each do |filename|
         end
         end
   end
-
+  
   indicia_lines = sections["indicia"][:lines]
   indicia_lines[0].gsub!(/\A\[/,'')
   indicia_lines[-1].gsub!(/\]\Z/,'')
   sections["Indicia"][:lines] = indicia_lines
+
   sample = sections["Sample Question"]
-  %i{lines indent}.each {|x| sample.delete(x) }
+  
   sections.delete("Sample Question")
   sections.delete("indicia")
-  sections.keys.each {|x| all_sections[x] << header }
 
   anchors = {}
 
@@ -186,7 +195,7 @@ Dir["*.inv"].each do |filename|
   end
 
   output_filename = File.basename(filename, '.inv').downcase + '.html'
-  
+
   File.open(File.join('docs', output_filename), "w") do |f|
     f.puts templates.invisiclue.render(sections: sections, anchors: anchors, header: header, indicia: indicia_lines, sample: sample, templates: templates)
   end
