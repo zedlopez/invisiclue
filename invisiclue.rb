@@ -19,15 +19,39 @@ end
 
 all_sections = Hash.new {|h,k| h[k] = [] }
 
-$dont_capitalize = %w{ to the and of}.to_set
+def mixed_case?(str)
+  return nil unless str
+  str.to_s.match(/[A-Z]/) and str.match(/[a-z]/)
+end
+
+$dont_capitalize = %w{a an as by on to the and of up with m}.to_set
+$dont_change = %w{i ii iii fc}
 def titleize(str)
-  str.to_s.gsub!(/\b(([A-Za-z])([A-Za-z]+?)?)\b/) do |m|
-    whole = $1
-    first = $2
-    remaining = $3 ? $3.downcase : ""
-    first = first.upcase unless $dont_capitalize.member?(whole.downcase)
-    whole.match(/\AI+\Z/) ? whole : (first + remaining)
+  orig = str.dup
+  parenthetical = ""
+  str.sub!(/\s*(\s\([^)]+\))/) {|m| parenthetical = $1; '' }
+  first_word = true
+  result = ""
+  str = str.to_s.gsub (/\b(([A-Za-z])([A-Za-z]+?)?)\b/) do |m|
+    whole, first, remaining = $1, $2, $3
+    remaining ||= ""
+    if mixed_case?(remaining) or $dont_change.member?(whole.downcase)
+      result = whole
+    else
+      result = (((first_word or !$dont_capitalize.member?(whole.downcase)) ? first.upcase : first.downcase) + remaining.downcase)
+    end
+    first_word = false
+    result
   end
+  str.gsub!(/'S/,"'s")
+  str.gsub!(/-- the/,'-- The')
+  str += parenthetical unless parenthetical.empty?
+  char_replace(str)
+end
+
+def char_replace(str)
+  str.gsub!(/\.\.\./,'…')
+  str.gsub!(/--/,'–')
   str
 end
 
@@ -139,7 +163,7 @@ Dir["*.inv"].each do |filename|
       unless should_merge?(name, filename)
         sections[name][:no_merge] = true
         content[:indents] = {}
-        content[:lines] = content[:lines].map.with_index(0) {|x,i| x.match(/\A(\s*)(.*)\Z/); content[:indents][i] = ($1 ? $1.length : 0); $2 }
+        content[:lines] = content[:lines].map.with_index(0) {|x,i| x.match(/\A(\s*)(.*)\Z/); content[:indents][i] = ($1 ? $1.length : 0); $2 }.map {|y| char_replace(y) }
         next
       end
       final = []
@@ -154,7 +178,7 @@ Dir["*.inv"].each do |filename|
         end
       end
       final << current.join(' ') unless current.empty?
-      sections[name][:lines] = final
+      sections[name][:lines] = final.map {|x| char_replace(x) }
     end
       content.each do |question, answers|
         next if Symbol === question
@@ -190,7 +214,7 @@ Dir["*.inv"].each do |filename|
 
   sections.each do |name, content|
     next if name == header
-    converted = name.gsub(/\s+/,'_').gsub(/[^-\w]+/,'').downcase
+    converted = name.gsub(/\s+/,'_').gsub(/\W+/,'').downcase
     anchors[name] = converted
   end
 
