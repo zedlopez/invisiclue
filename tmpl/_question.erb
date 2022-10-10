@@ -3,8 +3,8 @@
       <h3><%= question %></h3>
       <div class="answers">
       <% answers.each.with_index do |answer,i| %><% label = ('A'.ord+i).chr %><% id = [ section_num, question_num, label ].join('_') %>
-      <a class="answer-row" onClick='javascript:toggle("<%= id %>");' href="javascript:return false;">
-<div class="answer-label" aria-hidden="true"><%== label %>.</div><div class="answer-cell" aria-label="<%= label %>"><span class="hidden">|</span><span id="<%= id %>" class="answer nonesuch"><%= answer %></span></div></a>
+      <a class="answer-row" onClick='javascript:toggle("<%= id %>");' href="javascript:void(0);">
+<div class="answer-label" aria-hidden="true" role="alert"><%== label %>.</div><div class="answer-cell" aria-label="<%= label %>"><span class="hidden">|</span><span id="<%= id %>" class="answer nonesuch"><%= answer %></span></div></a>
       <div class="gap">&thinsp;</div>
       <% end %>
       </div>
