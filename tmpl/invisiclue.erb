@@ -4,6 +4,7 @@
 <script>
 function toggle(id) {
 var span = document.getElementById(id);
+span.setAttribute("aria-hidden",(span.attributes['aria-hidden'].value !== "true"));
 span.classList.toggle('nonesuch');
 }
 </script>

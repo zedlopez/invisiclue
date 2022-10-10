@@ -289,7 +289,6 @@ table {
   margin-right: 1em;
 }
 td { border: var(--td-border-width) solid; padding: .25em; vertical-align: top; }
-.hidden { visibility: hidden; }
 
 header,h1,h2,.question,.indented { width: var(--width); margin: auto; }
 
@@ -364,4 +363,5 @@ summary > * { display: inline; }
 footer {  font-size: .9375rem; padding-bottom: 1rem; margin-top: 1rem; padding-top: 1.5rem; }
 footer > p { text-align: center; }
 p.about { font-weight: bold; margin-top: 1rem; }
+.hidden { visibility: hidden; }
 .nonesuch { display: none; }
