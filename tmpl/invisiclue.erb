@@ -4,8 +4,8 @@
 <script>
 function toggle(id) {
 var span = document.getElementById(id);
-span.setAttribute("aria-hidden",(span.attributes['aria-hidden'].value !== "true"));
-span.classList.toggle('nonesuch');
+if ("none" === span.style.display) { span.setAttribute("style","display:inline;"); }
+else { span.setAttribute("style","display:none;"); }
 }
 </script>
 </head>

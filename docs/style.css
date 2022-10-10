@@ -357,6 +357,7 @@ span.mono { font-family: var(--mono); font-weight: var(--mono-weight); font-styl
 a.answer-row { display: table-row;  cursor: pointer; width: 100%; border-radius: .75em; border: var(--summary-outline-width) solid transparent; }
 .answer-label { font-family: var(--mono); font-weight: var(--mono-weight); font-style: normal; font-weight: bold; display: table-cell; padding-left: .5em; text-align: right; }
 .answer-cell { display: table-cell; width: 100%; }
+.answer { display: none; }
 .gap { font-size: .25em; }
 .summation { display: inline-block; }
 summary > * { display: inline; }
@@ -364,4 +365,4 @@ footer {  font-size: .9375rem; padding-bottom: 1rem; margin-top: 1rem; padding-t
 footer > p { text-align: center; }
 p.about { font-weight: bold; margin-top: 1rem; }
 .hidden { visibility: hidden; }
-.nonesuch { display: none; }
+

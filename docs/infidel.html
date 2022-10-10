@@ -4,8 +4,9 @@
 <script>
 function toggle(id) {
 var span = document.getElementById(id);
-span.setAttribute("aria-hidden",(span.attributes['aria-hidden'].value !== "true"));
-span.classList.toggle('nonesuch');
+console.log(span.style.display);
+if ("none" === span.style.display) { span.setAttribute("style","display:inline;"); }
+else { span.setAttribute("style","display:none;"); }
 }
 </script>
 </head>
@@ -21,15 +22,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("__A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="__A" class="answer nonesuch" aria-hidden="true">Try to EXAMINE the camel that he recommends</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="__A" class="answer" style="display:none;">Try to EXAMINE the camel that he recommends</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("__B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="__B" class="answer nonesuch" aria-hidden="true">Ask one of the other customers about Hassan.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="__B" class="answer" style="display:none;">Ask one of the other customers about Hassan.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("__C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="__C" class="answer nonesuch" aria-hidden="true">I&#39;d trust him about as far as I could throw a pyramid.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="__C" class="answer" style="display:none;">I&#39;d trust him about as far as I could throw a pyramid.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -58,27 +59,27 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("1_1_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_1_A" class="answer nonesuch" aria-hidden="true">You must remove the lock first.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_1_A" class="answer" style="display:none;">You must remove the lock first.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_1_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_1_B" class="answer nonesuch" aria-hidden="true">Try finding a key.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_1_B" class="answer" style="display:none;">Try finding a key.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_1_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_1_C" class="answer nonesuch" aria-hidden="true">Unfortunately, your ex-workers took the key with them.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_1_C" class="answer" style="display:none;">Unfortunately, your ex-workers took the key with them.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_1_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_1_D" class="answer nonesuch" aria-hidden="true">Fortunately, the lock isn&#39;t terribly sturdy.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_1_D" class="answer" style="display:none;">Fortunately, the lock isn&#39;t terribly sturdy.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_1_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="1_1_E" class="answer nonesuch" aria-hidden="true">Try breaking the lock.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="1_1_E" class="answer" style="display:none;">Try breaking the lock.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_1_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="1_1_F" class="answer nonesuch" aria-hidden="true">The pick axe, shovel, or blackened rock are heavy enough to do the job.</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="1_1_F" class="answer" style="display:none;">The pick axe, shovel, or blackened rock are heavy enough to do the job.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -88,15 +89,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("1_2_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_2_A" class="answer nonesuch" aria-hidden="true">You could try sending out for pizza.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_2_A" class="answer" style="display:none;">You could try sending out for pizza.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_2_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_2_B" class="answer nonesuch" aria-hidden="true">You could try eating the crocodiles (even as they return the favor).</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_2_B" class="answer" style="display:none;">You could try eating the crocodiles (even as they return the favor).</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_2_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_2_C" class="answer nonesuch" aria-hidden="true">You&#39;ll find some food in the trunk.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_2_C" class="answer" style="display:none;">You&#39;ll find some food in the trunk.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -106,15 +107,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("1_3_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_3_A" class="answer nonesuch" aria-hidden="true">The Nile River.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_3_A" class="answer" style="display:none;">The Nile River.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_3_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_3_B" class="answer nonesuch" aria-hidden="true">You can fill the canteen.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_3_B" class="answer" style="display:none;">You can fill the canteen.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_3_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_3_C" class="answer nonesuch" aria-hidden="true">The canteen is in the knapsack.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_3_C" class="answer" style="display:none;">The canteen is in the knapsack.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -124,23 +125,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("1_4_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_4_A" class="answer nonesuch" aria-hidden="true">Fire the signal flares.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_4_A" class="answer" style="display:none;">Fire the signal flares.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_4_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_4_B" class="answer nonesuch" aria-hidden="true">Didn&#39;t you leave them in the Supply Tent?</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_4_B" class="answer" style="display:none;">Didn&#39;t you leave them in the Supply Tent?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_4_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_4_C" class="answer nonesuch" aria-hidden="true">Unfortunately, the workers took them when they abandoned you.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_4_C" class="answer" style="display:none;">Unfortunately, the workers took them when they abandoned you.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_4_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_4_D" class="answer nonesuch" aria-hidden="true">There are no flares anywhere in the game.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_4_D" class="answer" style="display:none;">There are no flares anywhere in the game.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_4_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="1_4_E" class="answer nonesuch" aria-hidden="true">Really.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="1_4_E" class="answer" style="display:none;">Really.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -150,19 +151,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("1_5_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_5_A" class="answer nonesuch" aria-hidden="true">The sleeping bag is useful when you get tired.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_5_A" class="answer" style="display:none;">The sleeping bag is useful when you get tired.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_5_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_5_B" class="answer nonesuch" aria-hidden="true">It gets cold in the desert at night.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_5_B" class="answer" style="display:none;">It gets cold in the desert at night.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_5_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_5_C" class="answer nonesuch" aria-hidden="true">The lining of the sleeping bag is edible.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_5_C" class="answer" style="display:none;">The lining of the sleeping bag is edible.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_5_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_5_D" class="answer nonesuch" aria-hidden="true">What sleeping bag?</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_5_D" class="answer" style="display:none;">What sleeping bag?</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -172,31 +173,31 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("1_6_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_6_A" class="answer nonesuch" aria-hidden="true">Have you pushed the button?</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_6_A" class="answer" style="display:none;">Have you pushed the button?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_6_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_6_B" class="answer nonesuch" aria-hidden="true">It&#39;s a delicate piece of electronics.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_6_B" class="answer" style="display:none;">It&#39;s a delicate piece of electronics.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_6_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_6_C" class="answer nonesuch" aria-hidden="true">It can tell you exact latitude and longitude.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_6_C" class="answer" style="display:none;">It can tell you exact latitude and longitude.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_6_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_6_D" class="answer nonesuch" aria-hidden="true">If it&#39;s making funny noises when you push the button, that means you&#39;ve</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_6_D" class="answer" style="display:none;">If it&#39;s making funny noises when you push the button, that means you&#39;ve</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_6_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="1_6_E" class="answer nonesuch" aria-hidden="true">broken it.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="1_6_E" class="answer" style="display:none;">broken it.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_6_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="1_6_F" class="answer nonesuch" aria-hidden="true">Unfortunately, you have no way to fix it.</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="1_6_F" class="answer" style="display:none;">Unfortunately, you have no way to fix it.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_6_G");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="1_6_G" class="answer nonesuch" aria-hidden="true">Don&#39;t break it.</span></div></a>
+<div class="answer-label">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="1_6_G" class="answer" style="display:none;">Don&#39;t break it.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -206,23 +207,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("1_7_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_7_A" class="answer nonesuch" aria-hidden="true">You can try signalling the airplane with it.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_7_A" class="answer" style="display:none;">You can try signalling the airplane with it.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_7_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_7_B" class="answer nonesuch" aria-hidden="true">You can try filling it with sand.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_7_B" class="answer" style="display:none;">You can try filling it with sand.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_7_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_7_C" class="answer nonesuch" aria-hidden="true">You can try burning it.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_7_C" class="answer" style="display:none;">You can try burning it.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_7_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_7_D" class="answer nonesuch" aria-hidden="true">You can try giving it to the mummy.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_7_D" class="answer" style="display:none;">You can try giving it to the mummy.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_7_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="1_7_E" class="answer nonesuch" aria-hidden="true">You can assume it has no use.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="1_7_E" class="answer" style="display:none;">You can assume it has no use.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -232,47 +233,47 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("1_8_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_8_A" class="answer nonesuch" aria-hidden="true">Have you tried looking under the cot?</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_8_A" class="answer" style="display:none;">Have you tried looking under the cot?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_8_B" class="answer nonesuch" aria-hidden="true">The navigation box you sent for might help.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_8_B" class="answer" style="display:none;">The navigation box you sent for might help.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_8_C" class="answer nonesuch" aria-hidden="true">The navigation box is in the packing crate that parachutes down.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_8_C" class="answer" style="display:none;">The navigation box is in the packing crate that parachutes down.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_8_D" class="answer nonesuch" aria-hidden="true">The map from the game package also might help.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_8_D" class="answer" style="display:none;">The map from the game package also might help.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="1_8_E" class="answer nonesuch" aria-hidden="true">When the box shows the same coordinates as the _X_ on the map, dig with</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="1_8_E" class="answer" style="display:none;">When the box shows the same coordinates as the _X_ on the map, dig with</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="1_8_F" class="answer nonesuch" aria-hidden="true">the shovel.</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="1_8_F" class="answer" style="display:none;">the shovel.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_G");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="1_8_G" class="answer nonesuch" aria-hidden="true">The proper coordinates are 24 degrees, 11 minutes, 3 seconds N and 32</span></div></a>
+<div class="answer-label">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="1_8_G" class="answer" style="display:none;">The proper coordinates are 24 degrees, 11 minutes, 3 seconds N and 32</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_H");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="1_8_H" class="answer nonesuch" aria-hidden="true">degrees, 12 minutes, 43 seconds E.</span></div></a>
+<div class="answer-label">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="1_8_H" class="answer" style="display:none;">degrees, 12 minutes, 43 seconds E.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_I");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="1_8_I" class="answer nonesuch" aria-hidden="true">If you still can&#39;t find it, go to the Fire Pit and then go SE, E, and E</span></div></a>
+<div class="answer-label">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="1_8_I" class="answer" style="display:none;">If you still can&#39;t find it, go to the Fire Pit and then go SE, E, and E</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_J");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">J.</div><div class="answer-cell" aria-label="J" role="alert"><span class="hidden">|</span><span id="1_8_J" class="answer nonesuch" aria-hidden="true">once more. You are now on the spot.</span></div></a>
+<div class="answer-label">J.</div><div class="answer-cell" aria-label="J" role="alert"><span class="hidden">|</span><span id="1_8_J" class="answer" style="display:none;">once more. You are now on the spot.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_K");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">K.</div><div class="answer-cell" aria-label="K" role="alert"><span class="hidden">|</span><span id="1_8_K" class="answer nonesuch" aria-hidden="true">You&#39;ll have to dig five times.</span></div></a>
+<div class="answer-label">K.</div><div class="answer-cell" aria-label="K" role="alert"><span class="hidden">|</span><span id="1_8_K" class="answer" style="display:none;">You&#39;ll have to dig five times.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -282,39 +283,39 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("1_9_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_9_A" class="answer nonesuch" aria-hidden="true">Have you tried examining the opening?</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_9_A" class="answer" style="display:none;">Have you tried examining the opening?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_9_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_9_B" class="answer nonesuch" aria-hidden="true">Have you tried putting something in the opening?</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_9_B" class="answer" style="display:none;">Have you tried putting something in the opening?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_9_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_9_C" class="answer nonesuch" aria-hidden="true">Have you translated the hieroglyphs? If you have, you will notice that</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_9_C" class="answer" style="display:none;">Have you translated the hieroglyphs? If you have, you will notice that</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_9_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_9_D" class="answer nonesuch" aria-hidden="true">they contain only half of a message.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_9_D" class="answer" style="display:none;">they contain only half of a message.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_9_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="1_9_E" class="answer nonesuch" aria-hidden="true">Have you found the stone cube?</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="1_9_E" class="answer" style="display:none;">Have you found the stone cube?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_9_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="1_9_F" class="answer nonesuch" aria-hidden="true">Have you opened the map?</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="1_9_F" class="answer" style="display:none;">Have you opened the map?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_9_G");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="1_9_G" class="answer nonesuch" aria-hidden="true">Have you translated the hieroglyphs on the stone cube?</span></div></a>
+<div class="answer-label">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="1_9_G" class="answer" style="display:none;">Have you translated the hieroglyphs on the stone cube?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_9_H");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="1_9_H" class="answer nonesuch" aria-hidden="true">Have you tried to COMPARE THE STONE CUBE TO THE OPENING?</span></div></a>
+<div class="answer-label">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="1_9_H" class="answer" style="display:none;">Have you tried to COMPARE THE STONE CUBE TO THE OPENING?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_9_I");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="1_9_I" class="answer nonesuch" aria-hidden="true">Have you PUT THE STONE CUBE IN THE OPENING?</span></div></a>
+<div class="answer-label">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="1_9_I" class="answer" style="display:none;">Have you PUT THE STONE CUBE IN THE OPENING?</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -329,19 +330,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("2_1_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_1_A" class="answer nonesuch" aria-hidden="true">You can use the liquid inside the jar with another object in the</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_1_A" class="answer" style="display:none;">You can use the liquid inside the jar with another object in the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_1_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_1_B" class="answer nonesuch" aria-hidden="true">Chamber of Ra.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_1_B" class="answer" style="display:none;">Chamber of Ra.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_1_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="2_1_C" class="answer nonesuch" aria-hidden="true">It&#39;s oil for the torch.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="2_1_C" class="answer" style="display:none;">It&#39;s oil for the torch.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_1_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="2_1_D" class="answer nonesuch" aria-hidden="true">POUR THE OIL ON THE TORCH.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="2_1_D" class="answer" style="display:none;">POUR THE OIL ON THE TORCH.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -351,15 +352,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("2_2_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_2_A" class="answer nonesuch" aria-hidden="true">The Egyptians originally placed it in the pyramid as a place to pray.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_2_A" class="answer" style="display:none;">The Egyptians originally placed it in the pyramid as a place to pray.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_2_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_2_B" class="answer nonesuch" aria-hidden="true">You can climb on and off it.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_2_B" class="answer" style="display:none;">You can climb on and off it.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_2_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="2_2_C" class="answer nonesuch" aria-hidden="true">It is a very sturdy thing to tie a rope to.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="2_2_C" class="answer" style="display:none;">It is a very sturdy thing to tie a rope to.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -369,23 +370,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("2_3_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_3_A" class="answer nonesuch" aria-hidden="true">Yes.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_3_A" class="answer" style="display:none;">Yes.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_3_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_3_B" class="answer nonesuch" aria-hidden="true">You can even do it without killing yourself in the process.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_3_B" class="answer" style="display:none;">You can even do it without killing yourself in the process.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_3_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="2_3_C" class="answer nonesuch" aria-hidden="true">Use the rope.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="2_3_C" class="answer" style="display:none;">Use the rope.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_3_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="2_3_D" class="answer nonesuch" aria-hidden="true">TIE THE ROPE TO THE ALTAR. THROW THE ROPE DOWN THE STEEP STAIRCASE.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="2_3_D" class="answer" style="display:none;">TIE THE ROPE TO THE ALTAR. THROW THE ROPE DOWN THE STEEP STAIRCASE.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_3_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="2_3_E" class="answer nonesuch" aria-hidden="true">DOWN THE ROPE.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="2_3_E" class="answer" style="display:none;">DOWN THE ROPE.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -400,15 +401,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_1_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_1_A" class="answer nonesuch" aria-hidden="true">If you don&#39;t bother the statue, it won&#39;t break.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_1_A" class="answer" style="display:none;">If you don&#39;t bother the statue, it won&#39;t break.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_1_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_1_B" class="answer nonesuch" aria-hidden="true">Unfortunately, if you don&#39;t break the statue, you won&#39;t be able to</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_1_B" class="answer" style="display:none;">Unfortunately, if you don&#39;t break the statue, you won&#39;t be able to</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_1_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_1_C" class="answer nonesuch" aria-hidden="true">solve the problems in this area.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_1_C" class="answer" style="display:none;">solve the problems in this area.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -418,31 +419,31 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_2_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_2_A" class="answer nonesuch" aria-hidden="true">Did you notice what happens to the opposite stone door when you enter a</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_2_A" class="answer" style="display:none;">Did you notice what happens to the opposite stone door when you enter a</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_2_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_2_B" class="answer nonesuch" aria-hidden="true">hallway?</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_2_B" class="answer" style="display:none;">hallway?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_2_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_2_C" class="answer nonesuch" aria-hidden="true">You can get a stone door to remain open by leaving enough weight in the</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_2_C" class="answer" style="display:none;">You can get a stone door to remain open by leaving enough weight in the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_2_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_2_D" class="answer nonesuch" aria-hidden="true">opposite hallway.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_2_D" class="answer" style="display:none;">opposite hallway.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_2_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="3_2_E" class="answer nonesuch" aria-hidden="true">The broken statue and the head together will provide enough weight to</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="3_2_E" class="answer" style="display:none;">The broken statue and the head together will provide enough weight to</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_2_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="3_2_F" class="answer nonesuch" aria-hidden="true">counterbalance the doors.</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="3_2_F" class="answer" style="display:none;">counterbalance the doors.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_2_G");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="3_2_G" class="answer nonesuch" aria-hidden="true">To move the statue, push it in a direction (e.g. PUSH STATUE SW).</span></div></a>
+<div class="answer-label">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="3_2_G" class="answer" style="display:none;">To move the statue, push it in a direction (e.g. PUSH STATUE SW).</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -452,15 +453,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_3_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_3_A" class="answer nonesuch" aria-hidden="true">You can try examining them.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_3_A" class="answer" style="display:none;">You can try examining them.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_3_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_3_B" class="answer nonesuch" aria-hidden="true">The only thing you can do with the panels is read the hieroglyphs on</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_3_B" class="answer" style="display:none;">The only thing you can do with the panels is read the hieroglyphs on</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_3_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_3_C" class="answer nonesuch" aria-hidden="true">them.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_3_C" class="answer" style="display:none;">them.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -470,23 +471,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_4_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_4_A" class="answer nonesuch" aria-hidden="true">You might get there by dying.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_4_A" class="answer" style="display:none;">You might get there by dying.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_4_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_4_B" class="answer nonesuch" aria-hidden="true">There is no place called the Netherworld in Infidel. Remember the</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_4_B" class="answer" style="display:none;">There is no place called the Netherworld in Infidel. Remember the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_4_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_4_C" class="answer nonesuch" aria-hidden="true">introduction to this book -- do not use the presence or absence of a</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_4_C" class="answer" style="display:none;">introduction to this book -- do not use the presence or absence of a</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_4_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_4_D" class="answer nonesuch" aria-hidden="true">question as an indication of what is important, and don&#39;t assume that</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_4_D" class="answer" style="display:none;">question as an indication of what is important, and don&#39;t assume that</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_4_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="3_4_E" class="answer nonesuch" aria-hidden="true">long answers are associated with important questions.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="3_4_E" class="answer" style="display:none;">long answers are associated with important questions.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -496,7 +497,7 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_5_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_5_A" class="answer nonesuch" aria-hidden="true">Call a travel agent.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_5_A" class="answer" style="display:none;">Call a travel agent.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -506,19 +507,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_6_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_6_A" class="answer nonesuch" aria-hidden="true">It is &quot;glistening with the light of a thousand fires.&quot;</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_6_A" class="answer" style="display:none;">It is &quot;glistening with the light of a thousand fires.&quot;</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_6_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_6_B" class="answer nonesuch" aria-hidden="true">Try carrying it somewhere without the torch.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_6_B" class="answer" style="display:none;">Try carrying it somewhere without the torch.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_6_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_6_C" class="answer nonesuch" aria-hidden="true">Unfortunately, the glistening is all reflected light.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_6_C" class="answer" style="display:none;">Unfortunately, the glistening is all reflected light.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_6_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_6_D" class="answer nonesuch" aria-hidden="true">You can&#39;t use the opal cluster as a light source.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_6_D" class="answer" style="display:none;">You can&#39;t use the opal cluster as a light source.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -533,19 +534,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("4_1_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_1_A" class="answer nonesuch" aria-hidden="true">The plank is a good lever.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_1_A" class="answer" style="display:none;">The plank is a good lever.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_1_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_1_B" class="answer nonesuch" aria-hidden="true">The jar is a good fulcrum.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_1_B" class="answer" style="display:none;">The jar is a good fulcrum.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_1_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_1_C" class="answer nonesuch" aria-hidden="true">Did you put the rope through the pulley?</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_1_C" class="answer" style="display:none;">Did you put the rope through the pulley?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_1_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_1_D" class="answer nonesuch" aria-hidden="true">Forget it. The barge won&#39;t fit through the doorway.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_1_D" class="answer" style="display:none;">Forget it. The barge won&#39;t fit through the doorway.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -555,47 +556,47 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("4_2_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_2_A" class="answer nonesuch" aria-hidden="true">It certainly is big.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_2_A" class="answer" style="display:none;">It certainly is big.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_2_B" class="answer nonesuch" aria-hidden="true">&quot;It seems to be securely wedged in the masthole.&quot;</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_2_B" class="answer" style="display:none;">&quot;It seems to be securely wedged in the masthole.&quot;</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_2_C" class="answer nonesuch" aria-hidden="true">It seems to be wedged below deck, too.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_2_C" class="answer" style="display:none;">It seems to be wedged below deck, too.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_2_D" class="answer nonesuch" aria-hidden="true">Have you looked in the slot below deck?</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_2_D" class="answer" style="display:none;">Have you looked in the slot below deck?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="4_2_E" class="answer nonesuch" aria-hidden="true">Once you take the shim, you can lift the beam.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="4_2_E" class="answer" style="display:none;">Once you take the shim, you can lift the beam.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="4_2_F" class="answer nonesuch" aria-hidden="true">Of course, you&#39;ll need both hands free.</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="4_2_F" class="answer" style="display:none;">Of course, you&#39;ll need both hands free.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_G");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="4_2_G" class="answer nonesuch" aria-hidden="true">Dropping the torch in a wooden barge is a bad idea.</span></div></a>
+<div class="answer-label">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="4_2_G" class="answer" style="display:none;">Dropping the torch in a wooden barge is a bad idea.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_H");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="4_2_H" class="answer nonesuch" aria-hidden="true">There&#39;s a place to put the torch without dropping it on the deck.</span></div></a>
+<div class="answer-label">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="4_2_H" class="answer" style="display:none;">There&#39;s a place to put the torch without dropping it on the deck.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_I");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="4_2_I" class="answer nonesuch" aria-hidden="true">PUT THE TORCH IN THE KNOTHOLE.</span></div></a>
+<div class="answer-label">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="4_2_I" class="answer" style="display:none;">PUT THE TORCH IN THE KNOTHOLE.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_J");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">J.</div><div class="answer-cell" aria-label="J" role="alert"><span class="hidden">|</span><span id="4_2_J" class="answer nonesuch" aria-hidden="true">Now, if you&#39;re not carrying anything else, you can lift the beam.</span></div></a>
+<div class="answer-label">J.</div><div class="answer-cell" aria-label="J" role="alert"><span class="hidden">|</span><span id="4_2_J" class="answer" style="display:none;">Now, if you&#39;re not carrying anything else, you can lift the beam.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_K");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">K.</div><div class="answer-cell" aria-label="K" role="alert"><span class="hidden">|</span><span id="4_2_K" class="answer nonesuch" aria-hidden="true">Then you can go up on deck and take it.</span></div></a>
+<div class="answer-label">K.</div><div class="answer-cell" aria-label="K" role="alert"><span class="hidden">|</span><span id="4_2_K" class="answer" style="display:none;">Then you can go up on deck and take it.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -605,7 +606,7 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("4_3_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_3_A" class="answer nonesuch" aria-hidden="true">You can&#39;t. It adds atmosphere to the room.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_3_A" class="answer" style="display:none;">You can&#39;t. It adds atmosphere to the room.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -615,27 +616,27 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("4_4_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_4_A" class="answer nonesuch" aria-hidden="true">Miss Ellingsworth?</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_4_A" class="answer" style="display:none;">Miss Ellingsworth?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_4_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_4_B" class="answer nonesuch" aria-hidden="true">An early Infocom game tester?</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_4_B" class="answer" style="display:none;">An early Infocom game tester?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_4_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_4_C" class="answer nonesuch" aria-hidden="true">An overzealous Zorker?</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_4_C" class="answer" style="display:none;">An overzealous Zorker?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_4_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_4_D" class="answer nonesuch" aria-hidden="true">Trusty Sergeant Duffy?</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_4_D" class="answer" style="display:none;">Trusty Sergeant Duffy?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_4_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="4_4_E" class="answer nonesuch" aria-hidden="true">One of the original pyramid builders who tried to hide?</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="4_4_E" class="answer" style="display:none;">One of the original pyramid builders who tried to hide?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_4_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="4_4_F" class="answer nonesuch" aria-hidden="true">None of the above?</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="4_4_F" class="answer" style="display:none;">None of the above?</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -645,23 +646,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("4_5_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_5_A" class="answer nonesuch" aria-hidden="true">You are overwhelmed by its beauty.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_5_A" class="answer" style="display:none;">You are overwhelmed by its beauty.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_5_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_5_B" class="answer nonesuch" aria-hidden="true">It probably fits you perfectly.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_5_B" class="answer" style="display:none;">It probably fits you perfectly.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_5_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_5_C" class="answer nonesuch" aria-hidden="true">Examine it.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_5_C" class="answer" style="display:none;">Examine it.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_5_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_5_D" class="answer nonesuch" aria-hidden="true">If you did try it on, I hope you did a SAVE first.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_5_D" class="answer" style="display:none;">If you did try it on, I hope you did a SAVE first.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_5_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="4_5_E" class="answer nonesuch" aria-hidden="true">It seems to have been left as a trap for careless treasure hunters.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="4_5_E" class="answer" style="display:none;">It seems to have been left as a trap for careless treasure hunters.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -671,19 +672,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("4_6_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_6_A" class="answer nonesuch" aria-hidden="true">Have you offered a libation to Ra?</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_6_A" class="answer" style="display:none;">Have you offered a libation to Ra?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_6_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_6_B" class="answer nonesuch" aria-hidden="true">Have you followed the mummy?</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_6_B" class="answer" style="display:none;">Have you followed the mummy?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_6_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_6_C" class="answer nonesuch" aria-hidden="true">Have you found the tire pump?</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_6_C" class="answer" style="display:none;">Have you found the tire pump?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_6_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_6_D" class="answer nonesuch" aria-hidden="true">Have you begun to suspect that there is no bronze chalice?</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_6_D" class="answer" style="display:none;">Have you begun to suspect that there is no bronze chalice?</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -698,19 +699,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("5_1_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_1_A" class="answer nonesuch" aria-hidden="true">Get a paintbrush and a can of paint.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_1_A" class="answer" style="display:none;">Get a paintbrush and a can of paint.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_1_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_1_B" class="answer nonesuch" aria-hidden="true">Paint the sixth side of the cube so all of its minicubes are the same</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_1_B" class="answer" style="display:none;">Paint the sixth side of the cube so all of its minicubes are the same</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_1_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_1_C" class="answer nonesuch" aria-hidden="true">color.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_1_C" class="answer" style="display:none;">color.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_1_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_1_D" class="answer nonesuch" aria-hidden="true">Take a hammer, put your cube on the sidewalk, and get even!</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_1_D" class="answer" style="display:none;">Take a hammer, put your cube on the sidewalk, and get even!</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -720,19 +721,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("5_2_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_2_A" class="answer nonesuch" aria-hidden="true">Start by reading the hieroglyphs in the center cube room.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_2_A" class="answer" style="display:none;">Start by reading the hieroglyphs in the center cube room.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_2_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_2_B" class="answer nonesuch" aria-hidden="true">Examine the panel on the wall in the south edge of the area.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_2_B" class="answer" style="display:none;">Examine the panel on the wall in the south edge of the area.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_2_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_2_C" class="answer nonesuch" aria-hidden="true">Read the scroll you found in the Fore Cabin of the barge.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_2_C" class="answer" style="display:none;">Read the scroll you found in the Fore Cabin of the barge.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_2_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_2_D" class="answer nonesuch" aria-hidden="true">Take the first, third, and fifth bricks out of the panel.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_2_D" class="answer" style="display:none;">Take the first, third, and fifth bricks out of the panel.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -742,19 +743,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("5_3_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_3_A" class="answer nonesuch" aria-hidden="true">There&#39;s a clue in the barge area.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_3_A" class="answer" style="display:none;">There&#39;s a clue in the barge area.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_3_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_3_B" class="answer nonesuch" aria-hidden="true">Read the scroll from the Fore Cabin.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_3_B" class="answer" style="display:none;">Read the scroll from the Fore Cabin.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_3_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_3_C" class="answer nonesuch" aria-hidden="true">TAKE THE FIRST BRICK, THE THIRD BRICK, AND THE FIFTH BRICK. Lo and</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_3_C" class="answer" style="display:none;">TAKE THE FIRST BRICK, THE THIRD BRICK, AND THE FIFTH BRICK. Lo and</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_3_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_3_D" class="answer nonesuch" aria-hidden="true">behold, a new passageway shall appear!</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_3_D" class="answer" style="display:none;">behold, a new passageway shall appear!</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -764,27 +765,27 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("5_4_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_4_A" class="answer nonesuch" aria-hidden="true">Above all, try to keep your cool. Mummies hate sweaty people and will</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_4_A" class="answer" style="display:none;">Above all, try to keep your cool. Mummies hate sweaty people and will</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_4_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_4_B" class="answer nonesuch" aria-hidden="true">attack them without thought.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_4_B" class="answer" style="display:none;">attack them without thought.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_4_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_4_C" class="answer nonesuch" aria-hidden="true">Say HELLO MUMMY.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_4_C" class="answer" style="display:none;">Say HELLO MUMMY.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_4_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_4_D" class="answer nonesuch" aria-hidden="true">BURN THE TANNIS LEAVES.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_4_D" class="answer" style="display:none;">BURN THE TANNIS LEAVES.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_4_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="5_4_E" class="answer nonesuch" aria-hidden="true">Have your eyes checked. No mummy appears in this game.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="5_4_E" class="answer" style="display:none;">Have your eyes checked. No mummy appears in this game.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_4_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="5_4_F" class="answer nonesuch" aria-hidden="true">(Nor do any tannis leaves.)</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="5_4_F" class="answer" style="display:none;">(Nor do any tannis leaves.)</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -794,11 +795,11 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("5_5_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_5_A" class="answer nonesuch" aria-hidden="true">It conforms to the strict Egyptian pyramid building codes.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_5_A" class="answer" style="display:none;">It conforms to the strict Egyptian pyramid building codes.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_5_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_5_B" class="answer nonesuch" aria-hidden="true">It connects Top of Staircase and Bottom of Stairs.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_5_B" class="answer" style="display:none;">It connects Top of Staircase and Bottom of Stairs.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -808,15 +809,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("5_6_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_6_A" class="answer nonesuch" aria-hidden="true">Read the hieroglyphs.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_6_A" class="answer" style="display:none;">Read the hieroglyphs.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_6_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_6_B" class="answer nonesuch" aria-hidden="true">Try going through the plaster.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_6_B" class="answer" style="display:none;">Try going through the plaster.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_6_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_6_C" class="answer nonesuch" aria-hidden="true">Try removing the plaster with the axe.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_6_C" class="answer" style="display:none;">Try removing the plaster with the axe.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -826,35 +827,35 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("5_7_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_7_A" class="answer nonesuch" aria-hidden="true">Read the hieroglyphs.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_7_A" class="answer" style="display:none;">Read the hieroglyphs.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_7_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_7_B" class="answer nonesuch" aria-hidden="true">Try going through the plaster.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_7_B" class="answer" style="display:none;">Try going through the plaster.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_7_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_7_C" class="answer nonesuch" aria-hidden="true">Try removing the plaster with the axe.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_7_C" class="answer" style="display:none;">Try removing the plaster with the axe.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_7_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_7_D" class="answer nonesuch" aria-hidden="true">Oops! Hope you did a SAVE first!</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_7_D" class="answer" style="display:none;">Oops! Hope you did a SAVE first!</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_7_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="5_7_E" class="answer nonesuch" aria-hidden="true">Examine the niches.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="5_7_E" class="answer" style="display:none;">Examine the niches.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_7_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="5_7_F" class="answer nonesuch" aria-hidden="true">Put the beam in the niches.</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="5_7_F" class="answer" style="display:none;">Put the beam in the niches.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_7_G");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="5_7_G" class="answer nonesuch" aria-hidden="true">Stand on the beam.</span></div></a>
+<div class="answer-label">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="5_7_G" class="answer" style="display:none;">Stand on the beam.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_7_H");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="5_7_H" class="answer nonesuch" aria-hidden="true">Now try removing the plaster with the axe.</span></div></a>
+<div class="answer-label">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="5_7_H" class="answer" style="display:none;">Now try removing the plaster with the axe.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -864,23 +865,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("5_8_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_8_A" class="answer nonesuch" aria-hidden="true">You can&#39;t.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_8_A" class="answer" style="display:none;">You can&#39;t.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_8_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_8_B" class="answer nonesuch" aria-hidden="true">But you may be able to find a way to avoid disappearing with the floor.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_8_B" class="answer" style="display:none;">But you may be able to find a way to avoid disappearing with the floor.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_8_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_8_C" class="answer nonesuch" aria-hidden="true">Find some way of standing on something above the floor.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_8_C" class="answer" style="display:none;">Find some way of standing on something above the floor.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_8_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_8_D" class="answer nonesuch" aria-hidden="true">Put the beam in the niches.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_8_D" class="answer" style="display:none;">Put the beam in the niches.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_8_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="5_8_E" class="answer nonesuch" aria-hidden="true">Stand on the beam.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="5_8_E" class="answer" style="display:none;">Stand on the beam.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -890,11 +891,11 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("5_9_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_9_A" class="answer nonesuch" aria-hidden="true">If you meet the rats, the only help they can provide is to be quick</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_9_A" class="answer" style="display:none;">If you meet the rats, the only help they can provide is to be quick</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_9_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_9_B" class="answer nonesuch" aria-hidden="true">about their work.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_9_B" class="answer" style="display:none;">about their work.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -909,35 +910,35 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("6_1_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_1_A" class="answer nonesuch" aria-hidden="true">Open the door.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_1_A" class="answer" style="display:none;">Open the door.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_1_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_1_B" class="answer nonesuch" aria-hidden="true">Oops...Hope you did a SAVE first.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_1_B" class="answer" style="display:none;">Oops...Hope you did a SAVE first.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_1_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_1_C" class="answer nonesuch" aria-hidden="true">Read the hieroglyphs.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_1_C" class="answer" style="display:none;">Read the hieroglyphs.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_1_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_1_D" class="answer nonesuch" aria-hidden="true">Go back to the middle Antechamber and TAKE THE BEAM.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_1_D" class="answer" style="display:none;">Go back to the middle Antechamber and TAKE THE BEAM.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_1_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="6_1_E" class="answer nonesuch" aria-hidden="true">WEDGE THE BEAM BETWEEN THE ROCKS.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="6_1_E" class="answer" style="display:none;">WEDGE THE BEAM BETWEEN THE ROCKS.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_1_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="6_1_F" class="answer nonesuch" aria-hidden="true">Now open the door.</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="6_1_F" class="answer" style="display:none;">Now open the door.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_1_G");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="6_1_G" class="answer nonesuch" aria-hidden="true">Take care: once you take the beam out from between the rocks, the inset</span></div></a>
+<div class="answer-label">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="6_1_G" class="answer" style="display:none;">Take care: once you take the beam out from between the rocks, the inset</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_1_H");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="6_1_H" class="answer nonesuch" aria-hidden="true">doorway will be lost forever.</span></div></a>
+<div class="answer-label">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="6_1_H" class="answer" style="display:none;">doorway will be lost forever.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -947,43 +948,43 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("6_2_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_2_A" class="answer nonesuch" aria-hidden="true">It&#39;s not a bad Egyptian imitation of a pool table.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_2_A" class="answer" style="display:none;">It&#39;s not a bad Egyptian imitation of a pool table.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_2_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_2_B" class="answer nonesuch" aria-hidden="true">You do want to put something in the holes, though.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_2_B" class="answer" style="display:none;">You do want to put something in the holes, though.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_2_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_2_C" class="answer nonesuch" aria-hidden="true">Try the clusters.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_2_C" class="answer" style="display:none;">Try the clusters.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_2_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_2_D" class="answer nonesuch" aria-hidden="true">Remember the arrangement of the goddesses&#39; rooms around the Circular</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_2_D" class="answer" style="display:none;">Remember the arrangement of the goddesses&#39; rooms around the Circular</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_2_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="6_2_E" class="answer nonesuch" aria-hidden="true">Room?</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="6_2_E" class="answer" style="display:none;">Room?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_2_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="6_2_F" class="answer nonesuch" aria-hidden="true">You&#39;ll notice that there&#39;s no center hole for the golden cluster.</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="6_2_F" class="answer" style="display:none;">You&#39;ll notice that there&#39;s no center hole for the golden cluster.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_2_G");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="6_2_G" class="answer nonesuch" aria-hidden="true">Once the clusters are in the correct holes, you can LIFT THE SLAB.</span></div></a>
+<div class="answer-label">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="6_2_G" class="answer" style="display:none;">Once the clusters are in the correct holes, you can LIFT THE SLAB.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_2_H");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="6_2_H" class="answer nonesuch" aria-hidden="true">PUT THE DIAMOND CLUSTER IN THE FIRST HOLE. PUT THE RUBY CLUSTER IN THE</span></div></a>
+<div class="answer-label">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="6_2_H" class="answer" style="display:none;">PUT THE DIAMOND CLUSTER IN THE FIRST HOLE. PUT THE RUBY CLUSTER IN THE</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_2_I");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="6_2_I" class="answer nonesuch" aria-hidden="true">HOLE. PUT THE EMERALD CLUSTER IN THE THIRD HOLE. PUT THE OPAL</span></div></a>
+<div class="answer-label">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="6_2_I" class="answer" style="display:none;">HOLE. PUT THE EMERALD CLUSTER IN THE THIRD HOLE. PUT THE OPAL</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_2_J");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">J.</div><div class="answer-cell" aria-label="J" role="alert"><span class="hidden">|</span><span id="6_2_J" class="answer nonesuch" aria-hidden="true">IN THE FOURTH HOLE.</span></div></a>
+<div class="answer-label">J.</div><div class="answer-cell" aria-label="J" role="alert"><span class="hidden">|</span><span id="6_2_J" class="answer" style="display:none;">IN THE FOURTH HOLE.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -993,23 +994,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("6_3_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_3_A" class="answer nonesuch" aria-hidden="true">Although the book is not a cook book, the spatula is related to the</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_3_A" class="answer" style="display:none;">Although the book is not a cook book, the spatula is related to the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_3_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_3_B" class="answer nonesuch" aria-hidden="true">book.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_3_B" class="answer" style="display:none;">book.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_3_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_3_C" class="answer nonesuch" aria-hidden="true">Have you tried to OPEN THE BOOK?</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_3_C" class="answer" style="display:none;">Have you tried to OPEN THE BOOK?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_3_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_3_D" class="answer nonesuch" aria-hidden="true">The spatula may succeed where your less-than-delicate touch has failed.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_3_D" class="answer" style="display:none;">The spatula may succeed where your less-than-delicate touch has failed.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_3_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="6_3_E" class="answer nonesuch" aria-hidden="true">Have you tried to OPEN THE BOOK WITH THE SPATULA?</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="6_3_E" class="answer" style="display:none;">Have you tried to OPEN THE BOOK WITH THE SPATULA?</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1019,31 +1020,31 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("6_4_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_4_A" class="answer nonesuch" aria-hidden="true">Read the hieroglyphs.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_4_A" class="answer" style="display:none;">Read the hieroglyphs.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_4_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_4_B" class="answer nonesuch" aria-hidden="true">You&#39;ll need something sturdy to keep the roof from caving in.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_4_B" class="answer" style="display:none;">You&#39;ll need something sturdy to keep the roof from caving in.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_4_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_4_C" class="answer nonesuch" aria-hidden="true">WEDGE THE BEAM UNDER THE LINTEL.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_4_C" class="answer" style="display:none;">WEDGE THE BEAM UNDER THE LINTEL.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_4_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_4_D" class="answer nonesuch" aria-hidden="true">Now, BREAK THE SEALS WITH THE AXE.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_4_D" class="answer" style="display:none;">Now, BREAK THE SEALS WITH THE AXE.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_4_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="6_4_E" class="answer nonesuch" aria-hidden="true">Now, OPEN THE DOOR.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="6_4_E" class="answer" style="display:none;">Now, OPEN THE DOOR.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_4_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="6_4_F" class="answer nonesuch" aria-hidden="true">Take care: once you remove the beam from the doorway, it will become</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="6_4_F" class="answer" style="display:none;">Take care: once you remove the beam from the doorway, it will become</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_4_G");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="6_4_G" class="answer nonesuch" aria-hidden="true">impossible to get back through the doorway.</span></div></a>
+<div class="answer-label">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="6_4_G" class="answer" style="display:none;">impossible to get back through the doorway.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1053,43 +1054,43 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("6_5_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_5_A" class="answer nonesuch" aria-hidden="true">Yes.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_5_A" class="answer" style="display:none;">Yes.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_5_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_5_B" class="answer nonesuch" aria-hidden="true">Although you may think you&#39;ve seen a similar situation in the movies,</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_5_B" class="answer" style="display:none;">Although you may think you&#39;ve seen a similar situation in the movies,</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_5_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_5_C" class="answer nonesuch" aria-hidden="true">there is no way to replace the scarab with something of equal weight.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_5_C" class="answer" style="display:none;">there is no way to replace the scarab with something of equal weight.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_5_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_5_D" class="answer nonesuch" aria-hidden="true">Weight _is_ important here, however.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_5_D" class="answer" style="display:none;">Weight _is_ important here, however.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_5_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="6_5_E" class="answer nonesuch" aria-hidden="true">Remember the hieroglyphs from the Inner Chamber?</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="6_5_E" class="answer" style="display:none;">Remember the hieroglyphs from the Inner Chamber?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_5_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="6_5_F" class="answer nonesuch" aria-hidden="true">You&#39;ll have to find a way to balance the two side discs so that the</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="6_5_F" class="answer" style="display:none;">You&#39;ll have to find a way to balance the two side discs so that the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_5_G");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="6_5_G" class="answer nonesuch" aria-hidden="true">middle disc is even with the table.</span></div></a>
+<div class="answer-label">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="6_5_G" class="answer" style="display:none;">middle disc is even with the table.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_5_H");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="6_5_H" class="answer nonesuch" aria-hidden="true">Use the chalices.</span></div></a>
+<div class="answer-label">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="6_5_H" class="answer" style="display:none;">Use the chalices.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_5_I");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="6_5_I" class="answer nonesuch" aria-hidden="true">Since the silver chalice is lighter than the gold one, fill it with</span></div></a>
+<div class="answer-label">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="6_5_I" class="answer" style="display:none;">Since the silver chalice is lighter than the gold one, fill it with</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_5_J");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">J.</div><div class="answer-cell" aria-label="J" role="alert"><span class="hidden">|</span><span id="6_5_J" class="answer nonesuch" aria-hidden="true">water.</span></div></a>
+<div class="answer-label">J.</div><div class="answer-cell" aria-label="J" role="alert"><span class="hidden">|</span><span id="6_5_J" class="answer" style="display:none;">water.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1099,43 +1100,43 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("6_6_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_6_A" class="answer nonesuch" aria-hidden="true">Yes.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_6_A" class="answer" style="display:none;">Yes.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_6_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_6_B" class="answer nonesuch" aria-hidden="true">Have you read the writing in the ancient book?</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_6_B" class="answer" style="display:none;">Have you read the writing in the ancient book?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_6_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_6_C" class="answer nonesuch" aria-hidden="true">Have you read the hieroglyphs in the goddesses&#39; rooms?</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_6_C" class="answer" style="display:none;">Have you read the hieroglyphs in the goddesses&#39; rooms?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_6_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_6_D" class="answer nonesuch" aria-hidden="true">The proper objects need to be in the recesses on the sarcophagus.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_6_D" class="answer" style="display:none;">The proper objects need to be in the recesses on the sarcophagus.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_6_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="6_6_E" class="answer nonesuch" aria-hidden="true">Put the ancient book in the large recess.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="6_6_E" class="answer" style="display:none;">Put the ancient book in the large recess.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_6_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="6_6_F" class="answer nonesuch" aria-hidden="true">Put the scarab in the smaller recess.</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="6_6_F" class="answer" style="display:none;">Put the scarab in the smaller recess.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_6_G");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="6_6_G" class="answer nonesuch" aria-hidden="true">Now the statues are free to be turned.</span></div></a>
+<div class="answer-label">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="6_6_G" class="answer" style="display:none;">Now the statues are free to be turned.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_6_H");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="6_6_H" class="answer nonesuch" aria-hidden="true">You can find the proper order in the symbols in the goddesses&#39; rooms.</span></div></a>
+<div class="answer-label">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="6_6_H" class="answer" style="display:none;">You can find the proper order in the symbols in the goddesses&#39; rooms.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_6_I");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="6_6_I" class="answer nonesuch" aria-hidden="true">TURN NEITH. TURN SELKIS. TURN ISIS. TURN NEPHTHYS.</span></div></a>
+<div class="answer-label">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="6_6_I" class="answer" style="display:none;">TURN NEITH. TURN SELKIS. TURN ISIS. TURN NEPHTHYS.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_6_J");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">J.</div><div class="answer-cell" aria-label="J" role="alert"><span class="hidden">|</span><span id="6_6_J" class="answer nonesuch" aria-hidden="true">OPEN THE SARCOPHAGUS.</span></div></a>
+<div class="answer-label">J.</div><div class="answer-cell" aria-label="J" role="alert"><span class="hidden">|</span><span id="6_6_J" class="answer" style="display:none;">OPEN THE SARCOPHAGUS.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1145,7 +1146,7 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("6_7_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_7_A" class="answer nonesuch" aria-hidden="true">Ask him for a cheeseburger with onions.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_7_A" class="answer" style="display:none;">Ask him for a cheeseburger with onions.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>

@@ -4,8 +4,9 @@
 <script>
 function toggle(id) {
 var span = document.getElementById(id);
-span.setAttribute("aria-hidden",(span.attributes['aria-hidden'].value !== "true"));
-span.classList.toggle('nonesuch');
+console.log(span.style.display);
+if ("none" === span.style.display) { span.setAttribute("style","display:inline;"); }
+else { span.setAttribute("style","display:none;"); }
 }
 </script>
 </head>
@@ -21,19 +22,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("__A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="__A" class="answer nonesuch" aria-hidden="true">Did you ask anyone about the professor&#39;s cats?</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="__A" class="answer" style="display:none;">Did you ask anyone about the professor&#39;s cats?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("__B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="__B" class="answer nonesuch" aria-hidden="true">Professor Hergenburger is afraid of mice.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="__B" class="answer" style="display:none;">Professor Hergenburger is afraid of mice.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("__C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="__C" class="answer nonesuch" aria-hidden="true">There&#39;s a mouse nearby, which is frightening the professor. Get a cat</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="__C" class="answer" style="display:none;">There&#39;s a mouse nearby, which is frightening the professor. Get a cat</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("__D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="__D" class="answer nonesuch" aria-hidden="true">to take care of the mouse.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="__D" class="answer" style="display:none;">to take care of the mouse.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -65,15 +66,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("1_1_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_1_A" class="answer nonesuch" aria-hidden="true">No one knows you are there. You need to get their attention.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_1_A" class="answer" style="display:none;">No one knows you are there. You need to get their attention.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_1_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_1_B" class="answer nonesuch" aria-hidden="true">If you HONK THE HORN or PUSH THE EYE, the butler will speak with you.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_1_B" class="answer" style="display:none;">If you HONK THE HORN or PUSH THE EYE, the butler will speak with you.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_1_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_1_C" class="answer nonesuch" aria-hidden="true">Or you can just WAIT 10 MINUTES.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_1_C" class="answer" style="display:none;">Or you can just WAIT 10 MINUTES.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -83,19 +84,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("1_2_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_2_A" class="answer nonesuch" aria-hidden="true">If you WAIT or try to go somewhere, Tamara will guide you to meet them.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_2_A" class="answer" style="display:none;">If you WAIT or try to go somewhere, Tamara will guide you to meet them.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_2_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_2_B" class="answer nonesuch" aria-hidden="true">It&#39;s good manners to answer their questions.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_2_B" class="answer" style="display:none;">It&#39;s good manners to answer their questions.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_2_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_2_C" class="answer nonesuch" aria-hidden="true">Then you can ask the guests questions, for example ASK ABOUT THE GHOST</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_2_C" class="answer" style="display:none;">Then you can ask the guests questions, for example ASK ABOUT THE GHOST</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_2_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_2_D" class="answer nonesuch" aria-hidden="true">or MADAM, DESCRIBE THE GHOST.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_2_D" class="answer" style="display:none;">or MADAM, DESCRIBE THE GHOST.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -105,19 +106,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("1_3_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_3_A" class="answer nonesuch" aria-hidden="true">Ask the guests about the ghost.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_3_A" class="answer" style="display:none;">Ask the guests about the ghost.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_3_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_3_B" class="answer nonesuch" aria-hidden="true">The ghost usually appears late at night.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_3_B" class="answer" style="display:none;">The ghost usually appears late at night.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_3_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_3_C" class="answer nonesuch" aria-hidden="true">The ghost won&#39;t appear until after midnight (if at all), so meet the</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_3_C" class="answer" style="display:none;">The ghost won&#39;t appear until after midnight (if at all), so meet the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_3_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_3_D" class="answer nonesuch" aria-hidden="true">guests and go to dinner first.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_3_D" class="answer" style="display:none;">guests and go to dinner first.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -127,15 +128,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("1_4_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_4_A" class="answer nonesuch" aria-hidden="true">You can ask her about different things.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_4_A" class="answer" style="display:none;">You can ask her about different things.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_4_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_4_B" class="answer nonesuch" aria-hidden="true">You can ASK TAMARA ABOUT: JACK, HERSELF, THE GHOST, BOLITHO, DINNER,</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_4_B" class="answer" style="display:none;">You can ASK TAMARA ABOUT: JACK, HERSELF, THE GHOST, BOLITHO, DINNER,</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_4_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_4_C" class="answer nonesuch" aria-hidden="true">DEIRDRE, THE WHITE LADY, and so on. Or TAMARA, DESCRIBE THE GHOST.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_4_C" class="answer" style="display:none;">DEIRDRE, THE WHITE LADY, and so on. Or TAMARA, DESCRIBE THE GHOST.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -145,23 +146,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("1_5_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_5_A" class="answer nonesuch" aria-hidden="true">He is trying to tell you about the ghost. You can ASK BOLITHO TO</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_5_A" class="answer" style="display:none;">He is trying to tell you about the ghost. You can ASK BOLITHO TO</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_5_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_5_B" class="answer nonesuch" aria-hidden="true">THE GHOST.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_5_B" class="answer" style="display:none;">THE GHOST.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_5_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_5_C" class="answer nonesuch" aria-hidden="true">He may give you a device to protect you from hostile &quot;ghosts.&quot;</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_5_C" class="answer" style="display:none;">He may give you a device to protect you from hostile &quot;ghosts.&quot;</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_5_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_5_D" class="answer nonesuch" aria-hidden="true">He may also give you a hint for finding the secret passage if you</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_5_D" class="answer" style="display:none;">He may also give you a hint for finding the secret passage if you</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_5_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="1_5_E" class="answer nonesuch" aria-hidden="true">haven&#39;t already found it.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="1_5_E" class="answer" style="display:none;">haven&#39;t already found it.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -171,19 +172,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("1_6_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_6_A" class="answer nonesuch" aria-hidden="true">You&#39;ve been driving all day. You&#39;re grimy and rumpled.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_6_A" class="answer" style="display:none;">You&#39;ve been driving all day. You&#39;re grimy and rumpled.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_6_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_6_B" class="answer nonesuch" aria-hidden="true">You can wash up in your bathroom.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_6_B" class="answer" style="display:none;">You can wash up in your bathroom.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_6_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_6_C" class="answer nonesuch" aria-hidden="true">You can look in your luggage and find something fresh to wear.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_6_C" class="answer" style="display:none;">You can look in your luggage and find something fresh to wear.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_6_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_6_D" class="answer nonesuch" aria-hidden="true">P.S. You&#39;ll get dirty again if you go in the secret passage!</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_6_D" class="answer" style="display:none;">P.S. You&#39;ll get dirty again if you go in the secret passage!</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -193,19 +194,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("1_7_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_7_A" class="answer nonesuch" aria-hidden="true">Remember what Tamara said about dinner?</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_7_A" class="answer" style="display:none;">Remember what Tamara said about dinner?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_7_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_7_B" class="answer nonesuch" aria-hidden="true">She said that dinner is at eight o&#39;clock, or whenever you hear the</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_7_B" class="answer" style="display:none;">She said that dinner is at eight o&#39;clock, or whenever you hear the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_7_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_7_C" class="answer nonesuch" aria-hidden="true">gong.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_7_C" class="answer" style="display:none;">gong.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_7_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_7_D" class="answer nonesuch" aria-hidden="true">It&#39;s time to GO TO DINNER.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_7_D" class="answer" style="display:none;">It&#39;s time to GO TO DINNER.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -215,39 +216,39 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("1_8_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_8_A" class="answer nonesuch" aria-hidden="true">If you didn&#39;t do so earlier, ask the guests about the ghost.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="1_8_A" class="answer" style="display:none;">If you didn&#39;t do so earlier, ask the guests about the ghost.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_8_B" class="answer nonesuch" aria-hidden="true">At the end of dinner, you&#39;ll hear a tape recording.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="1_8_B" class="answer" style="display:none;">At the end of dinner, you&#39;ll hear a tape recording.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_8_C" class="answer nonesuch" aria-hidden="true">Do as Lionel says: LOOK UNDER THE PUNCHBOWL.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="1_8_C" class="answer" style="display:none;">Do as Lionel says: LOOK UNDER THE PUNCHBOWL.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_8_D" class="answer nonesuch" aria-hidden="true">The first clue is a hint about what the treasure is.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="1_8_D" class="answer" style="display:none;">The first clue is a hint about what the treasure is.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="1_8_E" class="answer nonesuch" aria-hidden="true">After Lionel mentions the treasure, ask Jack about it.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="1_8_E" class="answer" style="display:none;">After Lionel mentions the treasure, ask Jack about it.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="1_8_F" class="answer nonesuch" aria-hidden="true">Lionel mentions a second clue; he also says who has it.</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="1_8_F" class="answer" style="display:none;">Lionel mentions a second clue; he also says who has it.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_G");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="1_8_G" class="answer nonesuch" aria-hidden="true">ASK JACK (or VIVIEN, depending on the variation) FOR THE SECOND CLUE</span></div></a>
+<div class="answer-label">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="1_8_G" class="answer" style="display:none;">ASK JACK (or VIVIEN, depending on the variation) FOR THE SECOND CLUE</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_H");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="1_8_H" class="answer nonesuch" aria-hidden="true">READ THE SECOND CLUE.</span></div></a>
+<div class="answer-label">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="1_8_H" class="answer" style="display:none;">READ THE SECOND CLUE.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("1_8_I");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="1_8_I" class="answer nonesuch" aria-hidden="true">The second clue is a hint about how to find the treasure.</span></div></a>
+<div class="answer-label">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="1_8_I" class="answer" style="display:none;">The second clue is a hint about how to find the treasure.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -262,23 +263,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("2_1_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_1_A" class="answer nonesuch" aria-hidden="true">In a castle like this, there probably are.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_1_A" class="answer" style="display:none;">In a castle like this, there probably are.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_1_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_1_B" class="answer nonesuch" aria-hidden="true">Bolitho may give you a hint.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_1_B" class="answer" style="display:none;">Bolitho may give you a hint.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_1_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="2_1_C" class="answer nonesuch" aria-hidden="true">Bolitho says you can adjust the wall mirror in your bedroom.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="2_1_C" class="answer" style="display:none;">Bolitho says you can adjust the wall mirror in your bedroom.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_1_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="2_1_D" class="answer nonesuch" aria-hidden="true">But in fact you can&#39;t adjust it. EXAMINE THE WALL MIRROR.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="2_1_D" class="answer" style="display:none;">But in fact you can&#39;t adjust it. EXAMINE THE WALL MIRROR.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_1_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="2_1_E" class="answer nonesuch" aria-hidden="true">The mirror is actually a secret door! PUSH THE SWITCH.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="2_1_E" class="answer" style="display:none;">The mirror is actually a secret door! PUSH THE SWITCH.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -288,11 +289,11 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("2_2_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_2_A" class="answer nonesuch" aria-hidden="true">One is used by the servants to go to the basement wine cellar.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_2_A" class="answer" style="display:none;">One is used by the servants to go to the basement wine cellar.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_2_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_2_B" class="answer nonesuch" aria-hidden="true">There&#39;s a portable brass lantern in the kitchen.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_2_B" class="answer" style="display:none;">There&#39;s a portable brass lantern in the kitchen.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -302,15 +303,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("2_3_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_3_A" class="answer nonesuch" aria-hidden="true">It isn&#39;t polite to snoop around other people&#39;s bedrooms.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_3_A" class="answer" style="display:none;">It isn&#39;t polite to snoop around other people&#39;s bedrooms.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_3_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_3_B" class="answer nonesuch" aria-hidden="true">The other guest is probably mad at you for doing so.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_3_B" class="answer" style="display:none;">The other guest is probably mad at you for doing so.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_3_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="2_3_C" class="answer nonesuch" aria-hidden="true">You should APOLOGIZE to the guest.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="2_3_C" class="answer" style="display:none;">You should APOLOGIZE to the guest.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -320,15 +321,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("2_4_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_4_A" class="answer nonesuch" aria-hidden="true">Were you rude to this person earlier?</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_4_A" class="answer" style="display:none;">Were you rude to this person earlier?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_4_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_4_B" class="answer nonesuch" aria-hidden="true">Maybe you ignored a question, or hit or insulted him or her?</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_4_B" class="answer" style="display:none;">Maybe you ignored a question, or hit or insulted him or her?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_4_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="2_4_C" class="answer nonesuch" aria-hidden="true">You should APOLOGIZE to the guest.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="2_4_C" class="answer" style="display:none;">You should APOLOGIZE to the guest.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -338,15 +339,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("2_5_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_5_A" class="answer nonesuch" aria-hidden="true">If you haven&#39;t met all the guests, Tamara won&#39;t let you wander off.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_5_A" class="answer" style="display:none;">If you haven&#39;t met all the guests, Tamara won&#39;t let you wander off.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_5_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_5_B" class="answer nonesuch" aria-hidden="true">Otherwise, it&#39;s a puzzle to go to that place. You have to use compass</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_5_B" class="answer" style="display:none;">Otherwise, it&#39;s a puzzle to go to that place. You have to use compass</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_5_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="2_5_C" class="answer nonesuch" aria-hidden="true">directions (like NORTH or IN) to go there.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="2_5_C" class="answer" style="display:none;">directions (like NORTH or IN) to go there.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -356,11 +357,11 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("2_6_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_6_A" class="answer nonesuch" aria-hidden="true">Maybe you bumped into someone on your way.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="2_6_A" class="answer" style="display:none;">Maybe you bumped into someone on your way.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("2_6_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_6_B" class="answer nonesuch" aria-hidden="true">Or you might have gotten lost in the dark.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="2_6_B" class="answer" style="display:none;">Or you might have gotten lost in the dark.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -375,19 +376,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_1_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_1_A" class="answer nonesuch" aria-hidden="true">Have you read it?</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_1_A" class="answer" style="display:none;">Have you read it?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_1_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_1_B" class="answer nonesuch" aria-hidden="true">ASK JACK FOR THE BUTLER&#39;S NOTE THEN READ IT.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_1_B" class="answer" style="display:none;">ASK JACK FOR THE BUTLER&#39;S NOTE THEN READ IT.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_1_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_1_C" class="answer nonesuch" aria-hidden="true">After dinner, you should find the maid&#39;s note, then read it.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_1_C" class="answer" style="display:none;">After dinner, you should find the maid&#39;s note, then read it.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_1_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_1_D" class="answer nonesuch" aria-hidden="true">The maid&#39;s note is on the desk in the sitting room.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_1_D" class="answer" style="display:none;">The maid&#39;s note is on the desk in the sitting room.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -397,19 +398,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_2_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_2_A" class="answer nonesuch" aria-hidden="true">Bolitho saw the ghost. Did he tell you about it?</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_2_A" class="answer" style="display:none;">Bolitho saw the ghost. Did he tell you about it?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_2_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_2_B" class="answer nonesuch" aria-hidden="true">If not, and it&#39;s after dinner, you&#39;re too late. Bolitho&#39;s gone.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_2_B" class="answer" style="display:none;">If not, and it&#39;s after dinner, you&#39;re too late. Bolitho&#39;s gone.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_2_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_2_C" class="answer nonesuch" aria-hidden="true">Say YES when Bolitho asks you if you are the well-known American</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_2_C" class="answer" style="display:none;">Say YES when Bolitho asks you if you are the well-known American</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_2_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_2_D" class="answer nonesuch" aria-hidden="true">detective. Or ASK THE BUTLER ABOUT THE GHOST.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_2_D" class="answer" style="display:none;">detective. Or ASK THE BUTLER ABOUT THE GHOST.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -419,23 +420,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_3_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_3_A" class="answer nonesuch" aria-hidden="true">There are two ways. The first way is to find the ghost costume and some</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_3_A" class="answer" style="display:none;">There are two ways. The first way is to find the ghost costume and some</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_3_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_3_B" class="answer nonesuch" aria-hidden="true">evidence of who wore it. The second way is to catch the ghost on its</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_3_B" class="answer" style="display:none;">evidence of who wore it. The second way is to catch the ghost on its</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_3_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_3_C" class="answer nonesuch" aria-hidden="true">haunt and unmask it.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_3_C" class="answer" style="display:none;">haunt and unmask it.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_3_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_3_D" class="answer nonesuch" aria-hidden="true">Asking others to describe the ghost will give you clues about its</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_3_D" class="answer" style="display:none;">Asking others to describe the ghost will give you clues about its</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_3_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="3_3_E" class="answer nonesuch" aria-hidden="true">identity, and may give you an idea where to start your search.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="3_3_E" class="answer" style="display:none;">identity, and may give you an idea where to start your search.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -445,31 +446,31 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_4_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_4_A" class="answer nonesuch" aria-hidden="true">Can you find what the ghost was searching for?</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_4_A" class="answer" style="display:none;">Can you find what the ghost was searching for?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_4_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_4_B" class="answer nonesuch" aria-hidden="true">You should go where Bolitho said the ghost was searching then SEARCH</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_4_B" class="answer" style="display:none;">You should go where Bolitho said the ghost was searching then SEARCH</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_4_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_4_C" class="answer nonesuch" aria-hidden="true">ROOM. If you show what you found to other people, you might start to suspect someone.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_4_C" class="answer" style="display:none;">ROOM. If you show what you found to other people, you might start to suspect someone.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_4_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_4_D" class="answer nonesuch" aria-hidden="true">Search the bedroom of the suspected guest for evidence that he or she</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_4_D" class="answer" style="display:none;">Search the bedroom of the suspected guest for evidence that he or she</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_4_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="3_4_E" class="answer nonesuch" aria-hidden="true">is the person who lost the item that the ghost was looking for. Then</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="3_4_E" class="answer" style="display:none;">is the person who lost the item that the ghost was looking for. Then</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_4_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="3_4_F" class="answer nonesuch" aria-hidden="true">read one of the next four answers (for example, read the RED answer if</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="3_4_F" class="answer" style="display:none;">read one of the next four answers (for example, read the RED answer if</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_4_G");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="3_4_G" class="answer nonesuch" aria-hidden="true">you&#39;re playing the red variation).</span></div></a>
+<div class="answer-label">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="3_4_G" class="answer" style="display:none;">you&#39;re playing the red variation).</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -479,19 +480,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_5_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_5_A" class="answer nonesuch" aria-hidden="true">If you think Jack is the ghost, ASK BOLITHO TO DESCRIBE THE GHOST and</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_5_A" class="answer" style="display:none;">If you think Jack is the ghost, ASK BOLITHO TO DESCRIBE THE GHOST and</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_5_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_5_B" class="answer nonesuch" aria-hidden="true">think again. If you think Deirdre is the ghost, then the costume</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_5_B" class="answer" style="display:none;">think again. If you think Deirdre is the ghost, then the costume</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_5_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_5_C" class="answer nonesuch" aria-hidden="true">wouldn&#39;t be in the castle; you&#39;ll have to catch her when she haunts the</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_5_C" class="answer" style="display:none;">wouldn&#39;t be in the castle; you&#39;ll have to catch her when she haunts the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_5_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_5_D" class="answer nonesuch" aria-hidden="true">castle.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_5_D" class="answer" style="display:none;">castle.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -501,11 +502,11 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_6_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_6_A" class="answer nonesuch" aria-hidden="true">The costume is not in the villain&#39;s bedroom. Look in the secret</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_6_A" class="answer" style="display:none;">The costume is not in the villain&#39;s bedroom. Look in the secret</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_6_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_6_B" class="answer nonesuch" aria-hidden="true">passages for it and see the next question.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_6_B" class="answer" style="display:none;">passages for it and see the next question.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -515,7 +516,7 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_7_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_7_A" class="answer nonesuch" aria-hidden="true">The costume is hidden in Vivien&#39;s wooden box (under other items).</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_7_A" class="answer" style="display:none;">The costume is hidden in Vivien&#39;s wooden box (under other items).</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -525,7 +526,7 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_8_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_8_A" class="answer nonesuch" aria-hidden="true">The costume is hidden in Wendish&#39;s medical kit (under other items).</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_8_A" class="answer" style="display:none;">The costume is hidden in Wendish&#39;s medical kit (under other items).</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -535,19 +536,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_9_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_9_A" class="answer nonesuch" aria-hidden="true">Whoever the ghost is probably has a costume hidden. Or sometimes you</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_9_A" class="answer" style="display:none;">Whoever the ghost is probably has a costume hidden. Or sometimes you</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_9_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_9_B" class="answer nonesuch" aria-hidden="true">can catch the ghost while it&#39;s haunting. If you still can&#39;t find the</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_9_B" class="answer" style="display:none;">can catch the ghost while it&#39;s haunting. If you still can&#39;t find the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_9_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_9_C" class="answer nonesuch" aria-hidden="true">ghost costume, then read one of the next four answers (for example,</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_9_C" class="answer" style="display:none;">ghost costume, then read one of the next four answers (for example,</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_9_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_9_D" class="answer nonesuch" aria-hidden="true">read the BLUE answer if you&#39;re playing the blue variation).</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_9_D" class="answer" style="display:none;">read the BLUE answer if you&#39;re playing the blue variation).</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -557,15 +558,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_10_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_10_A" class="answer nonesuch" aria-hidden="true">The person haunting must have dropped it there.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_10_A" class="answer" style="display:none;">The person haunting must have dropped it there.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_10_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_10_B" class="answer nonesuch" aria-hidden="true">Probably on purpose -- to frame Iris for the haunting. See the next</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_10_B" class="answer" style="display:none;">Probably on purpose -- to frame Iris for the haunting. See the next</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_10_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_10_C" class="answer nonesuch" aria-hidden="true">question.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_10_C" class="answer" style="display:none;">question.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -575,19 +576,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_11_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_11_A" class="answer nonesuch" aria-hidden="true">Whoever wore it might have left some evidence in it.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_11_A" class="answer" style="display:none;">Whoever wore it might have left some evidence in it.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_11_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_11_B" class="answer nonesuch" aria-hidden="true">EXAMINE THE WIG.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_11_B" class="answer" style="display:none;">EXAMINE THE WIG.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_11_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_11_C" class="answer nonesuch" aria-hidden="true">Whoever wore the costume left some hairs behind!</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_11_C" class="answer" style="display:none;">Whoever wore the costume left some hairs behind!</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_11_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_11_D" class="answer nonesuch" aria-hidden="true">You can EXAMINE the other guests to see whose hair color is the same.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_11_D" class="answer" style="display:none;">You can EXAMINE the other guests to see whose hair color is the same.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -597,15 +598,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_12_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_12_A" class="answer nonesuch" aria-hidden="true">You need to find incriminating evidence, something that shows why the</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_12_A" class="answer" style="display:none;">You need to find incriminating evidence, something that shows why the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_12_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_12_B" class="answer nonesuch" aria-hidden="true">villain would commit a crime.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_12_B" class="answer" style="display:none;">villain would commit a crime.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_12_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_12_C" class="answer nonesuch" aria-hidden="true">The maid found something incriminating. See the next question.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_12_C" class="answer" style="display:none;">The maid found something incriminating. See the next question.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -615,19 +616,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_13_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_13_A" class="answer nonesuch" aria-hidden="true">Apparently the maid found something very upsetting.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_13_A" class="answer" style="display:none;">Apparently the maid found something very upsetting.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_13_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_13_B" class="answer nonesuch" aria-hidden="true">Whatever she found might incriminate the villain.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_13_B" class="answer" style="display:none;">Whatever she found might incriminate the villain.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_13_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_13_C" class="answer nonesuch" aria-hidden="true">The last paragraph of her note is a clue.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_13_C" class="answer" style="display:none;">The last paragraph of her note is a clue.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_13_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_13_D" class="answer nonesuch" aria-hidden="true">For more hints, look in the section for the variation you&#39;re playing.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_13_D" class="answer" style="display:none;">For more hints, look in the section for the variation you&#39;re playing.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -637,19 +638,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_14_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_14_A" class="answer nonesuch" aria-hidden="true">You can escape into the secret passage, but only if the secret door is</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_14_A" class="answer" style="display:none;">You can escape into the secret passage, but only if the secret door is</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_14_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_14_B" class="answer nonesuch" aria-hidden="true">already open.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_14_B" class="answer" style="display:none;">already open.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_14_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_14_C" class="answer nonesuch" aria-hidden="true">Or you can spray the villain with the aerosol device, or hit the</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_14_C" class="answer" style="display:none;">Or you can spray the villain with the aerosol device, or hit the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_14_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_14_D" class="answer nonesuch" aria-hidden="true">villain with the wine bottle.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_14_D" class="answer" style="display:none;">villain with the wine bottle.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -659,27 +660,27 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("3_15_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_15_A" class="answer nonesuch" aria-hidden="true">The first clue (under the punchbowl) is a hint about WHAT you are</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="3_15_A" class="answer" style="display:none;">The first clue (under the punchbowl) is a hint about WHAT you are</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_15_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_15_B" class="answer nonesuch" aria-hidden="true">looking for.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="3_15_B" class="answer" style="display:none;">looking for.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_15_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_15_C" class="answer nonesuch" aria-hidden="true">To find WHERE the treasure is, you have to get the second clue from</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="3_15_C" class="answer" style="display:none;">To find WHERE the treasure is, you have to get the second clue from</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_15_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_15_D" class="answer nonesuch" aria-hidden="true">Vivien (in the red variation) or Jack (in the yellow, blue, and green</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="3_15_D" class="answer" style="display:none;">Vivien (in the red variation) or Jack (in the yellow, blue, and green</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_15_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="3_15_E" class="answer nonesuch" aria-hidden="true">variations).</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="3_15_E" class="answer" style="display:none;">variations).</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("3_15_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="3_15_F" class="answer nonesuch" aria-hidden="true">The second clue will lead to more clues.</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="3_15_F" class="answer" style="display:none;">The second clue will lead to more clues.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -694,35 +695,35 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("4_1_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_1_A" class="answer nonesuch" aria-hidden="true">If you are in the yellow variation, read the next hint. Otherwise, skip</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_1_A" class="answer" style="display:none;">If you are in the yellow variation, read the next hint. Otherwise, skip</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_1_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_1_B" class="answer nonesuch" aria-hidden="true">it.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_1_B" class="answer" style="display:none;">it.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_1_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_1_C" class="answer nonesuch" aria-hidden="true">You can&#39;t. You&#39;ll have to find the ghost costume instead.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_1_C" class="answer" style="display:none;">You can&#39;t. You&#39;ll have to find the ghost costume instead.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_1_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_1_D" class="answer nonesuch" aria-hidden="true">The ghost haunts after midnight, when other people have gone to bed.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_1_D" class="answer" style="display:none;">The ghost haunts after midnight, when other people have gone to bed.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_1_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="4_1_E" class="answer nonesuch" aria-hidden="true">And it haunts only in the secret passages where people usually don&#39;t</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="4_1_E" class="answer" style="display:none;">And it haunts only in the secret passages where people usually don&#39;t</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_1_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="4_1_F" class="answer nonesuch" aria-hidden="true">go. Read the next two hints only if you are in the red variation.</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="4_1_F" class="answer" style="display:none;">go. Read the next two hints only if you are in the red variation.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_1_G");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="4_1_G" class="answer nonesuch" aria-hidden="true">The ghost enters the castle on its way to the secret passages.</span></div></a>
+<div class="answer-label">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="4_1_G" class="answer" style="display:none;">The ghost enters the castle on its way to the secret passages.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_1_H");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="4_1_H" class="answer nonesuch" aria-hidden="true">The ghost enters through the priest hole and goes backstairs.</span></div></a>
+<div class="answer-label">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="4_1_H" class="answer" style="display:none;">The ghost enters through the priest hole and goes backstairs.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -732,43 +733,43 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("4_2_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_2_A" class="answer nonesuch" aria-hidden="true">If you are playing the yellow variation, read the next hint. Otherwise</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_2_A" class="answer" style="display:none;">If you are playing the yellow variation, read the next hint. Otherwise</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_2_B" class="answer nonesuch" aria-hidden="true">skip over it.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_2_B" class="answer" style="display:none;">skip over it.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_2_C" class="answer nonesuch" aria-hidden="true">The ghost never haunts in the yellow variation.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_2_C" class="answer" style="display:none;">The ghost never haunts in the yellow variation.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_2_D" class="answer nonesuch" aria-hidden="true">You may have missed the ghost. Try waiting at your entrance or the</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_2_D" class="answer" style="display:none;">You may have missed the ghost. Try waiting at your entrance or the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="4_2_E" class="answer nonesuch" aria-hidden="true">entrance of the presumed ghost.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="4_2_E" class="answer" style="display:none;">entrance of the presumed ghost.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="4_2_F" class="answer nonesuch" aria-hidden="true">You may have spooked the ghost. If you disturbed the costume or</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="4_2_F" class="answer" style="display:none;">You may have spooked the ghost. If you disturbed the costume or</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_G");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="4_2_G" class="answer nonesuch" aria-hidden="true">blowgun, or left the ghost&#39;s secret entrance open, the ghost won&#39;t</span></div></a>
+<div class="answer-label">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="4_2_G" class="answer" style="display:none;">blowgun, or left the ghost&#39;s secret entrance open, the ghost won&#39;t</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_H");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="4_2_H" class="answer nonesuch" aria-hidden="true">haunt.</span></div></a>
+<div class="answer-label">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="4_2_H" class="answer" style="display:none;">haunt.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_I");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="4_2_I" class="answer nonesuch" aria-hidden="true">If you already arrested the person who was the ghost, now you need to</span></div></a>
+<div class="answer-label">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="4_2_I" class="answer" style="display:none;">If you already arrested the person who was the ghost, now you need to</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_2_J");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">J.</div><div class="answer-cell" aria-label="J" role="alert"><span class="hidden">|</span><span id="4_2_J" class="answer nonesuch" aria-hidden="true">find the ghost costume.</span></div></a>
+<div class="answer-label">J.</div><div class="answer-cell" aria-label="J" role="alert"><span class="hidden">|</span><span id="4_2_J" class="answer" style="display:none;">find the ghost costume.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -778,31 +779,31 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("4_3_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_3_A" class="answer nonesuch" aria-hidden="true">Follow your instincts: fight or flee.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_3_A" class="answer" style="display:none;">Follow your instincts: fight or flee.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_3_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_3_B" class="answer nonesuch" aria-hidden="true">Maybe Bolitho gave you something to stop threats.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_3_B" class="answer" style="display:none;">Maybe Bolitho gave you something to stop threats.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_3_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_3_C" class="answer nonesuch" aria-hidden="true">Bolitho tried to give you an aerosol device. If you don&#39;t have it, you</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_3_C" class="answer" style="display:none;">Bolitho tried to give you an aerosol device. If you don&#39;t have it, you</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_3_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_3_D" class="answer nonesuch" aria-hidden="true">can flee to the kitchen and get it. Or you can use the wine bottle as a</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_3_D" class="answer" style="display:none;">can flee to the kitchen and get it. Or you can use the wine bottle as a</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_3_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="4_3_E" class="answer nonesuch" aria-hidden="true">weapon.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="4_3_E" class="answer" style="display:none;">weapon.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_3_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="4_3_F" class="answer nonesuch" aria-hidden="true">If you have the aerosol device, SPRAY THE GHOST WITH THE DEVICE.</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="4_3_F" class="answer" style="display:none;">If you have the aerosol device, SPRAY THE GHOST WITH THE DEVICE.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_3_G");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="4_3_G" class="answer nonesuch" aria-hidden="true">Now you can REMOVE THE GHOST COSTUME and identify the ghost.</span></div></a>
+<div class="answer-label">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="4_3_G" class="answer" style="display:none;">Now you can REMOVE THE GHOST COSTUME and identify the ghost.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -812,15 +813,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("4_4_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_4_A" class="answer nonesuch" aria-hidden="true">The ghost isn&#39;t threatening you, so don&#39;t scare her away.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_4_A" class="answer" style="display:none;">The ghost isn&#39;t threatening you, so don&#39;t scare her away.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_4_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_4_B" class="answer nonesuch" aria-hidden="true">Be nice to the ghost.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_4_B" class="answer" style="display:none;">Be nice to the ghost.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_4_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_4_C" class="answer nonesuch" aria-hidden="true">Talking to the ghost is one way to get her to open up.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_4_C" class="answer" style="display:none;">Talking to the ghost is one way to get her to open up.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -830,19 +831,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("4_5_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_5_A" class="answer nonesuch" aria-hidden="true">First use your negative ionizer backpack to trap the ghost.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="4_5_A" class="answer" style="display:none;">First use your negative ionizer backpack to trap the ghost.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_5_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_5_B" class="answer nonesuch" aria-hidden="true">Now lower the ghost into your portable laser confinement system.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="4_5_B" class="answer" style="display:none;">Now lower the ghost into your portable laser confinement system.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_5_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_5_C" class="answer nonesuch" aria-hidden="true">Stop playing _Ghostbusters_ from Activision and play _Moonmist_! The</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="4_5_C" class="answer" style="display:none;">Stop playing _Ghostbusters_ from Activision and play _Moonmist_! The</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("4_5_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_5_D" class="answer nonesuch" aria-hidden="true">ghost in _Moonmist_ doesn&#39;t &quot;slime&quot; people.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="4_5_D" class="answer" style="display:none;">ghost in _Moonmist_ doesn&#39;t &quot;slime&quot; people.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -857,11 +858,11 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("5_1_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_1_A" class="answer nonesuch" aria-hidden="true">People tend to use their dominant hand without thinking.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_1_A" class="answer" style="display:none;">People tend to use their dominant hand without thinking.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_1_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_1_B" class="answer nonesuch" aria-hidden="true">Throw something at a person. They&#39;ll catch it with their dominant hand.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_1_B" class="answer" style="display:none;">Throw something at a person. They&#39;ll catch it with their dominant hand.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -871,23 +872,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("5_2_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_2_A" class="answer nonesuch" aria-hidden="true">There is a physical reason for it.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_2_A" class="answer" style="display:none;">There is a physical reason for it.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_2_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_2_B" class="answer nonesuch" aria-hidden="true">One room is directly over Tamara&#39;s.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_2_B" class="answer" style="display:none;">One room is directly over Tamara&#39;s.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_2_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_2_C" class="answer nonesuch" aria-hidden="true">Examine and move objects in the &quot;lumber&quot; room.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_2_C" class="answer" style="display:none;">Examine and move objects in the &quot;lumber&quot; room.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_2_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_2_D" class="answer nonesuch" aria-hidden="true">If you move the chest and lift the handle you can look into Tamara&#39;s</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_2_D" class="answer" style="display:none;">If you move the chest and lift the handle you can look into Tamara&#39;s</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_2_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="5_2_E" class="answer nonesuch" aria-hidden="true">bedroom. And someone in her bed would see your face!</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="5_2_E" class="answer" style="display:none;">bedroom. And someone in her bed would see your face!</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -897,23 +898,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("5_3_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_3_A" class="answer nonesuch" aria-hidden="true">Did you find the coffin hidden in the secret tomb?</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_3_A" class="answer" style="display:none;">Did you find the coffin hidden in the secret tomb?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_3_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_3_B" class="answer nonesuch" aria-hidden="true">You&#39;ll need a wooden cross from the chapel and garlic from the kitchen.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_3_B" class="answer" style="display:none;">You&#39;ll need a wooden cross from the chapel and garlic from the kitchen.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_3_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_3_C" class="answer nonesuch" aria-hidden="true">Find a sharp stick in the lumber room and drive it through the</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_3_C" class="answer" style="display:none;">Find a sharp stick in the lumber room and drive it through the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_3_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_3_D" class="answer nonesuch" aria-hidden="true">vampire&#39;s heart when it returns to sleep in the coffin at dawn.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_3_D" class="answer" style="display:none;">vampire&#39;s heart when it returns to sleep in the coffin at dawn.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_3_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="5_3_E" class="answer nonesuch" aria-hidden="true">What vampire? There&#39;s no vampire in _Moonmist_.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="5_3_E" class="answer" style="display:none;">What vampire? There&#39;s no vampire in _Moonmist_.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -923,11 +924,11 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("5_4_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_4_A" class="answer nonesuch" aria-hidden="true">Ask someone about her.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_4_A" class="answer" style="display:none;">Ask someone about her.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_4_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_4_B" class="answer nonesuch" aria-hidden="true">The history book in the library will tell you more about her.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_4_B" class="answer" style="display:none;">The history book in the library will tell you more about her.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -937,19 +938,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("5_5_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_5_A" class="answer nonesuch" aria-hidden="true">Have Waldo replace the faulty chip.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="5_5_A" class="answer" style="display:none;">Have Waldo replace the faulty chip.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_5_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_5_B" class="answer nonesuch" aria-hidden="true">If that doesn&#39;t work, then send her to robot repair.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="5_5_B" class="answer" style="display:none;">If that doesn&#39;t work, then send her to robot repair.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_5_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_5_C" class="answer nonesuch" aria-hidden="true">Wait a minute! Why are you looking up _Suspended_ questions in the</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="5_5_C" class="answer" style="display:none;">Wait a minute! Why are you looking up _Suspended_ questions in the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("5_5_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_5_D" class="answer nonesuch" aria-hidden="true">_Moonmist_ hint booklet?</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="5_5_D" class="answer" style="display:none;">_Moonmist_ hint booklet?</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -964,27 +965,27 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("6_1_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_1_A" class="answer nonesuch" aria-hidden="true">First read the hints for this same question in the section called</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_1_A" class="answer" style="display:none;">First read the hints for this same question in the section called</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_1_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_1_B" class="answer nonesuch" aria-hidden="true">&quot;After Dinner.&quot;</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_1_B" class="answer" style="display:none;">&quot;After Dinner.&quot;</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_1_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_1_C" class="answer nonesuch" aria-hidden="true">Look in the keyholes of bedroom doors.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_1_C" class="answer" style="display:none;">Look in the keyholes of bedroom doors.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_1_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_1_D" class="answer nonesuch" aria-hidden="true">Jack&#39;s keyhole is the most important. You&#39;ll see a microphone in the</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_1_D" class="answer" style="display:none;">Jack&#39;s keyhole is the most important. You&#39;ll see a microphone in the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_1_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="6_1_E" class="answer nonesuch" aria-hidden="true">door.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="6_1_E" class="answer" style="display:none;">door.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_1_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="6_1_F" class="answer nonesuch" aria-hidden="true">Move the wyvern to uncover the secret tape recorder. PLAY THE TAPE.</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="6_1_F" class="answer" style="display:none;">Move the wyvern to uncover the secret tape recorder. PLAY THE TAPE.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -994,15 +995,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("6_2_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_2_A" class="answer nonesuch" aria-hidden="true">The &quot;very first lass&quot; in the Bible was Eve.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_2_A" class="answer" style="display:none;">The &quot;very first lass&quot; in the Bible was Eve.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_2_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_2_B" class="answer nonesuch" aria-hidden="true">There&#39;s a stained &quot;glass&quot; window in the chapel.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_2_B" class="answer" style="display:none;">There&#39;s a stained &quot;glass&quot; window in the chapel.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_2_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_2_C" class="answer nonesuch" aria-hidden="true">On the &quot;forbidden fruit&quot; (apple) is the third clue.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_2_C" class="answer" style="display:none;">On the &quot;forbidden fruit&quot; (apple) is the third clue.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1012,19 +1013,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("6_3_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_3_A" class="answer nonesuch" aria-hidden="true">You need to go to the place mentioned in the clue.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_3_A" class="answer" style="display:none;">You need to go to the place mentioned in the clue.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_3_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_3_B" class="answer nonesuch" aria-hidden="true">&quot;Bower&quot; is another word for garden.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_3_B" class="answer" style="display:none;">&quot;Bower&quot; is another word for garden.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_3_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_3_C" class="answer nonesuch" aria-hidden="true">GO TO THE BOWER (the garden in the hedge maze).</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_3_C" class="answer" style="display:none;">GO TO THE BOWER (the garden in the hedge maze).</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_3_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_3_D" class="answer nonesuch" aria-hidden="true">The clue is in the dirt in the garden.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_3_D" class="answer" style="display:none;">The clue is in the dirt in the garden.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1034,19 +1035,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("6_4_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_4_A" class="answer nonesuch" aria-hidden="true">What would you need if you went into the rain?</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_4_A" class="answer" style="display:none;">What would you need if you went into the rain?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_4_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_4_B" class="answer nonesuch" aria-hidden="true">The clues are &quot;rain&quot; and &quot;cain.&quot;</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_4_B" class="answer" style="display:none;">The clues are &quot;rain&quot; and &quot;cain.&quot;</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_4_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_4_C" class="answer nonesuch" aria-hidden="true">There&#39;s an umbrella stand in the foyer.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_4_C" class="answer" style="display:none;">There&#39;s an umbrella stand in the foyer.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_4_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_4_D" class="answer nonesuch" aria-hidden="true">&quot;Cain&quot; is a pun for the cane in the umbrella stand.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="6_4_D" class="answer" style="display:none;">&quot;Cain&quot; is a pun for the cane in the umbrella stand.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1056,15 +1057,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("6_5_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_5_A" class="answer nonesuch" aria-hidden="true">Examine the item you found there.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="6_5_A" class="answer" style="display:none;">Examine the item you found there.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_5_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_5_B" class="answer nonesuch" aria-hidden="true">The treasure is disguised.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="6_5_B" class="answer" style="display:none;">The treasure is disguised.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("6_5_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_5_C" class="answer nonesuch" aria-hidden="true">REMOVE THE PAINT to find the real treasure.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="6_5_C" class="answer" style="display:none;">REMOVE THE PAINT to find the real treasure.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1079,23 +1080,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("7_1_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="7_1_A" class="answer nonesuch" aria-hidden="true">First read the hints for this same question in the section called</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="7_1_A" class="answer" style="display:none;">First read the hints for this same question in the section called</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("7_1_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="7_1_B" class="answer nonesuch" aria-hidden="true">&quot;After Dinner.&quot;</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="7_1_B" class="answer" style="display:none;">&quot;After Dinner.&quot;</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("7_1_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="7_1_C" class="answer nonesuch" aria-hidden="true">Search people&#39;s bedrooms, particularly under furniture.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="7_1_C" class="answer" style="display:none;">Search people&#39;s bedrooms, particularly under furniture.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("7_1_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="7_1_D" class="answer nonesuch" aria-hidden="true">Remove the journal from under Tamara&#39;s bed, then look there again.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="7_1_D" class="answer" style="display:none;">Remove the journal from under Tamara&#39;s bed, then look there again.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("7_1_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="7_1_E" class="answer nonesuch" aria-hidden="true">Under Tamara&#39;s bed is a receipt from a pet store.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="7_1_E" class="answer" style="display:none;">Under Tamara&#39;s bed is a receipt from a pet store.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1105,19 +1106,19 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("7_2_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="7_2_A" class="answer nonesuch" aria-hidden="true">What word rhymes with &quot;tell&quot; and is something you can hear?</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="7_2_A" class="answer" style="display:none;">What word rhymes with &quot;tell&quot; and is something you can hear?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("7_2_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="7_2_B" class="answer nonesuch" aria-hidden="true">A bell. Find a bell and examine it. (The quote is from &quot;The Bells&quot; by</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="7_2_B" class="answer" style="display:none;">A bell. Find a bell and examine it. (The quote is from &quot;The Bells&quot; by</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("7_2_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="7_2_C" class="answer nonesuch" aria-hidden="true">Edgar Allan Poe.)</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="7_2_C" class="answer" style="display:none;">Edgar Allan Poe.)</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("7_2_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="7_2_D" class="answer nonesuch" aria-hidden="true">The bell on the fighting deck has the third clue in it.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="7_2_D" class="answer" style="display:none;">The bell on the fighting deck has the third clue in it.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1127,23 +1128,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("7_3_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="7_3_A" class="answer nonesuch" aria-hidden="true">Somewhere in the castle is a &quot;tomb.&quot; (The quote is from &quot;Annabel Lee&quot;</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="7_3_A" class="answer" style="display:none;">Somewhere in the castle is a &quot;tomb.&quot; (The quote is from &quot;Annabel Lee&quot;</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("7_3_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="7_3_B" class="answer nonesuch" aria-hidden="true">by Edgar Allan Poe.)</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="7_3_B" class="answer" style="display:none;">by Edgar Allan Poe.)</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("7_3_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="7_3_C" class="answer nonesuch" aria-hidden="true">Go to the dungeon, then ENTER THE IRON MAIDEN to get to the secret</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="7_3_C" class="answer" style="display:none;">Go to the dungeon, then ENTER THE IRON MAIDEN to get to the secret</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("7_3_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="7_3_D" class="answer nonesuch" aria-hidden="true">tomb.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="7_3_D" class="answer" style="display:none;">tomb.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("7_3_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="7_3_E" class="answer nonesuch" aria-hidden="true">OPEN THE COFFIN to find the fourth clue.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="7_3_E" class="answer" style="display:none;">OPEN THE COFFIN to find the fourth clue.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1153,23 +1154,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("7_4_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="7_4_A" class="answer nonesuch" aria-hidden="true">Do you know the story &quot;A Cask of Amontillado&quot; by Edgar Allan Poe?</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="7_4_A" class="answer" style="display:none;">Do you know the story &quot;A Cask of Amontillado&quot; by Edgar Allan Poe?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("7_4_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="7_4_B" class="answer nonesuch" aria-hidden="true">It tells the tale of a man who is buried alive behind a brick wall,</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="7_4_B" class="answer" style="display:none;">It tells the tale of a man who is buried alive behind a brick wall,</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("7_4_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="7_4_C" class="answer nonesuch" aria-hidden="true">deep in the catacombs of a wine cellar.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="7_4_C" class="answer" style="display:none;">deep in the catacombs of a wine cellar.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("7_4_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="7_4_D" class="answer nonesuch" aria-hidden="true">Go to the basement, where the wine is kept, and MOVE THE BRICKS.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="7_4_D" class="answer" style="display:none;">Go to the basement, where the wine is kept, and MOVE THE BRICKS.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("7_4_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="7_4_E" class="answer nonesuch" aria-hidden="true">Enter the hole that you opened up,</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="7_4_E" class="answer" style="display:none;">Enter the hole that you opened up,</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1179,11 +1180,11 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("7_5_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="7_5_A" class="answer nonesuch" aria-hidden="true">EXAMINE THE SKELETON.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="7_5_A" class="answer" style="display:none;">EXAMINE THE SKELETON.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("7_5_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="7_5_B" class="answer nonesuch" aria-hidden="true">Take the black pearl necklace.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="7_5_B" class="answer" style="display:none;">Take the black pearl necklace.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1198,23 +1199,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("8_1_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="8_1_A" class="answer nonesuch" aria-hidden="true">First read the hints for this same question in the section called</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="8_1_A" class="answer" style="display:none;">First read the hints for this same question in the section called</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_1_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="8_1_B" class="answer nonesuch" aria-hidden="true">&quot;After Dinner.&quot;</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="8_1_B" class="answer" style="display:none;">&quot;After Dinner.&quot;</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_1_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="8_1_C" class="answer nonesuch" aria-hidden="true">You are looking for someone&#39;s diary.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="8_1_C" class="answer" style="display:none;">You are looking for someone&#39;s diary.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_1_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="8_1_D" class="answer nonesuch" aria-hidden="true">In Vivien&#39;s wooden box is her diary. (It&#39;s under her plastic box.)</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="8_1_D" class="answer" style="display:none;">In Vivien&#39;s wooden box is her diary. (It&#39;s under her plastic box.)</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_1_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="8_1_E" class="answer nonesuch" aria-hidden="true">Reading her diary may not be polite, but it&#39;s important!</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="8_1_E" class="answer" style="display:none;">Reading her diary may not be polite, but it&#39;s important!</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1224,83 +1225,83 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("8_2_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="8_2_A" class="answer nonesuch" aria-hidden="true">Try to fill in the blanks of the second clue with words that make the</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="8_2_A" class="answer" style="display:none;">Try to fill in the blanks of the second clue with words that make the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="8_2_B" class="answer nonesuch" aria-hidden="true">poem rhyme. Then find objects that match the words.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="8_2_B" class="answer" style="display:none;">poem rhyme. Then find objects that match the words.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="8_2_C" class="answer nonesuch" aria-hidden="true">For the first blank: What rhymes with &quot;wrong&quot; and is often mentioned</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="8_2_C" class="answer" style="display:none;">For the first blank: What rhymes with &quot;wrong&quot; and is often mentioned</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="8_2_D" class="answer nonesuch" aria-hidden="true">with wine (&quot;grape&quot;) and women (&quot;wench&quot;)?</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="8_2_D" class="answer" style="display:none;">with wine (&quot;grape&quot;) and women (&quot;wench&quot;)?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="8_2_E" class="answer nonesuch" aria-hidden="true">The word for the first blank is &quot;song.&quot; Where might you find a song in</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="8_2_E" class="answer" style="display:none;">The word for the first blank is &quot;song.&quot; Where might you find a song in</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="8_2_F" class="answer nonesuch" aria-hidden="true">the castle?</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="8_2_F" class="answer" style="display:none;">the castle?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_G");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="8_2_G" class="answer nonesuch" aria-hidden="true">Read the music on the piano.</span></div></a>
+<div class="answer-label">G.</div><div class="answer-cell" aria-label="G" role="alert"><span class="hidden">|</span><span id="8_2_G" class="answer" style="display:none;">Read the music on the piano.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_H");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="8_2_H" class="answer nonesuch" aria-hidden="true">For the second blank: What rhymes with &quot;laden&quot;? (Remember that the poem</span></div></a>
+<div class="answer-label">H.</div><div class="answer-cell" aria-label="H" role="alert"><span class="hidden">|</span><span id="8_2_H" class="answer" style="display:none;">For the second blank: What rhymes with &quot;laden&quot;? (Remember that the poem</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_I");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="8_2_I" class="answer nonesuch" aria-hidden="true">is about three fellows arguing about &quot;wine, women, and song.&quot;)</span></div></a>
+<div class="answer-label">I.</div><div class="answer-cell" aria-label="I" role="alert"><span class="hidden">|</span><span id="8_2_I" class="answer" style="display:none;">is about three fellows arguing about &quot;wine, women, and song.&quot;)</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_J");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">J.</div><div class="answer-cell" aria-label="J" role="alert"><span class="hidden">|</span><span id="8_2_J" class="answer nonesuch" aria-hidden="true">The word for the second blank is &quot;maiden.&quot; Where in the castle is a</span></div></a>
+<div class="answer-label">J.</div><div class="answer-cell" aria-label="J" role="alert"><span class="hidden">|</span><span id="8_2_J" class="answer" style="display:none;">The word for the second blank is &quot;maiden.&quot; Where in the castle is a</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_K");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">K.</div><div class="answer-cell" aria-label="K" role="alert"><span class="hidden">|</span><span id="8_2_K" class="answer nonesuch" aria-hidden="true">maiden?</span></div></a>
+<div class="answer-label">K.</div><div class="answer-cell" aria-label="K" role="alert"><span class="hidden">|</span><span id="8_2_K" class="answer" style="display:none;">maiden?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_L");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">L.</div><div class="answer-cell" aria-label="L" role="alert"><span class="hidden">|</span><span id="8_2_L" class="answer nonesuch" aria-hidden="true">It&#39;s not the iron maiden in the dungeon.</span></div></a>
+<div class="answer-label">L.</div><div class="answer-cell" aria-label="L" role="alert"><span class="hidden">|</span><span id="8_2_L" class="answer" style="display:none;">It&#39;s not the iron maiden in the dungeon.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_M");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">M.</div><div class="answer-cell" aria-label="M" role="alert"><span class="hidden">|</span><span id="8_2_M" class="answer nonesuch" aria-hidden="true">Find the maiden mentioned in the tourist brochure and examine it.</span></div></a>
+<div class="answer-label">M.</div><div class="answer-cell" aria-label="M" role="alert"><span class="hidden">|</span><span id="8_2_M" class="answer" style="display:none;">Find the maiden mentioned in the tourist brochure and examine it.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_N");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">N.</div><div class="answer-cell" aria-label="N" role="alert"><span class="hidden">|</span><span id="8_2_N" class="answer nonesuch" aria-hidden="true">For the last blank: What rhymes with &quot;fine&quot;? (Remember what the three</span></div></a>
+<div class="answer-label">N.</div><div class="answer-cell" aria-label="N" role="alert"><span class="hidden">|</span><span id="8_2_N" class="answer" style="display:none;">For the last blank: What rhymes with &quot;fine&quot;? (Remember what the three</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_O");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">O.</div><div class="answer-cell" aria-label="O" role="alert"><span class="hidden">|</span><span id="8_2_O" class="answer nonesuch" aria-hidden="true">fellows are arguing about!)</span></div></a>
+<div class="answer-label">O.</div><div class="answer-cell" aria-label="O" role="alert"><span class="hidden">|</span><span id="8_2_O" class="answer" style="display:none;">fellows are arguing about!)</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_P");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">P.</div><div class="answer-cell" aria-label="P" role="alert"><span class="hidden">|</span><span id="8_2_P" class="answer nonesuch" aria-hidden="true">The word for the last blank is &quot;wine.&quot; Where in the castle will you</span></div></a>
+<div class="answer-label">P.</div><div class="answer-cell" aria-label="P" role="alert"><span class="hidden">|</span><span id="8_2_P" class="answer" style="display:none;">The word for the last blank is &quot;wine.&quot; Where in the castle will you</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_Q");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">Q.</div><div class="answer-cell" aria-label="Q" role="alert"><span class="hidden">|</span><span id="8_2_Q" class="answer nonesuch" aria-hidden="true">find wine?</span></div></a>
+<div class="answer-label">Q.</div><div class="answer-cell" aria-label="Q" role="alert"><span class="hidden">|</span><span id="8_2_Q" class="answer" style="display:none;">find wine?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_R");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">R.</div><div class="answer-cell" aria-label="R" role="alert"><span class="hidden">|</span><span id="8_2_R" class="answer nonesuch" aria-hidden="true">Examine the wine bottle in the basement.</span></div></a>
+<div class="answer-label">R.</div><div class="answer-cell" aria-label="R" role="alert"><span class="hidden">|</span><span id="8_2_R" class="answer" style="display:none;">Examine the wine bottle in the basement.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_S");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">S.</div><div class="answer-cell" aria-label="S" role="alert"><span class="hidden">|</span><span id="8_2_S" class="answer nonesuch" aria-hidden="true">Put together the parts of words marked with a star.</span></div></a>
+<div class="answer-label">S.</div><div class="answer-cell" aria-label="S" role="alert"><span class="hidden">|</span><span id="8_2_S" class="answer" style="display:none;">Put together the parts of words marked with a star.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_2_T");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">T.</div><div class="answer-cell" aria-label="T" role="alert"><span class="hidden">|</span><span id="8_2_T" class="answer nonesuch" aria-hidden="true">They spell &quot;SUIT ARMOUR.&quot; Look in the tourist brochure to find it.</span></div></a>
+<div class="answer-label">T.</div><div class="answer-cell" aria-label="T" role="alert"><span class="hidden">|</span><span id="8_2_T" class="answer" style="display:none;">They spell &quot;SUIT ARMOUR.&quot; Look in the tourist brochure to find it.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1310,27 +1311,27 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("8_3_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="8_3_A" class="answer nonesuch" aria-hidden="true">Put the parts of words from the second clue into the blanks in a</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="8_3_A" class="answer" style="display:none;">Put the parts of words from the second clue into the blanks in a</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_3_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="8_3_B" class="answer nonesuch" aria-hidden="true">different order.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="8_3_B" class="answer" style="display:none;">different order.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_3_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="8_3_C" class="answer nonesuch" aria-hidden="true">The order is ARM, SUIT and OUR.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="8_3_C" class="answer" style="display:none;">The order is ARM, SUIT and OUR.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_3_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="8_3_D" class="answer nonesuch" aria-hidden="true">What &quot;alarm&quot; has &quot;suite&quot; (sweet) tones that &quot;clamour&quot;?</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="8_3_D" class="answer" style="display:none;">What &quot;alarm&quot; has &quot;suite&quot; (sweet) tones that &quot;clamour&quot;?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_3_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="8_3_E" class="answer nonesuch" aria-hidden="true">The bell on the fighting deck is an alarm that clamours.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="8_3_E" class="answer" style="display:none;">The bell on the fighting deck is an alarm that clamours.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_3_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="8_3_F" class="answer nonesuch" aria-hidden="true">LOOK INSIDE THE BELL to find the treasure.</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="8_3_F" class="answer" style="display:none;">LOOK INSIDE THE BELL to find the treasure.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1340,23 +1341,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("8_4_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="8_4_A" class="answer nonesuch" aria-hidden="true">Try to climb up one of the fireplaces in the castle.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="8_4_A" class="answer" style="display:none;">Try to climb up one of the fireplaces in the castle.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_4_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="8_4_B" class="answer nonesuch" aria-hidden="true">However, you can&#39;t go back down the same way. Try to find a different</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="8_4_B" class="answer" style="display:none;">However, you can&#39;t go back down the same way. Try to find a different</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_4_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="8_4_C" class="answer nonesuch" aria-hidden="true">flue to go down.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="8_4_C" class="answer" style="display:none;">flue to go down.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_4_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="8_4_D" class="answer nonesuch" aria-hidden="true">However, if you go down you&#39;ll land in a fire and...</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="8_4_D" class="answer" style="display:none;">However, if you go down you&#39;ll land in a fire and...</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_4_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="8_4_E" class="answer nonesuch" aria-hidden="true">You&#39;ve been burned. There is no fourth clue in the blue variation.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="8_4_E" class="answer" style="display:none;">You&#39;ve been burned. There is no fourth clue in the blue variation.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1366,11 +1367,11 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("8_5_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="8_5_A" class="answer nonesuch" aria-hidden="true">Why are you reading this clue?</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="8_5_A" class="answer" style="display:none;">Why are you reading this clue?</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("8_5_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="8_5_B" class="answer nonesuch" aria-hidden="true">The skull is obviously the treasure.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="8_5_B" class="answer" style="display:none;">The skull is obviously the treasure.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1385,27 +1386,27 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("9_1_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="9_1_A" class="answer nonesuch" aria-hidden="true">First read the hints for this same question in the section called</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="9_1_A" class="answer" style="display:none;">First read the hints for this same question in the section called</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("9_1_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="9_1_B" class="answer nonesuch" aria-hidden="true">&quot;After Dinner.&quot;</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="9_1_B" class="answer" style="display:none;">&quot;After Dinner.&quot;</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("9_1_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="9_1_C" class="answer nonesuch" aria-hidden="true">You are looking for something written. The library would be a good</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="9_1_C" class="answer" style="display:none;">You are looking for something written. The library would be a good</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("9_1_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="9_1_D" class="answer nonesuch" aria-hidden="true">place to start.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="9_1_D" class="answer" style="display:none;">place to start.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("9_1_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="9_1_E" class="answer nonesuch" aria-hidden="true">In the bookcase is Wendish&#39;s lab notebook. It reveals Wendish&#39;s</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="9_1_E" class="answer" style="display:none;">In the bookcase is Wendish&#39;s lab notebook. It reveals Wendish&#39;s</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("9_1_F");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="9_1_F" class="answer nonesuch" aria-hidden="true">fiendish ideas.</span></div></a>
+<div class="answer-label">F.</div><div class="answer-cell" aria-label="F" role="alert"><span class="hidden">|</span><span id="9_1_F" class="answer" style="display:none;">fiendish ideas.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1415,23 +1416,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("9_2_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="9_2_A" class="answer nonesuch" aria-hidden="true">You are doing two things: finding the next clue (by finding an &quot;eye&quot;</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="9_2_A" class="answer" style="display:none;">You are doing two things: finding the next clue (by finding an &quot;eye&quot;</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("9_2_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="9_2_B" class="answer nonesuch" aria-hidden="true">that doesn&#39;t see) and beginning to spell a word which starts with the</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="9_2_B" class="answer" style="display:none;">that doesn&#39;t see) and beginning to spell a word which starts with the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("9_2_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="9_2_C" class="answer nonesuch" aria-hidden="true">letter &quot;I.&quot;</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="9_2_C" class="answer" style="display:none;">letter &quot;I.&quot;</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("9_2_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="9_2_D" class="answer nonesuch" aria-hidden="true">The blind &quot;eye&quot; you are looking for is in the game room.</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="9_2_D" class="answer" style="display:none;">The blind &quot;eye&quot; you are looking for is in the game room.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("9_2_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="9_2_E" class="answer nonesuch" aria-hidden="true">The third clue is behind the rhino&#39;s glass eye.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="9_2_E" class="answer" style="display:none;">The third clue is behind the rhino&#39;s glass eye.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1441,23 +1442,23 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("9_3_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="9_3_A" class="answer nonesuch" aria-hidden="true">The second letter is &quot;N&quot; (in &quot;never,&quot; but not in &quot;ever&quot;).</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="9_3_A" class="answer" style="display:none;">The second letter is &quot;N&quot; (in &quot;never,&quot; but not in &quot;ever&quot;).</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("9_3_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="9_3_B" class="answer nonesuch" aria-hidden="true">The next clue is at the dead &quot;end&quot; in the secret (hidden) passages. You</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="9_3_B" class="answer" style="display:none;">The next clue is at the dead &quot;end&quot; in the secret (hidden) passages. You</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("9_3_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="9_3_C" class="answer nonesuch" aria-hidden="true">can find it on the complete map.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="9_3_C" class="answer" style="display:none;">can find it on the complete map.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("9_3_D");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="9_3_D" class="answer nonesuch" aria-hidden="true">You can see the clue (but not reach it) if you SEARCH THE WALL in the</span></div></a>
+<div class="answer-label">D.</div><div class="answer-cell" aria-label="D" role="alert"><span class="hidden">|</span><span id="9_3_D" class="answer" style="display:none;">You can see the clue (but not reach it) if you SEARCH THE WALL in the</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("9_3_E");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="9_3_E" class="answer nonesuch" aria-hidden="true">gallery and then look through the peephole.</span></div></a>
+<div class="answer-label">E.</div><div class="answer-cell" aria-label="E" role="alert"><span class="hidden">|</span><span id="9_3_E" class="answer" style="display:none;">gallery and then look through the peephole.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1467,15 +1468,15 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("9_4_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="9_4_A" class="answer nonesuch" aria-hidden="true">The third letter is &quot;K&quot; (a silent letter in &quot;knight&quot;).</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="9_4_A" class="answer" style="display:none;">The third letter is &quot;K&quot; (a silent letter in &quot;knight&quot;).</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("9_4_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="9_4_B" class="answer nonesuch" aria-hidden="true">Putting the three letters together spells &quot;ink.&quot; Find some ink.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="9_4_B" class="answer" style="display:none;">Putting the three letters together spells &quot;ink.&quot; Find some ink.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("9_4_C");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="9_4_C" class="answer nonesuch" aria-hidden="true">There is an inkwell in the office.</span></div></a>
+<div class="answer-label">C.</div><div class="answer-cell" aria-label="C" role="alert"><span class="hidden">|</span><span id="9_4_C" class="answer" style="display:none;">There is an inkwell in the office.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
@@ -1485,11 +1486,11 @@ span.classList.toggle('nonesuch');
       <div class="answers">
       
       <a class="answer-row" onClick='javascript:toggle("9_5_A");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="9_5_A" class="answer nonesuch" aria-hidden="true">The treasure isn&#39;t the inkwell.</span></div></a>
+<div class="answer-label">A.</div><div class="answer-cell" aria-label="A" role="alert"><span class="hidden">|</span><span id="9_5_A" class="answer" style="display:none;">The treasure isn&#39;t the inkwell.</span></div></a>
       <div class="gap">&thinsp;</div>
 
       <a class="answer-row" onClick='javascript:toggle("9_5_B");' href="javascript:void(0);">
-<div class="answer-label" aria-hidden="true">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="9_5_B" class="answer nonesuch" aria-hidden="true">It&#39;s the &quot;ink&quot; inside the inkwell -- the Moonmist drug.</span></div></a>
+<div class="answer-label">B.</div><div class="answer-cell" aria-label="B" role="alert"><span class="hidden">|</span><span id="9_5_B" class="answer" style="display:none;">It&#39;s the &quot;ink&quot; inside the inkwell -- the Moonmist drug.</span></div></a>
       <div class="gap">&thinsp;</div>
       </div>
   </div>
